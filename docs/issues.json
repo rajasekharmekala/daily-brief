@@ -3,9 +3,9 @@
     "date": "2026-10-20",
     "issue_no": 1,
     "theme": "LLM judges that flip their own verdicts, OpenCode 2.1 and Salesforce's $5.7 billion Braze deal lead the day, while Euclid finds a comet, Hormuz tensions climb, and Diwali weekend events open in the South Bay.",
-    "items": 86,
-    "minutes": 51,
-    "generated_at": "2026-10-20 18:02 PDT",
+    "items": 115,
+    "minutes": 68,
+    "generated_at": "2026-10-20 19:06 PDT",
     "top": [
       {
         "title": "LLM judges flip verdicts on reruns and answer-order swaps; one fully repeatable judge was right only 51% of the time",
@@ -18,8 +18,8 @@
         "url": "https://opencode.ai/changelog"
       },
       {
-        "title": "Salesforce to acquire Braze for about $5.66 billion",
-        "source": "Salesforce Newsroom",
+        "title": "Salesforce agrees to buy customer-engagement platform Braze for about $5.66 billion in cash",
+        "source": "Salesforce",
         "url": "https://www.salesforce.com/news/press-releases/2026/10/20/salesforce-signs-definitive-agreement-to-acquire-braze/?bc=OTH"
       },
       {
@@ -41,6 +41,11 @@
         "title": "Free Diwali carnival with live concert at Plaza de Cesar Chavez, Sat 24 Oct",
         "source": "AllEvents (organiser: Association of Indo Americans)",
         "url": "https://allevents.in/san-jose/san-jose-diwali-carnival-festival-of-lights/100001999415257859"
+      },
+      {
+        "title": "Hubble Tension, Explained | Adam Riess",
+        "source": "NOVA PBS Official",
+        "url": "https://www.youtube.com/watch?v=8OW7HrB6wL0"
       }
     ],
     "sections": [
@@ -50,9 +55,19 @@
         "minutes": 3
       },
       {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 8
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 10
+      },
+      {
         "id": "industry",
         "title": "Industry Watch",
-        "minutes": 10
+        "minutes": 9
       },
       {
         "id": "deepdive",
@@ -77,12 +92,12 @@
       {
         "id": "culture",
         "title": "Culture",
-        "minutes": 4
+        "minutes": 5
       },
       {
         "id": "local",
         "title": "Local and Travel",
-        "minutes": 7
+        "minutes": 6
       }
     ]
   }

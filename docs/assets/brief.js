@@ -36,6 +36,29 @@
   var saved = 'all'; try { saved = localStorage.getItem('brief:mode') || 'all'; } catch (e) {}
   if (modes.length) setMode(saved);
 
+  d.addEventListener('click', function (e) {
+    var m = e.target.closest ? e.target.closest('.media[data-vid]') : null;
+    if (!m || m.classList.contains('playing')) return;
+    e.preventDefault();
+    var f = d.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + m.dataset.vid + '?autoplay=1&rel=0';
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.setAttribute('allowfullscreen', ''); f.title = 'Video player';
+    m.innerHTML = ''; m.appendChild(f); m.classList.add('playing');
+  });
+
+  var tb = d.querySelector('[data-theme-toggle]');
+  function paintTheme() { if (tb) tb.textContent = d.documentElement.dataset.theme === 'dark' ? 'Light mode' : 'Dark mode'; }
+  if (tb) {
+    paintTheme();
+    tb.addEventListener('click', function () {
+      var t = d.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      d.documentElement.dataset.theme = t;
+      try { localStorage.setItem('brief:theme', t); } catch (e) {}
+      paintTheme();
+    });
+  }
+
   var links = [].slice.call(d.querySelectorAll('.toc a'));
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (es) {
