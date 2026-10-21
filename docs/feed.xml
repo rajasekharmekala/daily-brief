@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>The Morning Brief</title>
+  <id>https://git.corp.adobe.com/pages/mereddy/daily-brief/</id>
+  <link href="https://git.corp.adobe.com/pages/mereddy/daily-brief/"/>
+  <link rel="self" href="https://git.corp.adobe.com/pages/mereddy/daily-brief/feed.xml"/>
+  <updated>2026-10-21T00:42:25Z</updated>
+  <entry>
+    <title>Issue 1: LLM judges that flip their own verdicts, OpenCode 2.1 and Salesforce&#39;s $5.7 billion Braze deal lead the day, while Euclid finds a comet, Hormuz tensions climb, and Diwali weekend events open in the South Bay.</title>
+    <id>https://git.corp.adobe.com/pages/mereddy/daily-brief/issues/2026-10-20/</id>
+    <link href="https://git.corp.adobe.com/pages/mereddy/daily-brief/issues/2026-10-20/"/>
+    <updated>2026-10-20T12:00:00Z</updated>
+    <summary>LLM judges flip verdicts on reruns and answer-order swaps; one fully repeatable judge was right only 51% of the time; OpenCode 2.1.0 changes SDK, event and plugin contracts and adds Windows persistent terminals; Salesforce to acquire Braze for about $5.66 billion; Euclid discovers its first new comet, C/2026 S1; US and Iran both claim control of the Strait of Hormuz as ship attacks climb</summary>
+  </entry>
+</feed>
