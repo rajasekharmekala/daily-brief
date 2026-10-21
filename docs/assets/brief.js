@@ -65,7 +65,7 @@
       es.forEach(function (e) {
         if (e.isIntersecting) {
           links.forEach(function (l) { l.classList.toggle('on', l.getAttribute('href') === '#' + e.target.id); });
-          var on = d.querySelector('.toc a.on'); if (on && on.scrollIntoView) on.scrollIntoView({ block: 'nearest', inline: 'center' });
+          var on = d.querySelector('.toc a.on'), bar = d.querySelector('.toc .wrap'); if (on && bar) bar.scrollLeft = on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2;
         }
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
