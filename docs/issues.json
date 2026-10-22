@@ -202,5 +202,97 @@
         "minutes": 3
       }
     ]
+  },
+  {
+    "date": "2026-10-22",
+    "issue_no": 3,
+    "theme": "A benchmark audit that deflates an agent's success rate and a compromised LiteLLM release lead the agent beat, while Iran's claimed tanker strikes lift Brent and Nature gives the Denisovans a face.",
+    "items": 111,
+    "minutes": 61,
+    "generated_at": "2026-10-22 05:43 PDT",
+    "top": [
+      {
+        "title": "Audit finds an agent benchmark's reward function inflated success from 94.3% to the true 65.5%",
+        "source": "arXiv (cs.SE)",
+        "url": "https://arxiv.org/abs/2610.16067"
+      },
+      {
+        "title": "LiteLLM 1.107.0 was a compromised release on PyPI and Docker; pin 1.106.2 and rotate keys",
+        "source": "LiteLLM docs (security incident post)",
+        "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026"
+      },
+      {
+        "title": "Iran says it hit seven tankers near Hormuz; Brent jumps to about $112",
+        "source": "CBS News",
+        "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-ceasefire-talks-ongoing/"
+      },
+      {
+        "title": "Nasdaq leads Wall Street higher as SpaceX and Super Micro results ease AI worries",
+        "source": "Reuters via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-leads-gains-spacex-super-142805507.html"
+      },
+      {
+        "title": "Skull fragments from northern China give the Denisovans a face",
+        "source": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-03360-0"
+      },
+      {
+        "title": "Sindhu survives a three-game scare to advance at the French Open",
+        "source": "The Hindu (PTI)",
+        "url": "https://www.thehindu.com/sport/sindhu-survives-scare-to-advance-at-french-open/article71609001.ece"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 7
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 9
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 8
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 10
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 4
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 5
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 4
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 6
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 5
+      }
+    ]
   }
 ]
