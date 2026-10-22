@@ -206,40 +206,50 @@
   {
     "date": "2026-10-22",
     "issue_no": 3,
-    "theme": "A benchmark audit that deflates an agent's success rate and a compromised LiteLLM release lead the agent beat, while Iran's claimed tanker strikes lift Brent and Nature gives the Denisovans a face.",
-    "items": 111,
-    "minutes": 61,
-    "generated_at": "2026-10-22 05:43 PDT",
+    "theme": "Prabhas' Spirit and Fauji news, a Telugu concert in San Ramon and Sid Sriram in Los Angeles join a day of LLM-judge testing, the Denisovans, and a Jio IPO subscribed 5.5 times.",
+    "items": 99,
+    "minutes": 48,
+    "generated_at": "2026-10-22 08:18 PDT",
     "top": [
       {
-        "title": "Audit finds an agent benchmark's reward function inflated success from 94.3% to the true 65.5%",
-        "source": "arXiv (cs.SE)",
-        "url": "https://arxiv.org/abs/2610.16067"
+        "title": "BATA Deepavali Sambaralu with singer Sameera Bharadwaj, San Ramon",
+        "source": "Bay Area Telugu Association (official event page; tickets via Sulekha)",
+        "url": "https://www.bata.org/events/14"
       },
       {
-        "title": "LiteLLM 1.107.0 was a compromised release on PyPI and Docker; pin 1.106.2 and rotate keys",
-        "source": "LiteLLM docs (security incident post)",
-        "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026"
+        "title": "Sid Sriram live at Blue Note Los Angeles, two shows on 2026-11-13",
+        "source": "Blue Note Los Angeles (also listed on Live Nation and Ticketmaster)",
+        "url": "https://www.bluenotejazz.com/la/tm-event/sid-sriram/"
       },
       {
-        "title": "Iran says it hit seven tankers near Hormuz; Brent jumps to about $112",
-        "source": "CBS News",
-        "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-ceasefire-talks-ongoing/"
+        "title": "Prabhas' Spirit moves to October 29, 2027, after Fauji's delay",
+        "source": "Telugu Cinema",
+        "url": "https://telugucinema.com/news/its-official-prabhas-spirit-postponed-to-october-2027"
       },
       {
-        "title": "Nasdaq leads Wall Street higher as SpaceX and Super Micro results ease AI worries",
-        "source": "Reuters via Yahoo Finance",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-leads-gains-spacex-super-142805507.html"
+        "title": "Yeshanagula video song from The Paradise released",
+        "source": "Asianet Newsable",
+        "url": "https://newsable.asianetnews.com/entertainment/nani-and-keerthy-suresh-yeshanagula-video-song-from-the-paradise-released-articleshow-c79eskr"
       },
       {
-        "title": "Skull fragments from northern China give the Denisovans a face",
+        "title": "SANE: automated metamorphic testing for LLM judges",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2610.28886"
+      },
+      {
+        "title": "This is what the mysterious Denisovans looked like",
         "source": "Nature",
         "url": "https://www.nature.com/articles/d41586-026-03360-0"
       },
       {
-        "title": "Sindhu survives a three-game scare to advance at the French Open",
-        "source": "The Hindu (PTI)",
-        "url": "https://www.thehindu.com/sport/sindhu-survives-scare-to-advance-at-french-open/article71609001.ece"
+        "title": "Jio Platforms IPO subscribed 5.54 times on day two, with institutional buyers leading",
+        "source": "CNBC-TV18",
+        "url": "https://www.cnbctv18.com/market/jio-platforms-ipo-day-2-live-updates-qib-nii-retail-subscription-total-bids-gmp-valuation-lot-size-price-listing-liveblog-20016507.htm"
+      },
+      {
+        "title": "Samson and Dhir power India to a record T20I chase in Christchurch",
+        "source": "Cricbuzz",
+        "url": "https://www.cricbuzz.com/cricket-news/140608/samson-blitz-dhir-finish-help-india-chase-down-record-total"
       }
     ],
     "sections": [
@@ -251,47 +261,47 @@
       {
         "id": "finance",
         "title": "Markets and Money",
-        "minutes": 7
+        "minutes": 4
       },
       {
         "id": "nutrition",
         "title": "Keto Kitchen",
-        "minutes": 9
+        "minutes": 7
       },
       {
         "id": "industry",
         "title": "Industry Watch",
-        "minutes": 8
+        "minutes": 6
       },
       {
         "id": "deepdive",
         "title": "Deep Dive of the Day",
-        "minutes": 10
+        "minutes": 8
       },
       {
         "id": "science",
         "title": "Cosmos and Life",
-        "minutes": 4
+        "minutes": 3
       },
       {
         "id": "world",
         "title": "World and India",
-        "minutes": 5
+        "minutes": 4
       },
       {
         "id": "sports",
         "title": "Sports",
-        "minutes": 4
+        "minutes": 3
       },
       {
         "id": "culture",
         "title": "Movies and Music",
-        "minutes": 6
+        "minutes": 7
       },
       {
         "id": "local",
         "title": "Local and Travel",
-        "minutes": 5
+        "minutes": 3
       }
     ]
   }
