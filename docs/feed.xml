@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>The Morning Brief</title>
-  <id>https://git.corp.adobe.com/pages/mereddy/daily-brief/</id>
-  <link href="https://git.corp.adobe.com/pages/mereddy/daily-brief/"/>
-  <link rel="self" href="https://git.corp.adobe.com/pages/mereddy/daily-brief/feed.xml"/>
+  <id>https://rajasekharmekala.github.io/daily-brief/</id>
+  <link href="https://rajasekharmekala.github.io/daily-brief/"/>
+  <link rel="self" href="https://rajasekharmekala.github.io/daily-brief/feed.xml"/>
   <updated>2026-10-23T17:50:40Z</updated>
   <entry>
     <title>Issue 3: Prabhas&#39; Spirit and Fauji news, a Telugu concert in San Ramon and Sid Sriram in Los Angeles join a day of LLM-judge testing, the Denisovans, and a Jio IPO subscribed 5.5 times.</title>
-    <id>https://git.corp.adobe.com/pages/mereddy/daily-brief/issues/2026-10-22/</id>
-    <link href="https://git.corp.adobe.com/pages/mereddy/daily-brief/issues/2026-10-22/"/>
+    <id>https://rajasekharmekala.github.io/daily-brief/issues/2026-10-22/</id>
+    <link href="https://rajasekharmekala.github.io/daily-brief/issues/2026-10-22/"/>
     <updated>2026-10-22T12:00:00Z</updated>
     <summary>BATA Deepavali Sambaralu with singer Sameera Bharadwaj, San Ramon; Sid Sriram live at Blue Note Los Angeles, two shows on 2026-11-13; Prabhas&#39; Spirit moves to October 29, 2027, after Fauji&#39;s delay; Yeshanagula video song from The Paradise released; SANE: automated metamorphic testing for LLM judges</summary>
   </entry>
   <entry>
     <title>Issue 2: Prompt optimizers under scrutiny, Perseverance&#39;s Mars driving record and the Jio Platforms IPO lead the day, while Iran says Hormuz mines stalled tankers and Anirudh&#39;s Jailer 2 theme arrives for the movies and music slate.</title>
-    <id>https://git.corp.adobe.com/pages/mereddy/daily-brief/issues/2026-10-21/</id>
-    <link href="https://git.corp.adobe.com/pages/mereddy/daily-brief/issues/2026-10-21/"/>
+    <id>https://rajasekharmekala.github.io/daily-brief/issues/2026-10-21/</id>
+    <link href="https://rajasekharmekala.github.io/daily-brief/issues/2026-10-21/"/>
     <updated>2026-10-21T12:00:00Z</updated>
     <summary>Do prompt optimizers break requirements they are not scored on? A preregistered study; Reflective prompt optimizers: GEPA and SkillOpt tested on locally served reasoning models; Perseverance sets a new off-world driving record on Mars; Iran says its naval mines halted three tankers in the Strait of Hormuz; Jio Platforms IPO is subscribed about 3 times on day one, led by institutional buyers</summary>
   </entry>
   <entry>
     <title>Issue 1: LLM judges that flip their own verdicts, OpenCode 2.1 and Salesforce&#39;s $5.7 billion Braze deal lead the day, while Euclid finds a comet, Hormuz tensions climb, and Diwali weekend events open in the South Bay.</title>
-    <id>https://git.corp.adobe.com/pages/mereddy/daily-brief/issues/2026-10-20/</id>
-    <link href="https://git.corp.adobe.com/pages/mereddy/daily-brief/issues/2026-10-20/"/>
+    <id>https://rajasekharmekala.github.io/daily-brief/issues/2026-10-20/</id>
+    <link href="https://rajasekharmekala.github.io/daily-brief/issues/2026-10-20/"/>
     <updated>2026-10-20T12:00:00Z</updated>
     <summary>LLM judges flip verdicts on reruns and answer-order swaps; one fully repeatable judge was right only 51% of the time; OpenCode 2.1.0 changes SDK, event and plugin contracts and adds Windows persistent terminals; Salesforce agrees to buy customer-engagement platform Braze for about $5.66 billion in cash; Euclid discovers its first new comet, C/2026 S1; US and Iran both claim control of the Strait of Hormuz as ship attacks climb</summary>
   </entry>
