@@ -48,13 +48,20 @@
   });
 
   var tb = d.querySelector('[data-theme-toggle]');
-  function paintTheme() { if (tb) tb.textContent = d.documentElement.dataset.theme === 'dark' ? 'Light mode' : 'Dark mode'; }
+  function isDark() {
+    var cur = d.documentElement.dataset.theme;
+    if (cur) return cur === 'dark';
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function paintTheme() {
+    if (tb) tb.textContent = isDark() ? '☀️ Light' : '🌙 Dark';
+  }
   if (tb) {
     paintTheme();
     tb.addEventListener('click', function () {
-      var t = d.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-      d.documentElement.dataset.theme = t;
-      try { localStorage.setItem('brief:theme', t); } catch (e) {}
+      var next = isDark() ? 'light' : 'dark';
+      d.documentElement.dataset.theme = next;
+      try { localStorage.setItem('brief:theme', next); } catch (e) {}
       paintTheme();
     });
   }
@@ -65,7 +72,8 @@
       es.forEach(function (e) {
         if (e.isIntersecting) {
           links.forEach(function (l) { l.classList.toggle('on', l.getAttribute('href') === '#' + e.target.id); });
-          var on = d.querySelector('.toc a.on'), bar = d.querySelector('.toc .wrap'); if (on && bar) bar.scrollLeft = on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2;
+          var on = d.querySelector('.toc a.on'), barEl = d.querySelector('.toc .wrap');
+          if (on && barEl) barEl.scrollLeft = on.offsetLeft - (barEl.clientWidth - on.offsetWidth) / 2;
         }
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
@@ -74,7 +82,7 @@
   window.addEventListener('scroll', function () {
     var h = d.documentElement, p = h.scrollTop / ((h.scrollHeight - h.clientHeight) || 1);
     if (bar) bar.style.width = (p * 100) + '%';
-    if (top) top.classList.toggle('show', h.scrollTop > 900);
+    if (top) top.classList.toggle('show', h.scrollTop > 700);
   }, { passive: true });
-  if (top) top.addEventListener('click', function () { window.scrollTo({ top: 0 }); });
+  if (top) top.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 })();
