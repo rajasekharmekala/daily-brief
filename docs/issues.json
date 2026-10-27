@@ -1,107 +1,5 @@
 [
   {
-    "date": "2026-10-21",
-    "issue_no": 2,
-    "theme": "Prompt optimizers under scrutiny, Perseverance's Mars driving record and the Jio Platforms IPO lead the day, while Iran says Hormuz mines stalled tankers and Anirudh's Jailer 2 theme arrives for the movies and music slate.",
-    "items": 90,
-    "minutes": 44,
-    "generated_at": "2026-10-27 10:56 PDT",
-    "top": [
-      {
-        "title": "Do prompt optimizers break requirements they are not scored on? A preregistered study",
-        "source": "arXiv",
-        "url": "https://arxiv.org/pdf/2610.13287"
-      },
-      {
-        "title": "Reflective prompt optimizers: GEPA and SkillOpt tested on locally served reasoning models",
-        "source": "arXiv",
-        "url": "https://arxiv.org/abs/2610.26020"
-      },
-      {
-        "title": "Perseverance sets a new off-world driving record on Mars",
-        "source": "ScienceDaily (NASA release)",
-        "url": "https://www.sciencedaily.com/releases/2026/10/261020084818.htm"
-      },
-      {
-        "title": "Iran says its naval mines halted three tankers in the Strait of Hormuz",
-        "source": "Malay Mail",
-        "url": "https://www.malaymail.com/news/world/2026/10/21/iran-says-naval-mines-hit-three-tankers-in-strait-of-hormuz/239963"
-      },
-      {
-        "title": "Jio Platforms IPO is subscribed about 3 times on day one, led by institutional buyers",
-        "source": "Moneycontrol",
-        "url": "https://www.moneycontrol.com/europe/?url=https://www.moneycontrol.com/news/business/ipo/jio-ipo-gmp-live-updates-jio-platforms-ipo-price-band-subscription-status-today-oct-21-liveblog-14056389.html"
-      },
-      {
-        "title": "Anirudh releases the 'Tiger Muthuvel Pandian' theme from Jailer 2 as a single",
-        "source": "Apple Music",
-        "url": "https://music.apple.com/in/album/tiger-muthuvel-pandian-from-jailer-2-single/6824855196"
-      },
-      {
-        "title": "RBI minutes: rate cuts off the table as members flag broadening inflation",
-        "source": "Business Standard",
-        "url": "https://www.business-standard.com/industry/banking/rate-cuts-off-table-as-rbi-mpc-flags-inflation-risks-two-dissent-on-stance-126102101194_1.html"
-      },
-      {
-        "title": "Energy and Matter at the Origin of Life - Nick Lane",
-        "source": "Gresham College",
-        "url": "https://www.youtube.com/watch?v=vEZJdK5hhvo"
-      }
-    ],
-    "sections": [
-      {
-        "id": "top",
-        "title": "Don't Miss",
-        "minutes": 3
-      },
-      {
-        "id": "finance",
-        "title": "Markets and Money",
-        "minutes": 5
-      },
-      {
-        "id": "nutrition",
-        "title": "Keto Kitchen",
-        "minutes": 5
-      },
-      {
-        "id": "industry",
-        "title": "Industry Watch",
-        "minutes": 6
-      },
-      {
-        "id": "deepdive",
-        "title": "Deep Dive of the Day",
-        "minutes": 9
-      },
-      {
-        "id": "science",
-        "title": "Cosmos and Life",
-        "minutes": 3
-      },
-      {
-        "id": "world",
-        "title": "World and India",
-        "minutes": 3
-      },
-      {
-        "id": "sports",
-        "title": "Sports",
-        "minutes": 3
-      },
-      {
-        "id": "culture",
-        "title": "Movies and Music",
-        "minutes": 4
-      },
-      {
-        "id": "local",
-        "title": "Local and Travel",
-        "minutes": 3
-      }
-    ]
-  },
-  {
     "date": "2026-10-22",
     "issue_no": 3,
     "theme": "Prabhas' Spirit and Fauji news, a Telugu concert in San Ramon and Sid Sriram in Los Angeles join a day of LLM-judge testing, the Denisovans, and a Jio IPO subscribed 5.5 times.",
@@ -588,6 +486,108 @@
         "id": "local",
         "title": "Local and Travel",
         "minutes": 6
+      }
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "issue_no": 2,
+    "theme": "Prompt optimizers under scrutiny, Perseverance's Mars driving record and the Jio Platforms IPO lead the day, while Iran says Hormuz mines stalled tankers and Anirudh's Jailer 2 theme arrives for the movies and music slate.",
+    "items": 90,
+    "minutes": 44,
+    "generated_at": "2026-10-27 13:13 PDT",
+    "top": [
+      {
+        "title": "Do prompt optimizers break requirements they are not scored on? A preregistered study",
+        "source": "arXiv",
+        "url": "https://arxiv.org/pdf/2610.13287"
+      },
+      {
+        "title": "Reflective prompt optimizers: GEPA and SkillOpt tested on locally served reasoning models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2610.26020"
+      },
+      {
+        "title": "Perseverance sets a new off-world driving record on Mars",
+        "source": "ScienceDaily (NASA release)",
+        "url": "https://www.sciencedaily.com/releases/2026/10/261020084818.htm"
+      },
+      {
+        "title": "Iran says its naval mines halted three tankers in the Strait of Hormuz",
+        "source": "Malay Mail",
+        "url": "https://www.malaymail.com/news/world/2026/10/21/iran-says-naval-mines-hit-three-tankers-in-strait-of-hormuz/239963"
+      },
+      {
+        "title": "Jio Platforms IPO is subscribed about 3 times on day one, led by institutional buyers",
+        "source": "Moneycontrol",
+        "url": "https://www.moneycontrol.com/europe/?url=https://www.moneycontrol.com/news/business/ipo/jio-ipo-gmp-live-updates-jio-platforms-ipo-price-band-subscription-status-today-oct-21-liveblog-14056389.html"
+      },
+      {
+        "title": "Anirudh releases the 'Tiger Muthuvel Pandian' theme from Jailer 2 as a single",
+        "source": "Apple Music",
+        "url": "https://music.apple.com/in/album/tiger-muthuvel-pandian-from-jailer-2-single/6824855196"
+      },
+      {
+        "title": "RBI minutes: rate cuts off the table as members flag broadening inflation",
+        "source": "Business Standard",
+        "url": "https://www.business-standard.com/industry/banking/rate-cuts-off-table-as-rbi-mpc-flags-inflation-risks-two-dissent-on-stance-126102101194_1.html"
+      },
+      {
+        "title": "Energy and Matter at the Origin of Life - Nick Lane",
+        "source": "Gresham College",
+        "url": "https://www.youtube.com/watch?v=vEZJdK5hhvo"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 5
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 5
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 6
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 9
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 3
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 3
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 3
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 4
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 3
       }
     ]
   }

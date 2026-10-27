@@ -42,7 +42,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -64,7 +64,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -79,6 +79,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -691,30 +694,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -722,16 +752,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -868,7 +994,7 @@ td.searchbox {
         </td>
         <td class="datebox">
           <div class="date-str">Wednesday, October 21, 2026</div>
-          <div class="weather-str">Sunrise 07:27 · Sunset 18:14 · AQI 38 · Moon: Full moon, 97% lit</div>
+          <div class="weather-str">Sunrise 07:27 · Sunset 18:14 · AQI 36 · Moon: Full moon, 97% lit</div>
         </td>
         <td class="searchbox">
           <form id="briefSearchForm">
@@ -1323,7 +1449,7 @@ td.searchbox {
         <li><a href="https://www.youtube.com/watch?v=zjkowlPMxUo" target="_blank" rel="noopener">Planning a New Zealand Trip? Do NOT Book Anything Yet!</a> &mdash; <cite>Virtual Journeys with Michael Nees</cite></li>
       </ol>
     </details>
-    <p>Compiled on 2026-10-27 10:56 PDT by research intelligence agents from verified sources. Private and calibrated to your context.</p>
+    <p>Compiled on 2026-10-27 13:13 PDT by research intelligence agents from verified sources. Private and calibrated to your context.</p>
   </div>
 </div>
 <script>
