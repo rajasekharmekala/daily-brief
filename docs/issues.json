@@ -1,97 +1,5 @@
 [
   {
-    "date": "2026-10-25",
-    "issue_no": 5,
-    "theme": "From bioenergetic constraints on complex life and audits in agent evaluation to Big Tech earnings week, autumn keto cooking, and festival-season Telugu premieres.",
-    "items": 90,
-    "minutes": 36,
-    "generated_at": "2026-10-27 10:48 PDT",
-    "top": [
-      {
-        "title": "An audit finds an agent benchmark scoring flaw",
-        "source": "arXiv",
-        "url": "https://arxiv.org/abs/2610.16067"
-      },
-      {
-        "title": "NASA’s Hubble Charts Path for Roman with Gravitational Lenses",
-        "source": "NASA Science",
-        "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-charts-path-for-roman-with-gravitational-lenses/"
-      },
-      {
-        "title": "The Emerging View on the Origin and Early Evolution of Eukaryotic Cells",
-        "source": "Nature",
-        "url": "https://www.nature.com/articles/s41586-024-07677-6"
-      },
-      {
-        "title": "Big Tech Earnings Schedule: Alphabet, Microsoft, Meta, and Apple Report October 27-30",
-        "source": "Yahoo Finance Calendar",
-        "url": "https://finance.yahoo.com/calendar/earnings"
-      },
-      {
-        "title": "Devara Part 1 Crosses 40-Day Theatrical Run Ahead of Digital Streaming Premiere",
-        "source": "Times of India",
-        "url": "https://timesofindia.indiatimes.com/entertainment/telugu/movies/news"
-      },
-      {
-        "title": "GitHub Copilot in Teams can turn issue notifications into pull requests",
-        "source": "GitHub Changelog",
-        "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/"
-      }
-    ],
-    "sections": [
-      {
-        "id": "top",
-        "title": "Don't Miss",
-        "minutes": 2
-      },
-      {
-        "id": "finance",
-        "title": "Markets and Money",
-        "minutes": 3
-      },
-      {
-        "id": "nutrition",
-        "title": "Keto Kitchen",
-        "minutes": 6
-      },
-      {
-        "id": "industry",
-        "title": "Industry Watch",
-        "minutes": 3
-      },
-      {
-        "id": "deepdive",
-        "title": "Deep Dive of the Day",
-        "minutes": 9
-      },
-      {
-        "id": "science",
-        "title": "Cosmos and Life",
-        "minutes": 3
-      },
-      {
-        "id": "world",
-        "title": "World and India",
-        "minutes": 2
-      },
-      {
-        "id": "sports",
-        "title": "Sports",
-        "minutes": 2
-      },
-      {
-        "id": "culture",
-        "title": "Movies and Music",
-        "minutes": 4
-      },
-      {
-        "id": "local",
-        "title": "Local and Travel",
-        "minutes": 2
-      }
-    ]
-  },
-  {
     "date": "2026-10-20",
     "issue_no": 1,
     "theme": "LLM judges that flip their own verdicts, OpenCode 2.1 and Salesforce's $5.7 billion Braze deal lead the day, while Euclid finds a comet, Hormuz tensions climb, and Diwali weekend events open in the South Bay.",
@@ -491,6 +399,98 @@
         "id": "local",
         "title": "Local and Travel",
         "minutes": 3
+      }
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "issue_no": 5,
+    "theme": "From bioenergetic constraints on complex life and audits in agent evaluation to Big Tech earnings week, autumn keto cooking, and festival-season Telugu premieres.",
+    "items": 90,
+    "minutes": 36,
+    "generated_at": "2026-10-27 10:56 PDT",
+    "top": [
+      {
+        "title": "An audit finds an agent benchmark scoring flaw",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2610.16067"
+      },
+      {
+        "title": "NASA’s Hubble Charts Path for Roman with Gravitational Lenses",
+        "source": "NASA Science",
+        "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-charts-path-for-roman-with-gravitational-lenses/"
+      },
+      {
+        "title": "The Emerging View on the Origin and Early Evolution of Eukaryotic Cells",
+        "source": "Nature",
+        "url": "https://www.nature.com/articles/s41586-024-07677-6"
+      },
+      {
+        "title": "Big Tech Earnings Schedule: Alphabet, Microsoft, Meta, and Apple Report October 27-30",
+        "source": "Yahoo Finance Calendar",
+        "url": "https://finance.yahoo.com/calendar/earnings"
+      },
+      {
+        "title": "Devara Part 1 Crosses 40-Day Theatrical Run Ahead of Digital Streaming Premiere",
+        "source": "Times of India",
+        "url": "https://timesofindia.indiatimes.com/entertainment/telugu/movies/news"
+      },
+      {
+        "title": "GitHub Copilot in Teams can turn issue notifications into pull requests",
+        "source": "GitHub Changelog",
+        "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 2
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 3
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 6
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 3
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 9
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 3
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 2
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 2
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 4
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 2
       }
     ]
   }
