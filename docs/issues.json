@@ -1,107 +1,5 @@
 [
   {
-    "date": "2026-10-22",
-    "issue_no": 3,
-    "theme": "Prabhas' Spirit and Fauji news, a Telugu concert in San Ramon and Sid Sriram in Los Angeles join a day of LLM-judge testing, the Denisovans, and a Jio IPO subscribed 5.5 times.",
-    "items": 99,
-    "minutes": 48,
-    "generated_at": "2026-10-27 13:14 PDT",
-    "top": [
-      {
-        "title": "BATA Deepavali Sambaralu with singer Sameera Bharadwaj, San Ramon",
-        "source": "Bay Area Telugu Association (official event page; tickets via Sulekha)",
-        "url": "https://www.bata.org/events/14"
-      },
-      {
-        "title": "Sid Sriram live at Blue Note Los Angeles, two shows on 2026-11-13",
-        "source": "Blue Note Los Angeles (also listed on Live Nation and Ticketmaster)",
-        "url": "https://www.bluenotejazz.com/la/tm-event/sid-sriram/"
-      },
-      {
-        "title": "Prabhas' Spirit moves to October 29, 2027, after Fauji's delay",
-        "source": "Telugu Cinema",
-        "url": "https://telugucinema.com/news/its-official-prabhas-spirit-postponed-to-october-2027"
-      },
-      {
-        "title": "Yeshanagula video song from The Paradise released",
-        "source": "Asianet Newsable",
-        "url": "https://newsable.asianetnews.com/entertainment/nani-and-keerthy-suresh-yeshanagula-video-song-from-the-paradise-released-articleshow-c79eskr"
-      },
-      {
-        "title": "SANE: automated metamorphic testing for LLM judges",
-        "source": "arXiv",
-        "url": "https://arxiv.org/abs/2610.28886"
-      },
-      {
-        "title": "This is what the mysterious Denisovans looked like",
-        "source": "Nature",
-        "url": "https://www.nature.com/articles/d41586-026-03360-0"
-      },
-      {
-        "title": "Jio Platforms IPO subscribed 5.54 times on day two, with institutional buyers leading",
-        "source": "CNBC-TV18",
-        "url": "https://www.cnbctv18.com/market/jio-platforms-ipo-day-2-live-updates-qib-nii-retail-subscription-total-bids-gmp-valuation-lot-size-price-listing-liveblog-20016507.htm"
-      },
-      {
-        "title": "Samson and Dhir power India to a record T20I chase in Christchurch",
-        "source": "Cricbuzz",
-        "url": "https://www.cricbuzz.com/cricket-news/140608/samson-blitz-dhir-finish-help-india-chase-down-record-total"
-      }
-    ],
-    "sections": [
-      {
-        "id": "top",
-        "title": "Don't Miss",
-        "minutes": 3
-      },
-      {
-        "id": "finance",
-        "title": "Markets and Money",
-        "minutes": 4
-      },
-      {
-        "id": "nutrition",
-        "title": "Keto Kitchen",
-        "minutes": 7
-      },
-      {
-        "id": "industry",
-        "title": "Industry Watch",
-        "minutes": 6
-      },
-      {
-        "id": "deepdive",
-        "title": "Deep Dive of the Day",
-        "minutes": 8
-      },
-      {
-        "id": "science",
-        "title": "Cosmos and Life",
-        "minutes": 3
-      },
-      {
-        "id": "world",
-        "title": "World and India",
-        "minutes": 4
-      },
-      {
-        "id": "sports",
-        "title": "Sports",
-        "minutes": 3
-      },
-      {
-        "id": "culture",
-        "title": "Movies and Music",
-        "minutes": 7
-      },
-      {
-        "id": "local",
-        "title": "Local and Travel",
-        "minutes": 3
-      }
-    ]
-  },
-  {
     "date": "2026-10-23",
     "issue_no": 4,
     "theme": "Automated prompt optimization and agent trace isolation lead today's issue, alongside Indian market cross-currents, Amaravati infrastructure backing, festive Tollywood releases, and an Andhra autumn keto menu.",
@@ -583,6 +481,108 @@
         "id": "culture",
         "title": "Movies and Music",
         "minutes": 4
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 3
+      }
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "issue_no": 3,
+    "theme": "Prabhas' Spirit and Fauji news, a Telugu concert in San Ramon and Sid Sriram in Los Angeles join a day of LLM-judge testing, the Denisovans, and a Jio IPO subscribed 5.5 times.",
+    "items": 99,
+    "minutes": 48,
+    "generated_at": "2026-10-27 13:18 PDT",
+    "top": [
+      {
+        "title": "BATA Deepavali Sambaralu with singer Sameera Bharadwaj, San Ramon",
+        "source": "Bay Area Telugu Association (official event page; tickets via Sulekha)",
+        "url": "https://www.bata.org/events/14"
+      },
+      {
+        "title": "Sid Sriram live at Blue Note Los Angeles, two shows on 2026-11-13",
+        "source": "Blue Note Los Angeles (also listed on Live Nation and Ticketmaster)",
+        "url": "https://www.bluenotejazz.com/la/tm-event/sid-sriram/"
+      },
+      {
+        "title": "Prabhas' Spirit moves to October 29, 2027, after Fauji's delay",
+        "source": "Telugu Cinema",
+        "url": "https://telugucinema.com/news/its-official-prabhas-spirit-postponed-to-october-2027"
+      },
+      {
+        "title": "Yeshanagula video song from The Paradise released",
+        "source": "Asianet Newsable",
+        "url": "https://newsable.asianetnews.com/entertainment/nani-and-keerthy-suresh-yeshanagula-video-song-from-the-paradise-released-articleshow-c79eskr"
+      },
+      {
+        "title": "SANE: automated metamorphic testing for LLM judges",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2610.28886"
+      },
+      {
+        "title": "This is what the mysterious Denisovans looked like",
+        "source": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-03360-0"
+      },
+      {
+        "title": "Jio Platforms IPO subscribed 5.54 times on day two, with institutional buyers leading",
+        "source": "CNBC-TV18",
+        "url": "https://www.cnbctv18.com/market/jio-platforms-ipo-day-2-live-updates-qib-nii-retail-subscription-total-bids-gmp-valuation-lot-size-price-listing-liveblog-20016507.htm"
+      },
+      {
+        "title": "Samson and Dhir power India to a record T20I chase in Christchurch",
+        "source": "Cricbuzz",
+        "url": "https://www.cricbuzz.com/cricket-news/140608/samson-blitz-dhir-finish-help-india-chase-down-record-total"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 4
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 7
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 6
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 8
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 3
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 4
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 3
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 7
       },
       {
         "id": "local",
