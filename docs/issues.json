@@ -1,102 +1,5 @@
 [
   {
-    "date": "2026-10-23",
-    "issue_no": 4,
-    "theme": "Automated prompt optimization and agent trace isolation lead today's issue, alongside Indian market cross-currents, Amaravati infrastructure backing, festive Tollywood releases, and an Andhra autumn keto menu.",
-    "items": 100,
-    "minutes": 40,
-    "generated_at": "2026-10-23 13:33 PDT",
-    "top": [
-      {
-        "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-        "source": "arXiv",
-        "url": "https://arxiv.org/abs/2610.31650"
-      },
-      {
-        "title": "OpenCode v1.1.20 adds Multi-Session Workspace Switching and Zen Model Benchmarks",
-        "source": "OpenCode",
-        "url": "https://github.com/opencode-ai/opencode"
-      },
-      {
-        "title": "Nifty and Sensex Suffer Weekly Losses Amid Oil Price Surge and FII Selling",
-        "source": "Reuters India",
-        "url": "https://www.reuters.com/markets/asia/"
-      },
-      {
-        "title": "Andhra Pradesh Secures Multilateral Support for Amaravati Capital Infrastructure Rebuilding",
-        "source": "The Hindu",
-        "url": "https://www.thehindu.com/news/national/andhra-pradesh/"
-      },
-      {
-        "title": "Sound-Horizon-Agnostic Forecast for Constraints on H_0 and Neutrino Masses from BAO and LSST",
-        "source": "arXiv",
-        "url": "https://arxiv.org/abs/2610.31660"
-      },
-      {
-        "title": "BWF Denmark Open 2026: Shi Yuqi and An Se Young Advance to Semifinals in Odense",
-        "source": "BWF World Tour",
-        "url": "https://bwfworldtour.bwfbadminton.com/"
-      },
-      {
-        "title": "Prabhas' Spirit with Sandeep Reddy Vanga: Pre-Production and Action Design Complete",
-        "source": "Telangana Today",
-        "url": "https://telanganatoday.com/entertainment"
-      }
-    ],
-    "sections": [
-      {
-        "id": "top",
-        "title": "Don't Miss",
-        "minutes": 2
-      },
-      {
-        "id": "finance",
-        "title": "Markets and Money",
-        "minutes": 3
-      },
-      {
-        "id": "nutrition",
-        "title": "Keto Kitchen",
-        "minutes": 9
-      },
-      {
-        "id": "industry",
-        "title": "Industry Watch",
-        "minutes": 3
-      },
-      {
-        "id": "deepdive",
-        "title": "Deep Dive of the Day",
-        "minutes": 8
-      },
-      {
-        "id": "science",
-        "title": "Cosmos and Life",
-        "minutes": 2
-      },
-      {
-        "id": "world",
-        "title": "World and India",
-        "minutes": 3
-      },
-      {
-        "id": "sports",
-        "title": "Sports",
-        "minutes": 2
-      },
-      {
-        "id": "culture",
-        "title": "Movies and Music",
-        "minutes": 5
-      },
-      {
-        "id": "local",
-        "title": "Local and Travel",
-        "minutes": 3
-      }
-    ]
-  },
-  {
     "date": "2026-10-25",
     "issue_no": 5,
     "theme": "From bioenergetic constraints on complex life and audits in agent evaluation to Big Tech earnings week, autumn keto cooking, and festival-season Telugu premieres.",
@@ -486,6 +389,103 @@
         "id": "culture",
         "title": "Movies and Music",
         "minutes": 7
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 3
+      }
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "issue_no": 4,
+    "theme": "Automated prompt optimization and agent trace isolation lead today's issue, alongside Indian market cross-currents, Amaravati infrastructure backing, festive Tollywood releases, and an Andhra autumn keto menu.",
+    "items": 100,
+    "minutes": 40,
+    "generated_at": "2026-10-27 10:48 PDT",
+    "top": [
+      {
+        "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2610.31650"
+      },
+      {
+        "title": "OpenCode v1.1.20 adds Multi-Session Workspace Switching and Zen Model Benchmarks",
+        "source": "OpenCode",
+        "url": "https://github.com/opencode-ai/opencode"
+      },
+      {
+        "title": "Nifty and Sensex Suffer Weekly Losses Amid Oil Price Surge and FII Selling",
+        "source": "Reuters India",
+        "url": "https://www.reuters.com/markets/asia/"
+      },
+      {
+        "title": "Andhra Pradesh Secures Multilateral Support for Amaravati Capital Infrastructure Rebuilding",
+        "source": "The Hindu",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/"
+      },
+      {
+        "title": "Sound-Horizon-Agnostic Forecast for Constraints on H_0 and Neutrino Masses from BAO and LSST",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2610.31660"
+      },
+      {
+        "title": "BWF Denmark Open 2026: Shi Yuqi and An Se Young Advance to Semifinals in Odense",
+        "source": "BWF World Tour",
+        "url": "https://bwfworldtour.bwfbadminton.com/"
+      },
+      {
+        "title": "Prabhas' Spirit with Sandeep Reddy Vanga: Pre-Production and Action Design Complete",
+        "source": "Telangana Today",
+        "url": "https://telanganatoday.com/entertainment"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 2
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 3
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 9
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 3
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 8
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 2
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 3
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 2
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 5
       },
       {
         "id": "local",
