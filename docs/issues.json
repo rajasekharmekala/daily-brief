@@ -493,5 +493,102 @@
         "minutes": 2
       }
     ]
+  },
+  {
+    "date": "2026-10-27",
+    "issue_no": 6,
+    "theme": "Broadcom's $63B Anthropic debt facility and Anthropic's 85% gross margins headline massive AI infrastructure moves, alongside Apple's M6 launch, MCP in iWork, and Euclid dark universe data.",
+    "items": 55,
+    "minutes": 20,
+    "generated_at": "2026-10-27 11:36 PDT",
+    "top": [
+      {
+        "title": "Broadcom Arranges Landmark $63 Billion Debt Facility for Anthropic Compute Expansion",
+        "source": "Wall Street Journal",
+        "url": "https://www.wsj.com/finance/broadcom-ceo-intervened-to-seal-63-billion-anthropic-debt-deal-c807754f?st=f24o6c&reflink=desktopwebshare_permalink"
+      },
+      {
+        "title": "Anthropic S-1 IPO Filing Reveals 85% Gross Margins from Running Frontier Models",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/anthropics-85-margin-reality-check-skeptics"
+      },
+      {
+        "title": "Nvidia and Meta Expand AI Partnership: Vera Rubin Deployment and $3B Investment",
+        "source": "Wall Street Journal",
+        "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a?st=4eEQYV&reflink=desktopwebshare_permalink"
+      },
+      {
+        "title": "Google DeepMind Launches Genie 4: Real-Time Interactive World Simulation Model",
+        "source": "Google DeepMind",
+        "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+      },
+      {
+        "title": "Apple Adds Native Model Context Protocol (MCP) Support to Keynote, Pages, and Numbers",
+        "source": "Apple Newsroom",
+        "url": "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/"
+      },
+      {
+        "title": "OpenAI Announces Proof Disproving the Exponential Time Hypothesis and Advances in QFT",
+        "source": "OpenAI Research",
+        "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+      },
+      {
+        "title": "Trend Micro Discloses Israeli Adtech Company Discover-Tech Targeted Starlink Users Worldwide",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/business/media-telecom/alleged-israeli-spy-company-heavily-targeted-starlink-users-sources-say-2026-10-27/"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 2
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 2
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 6
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 2
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 3
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 1
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 1
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 1
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 1
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 1
+      }
+    ]
   }
 ]
