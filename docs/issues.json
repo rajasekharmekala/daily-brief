@@ -1,107 +1,5 @@
 [
   {
-    "date": "2026-10-20",
-    "issue_no": 1,
-    "theme": "LLM judges that flip their own verdicts, OpenCode 2.1 and Salesforce's $5.7 billion Braze deal lead the day, while Euclid finds a comet, Hormuz tensions climb, and Diwali weekend events open in the South Bay.",
-    "items": 115,
-    "minutes": 68,
-    "generated_at": "2026-10-27 13:13 PDT",
-    "top": [
-      {
-        "title": "LLM judges flip verdicts on reruns and answer-order swaps; one fully repeatable judge was right only 51% of the time",
-        "source": "arXiv",
-        "url": "https://arxiv.org/abs/2610.12083"
-      },
-      {
-        "title": "OpenCode 2.1.0 changes SDK, event and plugin contracts and adds Windows persistent terminals",
-        "source": "OpenCode changelog",
-        "url": "https://opencode.ai/changelog"
-      },
-      {
-        "title": "Salesforce agrees to buy customer-engagement platform Braze for about $5.66 billion in cash",
-        "source": "Salesforce",
-        "url": "https://www.salesforce.com/news/press-releases/2026/10/20/salesforce-signs-definitive-agreement-to-acquire-braze/?bc=OTH"
-      },
-      {
-        "title": "Euclid discovers its first new comet, C/2026 S1",
-        "source": "ESA",
-        "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_discovers_new_comet"
-      },
-      {
-        "title": "US and Iran both claim control of the Strait of Hormuz as ship attacks climb",
-        "source": "Al Jazeera",
-        "url": "https://www.aljazeera.com/news/2026/10/17/us-and-iran-both-claim-control-of-strait-of-hormuz-amid-attacks-on-vessels"
-      },
-      {
-        "title": "Satwik-Chirag lose French Open opener to the Popov brothers, a third straight first-round exit",
-        "source": "Sportstar (The Hindu)",
-        "url": "https://sportstar.thehindu.com/badminton/satwik-chirag-lose-french-open-2026-first-round-score-popov-brothers-result-match-highlights/article71605137.ece"
-      },
-      {
-        "title": "Free Diwali carnival with live concert at Plaza de Cesar Chavez, Sat 24 Oct",
-        "source": "AllEvents (organiser: Association of Indo Americans)",
-        "url": "https://allevents.in/san-jose/san-jose-diwali-carnival-festival-of-lights/100001999415257859"
-      },
-      {
-        "title": "Hubble Tension, Explained | Adam Riess",
-        "source": "NOVA PBS Official",
-        "url": "https://www.youtube.com/watch?v=8OW7HrB6wL0"
-      }
-    ],
-    "sections": [
-      {
-        "id": "top",
-        "title": "Don't Miss",
-        "minutes": 3
-      },
-      {
-        "id": "finance",
-        "title": "Markets and Money",
-        "minutes": 8
-      },
-      {
-        "id": "nutrition",
-        "title": "Keto Kitchen",
-        "minutes": 10
-      },
-      {
-        "id": "industry",
-        "title": "Industry Watch",
-        "minutes": 9
-      },
-      {
-        "id": "deepdive",
-        "title": "Deep Dive of the Day",
-        "minutes": 10
-      },
-      {
-        "id": "science",
-        "title": "Cosmos and Life",
-        "minutes": 6
-      },
-      {
-        "id": "world",
-        "title": "World and India",
-        "minutes": 6
-      },
-      {
-        "id": "sports",
-        "title": "Sports",
-        "minutes": 5
-      },
-      {
-        "id": "culture",
-        "title": "Movies and Music",
-        "minutes": 5
-      },
-      {
-        "id": "local",
-        "title": "Local and Travel",
-        "minutes": 6
-      }
-    ]
-  },
-  {
     "date": "2026-10-21",
     "issue_no": 2,
     "theme": "Prompt optimizers under scrutiny, Perseverance's Mars driving record and the Jio Platforms IPO lead the day, while Iran says Hormuz mines stalled tankers and Anirudh's Jailer 2 theme arrives for the movies and music slate.",
@@ -588,6 +486,108 @@
         "id": "local",
         "title": "Local and Travel",
         "minutes": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "issue_no": 1,
+    "theme": "LLM judges that flip their own verdicts, OpenCode 2.1 and Salesforce's $5.7 billion Braze deal lead the day, while Euclid finds a comet, Hormuz tensions climb, and Diwali weekend events open in the South Bay.",
+    "items": 115,
+    "minutes": 68,
+    "generated_at": "2026-10-27 13:14 PDT",
+    "top": [
+      {
+        "title": "LLM judges flip verdicts on reruns and answer-order swaps; one fully repeatable judge was right only 51% of the time",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2610.12083"
+      },
+      {
+        "title": "OpenCode 2.1.0 changes SDK, event and plugin contracts and adds Windows persistent terminals",
+        "source": "OpenCode changelog",
+        "url": "https://opencode.ai/changelog"
+      },
+      {
+        "title": "Salesforce agrees to buy customer-engagement platform Braze for about $5.66 billion in cash",
+        "source": "Salesforce",
+        "url": "https://www.salesforce.com/news/press-releases/2026/10/20/salesforce-signs-definitive-agreement-to-acquire-braze/?bc=OTH"
+      },
+      {
+        "title": "Euclid discovers its first new comet, C/2026 S1",
+        "source": "ESA",
+        "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_discovers_new_comet"
+      },
+      {
+        "title": "US and Iran both claim control of the Strait of Hormuz as ship attacks climb",
+        "source": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/17/us-and-iran-both-claim-control-of-strait-of-hormuz-amid-attacks-on-vessels"
+      },
+      {
+        "title": "Satwik-Chirag lose French Open opener to the Popov brothers, a third straight first-round exit",
+        "source": "Sportstar (The Hindu)",
+        "url": "https://sportstar.thehindu.com/badminton/satwik-chirag-lose-french-open-2026-first-round-score-popov-brothers-result-match-highlights/article71605137.ece"
+      },
+      {
+        "title": "Free Diwali carnival with live concert at Plaza de Cesar Chavez, Sat 24 Oct",
+        "source": "AllEvents (organiser: Association of Indo Americans)",
+        "url": "https://allevents.in/san-jose/san-jose-diwali-carnival-festival-of-lights/100001999415257859"
+      },
+      {
+        "title": "Hubble Tension, Explained | Adam Riess",
+        "source": "NOVA PBS Official",
+        "url": "https://www.youtube.com/watch?v=8OW7HrB6wL0"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 8
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 10
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 9
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 10
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 6
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 6
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 5
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 5
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 6
       }
     ]
   }
