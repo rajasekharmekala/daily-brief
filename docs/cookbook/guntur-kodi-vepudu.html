@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Guntur Kodi Vepudu (Fiery Chicken Fry) · Keto Andhra Cookbook</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<style>/* Techmeme-inspired stylesheet for The Morning Brief */
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -62,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -77,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -689,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -720,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -836,77 +961,192 @@ td.searchbox {
     gap: 0.8em;
   }
 }
+
 </style>
 </head>
-<body class="ck">
-<header class="hero" style="padding:24px 0 16px;">
-  <div class="wrap">
-    <div class="top-bar" style="border-bottom:none;padding-bottom:0;">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO RECIPE DOSSIER</span>
-        <span class="issue-tag">First Added: 2026-10-20</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="index.html"><strong>&larr; Back to Cookbook Directory</strong></a>
+        <a href="../index.html">The Morning Brief Archive</a>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>Added: 2026-10-20</span>
+        <span>Meal: Dinner</span>
       </div>
     </div>
-    <p style="margin:16px 0 0">
-      <a class="linkbtn" href="index.html" style="--accent:#10b981">← Back to Cookbook Index</a>
-    </p>
-  </div>
-</header>
 
-<main class="wrap" style="--accent:#10b981;margin-top:28px;">
-  <article class="recipe" id="r-guntur-kodi-vepudu">
-  <div class="rhead">
-    <span class="pill">Dinner</span>
-    <span class="heat" title="Heat 5 of 5">Heat <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
-    <span class="rmeta">Guntur</span>
+    <!-- Header Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Regional Low-Carb Dossier</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Dinner Protocol</div>
+        </td>
+        <td class="searchbox">
+          <a class="sbti-btn" href="index.html">All Recipes &rarr;</a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <h4>Guntur Kodi Vepudu (Fiery Chicken Fry)<small lang="te">గుంటూరు కోడి వేపుడు</small></h4>
-<p class="blurb">A dark, dry, brick-red chicken fry that clings to every piece: freshly roasted coriander-pepper powder, deep-browned onion, Guntur chilli and a curry-leaf crackle. Boneless thigh keeps it juicy and puts it on the table in under half an hour.</p>  <ul class="rstats">
-    <li><b>6.8 g</b> net carbs</li>
-    <li><b>42 g</b> protein</li>
-    <li><b>20 g</b> fat</li>
-    <li><b>387</b> kcal</li>
-    <li>28 min</li>
-    <li>Serves 2</li>
-  </ul>
-  <div class="macrobar" title="Share of calories">
-    <span style="width:48%;background:#e8a317"></span><span style="width:44%;background:#d6336c"></span><span style="width:7%;background:#1c64f2"></span>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Morning Brief Home</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="index.html">All Dishes</a>
+    </div>
   </div>
-  <div class="mlegend"><span style="--c:#e8a317">Fat 48%</span><span style="--c:#d6336c">Protein 44%</span><span style="--c:#1c64f2">Net carbs 7%</span><span>per serving</span></div>
-  <div class="rcols">
-    <div><h5>Ingredients</h5><ul class="ing"><li><span>boneless skinless chicken thigh, cut into 2 cm pieces (weekday swap for bone-in)</span><em>about 3 to 4 thighs · 400 g</em></li><li><span>ginger, crushed</span><em>1 inch piece · 8 g</em></li><li><span>garlic, crushed</span><em>3 to 4 cloves · 10 g</em></li><li><span>lemon juice</span><em>2 tsp · 10 g</em></li><li><span>turmeric powder</span><em>1/4 tsp · 1 g</em></li><li><span>Guntur red chilli powder (marinade)</span><em>1 1/2 tsp · 4 g</em></li><li><span>salt</span><em>3/4 tsp · 3 g</em></li><li><span>whole dried Guntur red chillies (for the roast-and-grind powder)</span><em>3 to 4 chillies · 3 g</em></li><li><span>coriander seeds</span><em>1 tbsp · 6 g</em></li><li><span>cumin seeds</span><em>1 tsp · 2 g</em></li><li><span>whole black peppercorns</span><em>3/4 tsp · 2 g</em></li><li><span>cinnamon and cloves, ground (1 g cinnamon + 0.5 g cloves)</span><em>1-inch stick + 3 cloves · 1.5 g</em></li><li><span>sesame oil (nuvvula noone)</span><em>1 tbsp · 14 g</em></li><li><span>ghee</span><em>1/2 tbsp, plus a little extra if the pan dries · 7 g</em></li><li><span>onion, finely chopped</span><em>about 1/2 small onion · 40 g</em></li><li><span>green chillies, slit</span><em>2 · 10 g</em></li><li><span>fresh curry leaves</span><em>about 2 sprigs, divided · 5 g</em></li><li><span>coriander leaves, chopped</span><em>a small handful · 4 g</em></li></ul></div>
-    <div><h5>Method</h5><ol class="steps"><li>Cut the thighs into 2 cm pieces (small pieces are what give you the crusty, masala-coated Guntur finish). Toss with the crushed ginger and garlic, turmeric, 4 g chilli powder, lemon juice and salt. Leave the bowl on the counter while you make the spice powder (about 8 minutes).</li><li>Set your heavy kadai over medium-low heat. Dry roast the whole dried chillies, coriander seeds, cumin and peppercorns for 90 seconds, shaking the pan, until they smell toasty and the chillies darken a shade; do not let them smoke. Tip onto a plate, add the ground cloves and cinnamon, cool 2 minutes, then grind to a coarse powder.</li><li>Return the same kadai to medium-high heat and add the sesame oil and ghee. When the ghee shimmers, add the chopped onion with a pinch of the salt from the marinade and fry, stirring often, 4 to 5 minutes until the edges are deep golden brown. Add the slit green chillies and half the curry leaves; they will crackle and turn glassy within 20 seconds.</li><li>Add the chicken in a single layer. Turn the heat to high and leave it untouched for 2 minutes to sear, then stir and fry hard for 6 to 7 minutes, until all the juices the thigh releases have evaporated and the pieces are browned at the edges (they should reach 74 C / 165 F inside).</li><li>Lower to medium and sprinkle over the ground masala. Fry for 2 to 3 minutes, stirring constantly, until the powder darkens, smells nutty and coats the chicken in a dry crust. Add a teaspoon of ghee if the pan looks parched. Burnt chilli turns bitter, so if it starts to catch, lift the pan off the heat for 10 seconds.</li><li>Finish with the remaining curry leaves, tossed in for the last 30 seconds so they stay green and crisp, a squeeze of lemon if you like, and the coriander leaves. Serve straight from the pan.</li></ol></div>
+
+  <div style="margin-top: 1.5em;">
+    <article class="recipe-card" id="r-guntur-kodi-vepudu">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3em;">
+    <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span>
+    <span style="font-size:0.88em;color:#666666;">Guntur · Heat 5/5 · 28m</span>
   </div>
-<div class="rtips"><h5>Make it taste like home</h5><ul><li>Taste tip: roasting and grinding the powder fresh is the single biggest difference versus a store-bought masala; make a double batch of the roast-and-grind powder (chillies, coriander, cumin, pepper, clove, cinnamon) and keep it in a jar for 2 weeks.</li><li>Keto tip: the carbs here come from onion, garlic and the spices, all weighed. Keep the onion to 40 g; do not add extra onion rings to &#39;make it look like the restaurant&#39; without recounting.</li><li>Make-ahead: marinate the chicken in the fridge in the morning (up to 12 hours) and the whole dish takes 15 minutes at night. Leftovers keep 3 days refrigerated and reheat well in a hot dry pan.</li><li>Weekday note: this uses boneless thigh, cut small, for a 28-minute cook. Traditional bone-in country-style kodi vepudu takes 45 to 60 minutes.</li></ul></div><div class="rtips alt"><h5>Swaps</h5><ul><li>Heat 3: halve the whole chillies and use Kashmiri chilli powder for the marinade; heat 5 is as written.</li><li>Use bone-in thigh pieces at the weekend: add 12 minutes of covered cooking after step 4.</li></ul></div>  <div class="rfoot">
-<span>Adapted from <a href="https://www.indianhealthyrecipes.com/chicken-fry" target="_blank" rel="noopener">Chicken Fry (Andhra Kodi Vepudu) - Swasthi&#39;s Recipes</a>, <a href="https://kitchgrow.com/recipes/guntur-kodi-vepudu-andhra-spicy-chicken-fry" target="_blank" rel="noopener">Guntur Kodi Vepudu (Andhra Spicy Chicken Fry) - Kitchgrow</a>, <a href="https://theyummydelights.com/andhra-chicken-fry-recipe/" target="_blank" rel="noopener">Andhra Chicken Fry (Kodi Vepudu) - The Yummy Delights</a>, <a href="https://www.sailusfood.com/kodi-vepudu-simple-chicken-fry" target="_blank" rel="noopener">Kodi Vepudu - Simple Chicken Fry - Sailu&#39;s Kitchen</a></span>  </div>
+  <h3>
+Guntur Kodi Vepudu (Fiery Chicken Fry)<small lang="te">గుంటూరు కోడి వేపుడు</small>  </h3>
+<p class="item-summary" style="margin:0.3em 0 0.5em;">A dark, dry, brick-red chicken fry that clings to every piece: freshly roasted coriander-pepper powder, deep-browned onion, Guntur chilli and a curry-leaf crackle. Boneless thigh keeps it juicy and puts it on the table in under half an hour.</p>  
+  <div class="recipe-macros">
+    <strong>6.8g</strong> net carbs &nbsp;·&nbsp;
+    <strong>42g</strong> protein &nbsp;·&nbsp;
+    <strong>20g</strong> fat &nbsp;·&nbsp;
+    <strong>387</strong> kcal &nbsp;·&nbsp;
+    Serves 2
+  </div>
+
+  <div class="macrobar" title="Macro calorie ratio">
+    <span style="width:48%;background:#d49b20"></span>
+    <span style="width:44%;background:#902050"></span>
+    <span style="width:7%;background:#174a61"></span>
+  </div>
+  <div class="mlegend">
+    <span style="color:#a87410;">● Fat 48%</span>
+    <span style="color:#902050;">● Protein 44%</span>
+    <span style="color:#174a61;">● Net Carbs 7%</span>
+  </div>
+
+  <div class="recipe-cols">
+    <div>
+      <h5>Ingredients</h5>
+      <ul class="ing">
+        <li>
+          <span>boneless skinless chicken thigh, cut into 2 cm pieces (weekday swap for bone-in)</span>
+          <em>about 3 to 4 thighs · 400g</em>
+        </li>
+        <li>
+          <span>ginger, crushed</span>
+          <em>1 inch piece · 8g</em>
+        </li>
+        <li>
+          <span>garlic, crushed</span>
+          <em>3 to 4 cloves · 10g</em>
+        </li>
+        <li>
+          <span>lemon juice</span>
+          <em>2 tsp · 10g</em>
+        </li>
+        <li>
+          <span>turmeric powder</span>
+          <em>1/4 tsp · 1g</em>
+        </li>
+        <li>
+          <span>Guntur red chilli powder (marinade)</span>
+          <em>1 1/2 tsp · 4g</em>
+        </li>
+        <li>
+          <span>salt</span>
+          <em>3/4 tsp · 3g</em>
+        </li>
+        <li>
+          <span>whole dried Guntur red chillies (for the roast-and-grind powder)</span>
+          <em>3 to 4 chillies · 3g</em>
+        </li>
+        <li>
+          <span>coriander seeds</span>
+          <em>1 tbsp · 6g</em>
+        </li>
+        <li>
+          <span>cumin seeds</span>
+          <em>1 tsp · 2g</em>
+        </li>
+        <li>
+          <span>whole black peppercorns</span>
+          <em>3/4 tsp · 2g</em>
+        </li>
+        <li>
+          <span>cinnamon and cloves, ground (1 g cinnamon + 0.5 g cloves)</span>
+          <em>1-inch stick + 3 cloves · 1.5g</em>
+        </li>
+        <li>
+          <span>sesame oil (nuvvula noone)</span>
+          <em>1 tbsp · 14g</em>
+        </li>
+        <li>
+          <span>ghee</span>
+          <em>1/2 tbsp, plus a little extra if the pan dries · 7g</em>
+        </li>
+        <li>
+          <span>onion, finely chopped</span>
+          <em>about 1/2 small onion · 40g</em>
+        </li>
+        <li>
+          <span>green chillies, slit</span>
+          <em>2 · 10g</em>
+        </li>
+        <li>
+          <span>fresh curry leaves</span>
+          <em>about 2 sprigs, divided · 5g</em>
+        </li>
+        <li>
+          <span>coriander leaves, chopped</span>
+          <em>a small handful · 4g</em>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Method</h5>
+      <ol class="steps">
+        <li>Cut the thighs into 2 cm pieces (small pieces are what give you the crusty, masala-coated Guntur finish). Toss with the crushed ginger and garlic, turmeric, 4 g chilli powder, lemon juice and salt. Leave the bowl on the counter while you make the spice powder (about 8 minutes).</li>
+        <li>Set your heavy kadai over medium-low heat. Dry roast the whole dried chillies, coriander seeds, cumin and peppercorns for 90 seconds, shaking the pan, until they smell toasty and the chillies darken a shade; do not let them smoke. Tip onto a plate, add the ground cloves and cinnamon, cool 2 minutes, then grind to a coarse powder.</li>
+        <li>Return the same kadai to medium-high heat and add the sesame oil and ghee. When the ghee shimmers, add the chopped onion with a pinch of the salt from the marinade and fry, stirring often, 4 to 5 minutes until the edges are deep golden brown. Add the slit green chillies and half the curry leaves; they will crackle and turn glassy within 20 seconds.</li>
+        <li>Add the chicken in a single layer. Turn the heat to high and leave it untouched for 2 minutes to sear, then stir and fry hard for 6 to 7 minutes, until all the juices the thigh releases have evaporated and the pieces are browned at the edges (they should reach 74 C / 165 F inside).</li>
+        <li>Lower to medium and sprinkle over the ground masala. Fry for 2 to 3 minutes, stirring constantly, until the powder darkens, smells nutty and coats the chicken in a dry crust. Add a teaspoon of ghee if the pan looks parched. Burnt chilli turns bitter, so if it starts to catch, lift the pan off the heat for 10 seconds.</li>
+        <li>Finish with the remaining curry leaves, tossed in for the last 30 seconds so they stay green and crisp, a squeeze of lemon if you like, and the coriander leaves. Serve straight from the pan.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rtips">
+    <h5>Make it taste like home</h5>
+    <ul>
+<li>Taste tip: roasting and grinding the powder fresh is the single biggest difference versus a store-bought masala; make a double batch of the roast-and-grind powder (chillies, coriander, cumin, pepper, clove, cinnamon) and keep it in a jar for 2 weeks.</li><li>Keto tip: the carbs here come from onion, garlic and the spices, all weighed. Keep the onion to 40 g; do not add extra onion rings to &#39;make it look like the restaurant&#39; without recounting.</li><li>Make-ahead: marinate the chicken in the fridge in the morning (up to 12 hours) and the whole dish takes 15 minutes at night. Leftovers keep 3 days refrigerated and reheat well in a hot dry pan.</li><li>Weekday note: this uses boneless thigh, cut small, for a 28-minute cook. Traditional bone-in country-style kodi vepudu takes 45 to 60 minutes.</li>    </ul>
+  </div>
+
+  <div class="rtips alt">
+    <h5>Keto Swaps & Variations</h5>
+    <ul>
+<li>Heat 3: halve the whole chillies and use Kashmiri chilli powder for the marinade; heat 5 is as written.</li><li>Use bone-in thigh pieces at the weekend: add 12 minutes of covered cooking after step 4.</li>    </ul>
+  </div>
+
+  <div class="rfoot">
+    <span>Adapted from: <a href="https://www.indianhealthyrecipes.com/chicken-fry" target="_blank" rel="noopener">Chicken Fry (Andhra Kodi Vepudu) - Swasthi&#39;s Recipes</a>, <a href="https://kitchgrow.com/recipes/guntur-kodi-vepudu-andhra-spicy-chicken-fry" target="_blank" rel="noopener">Guntur Kodi Vepudu (Andhra Spicy Chicken Fry) - Kitchgrow</a>, <a href="https://theyummydelights.com/andhra-chicken-fry-recipe/" target="_blank" rel="noopener">Andhra Chicken Fry (Kodi Vepudu) - The Yummy Delights</a>, <a href="https://www.sailusfood.com/kodi-vepudu-simple-chicken-fry" target="_blank" rel="noopener">Kodi Vepudu - Simple Chicken Fry - Sailu&#39;s Kitchen</a></span>
+  </div>
 </article>
 
-  <p class="fineprint">General cooking and nutrition protocol, not medical advice. Macros are precisely computed from sourced ingredient values.</p>
-</main>
-<div style="height:60px"></div>
-
-<script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
-    });
-  }
-})();
-</script>
+    <p style="font-size:0.85em;color:#777777;margin-top:1.5em;border-top:1px solid #eee;padding-top:0.8em;">
+      General cooking and nutrition protocol, not medical advice. Macros are computed from verified whole-food ingredient weights.
+    </p>
+  </div>
+</div>
 </body>
 </html>

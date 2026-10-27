@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Curry-Leaf Masala Omelette with Coconut-Chilli Pachadi · Keto Andhra Cookbook</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<style>/* Techmeme-inspired stylesheet for The Morning Brief */
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -62,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -77,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -689,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -720,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -836,77 +961,212 @@ td.searchbox {
     gap: 0.8em;
   }
 }
+
 </style>
 </head>
-<body class="ck">
-<header class="hero" style="padding:24px 0 16px;">
-  <div class="wrap">
-    <div class="top-bar" style="border-bottom:none;padding-bottom:0;">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO RECIPE DOSSIER</span>
-        <span class="issue-tag">First Added: 2026-10-20</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="index.html"><strong>&larr; Back to Cookbook Directory</strong></a>
+        <a href="../index.html">The Morning Brief Archive</a>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>Added: 2026-10-20</span>
+        <span>Meal: Breakfast</span>
       </div>
     </div>
-    <p style="margin:16px 0 0">
-      <a class="linkbtn" href="index.html" style="--accent:#10b981">← Back to Cookbook Index</a>
-    </p>
-  </div>
-</header>
 
-<main class="wrap" style="--accent:#10b981;margin-top:28px;">
-  <article class="recipe" id="r-curry-leaf-masala-omelette-coconut-chilli-pachadi">
-  <div class="rhead">
-    <span class="pill">Breakfast</span>
-    <span class="heat" title="Heat 4 of 5">Heat <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span>
-    <span class="rmeta">Andhra</span>
+    <!-- Header Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Regional Low-Carb Dossier</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Breakfast Protocol</div>
+        </td>
+        <td class="searchbox">
+          <a class="sbti-btn" href="index.html">All Recipes &rarr;</a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <h4>Curry-Leaf Masala Omelette with Coconut-Chilli Pachadi<small lang="te">కరివేపాకు మసాలా ఆమ్లెట్, కొబ్బరి పచ్చిమిర్చి పచ్చడి</small></h4>
-<p class="blurb">A thick, fluffy omelette flecked with finely chopped curry leaves, ginger and green chilli, served with a thick coconut and green-chilli pachadi that has a crackling mustard-and-curry-leaf tempering on top. Breakfast with real Andhra attitude in 22 minutes.</p>  <ul class="rstats">
-    <li><b>5.8 g</b> net carbs</li>
-    <li><b>21 g</b> protein</li>
-    <li><b>32 g</b> fat</li>
-    <li><b>400</b> kcal</li>
-    <li>22 min</li>
-    <li>Serves 2</li>
-  </ul>
-  <div class="macrobar" title="Share of calories">
-    <span style="width:73%;background:#e8a317"></span><span style="width:21%;background:#d6336c"></span><span style="width:6%;background:#1c64f2"></span>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Morning Brief Home</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="index.html">All Dishes</a>
+    </div>
   </div>
-  <div class="mlegend"><span style="--c:#e8a317">Fat 73%</span><span style="--c:#d6336c">Protein 21%</span><span style="--c:#1c64f2">Net carbs 6%</span><span>per serving</span></div>
-  <div class="rcols">
-    <div><h5>Ingredients</h5><ul class="ing"><li><span>eggs, large (omelette)</span><em>6 large eggs, 3 per omelette · 300 g</em></li><li><span>heavy cream (for a fluffy set)</span><em>4 tsp · 20 g</em></li><li><span>onion, very finely chopped</span><em>about 1.5 tbsp · 18 g</em></li><li><span>green chillies, finely chopped (omelette)</span><em>2 · 8 g</em></li><li><span>curry leaves, finely sliced (omelette)</span><em>about 20 leaves · 4 g</em></li><li><span>ginger, minced (omelette)</span><em>a 1.5 cm piece · 3 g</em></li><li><span>coriander leaves, chopped</span><em>a small handful · 6 g</em></li><li><span>turmeric powder</span><em>a pinch · 0.5 g</em></li><li><span>black pepper</span><em>a pinch · 0.5 g</em></li><li><span>Guntur red chilli powder (karam)</span><em>1/3 tsp · 1 g</em></li><li><span>salt (omelette)</span><em>scant 1/2 tsp · 2.5 g</em></li><li><span>ghee, for cooking</span><em>1 tbsp · 14 g</em></li><li><span>fresh or thawed frozen grated coconut (pachadi)</span><em>about 1/4 cup, packed · 25 g</em></li><li><span>green chillies, roughly chopped (pachadi)</span><em>2 to 3 · 10 g</em></li><li><span>garlic (pachadi)</span><em>1 small clove · 2 g</em></li><li><span>ginger (pachadi)</span><em>1 cm piece · 2 g</em></li><li><span>cumin seeds (pachadi)</span><em>a pinch · 0.5 g</em></li><li><span>lemon juice (pachadi)</span><em>1.5 tsp · 8 g</em></li><li><span>salt (pachadi)</span><em>1/6 tsp · 1 g</em></li><li><span>coconut oil, for tempering</span><em>1 tsp · 5 g</em></li><li><span>mustard seeds, for tempering</span><em>1/3 tsp · 1 g</em></li><li><span>dried red chilli, broken, for tempering</span><em>1 small · 1 g</em></li><li><span>curry leaves, whole, for tempering</span><em>about 10 leaves · 2 g</em></li></ul></div>
-    <div><h5>Method</h5><ol class="steps"><li>Make the pachadi first. Blitz the coconut, green chillies, garlic, ginger, cumin, lemon juice, 1 g salt and 3 to 4 tablespoons of water for 20 to 30 seconds into a thick, slightly coarse chutney; it should hold a spoon, not pour. Scrape into a small bowl.</li><li>Temper it: heat the coconut oil in a small pan over medium. Add the mustard seeds, and when they crackle (about 15 seconds) add the dried chilli and whole curry leaves for 10 seconds, until the leaves stop spluttering. Tip it over the pachadi, without stirring, so the tempering sits on top.</li><li>Beat the eggs with the cream, turmeric, pepper, karam and 2.5 g salt for about 30 seconds, until evenly yellow with no streaks. Mix the chopped onion, green chillies, ginger, sliced curry leaves and coriander together in a small bowl and divide into two portions.</li><li>Heat half the ghee (7 g) in the nonstick pan over medium. Add one portion of the masala and fry for 40 to 60 seconds, until the onion turns translucent and the curry leaves smell toasty. This keeps the omelette from going watery and gives it a cooked-masala flavour.</li><li>Pour in half the egg mix (3 eggs) and swirl to cover the pan. Reduce to medium-low, cover, and cook 2 minutes until the base is golden and the top is just set but still glossy. Fold in half and slide onto a plate.</li><li>Wipe the pan, add the remaining ghee and masala, and repeat for the second omelette. Serve each with half the pachadi on the side. Eat hot, dipping each wedge of omelette into the pachadi.</li></ol></div>
+
+  <div style="margin-top: 1.5em;">
+    <article class="recipe-card" id="r-curry-leaf-masala-omelette-coconut-chilli-pachadi">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3em;">
+    <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">breakfast</span>
+    <span style="font-size:0.88em;color:#666666;">Andhra · Heat 4/5 · 22m</span>
   </div>
-<div class="rtips"><h5>Make it taste like home</h5><ul><li>Flavour: slice the curry leaves very fine (stack and cut across) so every bite has some. Cooking the masala in the ghee first gives a sweeter, rounder flavour than raw onion folded into the eggs.</li><li>Keto: use unsweetened coconut. Fresh or thawed frozen grated coconut (Indian grocery freezer aisle) gives the right creamy texture, and a small onion measure keeps the omelette near 6 g net carbs. The traditional chana dal and tamarind in a kobbari pachadi are left out; lemon juice supplies the tang.</li><li>Make ahead: the pachadi (without tempering) keeps 2 days chilled; re-temper before serving. The omelette is best eaten hot, within minutes.</li></ul></div><div class="rtips alt"><h5>Swaps</h5><ul><li>Lower heat (to about 2): omit the green chilli and karam from the omelette and use 1 green chilli in the pachadi.</li><li>Dairy-free: replace the cream with a spoon of water and the ghee with coconut oil.</li></ul></div>  <div class="rfoot">
-<span>Adapted from <a href="https://www.whiskaffair.com/indian-masala-omelette/" target="_blank" rel="noopener">Masala Omelette, Whisk Affair (cooking the masala first; curry leaf and coconut oil South Indian variation)</a>, <a href="https://rustictadka.com/egg-omelette-recipe/" target="_blank" rel="noopener">Masala Egg Omelette, Rustic Tadka (curry leaf and grated coconut in the south)</a>, <a href="https://www.whiskaffair.com/kobbari-pachadi-recipe/" target="_blank" rel="noopener">Kobbari Pachadi (Andhra Coconut Chutney), Whisk Affair: fresh coconut, green chilli, mustard and curry leaf tempering</a>, <a href="https://www.fromsushmaskitchen.com/2021/05/velluli-kobbari-karam-instant.html" target="_blank" rel="noopener">Velluli Kobbari Karam (coconut, green chilli, garlic, cumin), Sushma&#39;s Kitchen</a></span>  </div>
+  <h3>
+Curry-Leaf Masala Omelette with Coconut-Chilli Pachadi<small lang="te">కరివేపాకు మసాలా ఆమ్లెట్, కొబ్బరి పచ్చిమిర్చి పచ్చడి</small>  </h3>
+<p class="item-summary" style="margin:0.3em 0 0.5em;">A thick, fluffy omelette flecked with finely chopped curry leaves, ginger and green chilli, served with a thick coconut and green-chilli pachadi that has a crackling mustard-and-curry-leaf tempering on top. Breakfast with real Andhra attitude in 22 minutes.</p>  
+  <div class="recipe-macros">
+    <strong>5.8g</strong> net carbs &nbsp;·&nbsp;
+    <strong>21g</strong> protein &nbsp;·&nbsp;
+    <strong>32g</strong> fat &nbsp;·&nbsp;
+    <strong>400</strong> kcal &nbsp;·&nbsp;
+    Serves 2
+  </div>
+
+  <div class="macrobar" title="Macro calorie ratio">
+    <span style="width:73%;background:#d49b20"></span>
+    <span style="width:21%;background:#902050"></span>
+    <span style="width:6%;background:#174a61"></span>
+  </div>
+  <div class="mlegend">
+    <span style="color:#a87410;">● Fat 73%</span>
+    <span style="color:#902050;">● Protein 21%</span>
+    <span style="color:#174a61;">● Net Carbs 6%</span>
+  </div>
+
+  <div class="recipe-cols">
+    <div>
+      <h5>Ingredients</h5>
+      <ul class="ing">
+        <li>
+          <span>eggs, large (omelette)</span>
+          <em>6 large eggs, 3 per omelette · 300g</em>
+        </li>
+        <li>
+          <span>heavy cream (for a fluffy set)</span>
+          <em>4 tsp · 20g</em>
+        </li>
+        <li>
+          <span>onion, very finely chopped</span>
+          <em>about 1.5 tbsp · 18g</em>
+        </li>
+        <li>
+          <span>green chillies, finely chopped (omelette)</span>
+          <em>2 · 8g</em>
+        </li>
+        <li>
+          <span>curry leaves, finely sliced (omelette)</span>
+          <em>about 20 leaves · 4g</em>
+        </li>
+        <li>
+          <span>ginger, minced (omelette)</span>
+          <em>a 1.5 cm piece · 3g</em>
+        </li>
+        <li>
+          <span>coriander leaves, chopped</span>
+          <em>a small handful · 6g</em>
+        </li>
+        <li>
+          <span>turmeric powder</span>
+          <em>a pinch · 0.5g</em>
+        </li>
+        <li>
+          <span>black pepper</span>
+          <em>a pinch · 0.5g</em>
+        </li>
+        <li>
+          <span>Guntur red chilli powder (karam)</span>
+          <em>1/3 tsp · 1g</em>
+        </li>
+        <li>
+          <span>salt (omelette)</span>
+          <em>scant 1/2 tsp · 2.5g</em>
+        </li>
+        <li>
+          <span>ghee, for cooking</span>
+          <em>1 tbsp · 14g</em>
+        </li>
+        <li>
+          <span>fresh or thawed frozen grated coconut (pachadi)</span>
+          <em>about 1/4 cup, packed · 25g</em>
+        </li>
+        <li>
+          <span>green chillies, roughly chopped (pachadi)</span>
+          <em>2 to 3 · 10g</em>
+        </li>
+        <li>
+          <span>garlic (pachadi)</span>
+          <em>1 small clove · 2g</em>
+        </li>
+        <li>
+          <span>ginger (pachadi)</span>
+          <em>1 cm piece · 2g</em>
+        </li>
+        <li>
+          <span>cumin seeds (pachadi)</span>
+          <em>a pinch · 0.5g</em>
+        </li>
+        <li>
+          <span>lemon juice (pachadi)</span>
+          <em>1.5 tsp · 8g</em>
+        </li>
+        <li>
+          <span>salt (pachadi)</span>
+          <em>1/6 tsp · 1g</em>
+        </li>
+        <li>
+          <span>coconut oil, for tempering</span>
+          <em>1 tsp · 5g</em>
+        </li>
+        <li>
+          <span>mustard seeds, for tempering</span>
+          <em>1/3 tsp · 1g</em>
+        </li>
+        <li>
+          <span>dried red chilli, broken, for tempering</span>
+          <em>1 small · 1g</em>
+        </li>
+        <li>
+          <span>curry leaves, whole, for tempering</span>
+          <em>about 10 leaves · 2g</em>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Method</h5>
+      <ol class="steps">
+        <li>Make the pachadi first. Blitz the coconut, green chillies, garlic, ginger, cumin, lemon juice, 1 g salt and 3 to 4 tablespoons of water for 20 to 30 seconds into a thick, slightly coarse chutney; it should hold a spoon, not pour. Scrape into a small bowl.</li>
+        <li>Temper it: heat the coconut oil in a small pan over medium. Add the mustard seeds, and when they crackle (about 15 seconds) add the dried chilli and whole curry leaves for 10 seconds, until the leaves stop spluttering. Tip it over the pachadi, without stirring, so the tempering sits on top.</li>
+        <li>Beat the eggs with the cream, turmeric, pepper, karam and 2.5 g salt for about 30 seconds, until evenly yellow with no streaks. Mix the chopped onion, green chillies, ginger, sliced curry leaves and coriander together in a small bowl and divide into two portions.</li>
+        <li>Heat half the ghee (7 g) in the nonstick pan over medium. Add one portion of the masala and fry for 40 to 60 seconds, until the onion turns translucent and the curry leaves smell toasty. This keeps the omelette from going watery and gives it a cooked-masala flavour.</li>
+        <li>Pour in half the egg mix (3 eggs) and swirl to cover the pan. Reduce to medium-low, cover, and cook 2 minutes until the base is golden and the top is just set but still glossy. Fold in half and slide onto a plate.</li>
+        <li>Wipe the pan, add the remaining ghee and masala, and repeat for the second omelette. Serve each with half the pachadi on the side. Eat hot, dipping each wedge of omelette into the pachadi.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rtips">
+    <h5>Make it taste like home</h5>
+    <ul>
+<li>Flavour: slice the curry leaves very fine (stack and cut across) so every bite has some. Cooking the masala in the ghee first gives a sweeter, rounder flavour than raw onion folded into the eggs.</li><li>Keto: use unsweetened coconut. Fresh or thawed frozen grated coconut (Indian grocery freezer aisle) gives the right creamy texture, and a small onion measure keeps the omelette near 6 g net carbs. The traditional chana dal and tamarind in a kobbari pachadi are left out; lemon juice supplies the tang.</li><li>Make ahead: the pachadi (without tempering) keeps 2 days chilled; re-temper before serving. The omelette is best eaten hot, within minutes.</li>    </ul>
+  </div>
+
+  <div class="rtips alt">
+    <h5>Keto Swaps & Variations</h5>
+    <ul>
+<li>Lower heat (to about 2): omit the green chilli and karam from the omelette and use 1 green chilli in the pachadi.</li><li>Dairy-free: replace the cream with a spoon of water and the ghee with coconut oil.</li>    </ul>
+  </div>
+
+  <div class="rfoot">
+    <span>Adapted from: <a href="https://www.whiskaffair.com/indian-masala-omelette/" target="_blank" rel="noopener">Masala Omelette, Whisk Affair (cooking the masala first; curry leaf and coconut oil South Indian variation)</a>, <a href="https://rustictadka.com/egg-omelette-recipe/" target="_blank" rel="noopener">Masala Egg Omelette, Rustic Tadka (curry leaf and grated coconut in the south)</a>, <a href="https://www.whiskaffair.com/kobbari-pachadi-recipe/" target="_blank" rel="noopener">Kobbari Pachadi (Andhra Coconut Chutney), Whisk Affair: fresh coconut, green chilli, mustard and curry leaf tempering</a>, <a href="https://www.fromsushmaskitchen.com/2021/05/velluli-kobbari-karam-instant.html" target="_blank" rel="noopener">Velluli Kobbari Karam (coconut, green chilli, garlic, cumin), Sushma&#39;s Kitchen</a></span>
+  </div>
 </article>
 
-  <p class="fineprint">General cooking and nutrition protocol, not medical advice. Macros are precisely computed from sourced ingredient values.</p>
-</main>
-<div style="height:60px"></div>
-
-<script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
-    });
-  }
-})();
-</script>
+    <p style="font-size:0.85em;color:#777777;margin-top:1.5em;border-top:1px solid #eee;padding-top:0.8em;">
+      General cooking and nutrition protocol, not medical advice. Macros are computed from verified whole-food ingredient weights.
+    </p>
+  </div>
+</div>
 </body>
 </html>

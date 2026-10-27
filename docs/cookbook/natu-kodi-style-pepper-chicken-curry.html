@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Natu Kodi-Style Pepper Chicken Curry (Coconut-Poppy Base) · Keto Andhra Cookbook</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<style>/* Techmeme-inspired stylesheet for The Morning Brief */
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -62,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -77,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -689,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -720,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -836,77 +961,200 @@ td.searchbox {
     gap: 0.8em;
   }
 }
+
 </style>
 </head>
-<body class="ck">
-<header class="hero" style="padding:24px 0 16px;">
-  <div class="wrap">
-    <div class="top-bar" style="border-bottom:none;padding-bottom:0;">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO RECIPE DOSSIER</span>
-        <span class="issue-tag">First Added: 2026-10-20</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="index.html"><strong>&larr; Back to Cookbook Directory</strong></a>
+        <a href="../index.html">The Morning Brief Archive</a>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>Added: 2026-10-20</span>
+        <span>Meal: Dinner</span>
       </div>
     </div>
-    <p style="margin:16px 0 0">
-      <a class="linkbtn" href="index.html" style="--accent:#10b981">← Back to Cookbook Index</a>
-    </p>
-  </div>
-</header>
 
-<main class="wrap" style="--accent:#10b981;margin-top:28px;">
-  <article class="recipe" id="r-natu-kodi-style-pepper-chicken-curry">
-  <div class="rhead">
-    <span class="pill">Dinner</span>
-    <span class="heat" title="Heat 4 of 5">Heat <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span>
-    <span class="rmeta">Rayalaseema</span>
+    <!-- Header Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Regional Low-Carb Dossier</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Dinner Protocol</div>
+        </td>
+        <td class="searchbox">
+          <a class="sbti-btn" href="index.html">All Recipes &rarr;</a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <h4>Natu Kodi-Style Pepper Chicken Curry (Coconut-Poppy Base)<small lang="te">నాటుకోడి స్టైల్ మిరియాల కోడి కూర</small></h4>
-<p class="blurb">The deep, nutty village-style curry: roasted coconut, white poppy seed and pepper ground to a paste, finished with freshly cracked pepper and a squeeze of lemon. No jaggery, no tamarind. Boneless thigh stands in for country chicken so it fits a weeknight.</p>  <ul class="rstats">
-    <li><b>8.8 g</b> net carbs</li>
-    <li><b>43 g</b> protein</li>
-    <li><b>28 g</b> fat</li>
-    <li><b>480</b> kcal</li>
-    <li>33 min</li>
-    <li>Serves 2</li>
-  </ul>
-  <div class="macrobar" title="Share of calories">
-    <span style="width:55%;background:#e8a317"></span><span style="width:37%;background:#d6336c"></span><span style="width:8%;background:#1c64f2"></span>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Morning Brief Home</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="index.html">All Dishes</a>
+    </div>
   </div>
-  <div class="mlegend"><span style="--c:#e8a317">Fat 55%</span><span style="--c:#d6336c">Protein 37%</span><span style="--c:#1c64f2">Net carbs 8%</span><span>per serving</span></div>
-  <div class="rcols">
-    <div><h5>Ingredients</h5><ul class="ing"><li><span>boneless skinless chicken thigh, cut into 3 cm pieces (stands in for country chicken)</span><em>about 3 to 4 thighs · 400 g</em></li><li><span>Guntur red chilli powder (marinade)</span><em>1 tsp · 3 g</em></li><li><span>turmeric powder</span><em>1/4 tsp · 1 g</em></li><li><span>salt</span><em>3/4 tsp · 3 g</em></li><li><span>ginger, crushed (divided)</span><em>1 inch piece · 8 g</em></li><li><span>garlic, crushed (divided)</span><em>3 cloves · 10 g</em></li><li><span>white poppy seeds</span><em>1 tbsp · 8 g</em></li><li><span>grated coconut, unsweetened (frozen is fine, thawed)</span><em>1/2 cup, packed · 40 g</em></li><li><span>coriander seeds</span><em>2 tsp · 5 g</em></li><li><span>fennel seeds</span><em>1/2 tsp · 1.5 g</em></li><li><span>black peppercorns (3 g for the paste, 1 g cracked for the finish)</span><em>1 1/2 tsp in all · 4 g</em></li><li><span>whole dried red chillies</span><em>3 chillies · 3 g</em></li><li><span>cinnamon and cloves, ground (1 g cinnamon + 0.5 g cloves)</span><em>1-inch stick + 3 cloves · 1.5 g</em></li><li><span>cardamom, green, seeds only</span><em>2 pods · 0.5 g</em></li><li><span>sesame oil (nuvvula noone)</span><em>1 1/2 tbsp · 21 g</em></li><li><span>onion, finely chopped</span><em>about 1/2 small onion · 50 g</em></li><li><span>green chillies, slit</span><em>2 small · 8 g</em></li><li><span>fresh curry leaves</span><em>about 1 1/2 sprigs · 4 g</em></li><li><span>lemon juice</span><em>2 tsp · 10 g</em></li><li><span>coriander leaves, chopped</span><em>a small handful · 4 g</em></li></ul></div>
-    <div><h5>Method</h5><ol class="steps"><li>Cut the thighs into 3 cm pieces. Toss with the chilli powder, turmeric, salt and half of the crushed ginger and garlic. Set aside while you make the paste.</li><li>In your dry kadai over medium-low heat, roast the poppy seeds, coriander, fennel, 3 g peppercorns, dried chillies, cinnamon, cloves and cardamom for 90 seconds, stirring constantly, until the poppy seeds turn a shade darker and the pan smells nutty (do not let them go dark; they turn bitter). Add the grated coconut and roast 1 more minute until it just starts to colour. Tip out and cool 3 minutes.</li><li>Grind everything to a smooth paste with 100 ml water. If your blender struggles with the poppy seed, soak the roasted mix in 100 ml hot water for 5 minutes first, then blend for 1 to 2 minutes, scraping down once.</li><li>Heat the sesame oil in the kadai over medium-high. Add the onion, curry leaves and slit green chillies and fry 4 to 5 minutes until the onion is soft and golden. Add the remaining ginger and garlic and fry 1 minute.</li><li>Add the chicken and sear on high heat for 3 minutes, stirring now and then, until the outside turns opaque. Pour in the paste plus 120 ml water, stir well and bring to a bubble. Cover and simmer on medium-low for 12 minutes, stirring 2 or 3 times so the poppy paste does not catch at the bottom.</li><li>Uncover, raise the heat to medium and cook 3 minutes, stirring, until the gravy thickens and you see oil glisten at the edges. Stir in the 1 g of freshly cracked pepper, the lemon juice and the coriander leaves. Rest 2 minutes before serving; it thickens as it stands.</li></ol></div>
+
+  <div style="margin-top: 1.5em;">
+    <article class="recipe-card" id="r-natu-kodi-style-pepper-chicken-curry">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3em;">
+    <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span>
+    <span style="font-size:0.88em;color:#666666;">Rayalaseema · Heat 4/5 · 33m</span>
   </div>
-<div class="rtips"><h5>Make it taste like home</h5><ul><li>Taste tip: the coconut-poppy paste does what jaggery and tamarind would do elsewhere: it rounds the heat and gives sweetness without sugar. Do not skip roasting the poppy seeds.</li><li>Keto tip: poppy seed is low in net carb at this quantity (about 0.7 g in the whole pot), but coconut is not zero: 40 g is about 2.5 g net carbs in the whole pot. Do not top up with extra coconut without recounting.</li><li>Where to buy: white poppy seeds (khus khus or gasagasalu) at Indian grocers; cheaper by the 100 g packet than in supermarket jars.</li><li>Make-ahead: the roasted dry spice-coconut mix (before adding water) keeps in the fridge for 3 days; blend with water when cooking.</li><li>Authentic note: real natu kodi uses country chicken and a 45 to 60 minute braise. This is a weeknight version (about 33 minutes) in the same flavour family, not a substitute for the weekend dish.</li></ul></div><div class="rtips alt"><h5>Swaps</h5><ul><li>Heat 3: use 2 dried chillies and 2 g chilli powder; keep the pepper.</li><li>If you cannot find poppy seeds: replace with 10 g cashews and expect about 1 g more net carb per serving.</li></ul></div>  <div class="rfoot">
-<span>Adapted from <a href="https://avieel.com/en/dish/natukodi-kura" target="_blank" rel="noopener">Natukodi Kura - Avieel</a>, <a href="https://www.indianhealthyrecipes.com/andhra-chicken-curry-recipe-kodi-kura-with-step-by-step-pictures" target="_blank" rel="noopener">Andhra Chicken Curry (Kodi Kura) - Swasthi&#39;s Recipes</a>, <a href="https://www.licious.in/blog/recipe/natu-kodi-kura-recipe" target="_blank" rel="noopener">Natu Kodi Kura Recipe - Licious</a>, <a href="https://en.wikipedia.org/wiki/Naatu_kodi_pulusu" target="_blank" rel="noopener">Naatu kodi pulusu - Wikipedia</a></span>  </div>
+  <h3>
+Natu Kodi-Style Pepper Chicken Curry (Coconut-Poppy Base)<small lang="te">నాటుకోడి స్టైల్ మిరియాల కోడి కూర</small>  </h3>
+<p class="item-summary" style="margin:0.3em 0 0.5em;">The deep, nutty village-style curry: roasted coconut, white poppy seed and pepper ground to a paste, finished with freshly cracked pepper and a squeeze of lemon. No jaggery, no tamarind. Boneless thigh stands in for country chicken so it fits a weeknight.</p>  
+  <div class="recipe-macros">
+    <strong>8.8g</strong> net carbs &nbsp;·&nbsp;
+    <strong>43g</strong> protein &nbsp;·&nbsp;
+    <strong>28g</strong> fat &nbsp;·&nbsp;
+    <strong>480</strong> kcal &nbsp;·&nbsp;
+    Serves 2
+  </div>
+
+  <div class="macrobar" title="Macro calorie ratio">
+    <span style="width:55%;background:#d49b20"></span>
+    <span style="width:37%;background:#902050"></span>
+    <span style="width:8%;background:#174a61"></span>
+  </div>
+  <div class="mlegend">
+    <span style="color:#a87410;">● Fat 55%</span>
+    <span style="color:#902050;">● Protein 37%</span>
+    <span style="color:#174a61;">● Net Carbs 8%</span>
+  </div>
+
+  <div class="recipe-cols">
+    <div>
+      <h5>Ingredients</h5>
+      <ul class="ing">
+        <li>
+          <span>boneless skinless chicken thigh, cut into 3 cm pieces (stands in for country chicken)</span>
+          <em>about 3 to 4 thighs · 400g</em>
+        </li>
+        <li>
+          <span>Guntur red chilli powder (marinade)</span>
+          <em>1 tsp · 3g</em>
+        </li>
+        <li>
+          <span>turmeric powder</span>
+          <em>1/4 tsp · 1g</em>
+        </li>
+        <li>
+          <span>salt</span>
+          <em>3/4 tsp · 3g</em>
+        </li>
+        <li>
+          <span>ginger, crushed (divided)</span>
+          <em>1 inch piece · 8g</em>
+        </li>
+        <li>
+          <span>garlic, crushed (divided)</span>
+          <em>3 cloves · 10g</em>
+        </li>
+        <li>
+          <span>white poppy seeds</span>
+          <em>1 tbsp · 8g</em>
+        </li>
+        <li>
+          <span>grated coconut, unsweetened (frozen is fine, thawed)</span>
+          <em>1/2 cup, packed · 40g</em>
+        </li>
+        <li>
+          <span>coriander seeds</span>
+          <em>2 tsp · 5g</em>
+        </li>
+        <li>
+          <span>fennel seeds</span>
+          <em>1/2 tsp · 1.5g</em>
+        </li>
+        <li>
+          <span>black peppercorns (3 g for the paste, 1 g cracked for the finish)</span>
+          <em>1 1/2 tsp in all · 4g</em>
+        </li>
+        <li>
+          <span>whole dried red chillies</span>
+          <em>3 chillies · 3g</em>
+        </li>
+        <li>
+          <span>cinnamon and cloves, ground (1 g cinnamon + 0.5 g cloves)</span>
+          <em>1-inch stick + 3 cloves · 1.5g</em>
+        </li>
+        <li>
+          <span>cardamom, green, seeds only</span>
+          <em>2 pods · 0.5g</em>
+        </li>
+        <li>
+          <span>sesame oil (nuvvula noone)</span>
+          <em>1 1/2 tbsp · 21g</em>
+        </li>
+        <li>
+          <span>onion, finely chopped</span>
+          <em>about 1/2 small onion · 50g</em>
+        </li>
+        <li>
+          <span>green chillies, slit</span>
+          <em>2 small · 8g</em>
+        </li>
+        <li>
+          <span>fresh curry leaves</span>
+          <em>about 1 1/2 sprigs · 4g</em>
+        </li>
+        <li>
+          <span>lemon juice</span>
+          <em>2 tsp · 10g</em>
+        </li>
+        <li>
+          <span>coriander leaves, chopped</span>
+          <em>a small handful · 4g</em>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Method</h5>
+      <ol class="steps">
+        <li>Cut the thighs into 3 cm pieces. Toss with the chilli powder, turmeric, salt and half of the crushed ginger and garlic. Set aside while you make the paste.</li>
+        <li>In your dry kadai over medium-low heat, roast the poppy seeds, coriander, fennel, 3 g peppercorns, dried chillies, cinnamon, cloves and cardamom for 90 seconds, stirring constantly, until the poppy seeds turn a shade darker and the pan smells nutty (do not let them go dark; they turn bitter). Add the grated coconut and roast 1 more minute until it just starts to colour. Tip out and cool 3 minutes.</li>
+        <li>Grind everything to a smooth paste with 100 ml water. If your blender struggles with the poppy seed, soak the roasted mix in 100 ml hot water for 5 minutes first, then blend for 1 to 2 minutes, scraping down once.</li>
+        <li>Heat the sesame oil in the kadai over medium-high. Add the onion, curry leaves and slit green chillies and fry 4 to 5 minutes until the onion is soft and golden. Add the remaining ginger and garlic and fry 1 minute.</li>
+        <li>Add the chicken and sear on high heat for 3 minutes, stirring now and then, until the outside turns opaque. Pour in the paste plus 120 ml water, stir well and bring to a bubble. Cover and simmer on medium-low for 12 minutes, stirring 2 or 3 times so the poppy paste does not catch at the bottom.</li>
+        <li>Uncover, raise the heat to medium and cook 3 minutes, stirring, until the gravy thickens and you see oil glisten at the edges. Stir in the 1 g of freshly cracked pepper, the lemon juice and the coriander leaves. Rest 2 minutes before serving; it thickens as it stands.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rtips">
+    <h5>Make it taste like home</h5>
+    <ul>
+<li>Taste tip: the coconut-poppy paste does what jaggery and tamarind would do elsewhere: it rounds the heat and gives sweetness without sugar. Do not skip roasting the poppy seeds.</li><li>Keto tip: poppy seed is low in net carb at this quantity (about 0.7 g in the whole pot), but coconut is not zero: 40 g is about 2.5 g net carbs in the whole pot. Do not top up with extra coconut without recounting.</li><li>Where to buy: white poppy seeds (khus khus or gasagasalu) at Indian grocers; cheaper by the 100 g packet than in supermarket jars.</li><li>Make-ahead: the roasted dry spice-coconut mix (before adding water) keeps in the fridge for 3 days; blend with water when cooking.</li><li>Authentic note: real natu kodi uses country chicken and a 45 to 60 minute braise. This is a weeknight version (about 33 minutes) in the same flavour family, not a substitute for the weekend dish.</li>    </ul>
+  </div>
+
+  <div class="rtips alt">
+    <h5>Keto Swaps & Variations</h5>
+    <ul>
+<li>Heat 3: use 2 dried chillies and 2 g chilli powder; keep the pepper.</li><li>If you cannot find poppy seeds: replace with 10 g cashews and expect about 1 g more net carb per serving.</li>    </ul>
+  </div>
+
+  <div class="rfoot">
+    <span>Adapted from: <a href="https://avieel.com/en/dish/natukodi-kura" target="_blank" rel="noopener">Natukodi Kura - Avieel</a>, <a href="https://www.indianhealthyrecipes.com/andhra-chicken-curry-recipe-kodi-kura-with-step-by-step-pictures" target="_blank" rel="noopener">Andhra Chicken Curry (Kodi Kura) - Swasthi&#39;s Recipes</a>, <a href="https://www.licious.in/blog/recipe/natu-kodi-kura-recipe" target="_blank" rel="noopener">Natu Kodi Kura Recipe - Licious</a>, <a href="https://en.wikipedia.org/wiki/Naatu_kodi_pulusu" target="_blank" rel="noopener">Naatu kodi pulusu - Wikipedia</a></span>
+  </div>
 </article>
 
-  <p class="fineprint">General cooking and nutrition protocol, not medical advice. Macros are precisely computed from sourced ingredient values.</p>
-</main>
-<div style="height:60px"></div>
-
-<script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
-    });
-  }
-})();
-</script>
+    <p style="font-size:0.85em;color:#777777;margin-top:1.5em;border-top:1px solid #eee;padding-top:0.8em;">
+      General cooking and nutrition protocol, not medical advice. Macros are computed from verified whole-food ingredient weights.
+    </p>
+  </div>
+</div>
 </body>
 </html>

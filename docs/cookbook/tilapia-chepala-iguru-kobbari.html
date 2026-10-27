@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Chepala Iguru with Coconut Masala (Dry-Style Fish Curry) · Keto Andhra Cookbook</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<style>/* Techmeme-inspired stylesheet for The Morning Brief */
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -62,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -77,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -689,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -720,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -836,77 +961,188 @@ td.searchbox {
     gap: 0.8em;
   }
 }
+
 </style>
 </head>
-<body class="ck">
-<header class="hero" style="padding:24px 0 16px;">
-  <div class="wrap">
-    <div class="top-bar" style="border-bottom:none;padding-bottom:0;">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO RECIPE DOSSIER</span>
-        <span class="issue-tag">First Added: 2026-10-21</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="index.html"><strong>&larr; Back to Cookbook Directory</strong></a>
+        <a href="../index.html">The Morning Brief Archive</a>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>Added: 2026-10-21</span>
+        <span>Meal: Lunch</span>
       </div>
     </div>
-    <p style="margin:16px 0 0">
-      <a class="linkbtn" href="index.html" style="--accent:#10b981">← Back to Cookbook Index</a>
-    </p>
-  </div>
-</header>
 
-<main class="wrap" style="--accent:#10b981;margin-top:28px;">
-  <article class="recipe" id="r-tilapia-chepala-iguru-kobbari">
-  <div class="rhead">
-    <span class="pill">Lunch</span>
-    <span class="heat" title="Heat 4 of 5">Heat <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span>
-    <span class="rmeta">Coastal Andhra</span>
+    <!-- Header Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Regional Low-Carb Dossier</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Lunch Protocol</div>
+        </td>
+        <td class="searchbox">
+          <a class="sbti-btn" href="index.html">All Recipes &rarr;</a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <h4>Chepala Iguru with Coconut Masala (Dry-Style Fish Curry)</h4>
-<p class="blurb">Chepala iguru is a thick, clinging masala fish curry. Firm tilapia is simmered briefly in a ginger-garlic-coconut masala that coats each piece with Guntur heat and no tamarind.</p>  <ul class="rstats">
-    <li><b>7.8 g</b> net carbs</li>
-    <li><b>38 g</b> protein</li>
-    <li><b>22 g</b> fat</li>
-    <li><b>382</b> kcal</li>
-    <li>28 min</li>
-    <li>Serves 2</li>
-  </ul>
-  <div class="macrobar" title="Share of calories">
-    <span style="width:52%;background:#e8a317"></span><span style="width:40%;background:#d6336c"></span><span style="width:8%;background:#1c64f2"></span>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Morning Brief Home</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="index.html">All Dishes</a>
+    </div>
   </div>
-  <div class="mlegend"><span style="--c:#e8a317">Fat 52%</span><span style="--c:#d6336c">Protein 40%</span><span style="--c:#1c64f2">Net carbs 8%</span><span>per serving</span></div>
-  <div class="rcols">
-    <div><h5>Ingredients</h5><ul class="ing"><li><span>tilapia fillets, cut into 4 cm pieces</span><em>350 g</em></li><li><span>sesame oil</span><em>2 tbsp · 25 g</em></li><li><span>onion, finely chopped</span><em>40 g</em></li><li><span>tomato, pureed</span><em>60 g</em></li><li><span>grated coconut</span><em>30 g</em></li><li><span>ginger</span><em>10 g</em></li><li><span>garlic</span><em>3 cloves · 10 g</em></li><li><span>coriander seeds</span><em>4 g</em></li><li><span>fennel seeds</span><em>2 g</em></li><li><span>cinnamon, ground</span><em>1 g</em></li><li><span>red chilli powder</span><em>1 tsp · 5 g</em></li><li><span>turmeric</span><em>2 g</em></li><li><span>green chilli, slit</span><em>10 g</em></li><li><span>curry leaves</span><em>4 g</em></li><li><span>lemon juice</span><em>2 tsp · 10 g</em></li><li><span>salt</span><em>4 g</em></li><li><span>coriander leaves</span><em>5 g</em></li></ul></div>
-    <div><h5>Method</h5><ol class="steps"><li>Toss fish with turmeric, half the chilli powder, half the salt and lemon juice; rest 10 minutes.</li><li>Dry-roast coriander and fennel 1 minute until fragrant, then blend with coconut, ginger, garlic, cinnamon and 4 tbsp water into a smooth masala.</li><li>Heat oil over medium-high, add curry leaves and green chilli until the leaves stop spluttering, then onion; cook about 4 minutes until golden.</li><li>Add the tomato puree and remaining chilli powder; cook until the oil separates, about 4 minutes. Add the masala and cook 3 minutes, adding a splash of water if it catches.</li><li>Slide in the fish in one layer, spoon masala over, cover and cook on low 5 to 6 minutes. Do not stir; shake the pan gently. Fish is done at 63 C / 145 F or when opaque and flaking.</li><li>Finish with coriander; rest 2 minutes.</li></ol></div>
+
+  <div style="margin-top: 1.5em;">
+    <article class="recipe-card" id="r-tilapia-chepala-iguru-kobbari">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3em;">
+    <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">lunch</span>
+    <span style="font-size:0.88em;color:#666666;">Coastal Andhra · Heat 4/5 · 28m</span>
   </div>
-<div class="rtips"><h5>Make it taste like home</h5><ul><li>Add the remaining karam only after the tomato so it does not burn.</li><li>Keto tip: tamarind is left out; lemon gives the sourness.</li><li>Storage: refrigerate within 2 hours, eat within 2 days, reheat gently to 74 C / 165 F. The masala alone keeps 4 days refrigerated.</li></ul></div><div class="rtips alt"><h5>Swaps</h5><ul><li>Halve the chilli powder and skip the green chilli for heat 2.</li><li>Catfish or any firm white fish works.</li></ul></div>  <div class="rfoot">
-<span>Adapted from <a href="https://www.masalakorb.com/spicy-masala-fish-curry-or-chepala-iguru" target="_blank" rel="noopener">Spicy Masala Fish Curry or Chepala Iguru (Masala Korb)</a>, <a href="https://www.indianhealthyrecipes.com/fish-pulusu-south-indian-fish-curry-recipe" target="_blank" rel="noopener">Fish Pulusu (Swasthi&#39;s Recipes) (spice idea only; it is a tamarind dish)</a></span>  </div>
+  <h3>
+Chepala Iguru with Coconut Masala (Dry-Style Fish Curry)  </h3>
+<p class="item-summary" style="margin:0.3em 0 0.5em;">Chepala iguru is a thick, clinging masala fish curry. Firm tilapia is simmered briefly in a ginger-garlic-coconut masala that coats each piece with Guntur heat and no tamarind.</p>  
+  <div class="recipe-macros">
+    <strong>7.8g</strong> net carbs &nbsp;·&nbsp;
+    <strong>38g</strong> protein &nbsp;·&nbsp;
+    <strong>22g</strong> fat &nbsp;·&nbsp;
+    <strong>382</strong> kcal &nbsp;·&nbsp;
+    Serves 2
+  </div>
+
+  <div class="macrobar" title="Macro calorie ratio">
+    <span style="width:52%;background:#d49b20"></span>
+    <span style="width:40%;background:#902050"></span>
+    <span style="width:8%;background:#174a61"></span>
+  </div>
+  <div class="mlegend">
+    <span style="color:#a87410;">● Fat 52%</span>
+    <span style="color:#902050;">● Protein 40%</span>
+    <span style="color:#174a61;">● Net Carbs 8%</span>
+  </div>
+
+  <div class="recipe-cols">
+    <div>
+      <h5>Ingredients</h5>
+      <ul class="ing">
+        <li>
+          <span>tilapia fillets, cut into 4 cm pieces</span>
+          <em>350g</em>
+        </li>
+        <li>
+          <span>sesame oil</span>
+          <em>2 tbsp · 25g</em>
+        </li>
+        <li>
+          <span>onion, finely chopped</span>
+          <em>40g</em>
+        </li>
+        <li>
+          <span>tomato, pureed</span>
+          <em>60g</em>
+        </li>
+        <li>
+          <span>grated coconut</span>
+          <em>30g</em>
+        </li>
+        <li>
+          <span>ginger</span>
+          <em>10g</em>
+        </li>
+        <li>
+          <span>garlic</span>
+          <em>3 cloves · 10g</em>
+        </li>
+        <li>
+          <span>coriander seeds</span>
+          <em>4g</em>
+        </li>
+        <li>
+          <span>fennel seeds</span>
+          <em>2g</em>
+        </li>
+        <li>
+          <span>cinnamon, ground</span>
+          <em>1g</em>
+        </li>
+        <li>
+          <span>red chilli powder</span>
+          <em>1 tsp · 5g</em>
+        </li>
+        <li>
+          <span>turmeric</span>
+          <em>2g</em>
+        </li>
+        <li>
+          <span>green chilli, slit</span>
+          <em>10g</em>
+        </li>
+        <li>
+          <span>curry leaves</span>
+          <em>4g</em>
+        </li>
+        <li>
+          <span>lemon juice</span>
+          <em>2 tsp · 10g</em>
+        </li>
+        <li>
+          <span>salt</span>
+          <em>4g</em>
+        </li>
+        <li>
+          <span>coriander leaves</span>
+          <em>5g</em>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Method</h5>
+      <ol class="steps">
+        <li>Toss fish with turmeric, half the chilli powder, half the salt and lemon juice; rest 10 minutes.</li>
+        <li>Dry-roast coriander and fennel 1 minute until fragrant, then blend with coconut, ginger, garlic, cinnamon and 4 tbsp water into a smooth masala.</li>
+        <li>Heat oil over medium-high, add curry leaves and green chilli until the leaves stop spluttering, then onion; cook about 4 minutes until golden.</li>
+        <li>Add the tomato puree and remaining chilli powder; cook until the oil separates, about 4 minutes. Add the masala and cook 3 minutes, adding a splash of water if it catches.</li>
+        <li>Slide in the fish in one layer, spoon masala over, cover and cook on low 5 to 6 minutes. Do not stir; shake the pan gently. Fish is done at 63 C / 145 F or when opaque and flaking.</li>
+        <li>Finish with coriander; rest 2 minutes.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rtips">
+    <h5>Make it taste like home</h5>
+    <ul>
+<li>Add the remaining karam only after the tomato so it does not burn.</li><li>Keto tip: tamarind is left out; lemon gives the sourness.</li><li>Storage: refrigerate within 2 hours, eat within 2 days, reheat gently to 74 C / 165 F. The masala alone keeps 4 days refrigerated.</li>    </ul>
+  </div>
+
+  <div class="rtips alt">
+    <h5>Keto Swaps & Variations</h5>
+    <ul>
+<li>Halve the chilli powder and skip the green chilli for heat 2.</li><li>Catfish or any firm white fish works.</li>    </ul>
+  </div>
+
+  <div class="rfoot">
+    <span>Adapted from: <a href="https://www.masalakorb.com/spicy-masala-fish-curry-or-chepala-iguru" target="_blank" rel="noopener">Spicy Masala Fish Curry or Chepala Iguru (Masala Korb)</a>, <a href="https://www.indianhealthyrecipes.com/fish-pulusu-south-indian-fish-curry-recipe" target="_blank" rel="noopener">Fish Pulusu (Swasthi&#39;s Recipes) (spice idea only; it is a tamarind dish)</a></span>
+  </div>
 </article>
 
-  <p class="fineprint">General cooking and nutrition protocol, not medical advice. Macros are precisely computed from sourced ingredient values.</p>
-</main>
-<div style="height:60px"></div>
-
-<script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
-    });
-  }
-})();
-</script>
+    <p style="font-size:0.85em;color:#777777;margin-top:1.5em;border-top:1px solid #eee;padding-top:0.8em;">
+      General cooking and nutrition protocol, not medical advice. Macros are computed from verified whole-food ingredient weights.
+    </p>
+  </div>
+</div>
 </body>
 </html>

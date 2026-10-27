@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Chicken 65 (Air-Fryer or Shallow-Fry, Almond-Flour Coating) · Keto Andhra Cookbook</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<style>/* Techmeme-inspired stylesheet for The Morning Brief */
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -62,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -77,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -689,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -720,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -836,77 +961,212 @@ td.searchbox {
     gap: 0.8em;
   }
 }
+
 </style>
 </head>
-<body class="ck">
-<header class="hero" style="padding:24px 0 16px;">
-  <div class="wrap">
-    <div class="top-bar" style="border-bottom:none;padding-bottom:0;">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO RECIPE DOSSIER</span>
-        <span class="issue-tag">First Added: 2026-10-20</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="index.html"><strong>&larr; Back to Cookbook Directory</strong></a>
+        <a href="../index.html">The Morning Brief Archive</a>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>Added: 2026-10-20</span>
+        <span>Meal: Dinner</span>
       </div>
     </div>
-    <p style="margin:16px 0 0">
-      <a class="linkbtn" href="index.html" style="--accent:#10b981">← Back to Cookbook Index</a>
-    </p>
-  </div>
-</header>
 
-<main class="wrap" style="--accent:#10b981;margin-top:28px;">
-  <article class="recipe" id="r-chicken-65-air-fryer-keto">
-  <div class="rhead">
-    <span class="pill">Dinner</span>
-    <span class="heat" title="Heat 4 of 5">Heat <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span>
-    <span class="rmeta">Andhra</span>
+    <!-- Header Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Regional Low-Carb Dossier</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Dinner Protocol</div>
+        </td>
+        <td class="searchbox">
+          <a class="sbti-btn" href="index.html">All Recipes &rarr;</a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <h4>Chicken 65 (Air-Fryer or Shallow-Fry, Almond-Flour Coating)<small lang="te">చికెన్ 65</small></h4>
-<p class="blurb">Crisp-edged, brick-red cubes of thigh with a garlicky curry-leaf and green-chilli tempering. The coating is yogurt, egg and almond flour: no maida, no cornflour, no sugar.</p>  <ul class="rstats">
-    <li><b>7.3 g</b> net carbs</li>
-    <li><b>45 g</b> protein</li>
-    <li><b>27 g</b> fat</li>
-    <li><b>466</b> kcal</li>
-    <li>28 min</li>
-    <li>Serves 2</li>
-  </ul>
-  <div class="macrobar" title="Share of calories">
-    <span style="width:54%;background:#e8a317"></span><span style="width:40%;background:#d6336c"></span><span style="width:6%;background:#1c64f2"></span>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Morning Brief Home</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="index.html">All Dishes</a>
+    </div>
   </div>
-  <div class="mlegend"><span style="--c:#e8a317">Fat 54%</span><span style="--c:#d6336c">Protein 40%</span><span style="--c:#1c64f2">Net carbs 6%</span><span>per serving</span></div>
-  <div class="rcols">
-    <div><h5>Ingredients</h5><ul class="ing"><li><span>boneless skinless chicken thigh, cut into 2.5 cm cubes</span><em>about 3 to 4 thighs · 400 g</em></li><li><span>plain whole-milk yogurt (curd)</span><em>3 tbsp · 40 g</em></li><li><span>egg, lightly beaten</span><em>1/2 large egg · 25 g</em></li><li><span>almond flour (plain, finely ground, no added starch)</span><em>3 tbsp · 20 g</em></li><li><span>ginger, crushed</span><em>1 inch piece · 8 g</em></li><li><span>garlic, crushed (marinade)</span><em>3 cloves · 10 g</em></li><li><span>Kashmiri or Guntur red chilli powder (marinade)</span><em>2 tsp · 5 g</em></li><li><span>turmeric powder</span><em>1/4 tsp · 1 g</em></li><li><span>coriander seed, ground</span><em>3/4 tsp · 1.5 g</em></li><li><span>cumin seed, ground</span><em>1/3 tsp · 0.7 g</em></li><li><span>cinnamon and cloves, ground (garam masala base)</span><em>a pinch of each · 0.8 g</em></li><li><span>black pepper, ground</span><em>1/2 tsp · 1 g</em></li><li><span>lemon juice (marinade)</span><em>2 tsp · 10 g</em></li><li><span>fresh curry leaves, finely chopped (marinade)</span><em>1/2 sprig · 2 g</em></li><li><span>salt</span><em>3/4 tsp · 3 g</em></li><li><span>avocado oil, for the air fryer or shallow fry</span><em>1 tbsp · 15 g</em></li><li><span>sesame oil, for the tempering</span><em>1/2 tbsp · 7 g</em></li><li><span>garlic, chopped (tempering)</span><em>2 cloves · 6 g</em></li><li><span>green chillies, slit (tempering)</span><em>2 · 10 g</em></li><li><span>fresh curry leaves, whole (tempering)</span><em>1 sprig · 3 g</em></li><li><span>red chilli powder (tempering paste)</span><em>3/4 tsp · 2 g</em></li><li><span>lemon juice (finish)</span><em>1 tsp · 5 g</em></li><li><span>coriander leaves, chopped</span><em>a small pinch · 3 g</em></li></ul></div>
-    <div><h5>Method</h5><ol class="steps"><li>In a bowl, mix the yogurt, egg, ginger, 10 g crushed garlic, 5 g chilli powder, turmeric, ground coriander, ground cumin, the cinnamon-clove pinch, pepper, lemon juice, chopped curry leaves and 2 g of the salt into a loose paste. Add the chicken cubes and mix well. Sprinkle the almond flour over and fold until every cube has a thick, clinging coat. Rest 10 minutes (longer in the fridge is better, see tips). Preheat the air fryer to 190 C / 375 F.</li><li>While the chicken rests, mix the tempering paste: 2 g chilli powder, the last 1 g of salt, and 2 tbsp water in a small bowl. Chop 6 g garlic and slit the green chillies.</li><li>Air-fryer route: brush the basket lightly with 1/2 tbsp avocado oil, spread the cubes in one layer without crowding (cook in two batches if needed), and drizzle or spray the remaining oil over the tops. Air fry 8 minutes, flip, then 3 to 4 more minutes until deep golden and a cube reads 74 C / 165 F inside. For the last 2 minutes add a sprig of curry leaves and the slit chillies to the basket.</li><li>Shallow-fry route: heat all 15 g avocado oil in a wide nonstick or cast-iron pan on medium-high until it shimmers. Lay in the cubes in one layer, leaving gaps. Cook 3 to 4 minutes undisturbed until the underside is golden and releases easily, flip, and cook 3 to 4 minutes more; work in batches so they fry instead of steam, until a cube reads 74 C / 165 F inside.</li><li>Heat the sesame oil in a wok or kadai over medium-high. Add the chopped garlic, the remaining curry leaves and the slit green chillies and stir-fry 20 to 30 seconds until the curry leaves turn crisp (do not brown the garlic). Lower the heat, add the chilli paste and cook 10 seconds until it smells fragrant.</li><li>Add the hot chicken, toss on high heat for 30 to 45 seconds until every piece is glossy and red, then finish with the lemon juice and coriander. Serve immediately so the crust stays crisp.</li></ol></div>
+
+  <div style="margin-top: 1.5em;">
+    <article class="recipe-card" id="r-chicken-65-air-fryer-keto">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3em;">
+    <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span>
+    <span style="font-size:0.88em;color:#666666;">Andhra · Heat 4/5 · 28m</span>
   </div>
-<div class="rtips"><h5>Make it taste like home</h5><ul><li>Taste tip: the garlic-curry-leaf-chilli tempering in step 5 is what turns this from &#39;air-fried chicken&#39; into Chicken 65. Do not skip it.</li><li>Keto tip: no sugar, no cornflour, no maida. The coating&#39;s carbs are about 0.9 g net carbs per serving from the almond flour. Check that your almond flour is plain and finely ground with no added starch.</li><li>Make-ahead: marinate with the yogurt, egg and spices in the morning (up to 12 hours, covered, in the refrigerator); fold in the almond flour just before cooking so it does not turn pasty. Leftovers re-crisp in the air fryer at 190 C for 3 minutes.</li><li>Weekday note: boneless thigh in small cubes cooks in 12 minutes in the air fryer, far faster than bone-in.</li></ul></div><div class="rtips alt"><h5>Swaps</h5><ul><li>Heat 3: use Kashmiri chilli powder for both the marinade and the paste, and drop one green chilli.</li><li>No air fryer: use the shallow-fry route in step 4, or bake at 220 C for 18 minutes on a rack.</li></ul></div>  <div class="rfoot">
-<span>Adapted from <a href="https://www.indianhealthyrecipes.com/chicken-65-recipe-no-egg-restaurant-style-chicken-recipes/" target="_blank" rel="noopener">Chicken 65 Recipe (Restaurant Style, with air-fryer method) - Swasthi&#39;s Recipes</a>, <a href="https://www.fitmamarealfood.com/almond-flour-breaded-chicken" target="_blank" rel="noopener">Almond Flour Breaded Chicken (egg and almond-flour coating, skillet method) - Fit Mama Real Food</a>, <a href="https://food.ndtv.com/food-drinks/watch-how-to-make-chef-special-chicken-65-snack-at-home-in-monsoon-rains-chef-special-recipe-video-2259907" target="_blank" rel="noopener">Chef-Special Chicken 65 (garlic, curry leaf and chilli tempering) - NDTV Food</a></span>  </div>
+  <h3>
+Chicken 65 (Air-Fryer or Shallow-Fry, Almond-Flour Coating)<small lang="te">చికెన్ 65</small>  </h3>
+<p class="item-summary" style="margin:0.3em 0 0.5em;">Crisp-edged, brick-red cubes of thigh with a garlicky curry-leaf and green-chilli tempering. The coating is yogurt, egg and almond flour: no maida, no cornflour, no sugar.</p>  
+  <div class="recipe-macros">
+    <strong>7.3g</strong> net carbs &nbsp;·&nbsp;
+    <strong>45g</strong> protein &nbsp;·&nbsp;
+    <strong>27g</strong> fat &nbsp;·&nbsp;
+    <strong>466</strong> kcal &nbsp;·&nbsp;
+    Serves 2
+  </div>
+
+  <div class="macrobar" title="Macro calorie ratio">
+    <span style="width:54%;background:#d49b20"></span>
+    <span style="width:40%;background:#902050"></span>
+    <span style="width:6%;background:#174a61"></span>
+  </div>
+  <div class="mlegend">
+    <span style="color:#a87410;">● Fat 54%</span>
+    <span style="color:#902050;">● Protein 40%</span>
+    <span style="color:#174a61;">● Net Carbs 6%</span>
+  </div>
+
+  <div class="recipe-cols">
+    <div>
+      <h5>Ingredients</h5>
+      <ul class="ing">
+        <li>
+          <span>boneless skinless chicken thigh, cut into 2.5 cm cubes</span>
+          <em>about 3 to 4 thighs · 400g</em>
+        </li>
+        <li>
+          <span>plain whole-milk yogurt (curd)</span>
+          <em>3 tbsp · 40g</em>
+        </li>
+        <li>
+          <span>egg, lightly beaten</span>
+          <em>1/2 large egg · 25g</em>
+        </li>
+        <li>
+          <span>almond flour (plain, finely ground, no added starch)</span>
+          <em>3 tbsp · 20g</em>
+        </li>
+        <li>
+          <span>ginger, crushed</span>
+          <em>1 inch piece · 8g</em>
+        </li>
+        <li>
+          <span>garlic, crushed (marinade)</span>
+          <em>3 cloves · 10g</em>
+        </li>
+        <li>
+          <span>Kashmiri or Guntur red chilli powder (marinade)</span>
+          <em>2 tsp · 5g</em>
+        </li>
+        <li>
+          <span>turmeric powder</span>
+          <em>1/4 tsp · 1g</em>
+        </li>
+        <li>
+          <span>coriander seed, ground</span>
+          <em>3/4 tsp · 1.5g</em>
+        </li>
+        <li>
+          <span>cumin seed, ground</span>
+          <em>1/3 tsp · 0.7g</em>
+        </li>
+        <li>
+          <span>cinnamon and cloves, ground (garam masala base)</span>
+          <em>a pinch of each · 0.8g</em>
+        </li>
+        <li>
+          <span>black pepper, ground</span>
+          <em>1/2 tsp · 1g</em>
+        </li>
+        <li>
+          <span>lemon juice (marinade)</span>
+          <em>2 tsp · 10g</em>
+        </li>
+        <li>
+          <span>fresh curry leaves, finely chopped (marinade)</span>
+          <em>1/2 sprig · 2g</em>
+        </li>
+        <li>
+          <span>salt</span>
+          <em>3/4 tsp · 3g</em>
+        </li>
+        <li>
+          <span>avocado oil, for the air fryer or shallow fry</span>
+          <em>1 tbsp · 15g</em>
+        </li>
+        <li>
+          <span>sesame oil, for the tempering</span>
+          <em>1/2 tbsp · 7g</em>
+        </li>
+        <li>
+          <span>garlic, chopped (tempering)</span>
+          <em>2 cloves · 6g</em>
+        </li>
+        <li>
+          <span>green chillies, slit (tempering)</span>
+          <em>2 · 10g</em>
+        </li>
+        <li>
+          <span>fresh curry leaves, whole (tempering)</span>
+          <em>1 sprig · 3g</em>
+        </li>
+        <li>
+          <span>red chilli powder (tempering paste)</span>
+          <em>3/4 tsp · 2g</em>
+        </li>
+        <li>
+          <span>lemon juice (finish)</span>
+          <em>1 tsp · 5g</em>
+        </li>
+        <li>
+          <span>coriander leaves, chopped</span>
+          <em>a small pinch · 3g</em>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Method</h5>
+      <ol class="steps">
+        <li>In a bowl, mix the yogurt, egg, ginger, 10 g crushed garlic, 5 g chilli powder, turmeric, ground coriander, ground cumin, the cinnamon-clove pinch, pepper, lemon juice, chopped curry leaves and 2 g of the salt into a loose paste. Add the chicken cubes and mix well. Sprinkle the almond flour over and fold until every cube has a thick, clinging coat. Rest 10 minutes (longer in the fridge is better, see tips). Preheat the air fryer to 190 C / 375 F.</li>
+        <li>While the chicken rests, mix the tempering paste: 2 g chilli powder, the last 1 g of salt, and 2 tbsp water in a small bowl. Chop 6 g garlic and slit the green chillies.</li>
+        <li>Air-fryer route: brush the basket lightly with 1/2 tbsp avocado oil, spread the cubes in one layer without crowding (cook in two batches if needed), and drizzle or spray the remaining oil over the tops. Air fry 8 minutes, flip, then 3 to 4 more minutes until deep golden and a cube reads 74 C / 165 F inside. For the last 2 minutes add a sprig of curry leaves and the slit chillies to the basket.</li>
+        <li>Shallow-fry route: heat all 15 g avocado oil in a wide nonstick or cast-iron pan on medium-high until it shimmers. Lay in the cubes in one layer, leaving gaps. Cook 3 to 4 minutes undisturbed until the underside is golden and releases easily, flip, and cook 3 to 4 minutes more; work in batches so they fry instead of steam, until a cube reads 74 C / 165 F inside.</li>
+        <li>Heat the sesame oil in a wok or kadai over medium-high. Add the chopped garlic, the remaining curry leaves and the slit green chillies and stir-fry 20 to 30 seconds until the curry leaves turn crisp (do not brown the garlic). Lower the heat, add the chilli paste and cook 10 seconds until it smells fragrant.</li>
+        <li>Add the hot chicken, toss on high heat for 30 to 45 seconds until every piece is glossy and red, then finish with the lemon juice and coriander. Serve immediately so the crust stays crisp.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rtips">
+    <h5>Make it taste like home</h5>
+    <ul>
+<li>Taste tip: the garlic-curry-leaf-chilli tempering in step 5 is what turns this from &#39;air-fried chicken&#39; into Chicken 65. Do not skip it.</li><li>Keto tip: no sugar, no cornflour, no maida. The coating&#39;s carbs are about 0.9 g net carbs per serving from the almond flour. Check that your almond flour is plain and finely ground with no added starch.</li><li>Make-ahead: marinate with the yogurt, egg and spices in the morning (up to 12 hours, covered, in the refrigerator); fold in the almond flour just before cooking so it does not turn pasty. Leftovers re-crisp in the air fryer at 190 C for 3 minutes.</li><li>Weekday note: boneless thigh in small cubes cooks in 12 minutes in the air fryer, far faster than bone-in.</li>    </ul>
+  </div>
+
+  <div class="rtips alt">
+    <h5>Keto Swaps & Variations</h5>
+    <ul>
+<li>Heat 3: use Kashmiri chilli powder for both the marinade and the paste, and drop one green chilli.</li><li>No air fryer: use the shallow-fry route in step 4, or bake at 220 C for 18 minutes on a rack.</li>    </ul>
+  </div>
+
+  <div class="rfoot">
+    <span>Adapted from: <a href="https://www.indianhealthyrecipes.com/chicken-65-recipe-no-egg-restaurant-style-chicken-recipes/" target="_blank" rel="noopener">Chicken 65 Recipe (Restaurant Style, with air-fryer method) - Swasthi&#39;s Recipes</a>, <a href="https://www.fitmamarealfood.com/almond-flour-breaded-chicken" target="_blank" rel="noopener">Almond Flour Breaded Chicken (egg and almond-flour coating, skillet method) - Fit Mama Real Food</a>, <a href="https://food.ndtv.com/food-drinks/watch-how-to-make-chef-special-chicken-65-snack-at-home-in-monsoon-rains-chef-special-recipe-video-2259907" target="_blank" rel="noopener">Chef-Special Chicken 65 (garlic, curry leaf and chilli tempering) - NDTV Food</a></span>
+  </div>
 </article>
 
-  <p class="fineprint">General cooking and nutrition protocol, not medical advice. Macros are precisely computed from sourced ingredient values.</p>
-</main>
-<div style="height:60px"></div>
-
-<script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
-    });
-  }
-})();
-</script>
+    <p style="font-size:0.85em;color:#777777;margin-top:1.5em;border-top:1px solid #eee;padding-top:0.8em;">
+      General cooking and nutrition protocol, not medical advice. Macros are computed from verified whole-food ingredient weights.
+    </p>
+  </div>
+</div>
 </body>
 </html>

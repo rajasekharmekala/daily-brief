@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Gasagasala Paneer Kura (Poppy-Coconut Paneer Curry) · Keto Andhra Cookbook</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<style>/* Techmeme-inspired stylesheet for The Morning Brief */
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -62,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -77,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -689,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -720,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -836,77 +961,193 @@ td.searchbox {
     gap: 0.8em;
   }
 }
+
 </style>
 </head>
-<body class="ck">
-<header class="hero" style="padding:24px 0 16px;">
-  <div class="wrap">
-    <div class="top-bar" style="border-bottom:none;padding-bottom:0;">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO RECIPE DOSSIER</span>
-        <span class="issue-tag">First Added: 2026-10-20</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="index.html"><strong>&larr; Back to Cookbook Directory</strong></a>
+        <a href="../index.html">The Morning Brief Archive</a>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>Added: 2026-10-20</span>
+        <span>Meal: Dinner</span>
       </div>
     </div>
-    <p style="margin:16px 0 0">
-      <a class="linkbtn" href="index.html" style="--accent:#10b981">← Back to Cookbook Index</a>
-    </p>
-  </div>
-</header>
 
-<main class="wrap" style="--accent:#10b981;margin-top:28px;">
-  <article class="recipe" id="r-gasagasala-paneer-kura">
-  <div class="rhead">
-    <span class="pill">Dinner</span>
-    <span class="heat" title="Heat 3 of 5">Heat <i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span>
-    <span class="rmeta">Andhra (gasagasala kura tradition)</span>
+    <!-- Header Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Regional Low-Carb Dossier</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Dinner Protocol</div>
+        </td>
+        <td class="searchbox">
+          <a class="sbti-btn" href="index.html">All Recipes &rarr;</a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <h4>Gasagasala Paneer Kura (Poppy-Coconut Paneer Curry)<small lang="te">గసగసాల పనీర్ కూర</small></h4>
-<p class="blurb">Soft paneer in a silky, faintly sweet gravy of toasted poppy seeds, coconut and almonds, lifted with green chilli and curry leaves. It borrows the poppy-seed paste of Andhra gasagasala kura and the coconut of paneer kobbari kura, with no onion, tomato or sugar.</p>  <ul class="rstats">
-    <li><b>8.0 g</b> net carbs</li>
-    <li><b>23 g</b> protein</li>
-    <li><b>41 g</b> fat</li>
-    <li><b>497</b> kcal</li>
-    <li>28 min</li>
-    <li>Serves 2</li>
-  </ul>
-  <div class="macrobar" title="Share of calories">
-    <span style="width:75%;background:#e8a317"></span><span style="width:19%;background:#d6336c"></span><span style="width:6%;background:#1c64f2"></span>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Morning Brief Home</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="index.html">All Dishes</a>
+    </div>
   </div>
-  <div class="mlegend"><span style="--c:#e8a317">Fat 75%</span><span style="--c:#d6336c">Protein 19%</span><span style="--c:#1c64f2">Net carbs 6%</span><span>per serving</span></div>
-  <div class="rcols">
-    <div><h5>Ingredients</h5><ul class="ing"><li><span>paneer, cut into 2 cm cubes</span><em>one 200 g block · 200 g</em></li><li><span>fresh or frozen grated coconut</span><em>1/3 cup · 30 g</em></li><li><span>poppy seeds (gasagasalu)</span><em>1 tbsp plus 1 tsp · 10 g</em></li><li><span>raw almonds</span><em>about 7 almonds · 8 g</em></li><li><span>ghee</span><em>1 tbsp plus 1/2 tsp · 16 g</em></li><li><span>green chillies (2 in the paste, rest slit)</span><em>3 to 4 chillies · 14 g</em></li><li><span>garlic</span><em>1 large clove · 5 g</em></li><li><span>ginger</span><em>1 cm piece · 4 g</em></li><li><span>Guntur karam (red chilli powder)</span><em>1 tsp · 2.5 g</em></li><li><span>coriander powder</span><em>3/4 tsp · 2.5 g</em></li><li><span>turmeric powder</span><em>a good pinch · 0.6 g</em></li><li><span>cumin seeds</span><em>1/3 tsp · 1 g</em></li><li><span>mustard seeds</span><em>1/3 tsp · 1 g</em></li><li><span>curry leaves</span><em>1 sprig · 2 g</em></li><li><span>cinnamon stick, a 1 cm piece</span><em>0.4 g</em></li><li><span>green cardamom pods, lightly crushed</span><em>2 pods · 0.5 g</em></li><li><span>fresh coriander leaves, chopped</span><em>2 tbsp · 10 g</em></li><li><span>salt</span><em>about 1/2 tsp · 3 g</em></li></ul></div>
-    <div><h5>Method</h5><ol class="steps"><li>Dry-roast the poppy seeds in a small pan over low heat for 45 to 60 seconds, shaking constantly, until they smell nutty and look a shade darker but not brown. Tip them into a bowl with the almonds and cover with 1/2 cup of just-boiled water. Soak 10 minutes.</li><li>Meanwhile, drop the paneer cubes into a bowl of hot salted water and leave them for 5 minutes; this keeps them soft and well seasoned. Drain just before use.</li><li>Drain the poppy seeds and almonds. Blend them with the coconut, 2 of the green chillies, the garlic, the ginger and 150 ml of fresh water for a full 2 minutes, scraping down once, until the paste is completely smooth and creamy.</li><li>Heat the ghee in a kadai over medium heat. Add the mustard seeds, cumin, cinnamon and cardamom. When the mustard stops popping (about 20 seconds) add the curry leaves and the remaining slit green chillies and let them splutter for 15 seconds.</li><li>Lower the heat. Stir in the Guntur karam, coriander powder and turmeric for 15 seconds only (powders burn in seconds in ghee), then pour in the blended paste plus 100 ml of water and the salt.</li><li>Simmer on medium-low for 7 to 8 minutes, stirring every minute because poppy-seed gravies catch on the bottom, until the gravy thickens to a coating consistency and tiny beads of ghee float at the edges.</li><li>Add the drained paneer, fold gently and warm through 3 minutes with the lid on. Add a splash of hot water if the gravy tightens. Finish with the coriander leaves and rest 3 minutes before serving; the gravy thickens a little as it stands.</li></ol></div>
+
+  <div style="margin-top: 1.5em;">
+    <article class="recipe-card" id="r-gasagasala-paneer-kura">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3em;">
+    <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span>
+    <span style="font-size:0.88em;color:#666666;">Andhra (gasagasala kura tradition) · Heat 3/5 · 28m</span>
   </div>
-<div class="rtips"><h5>Make it taste like home</h5><ul><li>Taste tip: roasting and then soaking the poppy seeds is what gives this gravy its deep, nutty body. Do not skip the full 2 minutes of blending or the gravy will taste gritty.</li><li>Keto tip: the gravy is built on seeds and coconut instead of onion, tomato, cashew or sugar. Use a brand of paneer with about 3 g carbohydrate per 100 g or less (check the label).</li><li>Make-ahead: the blended paste keeps 2 days in the fridge or 1 month frozen in ice-cube trays. Reheat gently with a splash of water; paneer toughens if boiled hard.</li><li>Heat dial: heat 3 as written. For heat 4, add 1/2 tsp more karam and one more green chilli to the paste; for heat 2, use two chillies in total.</li></ul></div><div class="rtips alt"><h5>Swaps</h5><ul><li>Use 300 g boneless chicken thigh pieces instead of paneer and add about 100 ml more water: simmer in the gravy for 12 to 15 minutes until the chicken reaches 74 C / 165 F with no pink inside.</li><li>Cauliflower florets (150 g, lightly steamed) can replace half the paneer, at roughly 1 g extra net carbohydrate for the pan.</li></ul></div>  <div class="rfoot">
-<span>Adapted from <a href="https://www.blendwithspices.com/paneer-malabari-paneer-coconut-gravy-recipe/" target="_blank" rel="noopener">Paneer Malabari - Paneer in Coconut Gravy - Blend with Spices (coconut, poppy-seed and green-chilli paste)</a>, <a href="https://www.archanaskitchen.com/recipe/paneer-in-coconut-gravy-recipe" target="_blank" rel="noopener">Paneer In Coconut Gravy Recipe - Archana&#39;s Kitchen (spiced coconut paneer gravy technique)</a>, <a href="https://www.sailusfood.com/vankaya-gasagasala-kura-eggplant-poppy-seeds-curry" target="_blank" rel="noopener">Vankaya Gasagasala Kura - Sailu&#39;s Food (roasting and grinding poppy seeds for an Andhra gravy)</a></span>  </div>
+  <h3>
+Gasagasala Paneer Kura (Poppy-Coconut Paneer Curry)<small lang="te">గసగసాల పనీర్ కూర</small>  </h3>
+<p class="item-summary" style="margin:0.3em 0 0.5em;">Soft paneer in a silky, faintly sweet gravy of toasted poppy seeds, coconut and almonds, lifted with green chilli and curry leaves. It borrows the poppy-seed paste of Andhra gasagasala kura and the coconut of paneer kobbari kura, with no onion, tomato or sugar.</p>  
+  <div class="recipe-macros">
+    <strong>8.0g</strong> net carbs &nbsp;·&nbsp;
+    <strong>23g</strong> protein &nbsp;·&nbsp;
+    <strong>41g</strong> fat &nbsp;·&nbsp;
+    <strong>497</strong> kcal &nbsp;·&nbsp;
+    Serves 2
+  </div>
+
+  <div class="macrobar" title="Macro calorie ratio">
+    <span style="width:75%;background:#d49b20"></span>
+    <span style="width:19%;background:#902050"></span>
+    <span style="width:6%;background:#174a61"></span>
+  </div>
+  <div class="mlegend">
+    <span style="color:#a87410;">● Fat 75%</span>
+    <span style="color:#902050;">● Protein 19%</span>
+    <span style="color:#174a61;">● Net Carbs 6%</span>
+  </div>
+
+  <div class="recipe-cols">
+    <div>
+      <h5>Ingredients</h5>
+      <ul class="ing">
+        <li>
+          <span>paneer, cut into 2 cm cubes</span>
+          <em>one 200 g block · 200g</em>
+        </li>
+        <li>
+          <span>fresh or frozen grated coconut</span>
+          <em>1/3 cup · 30g</em>
+        </li>
+        <li>
+          <span>poppy seeds (gasagasalu)</span>
+          <em>1 tbsp plus 1 tsp · 10g</em>
+        </li>
+        <li>
+          <span>raw almonds</span>
+          <em>about 7 almonds · 8g</em>
+        </li>
+        <li>
+          <span>ghee</span>
+          <em>1 tbsp plus 1/2 tsp · 16g</em>
+        </li>
+        <li>
+          <span>green chillies (2 in the paste, rest slit)</span>
+          <em>3 to 4 chillies · 14g</em>
+        </li>
+        <li>
+          <span>garlic</span>
+          <em>1 large clove · 5g</em>
+        </li>
+        <li>
+          <span>ginger</span>
+          <em>1 cm piece · 4g</em>
+        </li>
+        <li>
+          <span>Guntur karam (red chilli powder)</span>
+          <em>1 tsp · 2.5g</em>
+        </li>
+        <li>
+          <span>coriander powder</span>
+          <em>3/4 tsp · 2.5g</em>
+        </li>
+        <li>
+          <span>turmeric powder</span>
+          <em>a good pinch · 0.6g</em>
+        </li>
+        <li>
+          <span>cumin seeds</span>
+          <em>1/3 tsp · 1g</em>
+        </li>
+        <li>
+          <span>mustard seeds</span>
+          <em>1/3 tsp · 1g</em>
+        </li>
+        <li>
+          <span>curry leaves</span>
+          <em>1 sprig · 2g</em>
+        </li>
+        <li>
+          <span>cinnamon stick, a 1 cm piece</span>
+          <em>0.4g</em>
+        </li>
+        <li>
+          <span>green cardamom pods, lightly crushed</span>
+          <em>2 pods · 0.5g</em>
+        </li>
+        <li>
+          <span>fresh coriander leaves, chopped</span>
+          <em>2 tbsp · 10g</em>
+        </li>
+        <li>
+          <span>salt</span>
+          <em>about 1/2 tsp · 3g</em>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Method</h5>
+      <ol class="steps">
+        <li>Dry-roast the poppy seeds in a small pan over low heat for 45 to 60 seconds, shaking constantly, until they smell nutty and look a shade darker but not brown. Tip them into a bowl with the almonds and cover with 1/2 cup of just-boiled water. Soak 10 minutes.</li>
+        <li>Meanwhile, drop the paneer cubes into a bowl of hot salted water and leave them for 5 minutes; this keeps them soft and well seasoned. Drain just before use.</li>
+        <li>Drain the poppy seeds and almonds. Blend them with the coconut, 2 of the green chillies, the garlic, the ginger and 150 ml of fresh water for a full 2 minutes, scraping down once, until the paste is completely smooth and creamy.</li>
+        <li>Heat the ghee in a kadai over medium heat. Add the mustard seeds, cumin, cinnamon and cardamom. When the mustard stops popping (about 20 seconds) add the curry leaves and the remaining slit green chillies and let them splutter for 15 seconds.</li>
+        <li>Lower the heat. Stir in the Guntur karam, coriander powder and turmeric for 15 seconds only (powders burn in seconds in ghee), then pour in the blended paste plus 100 ml of water and the salt.</li>
+        <li>Simmer on medium-low for 7 to 8 minutes, stirring every minute because poppy-seed gravies catch on the bottom, until the gravy thickens to a coating consistency and tiny beads of ghee float at the edges.</li>
+        <li>Add the drained paneer, fold gently and warm through 3 minutes with the lid on. Add a splash of hot water if the gravy tightens. Finish with the coriander leaves and rest 3 minutes before serving; the gravy thickens a little as it stands.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rtips">
+    <h5>Make it taste like home</h5>
+    <ul>
+<li>Taste tip: roasting and then soaking the poppy seeds is what gives this gravy its deep, nutty body. Do not skip the full 2 minutes of blending or the gravy will taste gritty.</li><li>Keto tip: the gravy is built on seeds and coconut instead of onion, tomato, cashew or sugar. Use a brand of paneer with about 3 g carbohydrate per 100 g or less (check the label).</li><li>Make-ahead: the blended paste keeps 2 days in the fridge or 1 month frozen in ice-cube trays. Reheat gently with a splash of water; paneer toughens if boiled hard.</li><li>Heat dial: heat 3 as written. For heat 4, add 1/2 tsp more karam and one more green chilli to the paste; for heat 2, use two chillies in total.</li>    </ul>
+  </div>
+
+  <div class="rtips alt">
+    <h5>Keto Swaps & Variations</h5>
+    <ul>
+<li>Use 300 g boneless chicken thigh pieces instead of paneer and add about 100 ml more water: simmer in the gravy for 12 to 15 minutes until the chicken reaches 74 C / 165 F with no pink inside.</li><li>Cauliflower florets (150 g, lightly steamed) can replace half the paneer, at roughly 1 g extra net carbohydrate for the pan.</li>    </ul>
+  </div>
+
+  <div class="rfoot">
+    <span>Adapted from: <a href="https://www.blendwithspices.com/paneer-malabari-paneer-coconut-gravy-recipe/" target="_blank" rel="noopener">Paneer Malabari - Paneer in Coconut Gravy - Blend with Spices (coconut, poppy-seed and green-chilli paste)</a>, <a href="https://www.archanaskitchen.com/recipe/paneer-in-coconut-gravy-recipe" target="_blank" rel="noopener">Paneer In Coconut Gravy Recipe - Archana&#39;s Kitchen (spiced coconut paneer gravy technique)</a>, <a href="https://www.sailusfood.com/vankaya-gasagasala-kura-eggplant-poppy-seeds-curry" target="_blank" rel="noopener">Vankaya Gasagasala Kura - Sailu&#39;s Food (roasting and grinding poppy seeds for an Andhra gravy)</a></span>
+  </div>
 </article>
 
-  <p class="fineprint">General cooking and nutrition protocol, not medical advice. Macros are precisely computed from sourced ingredient values.</p>
-</main>
-<div style="height:60px"></div>
-
-<script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
-    });
-  }
-})();
-</script>
+    <p style="font-size:0.85em;color:#777777;margin-top:1.5em;border-top:1px solid #eee;padding-top:0.8em;">
+      General cooking and nutrition protocol, not medical advice. Macros are computed from verified whole-food ingredient weights.
+    </p>
+  </div>
+</div>
 </body>
 </html>

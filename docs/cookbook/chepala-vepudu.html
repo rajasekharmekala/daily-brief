@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Chepala Vepudu (Andhra Fish Fry with Karam Masala) · Keto Andhra Cookbook</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<style>/* Techmeme-inspired stylesheet for The Morning Brief */
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -62,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -77,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -689,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -720,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -836,77 +961,184 @@ td.searchbox {
     gap: 0.8em;
   }
 }
+
 </style>
 </head>
-<body class="ck">
-<header class="hero" style="padding:24px 0 16px;">
-  <div class="wrap">
-    <div class="top-bar" style="border-bottom:none;padding-bottom:0;">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO RECIPE DOSSIER</span>
-        <span class="issue-tag">First Added: 2026-10-20</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="index.html"><strong>&larr; Back to Cookbook Directory</strong></a>
+        <a href="../index.html">The Morning Brief Archive</a>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>Added: 2026-10-20</span>
+        <span>Meal: Dinner</span>
       </div>
     </div>
-    <p style="margin:16px 0 0">
-      <a class="linkbtn" href="index.html" style="--accent:#10b981">← Back to Cookbook Index</a>
-    </p>
-  </div>
-</header>
 
-<main class="wrap" style="--accent:#10b981;margin-top:28px;">
-  <article class="recipe" id="r-chepala-vepudu">
-  <div class="rhead">
-    <span class="pill">Dinner</span>
-    <span class="heat" title="Heat 5 of 5">Heat <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
-    <span class="rmeta">Andhra</span>
+    <!-- Header Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Regional Low-Carb Dossier</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Dinner Protocol</div>
+        </td>
+        <td class="searchbox">
+          <a class="sbti-btn" href="index.html">All Recipes &rarr;</a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <h4>Chepala Vepudu (Andhra Fish Fry with Karam Masala)<small lang="te">చేపల వేపుడు</small></h4>
-<p class="blurb">Fish pieces marinated in ginger, garlic and lemon, then crusted in a freshly ground roasted sesame, dry coconut and red chilli masala and shallow-fried in ghee with curry leaves. Crisp edges, fiery and ready in about 25 minutes.</p>  <ul class="rstats">
-    <li><b>5.8 g</b> net carbs</li>
-    <li><b>37 g</b> protein</li>
-    <li><b>18 g</b> fat</li>
-    <li><b>338</b> kcal</li>
-    <li>24 min</li>
-    <li>Serves 2</li>
-  </ul>
-  <div class="macrobar" title="Share of calories">
-    <span style="width:49%;background:#e8a317"></span><span style="width:44%;background:#d6336c"></span><span style="width:7%;background:#1c64f2"></span>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Morning Brief Home</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="index.html">All Dishes</a>
+    </div>
   </div>
-  <div class="mlegend"><span style="--c:#e8a317">Fat 49%</span><span style="--c:#d6336c">Protein 44%</span><span style="--c:#1c64f2">Net carbs 7%</span><span>per serving</span></div>
-  <div class="rcols">
-    <div><h5>Ingredients</h5><ul class="ing"><li><span>tilapia fillets, cut into 5 cm pieces</span><em>2 large fillets, about 12 oz · 350 g</em></li><li><span>lemon juice</span><em>2 tsp · 10 g</em></li><li><span>ginger, grated</span><em>2 cm piece · 6 g</em></li><li><span>garlic, grated</span><em>3 cloves · 8 g</em></li><li><span>Guntur red chilli powder, for the marinade</span><em>1 1/2 tsp · 3 g</em></li><li><span>turmeric</span><em>1/2 tsp · 1 g</em></li><li><span>black pepper</span><em>1/4 tsp · 0.5 g</em></li><li><span>salt</span><em>3/4 tsp · 3.5 g</em></li><li><span>sesame seeds, for the masala</span><em>2 tsp · 6 g</em></li><li><span>dry coconut, unsweetened desiccated, for the masala</span><em>1 tbsp · 8 g</em></li><li><span>cumin seeds, for the masala</span><em>1 tsp · 2 g</em></li><li><span>dried red chillies, for the masala</span><em>3 chillies · 3 g</em></li><li><span>ghee</span><em>1 tbsp · 14 g</em></li><li><span>sesame (gingelly) oil</span><em>1/2 tbsp · 7 g</em></li><li><span>curry leaves</span><em>2 sprigs · 3 g</em></li><li><span>onion, thin rings, to serve</span><em>a few rings · 40 g</em></li></ul></div>
-    <div><h5>Method</h5><ol class="steps"><li>Make the karam vepudu masala (4 min): dry-roast the sesame, dry coconut, cumin and dried chillies in a small pan over medium-low heat, stirring, until the sesame pops and the coconut turns pale gold. Cool 1 minute and grind to a coarse, sandy powder with a pinch of salt. Set aside.</li><li>While the masala cools, pat the fish very dry. Mix the ginger, garlic, lemon juice, 1 1/2 tsp chilli powder, turmeric, pepper and the salt into a thick paste and rub it on the fish. Rest 10 minutes, no longer; the lemon starts to cure the surface.</li><li>Press each fish piece into the masala so it is lightly coated on both sides. Keep a spoonful aside.</li><li>Heat the ghee and sesame oil in a flat pan over medium-high heat until shimmering. Lay in the fish in a single layer without crowding (fry in two batches if needed) and leave undisturbed 3 minutes, until the underside is crusted and golden.</li><li>Flip gently with a thin spatula, add the curry leaves to the oil and fry 2 to 3 minutes more. The fish is done when it flakes easily with a fork and reaches 145 F (63 C).</li><li>Sprinkle the reserved masala over the fish for the last 30 seconds, then serve at once with onion rings, lemon and a bowl of cauliflower rice.</li></ol></div>
+
+  <div style="margin-top: 1.5em;">
+    <article class="recipe-card" id="r-chepala-vepudu">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3em;">
+    <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span>
+    <span style="font-size:0.88em;color:#666666;">Andhra · Heat 5/5 · 24m</span>
   </div>
-<div class="rtips"><h5>Make it taste like home</h5><ul><li>Fish choices at US stores: tilapia fillets and US-farmed catfish are cheap and always available; thick salmon fillet gives a richer fry; frozen whole or steaked pomfret, kingfish (surmai/vanjaram) and rohu or katla from Indian grocers are closest to home. Fillets and steaks both work; whole fish needs 4 to 5 minutes a side.</li><li>Taste tip: the masala is roasted, not raw; that smell is the difference between a good fish fry and a great one. It keeps 2 weeks in a jar, so make double.</li><li>Keto tip: the traditional chana and urad dal in this masala are dropped (the carbs add up); sesame and coconut give the same nutty texture at about 6 g net carbs per serving including the onion rings.</li><li>Do not turn the fish early; it sticks until the crust forms and then releases easily.</li></ul></div><div class="rtips alt"><h5>Swaps</h5><ul><li>Catfish or pomfret instead of tilapia; add 1 to 2 minutes for thicker steaks.</li><li>For heat 4, use two dried chillies in the masala and 1 tsp chilli powder in the marinade.</li></ul></div>  <div class="rfoot">
-<span>Adapted from <a href="https://www.indianhealthyrecipes.com/andhra-fish-fry-ghee-roasted-fish/" target="_blank" rel="noopener">Andhra Fish Fry Recipe - Swasthi&#39;s Recipes</a>, <a href="https://www.archanaskitchen.com/recipe/andhra-style-chepa-vepudu-recipe-andhra-fish-fry-recipe" target="_blank" rel="noopener">Andhra Style Chepa Vepudu (Karam Vepudu masala) - Archana&#39;s Kitchen</a>, <a href="https://eathealthy365.com/the-ultimate-guide-to-choosing-fish-for-indian-curry/" target="_blank" rel="noopener">What Fish to Use for Indian Curry? - EatHealthy365 (US fish choices incl. farmed catfish, salmon, pomfret, tilapia)</a></span>  </div>
+  <h3>
+Chepala Vepudu (Andhra Fish Fry with Karam Masala)<small lang="te">చేపల వేపుడు</small>  </h3>
+<p class="item-summary" style="margin:0.3em 0 0.5em;">Fish pieces marinated in ginger, garlic and lemon, then crusted in a freshly ground roasted sesame, dry coconut and red chilli masala and shallow-fried in ghee with curry leaves. Crisp edges, fiery and ready in about 25 minutes.</p>  
+  <div class="recipe-macros">
+    <strong>5.8g</strong> net carbs &nbsp;·&nbsp;
+    <strong>37g</strong> protein &nbsp;·&nbsp;
+    <strong>18g</strong> fat &nbsp;·&nbsp;
+    <strong>338</strong> kcal &nbsp;·&nbsp;
+    Serves 2
+  </div>
+
+  <div class="macrobar" title="Macro calorie ratio">
+    <span style="width:49%;background:#d49b20"></span>
+    <span style="width:44%;background:#902050"></span>
+    <span style="width:7%;background:#174a61"></span>
+  </div>
+  <div class="mlegend">
+    <span style="color:#a87410;">● Fat 49%</span>
+    <span style="color:#902050;">● Protein 44%</span>
+    <span style="color:#174a61;">● Net Carbs 7%</span>
+  </div>
+
+  <div class="recipe-cols">
+    <div>
+      <h5>Ingredients</h5>
+      <ul class="ing">
+        <li>
+          <span>tilapia fillets, cut into 5 cm pieces</span>
+          <em>2 large fillets, about 12 oz · 350g</em>
+        </li>
+        <li>
+          <span>lemon juice</span>
+          <em>2 tsp · 10g</em>
+        </li>
+        <li>
+          <span>ginger, grated</span>
+          <em>2 cm piece · 6g</em>
+        </li>
+        <li>
+          <span>garlic, grated</span>
+          <em>3 cloves · 8g</em>
+        </li>
+        <li>
+          <span>Guntur red chilli powder, for the marinade</span>
+          <em>1 1/2 tsp · 3g</em>
+        </li>
+        <li>
+          <span>turmeric</span>
+          <em>1/2 tsp · 1g</em>
+        </li>
+        <li>
+          <span>black pepper</span>
+          <em>1/4 tsp · 0.5g</em>
+        </li>
+        <li>
+          <span>salt</span>
+          <em>3/4 tsp · 3.5g</em>
+        </li>
+        <li>
+          <span>sesame seeds, for the masala</span>
+          <em>2 tsp · 6g</em>
+        </li>
+        <li>
+          <span>dry coconut, unsweetened desiccated, for the masala</span>
+          <em>1 tbsp · 8g</em>
+        </li>
+        <li>
+          <span>cumin seeds, for the masala</span>
+          <em>1 tsp · 2g</em>
+        </li>
+        <li>
+          <span>dried red chillies, for the masala</span>
+          <em>3 chillies · 3g</em>
+        </li>
+        <li>
+          <span>ghee</span>
+          <em>1 tbsp · 14g</em>
+        </li>
+        <li>
+          <span>sesame (gingelly) oil</span>
+          <em>1/2 tbsp · 7g</em>
+        </li>
+        <li>
+          <span>curry leaves</span>
+          <em>2 sprigs · 3g</em>
+        </li>
+        <li>
+          <span>onion, thin rings, to serve</span>
+          <em>a few rings · 40g</em>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Method</h5>
+      <ol class="steps">
+        <li>Make the karam vepudu masala (4 min): dry-roast the sesame, dry coconut, cumin and dried chillies in a small pan over medium-low heat, stirring, until the sesame pops and the coconut turns pale gold. Cool 1 minute and grind to a coarse, sandy powder with a pinch of salt. Set aside.</li>
+        <li>While the masala cools, pat the fish very dry. Mix the ginger, garlic, lemon juice, 1 1/2 tsp chilli powder, turmeric, pepper and the salt into a thick paste and rub it on the fish. Rest 10 minutes, no longer; the lemon starts to cure the surface.</li>
+        <li>Press each fish piece into the masala so it is lightly coated on both sides. Keep a spoonful aside.</li>
+        <li>Heat the ghee and sesame oil in a flat pan over medium-high heat until shimmering. Lay in the fish in a single layer without crowding (fry in two batches if needed) and leave undisturbed 3 minutes, until the underside is crusted and golden.</li>
+        <li>Flip gently with a thin spatula, add the curry leaves to the oil and fry 2 to 3 minutes more. The fish is done when it flakes easily with a fork and reaches 145 F (63 C).</li>
+        <li>Sprinkle the reserved masala over the fish for the last 30 seconds, then serve at once with onion rings, lemon and a bowl of cauliflower rice.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rtips">
+    <h5>Make it taste like home</h5>
+    <ul>
+<li>Fish choices at US stores: tilapia fillets and US-farmed catfish are cheap and always available; thick salmon fillet gives a richer fry; frozen whole or steaked pomfret, kingfish (surmai/vanjaram) and rohu or katla from Indian grocers are closest to home. Fillets and steaks both work; whole fish needs 4 to 5 minutes a side.</li><li>Taste tip: the masala is roasted, not raw; that smell is the difference between a good fish fry and a great one. It keeps 2 weeks in a jar, so make double.</li><li>Keto tip: the traditional chana and urad dal in this masala are dropped (the carbs add up); sesame and coconut give the same nutty texture at about 6 g net carbs per serving including the onion rings.</li><li>Do not turn the fish early; it sticks until the crust forms and then releases easily.</li>    </ul>
+  </div>
+
+  <div class="rtips alt">
+    <h5>Keto Swaps & Variations</h5>
+    <ul>
+<li>Catfish or pomfret instead of tilapia; add 1 to 2 minutes for thicker steaks.</li><li>For heat 4, use two dried chillies in the masala and 1 tsp chilli powder in the marinade.</li>    </ul>
+  </div>
+
+  <div class="rfoot">
+    <span>Adapted from: <a href="https://www.indianhealthyrecipes.com/andhra-fish-fry-ghee-roasted-fish/" target="_blank" rel="noopener">Andhra Fish Fry Recipe - Swasthi&#39;s Recipes</a>, <a href="https://www.archanaskitchen.com/recipe/andhra-style-chepa-vepudu-recipe-andhra-fish-fry-recipe" target="_blank" rel="noopener">Andhra Style Chepa Vepudu (Karam Vepudu masala) - Archana&#39;s Kitchen</a>, <a href="https://eathealthy365.com/the-ultimate-guide-to-choosing-fish-for-indian-curry/" target="_blank" rel="noopener">What Fish to Use for Indian Curry? - EatHealthy365 (US fish choices incl. farmed catfish, salmon, pomfret, tilapia)</a></span>
+  </div>
 </article>
 
-  <p class="fineprint">General cooking and nutrition protocol, not medical advice. Macros are precisely computed from sourced ingredient values.</p>
-</main>
-<div style="height:60px"></div>
-
-<script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
-    });
-  }
-})();
-</script>
+    <p style="font-size:0.85em;color:#777777;margin-top:1.5em;border-top:1px solid #eee;padding-top:0.8em;">
+      General cooking and nutrition protocol, not medical advice. Macros are computed from verified whole-food ingredient weights.
+    </p>
+  </div>
+</div>
 </body>
 </html>

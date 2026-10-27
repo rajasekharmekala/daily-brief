@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Nuvvula Karam (Roasted Sesame Chilli Powder) · Keto Andhra Cookbook</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<style>/* Techmeme-inspired stylesheet for The Morning Brief */
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -62,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -77,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -689,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -720,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -836,77 +961,143 @@ td.searchbox {
     gap: 0.8em;
   }
 }
+
 </style>
 </head>
-<body class="ck">
-<header class="hero" style="padding:24px 0 16px;">
-  <div class="wrap">
-    <div class="top-bar" style="border-bottom:none;padding-bottom:0;">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO RECIPE DOSSIER</span>
-        <span class="issue-tag">First Added: 2026-10-20</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="index.html"><strong>&larr; Back to Cookbook Directory</strong></a>
+        <a href="../index.html">The Morning Brief Archive</a>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>Added: 2026-10-20</span>
+        <span>Meal: Podi</span>
       </div>
     </div>
-    <p style="margin:16px 0 0">
-      <a class="linkbtn" href="index.html" style="--accent:#10b981">← Back to Cookbook Index</a>
-    </p>
-  </div>
-</header>
 
-<main class="wrap" style="--accent:#10b981;margin-top:28px;">
-  <article class="recipe" id="r-nuvvula-karam">
-  <div class="rhead">
-    <span class="pill">Podi</span>
-    <span class="heat" title="Heat 4 of 5">Heat <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span>
-    <span class="rmeta">Andhra</span>
+    <!-- Header Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Regional Low-Carb Dossier</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Podi Protocol</div>
+        </td>
+        <td class="searchbox">
+          <a class="sbti-btn" href="index.html">All Recipes &rarr;</a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <h4>Nuvvula Karam (Roasted Sesame Chilli Powder)<small lang="te">నువ్వుల కారం</small></h4>
-<p class="blurb">Coarse-ground roasted sesame with toasted chillies, coriander, cumin and garlic. It is nutty, deeply savoury and one of the easiest ways to make plain vegetables taste Andhra. No dal, so a tablespoon stays around 1 g net carbs.</p>  <ul class="rstats">
-    <li><b>1.3 g</b> net carbs</li>
-    <li><b>1 g</b> protein</li>
-    <li><b>3 g</b> fat</li>
-    <li><b>41</b> kcal</li>
-    <li>19 min</li>
-    <li>Serves 16</li>
-  </ul>
-  <div class="macrobar" title="Share of calories">
-    <span style="width:75%;background:#e8a317"></span><span style="width:13%;background:#d6336c"></span><span style="width:13%;background:#1c64f2"></span>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Morning Brief Home</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="index.html">All Dishes</a>
+    </div>
   </div>
-  <div class="mlegend"><span style="--c:#e8a317">Fat 75%</span><span style="--c:#d6336c">Protein 13%</span><span style="--c:#1c64f2">Net carbs 13%</span><span>per serving</span></div>
-  <div class="rcols">
-    <div><h5>Ingredients</h5><ul class="ing"><li><span>sesame seeds (nuvvulu)</span><em>about ⅔ cup · 100 g</em></li><li><span>dried red chillies</span><em>8 to 10 chillies · 14 g</em></li><li><span>coriander seeds</span><em>2 tsp · 6 g</em></li><li><span>cumin seeds</span><em>1 tsp · 3 g</em></li><li><span>garlic cloves, peeled and dry-roasted</span><em>3 to 4 cloves · 8 g</em></li><li><span>salt</span><em>¾ tsp · 4 g</em></li></ul></div>
-    <div><h5>Method</h5><ol class="steps"><li>Roast the sesame seeds in a heavy kadai on medium-low for 3 to 4 minutes, stirring, until they turn a shade deeper, smell nutty and begin to pop. Move them to a plate immediately; sesame left in the hot pan keeps cooking and turns bitter.</li><li>In the same pan, toast the coriander and cumin 1 to 2 minutes until fragrant, then the chillies for about a minute until they just darken. Add the peeled garlic cloves and dry-roast on low about 3 minutes until freckled and dry. Move everything to the plate.</li><li>Let the mixture cool completely. Hot ingredients release the sesame oil and make a lump instead of a powder.</li><li>Grind the chillies, coriander, cumin, garlic and salt first to a fine-coarse powder. Add the sesame and pulse in 1-second bursts until it looks like a coarse sandy powder. A large jar helps; stop before it clumps.</li><li>Cool, then store in an airtight jar. Serve a heaped tablespoon with a teaspoon of ghee or sesame oil.</li></ol></div>
+
+  <div style="margin-top: 1.5em;">
+    <article class="recipe-card" id="r-nuvvula-karam">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3em;">
+    <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">podi</span>
+    <span style="font-size:0.88em;color:#666666;">Andhra · Heat 4/5 · 19m</span>
   </div>
-<div class="rtips"><h5>Make it taste like home</h5><ul><li>Storage: a plain dry sesame-and-chilli podi stored airtight with a dry spoon keeps several weeks, often up to a couple of months, at room temperature. With garlic, treat it like a fresh chutney: keep it in the fridge and use it within about 2 weeks.</li><li>Keto note: sesame is not carb-free (about 12 g net carbs per 100 g), so use a tablespoon at a time rather than a heap.</li><li>Sprinkle over cauliflower rice, bendakaya vepudu or vankaya kobbari kura, stir into yoghurt, or toss with sautéed greens or ridge gourd.</li></ul></div><div class="rtips alt"><h5>Swaps</h5><ul><li>Lower heat: halve the chillies and add a Kashmiri chilli for colour.</li><li>Pantry version: skip the garlic for a longer shelf life.</li></ul></div>  <div class="rfoot">
-<span>Adapted from <a href="https://www.sailusfood.com/nuvvulu-podi-spiced-sesame-seeds-powder" target="_blank" rel="noopener">Nuvvulu Podi (Spiced Sesame Seeds Powder) - Sailu&#39;s Kitchen</a>, <a href="https://aahaaramonline.com/nuvvula-podi-roasted-sesame-powder-andhra-pradesh/" target="_blank" rel="noopener">Nuvvula Podi (Roasted Sesame Powder from Andhra Pradesh) - Aaharam</a>, <a href="https://nandhini.com/nuvvula-podi-andhra-sesame-powder/" target="_blank" rel="noopener">Nuvvula Podi (Andhra Sesame Powder) - Nandhini</a></span>  </div>
+  <h3>
+Nuvvula Karam (Roasted Sesame Chilli Powder)<small lang="te">నువ్వుల కారం</small>  </h3>
+<p class="item-summary" style="margin:0.3em 0 0.5em;">Coarse-ground roasted sesame with toasted chillies, coriander, cumin and garlic. It is nutty, deeply savoury and one of the easiest ways to make plain vegetables taste Andhra. No dal, so a tablespoon stays around 1 g net carbs.</p>  
+  <div class="recipe-macros">
+    <strong>1.3g</strong> net carbs &nbsp;·&nbsp;
+    <strong>1g</strong> protein &nbsp;·&nbsp;
+    <strong>3g</strong> fat &nbsp;·&nbsp;
+    <strong>41</strong> kcal &nbsp;·&nbsp;
+    Serves 16
+  </div>
+
+  <div class="macrobar" title="Macro calorie ratio">
+    <span style="width:75%;background:#d49b20"></span>
+    <span style="width:13%;background:#902050"></span>
+    <span style="width:13%;background:#174a61"></span>
+  </div>
+  <div class="mlegend">
+    <span style="color:#a87410;">● Fat 75%</span>
+    <span style="color:#902050;">● Protein 13%</span>
+    <span style="color:#174a61;">● Net Carbs 13%</span>
+  </div>
+
+  <div class="recipe-cols">
+    <div>
+      <h5>Ingredients</h5>
+      <ul class="ing">
+        <li>
+          <span>sesame seeds (nuvvulu)</span>
+          <em>about ⅔ cup · 100g</em>
+        </li>
+        <li>
+          <span>dried red chillies</span>
+          <em>8 to 10 chillies · 14g</em>
+        </li>
+        <li>
+          <span>coriander seeds</span>
+          <em>2 tsp · 6g</em>
+        </li>
+        <li>
+          <span>cumin seeds</span>
+          <em>1 tsp · 3g</em>
+        </li>
+        <li>
+          <span>garlic cloves, peeled and dry-roasted</span>
+          <em>3 to 4 cloves · 8g</em>
+        </li>
+        <li>
+          <span>salt</span>
+          <em>¾ tsp · 4g</em>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Method</h5>
+      <ol class="steps">
+        <li>Roast the sesame seeds in a heavy kadai on medium-low for 3 to 4 minutes, stirring, until they turn a shade deeper, smell nutty and begin to pop. Move them to a plate immediately; sesame left in the hot pan keeps cooking and turns bitter.</li>
+        <li>In the same pan, toast the coriander and cumin 1 to 2 minutes until fragrant, then the chillies for about a minute until they just darken. Add the peeled garlic cloves and dry-roast on low about 3 minutes until freckled and dry. Move everything to the plate.</li>
+        <li>Let the mixture cool completely. Hot ingredients release the sesame oil and make a lump instead of a powder.</li>
+        <li>Grind the chillies, coriander, cumin, garlic and salt first to a fine-coarse powder. Add the sesame and pulse in 1-second bursts until it looks like a coarse sandy powder. A large jar helps; stop before it clumps.</li>
+        <li>Cool, then store in an airtight jar. Serve a heaped tablespoon with a teaspoon of ghee or sesame oil.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rtips">
+    <h5>Make it taste like home</h5>
+    <ul>
+<li>Storage: a plain dry sesame-and-chilli podi stored airtight with a dry spoon keeps several weeks, often up to a couple of months, at room temperature. With garlic, treat it like a fresh chutney: keep it in the fridge and use it within about 2 weeks.</li><li>Keto note: sesame is not carb-free (about 12 g net carbs per 100 g), so use a tablespoon at a time rather than a heap.</li><li>Sprinkle over cauliflower rice, bendakaya vepudu or vankaya kobbari kura, stir into yoghurt, or toss with sautéed greens or ridge gourd.</li>    </ul>
+  </div>
+
+  <div class="rtips alt">
+    <h5>Keto Swaps & Variations</h5>
+    <ul>
+<li>Lower heat: halve the chillies and add a Kashmiri chilli for colour.</li><li>Pantry version: skip the garlic for a longer shelf life.</li>    </ul>
+  </div>
+
+  <div class="rfoot">
+    <span>Adapted from: <a href="https://www.sailusfood.com/nuvvulu-podi-spiced-sesame-seeds-powder" target="_blank" rel="noopener">Nuvvulu Podi (Spiced Sesame Seeds Powder) - Sailu&#39;s Kitchen</a>, <a href="https://aahaaramonline.com/nuvvula-podi-roasted-sesame-powder-andhra-pradesh/" target="_blank" rel="noopener">Nuvvula Podi (Roasted Sesame Powder from Andhra Pradesh) - Aaharam</a>, <a href="https://nandhini.com/nuvvula-podi-andhra-sesame-powder/" target="_blank" rel="noopener">Nuvvula Podi (Andhra Sesame Powder) - Nandhini</a></span>
+  </div>
 </article>
 
-  <p class="fineprint">General cooking and nutrition protocol, not medical advice. Macros are precisely computed from sourced ingredient values.</p>
-</main>
-<div style="height:60px"></div>
-
-<script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
-    });
-  }
-})();
-</script>
+    <p style="font-size:0.85em;color:#777777;margin-top:1.5em;border-top:1px solid #eee;padding-top:0.8em;">
+      General cooking and nutrition protocol, not medical advice. Macros are computed from verified whole-food ingredient weights.
+    </p>
+  </div>
+</div>
 </body>
 </html>

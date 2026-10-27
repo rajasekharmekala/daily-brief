@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Vankaya Kobbari Kura (Brinjal in Coconut-Sesame Masala) · Keto Andhra Cookbook</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<style>/* Techmeme-inspired stylesheet for The Morning Brief */
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -62,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -77,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -689,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -720,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -836,77 +961,176 @@ td.searchbox {
     gap: 0.8em;
   }
 }
+
 </style>
 </head>
-<body class="ck">
-<header class="hero" style="padding:24px 0 16px;">
-  <div class="wrap">
-    <div class="top-bar" style="border-bottom:none;padding-bottom:0;">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO RECIPE DOSSIER</span>
-        <span class="issue-tag">First Added: 2026-10-20</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="index.html"><strong>&larr; Back to Cookbook Directory</strong></a>
+        <a href="../index.html">The Morning Brief Archive</a>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>Added: 2026-10-20</span>
+        <span>Meal: Side</span>
       </div>
     </div>
-    <p style="margin:16px 0 0">
-      <a class="linkbtn" href="index.html" style="--accent:#10b981">← Back to Cookbook Index</a>
-    </p>
-  </div>
-</header>
 
-<main class="wrap" style="--accent:#10b981;margin-top:28px;">
-  <article class="recipe" id="r-vankaya-kobbari-kura">
-  <div class="rhead">
-    <span class="pill">Side</span>
-    <span class="heat" title="Heat 4 of 5">Heat <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span>
-    <span class="rmeta">Coastal Andhra</span>
+    <!-- Header Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Regional Low-Carb Dossier</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Side Protocol</div>
+        </td>
+        <td class="searchbox">
+          <a class="sbti-btn" href="index.html">All Recipes &rarr;</a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <h4>Vankaya Kobbari Kura (Brinjal in Coconut-Sesame Masala)<small lang="te">వంకాయ కొబ్బరి కూర</small></h4>
-<p class="blurb">Tender brinjal wedges slow-roasted in a toasted coconut, sesame, garlic and chilli masala until the kura turns thick and dry-ish (mudda kura). Sesame oil, lemon in place of tamarind, and no jaggery.</p>  <ul class="rstats">
-    <li><b>5.5 g</b> net carbs</li>
-    <li><b>3 g</b> protein</li>
-    <li><b>15 g</b> fat</li>
-    <li><b>174</b> kcal</li>
-    <li>30 min</li>
-    <li>Serves 3</li>
-  </ul>
-  <div class="macrobar" title="Share of calories">
-    <span style="width:80%;background:#e8a317"></span><span style="width:7%;background:#d6336c"></span><span style="width:13%;background:#1c64f2"></span>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Morning Brief Home</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="index.html">All Dishes</a>
+    </div>
   </div>
-  <div class="mlegend"><span style="--c:#e8a317">Fat 80%</span><span style="--c:#d6336c">Protein 7%</span><span style="--c:#1c64f2">Net carbs 13%</span><span>per serving</span></div>
-  <div class="rcols">
-    <div><h5>Ingredients</h5><ul class="ing"><li><span>small purple brinjals, cut into 3 cm wedges through the stalk</span><em>about 4 small brinjals · 250 g</em></li><li><span>unsweetened dried coconut</span><em>3 tbsp · 25 g</em></li><li><span>sesame seeds</span><em>1 tbsp · 12 g</em></li><li><span>garlic</span><em>3 cloves · 6 g</em></li><li><span>green chillies</span><em>2 · 12 g</em></li><li><span>dried red chillies</span><em>2 whole · 3 g</em></li><li><span>coriander seeds</span><em>1 tsp · 3 g</em></li><li><span>cumin seeds</span><em>½ tsp · 1.5 g</em></li><li><span>sesame oil</span><em>4 tsp · 20 g</em></li><li><span>mustard seeds</span><em>½ tsp · 1 g</em></li><li><span>curry leaves</span><em>1 sprig · 2 g</em></li><li><span>turmeric powder</span><em>¼ tsp · 1 g</em></li><li><span>lemon juice</span><em>2 tsp · 10 g</em></li><li><span>salt</span><em>¾ tsp · 3 g</em></li></ul></div>
-    <div><h5>Method</h5><ol class="steps"><li>Dry-roast the masala in a small pan on medium-low, one item at a time and moving it out as soon as it is ready: sesame seeds 1½ minutes until they pop and turn light gold, then the coconut 1 to 2 minutes until beige and fragrant, then the red chillies, coriander and cumin for 40 seconds. Cool 5 minutes.</li><li>Grind the roasted masala with the garlic, green chillies, ½ tsp of the salt and about 3 tbsp water to a moist, slightly coarse paste.</li><li>While the masala cools, cut the brinjal into wedges and drop them into cold salted water so they do not darken. Drain and pat dry just before cooking.</li><li>Heat the oil in a heavy kadai on medium-high. Add the mustard seeds; when they crackle add the curry leaves and turmeric. Add the brinjal and toss for 3 minutes until the skins turn glossy and the edges pick up colour.</li><li>Add the remaining salt, cover and cook on low-medium for 8 to 10 minutes, stirring once, until the wedges are nearly tender.</li><li>Add the masala paste and 3 tbsp water, fold gently, then cook uncovered 5 to 6 minutes on medium-low until the water has gone, the masala clings and the oil begins to separate at the edge. Finish with the lemon juice.</li></ol></div>
+
+  <div style="margin-top: 1.5em;">
+    <article class="recipe-card" id="r-vankaya-kobbari-kura">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3em;">
+    <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">side</span>
+    <span style="font-size:0.88em;color:#666666;">Coastal Andhra · Heat 4/5 · 30m</span>
   </div>
-<div class="rtips"><h5>Make it taste like home</h5><ul><li>Choose small, tender, glossy brinjals. Large seedy ones turn bitter and watery, as Sailu&#39;s Kitchen warns.</li><li>Keto note: tamarind pulp is about 60 g carbs per 100 g and jaggery is sugar, so a squeeze of lemon replaces both. Brinjal is counted by weight: about 80 g per serving.</li><li>Make ahead: the toasted masala paste keeps 3 days in the fridge, and the finished kura tastes better the next day; it reheats well in a covered pan.</li><li>Spoon it over cauliflower rice with a little ghee, or serve beside chicken or egg pulusu.</li></ul></div><div class="rtips alt"><h5>Swaps</h5><ul><li>Lower heat: use 1 green chilli and 1 dried red chilli.</li><li>For the stuffed gutti vankaya style, slit small brinjals into quarters keeping the stalks, fill them with the masala and cook covered 15 to 20 minutes.</li></ul></div>  <div class="rfoot">
-<span>Adapted from <a href="https://www.sailusfood.com/vankaya-karam-stuffed-brinjal-recipe" target="_blank" rel="noopener">Vankaya Kobbari Karam (Stuffed Brinjal) - Sailu&#39;s Kitchen</a>, <a href="https://www.yummytummyaarthi.com/brinjal-with-sesame-seeds-masala-recipe/" target="_blank" rel="noopener">Vankaya Nuvula Masala (Brinjal with Sesame Sauce) - Yummy Tummy</a></span>  </div>
+  <h3>
+Vankaya Kobbari Kura (Brinjal in Coconut-Sesame Masala)<small lang="te">వంకాయ కొబ్బరి కూర</small>  </h3>
+<p class="item-summary" style="margin:0.3em 0 0.5em;">Tender brinjal wedges slow-roasted in a toasted coconut, sesame, garlic and chilli masala until the kura turns thick and dry-ish (mudda kura). Sesame oil, lemon in place of tamarind, and no jaggery.</p>  
+  <div class="recipe-macros">
+    <strong>5.5g</strong> net carbs &nbsp;·&nbsp;
+    <strong>3g</strong> protein &nbsp;·&nbsp;
+    <strong>15g</strong> fat &nbsp;·&nbsp;
+    <strong>174</strong> kcal &nbsp;·&nbsp;
+    Serves 3
+  </div>
+
+  <div class="macrobar" title="Macro calorie ratio">
+    <span style="width:80%;background:#d49b20"></span>
+    <span style="width:7%;background:#902050"></span>
+    <span style="width:13%;background:#174a61"></span>
+  </div>
+  <div class="mlegend">
+    <span style="color:#a87410;">● Fat 80%</span>
+    <span style="color:#902050;">● Protein 7%</span>
+    <span style="color:#174a61;">● Net Carbs 13%</span>
+  </div>
+
+  <div class="recipe-cols">
+    <div>
+      <h5>Ingredients</h5>
+      <ul class="ing">
+        <li>
+          <span>small purple brinjals, cut into 3 cm wedges through the stalk</span>
+          <em>about 4 small brinjals · 250g</em>
+        </li>
+        <li>
+          <span>unsweetened dried coconut</span>
+          <em>3 tbsp · 25g</em>
+        </li>
+        <li>
+          <span>sesame seeds</span>
+          <em>1 tbsp · 12g</em>
+        </li>
+        <li>
+          <span>garlic</span>
+          <em>3 cloves · 6g</em>
+        </li>
+        <li>
+          <span>green chillies</span>
+          <em>2 · 12g</em>
+        </li>
+        <li>
+          <span>dried red chillies</span>
+          <em>2 whole · 3g</em>
+        </li>
+        <li>
+          <span>coriander seeds</span>
+          <em>1 tsp · 3g</em>
+        </li>
+        <li>
+          <span>cumin seeds</span>
+          <em>½ tsp · 1.5g</em>
+        </li>
+        <li>
+          <span>sesame oil</span>
+          <em>4 tsp · 20g</em>
+        </li>
+        <li>
+          <span>mustard seeds</span>
+          <em>½ tsp · 1g</em>
+        </li>
+        <li>
+          <span>curry leaves</span>
+          <em>1 sprig · 2g</em>
+        </li>
+        <li>
+          <span>turmeric powder</span>
+          <em>¼ tsp · 1g</em>
+        </li>
+        <li>
+          <span>lemon juice</span>
+          <em>2 tsp · 10g</em>
+        </li>
+        <li>
+          <span>salt</span>
+          <em>¾ tsp · 3g</em>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Method</h5>
+      <ol class="steps">
+        <li>Dry-roast the masala in a small pan on medium-low, one item at a time and moving it out as soon as it is ready: sesame seeds 1½ minutes until they pop and turn light gold, then the coconut 1 to 2 minutes until beige and fragrant, then the red chillies, coriander and cumin for 40 seconds. Cool 5 minutes.</li>
+        <li>Grind the roasted masala with the garlic, green chillies, ½ tsp of the salt and about 3 tbsp water to a moist, slightly coarse paste.</li>
+        <li>While the masala cools, cut the brinjal into wedges and drop them into cold salted water so they do not darken. Drain and pat dry just before cooking.</li>
+        <li>Heat the oil in a heavy kadai on medium-high. Add the mustard seeds; when they crackle add the curry leaves and turmeric. Add the brinjal and toss for 3 minutes until the skins turn glossy and the edges pick up colour.</li>
+        <li>Add the remaining salt, cover and cook on low-medium for 8 to 10 minutes, stirring once, until the wedges are nearly tender.</li>
+        <li>Add the masala paste and 3 tbsp water, fold gently, then cook uncovered 5 to 6 minutes on medium-low until the water has gone, the masala clings and the oil begins to separate at the edge. Finish with the lemon juice.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rtips">
+    <h5>Make it taste like home</h5>
+    <ul>
+<li>Choose small, tender, glossy brinjals. Large seedy ones turn bitter and watery, as Sailu&#39;s Kitchen warns.</li><li>Keto note: tamarind pulp is about 60 g carbs per 100 g and jaggery is sugar, so a squeeze of lemon replaces both. Brinjal is counted by weight: about 80 g per serving.</li><li>Make ahead: the toasted masala paste keeps 3 days in the fridge, and the finished kura tastes better the next day; it reheats well in a covered pan.</li><li>Spoon it over cauliflower rice with a little ghee, or serve beside chicken or egg pulusu.</li>    </ul>
+  </div>
+
+  <div class="rtips alt">
+    <h5>Keto Swaps & Variations</h5>
+    <ul>
+<li>Lower heat: use 1 green chilli and 1 dried red chilli.</li><li>For the stuffed gutti vankaya style, slit small brinjals into quarters keeping the stalks, fill them with the masala and cook covered 15 to 20 minutes.</li>    </ul>
+  </div>
+
+  <div class="rfoot">
+    <span>Adapted from: <a href="https://www.sailusfood.com/vankaya-karam-stuffed-brinjal-recipe" target="_blank" rel="noopener">Vankaya Kobbari Karam (Stuffed Brinjal) - Sailu&#39;s Kitchen</a>, <a href="https://www.yummytummyaarthi.com/brinjal-with-sesame-seeds-masala-recipe/" target="_blank" rel="noopener">Vankaya Nuvula Masala (Brinjal with Sesame Sauce) - Yummy Tummy</a></span>
+  </div>
 </article>
 
-  <p class="fineprint">General cooking and nutrition protocol, not medical advice. Macros are precisely computed from sourced ingredient values.</p>
-</main>
-<div style="height:60px"></div>
-
-<script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
-    });
-  }
-})();
-</script>
+    <p style="font-size:0.85em;color:#777777;margin-top:1.5em;border-top:1px solid #eee;padding-top:0.8em;">
+      General cooking and nutrition protocol, not medical advice. Macros are computed from verified whole-food ingredient weights.
+    </p>
+  </div>
+</div>
 </body>
 </html>

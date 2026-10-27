@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Keto Andhra Cookbook · The Morning Brief</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
 /* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
@@ -41,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -63,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -78,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -690,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -721,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -838,580 +962,1137 @@ td.searchbox {
   }
 }
 
-.ck { --accent: #10b981; }
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 24px 0 12px;
-  align-items: center;
-}
-.filters button, .filters input {
-  font: 600 12.5px var(--sans);
-  border: 1px solid var(--line);
-  background: var(--surface);
-  color: var(--ink);
-  border-radius: 99px;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-.filters input {
-  cursor: text;
-  min-width: 240px;
-  border-radius: var(--r-sm);
-  padding: 8px 14px;
-}
-.filters input:focus {
-  outline: none;
-  border-color: #10b981;
-}
-.filters button[aria-pressed="true"] {
-  background: #10b981;
-  border-color: #10b981;
-  color: #ffffff;
-}
-.rc {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 22px 24px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--r);
-  box-shadow: var(--shadow);
-  color: var(--ink);
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.rc:hover {
-  text-decoration: none;
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover);
-  border-color: color-mix(in srgb, #10b981 30%, var(--line));
-}
-.rc h3 {
-  margin: 0;
-  font: 800 20px/1.25 var(--display);
-  letter-spacing: -0.015em;
-  color: var(--ink);
-}
-.rc p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.55;
-  color: var(--muted);
-}
-.rc .rstats {
-  margin: 4px 0 0;
-}
 </style>
 </head>
-<body class="ck">
-<header class="hero">
-  <div class="wrap">
-    <div class="top-bar">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO KITCHEN ARCHIVE</span>
-        <span class="issue-tag">38 Curated Dishes</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="../index.html"><strong>&larr; The Morning Brief Archive</strong></a>
+        <span>Techmeme-Format Keto Kitchen</span>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>38 Regional Recipes</span>
+        <span>Daily Net Carb Target &lt; 25g</span>
       </div>
     </div>
-    <div style="margin-top:24px;">
-      <h1 class="wordmark">Keto <span>Andhra</span> Cookbook</h1>
-      <div class="theme-box" style="margin-top:18px;border-left-color:#10b981;">
-        <span class="theme-label" style="color:#10b981;">Authentic Regional Keto Protocol</span>
-        <p class="theme">Strict keto (<25g daily net carbs), authentic Andhra flavors. Every recipe specifies exact weights in grams, sourced nutrition, and verified macros per serving.</p>
+
+    <!-- Header Logo Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Low-Carb Regional Recipe Archive</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Recipe Directory</div>
+        </td>
+        <td class="searchbox">
+          <input id="q" type="search" class="sbti" placeholder="Search dishes, spices...">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Brief Home</a>
       </div>
-      <p style="margin:16px 0 0">
-        <a class="linkbtn" href="../index.html" style="--accent:#10b981">← Back to The Morning Brief</a>
-      </p>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="../index.html">Archives</a>
     </div>
   </div>
-</header>
 
-<main class="wrap">
-  <div class="filters" id="f">
-    <input id="q" type="search" placeholder="Search dishes, spices or ingredients...">
-    <button data-k="meal" data-v="" aria-pressed="true">All Dishes</button>
-      <button data-k="meal" data-v="breakfast" aria-pressed="false">Breakfast</button>
-      <button data-k="meal" data-v="lunch" aria-pressed="false">Lunch</button>
-      <button data-k="meal" data-v="dinner" aria-pressed="false">Dinner</button>
-      <button data-k="meal" data-v="side" aria-pressed="false">Side</button>
-      <button data-k="meal" data-v="podi" aria-pressed="false">Podi</button>
-      <button data-k="meal" data-v="pickle" aria-pressed="false">Pickle</button>
-    <button data-k="quick" data-v="1" aria-pressed="false">⚡ Under 30 min</button>
-    <button data-k="low" data-v="1" aria-pressed="false">🌿 Under 6g Net Carbs</button>
+  <!-- Executive Synthesis Banner for Cookbook -->
+  <div class="exec-theme-box">
+    <strong>Regional Keto Protocol:</strong> Strict low-carbohydrate nutrition (&lt;25g daily net carbs) built on authentic Andhra gravies, podis, and fries. Every recipe details verified weights in grams and sourced macros.
   </div>
 
-  <div class="cards" style="margin-top:20px" id="grid">
-    <a class="rc" href="tomato-guddu-vepudu-guntur.html" data-meal="breakfast" data-t="20" data-n="5.0" data-s="tomato guddu vepudu (guntur tomato egg fry) eggs, beaten ripe tomato, finely chopped onion, finely chopped ghee mustard seeds cumin seeds fresh curry leaves green chilli, finely sliced garlic, minced guntur red chilli powder turmeric powder coriander powder fresh coriander leaves, chopped salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Breakfast</span>
-      <h3>Tomato Guddu Vepudu (Guntur Tomato Egg Fry)</h3>
-      <p>Soft egg curds catch a reduced tomato-onion masala, with a sharp mustard-and-curry-leaf talimpu and a final hit of Guntur chilli. Keep it just saucy enough to cling to each bite.</p>
-      <ul class="rstats">
-        <li><b>5.0g</b> net carbs</li>
-        <li><b>14g</b> protein</li>
-        <li>20 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="gongura-chepa-vepudu-cauliflower-rice.html" data-meal="dinner" data-t="28" data-n="9.9" data-s="gongura chepa vepudu with curry-leaf cauliflower rice catfish fillets, patted dry gongura leaves, picked and chopped cauliflower florets, riced and squeezed dry groundnut oil ghee green chilli, slit garlic, minced fresh ginger, minced fresh curry leaves mustard seeds cumin seeds guntur red chilli powder turmeric powder lemon juice fresh coriander leaves, chopped salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Gongura Chepa Vepudu with Curry-Leaf Cauliflower Rice</h3>
-      <p>Flaky white fish gets a quick Guntur-spice sear, then meets a garlicky gongura fry whose tart leaves balance the rich tempering. Curry-leaf cauliflower rice catches every last bit of the pan masala.</p>
-      <ul class="rstats">
-        <li><b>9.9g</b> net carbs</li>
-        <li><b>28g</b> protein</li>
-        <li>28 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="gasagasala-kobbari-goat-keema-kura.html" data-meal="lunch" data-t="30" data-n="5.0" data-s="gasagasala kobbari goat keema kura (poppy-coconut goat mince curry) lean goat mince onion, finely chopped ripe tomato, finely chopped fresh ginger, minced garlic, minced ghee fresh curry leaves green chilli, slit guntur red chilli powder coriander powder cumin seeds white poppy seeds unsweetened canned coconut milk turmeric powder fresh coriander leaves, chopped salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Lunch</span>
-      <h3>Gasagasala Kobbari Goat Keema Kura (Poppy-Coconut Goat Mince Curry)</h3>
-      <p>Lean goat keema cooks quickly into a peppery, clingy curry, rounded with a little coconut milk and a lightly toasted poppy-seed paste. Curry leaves and Guntur karam keep the finish unmistakably Andhra.</p>
-      <ul class="rstats">
-        <li><b>5.0g</b> net carbs</li>
-        <li><b>33g</b> protein</li>
-        <li>30 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="mamsam-vepudu-pressure-cooker-boneless.html" data-meal="lunch" data-t="40" data-n="7.2" data-s="quick mamsam vepudu (boneless goat pepper fry) boneless goat (leg or shoulder), 1 cm cubes plain whole-milk yogurt garlic, minced ginger, minced onion, finely chopped turmeric guntur red chilli powder coriander seed powder black pepper, coarsely crushed fennel seeds, crushed garam masala ghee groundnut oil curry leaves green chilli, slit lemon juice coriander leaves, chopped salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Lunch</span>
-      <h3>Quick Mamsam Vepudu (Boneless Goat Pepper Fry)</h3>
-      <p>Small cubes of boneless goat are pressure-cooked in just ten minutes with a yogurt-and-spice rub, then fried dry in ghee with curry leaves, green chilli and plenty of pepper until the masala clings in a dark, sticky coat.</p>
-      <ul class="rstats">
-        <li><b>7.2g</b> net carbs</li>
-        <li><b>43g</b> protein</li>
-        <li>40 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="palakura-kodiguddu-vepudu.html" data-meal="breakfast" data-t="18" data-n="5.4" data-s="palakura kodiguddu vepudu (spinach egg fry) spinach leaves, washed, stems removed, finely chopped eggs ghee cumin seeds curry leaves garlic, crushed onion, very finely chopped green chillies, slit turmeric guntur red chilli powder coriander (dhaniya) powder garam masala black pepper, freshly ground salt, added at the end">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Breakfast</span>
-      <h3>Palakura Kodiguddu Vepudu (Spinach Egg Fry)</h3>
-      <p>The everyday Andhra spinach and egg fry, built the way home cooks do it: a cumin-garlic ghee base, dry-fried spinach so nothing turns watery, then eggs set on top and broken into the greens. Garlicky, peppery and properly hot, ready in 18 minutes.</p>
-      <ul class="rstats">
-        <li><b>5.4g</b> net carbs</li>
-        <li><b>16g</b> protein</li>
-        <li>18 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="menthi-mamsam-keema.html" data-meal="lunch" data-t="30" data-n="8.9" data-s="menthi mamsam keema (goat mince with fresh fenugreek) goat (mutton) mince, from an indian or halal butcher ghee groundnut (peanut) oil cinnamon, ground green cardamom pods, crushed cumin seeds curry leaves onion, finely chopped ginger, minced garlic, minced green chillies, slit guntur red chilli powder turmeric coriander (dhaniya) powder plain whole-milk yogurt, whisked fresh fenugreek (menthi) leaves, picked from thick stems, washed and chopped garam masala lemon juice coriander leaves, chopped salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Lunch</span>
-      <h3>Menthi Mamsam Keema (Goat Mince with Fresh Fenugreek)</h3>
-      <p>Lean goat mince browned hard with ginger, garlic and curry leaves, then finished with a big handful of fresh menthi kura whose pleasant bitterness cuts through the ghee and heat. Dry, deeply savoury and sharply spiced, a lunch that eats like a weekend dish in 30 minutes.</p>
-      <ul class="rstats">
-        <li><b>8.9g</b> net carbs</li>
-        <li><b>40g</b> protein</li>
-        <li>30 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="menthi-kura-guddu-vepudu.html" data-meal="breakfast" data-t="15" data-n="6.0" data-s="menthi kura guddu vepudu (fenugreek-leaf egg fry) fresh fenugreek leaves (menthi kura), picked and finely chopped eggs, shelled ghee cumin seeds garlic, lightly crushed dried red chillies, as guntur karam curry leaves onion, finely chopped green chilli, slit turmeric salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Breakfast</span>
-      <h3>Menthi Kura Guddu Vepudu (Fenugreek-Leaf Egg Fry)</h3>
-      <p>Fresh fenugreek leaves are wilted hard in a garlicky talimpu so the bitterness turns into a savoury edge, then four eggs are set in the greens until they cling in golden, spicy curds. Fifteen minutes, one pan, and nothing like a plain scramble.</p>
-      <ul class="rstats">
-        <li><b>6.0g</b> net carbs</li>
-        <li><b>15g</b> protein</li>
-        <li>15 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="kanava-vepudu-andhra-style.html" data-meal="dinner" data-t="20" data-n="9.5" data-s="kanava vepudu (andhra-style pepper squid fry) cleaned squid, tubes cut into 1 cm rings (tentacles kept) coconut oil mustard seeds dried red chillies, as guntur karam curry leaves garlic, minced ginger, minced green chilli, slit onion, finely sliced black pepper, coarsely crushed turmeric unsweetened desiccated coconut lemon juice salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Kanava Vepudu (Andhra-Style Pepper Squid Fry)</h3>
-      <p>Squid rings tossed over fierce heat with garlic, ginger, curry leaves, crushed pepper and toasted coconut flakes so they stay springy and wear a dry, spicy crust. Cooked in under 10 minutes once the pan is hot.</p>
-      <ul class="rstats">
-        <li><b>9.5g</b> net carbs</li>
-        <li><b>23g</b> protein</li>
-        <li>20 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="beerakaya-royyala-kura.html" data-meal="dinner" data-t="25" data-n="8.5" data-s="beerakaya royyala kura (ridge gourd and prawn dry curry) prawns, peeled and deveined (thawed and patted dry if frozen) ridge gourd (beerakaya), peeled and cut into 1 cm pieces ghee groundnut (peanut) oil cumin seeds curry leaves onion, finely chopped green chillies, slit garlic, minced ginger, minced guntur red chilli powder turmeric coriander (dhaniya) powder fresh grated coconut, optional (frozen is fine) garam masala lemon juice coriander leaves, chopped salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Beerakaya Royyala Kura (Ridge Gourd and Prawn Dry Curry)</h3>
-      <p>Coastal Andhra&#39;s favourite vegetable-and-seafood pairing: sweet, juicy ridge gourd cooked in the prawns&#39; own liquor with curry leaves, green chilli and a pinch of garam masala, then fried dry. Light but loud, and ready in 25 minutes.</p>
-      <ul class="rstats">
-        <li><b>8.5g</b> net carbs</li>
-        <li><b>33g</b> protein</li>
-        <li>25 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="kodi-gasagasala-kura-pressure-cooker.html" data-meal="dinner" data-t="30" data-n="8.9" data-s="kodi gasagasala kura (pressure-cooker poppy-coconut chicken) boneless chicken thigh, 3 cm pieces ghee onion, sliced tomato, chopped poppy seeds, soaked 10 min in hot water grated coconut fennel seeds dried red chilli garlic ginger red chilli powder turmeric garam masala coriander seeds green chilli, slit curry leaves coriander leaves salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Kodi Gasagasala Kura (Pressure-Cooker Poppy-Coconut Chicken)</h3>
-      <p>A rich, nutty Andhra chicken curry thickened with poppy seeds and coconut, with dried red chilli heat. The pressure cooker brings it together in about half an hour.</p>
-      <ul class="rstats">
-        <li><b>8.9g</b> net carbs</li>
-        <li><b>43g</b> protein</li>
-        <li>30 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="tilapia-chepala-iguru-kobbari.html" data-meal="lunch" data-t="28" data-n="7.8" data-s="chepala iguru with coconut masala (dry-style fish curry) tilapia fillets, cut into 4 cm pieces sesame oil onion, finely chopped tomato, pureed grated coconut ginger garlic coriander seeds fennel seeds cinnamon, ground red chilli powder turmeric green chilli, slit curry leaves lemon juice salt coriander leaves">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Lunch</span>
-      <h3>Chepala Iguru with Coconut Masala (Dry-Style Fish Curry)</h3>
-      <p>Chepala iguru is a thick, clinging masala fish curry. Firm tilapia is simmered briefly in a ginger-garlic-coconut masala that coats each piece with Guntur heat and no tamarind.</p>
-      <ul class="rstats">
-        <li><b>7.8g</b> net carbs</li>
-        <li><b>38g</b> protein</li>
-        <li>28 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="badam-perugu-steamed-cakes-kobbari-pachadi.html" data-meal="breakfast" data-t="25" data-n="5.8" data-s="badam-perugu steamed cakes with kobbari pachadi almond flour, blanched eggs, whisked until frothy plain whole-milk yogurt ghee, for greasing and talimpu salt mustard seeds cumin seeds curry leaves green chilli, chopped (cakes) fresh or frozen grated coconut (pachadi) green chilli (pachadi) ginger (pachadi) lemon juice (pachadi)">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Breakfast</span>
-      <h3>Badam-Perugu Steamed Cakes with Kobbari Pachadi</h3>
-      <p>Soft idli-style almond and yogurt cakes, steamed in the pressure cooker and topped with a crackling curry-leaf talimpu, with a fresh green-chilli coconut pachadi. They are not fermented idli, but they scratch the same itch.</p>
-      <ul class="rstats">
-        <li><b>5.8g</b> net carbs</li>
-        <li><b>13g</b> protein</li>
-        <li>25 min</li>
-        <li>Heat 3/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="vankaya-kobbari-kura.html" data-meal="side" data-t="30" data-n="5.5" data-s="vankaya kobbari kura (brinjal in coconut-sesame masala) small purple brinjals, cut into 3 cm wedges through the stalk unsweetened dried coconut sesame seeds garlic green chillies dried red chillies coriander seeds cumin seeds sesame oil mustard seeds curry leaves turmeric powder lemon juice salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Side</span>
-      <h3>Vankaya Kobbari Kura (Brinjal in Coconut-Sesame Masala)</h3>
-      <p>Tender brinjal wedges slow-roasted in a toasted coconut, sesame, garlic and chilli masala until the kura turns thick and dry-ish (mudda kura). Sesame oil, lemon in place of tamarind, and no jaggery.</p>
-      <ul class="rstats">
-        <li><b>5.5g</b> net carbs</li>
-        <li><b>3g</b> protein</li>
-        <li>30 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="royyala-iguru.html" data-meal="lunch" data-t="22" data-n="6.5" data-s="royyala iguru (andhra prawn dry curry) prawns, peeled and deveined (thawed and patted dry if frozen) lemon juice, for the marinade and finish ginger, crushed (half for the marinade, half for the pan) garlic, crushed (same split as the ginger) guntur red chilli powder turmeric salt ghee sesame (gingelly) oil cumin seeds curry leaves green chillies, slit onion, finely chopped coriander (dhaniya) powder garam masala coriander leaves, chopped">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Lunch</span>
-      <h3>Royyala Iguru (Andhra Prawn Dry Curry)</h3>
-      <p>Plump prawns tossed over caramelised onions, curry leaves and green chilli with garam masala and a squeeze of lemon. A 22-minute coastal Andhra classic, dry enough to eat with a spoon or over cauliflower rice.</p>
-      <ul class="rstats">
-        <li><b>6.5g</b> net carbs</li>
-        <li><b>37g</b> protein</li>
-        <li>22 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="paneer-bhurji-guntur-style.html" data-meal="dinner" data-t="22" data-n="9.1" data-s="paneer bhurji, guntur style (curry leaf and karam) paneer, crumbled by hand ghee mustard seeds cumin seeds dried red chilli fresh curry leaves garlic, finely chopped ginger, finely chopped onion, finely chopped green chillies, finely chopped tomato, finely chopped turmeric powder guntur red chilli powder (karam) coriander (dhaniya) powder heavy cream coriander leaves, chopped lemon juice salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Paneer Bhurji, Guntur Style (Curry Leaf and Karam)</h3>
-      <p>Crumbled paneer in a ghee tempering of mustard, cumin and crisp curry leaves, finished with a spoon of cream and a hit of Guntur karam. It is the quick, juicy, south-Indian cousin of the dhaba bhurji, and it is on the table in 22 minutes.</p>
-      <ul class="rstats">
-        <li><b>9.1g</b> net carbs</li>
-        <li><b>22g</b> protein</li>
-        <li>22 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="pachi-mirapa-guddu-vepudu.html" data-meal="breakfast" data-t="22" data-n="5.4" data-s="pachi mirapa guddu vepudu (andhra green-chilli egg fry) large eggs, hard-boiled, peeled and halved lengthwise groundnut oil ghee green chillies, 18 g blended and 4 g slit fresh coriander leaves and tender stems onion, very finely chopped garlic cloves ginger curry leaves mustard seeds cumin seeds turmeric powder black pepper, freshly crushed lemon juice salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Breakfast</span>
-      <h3>Pachi Mirapa Guddu Vepudu (Andhra Green-Chilli Egg Fry)</h3>
-      <p>Boiled eggs blistered golden in groundnut oil, then tossed in a fiery coriander and green-chilli masala that clings like a dry curry. It is the green-chilli cousin of the usual red karam egg fry: sharper, fresher and ready in about 20 minutes.</p>
-      <ul class="rstats">
-        <li><b>5.4g</b> net carbs</li>
-        <li><b>20g</b> protein</li>
-        <li>22 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="nuvvula-karam.html" data-meal="podi" data-t="19" data-n="1.3" data-s="nuvvula karam (roasted sesame chilli powder) sesame seeds (nuvvulu) dried red chillies coriander seeds cumin seeds garlic cloves, peeled and dry-roasted salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Podi</span>
-      <h3>Nuvvula Karam (Roasted Sesame Chilli Powder)</h3>
-      <p>Coarse-ground roasted sesame with toasted chillies, coriander, cumin and garlic. It is nutty, deeply savoury and one of the easiest ways to make plain vegetables taste Andhra. No dal, so a tablespoon stays around 1 g net carbs.</p>
-      <ul class="rstats">
-        <li><b>1.3g</b> net carbs</li>
-        <li><b>1g</b> protein</li>
-        <li>19 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="natu-kodi-style-pepper-chicken-curry.html" data-meal="dinner" data-t="33" data-n="8.8" data-s="natu kodi-style pepper chicken curry (coconut-poppy base) boneless skinless chicken thigh, cut into 3 cm pieces (stands in for country chicken) guntur red chilli powder (marinade) turmeric powder salt ginger, crushed (divided) garlic, crushed (divided) white poppy seeds grated coconut, unsweetened (frozen is fine, thawed) coriander seeds fennel seeds black peppercorns (3 g for the paste, 1 g cracked for the finish) whole dried red chillies cinnamon and cloves, ground (1 g cinnamon + 0.5 g cloves) cardamom, green, seeds only sesame oil (nuvvula noone) onion, finely chopped green chillies, slit fresh curry leaves lemon juice coriander leaves, chopped">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Natu Kodi-Style Pepper Chicken Curry (Coconut-Poppy Base)</h3>
-      <p>The deep, nutty village-style curry: roasted coconut, white poppy seed and pepper ground to a paste, finished with freshly cracked pepper and a squeeze of lemon. No jaggery, no tamarind. Boneless thigh stands in for country chicken so it fits a weeknight.</p>
-      <ul class="rstats">
-        <li><b>8.8g</b> net carbs</li>
-        <li><b>43g</b> protein</li>
-        <li>33 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="mutton-keema-vepudu.html" data-meal="dinner" data-t="28" data-n="7.7" data-s="mutton keema vepudu (andhra dry goat mince fry) ground goat (mutton keema), ask the butcher to grind it twice ghee sesame (gingelly) oil curry leaves dried red chillies (guntur or byadgi) onion, chopped very fine ginger, minced garlic, minced green chillies, slit and chopped guntur red chilli powder (karam) turmeric coriander (dhaniya) powder cumin seeds, dry-roasted and crushed fennel seeds, dry-roasted and crushed garam masala black pepper, freshly ground salt lemon juice coriander leaves, chopped">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Mutton Keema Vepudu (Andhra Dry Goat Mince Fry)</h3>
-      <p>Crumbly, deep-brown goat mince fried in ghee with curry leaves, green chilli and a freshly crushed cumin-fennel masala, finished until the edges crisp. The dish for &#39;I need real Andhra flavour in 28 minutes&#39;.</p>
-      <ul class="rstats">
-        <li><b>7.7g</b> net carbs</li>
-        <li><b>38g</b> protein</li>
-        <li>28 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="kodi-kobbari-kura.html" data-meal="dinner" data-t="30" data-n="8.5" data-s="kodi kobbari kura (coconut chicken curry) boneless skinless chicken thigh, cut into 3 cm pieces (weekday swap for bone-in) turmeric powder salt ginger, crushed garlic, crushed whole dried red chillies coriander seeds cumin seeds grated coconut, unsweetened (frozen is fine, thawed) coconut oil mustard seeds fresh curry leaves onion, finely chopped green chillies, slit canned unsweetened coconut milk cinnamon, cloves and cardamom (garam masala pinch) lemon juice coriander leaves, chopped">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Kodi Kobbari Kura (Coconut Chicken Curry)</h3>
-      <p>Coastal Andhra comfort: roasted coconut ground coarse with coriander, cumin and dried chilli, stirred into onion-curry-leaf chicken and finished with a splash of coconut milk. Rich, nutty, thick and just spicy enough.</p>
-      <ul class="rstats">
-        <li><b>8.5g</b> net carbs</li>
-        <li><b>43g</b> protein</li>
-        <li>30 min</li>
-        <li>Heat 3/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="egg-pulusu-keto.html" data-meal="dinner" data-t="28" data-n="8.3" data-s="kodi guddu pulusu, keto (andhra egg curry with minimal tamarind) eggs, large, to hard-boil groundnut oil mustard seeds cumin seeds fenugreek (methi) seeds dried red chilli fresh curry leaves garlic, finely chopped ginger, finely chopped green chillies, slit onion, finely chopped tomato, finely chopped turmeric powder guntur red chilli powder (karam) coriander (dhaniya) powder tamarind pulp (thick, seedless) lemon juice, to finish coriander leaves, chopped salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Kodi Guddu Pulusu, Keto (Andhra Egg Curry with Minimal Tamarind)</h3>
-      <p>A thin, sharp, spicy pulusu with blistered eggs soaking in a tomato and curry-leaf gravy. Classic versions use a lime-sized ball of tamarind; this one gets its tang from just 5 g of pulp, a mashed tomato and a squeeze of lemon at the end, and no jaggery at all.</p>
-      <ul class="rstats">
-        <li><b>8.3g</b> net carbs</li>
-        <li><b>21g</b> protein</li>
-        <li>28 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="kobbari-karam.html" data-meal="podi" data-t="13" data-n="1.1" data-s="kobbari karam (garlic coconut chilli powder) unsweetened dried coconut (endu kobbari), grated or desiccated dried red chillies garlic cloves, peeled cumin seeds salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Podi</span>
-      <h3>Kobbari Karam (Garlic Coconut Chilli Powder)</h3>
-      <p>Toasted dry coconut ground with fiery chillies, cumin and garlic: a crumbly, nutty karam that turns hot cauliflower rice or a fried egg into something you would walk across town for. One serving is a heaped tablespoon.</p>
-      <ul class="rstats">
-        <li><b>1.1g</b> net carbs</li>
-        <li><b>1g</b> protein</li>
-        <li>13 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="chepala-pulusu-keto.html" data-meal="dinner" data-t="29" data-n="8.2" data-s="keto chepala pulusu (tomato and tiny-tamarind fish stew) catfish fillet or steaks (us farmed channel catfish), 4 to 5 cm chunks lemon juice, for the marinade guntur red chilli powder turmeric salt tamarind pulp, seedless, weighed on a scale poppy seeds (gasagasalu), ground to a paste with 40 ml water sesame (gingelly) oil mustard seeds cumin seeds fenugreek seeds dried red chilli curry leaves green chillies, slit onion, finely chopped garlic, minced ginger, minced ripe tomato, finely chopped coriander (dhaniya) powder garam masala coriander leaves with tender stalks">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Keto Chepala Pulusu (Tomato and Tiny-Tamarind Fish Stew)</h3>
-      <p>The tangy, spicy Andhra fish stew with the sourness built from ripe tomato and just 6 g of tamarind pulp for the whole pot, thickened with a spoon of poppy-seed paste. It tastes even better the next day.</p>
-      <ul class="rstats">
-        <li><b>8.2g</b> net carbs</li>
-        <li><b>33g</b> protein</li>
-        <li>29 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="karivepaku-podi.html" data-meal="podi" data-t="32" data-n="1.1" data-s="karivepaku podi (curry leaf powder) fresh curry leaves, washed and fully dry sesame oil urad dal (leave out for dal-free) dried red chillies coriander seeds cumin seeds sesame seeds unsweetened dried coconut (optional; omit for longer shelf life) tamarind pulp, pea-sized piece salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Podi</span>
-      <h3>Karivepaku Podi (Curry Leaf Powder)</h3>
-      <p>A heap of crisp curry leaves ground with toasted coriander, chilli and sesame, leaning on the leaves rather than on dal. It is the powder you shake over hot cauliflower rice with ghee, deeply herbal and properly spicy.</p>
-      <ul class="rstats">
-        <li><b>1.1g</b> net carbs</li>
-        <li><b>1g</b> protein</li>
-        <li>32 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="karivepaku-paneer-vepudu.html" data-meal="dinner" data-t="20" data-n="8.8" data-s="karivepaku paneer vepudu (curry-leaf garlic paneer fry) paneer, in 2 cm cubes ghee fresh curry leaves, half for the paste, half fried whole garlic dried red chillies cumin seeds coriander seeds or dhaniya powder black pepper green chillies, slit ginger, julienned onion, thinly sliced turmeric powder lemon juice coriander leaves, chopped salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Karivepaku Paneer Vepudu (Curry-Leaf Garlic Paneer Fry)</h3>
-      <p>Golden-seared paneer cubes tossed in a coarse, dark green-red paste of fresh curry leaves, garlic, dried chilli and toasted spices. A dry vepudu with crisp edges and a lemony finish, ready in 20 minutes and better than most restaurant starters.</p>
-      <ul class="rstats">
-        <li><b>8.8g</b> net carbs</li>
-        <li><b>21g</b> protein</li>
-        <li>20 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="guntur-kodi-vepudu.html" data-meal="dinner" data-t="28" data-n="6.8" data-s="guntur kodi vepudu (fiery chicken fry) boneless skinless chicken thigh, cut into 2 cm pieces (weekday swap for bone-in) ginger, crushed garlic, crushed lemon juice turmeric powder guntur red chilli powder (marinade) salt whole dried guntur red chillies (for the roast-and-grind powder) coriander seeds cumin seeds whole black peppercorns cinnamon and cloves, ground (1 g cinnamon + 0.5 g cloves) sesame oil (nuvvula noone) ghee onion, finely chopped green chillies, slit fresh curry leaves coriander leaves, chopped">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Guntur Kodi Vepudu (Fiery Chicken Fry)</h3>
-      <p>A dark, dry, brick-red chicken fry that clings to every piece: freshly roasted coriander-pepper powder, deep-browned onion, Guntur chilli and a curry-leaf crackle. Boneless thigh keeps it juicy and puts it on the table in under half an hour.</p>
-      <ul class="rstats">
-        <li><b>6.8g</b> net carbs</li>
-        <li><b>42g</b> protein</li>
-        <li>28 min</li>
-        <li>Heat 5/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="gongura-royyala-kura.html" data-meal="lunch" data-t="30" data-n="8.7" data-s="gongura royyala kura (sorrel prawn masala) medium prawns, peeled and deveined (thawed if frozen) gongura (sorrel) leaves, picked from stems, washed and fully dried, chopped groundnut oil sesame oil, for the final talimpu onion, finely chopped green chillies, slit garlic, 4 g crushed with the ginger and 3 g sliced for the talimpu ginger guntur karam (red chilli powder) dried red chillies for the talimpu coriander powder turmeric powder curry leaves cumin seeds mustard seeds cinnamon stick, a 1 cm piece green cardamom pods, lightly crushed salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Lunch</span>
-      <h3>Gongura Royyala Kura (Sorrel Prawn Masala)</h3>
-      <p>Prawns seared hot, then folded into a thick olive-dark gongura masala and finished with a sizzling garlic and red-chilli talimpu. The sourness comes entirely from the leaf, so there is no tamarind and no jaggery.</p>
-      <ul class="rstats">
-        <li><b>8.7g</b> net carbs</li>
-        <li><b>23g</b> protein</li>
-        <li>30 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="gongura-pachadi.html" data-meal="pickle" data-t="40" data-n="2.8" data-s="gongura pachadi (roselle leaf pickle, no jaggery) gongura (roselle) leaves, picked, washed and fully dried sesame oil, divided dried red chillies, divided: 6 for the powder, 2 for the tempering coriander seeds fenugreek seeds cumin seeds garlic cloves mustard seeds urad dal for the tempering curry leaves salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Pickle</span>
-      <h3>Gongura Pachadi (Roselle Leaf Pickle, No Jaggery)</h3>
-      <p>The sour, fiery gongura pachadi you spoon onto hot cauliflower rice with ghee: leaves wilted in sesame oil, ground with roasted chilli, coriander and fenugreek, then tempered. Sorrel is sour enough that it needs neither tamarind nor jaggery.</p>
-      <ul class="rstats">
-        <li><b>2.8g</b> net carbs</li>
-        <li><b>1g</b> protein</li>
-        <li>40 min</li>
-        <li>Heat 5/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="gongura-mutton-keema.html" data-meal="dinner" data-t="28" data-n="7.9" data-s="gongura mutton keema (sorrel goat mince) ground goat (mutton keema), ground twice ghee sesame (gingelly) oil cumin seeds dried red chillies curry leaves onion, chopped very fine ginger, minced garlic, minced green chillies, slit guntur red chilli powder turmeric coriander (dhaniya) powder salt gongura (sorrel) leaves, stems removed, washed and chopped; thawed if frozen garam masala">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Gongura Mutton Keema (Sorrel Goat Mince)</h3>
-      <p>Tangy red sorrel leaves wilted into spiced goat mince until the oil separates: the gongura mamsam flavour in a fraction of the time, with the leaves doing the work that tamarind or tomato would.</p>
-      <ul class="rstats">
-        <li><b>7.9g</b> net carbs</li>
-        <li><b>39g</b> protein</li>
-        <li>28 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="gongura-kodi-kura.html" data-meal="dinner" data-t="30" data-n="7.9" data-s="gongura kodi (sorrel leaf chicken curry) boneless skinless chicken thigh, cut into 2.5 cm pieces (weekday swap for bone-in) gongura (sorrel) leaves, stems removed, chopped (thawed and squeezed if frozen) coriander seeds fennel seeds fenugreek seeds whole dried red chillies sesame oil (nuvvula noone) mustard seeds cumin seeds fresh curry leaves onion, finely chopped garlic, crushed ginger, crushed green chillies, slit tomato, finely chopped guntur red chilli powder turmeric powder cinnamon and cloves, ground (0.5 g cinnamon + 0.3 g cloves) salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Gongura Kodi (Sorrel Leaf Chicken Curry)</h3>
-      <p>Gongura is the sour soul of Andhra cooking: wilted into a thick, tangy masala until it melts, then clung to tender thigh pieces with a roast-and-ground coriander, fennel and fenugreek powder. No tamarind needed, because the leaf is the sourness.</p>
-      <ul class="rstats">
-        <li><b>7.9g</b> net carbs</li>
-        <li><b>42g</b> protein</li>
-        <li>30 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="gasagasala-paneer-kura.html" data-meal="dinner" data-t="28" data-n="8.0" data-s="gasagasala paneer kura (poppy-coconut paneer curry) paneer, cut into 2 cm cubes fresh or frozen grated coconut poppy seeds (gasagasalu) raw almonds ghee green chillies (2 in the paste, rest slit) garlic ginger guntur karam (red chilli powder) coriander powder turmeric powder cumin seeds mustard seeds curry leaves cinnamon stick, a 1 cm piece green cardamom pods, lightly crushed fresh coriander leaves, chopped salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Gasagasala Paneer Kura (Poppy-Coconut Paneer Curry)</h3>
-      <p>Soft paneer in a silky, faintly sweet gravy of toasted poppy seeds, coconut and almonds, lifted with green chilli and curry leaves. It borrows the poppy-seed paste of Andhra gasagasala kura and the coconut of paneer kobbari kura, with no onion, tomato or sugar.</p>
-      <ul class="rstats">
-        <li><b>8.0g</b> net carbs</li>
-        <li><b>23g</b> protein</li>
-        <li>28 min</li>
-        <li>Heat 3/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="curry-leaf-masala-omelette-coconut-chilli-pachadi.html" data-meal="breakfast" data-t="22" data-n="5.8" data-s="curry-leaf masala omelette with coconut-chilli pachadi eggs, large (omelette) heavy cream (for a fluffy set) onion, very finely chopped green chillies, finely chopped (omelette) curry leaves, finely sliced (omelette) ginger, minced (omelette) coriander leaves, chopped turmeric powder black pepper guntur red chilli powder (karam) salt (omelette) ghee, for cooking fresh or thawed frozen grated coconut (pachadi) green chillies, roughly chopped (pachadi) garlic (pachadi) ginger (pachadi) cumin seeds (pachadi) lemon juice (pachadi) salt (pachadi) coconut oil, for tempering mustard seeds, for tempering dried red chilli, broken, for tempering curry leaves, whole, for tempering">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Breakfast</span>
-      <h3>Curry-Leaf Masala Omelette with Coconut-Chilli Pachadi</h3>
-      <p>A thick, fluffy omelette flecked with finely chopped curry leaves, ginger and green chilli, served with a thick coconut and green-chilli pachadi that has a crackling mustard-and-curry-leaf tempering on top. Breakfast with real Andhra attitude in 22 minutes.</p>
-      <ul class="rstats">
-        <li><b>5.8g</b> net carbs</li>
-        <li><b>21g</b> protein</li>
-        <li>22 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="cucumber-perugu-pachadi.html" data-meal="side" data-t="13" data-n="5.2" data-s="cucumber perugu pachadi (full-fat yoghurt raita) cucumber, seeded and diced 5 mm full-fat plain yoghurt (perugu), unsweetened green chillies unsweetened dried coconut ghee mustard seeds cumin seeds dried red chilli curry leaves salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Side</span>
-      <h3>Cucumber Perugu Pachadi (Full-Fat Yoghurt Raita)</h3>
-      <p>Cool, crunchy cucumber folded into full-fat yoghurt with a green chilli and coconut paste, then finished with a hot ghee talimpu. It is the soothing counterpoint to gongura, karam and anything fiery, with the yoghurt carbs counted.</p>
-      <ul class="rstats">
-        <li><b>5.2g</b> net carbs</li>
-        <li><b>3g</b> protein</li>
-        <li>13 min</li>
-        <li>Heat 2/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="chicken-65-air-fryer-keto.html" data-meal="dinner" data-t="28" data-n="7.3" data-s="chicken 65 (air-fryer or shallow-fry, almond-flour coating) boneless skinless chicken thigh, cut into 2.5 cm cubes plain whole-milk yogurt (curd) egg, lightly beaten almond flour (plain, finely ground, no added starch) ginger, crushed garlic, crushed (marinade) kashmiri or guntur red chilli powder (marinade) turmeric powder coriander seed, ground cumin seed, ground cinnamon and cloves, ground (garam masala base) black pepper, ground lemon juice (marinade) fresh curry leaves, finely chopped (marinade) salt avocado oil, for the air fryer or shallow fry sesame oil, for the tempering garlic, chopped (tempering) green chillies, slit (tempering) fresh curry leaves, whole (tempering) red chilli powder (tempering paste) lemon juice (finish) coriander leaves, chopped">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Chicken 65 (Air-Fryer or Shallow-Fry, Almond-Flour Coating)</h3>
-      <p>Crisp-edged, brick-red cubes of thigh with a garlicky curry-leaf and green-chilli tempering. The coating is yogurt, egg and almond flour: no maida, no cornflour, no sugar.</p>
-      <ul class="rstats">
-        <li><b>7.3g</b> net carbs</li>
-        <li><b>45g</b> protein</li>
-        <li>28 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="chepala-vepudu.html" data-meal="dinner" data-t="24" data-n="5.8" data-s="chepala vepudu (andhra fish fry with karam masala) tilapia fillets, cut into 5 cm pieces lemon juice ginger, grated garlic, grated guntur red chilli powder, for the marinade turmeric black pepper salt sesame seeds, for the masala dry coconut, unsweetened desiccated, for the masala cumin seeds, for the masala dried red chillies, for the masala ghee sesame (gingelly) oil curry leaves onion, thin rings, to serve">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Dinner</span>
-      <h3>Chepala Vepudu (Andhra Fish Fry with Karam Masala)</h3>
-      <p>Fish pieces marinated in ginger, garlic and lemon, then crusted in a freshly ground roasted sesame, dry coconut and red chilli masala and shallow-fried in ghee with curry leaves. Crisp edges, fiery and ready in about 25 minutes.</p>
-      <ul class="rstats">
-        <li><b>5.8g</b> net carbs</li>
-        <li><b>37g</b> protein</li>
-        <li>24 min</li>
-        <li>Heat 5/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="cauliflower-rice-curry-leaf-talimpu.html" data-meal="side" data-t="20" data-n="5.5" data-s="cauliflower rice with curry-leaf talimpu cauliflower florets (about 1 small head) ghee mustard seeds dried red chillies, snipped green chillies, slit garlic, crushed curry leaves turmeric powder lemon juice salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Side</span>
-      <h3>Cauliflower Rice with Curry-Leaf Talimpu</h3>
-      <p>The keto stand-in for annam: cauliflower grains wrung dry, then tossed through a sizzling ghee talimpu of mustard, curry leaves, garlic and chilli and lifted with lemon. It smells like lemon rice and soaks up pulusu and kura just as happily.</p>
-      <ul class="rstats">
-        <li><b>5.5g</b> net carbs</li>
-        <li><b>3g</b> protein</li>
-        <li>20 min</li>
-        <li>Heat 3/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="bendakaya-vepudu.html" data-meal="side" data-t="27" data-n="5.6" data-s="bendakaya vepudu (andhra okra fry) okra (bendakaya), trimmed sesame oil mustard seeds cumin seeds garlic, crushed curry leaves dried red chilli plus guntur karam turmeric powder coriander (dhaniya) powder unsweetened dried coconut lemon juice salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Side</span>
-      <h3>Bendakaya Vepudu (Andhra Okra Fry)</h3>
-      <p>Dry-fried okra with a sesame-oil talimpu, garlic and karam, finished with toasted coconut. Okra carries real carbs, so the portion is counted at 80 g, about eight pods, per person.</p>
-      <ul class="rstats">
-        <li><b>5.6g</b> net carbs</li>
-        <li><b>2g</b> protein</li>
-        <li>27 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
-    <a class="rc" href="andhra-egg-bhurji-guntur-karam.html" data-meal="breakfast" data-t="20" data-n="5.6" data-s="andhra egg bhurji with guntur karam and curry leaves (kodiguddu poratu) eggs, large groundnut oil (or sesame oil) ghee, to finish mustard seeds cumin seeds dried red chilli, broken in half fresh curry leaves, stripped from the stalk garlic, finely chopped ginger, finely chopped green chillies, finely chopped onion, very finely chopped tomato, finely chopped turmeric powder guntur red chilli powder (karam) black pepper, freshly ground coriander leaves, chopped lemon juice salt">
-      <span class="pill" style="align-self:flex-start;background:#10b981">Breakfast</span>
-      <h3>Andhra Egg Bhurji with Guntur Karam and Curry Leaves (Kodiguddu Poratu)</h3>
-      <p>Soft, spicy scrambled eggs the way an Andhra kitchen does them: a loud tempering of mustard, cumin and crackling curry leaves, a tiny base of onion and tomato, and Guntur karam bloomed in oil so the whole pan smells of home. Twenty minutes, one kadai, no bread needed.</p>
-      <ul class="rstats">
-        <li><b>5.6g</b> net carbs</li>
-        <li><b>20g</b> protein</li>
-        <li>20 min</li>
-        <li>Heat 4/5</li>
-      </ul>
-    </a>
+  <!-- Filter Controls -->
+  <div class="cookbook-controls" id="filterBar">
+    <span style="font-weight:bold;color:#445555;font-size:0.9em;text-transform:uppercase;">Filter:</span>
+    <button class="filter-btn active" data-meal="">All (38)</button>
+      <button class="filter-btn" data-meal="breakfast">Breakfast (7)</button>
+      <button class="filter-btn" data-meal="lunch">Lunch (6)</button>
+      <button class="filter-btn" data-meal="dinner">Dinner (17)</button>
+      <button class="filter-btn" data-meal="side">Side (4)</button>
+      <button class="filter-btn" data-meal="podi">Podi (3)</button>
+      <button class="filter-btn" data-meal="pickle">Pickle (1)</button>
+    <span style="border-left:1px solid #ccc;height:18px;margin:0 4px;"></span>
+    <button class="filter-btn" data-quick="1">⚡ Under 30m</button>
+    <button class="filter-btn" data-low="1">🌿 Under 6g Carbs</button>
   </div>
-</main>
+
+  <!-- Main Recipes Directory Table (Techmeme style list) -->
+  <table class="archive-table" id="recipeTable">
+    <thead>
+      <tr>
+        <th style="width: 14%;">Meal / Category</th>
+        <th style="width: 50%;">Dish & Regional Style</th>
+        <th style="width: 36%;">Verified Macros (Per Serving)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="recipe-row" data-meal="breakfast" data-time="20" data-carb="5.0" data-search="tomato guddu vepudu (guntur tomato egg fry) soft egg curds catch a reduced tomato-onion masala, with a sharp mustard-and-curry-leaf talimpu and a final hit of guntur chilli. keep it just saucy enough to cling to each bite. eggs, beaten ripe tomato, finely chopped onion, finely chopped ghee mustard seeds cumin seeds fresh curry leaves green chilli, finely sliced garlic, minced guntur red chilli powder turmeric powder coriander powder fresh coriander leaves, chopped salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">breakfast</span><br>
+          <span style="font-size:0.85em;color:#666;">Guntur</span><br>
+          <span style="font-size:0.85em;color:#777;">20m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="tomato-guddu-vepudu-guntur.html">Tomato Guddu Vepudu (Guntur Tomato Egg Fry)</a></strong>
+<br><small lang="te" style="color:#666;">టమాటో గుడ్డు వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">Soft egg curds catch a reduced tomato-onion masala, with a sharp mustard-and-curry-leaf talimpu and a final hit of Guntur chilli. Keep it just saucy enough to cling to each bite.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+eggs, beaten, ripe tomato, finely chopped, onion, finely chopped, ghee, mustard seeds&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.0g</strong> net carbs &nbsp;·&nbsp;
+            <strong>14g</strong> protein &nbsp;·&nbsp;
+            <strong>14g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:63%;background:#d49b20"></span>
+            <span style="width:27%;background:#902050"></span>
+            <span style="width:10%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">211 kcal &nbsp;|&nbsp; <a href="tomato-guddu-vepudu-guntur.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="28" data-carb="9.9" data-search="gongura chepa vepudu with curry-leaf cauliflower rice flaky white fish gets a quick guntur-spice sear, then meets a garlicky gongura fry whose tart leaves balance the rich tempering. curry-leaf cauliflower rice catches every last bit of the pan masala. catfish fillets, patted dry gongura leaves, picked and chopped cauliflower florets, riced and squeezed dry groundnut oil ghee green chilli, slit garlic, minced fresh ginger, minced fresh curry leaves mustard seeds cumin seeds guntur red chilli powder turmeric powder lemon juice fresh coriander leaves, chopped salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Coastal Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">28m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="gongura-chepa-vepudu-cauliflower-rice.html">Gongura Chepa Vepudu with Curry-Leaf Cauliflower Rice</a></strong>
+<br><small lang="te" style="color:#666;">గోంగూర చేపల వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">Flaky white fish gets a quick Guntur-spice sear, then meets a garlicky gongura fry whose tart leaves balance the rich tempering. Curry-leaf cauliflower rice catches every last bit of the pan masala.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+catfish fillets, patted dry, gongura leaves, picked and chopped, cauliflower florets, riced and squeezed dry, groundnut oil, ghee&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>9.9g</strong> net carbs &nbsp;·&nbsp;
+            <strong>28g</strong> protein &nbsp;·&nbsp;
+            <strong>20g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:54%;background:#d49b20"></span>
+            <span style="width:34%;background:#902050"></span>
+            <span style="width:12%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">337 kcal &nbsp;|&nbsp; <a href="gongura-chepa-vepudu-cauliflower-rice.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="lunch" data-time="30" data-carb="5.0" data-search="gasagasala kobbari goat keema kura (poppy-coconut goat mince curry) lean goat keema cooks quickly into a peppery, clingy curry, rounded with a little coconut milk and a lightly toasted poppy-seed paste. curry leaves and guntur karam keep the finish unmistakably andhra. lean goat mince onion, finely chopped ripe tomato, finely chopped fresh ginger, minced garlic, minced ghee fresh curry leaves green chilli, slit guntur red chilli powder coriander powder cumin seeds white poppy seeds unsweetened canned coconut milk turmeric powder fresh coriander leaves, chopped salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">lunch</span><br>
+          <span style="font-size:0.85em;color:#666;">Coastal Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">30m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="gasagasala-kobbari-goat-keema-kura.html">Gasagasala Kobbari Goat Keema Kura (Poppy-Coconut Goat Mince Curry)</a></strong>
+<br><small lang="te" style="color:#666;">గసగసాల కొబ్బరి మేక కీమా కూర</small><p class="item-summary" style="margin-top:0.3em;">Lean goat keema cooks quickly into a peppery, clingy curry, rounded with a little coconut milk and a lightly toasted poppy-seed paste. Curry leaves and Guntur karam keep the finish unmistakably Andhra.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+lean goat mince, onion, finely chopped, ripe tomato, finely chopped, fresh ginger, minced, garlic, minced&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.0g</strong> net carbs &nbsp;·&nbsp;
+            <strong>33g</strong> protein &nbsp;·&nbsp;
+            <strong>14g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:46%;background:#d49b20"></span>
+            <span style="width:47%;background:#902050"></span>
+            <span style="width:7%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">289 kcal &nbsp;|&nbsp; <a href="gasagasala-kobbari-goat-keema-kura.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="lunch" data-time="40" data-carb="7.2" data-search="quick mamsam vepudu (boneless goat pepper fry) small cubes of boneless goat are pressure-cooked in just ten minutes with a yogurt-and-spice rub, then fried dry in ghee with curry leaves, green chilli and plenty of pepper until the masala clings in a dark, sticky coat. boneless goat (leg or shoulder), 1 cm cubes plain whole-milk yogurt garlic, minced ginger, minced onion, finely chopped turmeric guntur red chilli powder coriander seed powder black pepper, coarsely crushed fennel seeds, crushed garam masala ghee groundnut oil curry leaves green chilli, slit lemon juice coriander leaves, chopped salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">lunch</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">40m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="mamsam-vepudu-pressure-cooker-boneless.html">Quick Mamsam Vepudu (Boneless Goat Pepper Fry)</a></strong>
+<br><small lang="te" style="color:#666;">మాంసం వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">Small cubes of boneless goat are pressure-cooked in just ten minutes with a yogurt-and-spice rub, then fried dry in ghee with curry leaves, green chilli and plenty of pepper until the masala clings in a dark, sticky coat.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+boneless goat (leg or shoulder), 1 cm cubes, plain whole-milk yogurt, garlic, minced, ginger, minced, onion, finely chopped&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>7.2g</strong> net carbs &nbsp;·&nbsp;
+            <strong>43g</strong> protein &nbsp;·&nbsp;
+            <strong>16g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:42%;background:#d49b20"></span>
+            <span style="width:49%;background:#902050"></span>
+            <span style="width:8%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">363 kcal &nbsp;|&nbsp; <a href="mamsam-vepudu-pressure-cooker-boneless.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="breakfast" data-time="18" data-carb="5.4" data-search="palakura kodiguddu vepudu (spinach egg fry) the everyday andhra spinach and egg fry, built the way home cooks do it: a cumin-garlic ghee base, dry-fried spinach so nothing turns watery, then eggs set on top and broken into the greens. garlicky, peppery and properly hot, ready in 18 minutes. spinach leaves, washed, stems removed, finely chopped eggs ghee cumin seeds curry leaves garlic, crushed onion, very finely chopped green chillies, slit turmeric guntur red chilli powder coriander (dhaniya) powder garam masala black pepper, freshly ground salt, added at the end">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">breakfast</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">18m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="palakura-kodiguddu-vepudu.html">Palakura Kodiguddu Vepudu (Spinach Egg Fry)</a></strong>
+<br><small lang="te" style="color:#666;">పాలకూర కోడిగుడ్డు వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">The everyday Andhra spinach and egg fry, built the way home cooks do it: a cumin-garlic ghee base, dry-fried spinach so nothing turns watery, then eggs set on top and broken into the greens. Garlicky, peppery and properly hot, ready in 18 minutes.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+spinach leaves, washed, stems removed, finely chopped, eggs, ghee, cumin seeds, curry leaves&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.4g</strong> net carbs &nbsp;·&nbsp;
+            <strong>16g</strong> protein &nbsp;·&nbsp;
+            <strong>17g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:65%;background:#d49b20"></span>
+            <span style="width:26%;background:#902050"></span>
+            <span style="width:9%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">247 kcal &nbsp;|&nbsp; <a href="palakura-kodiguddu-vepudu.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="lunch" data-time="30" data-carb="8.9" data-search="menthi mamsam keema (goat mince with fresh fenugreek) lean goat mince browned hard with ginger, garlic and curry leaves, then finished with a big handful of fresh menthi kura whose pleasant bitterness cuts through the ghee and heat. dry, deeply savoury and sharply spiced, a lunch that eats like a weekend dish in 30 minutes. goat (mutton) mince, from an indian or halal butcher ghee groundnut (peanut) oil cinnamon, ground green cardamom pods, crushed cumin seeds curry leaves onion, finely chopped ginger, minced garlic, minced green chillies, slit guntur red chilli powder turmeric coriander (dhaniya) powder plain whole-milk yogurt, whisked fresh fenugreek (menthi) leaves, picked from thick stems, washed and chopped garam masala lemon juice coriander leaves, chopped salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">lunch</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">30m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="menthi-mamsam-keema.html">Menthi Mamsam Keema (Goat Mince with Fresh Fenugreek)</a></strong>
+<br><small lang="te" style="color:#666;">మెంతికూర మటన్ కీమా</small><p class="item-summary" style="margin-top:0.3em;">Lean goat mince browned hard with ginger, garlic and curry leaves, then finished with a big handful of fresh menthi kura whose pleasant bitterness cuts through the ghee and heat. Dry, deeply savoury and sharply spiced, a lunch that eats like a weekend dish in 30 minutes.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+goat (mutton) mince, from an Indian or halal butcher, ghee, groundnut (peanut) oil, cinnamon, ground, green cardamom pods, crushed&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>8.9g</strong> net carbs &nbsp;·&nbsp;
+            <strong>40g</strong> protein &nbsp;·&nbsp;
+            <strong>18g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:45%;background:#d49b20"></span>
+            <span style="width:45%;background:#902050"></span>
+            <span style="width:10%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">370 kcal &nbsp;|&nbsp; <a href="menthi-mamsam-keema.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="breakfast" data-time="15" data-carb="6.0" data-search="menthi kura guddu vepudu (fenugreek-leaf egg fry) fresh fenugreek leaves are wilted hard in a garlicky talimpu so the bitterness turns into a savoury edge, then four eggs are set in the greens until they cling in golden, spicy curds. fifteen minutes, one pan, and nothing like a plain scramble. fresh fenugreek leaves (menthi kura), picked and finely chopped eggs, shelled ghee cumin seeds garlic, lightly crushed dried red chillies, as guntur karam curry leaves onion, finely chopped green chilli, slit turmeric salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">breakfast</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">15m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="menthi-kura-guddu-vepudu.html">Menthi Kura Guddu Vepudu (Fenugreek-Leaf Egg Fry)</a></strong>
+<br><small lang="te" style="color:#666;">మెంతికూర గుడ్డు వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">Fresh fenugreek leaves are wilted hard in a garlicky talimpu so the bitterness turns into a savoury edge, then four eggs are set in the greens until they cling in golden, spicy curds. Fifteen minutes, one pan, and nothing like a plain scramble.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+fresh fenugreek leaves (menthi kura), picked and finely chopped, eggs, shelled, ghee, cumin seeds, garlic, lightly crushed&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>6.0g</strong> net carbs &nbsp;·&nbsp;
+            <strong>15g</strong> protein &nbsp;·&nbsp;
+            <strong>17g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:65%;background:#d49b20"></span>
+            <span style="width:25%;background:#902050"></span>
+            <span style="width:10%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">244 kcal &nbsp;|&nbsp; <a href="menthi-kura-guddu-vepudu.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="20" data-carb="9.5" data-search="kanava vepudu (andhra-style pepper squid fry) squid rings tossed over fierce heat with garlic, ginger, curry leaves, crushed pepper and toasted coconut flakes so they stay springy and wear a dry, spicy crust. cooked in under 10 minutes once the pan is hot. cleaned squid, tubes cut into 1 cm rings (tentacles kept) coconut oil mustard seeds dried red chillies, as guntur karam curry leaves garlic, minced ginger, minced green chilli, slit onion, finely sliced black pepper, coarsely crushed turmeric unsweetened desiccated coconut lemon juice salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Coastal Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">20m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="kanava-vepudu-andhra-style.html">Kanava Vepudu (Andhra-Style Pepper Squid Fry)</a></strong>
+<br><small lang="te" style="color:#666;">కనవా వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">Squid rings tossed over fierce heat with garlic, ginger, curry leaves, crushed pepper and toasted coconut flakes so they stay springy and wear a dry, spicy crust. Cooked in under 10 minutes once the pan is hot.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+cleaned squid, tubes cut into 1 cm rings (tentacles kept), coconut oil, mustard seeds, dried red chillies, as Guntur karam, curry leaves&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>9.5g</strong> net carbs &nbsp;·&nbsp;
+            <strong>23g</strong> protein &nbsp;·&nbsp;
+            <strong>12g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:45%;background:#d49b20"></span>
+            <span style="width:39%;background:#902050"></span>
+            <span style="width:16%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">247 kcal &nbsp;|&nbsp; <a href="kanava-vepudu-andhra-style.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="25" data-carb="8.5" data-search="beerakaya royyala kura (ridge gourd and prawn dry curry) coastal andhra&#39;s favourite vegetable-and-seafood pairing: sweet, juicy ridge gourd cooked in the prawns&#39; own liquor with curry leaves, green chilli and a pinch of garam masala, then fried dry. light but loud, and ready in 25 minutes. prawns, peeled and deveined (thawed and patted dry if frozen) ridge gourd (beerakaya), peeled and cut into 1 cm pieces ghee groundnut (peanut) oil cumin seeds curry leaves onion, finely chopped green chillies, slit garlic, minced ginger, minced guntur red chilli powder turmeric coriander (dhaniya) powder fresh grated coconut, optional (frozen is fine) garam masala lemon juice coriander leaves, chopped salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Coastal Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">25m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="beerakaya-royyala-kura.html">Beerakaya Royyala Kura (Ridge Gourd and Prawn Dry Curry)</a></strong>
+<br><small lang="te" style="color:#666;">బీరకాయ రొయ్యల కూర</small><p class="item-summary" style="margin-top:0.3em;">Coastal Andhra&#39;s favourite vegetable-and-seafood pairing: sweet, juicy ridge gourd cooked in the prawns&#39; own liquor with curry leaves, green chilli and a pinch of garam masala, then fried dry. Light but loud, and ready in 25 minutes.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+prawns, peeled and deveined (thawed and patted dry if frozen), ridge gourd (beerakaya), peeled and cut into 1 cm pieces, ghee, groundnut (peanut) oil, cumin seeds&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>8.5g</strong> net carbs &nbsp;·&nbsp;
+            <strong>33g</strong> protein &nbsp;·&nbsp;
+            <strong>13g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:42%;background:#d49b20"></span>
+            <span style="width:46%;background:#902050"></span>
+            <span style="width:12%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">285 kcal &nbsp;|&nbsp; <a href="beerakaya-royyala-kura.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="30" data-carb="8.9" data-search="kodi gasagasala kura (pressure-cooker poppy-coconut chicken) a rich, nutty andhra chicken curry thickened with poppy seeds and coconut, with dried red chilli heat. the pressure cooker brings it together in about half an hour. boneless chicken thigh, 3 cm pieces ghee onion, sliced tomato, chopped poppy seeds, soaked 10 min in hot water grated coconut fennel seeds dried red chilli garlic ginger red chilli powder turmeric garam masala coriander seeds green chilli, slit curry leaves coriander leaves salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Coastal Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">30m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="kodi-gasagasala-kura-pressure-cooker.html">Kodi Gasagasala Kura (Pressure-Cooker Poppy-Coconut Chicken)</a></strong>
+<p class="item-summary" style="margin-top:0.3em;">A rich, nutty Andhra chicken curry thickened with poppy seeds and coconut, with dried red chilli heat. The pressure cooker brings it together in about half an hour.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+boneless chicken thigh, 3 cm pieces, ghee, onion, sliced, tomato, chopped, poppy seeds, soaked 10 min in hot water&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>8.9g</strong> net carbs &nbsp;·&nbsp;
+            <strong>43g</strong> protein &nbsp;·&nbsp;
+            <strong>26g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:53%;background:#d49b20"></span>
+            <span style="width:39%;background:#902050"></span>
+            <span style="width:8%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">464 kcal &nbsp;|&nbsp; <a href="kodi-gasagasala-kura-pressure-cooker.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="lunch" data-time="28" data-carb="7.8" data-search="chepala iguru with coconut masala (dry-style fish curry) chepala iguru is a thick, clinging masala fish curry. firm tilapia is simmered briefly in a ginger-garlic-coconut masala that coats each piece with guntur heat and no tamarind. tilapia fillets, cut into 4 cm pieces sesame oil onion, finely chopped tomato, pureed grated coconut ginger garlic coriander seeds fennel seeds cinnamon, ground red chilli powder turmeric green chilli, slit curry leaves lemon juice salt coriander leaves">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">lunch</span><br>
+          <span style="font-size:0.85em;color:#666;">Coastal Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">28m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="tilapia-chepala-iguru-kobbari.html">Chepala Iguru with Coconut Masala (Dry-Style Fish Curry)</a></strong>
+<p class="item-summary" style="margin-top:0.3em;">Chepala iguru is a thick, clinging masala fish curry. Firm tilapia is simmered briefly in a ginger-garlic-coconut masala that coats each piece with Guntur heat and no tamarind.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+tilapia fillets, cut into 4 cm pieces, sesame oil, onion, finely chopped, tomato, pureed, grated coconut&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>7.8g</strong> net carbs &nbsp;·&nbsp;
+            <strong>38g</strong> protein &nbsp;·&nbsp;
+            <strong>22g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:52%;background:#d49b20"></span>
+            <span style="width:40%;background:#902050"></span>
+            <span style="width:8%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">382 kcal &nbsp;|&nbsp; <a href="tilapia-chepala-iguru-kobbari.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="breakfast" data-time="25" data-carb="5.8" data-search="badam-perugu steamed cakes with kobbari pachadi soft idli-style almond and yogurt cakes, steamed in the pressure cooker and topped with a crackling curry-leaf talimpu, with a fresh green-chilli coconut pachadi. they are not fermented idli, but they scratch the same itch. almond flour, blanched eggs, whisked until frothy plain whole-milk yogurt ghee, for greasing and talimpu salt mustard seeds cumin seeds curry leaves green chilli, chopped (cakes) fresh or frozen grated coconut (pachadi) green chilli (pachadi) ginger (pachadi) lemon juice (pachadi)">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">breakfast</span><br>
+          <span style="font-size:0.85em;color:#666;">Coastal Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">25m · Heat 3/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="badam-perugu-steamed-cakes-kobbari-pachadi.html">Badam-Perugu Steamed Cakes with Kobbari Pachadi</a></strong>
+<p class="item-summary" style="margin-top:0.3em;">Soft idli-style almond and yogurt cakes, steamed in the pressure cooker and topped with a crackling curry-leaf talimpu, with a fresh green-chilli coconut pachadi. They are not fermented idli, but they scratch the same itch.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+almond flour, blanched, eggs, whisked until frothy, plain whole-milk yogurt, ghee, for greasing and talimpu, salt&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.8g</strong> net carbs &nbsp;·&nbsp;
+            <strong>13g</strong> protein &nbsp;·&nbsp;
+            <strong>27g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:76%;background:#d49b20"></span>
+            <span style="width:16%;background:#902050"></span>
+            <span style="width:7%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">317 kcal &nbsp;|&nbsp; <a href="badam-perugu-steamed-cakes-kobbari-pachadi.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="side" data-time="30" data-carb="5.5" data-search="vankaya kobbari kura (brinjal in coconut-sesame masala) tender brinjal wedges slow-roasted in a toasted coconut, sesame, garlic and chilli masala until the kura turns thick and dry-ish (mudda kura). sesame oil, lemon in place of tamarind, and no jaggery. small purple brinjals, cut into 3 cm wedges through the stalk unsweetened dried coconut sesame seeds garlic green chillies dried red chillies coriander seeds cumin seeds sesame oil mustard seeds curry leaves turmeric powder lemon juice salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">side</span><br>
+          <span style="font-size:0.85em;color:#666;">Coastal Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">30m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="vankaya-kobbari-kura.html">Vankaya Kobbari Kura (Brinjal in Coconut-Sesame Masala)</a></strong>
+<br><small lang="te" style="color:#666;">వంకాయ కొబ్బరి కూర</small><p class="item-summary" style="margin-top:0.3em;">Tender brinjal wedges slow-roasted in a toasted coconut, sesame, garlic and chilli masala until the kura turns thick and dry-ish (mudda kura). Sesame oil, lemon in place of tamarind, and no jaggery.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+small purple brinjals, cut into 3 cm wedges through the stalk, unsweetened dried coconut, sesame seeds, garlic, green chillies&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.5g</strong> net carbs &nbsp;·&nbsp;
+            <strong>3g</strong> protein &nbsp;·&nbsp;
+            <strong>15g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:80%;background:#d49b20"></span>
+            <span style="width:7%;background:#902050"></span>
+            <span style="width:13%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">174 kcal &nbsp;|&nbsp; <a href="vankaya-kobbari-kura.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="lunch" data-time="22" data-carb="6.5" data-search="royyala iguru (andhra prawn dry curry) plump prawns tossed over caramelised onions, curry leaves and green chilli with garam masala and a squeeze of lemon. a 22-minute coastal andhra classic, dry enough to eat with a spoon or over cauliflower rice. prawns, peeled and deveined (thawed and patted dry if frozen) lemon juice, for the marinade and finish ginger, crushed (half for the marinade, half for the pan) garlic, crushed (same split as the ginger) guntur red chilli powder turmeric salt ghee sesame (gingelly) oil cumin seeds curry leaves green chillies, slit onion, finely chopped coriander (dhaniya) powder garam masala coriander leaves, chopped">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">lunch</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">22m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="royyala-iguru.html">Royyala Iguru (Andhra Prawn Dry Curry)</a></strong>
+<br><small lang="te" style="color:#666;">రొయ్యల ఇగురు</small><p class="item-summary" style="margin-top:0.3em;">Plump prawns tossed over caramelised onions, curry leaves and green chilli with garam masala and a squeeze of lemon. A 22-minute coastal Andhra classic, dry enough to eat with a spoon or over cauliflower rice.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+prawns, peeled and deveined (thawed and patted dry if frozen), lemon juice, for the marinade and finish, ginger, crushed (half for the marinade, half for the pan), garlic, crushed (same split as the ginger), Guntur red chilli powder&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>6.5g</strong> net carbs &nbsp;·&nbsp;
+            <strong>37g</strong> protein &nbsp;·&nbsp;
+            <strong>10g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:34%;background:#d49b20"></span>
+            <span style="width:56%;background:#902050"></span>
+            <span style="width:10%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">265 kcal &nbsp;|&nbsp; <a href="royyala-iguru.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="22" data-carb="9.1" data-search="paneer bhurji, guntur style (curry leaf and karam) crumbled paneer in a ghee tempering of mustard, cumin and crisp curry leaves, finished with a spoon of cream and a hit of guntur karam. it is the quick, juicy, south-indian cousin of the dhaba bhurji, and it is on the table in 22 minutes. paneer, crumbled by hand ghee mustard seeds cumin seeds dried red chilli fresh curry leaves garlic, finely chopped ginger, finely chopped onion, finely chopped green chillies, finely chopped tomato, finely chopped turmeric powder guntur red chilli powder (karam) coriander (dhaniya) powder heavy cream coriander leaves, chopped lemon juice salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Guntur</span><br>
+          <span style="font-size:0.85em;color:#777;">22m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="paneer-bhurji-guntur-style.html">Paneer Bhurji, Guntur Style (Curry Leaf and Karam)</a></strong>
+<br><small lang="te" style="color:#666;">పనీర్ బుర్జీ</small><p class="item-summary" style="margin-top:0.3em;">Crumbled paneer in a ghee tempering of mustard, cumin and crisp curry leaves, finished with a spoon of cream and a hit of Guntur karam. It is the quick, juicy, south-Indian cousin of the dhaba bhurji, and it is on the table in 22 minutes.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+paneer, crumbled by hand, ghee, mustard seeds, cumin seeds, dried red chilli&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>9.1g</strong> net carbs &nbsp;·&nbsp;
+            <strong>22g</strong> protein &nbsp;·&nbsp;
+            <strong>38g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:73%;background:#d49b20"></span>
+            <span style="width:19%;background:#902050"></span>
+            <span style="width:8%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">462 kcal &nbsp;|&nbsp; <a href="paneer-bhurji-guntur-style.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="breakfast" data-time="22" data-carb="5.4" data-search="pachi mirapa guddu vepudu (andhra green-chilli egg fry) boiled eggs blistered golden in groundnut oil, then tossed in a fiery coriander and green-chilli masala that clings like a dry curry. it is the green-chilli cousin of the usual red karam egg fry: sharper, fresher and ready in about 20 minutes. large eggs, hard-boiled, peeled and halved lengthwise groundnut oil ghee green chillies, 18 g blended and 4 g slit fresh coriander leaves and tender stems onion, very finely chopped garlic cloves ginger curry leaves mustard seeds cumin seeds turmeric powder black pepper, freshly crushed lemon juice salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">breakfast</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra (street-stall and home style)</span><br>
+          <span style="font-size:0.85em;color:#777;">22m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="pachi-mirapa-guddu-vepudu.html">Pachi Mirapa Guddu Vepudu (Andhra Green-Chilli Egg Fry)</a></strong>
+<br><small lang="te" style="color:#666;">పచ్చిమిర్చి గుడ్డు వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">Boiled eggs blistered golden in groundnut oil, then tossed in a fiery coriander and green-chilli masala that clings like a dry curry. It is the green-chilli cousin of the usual red karam egg fry: sharper, fresher and ready in about 20 minutes.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+large eggs, hard-boiled, peeled and halved lengthwise, groundnut oil, ghee, green chillies, 18 g blended and 4 g slit, fresh coriander leaves and tender stems&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.4g</strong> net carbs &nbsp;·&nbsp;
+            <strong>20g</strong> protein &nbsp;·&nbsp;
+            <strong>26g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:70%;background:#d49b20"></span>
+            <span style="width:24%;background:#902050"></span>
+            <span style="width:6%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">340 kcal &nbsp;|&nbsp; <a href="pachi-mirapa-guddu-vepudu.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="podi" data-time="19" data-carb="1.3" data-search="nuvvula karam (roasted sesame chilli powder) coarse-ground roasted sesame with toasted chillies, coriander, cumin and garlic. it is nutty, deeply savoury and one of the easiest ways to make plain vegetables taste andhra. no dal, so a tablespoon stays around 1 g net carbs. sesame seeds (nuvvulu) dried red chillies coriander seeds cumin seeds garlic cloves, peeled and dry-roasted salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">podi</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">19m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="nuvvula-karam.html">Nuvvula Karam (Roasted Sesame Chilli Powder)</a></strong>
+<br><small lang="te" style="color:#666;">నువ్వుల కారం</small><p class="item-summary" style="margin-top:0.3em;">Coarse-ground roasted sesame with toasted chillies, coriander, cumin and garlic. It is nutty, deeply savoury and one of the easiest ways to make plain vegetables taste Andhra. No dal, so a tablespoon stays around 1 g net carbs.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+sesame seeds (nuvvulu), dried red chillies, coriander seeds, cumin seeds, garlic cloves, peeled and dry-roasted&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>1.3g</strong> net carbs &nbsp;·&nbsp;
+            <strong>1g</strong> protein &nbsp;·&nbsp;
+            <strong>3g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:75%;background:#d49b20"></span>
+            <span style="width:13%;background:#902050"></span>
+            <span style="width:13%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">41 kcal &nbsp;|&nbsp; <a href="nuvvula-karam.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="33" data-carb="8.8" data-search="natu kodi-style pepper chicken curry (coconut-poppy base) the deep, nutty village-style curry: roasted coconut, white poppy seed and pepper ground to a paste, finished with freshly cracked pepper and a squeeze of lemon. no jaggery, no tamarind. boneless thigh stands in for country chicken so it fits a weeknight. boneless skinless chicken thigh, cut into 3 cm pieces (stands in for country chicken) guntur red chilli powder (marinade) turmeric powder salt ginger, crushed (divided) garlic, crushed (divided) white poppy seeds grated coconut, unsweetened (frozen is fine, thawed) coriander seeds fennel seeds black peppercorns (3 g for the paste, 1 g cracked for the finish) whole dried red chillies cinnamon and cloves, ground (1 g cinnamon + 0.5 g cloves) cardamom, green, seeds only sesame oil (nuvvula noone) onion, finely chopped green chillies, slit fresh curry leaves lemon juice coriander leaves, chopped">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Rayalaseema</span><br>
+          <span style="font-size:0.85em;color:#777;">33m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="natu-kodi-style-pepper-chicken-curry.html">Natu Kodi-Style Pepper Chicken Curry (Coconut-Poppy Base)</a></strong>
+<br><small lang="te" style="color:#666;">నాటుకోడి స్టైల్ మిరియాల కోడి కూర</small><p class="item-summary" style="margin-top:0.3em;">The deep, nutty village-style curry: roasted coconut, white poppy seed and pepper ground to a paste, finished with freshly cracked pepper and a squeeze of lemon. No jaggery, no tamarind. Boneless thigh stands in for country chicken so it fits a weeknight.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+boneless skinless chicken thigh, cut into 3 cm pieces (stands in for country chicken), Guntur red chilli powder (marinade), turmeric powder, salt, ginger, crushed (divided)&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>8.8g</strong> net carbs &nbsp;·&nbsp;
+            <strong>43g</strong> protein &nbsp;·&nbsp;
+            <strong>28g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:55%;background:#d49b20"></span>
+            <span style="width:37%;background:#902050"></span>
+            <span style="width:8%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">480 kcal &nbsp;|&nbsp; <a href="natu-kodi-style-pepper-chicken-curry.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="28" data-carb="7.7" data-search="mutton keema vepudu (andhra dry goat mince fry) crumbly, deep-brown goat mince fried in ghee with curry leaves, green chilli and a freshly crushed cumin-fennel masala, finished until the edges crisp. the dish for &#39;i need real andhra flavour in 28 minutes&#39;. ground goat (mutton keema), ask the butcher to grind it twice ghee sesame (gingelly) oil curry leaves dried red chillies (guntur or byadgi) onion, chopped very fine ginger, minced garlic, minced green chillies, slit and chopped guntur red chilli powder (karam) turmeric coriander (dhaniya) powder cumin seeds, dry-roasted and crushed fennel seeds, dry-roasted and crushed garam masala black pepper, freshly ground salt lemon juice coriander leaves, chopped">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">28m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="mutton-keema-vepudu.html">Mutton Keema Vepudu (Andhra Dry Goat Mince Fry)</a></strong>
+<br><small lang="te" style="color:#666;">మటన్ కీమా వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">Crumbly, deep-brown goat mince fried in ghee with curry leaves, green chilli and a freshly crushed cumin-fennel masala, finished until the edges crisp. The dish for &#39;I need real Andhra flavour in 28 minutes&#39;.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+ground goat (mutton keema), ask the butcher to grind it twice, ghee, sesame (gingelly) oil, curry leaves, dried red chillies (Guntur or byadgi)&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>7.7g</strong> net carbs &nbsp;·&nbsp;
+            <strong>38g</strong> protein &nbsp;·&nbsp;
+            <strong>16g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:44%;background:#d49b20"></span>
+            <span style="width:47%;background:#902050"></span>
+            <span style="width:9%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">338 kcal &nbsp;|&nbsp; <a href="mutton-keema-vepudu.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="30" data-carb="8.5" data-search="kodi kobbari kura (coconut chicken curry) coastal andhra comfort: roasted coconut ground coarse with coriander, cumin and dried chilli, stirred into onion-curry-leaf chicken and finished with a splash of coconut milk. rich, nutty, thick and just spicy enough. boneless skinless chicken thigh, cut into 3 cm pieces (weekday swap for bone-in) turmeric powder salt ginger, crushed garlic, crushed whole dried red chillies coriander seeds cumin seeds grated coconut, unsweetened (frozen is fine, thawed) coconut oil mustard seeds fresh curry leaves onion, finely chopped green chillies, slit canned unsweetened coconut milk cinnamon, cloves and cardamom (garam masala pinch) lemon juice coriander leaves, chopped">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Coastal Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">30m · Heat 3/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="kodi-kobbari-kura.html">Kodi Kobbari Kura (Coconut Chicken Curry)</a></strong>
+<br><small lang="te" style="color:#666;">కోడి కొబ్బరి కూర</small><p class="item-summary" style="margin-top:0.3em;">Coastal Andhra comfort: roasted coconut ground coarse with coriander, cumin and dried chilli, stirred into onion-curry-leaf chicken and finished with a splash of coconut milk. Rich, nutty, thick and just spicy enough.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+boneless skinless chicken thigh, cut into 3 cm pieces (weekday swap for bone-in), turmeric powder, salt, ginger, crushed, garlic, crushed&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>8.5g</strong> net carbs &nbsp;·&nbsp;
+            <strong>43g</strong> protein &nbsp;·&nbsp;
+            <strong>31g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:58%;background:#d49b20"></span>
+            <span style="width:35%;background:#902050"></span>
+            <span style="width:7%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">498 kcal &nbsp;|&nbsp; <a href="kodi-kobbari-kura.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="28" data-carb="8.3" data-search="kodi guddu pulusu, keto (andhra egg curry with minimal tamarind) a thin, sharp, spicy pulusu with blistered eggs soaking in a tomato and curry-leaf gravy. classic versions use a lime-sized ball of tamarind; this one gets its tang from just 5 g of pulp, a mashed tomato and a squeeze of lemon at the end, and no jaggery at all. eggs, large, to hard-boil groundnut oil mustard seeds cumin seeds fenugreek (methi) seeds dried red chilli fresh curry leaves garlic, finely chopped ginger, finely chopped green chillies, slit onion, finely chopped tomato, finely chopped turmeric powder guntur red chilli powder (karam) coriander (dhaniya) powder tamarind pulp (thick, seedless) lemon juice, to finish coriander leaves, chopped salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">28m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="egg-pulusu-keto.html">Kodi Guddu Pulusu, Keto (Andhra Egg Curry with Minimal Tamarind)</a></strong>
+<br><small lang="te" style="color:#666;">కోడిగుడ్డు పులుసు</small><p class="item-summary" style="margin-top:0.3em;">A thin, sharp, spicy pulusu with blistered eggs soaking in a tomato and curry-leaf gravy. Classic versions use a lime-sized ball of tamarind; this one gets its tang from just 5 g of pulp, a mashed tomato and a squeeze of lemon at the end, and no jaggery at all.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+eggs, large, to hard-boil, groundnut oil, mustard seeds, cumin seeds, fenugreek (methi) seeds&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>8.3g</strong> net carbs &nbsp;·&nbsp;
+            <strong>21g</strong> protein &nbsp;·&nbsp;
+            <strong>26g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:66%;background:#d49b20"></span>
+            <span style="width:24%;background:#902050"></span>
+            <span style="width:10%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">351 kcal &nbsp;|&nbsp; <a href="egg-pulusu-keto.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="podi" data-time="13" data-carb="1.1" data-search="kobbari karam (garlic coconut chilli powder) toasted dry coconut ground with fiery chillies, cumin and garlic: a crumbly, nutty karam that turns hot cauliflower rice or a fried egg into something you would walk across town for. one serving is a heaped tablespoon. unsweetened dried coconut (endu kobbari), grated or desiccated dried red chillies garlic cloves, peeled cumin seeds salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">podi</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">13m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="kobbari-karam.html">Kobbari Karam (Garlic Coconut Chilli Powder)</a></strong>
+<br><small lang="te" style="color:#666;">కొబ్బరి కారం</small><p class="item-summary" style="margin-top:0.3em;">Toasted dry coconut ground with fiery chillies, cumin and garlic: a crumbly, nutty karam that turns hot cauliflower rice or a fried egg into something you would walk across town for. One serving is a heaped tablespoon.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+unsweetened dried coconut (endu kobbari), grated or desiccated, dried red chillies, garlic cloves, peeled, cumin seeds, salt          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>1.1g</strong> net carbs &nbsp;·&nbsp;
+            <strong>1g</strong> protein &nbsp;·&nbsp;
+            <strong>3g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:82%;background:#d49b20"></span>
+            <span style="width:6%;background:#902050"></span>
+            <span style="width:12%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">38 kcal &nbsp;|&nbsp; <a href="kobbari-karam.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="29" data-carb="8.2" data-search="keto chepala pulusu (tomato and tiny-tamarind fish stew) the tangy, spicy andhra fish stew with the sourness built from ripe tomato and just 6 g of tamarind pulp for the whole pot, thickened with a spoon of poppy-seed paste. it tastes even better the next day. catfish fillet or steaks (us farmed channel catfish), 4 to 5 cm chunks lemon juice, for the marinade guntur red chilli powder turmeric salt tamarind pulp, seedless, weighed on a scale poppy seeds (gasagasalu), ground to a paste with 40 ml water sesame (gingelly) oil mustard seeds cumin seeds fenugreek seeds dried red chilli curry leaves green chillies, slit onion, finely chopped garlic, minced ginger, minced ripe tomato, finely chopped coriander (dhaniya) powder garam masala coriander leaves with tender stalks">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">29m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="chepala-pulusu-keto.html">Keto Chepala Pulusu (Tomato and Tiny-Tamarind Fish Stew)</a></strong>
+<br><small lang="te" style="color:#666;">చేపల పులుసు (కీటో)</small><p class="item-summary" style="margin-top:0.3em;">The tangy, spicy Andhra fish stew with the sourness built from ripe tomato and just 6 g of tamarind pulp for the whole pot, thickened with a spoon of poppy-seed paste. It tastes even better the next day.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+catfish fillet or steaks (US farmed channel catfish), 4 to 5 cm chunks, lemon juice, for the marinade, Guntur red chilli powder, turmeric, salt&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>8.2g</strong> net carbs &nbsp;·&nbsp;
+            <strong>33g</strong> protein &nbsp;·&nbsp;
+            <strong>21g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:54%;background:#d49b20"></span>
+            <span style="width:37%;background:#902050"></span>
+            <span style="width:9%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">367 kcal &nbsp;|&nbsp; <a href="chepala-pulusu-keto.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="podi" data-time="32" data-carb="1.1" data-search="karivepaku podi (curry leaf powder) a heap of crisp curry leaves ground with toasted coriander, chilli and sesame, leaning on the leaves rather than on dal. it is the powder you shake over hot cauliflower rice with ghee, deeply herbal and properly spicy. fresh curry leaves, washed and fully dry sesame oil urad dal (leave out for dal-free) dried red chillies coriander seeds cumin seeds sesame seeds unsweetened dried coconut (optional; omit for longer shelf life) tamarind pulp, pea-sized piece salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">podi</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">32m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="karivepaku-podi.html">Karivepaku Podi (Curry Leaf Powder)</a></strong>
+<br><small lang="te" style="color:#666;">కరివేపాకు పొడి</small><p class="item-summary" style="margin-top:0.3em;">A heap of crisp curry leaves ground with toasted coriander, chilli and sesame, leaning on the leaves rather than on dal. It is the powder you shake over hot cauliflower rice with ghee, deeply herbal and properly spicy.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+fresh curry leaves, washed and fully dry, sesame oil, urad dal (leave out for dal-free), dried red chillies, coriander seeds&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>1.1g</strong> net carbs &nbsp;·&nbsp;
+            <strong>1g</strong> protein &nbsp;·&nbsp;
+            <strong>2g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:66%;background:#d49b20"></span>
+            <span style="width:15%;background:#902050"></span>
+            <span style="width:19%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">25 kcal &nbsp;|&nbsp; <a href="karivepaku-podi.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="20" data-carb="8.8" data-search="karivepaku paneer vepudu (curry-leaf garlic paneer fry) golden-seared paneer cubes tossed in a coarse, dark green-red paste of fresh curry leaves, garlic, dried chilli and toasted spices. a dry vepudu with crisp edges and a lemony finish, ready in 20 minutes and better than most restaurant starters. paneer, in 2 cm cubes ghee fresh curry leaves, half for the paste, half fried whole garlic dried red chillies cumin seeds coriander seeds or dhaniya powder black pepper green chillies, slit ginger, julienned onion, thinly sliced turmeric powder lemon juice coriander leaves, chopped salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">20m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="karivepaku-paneer-vepudu.html">Karivepaku Paneer Vepudu (Curry-Leaf Garlic Paneer Fry)</a></strong>
+<br><small lang="te" style="color:#666;">కరివేపాకు పనీర్ వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">Golden-seared paneer cubes tossed in a coarse, dark green-red paste of fresh curry leaves, garlic, dried chilli and toasted spices. A dry vepudu with crisp edges and a lemony finish, ready in 20 minutes and better than most restaurant starters.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+paneer, in 2 cm cubes, ghee, fresh curry leaves, half for the paste, half fried whole, garlic, dried red chillies&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>8.8g</strong> net carbs &nbsp;·&nbsp;
+            <strong>21g</strong> protein &nbsp;·&nbsp;
+            <strong>35g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:72%;background:#d49b20"></span>
+            <span style="width:20%;background:#902050"></span>
+            <span style="width:8%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">431 kcal &nbsp;|&nbsp; <a href="karivepaku-paneer-vepudu.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="28" data-carb="6.8" data-search="guntur kodi vepudu (fiery chicken fry) a dark, dry, brick-red chicken fry that clings to every piece: freshly roasted coriander-pepper powder, deep-browned onion, guntur chilli and a curry-leaf crackle. boneless thigh keeps it juicy and puts it on the table in under half an hour. boneless skinless chicken thigh, cut into 2 cm pieces (weekday swap for bone-in) ginger, crushed garlic, crushed lemon juice turmeric powder guntur red chilli powder (marinade) salt whole dried guntur red chillies (for the roast-and-grind powder) coriander seeds cumin seeds whole black peppercorns cinnamon and cloves, ground (1 g cinnamon + 0.5 g cloves) sesame oil (nuvvula noone) ghee onion, finely chopped green chillies, slit fresh curry leaves coriander leaves, chopped">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Guntur</span><br>
+          <span style="font-size:0.85em;color:#777;">28m · Heat 5/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="guntur-kodi-vepudu.html">Guntur Kodi Vepudu (Fiery Chicken Fry)</a></strong>
+<br><small lang="te" style="color:#666;">గుంటూరు కోడి వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">A dark, dry, brick-red chicken fry that clings to every piece: freshly roasted coriander-pepper powder, deep-browned onion, Guntur chilli and a curry-leaf crackle. Boneless thigh keeps it juicy and puts it on the table in under half an hour.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+boneless skinless chicken thigh, cut into 2 cm pieces (weekday swap for bone-in), ginger, crushed, garlic, crushed, lemon juice, turmeric powder&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>6.8g</strong> net carbs &nbsp;·&nbsp;
+            <strong>42g</strong> protein &nbsp;·&nbsp;
+            <strong>20g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:48%;background:#d49b20"></span>
+            <span style="width:44%;background:#902050"></span>
+            <span style="width:7%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">387 kcal &nbsp;|&nbsp; <a href="guntur-kodi-vepudu.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="lunch" data-time="30" data-carb="8.7" data-search="gongura royyala kura (sorrel prawn masala) prawns seared hot, then folded into a thick olive-dark gongura masala and finished with a sizzling garlic and red-chilli talimpu. the sourness comes entirely from the leaf, so there is no tamarind and no jaggery. medium prawns, peeled and deveined (thawed if frozen) gongura (sorrel) leaves, picked from stems, washed and fully dried, chopped groundnut oil sesame oil, for the final talimpu onion, finely chopped green chillies, slit garlic, 4 g crushed with the ginger and 3 g sliced for the talimpu ginger guntur karam (red chilli powder) dried red chillies for the talimpu coriander powder turmeric powder curry leaves cumin seeds mustard seeds cinnamon stick, a 1 cm piece green cardamom pods, lightly crushed salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">lunch</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra / Coastal Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">30m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="gongura-royyala-kura.html">Gongura Royyala Kura (Sorrel Prawn Masala)</a></strong>
+<br><small lang="te" style="color:#666;">గోంగూర రొయ్యల కూర</small><p class="item-summary" style="margin-top:0.3em;">Prawns seared hot, then folded into a thick olive-dark gongura masala and finished with a sizzling garlic and red-chilli talimpu. The sourness comes entirely from the leaf, so there is no tamarind and no jaggery.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+medium prawns, peeled and deveined (thawed if frozen), gongura (sorrel) leaves, picked from stems, washed and fully dried, chopped, groundnut oil, sesame oil, for the final talimpu, onion, finely chopped&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>8.7g</strong> net carbs &nbsp;·&nbsp;
+            <strong>23g</strong> protein &nbsp;·&nbsp;
+            <strong>17g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:55%;background:#d49b20"></span>
+            <span style="width:32%;background:#902050"></span>
+            <span style="width:12%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">289 kcal &nbsp;|&nbsp; <a href="gongura-royyala-kura.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="pickle" data-time="40" data-carb="2.8" data-search="gongura pachadi (roselle leaf pickle, no jaggery) the sour, fiery gongura pachadi you spoon onto hot cauliflower rice with ghee: leaves wilted in sesame oil, ground with roasted chilli, coriander and fenugreek, then tempered. sorrel is sour enough that it needs neither tamarind nor jaggery. gongura (roselle) leaves, picked, washed and fully dried sesame oil, divided dried red chillies, divided: 6 for the powder, 2 for the tempering coriander seeds fenugreek seeds cumin seeds garlic cloves mustard seeds urad dal for the tempering curry leaves salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">pickle</span><br>
+          <span style="font-size:0.85em;color:#666;">Guntur</span><br>
+          <span style="font-size:0.85em;color:#777;">40m · Heat 5/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="gongura-pachadi.html">Gongura Pachadi (Roselle Leaf Pickle, No Jaggery)</a></strong>
+<br><small lang="te" style="color:#666;">గోంగూర పచ్చడి</small><p class="item-summary" style="margin-top:0.3em;">The sour, fiery gongura pachadi you spoon onto hot cauliflower rice with ghee: leaves wilted in sesame oil, ground with roasted chilli, coriander and fenugreek, then tempered. Sorrel is sour enough that it needs neither tamarind nor jaggery.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+gongura (roselle) leaves, picked, washed and fully dried, sesame oil, divided, dried red chillies, divided: 6 for the powder, 2 for the tempering, coriander seeds, fenugreek seeds&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>2.8g</strong> net carbs &nbsp;·&nbsp;
+            <strong>1g</strong> protein &nbsp;·&nbsp;
+            <strong>6g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:77%;background:#d49b20"></span>
+            <span style="width:7%;background:#902050"></span>
+            <span style="width:16%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">72 kcal &nbsp;|&nbsp; <a href="gongura-pachadi.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="28" data-carb="7.9" data-search="gongura mutton keema (sorrel goat mince) tangy red sorrel leaves wilted into spiced goat mince until the oil separates: the gongura mamsam flavour in a fraction of the time, with the leaves doing the work that tamarind or tomato would. ground goat (mutton keema), ground twice ghee sesame (gingelly) oil cumin seeds dried red chillies curry leaves onion, chopped very fine ginger, minced garlic, minced green chillies, slit guntur red chilli powder turmeric coriander (dhaniya) powder salt gongura (sorrel) leaves, stems removed, washed and chopped; thawed if frozen garam masala">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">28m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="gongura-mutton-keema.html">Gongura Mutton Keema (Sorrel Goat Mince)</a></strong>
+<br><small lang="te" style="color:#666;">గోంగూర మటన్ కీమా</small><p class="item-summary" style="margin-top:0.3em;">Tangy red sorrel leaves wilted into spiced goat mince until the oil separates: the gongura mamsam flavour in a fraction of the time, with the leaves doing the work that tamarind or tomato would.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+ground goat (mutton keema), ground twice, ghee, sesame (gingelly) oil, cumin seeds, dried red chillies&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>7.9g</strong> net carbs &nbsp;·&nbsp;
+            <strong>39g</strong> protein &nbsp;·&nbsp;
+            <strong>16g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:44%;background:#d49b20"></span>
+            <span style="width:47%;background:#902050"></span>
+            <span style="width:10%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">342 kcal &nbsp;|&nbsp; <a href="gongura-mutton-keema.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="30" data-carb="7.9" data-search="gongura kodi (sorrel leaf chicken curry) gongura is the sour soul of andhra cooking: wilted into a thick, tangy masala until it melts, then clung to tender thigh pieces with a roast-and-ground coriander, fennel and fenugreek powder. no tamarind needed, because the leaf is the sourness. boneless skinless chicken thigh, cut into 2.5 cm pieces (weekday swap for bone-in) gongura (sorrel) leaves, stems removed, chopped (thawed and squeezed if frozen) coriander seeds fennel seeds fenugreek seeds whole dried red chillies sesame oil (nuvvula noone) mustard seeds cumin seeds fresh curry leaves onion, finely chopped garlic, crushed ginger, crushed green chillies, slit tomato, finely chopped guntur red chilli powder turmeric powder cinnamon and cloves, ground (0.5 g cinnamon + 0.3 g cloves) salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">30m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="gongura-kodi-kura.html">Gongura Kodi (Sorrel Leaf Chicken Curry)</a></strong>
+<br><small lang="te" style="color:#666;">గోంగూర కోడి కూర</small><p class="item-summary" style="margin-top:0.3em;">Gongura is the sour soul of Andhra cooking: wilted into a thick, tangy masala until it melts, then clung to tender thigh pieces with a roast-and-ground coriander, fennel and fenugreek powder. No tamarind needed, because the leaf is the sourness.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+boneless skinless chicken thigh, cut into 2.5 cm pieces (weekday swap for bone-in), gongura (sorrel) leaves, stems removed, chopped (thawed and squeezed if frozen), coriander seeds, fennel seeds, fenugreek seeds&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>7.9g</strong> net carbs &nbsp;·&nbsp;
+            <strong>42g</strong> protein &nbsp;·&nbsp;
+            <strong>20g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:47%;background:#d49b20"></span>
+            <span style="width:44%;background:#902050"></span>
+            <span style="width:8%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">396 kcal &nbsp;|&nbsp; <a href="gongura-kodi-kura.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="28" data-carb="8.0" data-search="gasagasala paneer kura (poppy-coconut paneer curry) soft paneer in a silky, faintly sweet gravy of toasted poppy seeds, coconut and almonds, lifted with green chilli and curry leaves. it borrows the poppy-seed paste of andhra gasagasala kura and the coconut of paneer kobbari kura, with no onion, tomato or sugar. paneer, cut into 2 cm cubes fresh or frozen grated coconut poppy seeds (gasagasalu) raw almonds ghee green chillies (2 in the paste, rest slit) garlic ginger guntur karam (red chilli powder) coriander powder turmeric powder cumin seeds mustard seeds curry leaves cinnamon stick, a 1 cm piece green cardamom pods, lightly crushed fresh coriander leaves, chopped salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra (gasagasala kura tradition)</span><br>
+          <span style="font-size:0.85em;color:#777;">28m · Heat 3/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="gasagasala-paneer-kura.html">Gasagasala Paneer Kura (Poppy-Coconut Paneer Curry)</a></strong>
+<br><small lang="te" style="color:#666;">గసగసాల పనీర్ కూర</small><p class="item-summary" style="margin-top:0.3em;">Soft paneer in a silky, faintly sweet gravy of toasted poppy seeds, coconut and almonds, lifted with green chilli and curry leaves. It borrows the poppy-seed paste of Andhra gasagasala kura and the coconut of paneer kobbari kura, with no onion, tomato or sugar.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+paneer, cut into 2 cm cubes, fresh or frozen grated coconut, poppy seeds (gasagasalu), raw almonds, ghee&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>8.0g</strong> net carbs &nbsp;·&nbsp;
+            <strong>23g</strong> protein &nbsp;·&nbsp;
+            <strong>41g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:75%;background:#d49b20"></span>
+            <span style="width:19%;background:#902050"></span>
+            <span style="width:6%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">497 kcal &nbsp;|&nbsp; <a href="gasagasala-paneer-kura.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="breakfast" data-time="22" data-carb="5.8" data-search="curry-leaf masala omelette with coconut-chilli pachadi a thick, fluffy omelette flecked with finely chopped curry leaves, ginger and green chilli, served with a thick coconut and green-chilli pachadi that has a crackling mustard-and-curry-leaf tempering on top. breakfast with real andhra attitude in 22 minutes. eggs, large (omelette) heavy cream (for a fluffy set) onion, very finely chopped green chillies, finely chopped (omelette) curry leaves, finely sliced (omelette) ginger, minced (omelette) coriander leaves, chopped turmeric powder black pepper guntur red chilli powder (karam) salt (omelette) ghee, for cooking fresh or thawed frozen grated coconut (pachadi) green chillies, roughly chopped (pachadi) garlic (pachadi) ginger (pachadi) cumin seeds (pachadi) lemon juice (pachadi) salt (pachadi) coconut oil, for tempering mustard seeds, for tempering dried red chilli, broken, for tempering curry leaves, whole, for tempering">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">breakfast</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">22m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="curry-leaf-masala-omelette-coconut-chilli-pachadi.html">Curry-Leaf Masala Omelette with Coconut-Chilli Pachadi</a></strong>
+<br><small lang="te" style="color:#666;">కరివేపాకు మసాలా ఆమ్లెట్, కొబ్బరి పచ్చిమిర్చి పచ్చడి</small><p class="item-summary" style="margin-top:0.3em;">A thick, fluffy omelette flecked with finely chopped curry leaves, ginger and green chilli, served with a thick coconut and green-chilli pachadi that has a crackling mustard-and-curry-leaf tempering on top. Breakfast with real Andhra attitude in 22 minutes.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+eggs, large (omelette), heavy cream (for a fluffy set), onion, very finely chopped, green chillies, finely chopped (omelette), curry leaves, finely sliced (omelette)&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.8g</strong> net carbs &nbsp;·&nbsp;
+            <strong>21g</strong> protein &nbsp;·&nbsp;
+            <strong>32g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:73%;background:#d49b20"></span>
+            <span style="width:21%;background:#902050"></span>
+            <span style="width:6%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">400 kcal &nbsp;|&nbsp; <a href="curry-leaf-masala-omelette-coconut-chilli-pachadi.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="side" data-time="13" data-carb="5.2" data-search="cucumber perugu pachadi (full-fat yoghurt raita) cool, crunchy cucumber folded into full-fat yoghurt with a green chilli and coconut paste, then finished with a hot ghee talimpu. it is the soothing counterpoint to gongura, karam and anything fiery, with the yoghurt carbs counted. cucumber, seeded and diced 5 mm full-fat plain yoghurt (perugu), unsweetened green chillies unsweetened dried coconut ghee mustard seeds cumin seeds dried red chilli curry leaves salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">side</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">13m · Heat 2/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="cucumber-perugu-pachadi.html">Cucumber Perugu Pachadi (Full-Fat Yoghurt Raita)</a></strong>
+<br><small lang="te" style="color:#666;">కీరదోసకాయ పెరుగు పచ్చడి</small><p class="item-summary" style="margin-top:0.3em;">Cool, crunchy cucumber folded into full-fat yoghurt with a green chilli and coconut paste, then finished with a hot ghee talimpu. It is the soothing counterpoint to gongura, karam and anything fiery, with the yoghurt carbs counted.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+cucumber, seeded and diced 5 mm, full-fat plain yoghurt (perugu), unsweetened, green chillies, unsweetened dried coconut, ghee&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.2g</strong> net carbs &nbsp;·&nbsp;
+            <strong>3g</strong> protein &nbsp;·&nbsp;
+            <strong>5g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:59%;background:#d49b20"></span>
+            <span style="width:14%;background:#902050"></span>
+            <span style="width:28%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">75 kcal &nbsp;|&nbsp; <a href="cucumber-perugu-pachadi.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="28" data-carb="7.3" data-search="chicken 65 (air-fryer or shallow-fry, almond-flour coating) crisp-edged, brick-red cubes of thigh with a garlicky curry-leaf and green-chilli tempering. the coating is yogurt, egg and almond flour: no maida, no cornflour, no sugar. boneless skinless chicken thigh, cut into 2.5 cm cubes plain whole-milk yogurt (curd) egg, lightly beaten almond flour (plain, finely ground, no added starch) ginger, crushed garlic, crushed (marinade) kashmiri or guntur red chilli powder (marinade) turmeric powder coriander seed, ground cumin seed, ground cinnamon and cloves, ground (garam masala base) black pepper, ground lemon juice (marinade) fresh curry leaves, finely chopped (marinade) salt avocado oil, for the air fryer or shallow fry sesame oil, for the tempering garlic, chopped (tempering) green chillies, slit (tempering) fresh curry leaves, whole (tempering) red chilli powder (tempering paste) lemon juice (finish) coriander leaves, chopped">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">28m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="chicken-65-air-fryer-keto.html">Chicken 65 (Air-Fryer or Shallow-Fry, Almond-Flour Coating)</a></strong>
+<br><small lang="te" style="color:#666;">చికెన్ 65</small><p class="item-summary" style="margin-top:0.3em;">Crisp-edged, brick-red cubes of thigh with a garlicky curry-leaf and green-chilli tempering. The coating is yogurt, egg and almond flour: no maida, no cornflour, no sugar.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+boneless skinless chicken thigh, cut into 2.5 cm cubes, plain whole-milk yogurt (curd), egg, lightly beaten, almond flour (plain, finely ground, no added starch), ginger, crushed&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>7.3g</strong> net carbs &nbsp;·&nbsp;
+            <strong>45g</strong> protein &nbsp;·&nbsp;
+            <strong>27g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:54%;background:#d49b20"></span>
+            <span style="width:40%;background:#902050"></span>
+            <span style="width:6%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">466 kcal &nbsp;|&nbsp; <a href="chicken-65-air-fryer-keto.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="dinner" data-time="24" data-carb="5.8" data-search="chepala vepudu (andhra fish fry with karam masala) fish pieces marinated in ginger, garlic and lemon, then crusted in a freshly ground roasted sesame, dry coconut and red chilli masala and shallow-fried in ghee with curry leaves. crisp edges, fiery and ready in about 25 minutes. tilapia fillets, cut into 5 cm pieces lemon juice ginger, grated garlic, grated guntur red chilli powder, for the marinade turmeric black pepper salt sesame seeds, for the masala dry coconut, unsweetened desiccated, for the masala cumin seeds, for the masala dried red chillies, for the masala ghee sesame (gingelly) oil curry leaves onion, thin rings, to serve">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">dinner</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">24m · Heat 5/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="chepala-vepudu.html">Chepala Vepudu (Andhra Fish Fry with Karam Masala)</a></strong>
+<br><small lang="te" style="color:#666;">చేపల వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">Fish pieces marinated in ginger, garlic and lemon, then crusted in a freshly ground roasted sesame, dry coconut and red chilli masala and shallow-fried in ghee with curry leaves. Crisp edges, fiery and ready in about 25 minutes.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+tilapia fillets, cut into 5 cm pieces, lemon juice, ginger, grated, garlic, grated, Guntur red chilli powder, for the marinade&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.8g</strong> net carbs &nbsp;·&nbsp;
+            <strong>37g</strong> protein &nbsp;·&nbsp;
+            <strong>18g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:49%;background:#d49b20"></span>
+            <span style="width:44%;background:#902050"></span>
+            <span style="width:7%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">338 kcal &nbsp;|&nbsp; <a href="chepala-vepudu.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="side" data-time="20" data-carb="5.5" data-search="cauliflower rice with curry-leaf talimpu the keto stand-in for annam: cauliflower grains wrung dry, then tossed through a sizzling ghee talimpu of mustard, curry leaves, garlic and chilli and lifted with lemon. it smells like lemon rice and soaks up pulusu and kura just as happily. cauliflower florets (about 1 small head) ghee mustard seeds dried red chillies, snipped green chillies, slit garlic, crushed curry leaves turmeric powder lemon juice salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">side</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">20m · Heat 3/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="cauliflower-rice-curry-leaf-talimpu.html">Cauliflower Rice with Curry-Leaf Talimpu</a></strong>
+<br><small lang="te" style="color:#666;">కాలీఫ్లవర్ రైస్ కరివేపాకు తాలింపు</small><p class="item-summary" style="margin-top:0.3em;">The keto stand-in for annam: cauliflower grains wrung dry, then tossed through a sizzling ghee talimpu of mustard, curry leaves, garlic and chilli and lifted with lemon. It smells like lemon rice and soaks up pulusu and kura just as happily.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+cauliflower florets (about 1 small head), ghee, mustard seeds, dried red chillies, snipped, green chillies, slit&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.5g</strong> net carbs &nbsp;·&nbsp;
+            <strong>3g</strong> protein &nbsp;·&nbsp;
+            <strong>8g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:66%;background:#d49b20"></span>
+            <span style="width:13%;background:#902050"></span>
+            <span style="width:22%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">105 kcal &nbsp;|&nbsp; <a href="cauliflower-rice-curry-leaf-talimpu.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="side" data-time="27" data-carb="5.6" data-search="bendakaya vepudu (andhra okra fry) dry-fried okra with a sesame-oil talimpu, garlic and karam, finished with toasted coconut. okra carries real carbs, so the portion is counted at 80 g, about eight pods, per person. okra (bendakaya), trimmed sesame oil mustard seeds cumin seeds garlic, crushed curry leaves dried red chilli plus guntur karam turmeric powder coriander (dhaniya) powder unsweetened dried coconut lemon juice salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">side</span><br>
+          <span style="font-size:0.85em;color:#666;">Andhra</span><br>
+          <span style="font-size:0.85em;color:#777;">27m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="bendakaya-vepudu.html">Bendakaya Vepudu (Andhra Okra Fry)</a></strong>
+<br><small lang="te" style="color:#666;">బెండకాయ వేపుడు</small><p class="item-summary" style="margin-top:0.3em;">Dry-fried okra with a sesame-oil talimpu, garlic and karam, finished with toasted coconut. Okra carries real carbs, so the portion is counted at 80 g, about eight pods, per person.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+okra (bendakaya), trimmed, sesame oil, mustard seeds, cumin seeds, garlic, crushed&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.6g</strong> net carbs &nbsp;·&nbsp;
+            <strong>2g</strong> protein &nbsp;·&nbsp;
+            <strong>10g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:73%;background:#d49b20"></span>
+            <span style="width:8%;background:#902050"></span>
+            <span style="width:19%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">126 kcal &nbsp;|&nbsp; <a href="bendakaya-vepudu.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+      <tr class="recipe-row" data-meal="breakfast" data-time="20" data-carb="5.6" data-search="andhra egg bhurji with guntur karam and curry leaves (kodiguddu poratu) soft, spicy scrambled eggs the way an andhra kitchen does them: a loud tempering of mustard, cumin and crackling curry leaves, a tiny base of onion and tomato, and guntur karam bloomed in oil so the whole pan smells of home. twenty minutes, one kadai, no bread needed. eggs, large groundnut oil (or sesame oil) ghee, to finish mustard seeds cumin seeds dried red chilli, broken in half fresh curry leaves, stripped from the stalk garlic, finely chopped ginger, finely chopped green chillies, finely chopped onion, very finely chopped tomato, finely chopped turmeric powder guntur red chilli powder (karam) black pepper, freshly ground coriander leaves, chopped lemon juice salt">
+        <td>
+          <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">breakfast</span><br>
+          <span style="font-size:0.85em;color:#666;">Guntur / Krishna</span><br>
+          <span style="font-size:0.85em;color:#777;">20m · Heat 4/5</span>
+        </td>
+        <td>
+          <strong class="L1"><a class="ourh" href="andhra-egg-bhurji-guntur-karam.html">Andhra Egg Bhurji with Guntur Karam and Curry Leaves (Kodiguddu Poratu)</a></strong>
+<br><small lang="te" style="color:#666;">కోడిగుడ్డు బుర్జీ</small><p class="item-summary" style="margin-top:0.3em;">Soft, spicy scrambled eggs the way an Andhra kitchen does them: a loud tempering of mustard, cumin and crackling curry leaves, a tiny base of onion and tomato, and Guntur karam bloomed in oil so the whole pan smells of home. Twenty minutes, one kadai, no bread needed.</p>          <div style="font-size:0.84em;color:#555;margin-top:0.4em;">
+            <strong>Key ingredients:</strong>
+eggs, large, groundnut oil (or sesame oil), ghee, to finish, mustard seeds, cumin seeds&hellip;          </div>
+        </td>
+        <td style="font-size:0.92em;vertical-align:middle;">
+          <div class="recipe-macros" style="margin-bottom:0.3em;">
+            <strong>5.6g</strong> net carbs &nbsp;·&nbsp;
+            <strong>20g</strong> protein &nbsp;·&nbsp;
+            <strong>24g</strong> fat
+          </div>
+          <div class="macrobar" style="margin:0.2em 0 0.4em;">
+            <span style="width:67%;background:#d49b20"></span>
+            <span style="width:26%;background:#902050"></span>
+            <span style="width:7%;background:#174a61"></span>
+          </div>
+          <div style="font-size:0.82em;color:#666;">324 kcal &nbsp;|&nbsp; <a href="andhra-egg-bhurji-guntur-karam.html">View Full Recipe &rarr;</a></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <p>Keto Andhra Cookbook · The Morning Brief · Calculated from whole-food nutrition databases.</p>
+  </div>
+</div>
 
 <script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
+(function() {
+  var filterMeal = '';
+  var filterQuick = false;
+  var filterLow = false;
+  var searchQuery = '';
+  var rows = Array.from(document.querySelectorAll('.recipe-row'));
+
+  function applyFilters() {
+    rows.forEach(function(r) {
+      var m = r.dataset.meal;
+      var t = parseInt(r.dataset.time || '999', 10);
+      var c = parseFloat(r.dataset.carb || '999');
+      var s = r.dataset.search || '';
+
+      var matchMeal = !filterMeal || m === filterMeal;
+      var matchQuick = !filterQuick || t <= 30;
+      var matchLow = !filterLow || c <= 6.0;
+      var matchSearch = !searchQuery || s.indexOf(searchQuery) !== -1;
+
+      r.style.display = (matchMeal && matchQuick && matchLow && matchSearch) ? '' : 'none';
     });
   }
 
-  var f={meal:'',quick:'',low:''},q='',cards=[].slice.call(document.querySelectorAll('.rc'));
-  function run(){
-    cards.forEach(function(c){
-      var ok=(!f.meal||c.dataset.meal===f.meal)&&(!f.quick||+c.dataset.t<=30)&&(!f.low||+c.dataset.n<=6)&&(!q||c.dataset.s.indexOf(q)>-1);
-      c.style.display=ok?'':'none';
+  var mealButtons = document.querySelectorAll('#filterBar button[data-meal]');
+  mealButtons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      mealButtons.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      filterMeal = btn.dataset.meal;
+      applyFilters();
+    });
+  });
+
+  var quickBtn = document.querySelector('#filterBar button[data-quick]');
+  if (quickBtn) {
+    quickBtn.addEventListener('click', function() {
+      filterQuick = !filterQuick;
+      quickBtn.classList.toggle('active', filterQuick);
+      applyFilters();
     });
   }
-  document.querySelectorAll('#f button').forEach(function(b){
-    b.addEventListener('click',function(){
-      var k=b.dataset.k;
-      if(k==='meal'){
-        document.querySelectorAll('#f [data-k=meal]').forEach(function(x){x.setAttribute('aria-pressed','false')});
-        b.setAttribute('aria-pressed','true');
-        f.meal=b.dataset.v;
-      } else {
-        var on=b.getAttribute('aria-pressed')!=='true';
-        b.setAttribute('aria-pressed',on?'true':'false');
-        f[k]=on?'1':'';
-      }
-      run();
+
+  var lowBtn = document.querySelector('#filterBar button[data-low]');
+  if (lowBtn) {
+    lowBtn.addEventListener('click', function() {
+      filterLow = !filterLow;
+      lowBtn.classList.toggle('active', filterLow);
+      applyFilters();
     });
-  });
-  document.getElementById('q').addEventListener('input',function(e){
-    q=e.target.value.toLowerCase().trim();
-    run();
-  });
+  }
+
+  var searchInput = document.getElementById('q');
+  if (searchInput) {
+    searchInput.addEventListener('input', function(e) {
+      searchQuery = e.target.value.toLowerCase().trim();
+      applyFilters();
+    });
+  }
 })();
 </script>
 </body>

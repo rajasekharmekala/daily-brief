@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light dark">
 <title>Cucumber Perugu Pachadi (Full-Fat Yoghurt Raita) · Keto Andhra Cookbook</title>
-<script>try{var t=localStorage.getItem("brief:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<style>/* Techmeme-inspired stylesheet for The Morning Brief */
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +39,7 @@ body {
   font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #ffffff;
   color: #111111;
-  font-size: 15.5px; /* Increased from 13.5px for comfortable, clear reading */
+  font-size: 15.5px;
   margin: 0 auto;
   max-width: 90em;
   min-width: 61em;
@@ -62,7 +61,7 @@ a:hover {
 }
 
 /* Headings & Techmeme Typography */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: Optima, "Century Gothic", -apple-system, sans-serif;
   color: #445555;
   font-weight: bold;
@@ -77,6 +76,9 @@ h3 {
 }
 h4 {
   font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
 }
 
 cite {
@@ -689,30 +691,57 @@ td.searchbox {
   color: #205038;
 }
 
-/* Recipe card (clean Techmeme compact layout) */
+/* Recipe card & Single Recipe Detail View */
 .recipe-card {
   border: 1px solid #dcdcdc;
   background: #ffffff;
-  padding: 1em 1.2em;
-  margin-bottom: 1.1em;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
   border-radius: 3px;
 }
-.recipe-card h4 {
-  font-size: 1.22em;
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
   color: #004860;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
 }
 .recipe-macros {
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: #408840;
   font-weight: bold;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.6em;
 }
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
 .recipe-cols {
   display: flex;
-  gap: 1.6em;
-  margin-top: 0.65em;
-  font-size: 0.94em;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
   line-height: 1.5em;
 }
 .recipe-cols > div {
@@ -720,16 +749,112 @@ td.searchbox {
 }
 .recipe-cols h5 {
   font-weight: bold;
-  color: #455;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.25em;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
   margin-bottom: 0.45em;
+  padding-left: 0.2em;
 }
-.recipe-cols ul, .recipe-cols ol {
-  padding-left: 1.3em;
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
 }
-.recipe-cols li {
-  margin-bottom: 0.35em;
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
 }
 
 /* Footer / Run Notes */
@@ -836,77 +961,159 @@ td.searchbox {
     gap: 0.8em;
   }
 }
+
 </style>
 </head>
-<body class="ck">
-<header class="hero" style="padding:24px 0 16px;">
-  <div class="wrap">
-    <div class="top-bar" style="border-bottom:none;padding-bottom:0;">
-      <div class="kicker-group">
-        <span class="badge-live" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">KETO RECIPE DOSSIER</span>
-        <span class="issue-tag">First Added: 2026-10-20</span>
+<body>
+<div class="pagecont">
+  <!-- Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="index.html"><strong>&larr; Back to Cookbook Directory</strong></a>
+        <a href="../index.html">The Morning Brief Archive</a>
       </div>
-      <div>
-        <button class="themebtn" type="button" data-theme-toggle>Dark mode</button>
+      <div class="toprlinks">
+        <span>Added: 2026-10-20</span>
+        <span>Meal: Side</span>
       </div>
     </div>
-    <p style="margin:16px 0 0">
-      <a class="linkbtn" href="index.html" style="--accent:#10b981">← Back to Cookbook Index</a>
-    </p>
-  </div>
-</header>
 
-<main class="wrap" style="--accent:#10b981;margin-top:28px;">
-  <article class="recipe" id="r-cucumber-perugu-pachadi">
-  <div class="rhead">
-    <span class="pill">Side</span>
-    <span class="heat" title="Heat 2 of 5">Heat <i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span>
-    <span class="rmeta">Andhra</span>
+    <!-- Header Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">Keto Andhra Cookbook</a>
+          <span class="logo-sub">Authentic Regional Low-Carb Dossier</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Side Protocol</div>
+        </td>
+        <td class="searchbox">
+          <a class="sbti-btn" href="index.html">All Recipes &rarr;</a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <h4>Cucumber Perugu Pachadi (Full-Fat Yoghurt Raita)<small lang="te">కీరదోసకాయ పెరుగు పచ్చడి</small></h4>
-<p class="blurb">Cool, crunchy cucumber folded into full-fat yoghurt with a green chilli and coconut paste, then finished with a hot ghee talimpu. It is the soothing counterpoint to gongura, karam and anything fiery, with the yoghurt carbs counted.</p>  <ul class="rstats">
-    <li><b>5.2 g</b> net carbs</li>
-    <li><b>3 g</b> protein</li>
-    <li><b>5 g</b> fat</li>
-    <li><b>75</b> kcal</li>
-    <li>13 min</li>
-    <li>Serves 3</li>
-  </ul>
-  <div class="macrobar" title="Share of calories">
-    <span style="width:59%;background:#e8a317"></span><span style="width:14%;background:#d6336c"></span><span style="width:28%;background:#1c64f2"></span>
+
+  <!-- Techmeme Navy Navbar -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="../index.html">Morning Brief Home</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Cookbook</a></span>
+      <a href="index.html">All Dishes</a>
+    </div>
   </div>
-  <div class="mlegend"><span style="--c:#e8a317">Fat 59%</span><span style="--c:#d6336c">Protein 14%</span><span style="--c:#1c64f2">Net carbs 28%</span><span>per serving</span></div>
-  <div class="rcols">
-    <div><h5>Ingredients</h5><ul class="ing"><li><span>cucumber, seeded and diced 5 mm</span><em>about 1 large · 210 g</em></li><li><span>full-fat plain yoghurt (perugu), unsweetened</span><em>⅔ cup · 150 g</em></li><li><span>green chillies</span><em>2 small · 10 g</em></li><li><span>unsweetened dried coconut</span><em>2 tsp · 6 g</em></li><li><span>ghee</span><em>1 tsp · 5 g</em></li><li><span>mustard seeds</span><em>½ tsp · 1 g</em></li><li><span>cumin seeds</span><em>½ tsp · 1 g</em></li><li><span>dried red chilli</span><em>1 small · 1 g</em></li><li><span>curry leaves</span><em>10 leaves · 2 g</em></li><li><span>salt</span><em>½ tsp · 2.5 g</em></li></ul></div>
-    <div><h5>Method</h5><ol class="steps"><li>Halve the cucumber lengthwise, scrape out the seeds with a spoon and dice into 5 mm pieces. Toss with ¼ tsp of the salt, leave 5 minutes, then drain and squeeze lightly so the pachadi does not turn watery.</li><li>Crush or blend the green chillies with the coconut and 1 tbsp water to a coarse paste.</li><li>Whisk the yoghurt until smooth with the chilli paste and the remaining salt. Fold in the drained cucumber.</li><li>Heat the ghee in a small pan on medium. Add the mustard seeds until they crackle, then the cumin, dried chilli and curry leaves. Cook about 30 seconds until the leaves are crisp and stop spluttering. Pour the sizzling talimpu over the pachadi and mix.</li><li>Chill for 10 minutes if you have the time, then serve cool. It tastes best the day it is made.</li></ol></div>
+
+  <div style="margin-top: 1.5em;">
+    <article class="recipe-card" id="r-cucumber-perugu-pachadi">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.3em;">
+    <span class="drhed" style="text-transform:uppercase;font-size:0.85em;">side</span>
+    <span style="font-size:0.88em;color:#666666;">Andhra · Heat 2/5 · 13m</span>
   </div>
-<div class="rtips"><h5>Make it taste like home</h5><ul><li>Keto note: plain whole-milk yoghurt carries roughly 4.7 g carbohydrate per 100 g, so the yoghurt is weighed, not eyeballed. Choose plain unsweetened full-fat yoghurt and check the label; strained or Greek-style brands vary, so adjust the grams if yours differs.</li><li>Salting and draining the cucumber is the difference between a creamy pachadi and a watery one.</li><li>Serve it next to gongura pachadi, vankaya kobbari kura, or any hot chicken or mutton fry, and over cauliflower rice with kobbari karam.</li></ul></div><div class="rtips alt"><h5>Swaps</h5><ul><li>More heat: add a third green chilli or a pinch of Guntur karam.</li><li>Dairy-free: use unsweetened coconut yoghurt, but check its carbohydrate on the label first.</li></ul></div>  <div class="rfoot">
-<span>Adapted from <a href="https://www.sailusfood.com/indian-cucumber-raita-perugu-pachadi-healthy-indian-salad" target="_blank" rel="noopener">Raita (Perugu Pachadi) - Sailu&#39;s Kitchen</a>, <a href="https://ramyarecipesblog.wordpress.com/2018/07/05/keera-dosakaya-%F0%9F%A5%92-pachadi-green-cucumber-%F0%9F%A5%92-chutney-side-dish/" target="_blank" rel="noopener">Keera Dosakaya Pachadi (Green Cucumber Chutney) - Ramya Recipes</a></span>  </div>
+  <h3>
+Cucumber Perugu Pachadi (Full-Fat Yoghurt Raita)<small lang="te">కీరదోసకాయ పెరుగు పచ్చడి</small>  </h3>
+<p class="item-summary" style="margin:0.3em 0 0.5em;">Cool, crunchy cucumber folded into full-fat yoghurt with a green chilli and coconut paste, then finished with a hot ghee talimpu. It is the soothing counterpoint to gongura, karam and anything fiery, with the yoghurt carbs counted.</p>  
+  <div class="recipe-macros">
+    <strong>5.2g</strong> net carbs &nbsp;·&nbsp;
+    <strong>3g</strong> protein &nbsp;·&nbsp;
+    <strong>5g</strong> fat &nbsp;·&nbsp;
+    <strong>75</strong> kcal &nbsp;·&nbsp;
+    Serves 3
+  </div>
+
+  <div class="macrobar" title="Macro calorie ratio">
+    <span style="width:59%;background:#d49b20"></span>
+    <span style="width:14%;background:#902050"></span>
+    <span style="width:28%;background:#174a61"></span>
+  </div>
+  <div class="mlegend">
+    <span style="color:#a87410;">● Fat 59%</span>
+    <span style="color:#902050;">● Protein 14%</span>
+    <span style="color:#174a61;">● Net Carbs 28%</span>
+  </div>
+
+  <div class="recipe-cols">
+    <div>
+      <h5>Ingredients</h5>
+      <ul class="ing">
+        <li>
+          <span>cucumber, seeded and diced 5 mm</span>
+          <em>about 1 large · 210g</em>
+        </li>
+        <li>
+          <span>full-fat plain yoghurt (perugu), unsweetened</span>
+          <em>⅔ cup · 150g</em>
+        </li>
+        <li>
+          <span>green chillies</span>
+          <em>2 small · 10g</em>
+        </li>
+        <li>
+          <span>unsweetened dried coconut</span>
+          <em>2 tsp · 6g</em>
+        </li>
+        <li>
+          <span>ghee</span>
+          <em>1 tsp · 5g</em>
+        </li>
+        <li>
+          <span>mustard seeds</span>
+          <em>½ tsp · 1g</em>
+        </li>
+        <li>
+          <span>cumin seeds</span>
+          <em>½ tsp · 1g</em>
+        </li>
+        <li>
+          <span>dried red chilli</span>
+          <em>1 small · 1g</em>
+        </li>
+        <li>
+          <span>curry leaves</span>
+          <em>10 leaves · 2g</em>
+        </li>
+        <li>
+          <span>salt</span>
+          <em>½ tsp · 2.5g</em>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5>Method</h5>
+      <ol class="steps">
+        <li>Halve the cucumber lengthwise, scrape out the seeds with a spoon and dice into 5 mm pieces. Toss with ¼ tsp of the salt, leave 5 minutes, then drain and squeeze lightly so the pachadi does not turn watery.</li>
+        <li>Crush or blend the green chillies with the coconut and 1 tbsp water to a coarse paste.</li>
+        <li>Whisk the yoghurt until smooth with the chilli paste and the remaining salt. Fold in the drained cucumber.</li>
+        <li>Heat the ghee in a small pan on medium. Add the mustard seeds until they crackle, then the cumin, dried chilli and curry leaves. Cook about 30 seconds until the leaves are crisp and stop spluttering. Pour the sizzling talimpu over the pachadi and mix.</li>
+        <li>Chill for 10 minutes if you have the time, then serve cool. It tastes best the day it is made.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rtips">
+    <h5>Make it taste like home</h5>
+    <ul>
+<li>Keto note: plain whole-milk yoghurt carries roughly 4.7 g carbohydrate per 100 g, so the yoghurt is weighed, not eyeballed. Choose plain unsweetened full-fat yoghurt and check the label; strained or Greek-style brands vary, so adjust the grams if yours differs.</li><li>Salting and draining the cucumber is the difference between a creamy pachadi and a watery one.</li><li>Serve it next to gongura pachadi, vankaya kobbari kura, or any hot chicken or mutton fry, and over cauliflower rice with kobbari karam.</li>    </ul>
+  </div>
+
+  <div class="rtips alt">
+    <h5>Keto Swaps & Variations</h5>
+    <ul>
+<li>More heat: add a third green chilli or a pinch of Guntur karam.</li><li>Dairy-free: use unsweetened coconut yoghurt, but check its carbohydrate on the label first.</li>    </ul>
+  </div>
+
+  <div class="rfoot">
+    <span>Adapted from: <a href="https://www.sailusfood.com/indian-cucumber-raita-perugu-pachadi-healthy-indian-salad" target="_blank" rel="noopener">Raita (Perugu Pachadi) - Sailu&#39;s Kitchen</a>, <a href="https://ramyarecipesblog.wordpress.com/2018/07/05/keera-dosakaya-%F0%9F%A5%92-pachadi-green-cucumber-%F0%9F%A5%92-chutney-side-dish/" target="_blank" rel="noopener">Keera Dosakaya Pachadi (Green Cucumber Chutney) - Ramya Recipes</a></span>
+  </div>
 </article>
 
-  <p class="fineprint">General cooking and nutrition protocol, not medical advice. Macros are precisely computed from sourced ingredient values.</p>
-</main>
-<div style="height:60px"></div>
-
-<script>
-(function(){
-  var tb=document.querySelector('[data-theme-toggle]');
-  function isDark(){
-    var cur=document.documentElement.dataset.theme;
-    if(cur)return cur==='dark';
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  function paint(){if(tb)tb.textContent=isDark()?'☀️ Light':'🌙 Dark';}
-  if(tb){
-    paint();
-    tb.addEventListener('click',function(){
-      var next=isDark()?'light':'dark';
-      document.documentElement.dataset.theme=next;
-      try{localStorage.setItem('brief:theme',next);}catch(e){}
-      paint();
-    });
-  }
-})();
-</script>
+    <p style="font-size:0.85em;color:#777777;margin-top:1.5em;border-top:1px solid #eee;padding-top:0.8em;">
+      General cooking and nutrition protocol, not medical advice. Macros are computed from verified whole-food ingredient weights.
+    </p>
+  </div>
+</div>
 </body>
 </html>
