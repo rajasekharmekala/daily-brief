@@ -590,5 +590,117 @@
         "minutes": 1
       }
     ]
+  },
+  {
+    "date": "2026-10-28",
+    "issue_no": 7,
+    "theme": "The agent harness is the story: new papers and today's deep dive weigh scaffold against model, while Alphabet's earnings miss and a Fed hold frame the markets and the Hormuz talks stay stuck.",
+    "items": 150,
+    "minutes": 76,
+    "generated_at": "2026-10-28 17:51 PDT",
+    "top": [
+      {
+        "title": "Alphabet falls about 10% after hours on Q3 revenue and profit miss, negative free cash flow",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
+      },
+      {
+        "title": "Memory Tax: many dedicated agent-memory systems lose to naive RAG over raw history",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2610.34073"
+      },
+      {
+        "title": "Adobe Brand Concierge: new Composer builds an on-brand concierge from one URL, with built-in evaluations",
+        "source": "Adobe for Business blog",
+        "url": "https://business.adobe.com/blog/brand-concierge-conversational-experience"
+      },
+      {
+        "title": "Iran holds to its Hormuz demands as regional powers press for talks",
+        "source": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/27/irans-calculations-as-us-escalation-looms-trust-midterms-hormuz"
+      },
+      {
+        "title": "Rubin Observatory flags 2026 ED138, a dwarf-planet candidate beyond Pluto",
+        "source": "Rubin Observatory",
+        "url": "https://rubinobservatory.org/news/rubin-first-dwarf-planet-candidate"
+      },
+      {
+        "title": "Antonelli can clinch the 2026 F1 title in Mexico City on Sunday: the permutations",
+        "source": "Sky Sports",
+        "url": "https://www.skysports.com/f1/news/13603683/kimi-antonelli-f1-title-permutations-how-mercedes-driver-can-win-2026-formula-1-drivers-championship-at-mexico-city-gp-on-sunday"
+      },
+      {
+        "title": "Aadarsha Kutumbam House No: 47 opens in theatres on 30 October (Venkatesh, Trivikram)",
+        "source": "Cinema Express",
+        "url": "https://www.cinemaexpress.com/amp/story/telugu/news/2026/Oct/28/aadarsha-kutumbam-house-no-47-wicker-and-more-what-to-watch-this-week-in-theatres"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "followups",
+        "title": "Developing Stories",
+        "minutes": 1
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 7
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 9
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 10
+      },
+      {
+        "id": "papers",
+        "title": "Agent Papers Radar",
+        "minutes": 6
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 9
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 4
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 5
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 6
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 10
+      },
+      {
+        "id": "library",
+        "title": "Read and Listen",
+        "minutes": 2
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 4
+      }
+    ]
   }
 ]
