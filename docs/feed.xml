@@ -4,7 +4,14 @@
   <id>https://rajasekharmekala.github.io/daily-brief/</id>
   <link href="https://rajasekharmekala.github.io/daily-brief/"/>
   <link rel="self" href="https://rajasekharmekala.github.io/daily-brief/feed.xml"/>
-  <updated>2026-10-29T00:51:41Z</updated>
+  <updated>2026-10-30T01:11:03Z</updated>
+  <entry>
+    <title>Issue 8: Alphabet&#39;s record one-day drop and fresh AI jitters rattle Wall Street while agent security takes centre stage, from today&#39;s deep dive on prompt injection to a cluster of attacks and fixes.</title>
+    <id>https://rajasekharmekala.github.io/daily-brief/issues/2026-10-29/</id>
+    <link href="https://rajasekharmekala.github.io/daily-brief/issues/2026-10-29/"/>
+    <updated>2026-10-29T12:00:00Z</updated>
+    <summary>Alphabet falls nearly 13% in its worst day ever, losing about $500 billion in value; Real AI Agent Attacks and What Would Have Stopped Them — Andrey Rybka, Bloomberg; Microsoft puts its Copilot agent harness into Foundry Agent Service as a managed public preview; OpenCode 2.2.1 adds /goal, opt-in image generation and scheduled prompts; AgentSWE: can coding agents build the agent you actually want?</summary>
+  </entry>
   <entry>
     <title>Issue 7: The agent harness is the story: new papers and today&#39;s deep dive weigh scaffold against model, while Alphabet&#39;s earnings miss and a Fed hold frame the markets and the Hormuz talks stay stuck.</title>
     <id>https://rajasekharmekala.github.io/daily-brief/issues/2026-10-28/</id>

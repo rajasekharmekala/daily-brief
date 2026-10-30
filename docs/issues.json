@@ -702,5 +702,117 @@
         "minutes": 4
       }
     ]
+  },
+  {
+    "date": "2026-10-29",
+    "issue_no": 8,
+    "theme": "Alphabet's record one-day drop and fresh AI jitters rattle Wall Street while agent security takes centre stage, from today's deep dive on prompt injection to a cluster of attacks and fixes.",
+    "items": 149,
+    "minutes": 77,
+    "generated_at": "2026-10-29 18:10 PDT",
+    "top": [
+      {
+        "title": "Alphabet falls nearly 13% in its worst day ever, losing about $500 billion in value",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html"
+      },
+      {
+        "title": "Real AI Agent Attacks and What Would Have Stopped Them — Andrey Rybka, Bloomberg",
+        "source": "AI Engineer",
+        "url": "https://www.youtube.com/watch?v=5O6jLtoeKrg"
+      },
+      {
+        "title": "Microsoft puts its Copilot agent harness into Foundry Agent Service as a managed public preview",
+        "source": "Microsoft Foundry Blog",
+        "url": "https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/"
+      },
+      {
+        "title": "OpenCode 2.2.1 adds /goal, opt-in image generation and scheduled prompts",
+        "source": "GitHub (anomalyco/opencode)",
+        "url": "https://github.com/anomalyco/opencode/releases/tag/v2.2.1"
+      },
+      {
+        "title": "AgentSWE: can coding agents build the agent you actually want?",
+        "source": "arXiv (Hugging Face Daily Papers)",
+        "url": "https://arxiv.org/abs/2610.13361"
+      },
+      {
+        "title": "Sensex up 905 points, Nifty back above 22,900 as midcaps close at the day's high",
+        "source": "The Hindu BusinessLine",
+        "url": "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-29th-october-2026/article71635535.ece"
+      },
+      {
+        "title": "Netflix announces 'Chiranjeevi's Megaverse', a Telugu-cinema talk show hosted by Chiranjeevi",
+        "source": "The Hindu",
+        "url": "https://www.thehindu.com/entertainment/movies/chiranjeevis-megaverse-netflix-announces-talk-show-hosted-by-chiranjeevi/article71640513.ece"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "followups",
+        "title": "Developing Stories",
+        "minutes": 2
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 7
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 9
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 9
+      },
+      {
+        "id": "papers",
+        "title": "Agent Papers Radar",
+        "minutes": 6
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 10
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 4
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 5
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 5
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 10
+      },
+      {
+        "id": "library",
+        "title": "Read and Listen",
+        "minutes": 3
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 4
+      }
+    ]
   }
 ]

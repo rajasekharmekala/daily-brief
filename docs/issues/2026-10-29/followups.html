@@ -1,0 +1,1323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Morning Brief - Developing Stories - Thursday, October 29, 2026</title>
+<meta name="description" content="Alphabet&#39;s record one-day drop and fresh AI jitters rattle Wall Street while agent security takes centre stage, from today&#39;s deep dive on prompt injection to a cluster of attacks and fixes.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="alternate" type="application/atom+xml" title="The Morning Brief" href="https://rajasekharmekala.github.io/daily-brief/feed.xml">
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.35;
+  font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  font-size: 15.5px;
+  margin: 0 auto;
+  max-width: 90em;
+  min-width: 61em;
+  padding: 0 1.6em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links (Techmeme iconic link styling) */
+a {
+  text-decoration: none;
+  color: #002848;
+}
+a:visited {
+  color: #902050;
+}
+a:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+/* Headings & Techmeme Typography */
+h1, h2, h3, h4, h5 {
+  font-family: Optima, "Century Gothic", -apple-system, sans-serif;
+  color: #445555;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.45em;
+  padding: 0.75em 0 0.5em;
+}
+h3 {
+  font-size: 1.25em;
+  padding: 0.65em 0 0.35em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
+}
+
+cite {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.96em;
+  color: #686860;
+}
+cite a, cite a:visited {
+  color: #686860;
+}
+cite a:hover {
+  color: #002848;
+}
+
+.drhed {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  color: #408840;
+  font-weight: bold;
+  margin-right: 0.3em;
+  font-size: 0.94em;
+}
+
+.bls {
+  margin-left: -0.1em;
+}
+.bls a {
+  white-space: nowrap;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  font-size: 0.94em;
+}
+
+/* Pre-navbar / Header Topline */
+.pagecont {
+  margin-bottom: 3.5em;
+}
+.prenavbar {
+  margin-bottom: 0.4em;
+}
+.topline {
+  border-bottom: 1px solid #cccccc;
+  margin-top: 0.35em;
+  line-height: 1.7em;
+  font-size: 0.88em;
+  color: #666666;
+  padding-bottom: 0.25em;
+  clear: both;
+}
+.topline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.topline a {
+  color: #666666;
+}
+.topline a:visited {
+  color: #666666;
+}
+.topline a:hover {
+  color: #000000;
+  text-decoration: underline;
+  background: transparent;
+}
+.topllinks {
+  float: left;
+}
+.topllinks a {
+  padding-right: 1.3em;
+}
+.toprlinks {
+  float: right;
+}
+.toprlinks span {
+  padding-left: 0.9em;
+}
+
+/* Logo Tab table */
+.logotab {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 0.6em;
+}
+.logotab td {
+  vertical-align: middle;
+  width: 33.33%;
+}
+td.logobox {
+  padding: 0.6em 0;
+}
+.logo-title {
+  font-family: Optima, "Century Gothic", sans-serif;
+  font-size: 2.7em;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  color: #174a61;
+  display: inline-block;
+  line-height: 1;
+}
+.logo-title:visited {
+  color: #174a61;
+}
+.logo-title:hover {
+  text-decoration: none;
+  background: transparent;
+}
+.logo-sub {
+  font-size: 0.82em;
+  color: #777777;
+  font-weight: normal;
+  display: block;
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+td.datebox {
+  text-align: center;
+  color: #444444;
+  font-size: 0.96em;
+}
+.date-str {
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #222222;
+}
+.weather-str {
+  font-size: 0.9em;
+  color: #666666;
+  margin-top: 3px;
+}
+
+td.searchbox {
+  text-align: right;
+  font-size: 0.92em;
+}
+.sbti {
+  width: 13em;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 6px;
+  font-family: inherit;
+  font-size: 0.96em;
+}
+.sbti-btn {
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 9px;
+  font-size: 0.96em;
+  cursor: pointer;
+  font-family: inherit;
+}
+.sbti-btn:hover {
+  background: #e0e8f0;
+}
+
+/* Navigation Bar (Techmeme Navy Blue) */
+.navbar {
+  background: #174a61;
+  text-transform: uppercase;
+  clear: both;
+  line-height: 1.9em;
+  font-size: 0.88em;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+}
+.navtabs {
+  padding: 0;
+}
+.navtabs a {
+  padding: 0.3em 0.8em;
+  display: inline-block;
+  color: #dddddd;
+  font-weight: bold;
+}
+.navtabs a:visited {
+  color: #dddddd;
+}
+.navtabs a:hover {
+  background: #578aa1;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navtabs span.iamhere a {
+  background: #578aa1;
+  color: #ffffff;
+}
+.navtabs span.iamhere a:visited {
+  color: #ffffff;
+}
+.sisnav {
+  float: right;
+}
+.sisnav a {
+  color: #c0d8e8;
+  font-weight: normal;
+  padding: 0.3em 0.7em;
+}
+.sisnav a:visited {
+  color: #c0d8e8;
+}
+.sisnav a:hover {
+  color: #ffffff;
+  background: #25607b;
+}
+
+/* Sub-nav / Section Jump Bar */
+.subnavbar {
+  background: #f4f6f8;
+  border-bottom: 1px solid #d8e0e6;
+  padding: 0.35em 0.6em;
+  font-size: 0.85em;
+  line-height: 1.7em;
+  margin-bottom: 0.9em;
+}
+.subnavbar a {
+  color: #004860;
+  padding: 0.1em 0.5em;
+  font-weight: 600;
+  display: inline-block;
+}
+.subnavbar a:hover {
+  background: #d8e8f4;
+  text-decoration: none;
+}
+.subnavbar .subnav-label {
+  font-weight: bold;
+  color: #556677;
+  padding-right: 0.4em;
+  text-transform: uppercase;
+  font-size: 0.92em;
+}
+
+/* Executive Synthesis / Theme Banner */
+.exec-theme-box {
+  background: #fdfbe8;
+  border: 1px solid #d8c878;
+  border-left: 5px solid #d4a017;
+  padding: 0.75em 1.1em;
+  margin: 0.8em 0 1.3em;
+  font-size: 0.98em;
+  line-height: 1.5em;
+  color: #2b2b20;
+  border-radius: 2px;
+}
+.exec-theme-box strong {
+  color: #604000;
+  font-size: 1.05em;
+  display: inline;
+}
+
+/* Layout Columns */
+.ed {
+  clear: both;
+}
+.ed:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#topcol1 {
+  float: left;
+  width: 50%;
+  margin-top: 0.5em;
+  padding-right: 1.3%;
+}
+#topcol23 {
+  float: left;
+  width: 48.5%;
+  margin-left: 0.2%;
+}
+#topcol2 {
+  float: left;
+  width: 66%;
+  margin-top: 0.5em;
+}
+#topcol3 {
+  float: right;
+  width: 32%;
+  margin-top: 0.5em;
+  margin-left: 2%;
+  position: relative;
+}
+
+/* Bottom 2-column layout */
+.abotcols {
+  clear: both;
+  width: 100%;
+  border-bottom: 2px solid #e8e8e8;
+  padding-top: 1.2em;
+  margin-bottom: 1.3em;
+}
+#botcol1 {
+  float: left;
+  width: 49%;
+  padding-right: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+#botcol2 {
+  float: right;
+  width: 49%;
+  padding-left: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+
+/* Clusters and Items */
+.clus {
+  padding-bottom: 0.7em;
+}
+.item {
+  padding-top: 0.4em;
+  padding-bottom: 1.35em;
+  clear: both;
+  border-bottom: 1px solid #dddddd;
+}
+.item:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.item.last {
+  border-bottom: none;
+}
+.itc1 {
+  padding-left: 0.4em;
+}
+.itc2 {
+  padding: 0;
+}
+
+/* Shared cluster table / headline row */
+.shrtbl {
+  width: 100%;
+  border-collapse: collapse;
+}
+.shrtbl tr > td:first-child {
+  vertical-align: middle;
+}
+.shrtbl tr > td:first-child + td {
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 0.85em;
+  color: #777777;
+}
+
+.ii {
+  padding-top: 0.35em;
+  line-height: 1.4em;
+  font-size: 1.02em;
+}
+
+/* Image Thumbnails & Fallbacks */
+.ill {
+  float: right;
+  width: 120px;
+  height: 85px;
+  object-fit: cover;
+  padding: 0.1em 0 0.5em 0.8em;
+  border-radius: 3px;
+}
+.ill-icon-wrap {
+  float: right;
+  width: 78px;
+  height: 64px;
+  margin: 0.1em 0 0.5em 0.8em;
+  background: #f3f6f9;
+  border: 1px solid #d8e0e6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+}
+.ill-icon-wrap img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Headline typography scale */
+.ourh {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+}
+.ourh:link {
+  color: #004860;
+}
+.ourh:visited {
+  color: #a04860;
+}
+.ourh:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+.L1 { font-size: 1.18em; font-weight: bold; }
+.L2 { font-size: 1.28em; font-weight: bold; letter-spacing: -0.01em; }
+.L3 { font-size: 1.38em; font-weight: bold; letter-spacing: -0.015em; }
+.L4 { font-size: 1.48em; font-weight: bold; letter-spacing: -0.02em; }
+.L5 { font-size: 1.6em; font-weight: bold; letter-spacing: -0.025em; }
+
+.item-summary {
+  color: #111111;
+  font-size: 0.96em;
+}
+
+.item-why {
+  margin-top: 0.4em;
+  padding: 0.35em 0.6em;
+  background: #f7fafc;
+  border-left: 3px solid #6090a8;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  color: #334455;
+  border-radius: 0 2px 2px 0;
+}
+.item-why strong {
+  color: #174a61;
+  font-size: 0.94em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.3em;
+}
+
+/* Related items under a cluster */
+.relitems {
+  margin-top: 0.45em;
+  margin-bottom: 0.85em;
+  border-left: 2px solid #e0e8ef;
+  padding-left: 0.65em;
+}
+.relitems .item {
+  padding-top: 0.35em;
+  padding-bottom: 0.65em;
+  border-bottom: 1px dotted #e0e0e0;
+}
+.relitems .item:last-child {
+  border-bottom: none;
+}
+.relitems .ourh {
+  font-size: 1.05em;
+}
+
+/* Discussion / Sub-links / Secondary items */
+.dbpt {
+  padding-top: 0.4em;
+  font-size: 0.92em;
+  line-height: 1.42em;
+}
+
+/* Right-hand column: Newest / Chronological River */
+#topcol3 .item {
+  padding: 0.6em 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+#topcol3 .ii {
+  padding-top: 0.25em;
+  font-size: 0.96em;
+}
+#topcol3 a.nfdl {
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #004860;
+  font-size: 0.98em;
+}
+#topcol3 a.nfdl:visited {
+  color: #a04860;
+}
+#topcol3 a.nfdl:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+.ago {
+  color: #777777;
+  font-size: 0.84em;
+  padding-top: 0.35em;
+}
+
+/* Grey sponsor / highlighted background box */
+#tkzwuvgyr {
+  padding: 0.7em 1em 1em;
+  background: #f4f6f8;
+  border: 1px solid #e0e6ec;
+  border-radius: 3px;
+  margin-bottom: 1.3em;
+}
+#tkzwuvgyr h3 {
+  padding-top: 0.2em;
+  color: #223344;
+}
+#tkzwuvgyr .item {
+  border: none;
+  padding-bottom: 0.6em;
+}
+
+/* Pod / Media item box (Techmeme style) */
+.pod-box {
+  margin: 1em 0;
+  padding: 0.85em;
+  background: #f9fcfe;
+  border: 1px solid #d8e0e8;
+  border-radius: 3px;
+}
+.pod-box:first-of-type {
+  margin-top: 0.4em;
+}
+.pod-head {
+  font-size: 0.88em;
+  font-weight: bold;
+  color: #174a61;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+.pod-name {
+  font-weight: bold;
+  color: #004860;
+}
+
+/* Deep Dive longform article styled into Techmeme editorial */
+.deepdive-container {
+  background: #fcfdfe;
+  border: 1px solid #ccd9e2;
+  border-radius: 3px;
+  padding: 1.3em 1.5em;
+  margin: 0.9em 0 1.6em;
+}
+.deepdive-container h2 {
+  font-size: 1.65em;
+  line-height: 1.25;
+  color: #174a61;
+  padding: 0 0 0.35em;
+}
+.deepdive-subtitle {
+  font-size: 1.12em;
+  color: #555555;
+  font-style: italic;
+  margin-bottom: 0.85em;
+}
+.deepdive-keypts {
+  background: #f4f8fb;
+  border-left: 4px solid #174a61;
+  padding: 0.65em 1.1em;
+  margin: 0.85em 0 1.1em;
+  font-size: 0.96em;
+}
+.deepdive-keypts h4 {
+  font-size: 0.96em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #174a61;
+  margin-bottom: 0.45em;
+}
+.deepdive-keypts ul {
+  padding-left: 1.3em;
+  list-style: square;
+}
+.deepdive-keypts li {
+  margin-bottom: 0.35em;
+  line-height: 1.45em;
+}
+.deepdive-body {
+  font-size: 1.04em;
+  line-height: 1.6em;
+  color: #222222;
+}
+.deepdive-body p {
+  padding-bottom: 0.85em;
+}
+.deepdive-body h3 {
+  font-size: 1.3em;
+  padding: 0.85em 0 0.35em;
+  color: #174a61;
+}
+.deepdive-refs {
+  margin-top: 1.3em;
+  padding-top: 0.85em;
+  border-top: 1px solid #d0d8e0;
+  font-size: 0.9em;
+}
+.deepdive-refs ol {
+  padding-left: 1.6em;
+}
+.deepdive-refs li {
+  padding-bottom: 0.45em;
+}
+
+/* Keto Kitchen / Nutrition in Techmeme style */
+.kitchen-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.7em 0 1.1em;
+  font-size: 0.94em;
+  background: #f7faf9;
+  border: 1px solid #cfe0d8;
+}
+.kitchen-table th, .kitchen-table td {
+  padding: 0.45em 0.85em;
+  border: 1px solid #d4e4dc;
+  text-align: left;
+}
+.kitchen-table th {
+  background: #e4f0ea;
+  font-weight: bold;
+  color: #205038;
+}
+
+/* Recipe card & Single Recipe Detail View */
+.recipe-card {
+  border: 1px solid #dcdcdc;
+  background: #ffffff;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
+  border-radius: 3px;
+}
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
+  color: #004860;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+.recipe-macros {
+  font-size: 0.94em;
+  color: #408840;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
+.recipe-cols {
+  display: flex;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+.recipe-cols > div {
+  flex: 1;
+}
+.recipe-cols h5 {
+  font-weight: bold;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
+  margin-bottom: 0.45em;
+  padding-left: 0.2em;
+}
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
+}
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
+}
+
+/* Footer / Run Notes */
+.page-footer {
+  margin-top: 2.8em;
+  padding: 1.3em 0.5em 2.8em;
+  border-top: 1px solid #cccccc;
+  font-size: 0.88em;
+  color: #666666;
+  line-height: 1.55em;
+  clear: both;
+}
+.page-footer a {
+  color: #004860;
+}
+.page-footer details {
+  margin-bottom: 0.85em;
+}
+.page-footer summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #445555;
+}
+.page-footer ul, .page-footer ol {
+  padding-left: 1.6em;
+  margin-top: 0.45em;
+}
+
+/* Archive Page (Techmeme-style directory) */
+.archive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.1em;
+}
+.archive-table th {
+  text-align: left;
+  font-weight: bold;
+  color: #455;
+  font-size: 1.08em;
+  padding: 0.55em 0.75em;
+  border-bottom: 2px solid #aaa;
+  background: #f4f4f4;
+}
+.archive-table td {
+  padding: 0.65em 0.75em;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+.archive-table tr:hover td {
+  background: #f8fbfe;
+}
+.archive-date {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 0.98em;
+}
+.archive-theme {
+  font-size: 1.08em;
+  line-height: 1.4em;
+}
+.archive-theme a {
+  font-weight: bold;
+}
+.archive-meta {
+  font-size: 0.88em;
+  color: #666666;
+  margin-top: 0.35em;
+}
+
+/* Responsive Rules */
+@media only screen and (max-width: 960px) {
+  body {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 0.8em;
+    font-size: 15px;
+  }
+  .logotab td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.3em 0;
+  }
+  td.datebox, td.searchbox {
+    text-align: left;
+  }
+  .navbar {
+    line-height: 2em;
+    font-size: 0.92em;
+  }
+  .sisnav {
+    display: none;
+  }
+  #topcol1, #topcol23, #topcol2, #topcol3, #botcol1, #botcol2 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .recipe-cols {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="pagecont">
+  <!-- Techmeme Prenavbar Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="https://rajasekharmekala.github.io/"><strong>Home</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html"><strong>Archive</strong></a>
+        <a href="https://rajasekharmekala.github.io/portfolio/"><strong>Portfolio Desk</strong></a>
+        <a href="https://rajasekharmekala.github.io/travel-research/"><strong>Travel Research</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html"><strong>Keto Cookbook</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/feed.xml">RSS Feed</a>
+        <span>Issue 8</span>
+      </div>
+      <div class="toprlinks">
+        <span>📍 San Jose: 70° / 48°F, Overcast</span>
+        <span>⏱ ~77 min reading</span>
+        <span>149 items</span>
+      </div>
+    </div>
+
+    <!-- Techmeme Header Logo Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">The Morning Brief</a>
+          <span class="logo-sub">Executive Personal Intelligence Briefing</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Thursday, October 29, 2026</div>
+          <div class="weather-str">Sunrise 07:29 · Sunset 18:12 · AQI 54 · Moon: Waning gibbous, 84% lit</div>
+        </td>
+        <td class="searchbox">
+          <form id="briefSearchForm">
+            <input id="briefSearchInput" class="sbti" type="text" placeholder="Search briefing...">
+            <input class="sbti-btn" type="submit" value="Search">
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Techmeme Iconic Navy Navigation Bar - Dedicated Tabs -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html">Cookbook</a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html">Archives</a>
+      </div>
+      <span class=""><a href="index.html">Home</a></span>
+      <span class="iamhere"><a href="followups.html">Developing Stories</a></span>
+      <span class=""><a href="finance.html">Markets and Money</a></span>
+      <span class=""><a href="nutrition.html">Keto Kitchen</a></span>
+      <span class=""><a href="industry.html">Industry Watch</a></span>
+      <span class=""><a href="papers.html">Agent Papers Radar</a></span>
+      <span class=""><a href="deepdive.html">Deep Dive of the Day</a></span>
+      <span class=""><a href="science.html">Cosmos and Life</a></span>
+      <span class=""><a href="world.html">World and India</a></span>
+      <span class=""><a href="sports.html">Sports</a></span>
+      <span class=""><a href="culture.html">Movies and Music</a></span>
+      <span class=""><a href="library.html">Read and Listen</a></span>
+      <span class=""><a href="local.html">Local and Travel</a></span>
+    </div>
+  </div>
+
+  <!-- Sub-navigation anchor / quick link jumper -->
+  <div class="subnavbar">
+    <span class="subnav-label">Tabs:</span>
+    <a href="index.html" style="">Top Stories</a> |
+    <a href="followups.html" style="font-weight:bold;color:#a04860;">Developing Stories (2m)</a> |     <a href="finance.html" style="">Markets and Money (7m)</a> |     <a href="nutrition.html" style="">Keto Kitchen (9m)</a> |     <a href="industry.html" style="">Industry Watch (9m)</a> |     <a href="papers.html" style="">Agent Papers Radar (6m)</a> |     <a href="deepdive.html" style="">Deep Dive of the Day (10m)</a> |     <a href="science.html" style="">Cosmos and Life (4m)</a> |     <a href="world.html" style="">World and India (5m)</a> |     <a href="sports.html" style="">Sports (5m)</a> |     <a href="culture.html" style="">Movies and Music (10m)</a> |     <a href="library.html" style="">Read and Listen (3m)</a> |     <a href="local.html" style="">Local and Travel (4m)</a>  </div>
+
+  <!-- Executive Synthesis Theme Banner -->
+  <div class="exec-theme-box">
+    <strong>Executive Synthesis:</strong> Alphabet&#39;s record one-day drop and fresh AI jitters rattle Wall Street while agent security takes centre stage, from today&#39;s deep dive on prompt injection to a cluster of attacks and fixes.
+  </div>
+
+  <!-- ==================== HOME TAB VIEW ==================== -->
+  <!-- Generic Dedicated Section Tab -->
+  <h2>Developing Stories</h2>
+<div style="font-size:0.98em;color:#444;line-height:1.45em;padding-bottom:0.6em;"><p>Four stories from recent issues moved again: Alphabet's slide became its worst day on record, AWS posted its quarter, Cyclone Arnab's toll rose and Zverev clinched world No. 1.</p></div>
+  <div class="clus">
+      <h3 style="color:#174a61;border-bottom:1px solid #ccc;padding-bottom:0.2em;margin-top:1.2em;">Since the last issues</h3>
+        <div class="item" id="item-3b3143b47b">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://theprint.in/india/arnab-cyclone-death-toll-rises-to-six-in-andhra-pradesh/3084997/" target="_blank" rel="noopener">ThePrint (PTI)</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://theprint.in/india/arnab-cyclone-death-toll-rises-to-six-in-andhra-pradesh/3084997/" target="_blank" rel="noopener"><img class="ill" src="media/3b3143b47b.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://theprint.in/india/arnab-cyclone-death-toll-rises-to-six-in-andhra-pradesh/3084997/" target="_blank" rel="noopener">Cyclone Arnab: Andhra Pradesh toll rises to six as an 11-year-old dies in a wall collapse</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The earlier item, &#39;Cyclone Arnab kills 5 in Andhra Pradesh; Naidu announces relief and seeks central help&#39;, gave a toll of five. A new PTI report, quoting Andhra Pradesh State Disaster Management Authority managing director Prakhar Jain, says an 11-year-old boy died in a wall collapse in Tenali mandal around 9 pm on Wednesday, taking the cyclone-related toll to six. He added that roughly 90 per cent of blocked roads and snapped power lines had been restored.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Follows your Andhra Pradesh coverage; this is the first official count above five.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-775d5e44f1">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html" target="_blank" rel="noopener">CNBC</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html" target="_blank" rel="noopener"><img class="ill" src="media/775d5e44f1.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html" target="_blank" rel="noopener">AWS revenue up 39% to $45.98 billion as Amazon reports Q3 after the close</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The calendar item &#39;Amazon holds Q3 2026 results call on Oct 29 at 2:00 p.m. PT&#39; is now a result. CNBC reports AWS revenue of $45.98 billion, up 39% and above the $45.29 billion consensus, with segment operating income of $17.77 billion, up 55%. Andy Jassy said AWS can grow north of 40% in 2027 and 2028, and that Trainium chips will be offered outside AWS late in 2027. It follows Google Cloud and Azure accelerating a day earlier.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Completes the cloud trio (Azure, Google Cloud, AWS) behind your AI-infrastructure markets thread and the platforms your agent tooling runs on.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-11ce8614a6">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://sportstar.thehindu.com/badminton/hylo-open-2026-sindhu-vs-pancasari-score-highlights-badminton-ro16-result/article71641408.ece" target="_blank" rel="noopener">Sportstar</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://sportstar.thehindu.com/badminton/hylo-open-2026-sindhu-vs-pancasari-score-highlights-badminton-ro16-result/article71641408.ece" target="_blank" rel="noopener"><img class="ill" src="media/11ce8614a6.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://sportstar.thehindu.com/badminton/hylo-open-2026-sindhu-vs-pancasari-score-highlights-badminton-ro16-result/article71641408.ece" target="_blank" rel="noopener">Sindhu beats Pancasari 21-9, 21-6 to reach the Hylo Open quarterfinals</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The earlier item, &#39;Hylo Open starts in Saarbrucken: Sindhu is second seed, Chaliha follows her Paris upset&#39;, was a preview. The second-seeded Sindhu has now beaten France&#39;s Rosy Oktavia Pancasari 21-9, 21-6 in under 30 minutes in the round of 16 and will face Denmark&#39;s Amalie Schulz in the quarterfinals on Friday. She arrives from a French Open Super 750 final loss to An Se-young.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> You follow and play badminton; this is the next step in the Super 500 draw covered earlier in the week.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-812a3832ee">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.tenniswatcher.com/en/news/alexander-zverev-clinches-world-no-1-against-tallon-griekspoor-after-remarkable-match-point-incident" target="_blank" rel="noopener">TennisWatcher</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.tenniswatcher.com/en/news/alexander-zverev-clinches-world-no-1-against-tallon-griekspoor-after-remarkable-match-point-incident" target="_blank" rel="noopener"><img class="ill" src="media/812a3832ee.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.tenniswatcher.com/en/news/alexander-zverev-clinches-world-no-1-against-tallon-griekspoor-after-remarkable-match-point-incident" target="_blank" rel="noopener">Zverev beats Griekspoor in Vienna and will become world No. 1 on Monday</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The earlier item, &#39;Vienna Thursday: Zverev can clinch World No. 1 with a win, Alcaraz plays Basilashvili&#39;, set out the scenario. Zverev beat Tallon Griekspoor 6-4, 7-5 without facing a break point, which takes him past Jannik Sinner in the rankings update next Monday. He is the second German man to reach No. 1 after Boris Becker in 1991, and meets Britain&#39;s Arthur Fery in the quarterfinals.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Follows your tennis interest; the No. 1 question you were shown yesterday now has an answer.
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <details>
+      <summary>Editorial & Pipeline Notes (9)</summary>
+      <ul>
+<li>7 candidate items were dropped before publication (dead links, stale or already-covered stories).</li><li>3 further lower-priority candidates were held back to keep the issue within about an hour.</li><li>finance.india: could not fetch &#39;Rupee ends nearly flat at 95.26 after a &#39; to verify it</li><li>sports.motor-cricket: could not fetch &#39;Champions League matchday 4 fixtures: Ba&#39; to verify it</li><li>library.longreads: could not fetch &#39;The Evolving Quest to Build Life in a La&#39; to verify it</li><li>Reviewer (REVISE): sampled 44 items; 0 removed, 3 corrected.</li><li>Item 2a8b414c99 (YouTube talk): the page returns only the title and channel (oEmbed confirms the title), so the summary&#39;s incident list and the evidence phrase &#39;one identity per agent with short-lived scoped credentials&#39; could not be checked on the page. Treat as unverified against the video content.</li><li>Keto Kitchen: all three recipes (muttakose-guddu-vepudu, kodi-keema-beans-vepudu, kanagarthalu-masala-vepudu) are safe and sensible, with plausible quantities for two servings, spice amounts matching the dishes, and macros that reconcile with the ingredients (day net carb 6.2+9.1+5.2=20.5 g). Source pages exist. Two minor notes: kodi-keema-beans-vepudu cites a mutton-keema page (kitchenflavours.net) for a chicken dish, and the recipe gives no internal-temperature check for the chicken mince (cook until no pink, 74 C / 165 F).</li><li>Deep dive: 11 of 13 references were checked (arXiv 2503.18813, 2510.09023, 2610.03448, 2606.15441, 2406.13352; Anthropic &#39;prompt-injection-defenses&#39; and &#39;claude-code-sandboxing&#39;; OpenAI Atlas post; Simon Willison; Realm Labs) and support the claims marked with them, including the 77% vs 84% CaMeL figures, the 95.1%/2.1% detector transfer, 84% fewer permission prompts and the OpenAI &#39;unlikely to ever be fully solved&#39; quote. The Meta Rule of Two page (ref 5) could not be fetched (HTTP 400), so claims marked [5] are unverified here. The per-defense figures quoted come from different model rows of the paper&#39;s table.</li>      </ul>
+    </details>
+    <details>
+      <summary>All Sources & Citations (149)</summary>
+      <ol>
+        <li><a href="https://theprint.in/india/arnab-cyclone-death-toll-rises-to-six-in-andhra-pradesh/3084997/" target="_blank" rel="noopener">Cyclone Arnab: Andhra Pradesh toll rises to six as an 11-year-old dies in a wall collapse</a> &mdash; <cite>ThePrint (PTI)</cite></li>
+        <li><a href="https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html" target="_blank" rel="noopener">AWS revenue up 39% to $45.98 billion as Amazon reports Q3 after the close</a> &mdash; <cite>CNBC</cite></li>
+        <li><a href="https://sportstar.thehindu.com/badminton/hylo-open-2026-sindhu-vs-pancasari-score-highlights-badminton-ro16-result/article71641408.ece" target="_blank" rel="noopener">Sindhu beats Pancasari 21-9, 21-6 to reach the Hylo Open quarterfinals</a> &mdash; <cite>Sportstar</cite></li>
+        <li><a href="https://www.tenniswatcher.com/en/news/alexander-zverev-clinches-world-no-1-against-tallon-griekspoor-after-remarkable-match-point-incident" target="_blank" rel="noopener">Zverev beats Griekspoor in Vienna and will become world No. 1 on Monday</a> &mdash; <cite>TennisWatcher</cite></li>
+        <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html" target="_blank" rel="noopener">Wall Street slips as Alphabet&#39;s slide and AI jitters return; Nasdaq falls about 1.4%</a> &mdash; <cite>Yahoo Finance</cite></li>
+        <li><a href="https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html" target="_blank" rel="noopener">Alphabet falls nearly 13% in its worst day ever, losing about $500 billion in value</a> &mdash; <cite>CNBC</cite></li>
+        <li><a href="https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html" target="_blank" rel="noopener">Amazon misses Q3 estimates and posts $42.4 billion negative free cash flow; capex forecast held at $220 billion</a> &mdash; <cite>CNBC</cite></li>
+        <li><a href="https://finance.yahoo.com/markets/stocks/article/fortinet-drags-down-cybersecurity-stocks-as-the-companys-service-revenue-forecast-misses-estimates-124146969.html" target="_blank" rel="noopener">ServiceNow has its worst day ever and Fortinet drops as software stocks slide</a> &mdash; <cite>Yahoo Finance</cite></li>
+        <li><a href="https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">Intel reports Q3 revenue of $16.5 billion, up 21%, and guides Q4 to $15.0-$16.0 billion</a> &mdash; <cite>Intel Investor Relations</cite></li>
+        <li><a href="https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026" target="_blank" rel="noopener">BEA advance estimate: US real GDP grew at a 3.4% annual rate in Q3 2026</a> &mdash; <cite>U.S. Bureau of Economic Analysis</cite></li>
+        <li><a href="https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-29th-october-2026/article71635535.ece" target="_blank" rel="noopener">Sensex up 905 points, Nifty back above 22,900 as midcaps close at the day&#39;s high</a> &mdash; <cite>The Hindu BusinessLine</cite></li>
+        <li><a href="https://www.thehindu.com/business/Industry/laurus-labs-q2-net-profit-surges-on-33-rise-in-revenue/article71641412.ece" target="_blank" rel="noopener">Laurus Labs Q2 profit more than doubles on CDMO growth; two acquisitions approved</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.brecorder.com/news/40446500" target="_blank" rel="noopener">Rupee ends nearly flat at 95.26 after a two-week low; 10-year yield eases to 7.35%</a> &mdash; <cite>Business Recorder</cite></li>
+        <li><a href="https://www.thehindubusinessline.com/economy/indian-economy-may-sustain-expansion-through-fy27-says-finance-ministrys-monthly-economic-review/article71639965.ece" target="_blank" rel="noopener">Finance Ministry review: growth to hold through FY27, with crude, food prices and the kharif crop as risks</a> &mdash; <cite>The Hindu BusinessLine</cite></li>
+        <li><a href="https://www.thehindubusinessline.com/companies/suzlon-q2-profit-falls-69-to-394-crore-on-deferred-tax-base-effect/article71640320.ece" target="_blank" rel="noopener">Suzlon Q2: reported profit falls 69% on a high tax base, revenue up 26% with record deliveries</a> &mdash; <cite>The Hindu BusinessLine</cite></li>
+        <li><a href="https://economictimes.indiatimes.com/markets/ipos/fpos/eaaa-india-alternatives-ipo-day-3-check-gmp-subscription-status-and-key-details/articleshow/135252160.cms?from=mdr" target="_blank" rel="noopener">EAAA India Alternatives&#39; ₹1,200-crore IPO subscribed 5.25 times; listing tentatively 2 November</a> &mdash; <cite>The Economic Times (ETMarkets)</cite></li>
+        <li><a href="https://finance.yahoo.com/markets/stocks/articles/palantir-announces-date-third-quarter-200500055.html" target="_blank" rel="noopener">Palantir reports Q3 2026 results Monday, Nov 2, after the US close</a> &mdash; <cite>Yahoo Finance (Business Wire release)</cite></li>
+        <li><a href="https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-5-september-2026-ism-manufacturing-pmi-report-302894520.html" target="_blank" rel="noopener">ISM Manufacturing PMI for October due Monday, Nov 2, 10:00 a.m. ET</a> &mdash; <cite>Institute for Supply Management (PR Newswire)</cite></li>
+        <li><a href="https://home.treasury.gov/news/press-releases/sb0590" target="_blank" rel="noopener">Treasury&#39;s quarterly refunding announcement set for Wednesday, Nov 4</a> &mdash; <cite>U.S. Department of the Treasury</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=Do4YYoYFGjk" target="_blank" rel="noopener">Nasdaq 100 Falls as AI Trade Shows New Cracks</a> &mdash; <cite>Bloomberg Podcasts (YouTube)</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=MdxiemGsD2g" target="_blank" rel="noopener">Jio IPO Listing In 10 Mins: Bumper Debut Moment, Mukesh Ambani Gets Emotional, Isha&#39;s Shoutout</a> &mdash; <cite>Mint (YouTube)</cite></li>
+        <li><a href="https://www.sciencedaily.com/releases/2026/10/261028234238.htm" target="_blank" rel="noopener">Study of nearly 13,000 adults links six common sweeteners, including erythritol and xylitol, to faster cognitive decline</a> &mdash; <cite>ScienceDaily (American Academy of Neurology)</cite></li>
+        <li><a href="https://www.nature.com/articles/s41598-026-77834-6" target="_blank" rel="noopener">A 60-day ketogenic diet study finds hormone and metabolic responses differ by body type and sex</a> &mdash; <cite>Scientific Reports</cite></li>
+        <li><a href="https://www.news-medical.net/news/20261028/Ketones-may-change-sleep-patterns-but-not-always-for-the-better.aspx" target="_blank" rel="noopener">Ketones and sleep: review finds mixed effects that depend on diet, age, sex and timing</a> &mdash; <cite>News-Medical</cite></li>
+        <li><a href="https://www.news-medical.net/news/20261027/High-intake-of-saturated-fat-can-promote-favorable-changes-in-cardiovascular-risk-markers.aspx" target="_blank" rel="noopener">Norwegian two-year trial: very-low-carb, high-saturated-fat diet raised LDL modestly while triglycerides fell and HDL rose</a> &mdash; <cite>News-Medical (University of Bergen)</cite></li>
+        <li><a href="https://www.health.harvard.edu/blog/what-can-magnesium-do-for-you-and-how-much-do-you-need-202506033100" target="_blank" rel="noopener">Harvard Health explainer: what magnesium does, how much adults need and what the evidence says about supplements</a> &mdash; <cite>Harvard Health Publishing</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=jO95wk5tieE" target="_blank" rel="noopener">ఏండి రొయ్యలు గోంగూర కూర || AMMA&#39;S SPECIAL Dry PRAWNS GONGURA ||@telugufarmergopi</a> &mdash; <cite>Telugu Farmer Gopi (YouTube)</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=hr_vH9kh4QU" target="_blank" rel="noopener">4 Ways to Handle the Holidays Like a Keto Pro</a> &mdash; <cite>Amy Berger - Keto Without the Crazy (YouTube)</cite></li>
+        <li><a href="https://github.com/anomalyco/opencode/releases/tag/v2.2.1" target="_blank" rel="noopener">OpenCode 2.2.1 adds /goal, opt-in image generation and scheduled prompts</a> &mdash; <cite>GitHub (anomalyco/opencode)</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/" target="_blank" rel="noopener">GitHub Copilot assisted permissions are generally available</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://github.com/openai/codex/releases/tag/rust-v0.166.0" target="_blank" rel="noopener">Codex CLI 0.166.0 adds codex doctor --network-only, queue --resume and safety-block explanations</a> &mdash; <cite>GitHub (openai/codex)</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/" target="_blank" rel="noopener">GitHub Agentic Workflows reaches general availability</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/" target="_blank" rel="noopener">Microsoft puts its Copilot agent harness into Foundry Agent Service as a managed public preview</a> &mdash; <cite>Microsoft Foundry Blog</cite></li>
+        <li><a href="https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/" target="_blank" rel="noopener">Google opens Gemini and Search to third-party apps with a Connected Apps Platform</a> &mdash; <cite>TechCrunch</cite></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/2026/october-2026" target="_blank" rel="noopener">Adobe Experience Platform October release: CX Enterprise Coworker now works inside Claude, ChatGPT and Microsoft 365 Copilot</a> &mdash; <cite>Adobe Experience League</cite></li>
+        <li><a href="https://techfundingnews.com/crux-labs-raises-6m-to-audit-ai-agents-against-human-judgement/" target="_blank" rel="noopener">Crux Labs exits stealth with $6M+ to audit AI agents against human expert judgement</a> &mdash; <cite>Tech Funding News</cite></li>
+        <li><a href="https://theaiinsider.tech/2026/10/28/omnichat-raises-us10m-series-a-led-by-openspace-capital-to-scale-ai-agent-platform-and-drive-global-expansion/" target="_blank" rel="noopener">Omnichat raises $10M Series A for sales, marketing and service agents inside WhatsApp, LINE and Instagram</a> &mdash; <cite>The AI Insider</cite></li>
+        <li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank" rel="noopener">Google announces Gemini 4 Carbon, with phased access for cyber defenders first</a> &mdash; <cite>Google (blog)</cite></li>
+        <li><a href="https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5" target="_blank" rel="noopener">Artificial Analysis rebuilds its Intelligence Index (v5): 60% private test sets, Claude Opus 5.5 leads at 58</a> &mdash; <cite>Artificial Analysis</cite></li>
+        <li><a href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener">Claude API version 2026-10-21 ships with new major SDK versions and breaking changes</a> &mdash; <cite>Claude Platform release notes</cite></li>
+        <li><a href="https://www.vals.ai/benchmarks/vals_index" target="_blank" rel="noopener">Vals Index (Oct 29): Claude Sonnet 5.5 leads at 70.85%, Gemini 4 Carbon second at 70.36%</a> &mdash; <cite>Vals AI</cite></li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/" target="_blank" rel="noopener">Warp discloses breach that exposed AI agent decision logs and user telemetry</a> &mdash; <cite>BleepingComputer</cite></li>
+        <li><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/" target="_blank" rel="noopener">OpenAI&#39;s GPT-6.1 Terra safety tests: fewer severe flags overall, more risky behaviours than newer peers</a> &mdash; <cite>BleepingComputer</cite></li>
+        <li><a href="https://www.csoonline.com/article/4242088/imposter-abused-trust-in-openai-anthropic-and-30-others-to-hunt-for-secrets.html" target="_blank" rel="noopener">Attackers pose as roughly 32 AI bots from OpenAI, Anthropic, Meta and others to hunt for exposed secrets</a> &mdash; <cite>CSO Online</cite></li>
+        <li><a href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.18" target="_blank" rel="noopener">LangGraph 1.2.18 changes the default snapshot frequency for DeltaChannel to 100 updates</a> &mdash; <cite>GitHub (langchain-ai/langgraph)</cite></li>
+        <li><a href="https://github.com/modelcontextprotocol/typescript-sdk/releases" target="_blank" rel="noopener">MCP TypeScript SDK 2.4.0 adds Skills over MCP and rejects number-typed x-mcp-header parameters</a> &mdash; <cite>GitHub (modelcontextprotocol/typescript-sdk)</cite></li>
+        <li><a href="https://vllm.ai/blog/2026-10-20-vllm-torchtpu" target="_blank" rel="noopener">vLLM releases vllm-torchtpu, a TPU backend that reuses vLLM&#39;s model code and scheduler</a> &mdash; <cite>vLLM Blog</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=A3FL_zTQKU0" target="_blank" rel="noopener">Don&#39;t Trust Your AI Agents. Test Them Like a Scientist — Stephanie Jarmak, Omni Analytics</a> &mdash; <cite>AI Engineer (YouTube)</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=BgLdvF7Qkh8" target="_blank" rel="noopener">300 Agents, 60 People: How We Secured Our Own AI Agents — Aiden Sochowski, Runlayer</a> &mdash; <cite>AI Engineer (YouTube)</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.13361" target="_blank" rel="noopener">AgentSWE: can coding agents build the agent you actually want?</a> &mdash; <cite>arXiv (Hugging Face Daily Papers)</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.14224" target="_blank" rel="noopener">Harness^2: recursive agent harnessing without ground-truth verifiers</a> &mdash; <cite>arXiv (Hugging Face Daily Papers)</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.36077" target="_blank" rel="noopener">The Trinity: capability-driven recursive self-improvement for multimodal agents</a> &mdash; <cite>arXiv (Hugging Face Daily Papers)</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.24520" target="_blank" rel="noopener">HABIT-Bench: can agent memory infer user habits from weak evidence?</a> &mdash; <cite>arXiv (Hugging Face Daily Papers)</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.22507" target="_blank" rel="noopener">RealCLI: measuring task success and human-agent collaboration for CLI agents</a> &mdash; <cite>arXiv (Hugging Face Daily Papers)</cite></li>
+        <li><a href="https://www.microsoft.com/en-us/research/publication/benchmarking-long-horizon-agent-context-compaction-with-compactionbench/" target="_blank" rel="noopener">CompactionBench and APEC: moving context compaction off the critical path in coding agents</a> &mdash; <cite>Microsoft Research (preprint)</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.14488" target="_blank" rel="noopener">Zero-Trust Agent Cells: confining a coding agent by the object it acts on, not the name</a> &mdash; <cite>arXiv (cs.CR)</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.23449" target="_blank" rel="noopener">GatewayBench: how MCP gateway design affects agent capability, efficiency and security</a> &mdash; <cite>arXiv (cs.AI)</cite></li>
+        <li><a href="https://temporal.io/blog/the-immortal-life-of-pi-running-the-pi-coding-agent-on-temporal" target="_blank" rel="noopener">The immortal life of Pi: running a coding agent on Temporal so a machine failure does not lose the turn</a> &mdash; <cite>Temporal blog</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.11678" target="_blank" rel="noopener">TRACE: is a score change the agent, or the evaluation? A protocol for diagnosing verifier brittleness</a> &mdash; <cite>arXiv (cs.CL; AI Measurement Science Workshop at COLM 2026)</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.00651" target="_blank" rel="noopener">Agent Evaluation Reliability: more tasks will not always fix an agent leaderboard</a> &mdash; <cite>arXiv (cs.AI)</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.07256" target="_blank" rel="noopener">Two-stage trace auditing: rules pick which agent actions an LLM auditor inspects before execution</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=5O6jLtoeKrg" target="_blank" rel="noopener">Real AI Agent Attacks and What Would Have Stopped Them — Andrey Rybka, Bloomberg</a> &mdash; <cite>AI Engineer</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=l1aCm5ykl4c" target="_blank" rel="noopener">Malicious AI Agent Skills Exposed: Don&#39;t Tell The User | Ep 19</a> &mdash; <cite>OWASP GenAI Security Project</cite></li>
+        <li><a href="https://www.nature.com/articles/d41586-026-03461-w" target="_blank" rel="noopener">NASA&#39;s Swift observatory ends science operations and is expected to re-enter around 2 November</a> &mdash; <cite>Nature</cite></li>
+        <li><a href="https://www.sciencedaily.com/releases/2026/10/261024222000.htm" target="_blank" rel="noopener">Webb finds three actively feeding supermassive black holes in one galaxy 1.2 billion years after the Big Bang</a> &mdash; <cite>ScienceDaily (Max Planck Institute for Extraterrestrial Physics release)</cite></li>
+        <li><a href="https://uwaterloo.ca/news/science/clouds-lava-planet-challenge-what-astronomers-expected" target="_blank" rel="noopener">Webb phase curve points to reflective silicate clouds on lava planet TOI-561 b</a> &mdash; <cite>University of Waterloo News</cite></li>
+        <li><a href="https://www.nasa.gov/missions/mars-2020-perseverance/nasas-perseverance-offers-clues-to-protect-crews-from-mars-dust/" target="_blank" rel="noopener">Perseverance measured ultrafine Martian dust on its spacesuit-material samples</a> &mdash; <cite>NASA</cite></li>
+        <li><a href="https://www.amsmeteors.org/2026/10/meteor-activity-outlook-for-october-24-30-2026/" target="_blank" rel="noopener">Meteor outlook: Taurids to peak in early November with a darkening Moon</a> &mdash; <cite>American Meteor Society</cite></li>
+        <li><a href="https://phys.org/news/2026-10-comets-didnt-seed-life-earth.html" target="_blank" rel="noopener">Comets probably did not seed early Earth with life&#39;s building blocks, Cambridge simulations suggest</a> &mdash; <cite>Phys.org (University of Cambridge release; Scientific Reports)</cite></li>
+        <li><a href="https://www.nature.com/articles/s41586-026-11132-z" target="_blank" rel="noopener">Protein analysis assigns Xujiayao fossils to Denisovans and sketches their skull shape</a> &mdash; <cite>Nature</cite></li>
+        <li><a href="https://www.quantamagazine.org/how-spiders-spin-silk-dope-into-natures-toughest-material-20261028/" target="_blank" rel="noopener">How spiders turn &#39;silk dope&#39; into one of nature&#39;s toughest materials</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://www.nature.com/articles/s41467-026-77625-7" target="_blank" rel="noopener">Rearranged 3D genome structure may underlie the evolution of cephalopod nervous systems</a> &mdash; <cite>Nature Communications</cite></li>
+        <li><a href="https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023/" target="_blank" rel="noopener">Malaria parasite caught forming its temporary &#39;door&#39; into red blood cells</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=8NIwXWwKOpw" target="_blank" rel="noopener">New Dwarf Planet Hiding in Our Solar System? | NOVA | PBS</a> &mdash; <cite>NOVA PBS Official</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=DqB_edhGAyg" target="_blank" rel="noopener">Why did ancient humans avoid this lush paradise?</a> &mdash; <cite>nature video</cite></li>
+        <li><a href="https://www.semafor.com/article/10/29/2026/us-gulf-states-launch-fresh-diplomatic-push-to-end-iran-war" target="_blank" rel="noopener">US and Gulf states launch fresh push to head off renewed fighting with Iran</a> &mdash; <cite>Semafor</cite></li>
+        <li><a href="https://www.cnn.com/2026/10/29/europe/russia-us-sanctions-investment-fund-intl-hnk" target="_blank" rel="noopener">Russia and US discussing sanctions relief for Moscow&#39;s sovereign wealth fund, Kremlin aide says</a> &mdash; <cite>CNN</cite></li>
+        <li><a href="https://news.un.org/en/story/2026/10/1168702" target="_blank" rel="noopener">Russian drone strike on Dnipro railway station kills at least 13 as aid for Oleshky nears</a> &mdash; <cite>UN News</cite></li>
+        <li><a href="https://www.straitstimes.com/world/middle-east/yemens-houthis-say-they-launched-an-attack-on-saudi-ras-tanura-oil-refinery" target="_blank" rel="noopener">Houthis claim missile strike on Saudi Arabia&#39;s Ras Tanura refinery as blasts shake Riyadh</a> &mdash; <cite>The Straits Times</cite></li>
+        <li><a href="https://www.federalregister.gov/documents/full_text/html/2026/10/26/2026-21755.html" target="_blank" rel="noopener">USTR proposes two more months&#39; suspension of China shipping-fee action, comments due Oct. 30</a> &mdash; <cite>Federal Register (USTR)</cite></li>
+        <li><a href="https://www.aljazeera.com/news/2026/10/29/russias-alleged-sabotage-campaign-in-europe-raises-fears-of-escalation" target="_blank" rel="noopener">Russia&#39;s alleged sabotage campaign in Europe raises fears of escalation</a> &mdash; <cite>Al Jazeera</cite></li>
+        <li><a href="https://www.thehindu.com/news/national/andhra-pradesh/cyclone-arnab-andhra-pradesh-puts-estimated-loss-at-4600-crore/article71640441.ece" target="_blank" rel="noopener">Cyclone Arnab: Andhra Pradesh puts preliminary loss at ₹4,600 crore, Central team due Friday</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.thehindu.com/news/national/telangana/invest-in-telangana-and-thrive-cm-tells-business-heads/article71642007.ece" target="_blank" rel="noopener">Revanth Reddy sets 10% of India&#39;s GDP by 2047 goal at Invest Telangana Global Summit curtain-raiser</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.thehindubusinessline.com/economy/jaishankar-likely-to-meet-rubio-on-g20-sidelines-but-trade-deal-remains-elusive/article71641006.ece" target="_blank" rel="noopener">Jaishankar likely to meet Rubio at G20 in Atlanta, but India-US interim trade deal still elusive</a> &mdash; <cite>The Hindu BusinessLine</cite></li>
+        <li><a href="https://indianexpress.com/article/india/election-commission-final-sir-voter-rolls-filing-claims-objections-delhi-maharashtra-andhra-pradesh-telangana-haryana-nagaland-deadline-extended-10942562/" target="_blank" rel="noopener">Election Commission extends SIR timelines and reopens claims window in Andhra Pradesh and Telangana</a> &mdash; <cite>The Indian Express</cite></li>
+        <li><a href="https://www.thehindubusinessline.com/markets/forex/rupee-should-be-indias-first-line-of-defence-against-energy-shocks-imf/article71643376.ece" target="_blank" rel="noopener">IMF says rupee should be first line of defence against energy shocks amid reports of RBI intervention</a> &mdash; <cite>The Hindu BusinessLine</cite></li>
+        <li><a href="https://entrackr.com/news/simplismart-raises-14-mn-from-dallas-venture-capital-nvidia-and-others-12758191" target="_blank" rel="noopener">Simplismart raises $14 million Series B for AI inference infrastructure, with NVIDIA participating</a> &mdash; <cite>Entrackr</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=H9SvA0pkuvs" target="_blank" rel="noopener">AI is too important for a tech war: AI innovation and regulation | Conflict Zone</a> &mdash; <cite>DW News</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=qU2d2m2oBbY" target="_blank" rel="noopener">India&#39;s cryptographic crisis explained: eMudhra, SBI &amp; The PHP2Shell risk | Business Matters</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.erstebank-open.com/en/news/storys/zverev-fixiert-viertelfinale-und-nummer-1" target="_blank" rel="noopener">Zverev clinches world No. 1 with straight-sets win in Vienna</a> &mdash; <cite>Erste Bank Open</cite></li>
+        <li><a href="https://www.erstebank-open.com/en/news/storys/viertelfinaltag-die-top-3-sind-noch-im-rennen" target="_blank" rel="noopener">Vienna quarterfinal day: Alcaraz v Paul, Zverev v Fery, Medvedev v Mannarino</a> &mdash; <cite>Erste Bank Open</cite></li>
+        <li><a href="https://www.tennismajors.com/atp/djokovics-turin-hopes-take-a-hit-as-struff-beats-him-for-the-first-time-in-basel-864383.html" target="_blank" rel="noopener">Djokovic loses to Struff in Basel, Turin hopes take a hit</a> &mdash; <cite>Tennis Majors</cite></li>
+        <li><a href="https://www.badmintonplanet.com/badminton-news/bwf-world-rankings-christo-popov-world-no-1-october-2026.html" target="_blank" rel="noopener">BWF rankings: Christo Popov becomes first French men&#39;s singles world No. 1</a> &mdash; <cite>BadmintonPlanet</cite></li>
+        <li><a href="https://www.bbc.com/sport/formula1/articles/cke8rlrrzpqyo" target="_blank" rel="noopener">Antonelli misses Mexico City media day with illness as he nears the F1 title</a> &mdash; <cite>BBC Sport</cite></li>
+        <li><a href="https://www.grandprix.com/news/honda-says-mexico-altitude-will-intensify-turbo-challenge.html" target="_blank" rel="noopener">Honda expects Mexico City&#39;s altitude to be its toughest turbo test of 2026</a> &mdash; <cite>Grandprix.com</cite></li>
+        <li><a href="https://www.pitpass.com/83954/Mexico-City-Grand-Prix-Preview-Red-Bull" target="_blank" rel="noopener">Red Bull&#39;s Mexico City preview: Verstappen on cooling and altitude, Iwasa in his car for FP1</a> &mdash; <cite>Pitpass (Red Bull team preview)</cite></li>
+        <li><a href="https://www.indiatoday.in/sports/cricket/story/india-vs-new-zealand-4th-t20i-preview-predicted-xi-pitch-report-weather-ishan-sooryavanshi-3027973-2026-10-30" target="_blank" rel="noopener">4th T20I in Auckland: India, already 3-0 up, weigh Sooryavanshi, Samson and a returning Kishan</a> &mdash; <cite>India Today</cite></li>
+        <li><a href="https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/" target="_blank" rel="noopener">Champions League matchday 4 fixtures: Barcelona v Aston Villa, Slavia Praha v Arsenal, Fenerbahce v Liverpool</a> &mdash; <cite>UEFA.com</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=hEAmjJPX250" target="_blank" rel="noopener">Easiest Badminton Doubles Defence Guide (Animated)</a> &mdash; <cite>RallyMap (YouTube)</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=qluo-Xyrv-M" target="_blank" rel="noopener">The Cross Court Net Shot that Makes you Look Like a Pro</a> &mdash; <cite>Ostin Badminton (YouTube)</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=uuGSSD1usG0" target="_blank" rel="noopener">Master Badminton Footwork: 5 Rhythm Exercises for Smooth Movement</a> &mdash; <cite>Badminton Famly (YouTube)</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=RgZuXBjyKqo" target="_blank" rel="noopener">Kodai Naraoka vs Lee Zii Jia | Explosive smashes and sharp backhands</a> &mdash; <cite>BWF TV</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=5vvb2iyvNxs" target="_blank" rel="noopener">Alcaraz vs Basilashvili WILD Ending for a Quarter-Final Spot | Vienna 2026 Highlights</a> &mdash; <cite>Tennis TV</cite></li>
+        <li><a href="https://www.thehindu.com/entertainment/movies/chiranjeevis-megaverse-netflix-announces-talk-show-hosted-by-chiranjeevi/article71640513.ece" target="_blank" rel="noopener">Netflix announces &#39;Chiranjeevi&#39;s Megaverse&#39;, a Telugu-cinema talk show hosted by Chiranjeevi</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.ragalahari.com/tollywood-news-2026-october/178202/november-december-packed-with-multiple-theatrical-releases" target="_blank" rel="noopener">Telugu release calendar for the rest of 2026: 30 Oct openers through the Christmas week</a> &mdash; <cite>Ragalahari</cite></li>
+        <li><a href="https://www.ragalahari.com/tollywood-news-2026-october/178203/varanasi-rajamoulis-father-confirms-it" target="_blank" rel="noopener">Rajamouli&#39;s father says Mahesh Babu&#39;s Varanasi is still set for 7 April 2027</a> &mdash; <cite>Ragalahari</cite></li>
+        <li><a href="https://www.123telugu.com/mnews/despite-trolls-nanis-the-paradise-scores-3-3m-views-in-3-days-ranks-in-netflix-global-top-3-hk.html" target="_blank" rel="noopener">Nani&#39;s The Paradise ranks No. 3 on Netflix&#39;s non-English movies chart in its first three days</a> &mdash; <cite>123Telugu</cite></li>
+        <li><a href="https://www.123telugu.com/mnews/ramayana-team-unveils-the-soulful-melody-jatha-gode-on-karwa-chauth-prp.html" target="_blank" rel="noopener">Ramayana makers release &#39;Jatha Gode&#39;, an A. R. Rahman song with Telugu lyrics, a week before release</a> &mdash; <cite>123Telugu</cite></li>
+        <li><a href="https://www.outlookindia.com/art-entertainment/ramayana-new-song-judi-jodi-out-ar-rahmans-track-celebrates-rama-and-sitas-love" target="_blank" rel="noopener">Ramayana&#39;s &#39;Judi Jodi&#39; arrives in five languages, with Sireesha Bhagavatula singing the Telugu version</a> &mdash; <cite>Outlook India</cite></li>
+        <li><a href="https://english.tupaki.com/entertainment/venkatesh-adarsha-kutumbam-thaman-nine-songs-1512640" target="_blank" rel="noopener">Venkatesh&#39;s Aadarsha Kutumbam: Thaman says seven of nine songs come out in an audio jukebox</a> &mdash; <cite>Tupaki English</cite></li>
+        <li><a href="https://www.teluguone.com/tmdb/news/aot-radhe-radhe-song-excellent-lyrical-value-en-235780c1.html" target="_blank" rel="noopener">Aakasamlo Oka Tara: GV Prakash Kumar&#39;s &#39;Radhe Radhe&#39; single is out</a> &mdash; <cite>TeluguOne</cite></li>
+        <li><a href="https://www.telugutimes.net/en/cinemas/cinema-news/ramayanas-rangulu-ranguley-out-now-364145.html" target="_blank" rel="noopener">Ramayana&#39;s Telugu &#39;Rangulu Ranguley&#39; sung by Raghav Kaushik and Vaishali Samant</a> &mdash; <cite>Telugu Times</cite></li>
+        <li><a href="https://chaoszine.net/steven-wilson-storm-corrosion-second-album-in-progress/" target="_blank" rel="noopener">Steven Wilson confirms second Storm Corrosion album is underway with Mikael Åkerfeldt</a> &mdash; <cite>Chaoszine</cite></li>
+        <li><a href="https://timesofindia.indiatimes.com/videos/entertainment/music/telugu/ranabaali-song-kobali/videoshow/135237031.cms" target="_blank" rel="noopener">Ranabaali: Ajay-Atul&#39;s &#39;Kobali&#39; song released</a> &mdash; <cite>The Times of India</cite></li>
+        <li><a href="https://skycmedia.com/en/movies/vishwak-sens-cult-gears-up-october-12122" target="_blank" rel="noopener">Vishwak Sen&#39;s Cult opens in theatres on 30 October, with no premiere shows</a> &mdash; <cite>SkyC Media</cite></li>
+        <li><a href="https://www.pinkvilla.com/entertainment/south/dont-trouble-the-trouble-ott-release-when-and-where-to-watch-fahadh-faasils-fantasy-comedy-online-1406149" target="_blank" rel="noopener">Don&#39;t Trouble The Trouble streams on Netflix from 30 October in five languages</a> &mdash; <cite>Pinkvilla</cite></li>
+        <li><a href="https://telugucinema.com/news/bhogi-teaser-gritty-period-setting-and-sharwanands-action-avatar" target="_blank" rel="noopener">Sharwanand&#39;s Bhogi set for 12 November release</a> &mdash; <cite>Telugu Cinema</cite></li>
+        <li><a href="https://telanganatoday.com/mouli-tanuj-prasanths-donga-naa-koduku-to-release-on-november-13" target="_blank" rel="noopener">Donga Naa Koduku, Mythri&#39;s crime comedy with Mouli, opens 13 November</a> &mdash; <cite>Telangana Today</cite></li>
+        <li><a href="https://timesofindia.indiatimes.com/entertainment/telugu/movies/news/preity-mukhundhan-and-roshan-mekas-emo-emo-idi-release-postponed-to-avoid-clash-with-venkateshs-aadarsha-kutumbam-new-date-to-be-announced/articleshow/135132607.cms" target="_blank" rel="noopener">Emo Emo Idi drops its 30 October date; new release date to be announced</a> &mdash; <cite>The Times of India</cite></li>
+        <li><a href="https://events.sulekha.com/bata-deepavali-sambaralu-featuring-famous-singer-influencer-sameera-baradwaj_event-in_san-ramon-ca_402156" target="_blank" rel="noopener">BATA Deepavali Sambaralu with singer Sameera Baradwaj, San Ramon, Nov 1</a> &mdash; <cite>Sulekha Events (organiser: Bay Area Telugu Association)</cite></li>
+        <li><a href="https://events.sulekha.com/band-capricio-live-in-seattle_event-in_everett-wa_402494" target="_blank" rel="noopener">Band Capricio live, a Telugu classical-fusion show, Everett (Seattle area), Nov 6</a> &mdash; <cite>Sulekha Events (organiser: NASAA)</cite></li>
+        <li><a href="https://www.sapcenter.com/events/detail/the-smashing-pumpkins" target="_blank" rel="noopener">The Smashing Pumpkins, The Rats In a Cage Tour, SAP Center San Jose, Nov 8</a> &mdash; <cite>SAP Center</cite></li>
+        <li><a href="https://events.sulekha.com/jubin-nautiyal-live-in-concert-bay-area-first-time-ever_event-in_san-jose-ca_401634" target="_blank" rel="noopener">Jubin Nautiyal live at San Jose Civic, Nov 13, first Bay Area concert</a> &mdash; <cite>Sulekha Events (organiser: Instant Karma)</cite></li>
+        <li><a href="https://www.theguardian.com/tv-and-radio/2026/oct/23/the-narco-hack-review-hbo-max-crime-documentary" target="_blank" rel="noopener">The Narco Hack: HBO Max crime documentary on the Sky ECC encrypted-phone investigation</a> &mdash; <cite>The Guardian</cite></li>
+        <li><a href="https://www.bfi.org.uk/sight-and-sound/reviews/wildwood-laikas-ambitious-fantasy-shows-its-spellbinding-stop-motion-craft" target="_blank" rel="noopener">Wildwood review: Laika&#39;s stop-motion fantasy, in cinemas now</a> &mdash; <cite>BFI Sight and Sound</cite></li>
+        <li><a href="https://www.npr.org/2026/10/23/nx-s1-6010586/possible-love-review" target="_blank" rel="noopener">Possible Love: Lee Chang-dong&#39;s first film in eight years opens in select theaters, Netflix on Nov. 6</a> &mdash; <cite>NPR</cite></li>
+        <li><a href="https://www.theguardian.com/film/2026/oct/29/wicker-review-olivia-colman-finds-the-perfect-lover-in-intriguing-folk-horror-romance" target="_blank" rel="noopener">Wicker review: Olivia Colman and a wicker husband in a folk-horror romance</a> &mdash; <cite>The Guardian</cite></li>
+        <li><a href="https://www.ign.com/articles/new-anime-to-watch-in-fall-2006" target="_blank" rel="noopener">IGN&#39;s guide to 12 anime worth watching this fall, with where to stream each</a> &mdash; <cite>IGN</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=u0yUYgZ0s30" target="_blank" rel="noopener">Aadarsha Kutumbam - Official Trailer | Venkatesh, Srinidhi Shetty | Trivikram | Thaman S</a> &mdash; <cite>Haarika &amp; Hassine Creations</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=MIIr3H7Ddik" target="_blank" rel="noopener">Ramayana: Jatha Goode (Song) | Namit M, Nitesh T | AR Rahman, Sireesha Bhagavatula | Rakendu Mouli</a> &mdash; <cite>T-Series Telugu</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=nXa2vuuMLvg" target="_blank" rel="noopener">Face Value, 45 years later: Phil Collins in conversation with Steven Wilson</a> &mdash; <cite>Phil Collins</cite></li>
+        <li><a href="https://www.quantamagazine.org/is-attention-the-essence-of-intelligence-20261012/" target="_blank" rel="noopener">Is &#39;Attention&#39; the Essence of Intelligence?</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://www.noemamag.com/a-new-dawn-for-mathematical-progress/" target="_blank" rel="noopener">A New Dawn For Mathematical Progress</a> &mdash; <cite>Noema</cite></li>
+        <li><a href="https://undark.org/2026/09/25/brain-trust-life-in-a-lab/" target="_blank" rel="noopener">The Evolving Quest to Build Life in a Lab</a> &mdash; <cite>Undark</cite></li>
+        <li><a href="https://podcasts.apple.com/us/podcast/democratizing-security-for-the-agentic-web-with/id1668002688?i=1000797759714" target="_blank" rel="noopener">Democratizing Security for the Agentic Web with Cloudflare CTO Dane Knecht</a> &mdash; <cite>No Priors (Apple Podcasts)</cite></li>
+        <li><a href="https://preposterousuniverse.com/podcast/2026/10/19/371-kyle-harper-on-how-humans-have-shaped-life-on-earth/" target="_blank" rel="noopener">371 | Kyle Harper on How Humans Have Shaped Life on Earth</a> &mdash; <cite>Sean Carroll&#39;s Mindscape</cite></li>
+        <li><a href="https://podcasts.apple.com/us/podcast/taking-on-servicenow-coding-agents-the-rest-of-us/id1668002688?i=1000798684005" target="_blank" rel="noopener">Taking on ServiceNow: Coding Agents the Rest of Us with Serval Co-Founder and CEO Jake Stauch</a> &mdash; <cite>No Priors (Apple Podcasts)</cite></li>
+        <li><a href="https://www.theguardian.com/books/2026/oct/26/war-is-interested-in-you-by-gideon-rachman-review-how-close-is-world-war-three" target="_blank" rel="noopener">War Is Interested in You: The Breakdown of International Order and the Threat of World War Three</a> &mdash; <cite>The Guardian (review of Gideon Rachman&#39;s book, Bodley Head)</cite></li>
+        <li><a href="https://www.theguardian.com/books/2026/sep/30/on-the-equality-of-all-things-by-carlo-rovelli-review-a-physicists-guide-to-life-the-universe-and-everything" target="_blank" rel="noopener">On the Equality of All Things: Physics and Philosophy</a> &mdash; <cite>The Guardian (review of Carlo Rovelli&#39;s book, Allen Lane)</cite></li>
+        <li><a href="https://www.citylinesunnyvale.com/event/44197-sunnyvale-autumn-food-festival" target="_blank" rel="noopener">Sunnyvale Autumn Food Festival at Cityline, Oct 31 to Nov 1</a> &mdash; <cite>Cityline Sunnyvale</cite></li>
+        <li><a href="https://www.openspaceauthority.org/upcoming-events" target="_blank" rel="noopener">Open Space Authority guided Gratitude Walk at Sierra Vista, Friday Nov 6</a> &mdash; <cite>Santa Clara Valley Open Space Authority</cite></li>
+        <li><a href="https://hoodline.com/2026/10/san-jose-s-trick-forecast-warm-thursday-foggy-chilly-halloween-weekend/" target="_blank" rel="noopener">San Jose forecast: foggy, cool Halloween Saturday, sunnier Sunday</a> &mdash; <cite>Hoodline</cite></li>
+        <li><a href="https://www.travelpirates.com/captains-log/france-protests-riots-2026-travel-update-paris" target="_blank" rel="noopener">France protests: museum closures, Paris curfew zone and a November 5 nationwide strike</a> &mdash; <cite>TravelPirates</cite></li>
+        <li><a href="https://www.wien.info/en/now-on/events/christmas-market-at-schoenbrunn-palace-1133666" target="_blank" rel="noopener">Vienna Christmas markets 2026: Schonbrunn opens November 6, most others November 13</a> &mdash; <cite>vienna.info (Vienna Tourist Board)</cite></li>
+        <li><a href="https://visit.venice.it/plan-your-trip/venice-day-trip" target="_blank" rel="noopener">Venice day-visitor fee returns in 2027 on 72 days, up from 60</a> &mdash; <cite>visit.venice.it</cite></li>
+        <li><a href="https://9to5toys.com/2026/10/27/samsung-4k-330hz-odyssey-oled-g7-gaming-monitor-whopping-600-off/" target="_blank" rel="noopener">Samsung 32-inch Odyssey OLED G7 monitor drops to $499.99 at B&amp;H</a> &mdash; <cite>9to5Toys</cite></li>
+        <li><a href="https://www.androidauthority.com/ugreen-nexode-pro-160w-gan-charger-deal-3729679/" target="_blank" rel="noopener">UGREEN Nexode Pro 160W 4-port GaN charger back to $94.99 on Amazon</a> &mdash; <cite>Android Authority</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=lVXV9bQ3eT4" target="_blank" rel="noopener">Vienna, Austria - We Should Have Known Better….</a> &mdash; <cite>Cleared 2 Travel</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=NaQ1FE4xhWQ" target="_blank" rel="noopener">Pixel Watch 5 Review: The Best WearOS Smartwatch?</a> &mdash; <cite>MrMobile [Michael Fisher]</cite></li>
+      </ol>
+    </details>
+    <p>Want a topic added, dropped or weighted differently? Tell your agent in any session or add a line to the local feedback file; the next morning's run applies it.</p>
+    <p>Compiled on 2026-10-29 18:10 PDT by research intelligence agents from verified sources. Private and calibrated to your context.</p>
+  </div>
+</div>
+<script>
+// Techmeme-inspired dynamic functionality for The Morning Brief
+(function() {
+  // Quick jump & date features
+  window.addEventListener('DOMContentLoaded', function() {
+    var searchForm = document.getElementById('briefSearchForm');
+    if (searchForm) {
+      searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var q = (document.getElementById('briefSearchInput') || {}).value;
+        if (q) {
+          window.find ? window.find(q) : alert('Searching for: ' + q);
+        }
+      });
+    }
+  });
+})();
+
+</script>
+</body>
+</html>
