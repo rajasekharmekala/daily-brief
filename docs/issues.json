@@ -814,5 +814,112 @@
         "minutes": 4
       }
     ]
+  },
+  {
+    "date": "2026-10-30",
+    "issue_no": 9,
+    "theme": "A tech sell-off led by Intel's worst day since 1974 and Amazon's results drags Wall Street, while Hormuz tanker mines and Iran strike talk dominate the world pages and agent builders get a harness benchmark and an MCP security warning.",
+    "items": 136,
+    "minutes": 69,
+    "generated_at": "2026-10-30 09:06 PDT",
+    "top": [
+      {
+        "title": "Tech sell-off worsens on Friday; S&P 500 on track to erase its October gain",
+        "source": "Associated Press (via The Orange County Register)",
+        "url": "https://www.ocregister.com/2026/10/30/tech-companies-wall-street/"
+      },
+      {
+        "title": "OpenCode and MCP Inspector: a remote MCP server's OAuth URL could run PowerShell on Windows and WSL",
+        "source": "Corgea Research",
+        "url": "https://corgea.com/research/opencode-mcp-inspector-oauth-url-powershell-rce-october-2026"
+      },
+      {
+        "title": "kw-bench: the same model scores 0.54 or 0.00 depending on whose harness runs it",
+        "source": "arXiv (cs)",
+        "url": "https://arxiv.org/abs/2610.36405"
+      },
+      {
+        "title": "Iran says four tankers hit mines in Hormuz as fears grow of renewed US strikes after the midterms",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html"
+      },
+      {
+        "title": "Aadarsha Kutumbam House No. 47 review: predictable but entertaining Venkatesh–Trivikram family crime-comedy",
+        "source": "The Hindu",
+        "url": "https://www.thehindu.com/entertainment/movies/aadarsha-kutumbam-house-no47-movie-review-venkatesh-anchors-trivikrams-family-drama/article71641841.ece"
+      },
+      {
+        "title": "First cultured Heimdallarchaeia, close archaeal kin of eukaryotes, were simple inside but covered in branching protrusions",
+        "source": "Phys.org (Kyoto University release on a Nature paper)",
+        "url": "https://phys.org/news/2026-10-capturing-closest-archaeal-clues-eukaryotes.html"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "followups",
+        "title": "Developing Stories",
+        "minutes": 1
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 6
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 8
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 8
+      },
+      {
+        "id": "papers",
+        "title": "Agent Papers Radar",
+        "minutes": 6
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 8
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 4
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 5
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 5
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 10
+      },
+      {
+        "id": "library",
+        "title": "Read and Listen",
+        "minutes": 2
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 3
+      }
+    ]
   }
 ]
