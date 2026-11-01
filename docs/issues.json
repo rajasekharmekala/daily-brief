@@ -1028,5 +1028,112 @@
         "minutes": 3
       }
     ]
+  },
+  {
+    "date": "2026-11-01",
+    "issue_no": 11,
+    "theme": "New agent identity guidance and evaluation papers lead this Sunday issue, alongside weekend badminton titles, a Cambrian-evolution deep dive, and the week’s Telugu releases.",
+    "items": 141,
+    "minutes": 76,
+    "generated_at": "2026-11-01 10:47 PST",
+    "top": [
+      {
+        "title": "NIST proposes ten design tenets for agent identity systems",
+        "source": "NIST",
+        "url": "https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems"
+      },
+      {
+        "title": "RSIHub gives agent-evolution methods a shared test bench",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2610.32253"
+      },
+      {
+        "title": "US and Canada discuss a limited Black Sea ceasefire for grain and energy shipments",
+        "source": "Reuters via ThePrint",
+        "url": "https://theprint.in/world/us-canada-see-growing-interest-in-limited-ceasefire-in-black-sea/3087311/"
+      },
+      {
+        "title": "Most S&P 500 stocks rose in October despite the index's decline",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/in-a-wild-october-for-markets-these-stocks-were-the-biggest-winners-and-losers-3736f043"
+      },
+      {
+        "title": "Sindhu and Lakshya win both Hylo Open singles finals",
+        "source": "Rediff / PTI",
+        "url": "https://www.rediff.com/sports/report/pv-sindhu-and-lakshya-sen-crowned-hylo-open-champions/20261101.htm"
+      },
+      {
+        "title": "DSP records Yellamma title song with 100 folk rhythm artists",
+        "source": "123Telugu",
+        "url": "https://www.123telugu.com/mnews/yellamma-devi-sri-prasad-records-title-song-with-100-folk-rhythm-artists-from-across-india-prp.html"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "followups",
+        "title": "Developing Stories",
+        "minutes": 1
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 7
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 6
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 10
+      },
+      {
+        "id": "papers",
+        "title": "Agent Papers Radar",
+        "minutes": 7
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 13
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 6
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 5
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 5
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 7
+      },
+      {
+        "id": "library",
+        "title": "Read and Listen",
+        "minutes": 3
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 3
+      }
+    ]
   }
 ]
