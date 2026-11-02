@@ -1,0 +1,1246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Morning Brief - Deep Dive of the Day - Monday, November 2, 2026</title>
+<meta name="description" content="Agent papers ask where failures sit—in the model or the harness—and vLLM ships a fresh release. NASA is considering Hubble servicing, Maruti reports October sales, and Prime Video’s November slate brings new viewing dates.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="alternate" type="application/atom+xml" title="The Morning Brief" href="https://rajasekharmekala.github.io/daily-brief/feed.xml">
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.35;
+  font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  font-size: 15.5px;
+  margin: 0 auto;
+  max-width: 90em;
+  min-width: 61em;
+  padding: 0 1.6em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links (Techmeme iconic link styling) */
+a {
+  text-decoration: none;
+  color: #002848;
+}
+a:visited {
+  color: #902050;
+}
+a:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+/* Headings & Techmeme Typography */
+h1, h2, h3, h4, h5 {
+  font-family: Optima, "Century Gothic", -apple-system, sans-serif;
+  color: #445555;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.45em;
+  padding: 0.75em 0 0.5em;
+}
+h3 {
+  font-size: 1.25em;
+  padding: 0.65em 0 0.35em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
+}
+
+cite {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.96em;
+  color: #686860;
+}
+cite a, cite a:visited {
+  color: #686860;
+}
+cite a:hover {
+  color: #002848;
+}
+
+.drhed {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  color: #408840;
+  font-weight: bold;
+  margin-right: 0.3em;
+  font-size: 0.94em;
+}
+
+.bls {
+  margin-left: -0.1em;
+}
+.bls a {
+  white-space: nowrap;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  font-size: 0.94em;
+}
+
+/* Pre-navbar / Header Topline */
+.pagecont {
+  margin-bottom: 3.5em;
+}
+.prenavbar {
+  margin-bottom: 0.4em;
+}
+.topline {
+  border-bottom: 1px solid #cccccc;
+  margin-top: 0.35em;
+  line-height: 1.7em;
+  font-size: 0.88em;
+  color: #666666;
+  padding-bottom: 0.25em;
+  clear: both;
+}
+.topline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.topline a {
+  color: #666666;
+}
+.topline a:visited {
+  color: #666666;
+}
+.topline a:hover {
+  color: #000000;
+  text-decoration: underline;
+  background: transparent;
+}
+.topllinks {
+  float: left;
+}
+.topllinks a {
+  padding-right: 1.3em;
+}
+.toprlinks {
+  float: right;
+}
+.toprlinks span {
+  padding-left: 0.9em;
+}
+
+/* Logo Tab table */
+.logotab {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 0.6em;
+}
+.logotab td {
+  vertical-align: middle;
+  width: 33.33%;
+}
+td.logobox {
+  padding: 0.6em 0;
+}
+.logo-title {
+  font-family: Optima, "Century Gothic", sans-serif;
+  font-size: 2.7em;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  color: #174a61;
+  display: inline-block;
+  line-height: 1;
+}
+.logo-title:visited {
+  color: #174a61;
+}
+.logo-title:hover {
+  text-decoration: none;
+  background: transparent;
+}
+.logo-sub {
+  font-size: 0.82em;
+  color: #777777;
+  font-weight: normal;
+  display: block;
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+td.datebox {
+  text-align: center;
+  color: #444444;
+  font-size: 0.96em;
+}
+.date-str {
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #222222;
+}
+.weather-str {
+  font-size: 0.9em;
+  color: #666666;
+  margin-top: 3px;
+}
+
+td.searchbox {
+  text-align: right;
+  font-size: 0.92em;
+}
+.sbti {
+  width: 13em;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 6px;
+  font-family: inherit;
+  font-size: 0.96em;
+}
+.sbti-btn {
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 9px;
+  font-size: 0.96em;
+  cursor: pointer;
+  font-family: inherit;
+}
+.sbti-btn:hover {
+  background: #e0e8f0;
+}
+
+/* Navigation Bar (Techmeme Navy Blue) */
+.navbar {
+  background: #174a61;
+  text-transform: uppercase;
+  clear: both;
+  line-height: 1.9em;
+  font-size: 0.88em;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+}
+.navtabs {
+  padding: 0;
+}
+.navtabs a {
+  padding: 0.3em 0.8em;
+  display: inline-block;
+  color: #dddddd;
+  font-weight: bold;
+}
+.navtabs a:visited {
+  color: #dddddd;
+}
+.navtabs a:hover {
+  background: #578aa1;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navtabs span.iamhere a {
+  background: #578aa1;
+  color: #ffffff;
+}
+.navtabs span.iamhere a:visited {
+  color: #ffffff;
+}
+.sisnav {
+  float: right;
+}
+.sisnav a {
+  color: #c0d8e8;
+  font-weight: normal;
+  padding: 0.3em 0.7em;
+}
+.sisnav a:visited {
+  color: #c0d8e8;
+}
+.sisnav a:hover {
+  color: #ffffff;
+  background: #25607b;
+}
+
+/* Sub-nav / Section Jump Bar */
+.subnavbar {
+  background: #f4f6f8;
+  border-bottom: 1px solid #d8e0e6;
+  padding: 0.35em 0.6em;
+  font-size: 0.85em;
+  line-height: 1.7em;
+  margin-bottom: 0.9em;
+}
+.subnavbar a {
+  color: #004860;
+  padding: 0.1em 0.5em;
+  font-weight: 600;
+  display: inline-block;
+}
+.subnavbar a:hover {
+  background: #d8e8f4;
+  text-decoration: none;
+}
+.subnavbar .subnav-label {
+  font-weight: bold;
+  color: #556677;
+  padding-right: 0.4em;
+  text-transform: uppercase;
+  font-size: 0.92em;
+}
+
+/* Executive Synthesis / Theme Banner */
+.exec-theme-box {
+  background: #fdfbe8;
+  border: 1px solid #d8c878;
+  border-left: 5px solid #d4a017;
+  padding: 0.75em 1.1em;
+  margin: 0.8em 0 1.3em;
+  font-size: 0.98em;
+  line-height: 1.5em;
+  color: #2b2b20;
+  border-radius: 2px;
+}
+.exec-theme-box strong {
+  color: #604000;
+  font-size: 1.05em;
+  display: inline;
+}
+
+/* Layout Columns */
+.ed {
+  clear: both;
+}
+.ed:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#topcol1 {
+  float: left;
+  width: 50%;
+  margin-top: 0.5em;
+  padding-right: 1.3%;
+}
+#topcol23 {
+  float: left;
+  width: 48.5%;
+  margin-left: 0.2%;
+}
+#topcol2 {
+  float: left;
+  width: 66%;
+  margin-top: 0.5em;
+}
+#topcol3 {
+  float: right;
+  width: 32%;
+  margin-top: 0.5em;
+  margin-left: 2%;
+  position: relative;
+}
+
+/* Bottom 2-column layout */
+.abotcols {
+  clear: both;
+  width: 100%;
+  border-bottom: 2px solid #e8e8e8;
+  padding-top: 1.2em;
+  margin-bottom: 1.3em;
+}
+#botcol1 {
+  float: left;
+  width: 49%;
+  padding-right: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+#botcol2 {
+  float: right;
+  width: 49%;
+  padding-left: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+
+/* Clusters and Items */
+.clus {
+  padding-bottom: 0.7em;
+}
+.item {
+  padding-top: 0.4em;
+  padding-bottom: 1.35em;
+  clear: both;
+  border-bottom: 1px solid #dddddd;
+}
+.item:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.item.last {
+  border-bottom: none;
+}
+.itc1 {
+  padding-left: 0.4em;
+}
+.itc2 {
+  padding: 0;
+}
+
+/* Shared cluster table / headline row */
+.shrtbl {
+  width: 100%;
+  border-collapse: collapse;
+}
+.shrtbl tr > td:first-child {
+  vertical-align: middle;
+}
+.shrtbl tr > td:first-child + td {
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 0.85em;
+  color: #777777;
+}
+
+.ii {
+  padding-top: 0.35em;
+  line-height: 1.4em;
+  font-size: 1.02em;
+}
+
+/* Image Thumbnails & Fallbacks */
+.ill {
+  float: right;
+  width: 120px;
+  height: 85px;
+  object-fit: cover;
+  padding: 0.1em 0 0.5em 0.8em;
+  border-radius: 3px;
+}
+.ill-icon-wrap {
+  float: right;
+  width: 78px;
+  height: 64px;
+  margin: 0.1em 0 0.5em 0.8em;
+  background: #f3f6f9;
+  border: 1px solid #d8e0e6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+}
+.ill-icon-wrap img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Headline typography scale */
+.ourh {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+}
+.ourh:link {
+  color: #004860;
+}
+.ourh:visited {
+  color: #a04860;
+}
+.ourh:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+.L1 { font-size: 1.18em; font-weight: bold; }
+.L2 { font-size: 1.28em; font-weight: bold; letter-spacing: -0.01em; }
+.L3 { font-size: 1.38em; font-weight: bold; letter-spacing: -0.015em; }
+.L4 { font-size: 1.48em; font-weight: bold; letter-spacing: -0.02em; }
+.L5 { font-size: 1.6em; font-weight: bold; letter-spacing: -0.025em; }
+
+.item-summary {
+  color: #111111;
+  font-size: 0.96em;
+}
+
+.item-why {
+  margin-top: 0.4em;
+  padding: 0.35em 0.6em;
+  background: #f7fafc;
+  border-left: 3px solid #6090a8;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  color: #334455;
+  border-radius: 0 2px 2px 0;
+}
+.item-why strong {
+  color: #174a61;
+  font-size: 0.94em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.3em;
+}
+
+/* Related items under a cluster */
+.relitems {
+  margin-top: 0.45em;
+  margin-bottom: 0.85em;
+  border-left: 2px solid #e0e8ef;
+  padding-left: 0.65em;
+}
+.relitems .item {
+  padding-top: 0.35em;
+  padding-bottom: 0.65em;
+  border-bottom: 1px dotted #e0e0e0;
+}
+.relitems .item:last-child {
+  border-bottom: none;
+}
+.relitems .ourh {
+  font-size: 1.05em;
+}
+
+/* Discussion / Sub-links / Secondary items */
+.dbpt {
+  padding-top: 0.4em;
+  font-size: 0.92em;
+  line-height: 1.42em;
+}
+
+/* Right-hand column: Newest / Chronological River */
+#topcol3 .item {
+  padding: 0.6em 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+#topcol3 .ii {
+  padding-top: 0.25em;
+  font-size: 0.96em;
+}
+#topcol3 a.nfdl {
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #004860;
+  font-size: 0.98em;
+}
+#topcol3 a.nfdl:visited {
+  color: #a04860;
+}
+#topcol3 a.nfdl:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+.ago {
+  color: #777777;
+  font-size: 0.84em;
+  padding-top: 0.35em;
+}
+
+/* Grey sponsor / highlighted background box */
+#tkzwuvgyr {
+  padding: 0.7em 1em 1em;
+  background: #f4f6f8;
+  border: 1px solid #e0e6ec;
+  border-radius: 3px;
+  margin-bottom: 1.3em;
+}
+#tkzwuvgyr h3 {
+  padding-top: 0.2em;
+  color: #223344;
+}
+#tkzwuvgyr .item {
+  border: none;
+  padding-bottom: 0.6em;
+}
+
+/* Pod / Media item box (Techmeme style) */
+.pod-box {
+  margin: 1em 0;
+  padding: 0.85em;
+  background: #f9fcfe;
+  border: 1px solid #d8e0e8;
+  border-radius: 3px;
+}
+.pod-box:first-of-type {
+  margin-top: 0.4em;
+}
+.pod-head {
+  font-size: 0.88em;
+  font-weight: bold;
+  color: #174a61;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+.pod-name {
+  font-weight: bold;
+  color: #004860;
+}
+
+/* Deep Dive longform article styled into Techmeme editorial */
+.deepdive-container {
+  background: #fcfdfe;
+  border: 1px solid #ccd9e2;
+  border-radius: 3px;
+  padding: 1.3em 1.5em;
+  margin: 0.9em 0 1.6em;
+}
+.deepdive-container h2 {
+  font-size: 1.65em;
+  line-height: 1.25;
+  color: #174a61;
+  padding: 0 0 0.35em;
+}
+.deepdive-subtitle {
+  font-size: 1.12em;
+  color: #555555;
+  font-style: italic;
+  margin-bottom: 0.85em;
+}
+.deepdive-keypts {
+  background: #f4f8fb;
+  border-left: 4px solid #174a61;
+  padding: 0.65em 1.1em;
+  margin: 0.85em 0 1.1em;
+  font-size: 0.96em;
+}
+.deepdive-keypts h4 {
+  font-size: 0.96em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #174a61;
+  margin-bottom: 0.45em;
+}
+.deepdive-keypts ul {
+  padding-left: 1.3em;
+  list-style: square;
+}
+.deepdive-keypts li {
+  margin-bottom: 0.35em;
+  line-height: 1.45em;
+}
+.deepdive-body {
+  font-size: 1.04em;
+  line-height: 1.6em;
+  color: #222222;
+}
+.deepdive-body p {
+  padding-bottom: 0.85em;
+}
+.deepdive-body h3 {
+  font-size: 1.3em;
+  padding: 0.85em 0 0.35em;
+  color: #174a61;
+}
+.deepdive-refs {
+  margin-top: 1.3em;
+  padding-top: 0.85em;
+  border-top: 1px solid #d0d8e0;
+  font-size: 0.9em;
+}
+.deepdive-refs ol {
+  padding-left: 1.6em;
+}
+.deepdive-refs li {
+  padding-bottom: 0.45em;
+}
+
+/* Keto Kitchen / Nutrition in Techmeme style */
+.kitchen-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.7em 0 1.1em;
+  font-size: 0.94em;
+  background: #f7faf9;
+  border: 1px solid #cfe0d8;
+}
+.kitchen-table th, .kitchen-table td {
+  padding: 0.45em 0.85em;
+  border: 1px solid #d4e4dc;
+  text-align: left;
+}
+.kitchen-table th {
+  background: #e4f0ea;
+  font-weight: bold;
+  color: #205038;
+}
+
+/* Recipe card & Single Recipe Detail View */
+.recipe-card {
+  border: 1px solid #dcdcdc;
+  background: #ffffff;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
+  border-radius: 3px;
+}
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
+  color: #004860;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+.recipe-macros {
+  font-size: 0.94em;
+  color: #408840;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
+.recipe-cols {
+  display: flex;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+.recipe-cols > div {
+  flex: 1;
+}
+.recipe-cols h5 {
+  font-weight: bold;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
+  margin-bottom: 0.45em;
+  padding-left: 0.2em;
+}
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
+}
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
+}
+
+/* Footer / Run Notes */
+.page-footer {
+  margin-top: 2.8em;
+  padding: 1.3em 0.5em 2.8em;
+  border-top: 1px solid #cccccc;
+  font-size: 0.88em;
+  color: #666666;
+  line-height: 1.55em;
+  clear: both;
+}
+.page-footer a {
+  color: #004860;
+}
+.page-footer details {
+  margin-bottom: 0.85em;
+}
+.page-footer summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #445555;
+}
+.page-footer ul, .page-footer ol {
+  padding-left: 1.6em;
+  margin-top: 0.45em;
+}
+
+/* Archive Page (Techmeme-style directory) */
+.archive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.1em;
+}
+.archive-table th {
+  text-align: left;
+  font-weight: bold;
+  color: #455;
+  font-size: 1.08em;
+  padding: 0.55em 0.75em;
+  border-bottom: 2px solid #aaa;
+  background: #f4f4f4;
+}
+.archive-table td {
+  padding: 0.65em 0.75em;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+.archive-table tr:hover td {
+  background: #f8fbfe;
+}
+.archive-date {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 0.98em;
+}
+.archive-theme {
+  font-size: 1.08em;
+  line-height: 1.4em;
+}
+.archive-theme a {
+  font-weight: bold;
+}
+.archive-meta {
+  font-size: 0.88em;
+  color: #666666;
+  margin-top: 0.35em;
+}
+
+/* Responsive Rules */
+@media only screen and (max-width: 960px) {
+  body {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 0.8em;
+    font-size: 15px;
+  }
+  .logotab td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.3em 0;
+  }
+  td.datebox, td.searchbox {
+    text-align: left;
+  }
+  .navbar {
+    line-height: 2em;
+    font-size: 0.92em;
+  }
+  .sisnav {
+    display: none;
+  }
+  #topcol1, #topcol23, #topcol2, #topcol3, #botcol1, #botcol2 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .recipe-cols {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="pagecont">
+  <!-- Techmeme Prenavbar Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="https://rajasekharmekala.github.io/"><strong>Home</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html"><strong>Archive</strong></a>
+        <a href="https://rajasekharmekala.github.io/portfolio/"><strong>Portfolio Desk</strong></a>
+        <a href="https://rajasekharmekala.github.io/travel-research/"><strong>Travel Research</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html"><strong>Keto Cookbook</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/feed.xml">RSS Feed</a>
+        <span>Issue 12</span>
+      </div>
+      <div class="toprlinks">
+        <span>📍 San Jose: 67° / 46°F, Overcast</span>
+        <span>⏱ ~55 min reading</span>
+        <span>92 items</span>
+      </div>
+    </div>
+
+    <!-- Techmeme Header Logo Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">The Morning Brief</a>
+          <span class="logo-sub">Executive Personal Intelligence Briefing</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Monday, November 2, 2026</div>
+          <div class="weather-str">Sunrise 06:33 · Sunset 17:08 · AQI 48 · Moon: Last quarter, 48% lit</div>
+        </td>
+        <td class="searchbox">
+          <form id="briefSearchForm">
+            <input id="briefSearchInput" class="sbti" type="text" placeholder="Search briefing...">
+            <input class="sbti-btn" type="submit" value="Search">
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Techmeme Iconic Navy Navigation Bar - Dedicated Tabs -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html">Cookbook</a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html">Archives</a>
+      </div>
+      <span class=""><a href="index.html">Home</a></span>
+      <span class=""><a href="followups.html">Developing Stories</a></span>
+      <span class=""><a href="finance.html">Markets and Money</a></span>
+      <span class=""><a href="nutrition.html">Keto Kitchen</a></span>
+      <span class=""><a href="industry.html">Industry Watch</a></span>
+      <span class=""><a href="papers.html">Agent Papers Radar</a></span>
+      <span class="iamhere"><a href="deepdive.html">Deep Dive of the Day</a></span>
+      <span class=""><a href="science.html">Cosmos and Life</a></span>
+      <span class=""><a href="world.html">World and India</a></span>
+      <span class=""><a href="sports.html">Sports</a></span>
+      <span class=""><a href="culture.html">Movies and Music</a></span>
+      <span class=""><a href="library.html">Read and Listen</a></span>
+      <span class=""><a href="local.html">Local and Travel</a></span>
+    </div>
+  </div>
+
+  <!-- Sub-navigation anchor / quick link jumper -->
+  <div class="subnavbar">
+    <span class="subnav-label">Tabs:</span>
+    <a href="index.html" style="">Top Stories</a> |
+    <a href="followups.html" style="">Developing Stories (1m)</a> |     <a href="finance.html" style="">Markets and Money (2m)</a> |     <a href="nutrition.html" style="">Keto Kitchen (6m)</a> |     <a href="industry.html" style="">Industry Watch (6m)</a> |     <a href="papers.html" style="">Agent Papers Radar (6m)</a> |     <a href="deepdive.html" style="font-weight:bold;color:#a04860;">Deep Dive of the Day (12m)</a> |     <a href="science.html" style="">Cosmos and Life (5m)</a> |     <a href="world.html" style="">World and India (2m)</a> |     <a href="sports.html" style="">Sports (4m)</a> |     <a href="culture.html" style="">Movies and Music (4m)</a> |     <a href="library.html" style="">Read and Listen (3m)</a> |     <a href="local.html" style="">Local and Travel (2m)</a>  </div>
+
+  <!-- Executive Synthesis Theme Banner -->
+  <div class="exec-theme-box">
+    <strong>Executive Synthesis:</strong> Agent papers ask where failures sit—in the model or the harness—and vLLM ships a fresh release. NASA is considering Hubble servicing, Maruti reports October sales, and Prime Video’s November slate brings new viewing dates.
+  </div>
+
+  <!-- ==================== HOME TAB VIEW ==================== -->
+  <div class="deepdive-container">
+    <h2>Dark Energy: Signal, Model, or Discovery?</h2>
+<div class="deepdive-subtitle">DESI’s evolving results show why better data can sharpen—and complicate—the case for cosmic change.</div>    <div class="deepdive-keypts">
+      <h4>Executive Takeaways</h4>
+      <ul>
+<li>DESI measures galaxy and hydrogen-gas patterns; changing dark energy is an inference about expansion, not a directly observed substance.</li><li>The 2025 DESI BAO plus CMB fit preferred a flexible evolving model at 3.1σ, with combined supernova results spanning 2.8–4.2σ.</li><li>The July 2026 Lyα full-shape result doubled the information from the same DR2 sample and shifted its central value toward ΛCDM.</li><li>Supernova recalibration, dataset tension, and the choice between a two-parameter curve and a flexible reconstruction change the strength of the preference.</li><li>DESI’s full five-year dark-energy results are expected in 2027; cross-probe consistency and independent validation will matter as much as the headline significance.</li>      </ul>
+    </div>
+    <div class="item-why" style="margin-bottom:1em;">
+      <strong>Strategic Context:</strong> Cosmology is a stated curiosity, and the DESI debate offers a concrete case study in how model assumptions and independent checks shape a measurement claim.
+    </div>
+    <div class="deepdive-body">
+      <p>On 30 July 2026, DESI released a new analysis of its Lyman-alpha forest measurements. The update did something scientifically useful and narratively awkward: it narrowed the high-redshift uncertainty, but moved the central point toward the simple cosmological-constant model. That is the right moment to ask what “dark energy is evolving” actually means, and what would turn an interesting fit into a discovery. The recent DESI story is not one score steadily climbing. It is a live comparison among measurements, calibrations, and mathematical descriptions of the universe. <sup class="ref"><a href="#d1">[1]</a></sup><sup class="ref"><a href="#d2">[2]</a></sup><sup class="ref"><a href="#d3">[3]</a></sup></p>
+<p>The central distinction is simple: surveys measure light, positions, and redshifts; they do not photograph dark energy changing. Cosmologists infer an expansion history from those observations, then ask which model best accounts for it. DESI has made the question more precise, but whether the extra complexity is nature or a mismatch among measurements remains unsettled. <sup class="ref"><a href="#d4">[4]</a></sup><sup class="ref"><a href="#d5">[5]</a></sup></p>
+<h3>The thing being tested is a model of expansion</h3>
+<p>“Dark energy” is the name for whatever is driving the universe’s expansion to accelerate. In the standard model, ΛCDM, the Λ is a cosmological constant: a uniform energy density that stays fixed as space expands. Cold dark matter (CDM) and ordinary matter dilute as the universe grows; the constant energy density does not, so it eventually dominates the cosmic budget. This model explains a broad range of observations well, even though it does not tell physicists what the cosmological constant physically is or why its value is so small. <sup class="ref"><a href="#d6">[6]</a></sup><sup class="ref"><a href="#d7">[7]</a></sup></p>
+<p>A common way to test the constant assumption is to describe dark energy through its equation-of-state parameter, <em>w</em>, the ratio of its pressure to its energy density. For a cosmological constant, <em>w</em> equals −1 at every epoch. A frequently used two-parameter alternative, called <em>w</em>₀<em>w</em>ₐCDM or CPL, writes <em>w(a) = w</em>₀ + <em>w</em>ₐ(1−<em>a</em>), where <em>a</em> is the scale factor and equals 1 today. <em>w</em>₀ sets the present-day value; <em>w</em>ₐ lets it vary with time. Set <em>w</em>₀=−1 and <em>w</em>ₐ=0, and the alternative collapses back to ΛCDM. <sup class="ref"><a href="#d2">[2]</a></sup><sup class="ref"><a href="#d6">[6]</a></sup></p>
+<p>That last sentence carries a lot of weight. A fit that prefers <em>w</em>ₐ below zero says that, within this chosen two-parameter family and the supplied data, the best-fitting history is not a constant. It does not by itself identify a new particle, a changing vacuum, or a correction to gravity. Several different physical mechanisms can produce similar expansion histories, and many proposed “dynamical dark energy” models are not equivalent to one another. The measurement target is first a curve describing expansion; the physical explanation comes later. <sup class="ref"><a href="#d6">[6]</a></sup><sup class="ref"><a href="#d7">[7]</a></sup></p>
+<p>It helps to separate three levels of claim. The directly established level is that observatories measure galaxy spectra, supernova brightnesses, and relic microwave patterns with stated uncertainties. The next level is a statistical claim: a specified model fits those measurements better than another under stated assumptions. The most ambitious level is a claim about the universe’s actual ingredients. DESI is presently giving strong new information at the first two levels. The third still depends on whether different methods converge and whether their shared assumptions survive. <sup class="ref"><a href="#d2">[2]</a></sup><sup class="ref"><a href="#d3">[3]</a></sup><sup class="ref"><a href="#d8">[8]</a></sup></p>
+<h3>Three kinds of evidence, three different jobs</h3>
+<p>DESI’s headline tool is baryon acoustic oscillation, or BAO. In the hot early universe, pressure waves traveled through the plasma before atoms formed. Their propagation left a preferred scale in how matter is distributed. That scale, about 150 megaparsecs in today’s standard calibration, acts as a cosmic ruler. DESI measures the ruler’s apparent size across the sky and along the line of sight at different redshifts; because those are geometrically different directions, together they constrain distances and the expansion rate across cosmic time. <sup class="ref"><a href="#d4">[4]</a></sup><sup class="ref"><a href="#d5">[5]</a></sup><sup class="ref"><a href="#d17">[17]</a></sup></p>
+<p>This is a standard-ruler measurement, not a direct measurement of dark energy density. The ruler’s calibrated length depends on early-universe physics, including the sound horizon at the drag epoch, written <em>r</em>₍d₎. DESI often reports ratios such as transverse distance <em>D</em>ₘ/<em>r</em>₍d₎ and Hubble distance <em>D</em>ₕ/<em>r</em>₍d₎. To turn them into a complete expansion history, analysts combine them with a cosmological model or with another data source that constrains the ruler. Keeping those steps visible is essential: a very precise angular or redshift separation is not automatically a model-free measurement of <em>w(z)</em>. <sup class="ref"><a href="#d4">[4]</a></sup><sup class="ref"><a href="#d5">[5]</a></sup></p>
+<p>Type Ia supernovae play a complementary role. Their observed brightnesses, after calibration and corrections, estimate luminosity distances. Put distance against redshift and they trace how expansion accumulated along the path of light. They are standardizable candles, rather than rulers, and they provide especially useful late-time information. Their calibrations depend on choices about photometry, light-curve models, host galaxies, and how low-redshift samples are connected to distant supernovae. The fact that recent DES supernova recalibration changed the combined preference is not an embarrassment; it is precisely why the calibration belongs in the scientific account. <sup class="ref"><a href="#d8">[8]</a></sup><sup class="ref"><a href="#d9">[9]</a></sup><sup class="ref"><a href="#d10">[10]</a></sup></p>
+<p>The cosmic microwave background (CMB) is the afterglow of the early universe. Its angular patterns provide tight constraints on the initial conditions and the sound horizon. In a fit with late-time BAO or supernova data, that early anchor helps convert relative distance measurements into a longer expansion history. It can sharpen inference dramatically, but only under assumptions linking the early and late universe. If two late-time probes are already inconsistent, adding a highly precise early-time anchor can make a combined answer look narrow while leaving it systematically biased. <sup class="ref"><a href="#d2">[2]</a></sup><sup class="ref"><a href="#d8">[8]</a></sup><sup class="ref"><a href="#d11">[11]</a></sup></p>
+<p>A useful mental model is three survey instruments measuring different pieces of one route. BAO gives regularly spaced mile markers, supernovae report calibrated travel times or brightness-based distances, and the CMB supplies the map’s early scale. In a worked example, imagine BAO prefers a slightly different distance-redshift curve from a supernova catalogue. A flexible <em>w</em>₀* w*ₐ curve may bend enough to pass close to both sets of points. The combined residuals shrink, and the model earns a better fit. But before concluding the road itself changed shape, check whether the mile markers were calibrated consistently, whether the supernova zero point shifted, and whether the map’s original scale is appropriate. Better fit is evidence about model adequacy; it is not a physical diagnosis by itself. <sup class="ref"><a href="#d8">[8]</a></sup><sup class="ref"><a href="#d9">[9]</a></sup><sup class="ref"><a href="#d11">[11]</a></sup></p>
+<h3>What DESI’s signal says so far</h3>
+<p>DESI’s March 2025 Data Release 2 analysis used the first three years of observations: more than 14 million galaxies and quasars. The collaboration’s BAO results were consistent with its earlier release and with SDSS measurements; a flat ΛCDM model described them well. Yet the BAO-preferred parameters sat in mild, 2.3-sigma tension with the CMB determination. In the <em>w</em>₀<em>w</em>ₐCDM model, the tension eased and the fit improved: the DESI BAO plus CMB combination preferred evolving dark energy at 3.1 sigma. Add supernovae, and the reported preference ranged from 2.8 to 4.2 sigma depending on which supernova sample was chosen. <sup class="ref"><a href="#d2">[2]</a></sup></p>
+<p>Those are not four measurements of a universal probability. They are four combinations of datasets analyzed under a specified model comparison. The 2025 reporting cycle also made the distinction clear: DESI alone remained consistent with ΛCDM, while combining it with other probes strengthened the preference, with the size depending on the supernova sample. <sup class="ref"><a href="#d14">[14]</a></sup><sup class="ref"><a href="#d15">[15]</a></sup><sup class="ref"><a href="#d16">[16]</a></sup><sup class="ref"><a href="#d18">[18]</a></sup> The range matters as much as the maximum. In 2025 the DESI team emphasized that the preference had not reached the conventional five-sigma particle-physics discovery threshold, and that the significance depended on the supernova compilation used. Their analysis was blinded during development: analysts tested methods on mocks and scrambled data before unblinding, a safeguard against tuning decisions to a desired result. Blinding reduces one important source of bias; it cannot remove every calibration or modelling uncertainty. <sup class="ref"><a href="#d2">[2]</a></sup><sup class="ref"><a href="#d3">[3]</a></sup><sup class="ref"><a href="#d15">[15]</a></sup><sup class="ref"><a href="#d16">[16]</a></sup></p>
+<p>The July 2026 Lyman-alpha update is a useful stress test because it added information in a different part of cosmic history, not because it replaced the DR2 dataset with a new survey. DESI traces the Lyman-alpha forest in quasar spectra: intervening neutral hydrogen absorbs narrow bands of light, mapping matter between galaxies at high redshift. The new paper analyzes the full shape of the Lyα correlation function, including quasar cross-correlations, rather than measuring only the BAO peak. At effective redshift 2.33, its Alcock–Paczynski measurement reaches 1% precision, twice as tight as the BAO constraint from those same data. <sup class="ref"><a href="#d4">[4]</a></sup><sup class="ref"><a href="#d5">[5]</a></sup></p>
+<p>When the paper combines the Lyα AP and BAO results, it reports <em>D</em>ₕ/<em>r</em>₍d₎ = 8.600 ± 0.066 and <em>D</em>ₘ/<em>r</em>₍d₎ = 39.32 ± 0.33. The ΛCDM matter fraction inferred from the Lyα AP result is Ωₘ=0.325±0.018, 1.4 sigma above the DESI BAO value. In the combined cosmological fit, <em>w</em>₀<em>w</em>ₐCDM is preferred over ΛCDM at 2.7 sigma for DESI plus CMB and 3.2 sigma when supernovae are also included. This is meaningful new leverage, but it is not a clean confirmation of a steadily strengthening anomaly: relative to the earlier Lyα BAO-only point, the tighter full-shape central value shifts toward ΛCDM. <sup class="ref"><a href="#d4">[4]</a></sup></p>
+<p>That update supports two readings at once. One is that the extra shape information makes the high-redshift expansion more discriminating, so the overall preference for an evolving model remains worth following. The other is that at least one new, precise measurement is more comfortable with the constant model than with the best-fit evolving curve. DESI’s own release says the result could mean current hints fade, or that a more complex model is needed to describe all observations together. That is a more accurate headline than “DESI proved dark energy is changing.” <sup class="ref"><a href="#d5">[5]</a></sup></p>
+<h3>Why respectable analyses land on different answers</h3>
+<p>One source of variation is the supernova sample. The Dark Energy Survey team’s March 2026 recalibration, called DES-Dovekie, used updated photometric cross-calibration, white-dwarf observations, a retrained light-curve model, and a corrected approximation in the host-galaxy colour law. Combining it with DESI DR2 and CMB data lowered the reported preference from 4.2 sigma with the earlier DES-SN5YR sample to 3.2 sigma. The authors translate this to Bayesian model-preference odds of about 5:1 and describe the preference as weak under common model-comparison thresholds. The direction remains interesting; the strength is calibration-sensitive. <sup class="ref"><a href="#d9">[9]</a></sup></p>
+<p>Another source is the parameterization itself. Wang and Freese measured dark-energy density and <em>w(z)</em> as free functions of redshift using DESI DR2 BAO and Planck 2015 distance priors. They found the density consistent with a cosmological constant at roughly 1 sigma, and <em>w</em> consistent at roughly 2 sigma near <em>z</em>=2/3. Their analysis argues that the linear <em>w</em>₀* w*ₐ form can make a departure appear stronger than a more flexible reconstruction supports. This does not invalidate the DESI fit; it changes the question from “does this two-parameter curve fit?” to “which feature of the expansion history is actually constrained by the data?” <sup class="ref"><a href="#d7">[7]</a></sup></p>
+<p>Other teams obtain different answers using different combinations and assumptions. A 2025 DESI-linked analysis found about 3-sigma tension with ΛCDM when multiple degrees of freedom were allowed in <em>w(z)</em>, while acknowledging that possible systematics remained under study. A May 2026 paper compared several parameterizations and three supernova samples; for late-time data alone it reported 1.1–2.3 sigma and no robust preference across models. A September 2026 preprint’s five parameterizations produced roughly 2.1–3.7 sigma depending on sample and model. These are not contradictions that can be settled by choosing the largest sigma. They show that “the DESI significance” is shorthand for a family of conditional answers. <sup class="ref"><a href="#d6">[6]</a></sup><sup class="ref"><a href="#d10">[10]</a></sup><sup class="ref"><a href="#d12">[12]</a></sup></p>
+<p>A more pointed disagreement concerns whether the input datasets should be combined at all. Afroz and Mukherjee tested the relation between supernova luminosity distances and BAO angular-diameter distances that follows from the assumed geometry. They reported a redshift-dependent inconsistency between DESI DR2 BAO and Pantheon+; after accounting for it, their inferred parameters, <em>w</em>₀=−0.92±0.08 and <em>w</em>ₐ=−0.49 with asymmetric uncertainties of −0.36/+0.33, were consistent with ΛCDM. That is one published analysis, not a settled diagnosis. A separate November 2025 preprint by Wang and Mota likewise argues that tension among CMB, BAO, and supernova datasets undermines joint inference, but its own statistical comparisons favor dynamical models on average when considering datasets individually. The important lesson is methodological: disagreement between probes needs investigation before combination is treated as a source of truth. <sup class="ref"><a href="#d8">[8]</a></sup><sup class="ref"><a href="#d11">[11]</a></sup></p>
+<p>This is where “sigma” needs careful reading. A sigma preference summarizes how unusual a test statistic would be under a chosen null model and error model. It does not answer whether the alternative is physically correct, whether all relevant systematics were included, whether another functional form would fit equally well, or whether the collaboration tried many variants before publishing. Bayesian evidence asks a related but different question by balancing fit against the parameter volume a model occupies; an added-flexibility model can improve the best fit and still receive only modest overall support. DES-Dovekie’s 3.2-sigma result alongside approximately 5:1 Bayesian odds is a concrete reminder that these summaries are not interchangeable. <sup class="ref"><a href="#d2">[2]</a></sup><sup class="ref"><a href="#d9">[9]</a></sup></p>
+<h3>The practical test: does the signal survive new measurement choices?</h3>
+<p>The cleanest way to read this episode is like an evaluation audit. A benchmark score is conditional on task construction, evaluator behavior, and the tested model. A cosmological preference is conditional on the observable, calibration, likelihood, parameterization, and data combination. In both cases, independent replications matter more than a single impressive aggregate. That analogy should not collapse cosmology into software testing: telescope data and physical likelihoods have distinct noise models and mature validation traditions. But the shared discipline is to ask which assumptions produced the number and what independent evidence would change it. <sup class="ref"><a href="#d3">[3]</a></sup><sup class="ref"><a href="#d7">[7]</a></sup><sup class="ref"><a href="#d8">[8]</a></sup></p>
+<p>DESI has already built useful safeguards around the galaxy BAO analysis. Its DR2 validation paper reports blinded robustness tests, mock catalogues, alternative data vectors and modelling choices, and checks on systematics and the Gaussian-likelihood assumption. It concludes that the BAO constraints are stable across these variations, with a few refinements to the DR1 baseline. That supports confidence in the galaxy BAO measurements. It does not automatically resolve tensions involving separate supernova calibrations or the CMB; each probe needs its own error budget, and combined-model inference needs cross-probe consistency. <sup class="ref"><a href="#d3">[3]</a></sup></p>
+<p>The new Lyα work also has a validation paper and mock-catalogue programme behind it. That matters because the update uses a less familiar full-shape analysis, in which the cosmological information is spread across the correlation function rather than concentrated at the BAO peak. The extra information is useful only if the analysis captures how astrophysical absorption, survey selection, and modelling choices affect that shape. DESI reports a tighter result and a central value nearer ΛCDM; independent groups will need to reproduce the robustness checks and compare them under alternative expansion histories. <sup class="ref"><a href="#d4">[4]</a></sup><sup class="ref"><a href="#d5">[5]</a></sup></p>
+<h3>What to watch next</h3>
+<p>The strongest next step is not another headline about a “sigma.” It is the full five-year DESI analysis, expected in 2027. By April 2026 the collaboration had completed the original mapping plan ahead of schedule and measured more than 47 million galaxies and quasars, against a design goal of 34 million; it planned to continue observations through 2028 and expand the mapped area. More data should shrink statistical uncertainty, while independent validation will determine whether the same pattern survives different tracers and analysis choices. <sup class="ref"><a href="#d13">[13]</a></sup></p>
+<p>Watch three things in that release and the papers around it. First, do independent observables—galaxy and quasar BAO, Lyα, supernovae, weak lensing, and CMB—tell compatible stories before they are combined? Second, do flexible reconstructions of the dark-energy density and equation of state agree with the restricted <em>w</em>₀* w*ₐ summary? Third, do alternatives gain support not just in best-fit likelihood but in model comparison that penalizes unnecessary freedom? The most informative result may be an updated null: better data that tighten ΛCDM’s range and push the earlier preference back toward a constant. <sup class="ref"><a href="#d5">[5]</a></sup><sup class="ref"><a href="#d7">[7]</a></sup><sup class="ref"><a href="#d9">[9]</a></sup></p>
+<p>For now, the evidence warrants sustained attention rather than a declaration. DESI’s 2025 combined fits produced a real, sub-five-sigma preference for evolving models; the 2026 Lyα full-shape result is sharper but shifts its central value toward ΛCDM; and current independent analyses disagree over how much that preference survives calibration, dataset tension, and model flexibility. That is not a failure of cosmology. It is what measurement looks like when the signal sits near the boundary between a useful anomaly and a discovery. <sup class="ref"><a href="#d2">[2]</a></sup><sup class="ref"><a href="#d4">[4]</a></sup><sup class="ref"><a href="#d7">[7]</a></sup><sup class="ref"><a href="#d8">[8]</a></sup><sup class="ref"><a href="#d10">[10]</a></sup></p>
+    </div>
+    <div class="deepdive-refs">
+      <span class="drhed">Primary References:</span>
+      <ol>
+        <li id="d1"><a href="https://www.desi.lbl.gov/2025/03/19/more-than-a-hint-of-evolving-dark-energy-new-results-and-data-from-desi/" target="_blank" rel="noopener"><strong>‘More Than a Hint’ of Evolving Dark Energy — New Results and Data from DESI</strong></a> &mdash; DESI</li>
+        <li id="d2"><a href="https://arxiv.org/abs/2503.14738" target="_blank" rel="noopener"><strong>DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints</strong></a> &mdash; arXiv (DESI Collaboration)</li>
+        <li id="d3"><a href="https://arxiv.org/abs/2503.14742" target="_blank" rel="noopener"><strong>Validation of the DESI DR2 Measurements of Baryon Acoustic Oscillations from Galaxies and Quasars</strong></a> &mdash; arXiv (DESI Collaboration)</li>
+        <li id="d4"><a href="https://arxiv.org/abs/2607.27410" target="_blank" rel="noopener"><strong>DESI DR2 Results IV: Alcock-Paczyński Measurements from the Lyman Alpha Forest and Cosmological Constraints</strong></a> &mdash; arXiv (DESI Collaboration)</li>
+        <li id="d5"><a href="https://www.desi.lbl.gov/2026/07/30/new-desi-dr2-lyman-alpha-results-shed-light-on-dark-energy/" target="_blank" rel="noopener"><strong>New DESI DR2 Lyman-alpha Results Shed Light on Dark Energy</strong></a> &mdash; DESI</li>
+        <li id="d6"><a href="https://arxiv.org/abs/2504.06118" target="_blank" rel="noopener"><strong>Dynamical Dark Energy in light of the DESI DR2 Baryonic Acoustic Oscillations Measurements</strong></a> &mdash; arXiv (Gan Gu et al.)</li>
+        <li id="d7"><a href="https://www.ipac.caltech.edu/publication/2026JCAP...02..023W" target="_blank" rel="noopener"><strong>Model-independent dark energy measurements from DESI DR2 and Planck 2015 data</strong></a> &mdash; IPAC / Journal of Cosmology and Astroparticle Physics</li>
+        <li id="d8"><a href="https://journals.aps.org/prd/abstract/10.1103/k59d-l795" target="_blank" rel="noopener"><strong>Hint toward an inconsistency between BAO and supernovae datasets: The evidence of redshift evolving dark energy from DESI DR2 is absent</strong></a> &mdash; Physical Review D</li>
+        <li id="d9"><a href="https://arxiv.org/abs/2511.07517" target="_blank" rel="noopener"><strong>The Dark Energy Survey Supernova Program: A Reanalysis Of Cosmology Results And Evidence For Evolving Dark Energy With An Updated Type Ia Supernova Calibration</strong></a> &mdash; arXiv (Dark Energy Survey Collaboration)</li>
+        <li id="d10"><a href="https://link.springer.com/article/10.1140/epjc/s10052-026-15806-w" target="_blank" rel="noopener"><strong>Evidence for evolving dark energy from DESI DR2 BAO and Pantheon+, DES-Dovekie, and Union3</strong></a> &mdash; The European Physical Journal C</li>
+        <li id="d11"><a href="https://arxiv.org/abs/2504.15222" target="_blank" rel="noopener"><strong>Did DESI DR2 truly reveal dynamical dark energy?</strong></a> &mdash; arXiv (Deng Wang and David Mota)</li>
+        <li id="d12"><a href="https://arxiv.org/abs/2609.10567" target="_blank" rel="noopener"><strong>Study of dynamical dark energy using DESI DR2 BAO, CMB, and Type Ia Supernovae data</strong></a> &mdash; arXiv (Pin Wang, Ping Wang, and Jielei Zhang)</li>
+        <li id="d13"><a href="https://www.desi.lbl.gov/2026/04/15/desi-reaches-mapping-milestone-surpassing-expectations/" target="_blank" rel="noopener"><strong>DESI Reaches Mapping Milestone, Surpassing Expectations</strong></a> &mdash; DESI</li>
+        <li id="d14"><a href="https://www.quantamagazine.org/is-dark-energy-getting-weaker-new-evidence-strengthens-the-case-20250319/" target="_blank" rel="noopener"><strong>Is Dark Energy Getting Weaker? New Evidence Strengthens the Case.</strong></a> &mdash; Quanta Magazine</li>
+        <li id="d15"><a href="https://newscenter.lbl.gov/2025/03/19/new-desi-results-strengthen-hints-that-dark-energy-may-evolve/" target="_blank" rel="noopener"><strong>New DESI Results Strengthen Hints That Dark Energy May Evolve</strong></a> &mdash; Berkeley Lab News Center</li>
+        <li id="d16"><a href="https://www.sciencenews.org/article/map-galaxies-dark-energy-mystery-quasar" target="_blank" rel="noopener"><strong>A map of 14 million galaxies and quasars deepens a dark energy mystery</strong></a> &mdash; Science News</li>
+        <li id="d17"><a href="https://physics.aps.org/articles/v18/72" target="_blank" rel="noopener"><strong>The Standard Cosmology Model May Be Breaking</strong></a> &mdash; Physics (American Physical Society)</li>
+        <li id="d18"><a href="https://www.ukri.org/news/desi-results-suggest-dark-energy-may-evolve-over-time/" target="_blank" rel="noopener"><strong>DESI results suggest dark energy may evolve over time</strong></a> &mdash; UK Research and Innovation</li>
+      </ol>
+    </div>
+  </div>
+
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <details>
+      <summary>Editorial & Pipeline Notes (31)</summary>
+      <ul>
+<li>4 candidate items were dropped before publication (dead links, stale or already-covered stories).</li><li>followups.updates: could not fetch &#39;Aadarsha Kutumbam Box Office Collection &#39; to verify it</li><li>finance.us: only 4 items kept (target 7)</li><li>finance.us: could not fetch &#39;Longer-term Treasury yields fall to two-&#39; to verify it</li><li>finance.week: could not fetch &#39;US October CPI release — November 10 at &#39; to verify it</li><li>finance.watch: only 0 items kept (target 3)</li><li>nutrition.science: could not fetch &#39;Small fish-rich keto intervention links &#39; to verify it</li><li>nutrition.watch: only 0 items kept (target 3)</li><li>industry.products: only 3 items kept (target 6)</li><li>industry.models: could not fetch &#39;GPT-6 Rosalind Research targets approved&#39; to verify it</li><li>industry.models: could not fetch &#39;Agent Arena ranks Claude Opus 5.5 first &#39; to verify it</li><li>industry.watch: only 1 items kept (target 3)</li><li>science.space: only 4 items kept (target 7)</li><li>science.life: only 4 items kept (target 7)</li><li>science.life: could not fetch &#39;A Cretaceous dinosaur’s skull points to &#39; to verify it</li><li>world.world: only 3 items kept (target 6)</li><li>world.world: could not fetch &#39;Colombian military-base attack exposes p&#39; to verify it</li><li>world.world: could not fetch &#39;Switzerland reopens its diplomatic offic&#39; to verify it</li><li>world.india: only 3 items kept (target 6)</li><li>culture.indian: only 3 items kept (target 8)</li><li>culture.music: only 2 items kept (target 8)</li><li>culture.concerts: only 0 items kept (target 5)</li><li>local.southbay: only 1 items kept (target 4)</li><li>local.trips: only 1 items kept (target 3)</li><li>local.deals: only 1 items kept (target 3)</li><li>Reviewer (REVISE): sampled 66 items; 24 removed, 2 corrected.</li><li>Recipe correction applied before rendering: ground goat is now cooked to 160°F (71°C) internal temperature.</li><li>Only one follow-up survived source verification and review; the re-entry update is retained, and the other candidates were removed as unverified.</li><li>Editorial theme, top picks and section intros were refreshed after review removals; all top picks now reference retained items.</li><li>Finance and nutrition watch sections remain empty after the one permitted widening retry because repeated YouTube watch-page requests returned HTTP 429; industry watch retains one verified item.</li><li>Culture, local and travel listings remain thin after the one permitted widening retry where event dates/venues, current fares or prices, or distinct recent releases could not be verified.</li>      </ul>
+    </details>
+    <details>
+      <summary>All Sources & Citations (92)</summary>
+      <ol>
+        <li><a href="https://www.wral.com/weather/swift-reentry-nov-2026/" target="_blank" rel="noopener">Swift re-entry forecasts move to 3–5 November</a> &mdash; <cite>WRAL</cite></li>
+        <li><a href="https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026" target="_blank" rel="noopener">Maruti Suzuki records its highest-ever monthly sales in October</a> &mdash; <cite>Maruti Suzuki</cite></li>
+        <li><a href="https://investor.apple.com/investor-relations/event-details/2026/FY-26-Fourth-Quarter-Results/default.aspx" target="_blank" rel="noopener">Apple FY26 fourth-quarter results call — November 2 at 2 p.m. PT</a> &mdash; <cite>Apple Investor Relations</cite></li>
+        <li><a href="https://www.eia.gov/petroleum/supply/weekly/schedule.php" target="_blank" rel="noopener">EIA Weekly Petroleum Status Report — November 4 at 10:30 a.m. ET</a> &mdash; <cite>U.S. Energy Information Administration</cite></li>
+        <li><a href="https://www.bls.gov/schedule/2026/11_sched_list.htm" target="_blank" rel="noopener">US October CPI release — November 10 at 8:30 a.m. ET</a> &mdash; <cite>U.S. Bureau of Labor Statistics</cite></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42887446/" target="_blank" rel="noopener">KETO-MINOX finds no extra redox benefit from an energy-restricted ketogenic diet</a> &mdash; <cite>Clinical Nutrition via PubMed</cite></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42868613/" target="_blank" rel="noopener">A four-week trial reports fitness gains alongside worse sleep scores in ketogenic-diet groups</a> &mdash; <cite>Applied Physiology, Nutrition, and Metabolism via PubMed</cite></li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13673408/" target="_blank" rel="noopener">Small fish-rich keto intervention links higher TMAO with several simultaneous diet changes</a> &mdash; <cite>Endocrinology, Diabetes &amp; Metabolism via PubMed Central</cite></li>
+        <li><a href="https://github.com/github/copilot-cli/releases" target="_blank" rel="noopener">GitHub Copilot CLI 1.0.106-2 smooths MCP and session handling</a> &mdash; <cite>GitHub</cite></li>
+        <li><a href="https://developer.android.com/blog/posts/build-it-your-way-a-next-era-of-android-development" target="_blank" rel="noopener">Android Studio Rabbit 2 opens to 40-plus coding agents</a> &mdash; <cite>Android Developers</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot/" target="_blank" rel="noopener">GitHub Copilot can create and save images in chat</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://www.mediaoffice.abudhabi/en/crown-prince-news/khaled-bin-mohamed-bin-zayed-meets-sam-altman-and-witnesses-signing-of-agreements-with-openai/" target="_blank" rel="noopener">Abu Dhabi announces four OpenAI agreements, including a live government pilot</a> &mdash; <cite>Abu Dhabi Media Office</cite></li>
+        <li><a href="https://www.relexsolutions.com/news/relex-advances-agentic-ai-platform-to-orchestrate-the-value-chain/" target="_blank" rel="noopener">RELEX expands its agentic platform across retail operations</a> &mdash; <cite>RELEX Solutions</cite></li>
+        <li><a href="https://www.businessinsider.com/home-depot-chief-open-ai-agents-muse-instinct-2026-10" target="_blank" rel="noopener">Home Depot wants shopping agents to identify themselves</a> &mdash; <cite>Business Insider</cite></li>
+        <li><a href="https://www.virtana.com/press-release/virtana-launches-agentic-observability-enterprise-management-ushering-in-a-new-era-of-collaborative-ai-agents-for-autonomous-it/" target="_blank" rel="noopener">Virtana proposes MCP and A2A coordination for IT incidents</a> &mdash; <cite>Virtana</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/" target="_blank" rel="noopener">Copilot will retire three models on November 16</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" rel="noopener">GPT-6 Rosalind Research targets approved life-sciences workflows</a> &mdash; <cite>OpenAI Help Center</cite></li>
+        <li><a href="https://canary.arena.ai/leaderboard/agent" target="_blank" rel="noopener">Agent Arena ranks Claude Opus 5.5 first in its October 28 agent-session snapshot</a> &mdash; <cite>Agent Arena</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app/" target="_blank" rel="noopener">Copilot app adds a local workflow for code-scanning alerts</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.19" target="_blank" rel="noopener">LangGraph 1.2.19 fixes streaming and paused-tool reporting</a> &mdash; <cite>LangGraph / GitHub</cite></li>
+        <li><a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0" target="_blank" rel="noopener">MCP server release updates certificate dependencies</a> &mdash; <cite>Model Context Protocol / GitHub</cite></li>
+        <li><a href="https://github.com/vllm-project/vllm/releases" target="_blank" rel="noopener">vLLM v0.33.0 adds model support and drops CUDA 12.9 artifacts</a> &mdash; <cite>vLLM / GitHub</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.30181" target="_blank" rel="noopener">Deep Search in Real-World Web Environments</a> &mdash; <cite>arXiv / Hugging Face Daily Papers</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.30949" target="_blank" rel="noopener">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a> &mdash; <cite>arXiv / Hugging Face Daily Papers</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.41738" target="_blank" rel="noopener">Search When Needed, Proceed When Reliable: Metacognitive Reliability Supervision for Efficient Agentic Search</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.39790" target="_blank" rel="noopener">Long-Term Agent Memory through Complementary Curation and Consolidation</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.40758" target="_blank" rel="noopener">More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.41149" target="_blank" rel="noopener">Counterfactual Pairwise Augmentation Improves Small Pointwise LLM Judges</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener">When Agents Fail: Model or Harness--Who&#39;s to Blame?</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.25568" target="_blank" rel="noopener">Design and Cross-Domain Evaluation of an Agent Execution Harness</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.21412" target="_blank" rel="noopener">JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.26770" target="_blank" rel="noopener">HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.18868" target="_blank" rel="noopener">Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener">VeriCUA: Verification as Agentic Exploration for Computer-Using Agents</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.28679" target="_blank" rel="noopener">VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.30491" target="_blank" rel="noopener">What the Trace Shows and What the Label Says: Auditing Behavioral Detectors in Agent Evaluation</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=iwnrFggbpQ0" target="_blank" rel="noopener">Why The Universe Doesn’t Add Up (And How We’re Going To Try To Figure It Out)</a> &mdash; <cite>NASA Goddard</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=eYViePMalJE" target="_blank" rel="noopener">The Universe Has Been Expanding Since the Big Bang. Just Not How We Thought.</a> &mdash; <cite>PBS Space Time</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=H93WFv0w_G0" target="_blank" rel="noopener">Extended Dark Energy analysis using DESI DR2 BAO measurements</a> &mdash; <cite>Dark Energy Spectroscopic Instrument</cite></li>
+        <li><a href="https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/" target="_blank" rel="noopener">NASA asks industry about possible commercial Hubble servicing</a> &mdash; <cite>NASA Science</cite></li>
+        <li><a href="https://www.jpl.nasa.gov/news/nasas-voyager-1-conserves-power-resolves-brief-communications-pause/" target="_blank" rel="noopener">Voyager 1 saves power after a 48-hour communications pause</a> &mdash; <cite>NASA Jet Propulsion Laboratory</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.31200" target="_blank" rel="noopener">Eight newly studied triple-star systems are nearly coplanar</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.36446" target="_blank" rel="noopener">Giant impacts may help rocky planets retain primordial atmospheres</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://news.stonybrook.edu/university/stony-brook-paleontologist-dinosaur-discovery-reveals-a-specialized-fruit-eater/" target="_blank" rel="noopener">A Cretaceous dinosaur’s skull points to fruit eating</a> &mdash; <cite>Stony Brook University</cite></li>
+        <li><a href="https://news.cornell.edu/stories/2026/10/unifying-mechanism-cancer-driving-mutations" target="_blank" rel="noopener">A DNA-folding mechanism may connect a family of cancer mutations</a> &mdash; <cite>Cornell Chronicle</cite></li>
+        <li><a href="https://www.naturalresources.wales/about-us/news-and-blogs/news/patience-pays-off-for-rare-species-in-pembrokeshire/?lang=en" target="_blank" rel="noopener">Rare oil beetle larvae found again at Wales’s only known site</a> &mdash; <cite>Natural Resources Wales</cite></li>
+        <li><a href="https://news.mit.edu/2026/capturing-complete-process-of-embryonic-development-1028" target="_blank" rel="noopener">A cell-lineage map follows mouse embryos across development</a> &mdash; <cite>MIT News</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=LiAAayT_v84" target="_blank" rel="noopener">Two Different Things Are Killing Sharks</a> &mdash; <cite>SciShow</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=dfA_VA20A2Y" target="_blank" rel="noopener">How To Hold Something That&#39;s 10,000,000 Degrees</a> &mdash; <cite>SciShow</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=F3DH6dYSyOI" target="_blank" rel="noopener">What Star Trek got right about science (and what it got wrong) | Part 2</a> &mdash; <cite>The Royal Institution</cite></li>
+        <li><a href="https://www.dfae.admin.ch/en/newnsb/tTt86k6kzUJW" target="_blank" rel="noopener">Switzerland reopens its diplomatic office in Pyongyang</a> &mdash; <cite>Swiss Federal Department of Foreign Affairs</cite></li>
+        <li><a href="https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-bharat-renewable-energy-summit-expo-2026-on-2nd-november/" target="_blank" rel="noopener">Bharat Renewable Energy Summit opens in New Delhi</a> &mdash; <cite>Prime Minister’s Office, Government of India</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=2Ts3d6kgwGM" target="_blank" rel="noopener">Ukraine&#39;s air-alert app hit by false attack warnings | DW News</a> &mdash; <cite>DW News</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=jLF5jaXX0uc" target="_blank" rel="noopener">Scam Centres Expand Into Madagascar After Crackdown in Cambodia | GRAVITAS</a> &mdash; <cite>WION</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=odu797q0d3c" target="_blank" rel="noopener">Why is the UK Prime Minister saying he&#39;s open to a slavery apology? | BBC News</a> &mdash; <cite>BBC News</cite></li>
+        <li><a href="https://www.rolexparismasters.com/en/news/article/edition-2026-main-draw-complete-draw-matchups-opponents" target="_blank" rel="noopener">Paris qualifying completes the men’s singles draw</a> &mdash; <cite>Rolex Paris Masters</cite></li>
+        <li><a href="https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html" target="_blank" rel="noopener">Ignacio Buse becomes the first Peruvian to win at the Paris Masters</a> &mdash; <cite>Tennis Majors</cite></li>
+        <li><a href="https://www.tennis.com/tournaments/merida-open-akron/matches/c-liu-vs-t-prozorova-2026-11-02" target="_blank" rel="noopener">Claire Liu opens the Hong Kong Open with a straight-sets win</a> &mdash; <cite>Tennis.com</cite></li>
+        <li><a href="https://www.fia.com/news/f1-antonelli-crowned-f1s-youngest-world-champion-verstappen-wins-mexico-city" target="_blank" rel="noopener">Verstappen wins in Mexico as Antonelli clinches the F1 title</a> &mdash; <cite>Fédération Internationale de l’Automobile (FIA)</cite></li>
+        <li><a href="https://www.liverpoolfc.com/news/match-report-liverpool-arsenal-premier-league-november-2026" target="_blank" rel="noopener">Arsenal leave Anfield with a 1–0 Premier League win</a> &mdash; <cite>Liverpool FC</cite></li>
+        <li><a href="https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-athletic-club-real-sociedad-11" target="_blank" rel="noopener">Athletic Club edge Real Sociedad 2–1 in the Basque derby</a> &mdash; <cite>LALIGA</cite></li>
+        <li><a href="https://goodminton.fi/en/articles/doubles-first-three-shots" target="_blank" rel="noopener">Train the first three shots as one badminton doubles sequence</a> &mdash; <cite>Goodminton Academy</cite></li>
+        <li><a href="https://thegodofsports.com/blogs/news/victor-thruster-ryuga-metallic-badminton-racket-review" target="_blank" rel="noopener">A recent review maps the Ryuga Metallic’s power-versus-speed trade-off</a> &mdash; <cite>God of Sports</cite></li>
+        <li><a href="https://www.racket-world.de/VICTOR-Auraspeed-HS-Plus-Review" target="_blank" rel="noopener">VICTOR Auraspeed HS Plus review – 9/10 control and 8/10 power</a> &mdash; <cite>Racket World</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=tIiRK7hKScU" target="_blank" rel="noopener">Race Highlights | 2026 Mexico City Grand Prix</a> &mdash; <cite>FORMULA 1</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=DfOFBAiT2XU" target="_blank" rel="noopener">Jonatan Christie vs Lakshya Sen | Maintained pressure and focus</a> &mdash; <cite>BWF TV</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=1PfJqdMfVDs" target="_blank" rel="noopener">Line Højmark Kjærsfeldt vs Pusarla V. Sindhu | High-tempo women&#39;s singles final</a> &mdash; <cite>BWF TV</cite></li>
+        <li><a href="https://timesofindia.indiatimes.com/entertainment/telugu/movies/news/sankarabharanam-to-return-to-theatres-in-november-k-viswanaths-1980-musical-classic-gets-4k-restoration/articleshow/135349146.cms" target="_blank" rel="noopener">‘Sankarabharanam’ returns to cinemas with a 4K restoration</a> &mdash; <cite>The Times of India</cite></li>
+        <li><a href="https://www.thehansindia.com/cinema/mythri-movie-makers-mitti-and-moon-films-join-hands-for-mynaa-1137990" target="_blank" rel="noopener">Mythri Movie Makers and Mitti and Moon launch ‘Mynaa’</a> &mdash; <cite>The Hans India</cite></li>
+        <li><a href="https://www.thehansindia.com/cinema/nagababu-unveils-title-poster-of-mailu-rayi-1137271" target="_blank" rel="noopener">Nagababu unveils the title poster for ‘Mailu Rayi’</a> &mdash; <cite>The Hans India</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/news/2026/Nov/02/ah-trailer-unveiled-rahul-vijay-calls-it-a-dark-crime-thriller" target="_blank" rel="noopener">‘AH’ will open in theatres on November 12</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://telugu.tfpc.in/2026/10/12/vijay-antonys-nanna-kutti-set-for-a-diwali-release-on-november-6/" target="_blank" rel="noopener">‘Nanna Kutti’ is scheduled for a Diwali-week theatrical release</a> &mdash; <cite>Telugu Film Producers Council</cite></li>
+        <li><a href="https://telugu.tfpc.in/2026/10/27/chandrayaan-rocket-revealed-film-to-be-released-on-november-13/" target="_blank" rel="noopener">‘Chandrayaan’ moves to a November 13 theatrical date</a> &mdash; <cite>Telugu Film Producers Council</cite></li>
+        <li><a href="https://www.thehansindia.com/cinema/tollywood/dark-choclate-trailer-launched-1135846" target="_blank" rel="noopener">‘Dark Chocolate’ sets a November 13 cinema release</a> &mdash; <cite>The Hans India</cite></li>
+        <li><a href="https://www.netflix.com/tudum/articles/new-on-netflix?lv=true" target="_blank" rel="noopener">Netflix schedules ‘Murder in Galicia’ for November 13</a> &mdash; <cite>Netflix Tudum</cite></li>
+        <li><a href="https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026" target="_blank" rel="noopener">Prime Video sets Muhammad Ali series ‘The Greatest’ for November 4</a> &mdash; <cite>About Amazon / Prime Video</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=0pow_UtMhcM" target="_blank" rel="noopener">O Mysaa Re Lyrical Video - Mysaa | Rashmika | Rawindra Pulle | Jakes Bejoy| UnFormula Films</a> &mdash; <cite>T-Series Telugu</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=vFBMumCsSkc" target="_blank" rel="noopener">Koodukuntunnadi Song | Raju Weds Rambai | Akhil Uddemari, Tejaswi Rao | Suresh Bobbili</a> &mdash; <cite>Aditya Music</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=2hLErDE7jps" target="_blank" rel="noopener">Edho Edho Lyrical Video | The Sesso Telugu Movie | Yesh Raj, Moupiya Gauswami | Telugu Love Songs</a> &mdash; <cite>Mango Music</cite></li>
+        <li><a href="https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/" target="_blank" rel="noopener">Is There Anything Left in the Dream of Cold Fusion?</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://www.equator.org/articles/arundhati-roy-artificial-intelligence" target="_blank" rel="noopener">Apocalypse Now and Then</a> &mdash; <cite>EQUATOR</cite></li>
+        <li><a href="https://aeon.co/essays/why-real-intelligence-is-something-more-than-optimisation" target="_blank" rel="noopener">Reason is more than a tool</a> &mdash; <cite>Aeon</cite></li>
+        <li><a href="https://latent.space/p/arca/" target="_blank" rel="noopener">Agents Prompt People: Using Agents for Long-Horizon Financial Work</a> &mdash; <cite>Latent Space</cite></li>
+        <li><a href="https://link.springer.com/book/10.1007/978-3-032-26749-8" target="_blank" rel="noopener">Reliable Evaluations for LLMs and AI Agents</a> &mdash; <cite>Springer Nature</cite></li>
+        <li><a href="https://www.penguinrandomhouse.com/books/826774/lost-in-space-by-neil-degrasse-tyson-and-lindsey-nyx-walker/" target="_blank" rel="noopener">Lost in Space</a> &mdash; <cite>Penguin Random House</cite></li>
+        <li><a href="https://www.penguinrandomhouse.com/books/828104/multiplicity-by-telmo-pievani/" target="_blank" rel="noopener">Multiplicity</a> &mdash; <cite>Penguin Random House</cite></li>
+        <li><a href="https://sanjosespotlight.com/the-biz-beat-popular-san-jose-mexican-bakery-opens-4th-location/" target="_blank" rel="noopener">Panapolis opens its fourth San Jose bakery on Snell Avenue</a> &mdash; <cite>San José Spotlight</cite></li>
+        <li><a href="https://newsroom.lufthansagroup.com/en/swiss-celebrates-inaugural-flight-to-bengaluru/" target="_blank" rel="noopener">SWISS begins five-weekly Zurich–Bengaluru flights</a> &mdash; <cite>Lufthansa Group Newsroom</cite></li>
+        <li><a href="https://www.tomsguide.com/wellness/smartwatches/dont-wait-until-black-friday-garmins-rugged-smartwatch-with-a-flashlight-is-usd100-off-right-now" target="_blank" rel="noopener">Garmin Instinct 3 AMOLED is listed at $349 on Amazon</a> &mdash; <cite>Tom’s Guide</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=ZdnOKPavK8Y" target="_blank" rel="noopener">Italian Calcio - What to Know Before You Go to an Italian Football Match</a> &mdash; <cite>Wolters World</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=N6OeaTtjILo" target="_blank" rel="noopener">Impression of Lanzhou, Hurrica, Rosamunde Sausage Grill | Check, Please! Bay Area</a> &mdash; <cite>KQED Food</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=tjtpF4JiDL0" target="_blank" rel="noopener">How to Beat Jet Lag (Without Looking Like a Fool)</a> &mdash; <cite>Wolters World</cite></li>
+      </ol>
+    </details>
+    <p>Want a topic added, dropped or weighted differently? Tell your agent in any session or add a line to the local feedback file; the next morning's run applies it.</p>
+    <p>Compiled on 2026-11-02 10:20 PST by research intelligence agents from verified sources. Private and calibrated to your context.</p>
+  </div>
+</div>
+<script>
+// Techmeme-inspired dynamic functionality for The Morning Brief
+(function() {
+  // Quick jump & date features
+  window.addEventListener('DOMContentLoaded', function() {
+    var searchForm = document.getElementById('briefSearchForm');
+    if (searchForm) {
+      searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var q = (document.getElementById('briefSearchInput') || {}).value;
+        if (q) {
+          window.find ? window.find(q) : alert('Searching for: ' + q);
+        }
+      });
+    }
+  });
+})();
+
+</script>
+</body>
+</html>

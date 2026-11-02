@@ -1,0 +1,2919 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Morning Brief - Home - Monday, November 2, 2026</title>
+<meta name="description" content="Agent papers ask where failures sit—in the model or the harness—and vLLM ships a fresh release. NASA is considering Hubble servicing, Maruti reports October sales, and Prime Video’s November slate brings new viewing dates.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="alternate" type="application/atom+xml" title="The Morning Brief" href="https://rajasekharmekala.github.io/daily-brief/feed.xml">
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.35;
+  font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  font-size: 15.5px;
+  margin: 0 auto;
+  max-width: 90em;
+  min-width: 61em;
+  padding: 0 1.6em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links (Techmeme iconic link styling) */
+a {
+  text-decoration: none;
+  color: #002848;
+}
+a:visited {
+  color: #902050;
+}
+a:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+/* Headings & Techmeme Typography */
+h1, h2, h3, h4, h5 {
+  font-family: Optima, "Century Gothic", -apple-system, sans-serif;
+  color: #445555;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.45em;
+  padding: 0.75em 0 0.5em;
+}
+h3 {
+  font-size: 1.25em;
+  padding: 0.65em 0 0.35em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
+}
+
+cite {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.96em;
+  color: #686860;
+}
+cite a, cite a:visited {
+  color: #686860;
+}
+cite a:hover {
+  color: #002848;
+}
+
+.drhed {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  color: #408840;
+  font-weight: bold;
+  margin-right: 0.3em;
+  font-size: 0.94em;
+}
+
+.bls {
+  margin-left: -0.1em;
+}
+.bls a {
+  white-space: nowrap;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  font-size: 0.94em;
+}
+
+/* Pre-navbar / Header Topline */
+.pagecont {
+  margin-bottom: 3.5em;
+}
+.prenavbar {
+  margin-bottom: 0.4em;
+}
+.topline {
+  border-bottom: 1px solid #cccccc;
+  margin-top: 0.35em;
+  line-height: 1.7em;
+  font-size: 0.88em;
+  color: #666666;
+  padding-bottom: 0.25em;
+  clear: both;
+}
+.topline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.topline a {
+  color: #666666;
+}
+.topline a:visited {
+  color: #666666;
+}
+.topline a:hover {
+  color: #000000;
+  text-decoration: underline;
+  background: transparent;
+}
+.topllinks {
+  float: left;
+}
+.topllinks a {
+  padding-right: 1.3em;
+}
+.toprlinks {
+  float: right;
+}
+.toprlinks span {
+  padding-left: 0.9em;
+}
+
+/* Logo Tab table */
+.logotab {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 0.6em;
+}
+.logotab td {
+  vertical-align: middle;
+  width: 33.33%;
+}
+td.logobox {
+  padding: 0.6em 0;
+}
+.logo-title {
+  font-family: Optima, "Century Gothic", sans-serif;
+  font-size: 2.7em;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  color: #174a61;
+  display: inline-block;
+  line-height: 1;
+}
+.logo-title:visited {
+  color: #174a61;
+}
+.logo-title:hover {
+  text-decoration: none;
+  background: transparent;
+}
+.logo-sub {
+  font-size: 0.82em;
+  color: #777777;
+  font-weight: normal;
+  display: block;
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+td.datebox {
+  text-align: center;
+  color: #444444;
+  font-size: 0.96em;
+}
+.date-str {
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #222222;
+}
+.weather-str {
+  font-size: 0.9em;
+  color: #666666;
+  margin-top: 3px;
+}
+
+td.searchbox {
+  text-align: right;
+  font-size: 0.92em;
+}
+.sbti {
+  width: 13em;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 6px;
+  font-family: inherit;
+  font-size: 0.96em;
+}
+.sbti-btn {
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 9px;
+  font-size: 0.96em;
+  cursor: pointer;
+  font-family: inherit;
+}
+.sbti-btn:hover {
+  background: #e0e8f0;
+}
+
+/* Navigation Bar (Techmeme Navy Blue) */
+.navbar {
+  background: #174a61;
+  text-transform: uppercase;
+  clear: both;
+  line-height: 1.9em;
+  font-size: 0.88em;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+}
+.navtabs {
+  padding: 0;
+}
+.navtabs a {
+  padding: 0.3em 0.8em;
+  display: inline-block;
+  color: #dddddd;
+  font-weight: bold;
+}
+.navtabs a:visited {
+  color: #dddddd;
+}
+.navtabs a:hover {
+  background: #578aa1;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navtabs span.iamhere a {
+  background: #578aa1;
+  color: #ffffff;
+}
+.navtabs span.iamhere a:visited {
+  color: #ffffff;
+}
+.sisnav {
+  float: right;
+}
+.sisnav a {
+  color: #c0d8e8;
+  font-weight: normal;
+  padding: 0.3em 0.7em;
+}
+.sisnav a:visited {
+  color: #c0d8e8;
+}
+.sisnav a:hover {
+  color: #ffffff;
+  background: #25607b;
+}
+
+/* Sub-nav / Section Jump Bar */
+.subnavbar {
+  background: #f4f6f8;
+  border-bottom: 1px solid #d8e0e6;
+  padding: 0.35em 0.6em;
+  font-size: 0.85em;
+  line-height: 1.7em;
+  margin-bottom: 0.9em;
+}
+.subnavbar a {
+  color: #004860;
+  padding: 0.1em 0.5em;
+  font-weight: 600;
+  display: inline-block;
+}
+.subnavbar a:hover {
+  background: #d8e8f4;
+  text-decoration: none;
+}
+.subnavbar .subnav-label {
+  font-weight: bold;
+  color: #556677;
+  padding-right: 0.4em;
+  text-transform: uppercase;
+  font-size: 0.92em;
+}
+
+/* Executive Synthesis / Theme Banner */
+.exec-theme-box {
+  background: #fdfbe8;
+  border: 1px solid #d8c878;
+  border-left: 5px solid #d4a017;
+  padding: 0.75em 1.1em;
+  margin: 0.8em 0 1.3em;
+  font-size: 0.98em;
+  line-height: 1.5em;
+  color: #2b2b20;
+  border-radius: 2px;
+}
+.exec-theme-box strong {
+  color: #604000;
+  font-size: 1.05em;
+  display: inline;
+}
+
+/* Layout Columns */
+.ed {
+  clear: both;
+}
+.ed:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#topcol1 {
+  float: left;
+  width: 50%;
+  margin-top: 0.5em;
+  padding-right: 1.3%;
+}
+#topcol23 {
+  float: left;
+  width: 48.5%;
+  margin-left: 0.2%;
+}
+#topcol2 {
+  float: left;
+  width: 66%;
+  margin-top: 0.5em;
+}
+#topcol3 {
+  float: right;
+  width: 32%;
+  margin-top: 0.5em;
+  margin-left: 2%;
+  position: relative;
+}
+
+/* Bottom 2-column layout */
+.abotcols {
+  clear: both;
+  width: 100%;
+  border-bottom: 2px solid #e8e8e8;
+  padding-top: 1.2em;
+  margin-bottom: 1.3em;
+}
+#botcol1 {
+  float: left;
+  width: 49%;
+  padding-right: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+#botcol2 {
+  float: right;
+  width: 49%;
+  padding-left: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+
+/* Clusters and Items */
+.clus {
+  padding-bottom: 0.7em;
+}
+.item {
+  padding-top: 0.4em;
+  padding-bottom: 1.35em;
+  clear: both;
+  border-bottom: 1px solid #dddddd;
+}
+.item:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.item.last {
+  border-bottom: none;
+}
+.itc1 {
+  padding-left: 0.4em;
+}
+.itc2 {
+  padding: 0;
+}
+
+/* Shared cluster table / headline row */
+.shrtbl {
+  width: 100%;
+  border-collapse: collapse;
+}
+.shrtbl tr > td:first-child {
+  vertical-align: middle;
+}
+.shrtbl tr > td:first-child + td {
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 0.85em;
+  color: #777777;
+}
+
+.ii {
+  padding-top: 0.35em;
+  line-height: 1.4em;
+  font-size: 1.02em;
+}
+
+/* Image Thumbnails & Fallbacks */
+.ill {
+  float: right;
+  width: 120px;
+  height: 85px;
+  object-fit: cover;
+  padding: 0.1em 0 0.5em 0.8em;
+  border-radius: 3px;
+}
+.ill-icon-wrap {
+  float: right;
+  width: 78px;
+  height: 64px;
+  margin: 0.1em 0 0.5em 0.8em;
+  background: #f3f6f9;
+  border: 1px solid #d8e0e6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+}
+.ill-icon-wrap img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Headline typography scale */
+.ourh {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+}
+.ourh:link {
+  color: #004860;
+}
+.ourh:visited {
+  color: #a04860;
+}
+.ourh:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+.L1 { font-size: 1.18em; font-weight: bold; }
+.L2 { font-size: 1.28em; font-weight: bold; letter-spacing: -0.01em; }
+.L3 { font-size: 1.38em; font-weight: bold; letter-spacing: -0.015em; }
+.L4 { font-size: 1.48em; font-weight: bold; letter-spacing: -0.02em; }
+.L5 { font-size: 1.6em; font-weight: bold; letter-spacing: -0.025em; }
+
+.item-summary {
+  color: #111111;
+  font-size: 0.96em;
+}
+
+.item-why {
+  margin-top: 0.4em;
+  padding: 0.35em 0.6em;
+  background: #f7fafc;
+  border-left: 3px solid #6090a8;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  color: #334455;
+  border-radius: 0 2px 2px 0;
+}
+.item-why strong {
+  color: #174a61;
+  font-size: 0.94em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.3em;
+}
+
+/* Related items under a cluster */
+.relitems {
+  margin-top: 0.45em;
+  margin-bottom: 0.85em;
+  border-left: 2px solid #e0e8ef;
+  padding-left: 0.65em;
+}
+.relitems .item {
+  padding-top: 0.35em;
+  padding-bottom: 0.65em;
+  border-bottom: 1px dotted #e0e0e0;
+}
+.relitems .item:last-child {
+  border-bottom: none;
+}
+.relitems .ourh {
+  font-size: 1.05em;
+}
+
+/* Discussion / Sub-links / Secondary items */
+.dbpt {
+  padding-top: 0.4em;
+  font-size: 0.92em;
+  line-height: 1.42em;
+}
+
+/* Right-hand column: Newest / Chronological River */
+#topcol3 .item {
+  padding: 0.6em 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+#topcol3 .ii {
+  padding-top: 0.25em;
+  font-size: 0.96em;
+}
+#topcol3 a.nfdl {
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #004860;
+  font-size: 0.98em;
+}
+#topcol3 a.nfdl:visited {
+  color: #a04860;
+}
+#topcol3 a.nfdl:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+.ago {
+  color: #777777;
+  font-size: 0.84em;
+  padding-top: 0.35em;
+}
+
+/* Grey sponsor / highlighted background box */
+#tkzwuvgyr {
+  padding: 0.7em 1em 1em;
+  background: #f4f6f8;
+  border: 1px solid #e0e6ec;
+  border-radius: 3px;
+  margin-bottom: 1.3em;
+}
+#tkzwuvgyr h3 {
+  padding-top: 0.2em;
+  color: #223344;
+}
+#tkzwuvgyr .item {
+  border: none;
+  padding-bottom: 0.6em;
+}
+
+/* Pod / Media item box (Techmeme style) */
+.pod-box {
+  margin: 1em 0;
+  padding: 0.85em;
+  background: #f9fcfe;
+  border: 1px solid #d8e0e8;
+  border-radius: 3px;
+}
+.pod-box:first-of-type {
+  margin-top: 0.4em;
+}
+.pod-head {
+  font-size: 0.88em;
+  font-weight: bold;
+  color: #174a61;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+.pod-name {
+  font-weight: bold;
+  color: #004860;
+}
+
+/* Deep Dive longform article styled into Techmeme editorial */
+.deepdive-container {
+  background: #fcfdfe;
+  border: 1px solid #ccd9e2;
+  border-radius: 3px;
+  padding: 1.3em 1.5em;
+  margin: 0.9em 0 1.6em;
+}
+.deepdive-container h2 {
+  font-size: 1.65em;
+  line-height: 1.25;
+  color: #174a61;
+  padding: 0 0 0.35em;
+}
+.deepdive-subtitle {
+  font-size: 1.12em;
+  color: #555555;
+  font-style: italic;
+  margin-bottom: 0.85em;
+}
+.deepdive-keypts {
+  background: #f4f8fb;
+  border-left: 4px solid #174a61;
+  padding: 0.65em 1.1em;
+  margin: 0.85em 0 1.1em;
+  font-size: 0.96em;
+}
+.deepdive-keypts h4 {
+  font-size: 0.96em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #174a61;
+  margin-bottom: 0.45em;
+}
+.deepdive-keypts ul {
+  padding-left: 1.3em;
+  list-style: square;
+}
+.deepdive-keypts li {
+  margin-bottom: 0.35em;
+  line-height: 1.45em;
+}
+.deepdive-body {
+  font-size: 1.04em;
+  line-height: 1.6em;
+  color: #222222;
+}
+.deepdive-body p {
+  padding-bottom: 0.85em;
+}
+.deepdive-body h3 {
+  font-size: 1.3em;
+  padding: 0.85em 0 0.35em;
+  color: #174a61;
+}
+.deepdive-refs {
+  margin-top: 1.3em;
+  padding-top: 0.85em;
+  border-top: 1px solid #d0d8e0;
+  font-size: 0.9em;
+}
+.deepdive-refs ol {
+  padding-left: 1.6em;
+}
+.deepdive-refs li {
+  padding-bottom: 0.45em;
+}
+
+/* Keto Kitchen / Nutrition in Techmeme style */
+.kitchen-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.7em 0 1.1em;
+  font-size: 0.94em;
+  background: #f7faf9;
+  border: 1px solid #cfe0d8;
+}
+.kitchen-table th, .kitchen-table td {
+  padding: 0.45em 0.85em;
+  border: 1px solid #d4e4dc;
+  text-align: left;
+}
+.kitchen-table th {
+  background: #e4f0ea;
+  font-weight: bold;
+  color: #205038;
+}
+
+/* Recipe card & Single Recipe Detail View */
+.recipe-card {
+  border: 1px solid #dcdcdc;
+  background: #ffffff;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
+  border-radius: 3px;
+}
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
+  color: #004860;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+.recipe-macros {
+  font-size: 0.94em;
+  color: #408840;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
+.recipe-cols {
+  display: flex;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+.recipe-cols > div {
+  flex: 1;
+}
+.recipe-cols h5 {
+  font-weight: bold;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
+  margin-bottom: 0.45em;
+  padding-left: 0.2em;
+}
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
+}
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
+}
+
+/* Footer / Run Notes */
+.page-footer {
+  margin-top: 2.8em;
+  padding: 1.3em 0.5em 2.8em;
+  border-top: 1px solid #cccccc;
+  font-size: 0.88em;
+  color: #666666;
+  line-height: 1.55em;
+  clear: both;
+}
+.page-footer a {
+  color: #004860;
+}
+.page-footer details {
+  margin-bottom: 0.85em;
+}
+.page-footer summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #445555;
+}
+.page-footer ul, .page-footer ol {
+  padding-left: 1.6em;
+  margin-top: 0.45em;
+}
+
+/* Archive Page (Techmeme-style directory) */
+.archive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.1em;
+}
+.archive-table th {
+  text-align: left;
+  font-weight: bold;
+  color: #455;
+  font-size: 1.08em;
+  padding: 0.55em 0.75em;
+  border-bottom: 2px solid #aaa;
+  background: #f4f4f4;
+}
+.archive-table td {
+  padding: 0.65em 0.75em;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+.archive-table tr:hover td {
+  background: #f8fbfe;
+}
+.archive-date {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 0.98em;
+}
+.archive-theme {
+  font-size: 1.08em;
+  line-height: 1.4em;
+}
+.archive-theme a {
+  font-weight: bold;
+}
+.archive-meta {
+  font-size: 0.88em;
+  color: #666666;
+  margin-top: 0.35em;
+}
+
+/* Responsive Rules */
+@media only screen and (max-width: 960px) {
+  body {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 0.8em;
+    font-size: 15px;
+  }
+  .logotab td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.3em 0;
+  }
+  td.datebox, td.searchbox {
+    text-align: left;
+  }
+  .navbar {
+    line-height: 2em;
+    font-size: 0.92em;
+  }
+  .sisnav {
+    display: none;
+  }
+  #topcol1, #topcol23, #topcol2, #topcol3, #botcol1, #botcol2 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .recipe-cols {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="pagecont">
+  <!-- Techmeme Prenavbar Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="https://rajasekharmekala.github.io/"><strong>Home</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html"><strong>Archive</strong></a>
+        <a href="https://rajasekharmekala.github.io/portfolio/"><strong>Portfolio Desk</strong></a>
+        <a href="https://rajasekharmekala.github.io/travel-research/"><strong>Travel Research</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html"><strong>Keto Cookbook</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/feed.xml">RSS Feed</a>
+        <span>Issue 12</span>
+      </div>
+      <div class="toprlinks">
+        <span>📍 San Jose: 67° / 46°F, Overcast</span>
+        <span>⏱ ~55 min reading</span>
+        <span>92 items</span>
+      </div>
+    </div>
+
+    <!-- Techmeme Header Logo Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">The Morning Brief</a>
+          <span class="logo-sub">Executive Personal Intelligence Briefing</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Monday, November 2, 2026</div>
+          <div class="weather-str">Sunrise 06:33 · Sunset 17:08 · AQI 48 · Moon: Last quarter, 48% lit</div>
+        </td>
+        <td class="searchbox">
+          <form id="briefSearchForm">
+            <input id="briefSearchInput" class="sbti" type="text" placeholder="Search briefing...">
+            <input class="sbti-btn" type="submit" value="Search">
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Techmeme Iconic Navy Navigation Bar - Dedicated Tabs -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html">Cookbook</a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html">Archives</a>
+      </div>
+      <span class="iamhere"><a href="index.html">Home</a></span>
+      <span class=""><a href="followups.html">Developing Stories</a></span>
+      <span class=""><a href="finance.html">Markets and Money</a></span>
+      <span class=""><a href="nutrition.html">Keto Kitchen</a></span>
+      <span class=""><a href="industry.html">Industry Watch</a></span>
+      <span class=""><a href="papers.html">Agent Papers Radar</a></span>
+      <span class=""><a href="deepdive.html">Deep Dive of the Day</a></span>
+      <span class=""><a href="science.html">Cosmos and Life</a></span>
+      <span class=""><a href="world.html">World and India</a></span>
+      <span class=""><a href="sports.html">Sports</a></span>
+      <span class=""><a href="culture.html">Movies and Music</a></span>
+      <span class=""><a href="library.html">Read and Listen</a></span>
+      <span class=""><a href="local.html">Local and Travel</a></span>
+    </div>
+  </div>
+
+  <!-- Sub-navigation anchor / quick link jumper -->
+  <div class="subnavbar">
+    <span class="subnav-label">Tabs:</span>
+    <a href="index.html" style="font-weight:bold;color:#a04860;">Top Stories</a> |
+    <a href="followups.html" style="">Developing Stories (1m)</a> |     <a href="finance.html" style="">Markets and Money (2m)</a> |     <a href="nutrition.html" style="">Keto Kitchen (6m)</a> |     <a href="industry.html" style="">Industry Watch (6m)</a> |     <a href="papers.html" style="">Agent Papers Radar (6m)</a> |     <a href="deepdive.html" style="">Deep Dive of the Day (12m)</a> |     <a href="science.html" style="">Cosmos and Life (5m)</a> |     <a href="world.html" style="">World and India (2m)</a> |     <a href="sports.html" style="">Sports (4m)</a> |     <a href="culture.html" style="">Movies and Music (4m)</a> |     <a href="library.html" style="">Read and Listen (3m)</a> |     <a href="local.html" style="">Local and Travel (2m)</a>  </div>
+
+  <!-- Executive Synthesis Theme Banner -->
+  <div class="exec-theme-box">
+    <strong>Executive Synthesis:</strong> Agent papers ask where failures sit—in the model or the harness—and vLLM ships a fresh release. NASA is considering Hubble servicing, Maruti reports October sales, and Prime Video’s November slate brings new viewing dates.
+  </div>
+
+  <!-- ==================== HOME TAB VIEW ==================== -->
+  <div class="ed">
+    <!-- Left Column: Top Stories / Don't Miss -->
+    <div id="topcol1">
+      <h2 id="sec-top">Don't Miss</h2>
+      <div class="clus">
+          <div class="item" id="item-f028d80ce0">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 23</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L3"><a class="ourh" href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener">When Agents Fail: Model or Harness--Who&#39;s to Blame?</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">This study argues that agent performance belongs to a model–harness pairing, then separates valid completion, model–harness fit, cross-model fit, interaction effects, and token load. It evaluates four general-purpose harnesses with four models across six benchmarks; 111 settings produce 52,168 trajectories. The authors find that rankings can change by model and benchmark, and that task score may diverge from whether a run completes in an evaluable form. The study covers selected public systems and benchmarks, so it supports interaction-aware comparisons rather than a universal harness ranking.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This supports your production-agent harness work by separating execution completion from answer correctness and model–runtime fit.
+    </div>
+  </div>
+</div>
+
+          <div class="item" id="item-35d6722352">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://github.com/vllm-project/vllm/releases" target="_blank" rel="noopener">vLLM / GitHub</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://github.com/vllm-project/vllm/releases" target="_blank" rel="noopener"><img class="ill" src="media/35d6722352.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://github.com/vllm-project/vllm/releases" target="_blank" rel="noopener">vLLM v0.33.0 adds model support and drops CUDA 12.9 artifacts</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The vLLM maintainers released v0.33.0 on November 2, reporting 927 commits from 389 contributors, including 122 new contributors. The update adds support for models such as Reflection Beam-1.0 and Recursive Flint, upgrades to PyTorch 2.14, and drops CUDA 12.9 wheels and images in favor of CUDA 13.0 artifacts. The notes also cite hardware-specific speculative-decoding gains; those are project-reported PR benchmarks, not one general performance comparison.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For agent runtime and serving work, check the CUDA 13.0 compatibility change and the new model support before adopting this vLLM release.
+    </div>
+  </div>
+</div>
+
+          <div class="item" id="item-2254c23f5d">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/" target="_blank" rel="noopener">NASA Science</a>:</cite>
+      </td>
+      <td>
+<span>3 days ago</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/" target="_blank" rel="noopener"><img class="ill" src="media/2254c23f5d.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/" target="_blank" rel="noopener">NASA asks industry about possible commercial Hubble servicing</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">NASA issued a Request for Information on Oct. 29 to learn whether commercial providers could boost Hubble’s orbit, service or upgrade the telescope, or safely dispose of it at mission end. NASA says Hubble may re-enter in 2033–2034 and that any servicing mission would need to take place by 2032; responses to the request are due Nov. 30. This is an exploration of industry capabilities, not a selected contractor or approved mission, while the agency develops a future flagship telescope.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It adds a measured mission-planning angle to your astronomy interests: a possible life extension is being scoped against orbital decay and a 2032 deadline.
+    </div>
+  </div>
+</div>
+
+          <div class="item" id="item-60906de459">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026" target="_blank" rel="noopener">Maruti Suzuki</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026" target="_blank" rel="noopener"><img class="ill" src="media/60906de459.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026" target="_blank" rel="noopener">Maruti Suzuki records its highest-ever monthly sales in October</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Maruti Suzuki said it sold 276,120 units in October 2026, its highest monthly total to date. Domestic sales also reached a record, at 216,789 units; sales to other original-equipment manufacturers were 9,459 and exports were 49,872. The company release attributes the figures to its own sales tally and separates domestic sales, other-OEM sales and exports. It is one company’s dispatch data, rather than a full industry measure, but adds a primary-source datapoint to the month’s vehicle-sales reports.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This primary company release adds a dated auto-sector datapoint to the India markets section you follow.
+    </div>
+  </div>
+</div>
+
+          <div class="item" id="item-88a65fe052">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html" target="_blank" rel="noopener">Tennis Majors</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html" target="_blank" rel="noopener"><img class="ill" src="media/88a65fe052.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html" target="_blank" rel="noopener">Ignacio Buse becomes the first Peruvian to win at the Paris Masters</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Ignacio Buse beat Zizou Bergs 6–2, 6–4 on Monday to become the first Peruvian to win a match at the Paris Masters. Tennis Majors reports that Buse converted four of 10 break points, while Bergs made 29 unforced errors. The result sets Buse against fourth seed Daniil Medvedev in round two. See the tournament’s [official draw](https://www.rolexparismasters.com/en/draws) and [day-by-day schedule](https://www.rolexparismasters.com/en/news/article/2026-edition-complete-schedule-qualifying-main-draw-singles-doubles-wheelchair-tennis) for the next matches.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> A notable new result from the Paris Masters, alongside the tournament’s current draw and schedule.
+    </div>
+  </div>
+</div>
+
+          <div class="item" id="item-fd51014413">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026" target="_blank" rel="noopener">About Amazon / Prime Video</a>:</cite>
+      </td>
+      <td>
+<span>3 days ago</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026" target="_blank" rel="noopener"><img class="ill" src="media/fd51014413.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026" target="_blank" rel="noopener">Prime Video sets Muhammad Ali series ‘The Greatest’ for November 4</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Prime Video’s U.S. November slate schedules The Greatest for November 4 and describes it as the first authorized scripted series about Muhammad Ali’s life. The official listing places it among the month’s new Prime Originals. This is a confirmed streaming-series date rather than a review, so the source establishes availability and format but makes no claim about the finished show’s quality.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For the series-and-film titles you follow, this adds a confirmed Prime Video date for a biographical drama.
+    </div>
+  </div>
+</div>
+
+      </div>
+      <h2 style="padding-top:1em;"><a href="followups.html">Developing Stories &rarr;</a></h2>
+<div style="font-size:0.92em;color:#555;padding-bottom:0.5em;"><p>Only one follow-up survived source verification: the re-entry forecast moved to November 3–5. Two other candidate updates could not be confirmed at their linked source pages, so this row is short.</p></div>      <div class="clus">
+            <div class="item" id="item-60876890c9">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.wral.com/weather/swift-reentry-nov-2026/" target="_blank" rel="noopener">WRAL</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.wral.com/weather/swift-reentry-nov-2026/" target="_blank" rel="noopener"><img class="ill" src="media/60876890c9.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.wral.com/weather/swift-reentry-nov-2026/" target="_blank" rel="noopener">Swift re-entry forecasts move to 3–5 November</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">After the earlier covered item “NASA&#39;s Swift observatory ends science operations and is expected to re-enter around 2 November,” WRAL reports a later forecast window. Aerospace Corporation estimates re-entry from 2:30 a.m. Eastern on November 3 to 4:30 a.m. Eastern on November 5; NASA&#39;s SWORDEC forecast gives a 24-hour window beginning at 12:18 a.m. Eastern on November 3. The estimates may move as the orbit decays, and the location remains uncertain until late in the descent.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This is a new timing update on a space-mission ending you were already following.
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <!-- Right Container: Middle Lead Stories + Far-Right River -->
+    <div id="topcol23">
+      <!-- Middle Column: Technology & Industry Watch Lead -->
+      <div id="topcol2">
+        <h2><a href="industry.html">Industry Watch &rarr;</a></h2>
+<div style="font-size:0.92em;color:#555;padding-bottom:0.5em;"><p>Public release notes cover Copilot CLI, Android Studio and vLLM; enterprise moves include RELEX, Home Depot and Abu Dhabi. One code-scanning workflow survives in security, while the video item did not pass source verification.</p></div>        <div class="clus">
+              <div class="item" id="item-7be95c5f7b">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://github.com/github/copilot-cli/releases" target="_blank" rel="noopener">GitHub</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://github.com/github/copilot-cli/releases" target="_blank" rel="noopener"><img class="ill" src="media/7be95c5f7b.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://github.com/github/copilot-cli/releases" target="_blank" rel="noopener">GitHub Copilot CLI 1.0.106-2 smooths MCP and session handling</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">GitHub Copilot CLI’s 1.0.106-2 prerelease tightens several interaction edges: screen-reader output now labels tool failures and warnings, /resume foregrounds an existing background session, and a hung HTTP MCP server consumes one startup timeout instead of three. It also preserves symlinked MCP configuration and synchronizes added, removed, or refreshed skills into sessions. This is a maintenance release rather than a capability jump, but its MCP startup and session fixes are directly relevant to everyday agent tooling.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For your AI coding and MCP-tool interests, the release touches both setup reliability and session handling.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-4001ba3aa6">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://developer.android.com/blog/posts/build-it-your-way-a-next-era-of-android-development" target="_blank" rel="noopener">Android Developers</a>:</cite>
+      </td>
+      <td>
+<span>5 days ago</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://developer.android.com/blog/posts/build-it-your-way-a-next-era-of-android-development" target="_blank" rel="noopener"><img class="ill" src="media/4001ba3aa6.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://developer.android.com/blog/posts/build-it-your-way-a-next-era-of-android-development" target="_blank" rel="noopener">Android Studio Rabbit 2 opens to 40-plus coding agents</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Google says Android Studio Rabbit 2 is stable and lets developers choose Claude Agent, Codex, Antigravity, or more than 40 ACP-compliant coding agents from inside the IDE. Android CLI also gains remote streaming to real devices through Firebase and Jetpack Compose previews, so an agent can inspect UI output without launching an emulator or installing an APK. The changes widen tool choice inside Android workflows; the announcement gives no comparative quality or task-success results.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For your AI coding and agent-tools interest, Google is bringing familiar coding agents into an Android-native workflow.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-59d1f02ea1">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.mediaoffice.abudhabi/en/crown-prince-news/khaled-bin-mohamed-bin-zayed-meets-sam-altman-and-witnesses-signing-of-agreements-with-openai/" target="_blank" rel="noopener">Abu Dhabi Media Office</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.mediaoffice.abudhabi/en/crown-prince-news/khaled-bin-mohamed-bin-zayed-meets-sam-altman-and-witnesses-signing-of-agreements-with-openai/" target="_blank" rel="noopener"><img class="ill" src="media/59d1f02ea1.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.mediaoffice.abudhabi/en/crown-prince-news/khaled-bin-mohamed-bin-zayed-meets-sam-altman-and-witnesses-signing-of-agreements-with-openai/" target="_blank" rel="noopener">Abu Dhabi announces four OpenAI agreements, including a live government pilot</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Abu Dhabi Media Office said local entities and OpenAI signed four agreements across government, energy and investment. The package includes ADNOC deployment of OpenAI GPT models using UAE in-country inference, plus a machine-readable government initiative that converts selected rules into inputs for routine compliance assessments. Its first pilot is already in production at the Abu Dhabi Agriculture and Food Safety Authority for food imports. The announcement says each assessment is traceable to a rule and officials retain final oversight; it provides no measured outcomes yet.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your enterprise-agent interests may benefit from this deployment pattern: structured rules, traceable assessments and human decision oversight.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-c07e55ad6e">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.relexsolutions.com/news/relex-advances-agentic-ai-platform-to-orchestrate-the-value-chain/" target="_blank" rel="noopener">RELEX Solutions</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.relexsolutions.com/news/relex-advances-agentic-ai-platform-to-orchestrate-the-value-chain/" target="_blank" rel="noopener" class="ill-icon-wrap" title="relexsolutions.com"><img src="https://www.google.com/s2/favicons?domain=relexsolutions.com&amp;sz=128" alt="relexsolutions.com" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.relexsolutions.com/news/relex-advances-agentic-ai-platform-to-orchestrate-the-value-chain/" target="_blank" rel="noopener">RELEX expands its agentic platform across retail operations</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">RELEX announced new RELEX Open capabilities for connecting systems, extending its applications and orchestrating AI-driven workflows across supply-chain planning, merchandising and operations. The company says its agents can factor in priorities and constraints elsewhere in a retailer’s business, aiming to coordinate decisions rather than optimize each function separately. The announcement positions MCP, APIs and plugins as ways to connect software and business knowledge. It describes the product direction but supplies no independently measured customer results.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your enterprise-agent interest makes the MCP and API orchestration approach worth tracking across retail operations.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-b14d2bda1b">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/" target="_blank" rel="noopener">GitHub Changelog</a>:</cite>
+      </td>
+      <td>
+<span>Oct 15</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/" target="_blank" rel="noopener"><img class="ill" src="media/b14d2bda1b.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/" target="_blank" rel="noopener">Copilot will retire three models on November 16</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">GitHub plans to retire Claude Opus 4.8, Claude Opus 5 and GPT-5.6 Terra across Copilot Chat, inline edits, ask and agent modes, and completions on November 16. It recommends Claude Opus 5.5 for the Opus models and GPT-6.1 Sol or GPT-6 Luna for Terra. Suggested alternatives are enabled by default for Business and Enterprise unless an administrator changes global or model policies. Claude Opus 4.8 remains available to individual annual subscribers. Review any saved model defaults before the date.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For the GitHub Copilot tools you follow, this gives a firm date to check model availability and defaults before November 16.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-deb166954d">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" rel="noopener">OpenAI Help Center</a>:</cite>
+      </td>
+      <td>
+<span>3 days ago</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" rel="noopener" class="ill-icon-wrap" title="help.openai.com"><img src="https://www.google.com/s2/favicons?domain=help.openai.com&amp;sz=128" alt="help.openai.com" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" rel="noopener">GPT-6 Rosalind Research targets approved life-sciences workflows</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">OpenAI’s October 30 release notes describe GPT-6 Rosalind Research as bringing GPT-6 reasoning to multistep life-sciences research with safeguards for biological work. Access is limited to approved research customers in Work, Codex and the API; it is not available in Chat. Enterprise workspaces begin with a two-week Admin Preview and the model is off by default. The update pairs a specialized research capability with trusted-access and administrator controls, so the key implementation detail for builders is the deployment gate as much as the model’s domain focus.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your biology and AI-agent interests make its tool-heavy research workflows worth tracking, though access is restricted to approved research organizations.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-d4c33b44a4">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app/" target="_blank" rel="noopener">GitHub Changelog</a>:</cite>
+      </td>
+      <td>
+<span>5 days ago</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app/" target="_blank" rel="noopener"><img class="ill" src="media/d4c33b44a4.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app/" target="_blank" rel="noopener">Copilot app adds a local workflow for code-scanning alerts</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">GitHub’s new security extension for the Copilot app is in public preview. It lets developers browse code-scanning alerts, ask Copilot to explain or fix them in a local working copy, and run a security review on current changes. GitHub says the tool does not commit or push its fixes, leaving review and iteration with the developer. Existing alerts require code scanning to be enabled, and enterprise administrators can control plugin installation. This puts remediation beside coding while retaining a human review step.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your interest in AI coding tools may make this local alert-review path useful to evaluate alongside agent permissions.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-4d3e8ddaeb">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.19" target="_blank" rel="noopener">LangGraph / GitHub</a>:</cite>
+      </td>
+      <td>
+<span>3 days ago</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.19" target="_blank" rel="noopener"><img class="ill" src="media/4d3e8ddaeb.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.19" target="_blank" rel="noopener">LangGraph 1.2.19 fixes streaming and paused-tool reporting</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">LangGraph 1.2.19 is a maintenance release focused on streaming correctness. It stops trace_policy from rewriting streamed node payloads, gives message and tool events the namespace of their graph, and fixes output messages from a graph streamed inside a node. The release also corrects paused tools being reported as failed, returns awaited task values while streaming, and adds ToolNode names to graph-node metadata. The notes concentrate on reliability in streamed and nested workflows rather than a new high-level capability.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your agent-framework interests make these streaming and paused-tool edge cases useful to check if LangGraph is in your stack.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-da72f42f23">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0" target="_blank" rel="noopener">Model Context Protocol / GitHub</a>:</cite>
+      </td>
+      <td>
+<span>5 days ago</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0" target="_blank" rel="noopener" class="ill-icon-wrap" title="github.com"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=128" alt="github.com" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0" target="_blank" rel="noopener">MCP server release updates certificate dependencies</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The Model Context Protocol servers v2.2.0 release updates the fetch server’s Docker lock to certifi 2026.10.23 and documents trust-store dependencies after an intermediate-certificate disclosure. Its notes distinguish official TypeScript servers, which use Node’s certificate store, from mcp-server-fetch, which uses certifi through httpx. Maintainers say npm-installed TypeScript servers need Node 24.22.1 or 26.12.1 or later; the package engine range alone may not warn about an older runtime. The release makes runtime and certificate-bundle versions explicit deployment dependencies.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For your MCP and agent-deployment interests, the release maps which server behavior depends on Node and the CA bundle.
+    </div>
+  </div>
+</div>
+
+        </div>
+
+        <h2 style="padding-top:1em;"><a href="papers.html">Agent Papers Radar &rarr;</a></h2>
+<div style="font-size:0.92em;color:#555;padding-bottom:0.5em;"><p>Production-agent papers test web search, harness attribution, verifier creation and judge behavior. The summaries keep benchmark results but remove popularity rankings and upvote counts that the source pages did not show.</p></div>        <div class="clus">
+              <div class="item" id="item-1dc6e7054c">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.30181" target="_blank" rel="noopener">arXiv / Hugging Face Daily Papers</a>:</cite>
+      </td>
+      <td>
+<span>Oct 19</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.30181" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.30181" target="_blank" rel="noopener">Deep Search in Real-World Web Environments</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">OpenDS-World tests live-web research across 200 tasks with 12 frontier models under one tool protocol. The best-performing model reached 39.0% accuracy, while human evaluation across 1,000 independent attempts reached 21.1%. The authors also report persistent challenges in tool coordination and long-horizon search management. These are benchmark results, not evidence that the task suite captures every useful research task.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For your long-horizon agent and evaluation interests, this benchmark tests evidence gathering on the live web rather than static retrieval.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-52e7416894">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.30949" target="_blank" rel="noopener">arXiv / Hugging Face Daily Papers</a>:</cite>
+      </td>
+      <td>
+<span>Oct 22</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.30949" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://arxiv.org/abs/2610.30949" target="_blank" rel="noopener">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">IQuest-Q1 is an open sparse mixture-of-experts foundation model for agentic coding, with 320B total parameters and 15B activated. The paper describes a three-stage training process and merging experts/checkpoints. The abstract reports coding and general-task capabilities but provides no benchmark scores, so its model size and training recipe do not establish a comparative capability advantage.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your production-agent paper tracking includes agentic CLI systems; this is a widely surfaced model release to compare against harness-level results.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-f028d80ce0">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 23</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener">When Agents Fail: Model or Harness--Who&#39;s to Blame?</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">This study argues that agent performance belongs to a model–harness pairing, then separates valid completion, model–harness fit, cross-model fit, interaction effects, and token load. It evaluates four general-purpose harnesses with four models across six benchmarks; 111 settings produce 52,168 trajectories. The authors find that rankings can change by model and benchmark, and that task score may diverge from whether a run completes in an evaluable form. The study covers selected public systems and benchmarks, so it supports interaction-aware comparisons rather than a universal harness ranking.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This supports your production-agent harness work by separating execution completion from answer correctness and model–runtime fit.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-ba94ee556d">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.25568" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 18</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.25568" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://arxiv.org/abs/2610.25568" target="_blank" rel="noopener">Design and Cross-Domain Evaluation of an Agent Execution Harness</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">A planner, scoped workers, and a reviewer share an objective while keeping plan and execution record separate. The authors report 83 of 89 Terminal-Bench 2.1 instances passed (93.26%) and a length-adjusted HealthBench Professional score of 69.63 over 525 tasks. In a 53-task paired HealthBench comparison the aggregate score rose 19.89 points, while the median task changed by −1.46 points and mean inference cost rose from $0.29 to $2.13 per task. The instruction set was refined without official grading feedback, making the reported cross-domain gains an author-run result to verify independently.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your harness and agent-evaluation interests make the cost and task-level spread as important as the headline pass rate.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-6d793b25cc">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener">VeriCUA: Verification as Agentic Exploration for Computer-Using Agents</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">VeriCUA treats task verification as evidence gathering: after building a rubric, the verifier chooses GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. It aims to work across online and offline settings, platforms, and observation modes, addressing the partial view of screenshot judges and state-inspection scripts. The authors report better agreement with reference labels across settings, largest gains on hard offline cases, and stronger rejection of false completion claims online. The abstract gives no effect sizes and labels the work in progress, so the size and stability of the gain need follow-up.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your trace-evaluation and computer-use interests make this a useful design to compare with screenshot-only or state-only completion checks.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-abcbd9ef58">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.28679" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 19</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.28679" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://arxiv.org/abs/2610.28679" target="_blank" rel="noopener">VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">VerifierBench measures whether an agent can write a verifier that accepts every valid solution and rejects invalid ones. It includes 222 tasks from six benchmarks and 4,993 hidden tests, including alternative correct solutions and attacks; a six-check V4V audit screens the source tests and verifiers. Across 19 models, normalized balanced accuracy ranges from 10.6 to 62.1. Generated verifiers reject invalid outputs more reliably than they accept valid ones, often because they reject every tested solution. This makes valid-solution coverage a key audit dimension, though the benchmark’s task mix is still bounded.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This is relevant to your evaluation and guardrail interests because it treats verifier false rejection as a first-class reliability failure.
+    </div>
+  </div>
+</div>
+
+        </div>
+
+        <h2 style="padding-top:1em;"><a href="finance.html">Markets and Money &rarr;</a></h2>
+        <div style="font-size:0.9em;padding-bottom:0.4em;">
+          <span class="drhed">Terminals:</span>
+          <a href="https://rajasekharmekala.github.io/portfolio/reports/US_Market_Intelligence.html" target="_blank" rel="noopener"><strong>Your US Market Intelligence report</strong></a> | 
+          <a href="https://rajasekharmekala.github.io/portfolio/reports/IN_Market_Intelligence.html" target="_blank" rel="noopener"><strong>Your India Market Intelligence report</strong></a>
+        </div>
+        <div class="clus">
+              <div class="item" id="item-60906de459">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026" target="_blank" rel="noopener">Maruti Suzuki</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026" target="_blank" rel="noopener"><img class="ill" src="media/60906de459.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026" target="_blank" rel="noopener">Maruti Suzuki records its highest-ever monthly sales in October</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Maruti Suzuki said it sold 276,120 units in October 2026, its highest monthly total to date. Domestic sales also reached a record, at 216,789 units; sales to other original-equipment manufacturers were 9,459 and exports were 49,872. The company release attributes the figures to its own sales tally and separates domestic sales, other-OEM sales and exports. It is one company’s dispatch data, rather than a full industry measure, but adds a primary-source datapoint to the month’s vehicle-sales reports.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This primary company release adds a dated auto-sector datapoint to the India markets section you follow.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-522cc742b9">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://investor.apple.com/investor-relations/event-details/2026/FY-26-Fourth-Quarter-Results/default.aspx" target="_blank" rel="noopener">Apple Investor Relations</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://investor.apple.com/investor-relations/event-details/2026/FY-26-Fourth-Quarter-Results/default.aspx" target="_blank" rel="noopener" class="ill-icon-wrap" title="investor.apple.com"><img src="https://www.google.com/s2/favicons?domain=investor.apple.com&amp;sz=128" alt="investor.apple.com" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://investor.apple.com/investor-relations/event-details/2026/FY-26-Fourth-Quarter-Results/default.aspx" target="_blank" rel="noopener">Apple FY26 fourth-quarter results call — November 2 at 2 p.m. PT</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Apple’s investor-relations page schedules its conference call to discuss FY26 fourth-quarter results and business updates for Monday, November 2, 2026, at 2:00 p.m. Pacific / 5:00 p.m. Eastern. The event is later today, after the regular US trading session. The official page is a calendar notice and contains no results yet, so the brief should treat earnings figures as pending until Apple releases them.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Apple is one of the widely followed US companies in your market brief, and the call is today after the close.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-8c80ed516e">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.eia.gov/petroleum/supply/weekly/schedule.php" target="_blank" rel="noopener">U.S. Energy Information Administration</a>:</cite>
+      </td>
+      <td>
+ · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.eia.gov/petroleum/supply/weekly/schedule.php" target="_blank" rel="noopener" class="ill-icon-wrap" title="eia.gov"><img src="https://www.google.com/s2/favicons?domain=eia.gov&amp;sz=128" alt="eia.gov" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.eia.gov/petroleum/supply/weekly/schedule.php" target="_blank" rel="noopener">EIA Weekly Petroleum Status Report — November 4 at 10:30 a.m. ET</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The EIA schedules its Weekly Petroleum Status Report for the standard Wednesday release time of 10:30 a.m. Eastern. November 4 is the coming Wednesday; the schedule’s listed holiday exception shifts data for the week ending November 6 to Thursday November 12, leaving the November 4 report on the normal slot. The release includes weekly US petroleum supply and inventory data, making it a dated checkpoint for the oil-price moves now affecting markets.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It is a useful scheduled checkpoint for the energy and oil context in your US and India market coverage.
+    </div>
+  </div>
+</div>
+
+              <div class="item" id="item-eb58e4bbab">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.bls.gov/schedule/2026/11_sched_list.htm" target="_blank" rel="noopener">U.S. Bureau of Labor Statistics</a>:</cite>
+      </td>
+      <td>
+ · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.bls.gov/schedule/2026/11_sched_list.htm" target="_blank" rel="noopener" class="ill-icon-wrap" title="bls.gov"><img src="https://www.google.com/s2/favicons?domain=bls.gov&amp;sz=128" alt="bls.gov" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.bls.gov/schedule/2026/11_sched_list.htm" target="_blank" rel="noopener">US October CPI release — November 10 at 8:30 a.m. ET</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The BLS November release calendar schedules the Consumer Price Index for October 2026 on Tuesday, November 10, at 8:30 a.m. Eastern. The same time slot includes October real-earnings data. The calendar provides the release date and time only; it contains no CPI result or forecast. This is the next major inflation update after the October Federal Reserve meeting and falls within the brief’s coming-week window.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> You follow US inflation and rate-sensitive markets, so this date is a useful marker for next week.
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <!-- Far Right Column: Techmeme "Newest" River -->
+      <div id="topcol3">
+        <h2>Latest Radar</h2>
+                <div class="item">
+                  <cite>WRAL:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.wral.com/weather/swift-reentry-nov-2026/" target="_blank" rel="noopener">Swift re-entry forecasts move to 3–5 November</a>
+                  </div>
+<div class="ago">yesterday · <a href="followups.html">Developing Stories</a></div>                </div>
+                <div class="item">
+                  <cite>Maruti Suzuki:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026" target="_blank" rel="noopener">Maruti Suzuki records its highest-ever monthly sales in October</a>
+                  </div>
+<div class="ago">yesterday · <a href="finance.html">Markets and Money</a></div>                </div>
+                <div class="item">
+                  <cite>Apple Investor Relations:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://investor.apple.com/investor-relations/event-details/2026/FY-26-Fourth-Quarter-Results/default.aspx" target="_blank" rel="noopener">Apple FY26 fourth-quarter results call — November 2 at 2 p.m. PT</a>
+                  </div>
+<div class="ago">today · <a href="finance.html">Markets and Money</a></div>                </div>
+                <div class="item">
+                  <cite>U.S. Energy Information Administration:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.eia.gov/petroleum/supply/weekly/schedule.php" target="_blank" rel="noopener">EIA Weekly Petroleum Status Report — November 4 at 10:30 a.m. ET</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <cite>Clinical Nutrition via PubMed:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://pubmed.ncbi.nlm.nih.gov/42887446/" target="_blank" rel="noopener">KETO-MINOX finds no extra redox benefit from an energy-restricted ketogenic diet</a>
+                  </div>
+<div class="ago">today · <a href="nutrition.html">Keto Kitchen</a></div>                </div>
+                <div class="item">
+                  <cite>Applied Physiology, Nutrition, and Metabolism via PubMed:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://pubmed.ncbi.nlm.nih.gov/42868613/" target="_blank" rel="noopener">A four-week trial reports fitness gains alongside worse sleep scores in ketogenic-diet groups</a>
+                  </div>
+<div class="ago">today · <a href="nutrition.html">Keto Kitchen</a></div>                </div>
+                <div class="item">
+                  <cite>GitHub:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://github.com/github/copilot-cli/releases" target="_blank" rel="noopener">GitHub Copilot CLI 1.0.106-2 smooths MCP and session handling</a>
+                  </div>
+<div class="ago">yesterday · <a href="industry.html">Industry Watch</a></div>                </div>
+                <div class="item">
+                  <cite>Android Developers:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://developer.android.com/blog/posts/build-it-your-way-a-next-era-of-android-development" target="_blank" rel="noopener">Android Studio Rabbit 2 opens to 40-plus coding agents</a>
+                  </div>
+<div class="ago">5 days ago · <a href="industry.html">Industry Watch</a></div>                </div>
+                <div class="item">
+                  <cite>Abu Dhabi Media Office:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.mediaoffice.abudhabi/en/crown-prince-news/khaled-bin-mohamed-bin-zayed-meets-sam-altman-and-witnesses-signing-of-agreements-with-openai/" target="_blank" rel="noopener">Abu Dhabi announces four OpenAI agreements, including a live government pilot</a>
+                  </div>
+<div class="ago">today · <a href="industry.html">Industry Watch</a></div>                </div>
+                <div class="item">
+                  <cite>RELEX Solutions:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.relexsolutions.com/news/relex-advances-agentic-ai-platform-to-orchestrate-the-value-chain/" target="_blank" rel="noopener">RELEX expands its agentic platform across retail operations</a>
+                  </div>
+<div class="ago">today · <a href="industry.html">Industry Watch</a></div>                </div>
+                <div class="item">
+                  <cite>GitHub Changelog:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/" target="_blank" rel="noopener">Copilot will retire three models on November 16</a>
+                  </div>
+<div class="ago">Oct 15 · <a href="industry.html">Industry Watch</a></div>                </div>
+                <div class="item">
+                  <cite>OpenAI Help Center:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" rel="noopener">GPT-6 Rosalind Research targets approved life-sciences workflows</a>
+                  </div>
+<div class="ago">3 days ago · <a href="industry.html">Industry Watch</a></div>                </div>
+                <div class="item">
+                  <cite>GitHub Changelog:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app/" target="_blank" rel="noopener">Copilot app adds a local workflow for code-scanning alerts</a>
+                  </div>
+<div class="ago">5 days ago · <a href="industry.html">Industry Watch</a></div>                </div>
+                <div class="item">
+                  <cite>LangGraph / GitHub:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.19" target="_blank" rel="noopener">LangGraph 1.2.19 fixes streaming and paused-tool reporting</a>
+                  </div>
+<div class="ago">3 days ago · <a href="industry.html">Industry Watch</a></div>                </div>
+                <div class="item">
+                  <cite>Model Context Protocol / GitHub:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0" target="_blank" rel="noopener">MCP server release updates certificate dependencies</a>
+                  </div>
+<div class="ago">5 days ago · <a href="industry.html">Industry Watch</a></div>                </div>
+                <div class="item">
+                  <cite>arXiv / Hugging Face Daily Papers:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://arxiv.org/abs/2610.30181" target="_blank" rel="noopener">Deep Search in Real-World Web Environments</a>
+                  </div>
+<div class="ago">Oct 19 · <a href="papers.html">Agent Papers Radar</a></div>                </div>
+                <div class="item">
+                  <cite>arXiv / Hugging Face Daily Papers:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://arxiv.org/abs/2610.30949" target="_blank" rel="noopener">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a>
+                  </div>
+<div class="ago">Oct 22 · <a href="papers.html">Agent Papers Radar</a></div>                </div>
+                <div class="item">
+                  <cite>arXiv preprint:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener">When Agents Fail: Model or Harness--Who&#39;s to Blame?</a>
+                  </div>
+<div class="ago">Oct 23 · <a href="papers.html">Agent Papers Radar</a></div>                </div>
+                <div class="item">
+                  <cite>arXiv preprint:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://arxiv.org/abs/2610.25568" target="_blank" rel="noopener">Design and Cross-Domain Evaluation of an Agent Execution Harness</a>
+                  </div>
+<div class="ago">Oct 18 · <a href="papers.html">Agent Papers Radar</a></div>                </div>
+                <div class="item">
+                  <cite>arXiv preprint:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener">VeriCUA: Verification as Agentic Exploration for Computer-Using Agents</a>
+                  </div>
+<div class="ago">4 days ago · <a href="papers.html">Agent Papers Radar</a></div>                </div>
+                <div class="item">
+                  <cite>arXiv preprint:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://arxiv.org/abs/2610.28679" target="_blank" rel="noopener">VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents</a>
+                  </div>
+<div class="ago">Oct 19 · <a href="papers.html">Agent Papers Radar</a></div>                </div>
+                <div class="item">
+                  <cite>NASA Goddard:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=iwnrFggbpQ0" target="_blank" rel="noopener">Why The Universe Doesn’t Add Up (And How We’re Going To Try To Figure It Out)</a>
+                  </div>
+<div class="ago">7 days ago · <a href="deepdive.html">Deep Dive of the Day</a></div>                </div>
+                <div class="item">
+                  <cite>PBS Space Time:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=eYViePMalJE" target="_blank" rel="noopener">The Universe Has Been Expanding Since the Big Bang. Just Not How We Thought.</a>
+                  </div>
+<div class="ago">Jul 16 · <a href="deepdive.html">Deep Dive of the Day</a></div>                </div>
+                <div class="item">
+                  <cite>NASA Science:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/" target="_blank" rel="noopener">NASA asks industry about possible commercial Hubble servicing</a>
+                  </div>
+<div class="ago">3 days ago · <a href="science.html">Cosmos and Life</a></div>                </div>
+                <div class="item">
+                  <cite>NASA Jet Propulsion Laboratory:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.jpl.nasa.gov/news/nasas-voyager-1-conserves-power-resolves-brief-communications-pause/" target="_blank" rel="noopener">Voyager 1 saves power after a 48-hour communications pause</a>
+                  </div>
+<div class="ago">4 days ago · <a href="science.html">Cosmos and Life</a></div>                </div>
+                <div class="item">
+                  <cite>Stony Brook University:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://news.stonybrook.edu/university/stony-brook-paleontologist-dinosaur-discovery-reveals-a-specialized-fruit-eater/" target="_blank" rel="noopener">A Cretaceous dinosaur’s skull points to fruit eating</a>
+                  </div>
+<div class="ago">5 days ago · <a href="science.html">Cosmos and Life</a></div>                </div>
+                <div class="item">
+                  <cite>Cornell Chronicle:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://news.cornell.edu/stories/2026/10/unifying-mechanism-cancer-driving-mutations" target="_blank" rel="noopener">A DNA-folding mechanism may connect a family of cancer mutations</a>
+                  </div>
+<div class="ago">5 days ago · <a href="science.html">Cosmos and Life</a></div>                </div>
+                <div class="item">
+                  <cite>SciShow:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=LiAAayT_v84" target="_blank" rel="noopener">Two Different Things Are Killing Sharks</a>
+                  </div>
+<div class="ago">4 days ago · <a href="science.html">Cosmos and Life</a></div>                </div>
+                <div class="item">
+                  <cite>SciShow:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=dfA_VA20A2Y" target="_blank" rel="noopener">How To Hold Something That&#39;s 10,000,000 Degrees</a>
+                  </div>
+<div class="ago">6 days ago · <a href="science.html">Cosmos and Life</a></div>                </div>
+                <div class="item">
+                  <cite>Swiss Federal Department of Foreign Affairs:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.dfae.admin.ch/en/newnsb/tTt86k6kzUJW" target="_blank" rel="noopener">Switzerland reopens its diplomatic office in Pyongyang</a>
+                  </div>
+<div class="ago">2 days ago · <a href="world.html">World and India</a></div>                </div>
+                <div class="item">
+                  <cite>Prime Minister’s Office, Government of India:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-bharat-renewable-energy-summit-expo-2026-on-2nd-november/" target="_blank" rel="noopener">Bharat Renewable Energy Summit opens in New Delhi</a>
+                  </div>
+<div class="ago">yesterday · <a href="world.html">World and India</a></div>                </div>
+                <div class="item">
+                  <cite>DW News:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=2Ts3d6kgwGM" target="_blank" rel="noopener">Ukraine&#39;s air-alert app hit by false attack warnings | DW News</a>
+                  </div>
+<div class="ago">today · <a href="world.html">World and India</a></div>                </div>
+                <div class="item">
+                  <cite>WION:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=jLF5jaXX0uc" target="_blank" rel="noopener">Scam Centres Expand Into Madagascar After Crackdown in Cambodia | GRAVITAS</a>
+                  </div>
+<div class="ago">today · <a href="world.html">World and India</a></div>                </div>
+                <div class="item">
+                  <cite>Rolex Paris Masters:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.rolexparismasters.com/en/news/article/edition-2026-main-draw-complete-draw-matchups-opponents" target="_blank" rel="noopener">Paris qualifying completes the men’s singles draw</a>
+                  </div>
+<div class="ago">yesterday · <a href="sports.html">Sports</a></div>                </div>
+                <div class="item">
+                  <cite>Tennis Majors:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html" target="_blank" rel="noopener">Ignacio Buse becomes the first Peruvian to win at the Paris Masters</a>
+                  </div>
+<div class="ago">today · <a href="sports.html">Sports</a></div>                </div>
+                <div class="item">
+                  <cite>Fédération Internationale de l’Automobile (FIA):</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.fia.com/news/f1-antonelli-crowned-f1s-youngest-world-champion-verstappen-wins-mexico-city" target="_blank" rel="noopener">Verstappen wins in Mexico as Antonelli clinches the F1 title</a>
+                  </div>
+<div class="ago">today · <a href="sports.html">Sports</a></div>                </div>
+                <div class="item">
+                  <cite>Liverpool FC:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.liverpoolfc.com/news/match-report-liverpool-arsenal-premier-league-november-2026" target="_blank" rel="noopener">Arsenal leave Anfield with a 1–0 Premier League win</a>
+                  </div>
+<div class="ago">yesterday · <a href="sports.html">Sports</a></div>                </div>
+                <div class="item">
+                  <cite>Goodminton Academy:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://goodminton.fi/en/articles/doubles-first-three-shots" target="_blank" rel="noopener">Train the first three shots as one badminton doubles sequence</a>
+                  </div>
+<div class="ago">Aug 17 · <a href="sports.html">Sports</a></div>                </div>
+                <div class="item">
+                  <cite>God of Sports:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://thegodofsports.com/blogs/news/victor-thruster-ryuga-metallic-badminton-racket-review" target="_blank" rel="noopener">A recent review maps the Ryuga Metallic’s power-versus-speed trade-off</a>
+                  </div>
+<div class="ago">Oct 16 · <a href="sports.html">Sports</a></div>                </div>
+                <div class="item">
+                  <cite>FORMULA 1:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=tIiRK7hKScU" target="_blank" rel="noopener">Race Highlights | 2026 Mexico City Grand Prix</a>
+                  </div>
+<div class="ago">yesterday · <a href="sports.html">Sports</a></div>                </div>
+                <div class="item">
+                  <cite>BWF TV:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=DfOFBAiT2XU" target="_blank" rel="noopener">Jonatan Christie vs Lakshya Sen | Maintained pressure and focus</a>
+                  </div>
+<div class="ago">yesterday · <a href="sports.html">Sports</a></div>                </div>
+                <div class="item">
+                  <cite>The Times of India:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://timesofindia.indiatimes.com/entertainment/telugu/movies/news/sankarabharanam-to-return-to-theatres-in-november-k-viswanaths-1980-musical-classic-gets-4k-restoration/articleshow/135349146.cms" target="_blank" rel="noopener">‘Sankarabharanam’ returns to cinemas with a 4K restoration</a>
+                  </div>
+<div class="ago">3 days ago · <a href="culture.html">Movies and Music</a></div>                </div>
+                <div class="item">
+                  <cite>The Hans India:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.thehansindia.com/cinema/mythri-movie-makers-mitti-and-moon-films-join-hands-for-mynaa-1137990" target="_blank" rel="noopener">Mythri Movie Makers and Mitti and Moon launch ‘Mynaa’</a>
+                  </div>
+<div class="ago">yesterday · <a href="culture.html">Movies and Music</a></div>                </div>
+                <div class="item">
+                  <cite>Cinema Express:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.cinemaexpress.com/telugu/news/2026/Nov/02/ah-trailer-unveiled-rahul-vijay-calls-it-a-dark-crime-thriller" target="_blank" rel="noopener">‘AH’ will open in theatres on November 12</a>
+                  </div>
+<div class="ago">today · <a href="culture.html">Movies and Music</a></div>                </div>
+                <div class="item">
+                  <cite>Telugu Film Producers Council:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://telugu.tfpc.in/2026/10/12/vijay-antonys-nanna-kutti-set-for-a-diwali-release-on-november-6/" target="_blank" rel="noopener">‘Nanna Kutti’ is scheduled for a Diwali-week theatrical release</a>
+                  </div>
+<div class="ago">Oct 12 · <a href="culture.html">Movies and Music</a></div>                </div>
+                <div class="item">
+                  <cite>Netflix Tudum:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.netflix.com/tudum/articles/new-on-netflix?lv=true" target="_blank" rel="noopener">Netflix schedules ‘Murder in Galicia’ for November 13</a>
+                  </div>
+<div class="ago">2 days ago · <a href="culture.html">Movies and Music</a></div>                </div>
+                <div class="item">
+                  <cite>About Amazon / Prime Video:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026" target="_blank" rel="noopener">Prime Video sets Muhammad Ali series ‘The Greatest’ for November 4</a>
+                  </div>
+<div class="ago">3 days ago · <a href="culture.html">Movies and Music</a></div>                </div>
+                <div class="item">
+                  <cite>T-Series Telugu:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=0pow_UtMhcM" target="_blank" rel="noopener">O Mysaa Re Lyrical Video - Mysaa | Rashmika | Rawindra Pulle | Jakes Bejoy| UnFormula Films</a>
+                  </div>
+<div class="ago">today · <a href="culture.html">Movies and Music</a></div>                </div>
+                <div class="item">
+                  <cite>Aditya Music:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=vFBMumCsSkc" target="_blank" rel="noopener">Koodukuntunnadi Song | Raju Weds Rambai | Akhil Uddemari, Tejaswi Rao | Suresh Bobbili</a>
+                  </div>
+<div class="ago">today · <a href="culture.html">Movies and Music</a></div>                </div>
+                <div class="item">
+                  <cite>Quanta Magazine:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/" target="_blank" rel="noopener">Is There Anything Left in the Dream of Cold Fusion?</a>
+                  </div>
+<div class="ago">today · <a href="library.html">Read and Listen</a></div>                </div>
+                <div class="item">
+                  <cite>EQUATOR:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.equator.org/articles/arundhati-roy-artificial-intelligence" target="_blank" rel="noopener">Apocalypse Now and Then</a>
+                  </div>
+<div class="ago">Oct 15 · <a href="library.html">Read and Listen</a></div>                </div>
+                <div class="item">
+                  <cite>Latent Space:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://latent.space/p/arca/" target="_blank" rel="noopener">Agents Prompt People: Using Agents for Long-Horizon Financial Work</a>
+                  </div>
+<div class="ago">2 days ago · <a href="library.html">Read and Listen</a></div>                </div>
+                <div class="item">
+                  <cite>Springer Nature:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://link.springer.com/book/10.1007/978-3-032-26749-8" target="_blank" rel="noopener">Reliable Evaluations for LLMs and AI Agents</a>
+                  </div>
+<div class="ago">Sep 11 · <a href="library.html">Read and Listen</a></div>                </div>
+                <div class="item">
+                  <cite>Penguin Random House:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.penguinrandomhouse.com/books/826774/lost-in-space-by-neil-degrasse-tyson-and-lindsey-nyx-walker/" target="_blank" rel="noopener">Lost in Space</a>
+                  </div>
+<div class="ago">Sep 15 · <a href="library.html">Read and Listen</a></div>                </div>
+                <div class="item">
+                  <cite>San José Spotlight:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://sanjosespotlight.com/the-biz-beat-popular-san-jose-mexican-bakery-opens-4th-location/" target="_blank" rel="noopener">Panapolis opens its fourth San Jose bakery on Snell Avenue</a>
+                  </div>
+<div class="ago">yesterday · <a href="local.html">Local and Travel</a></div>                </div>
+                <div class="item">
+                  <cite>Lufthansa Group Newsroom:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://newsroom.lufthansagroup.com/en/swiss-celebrates-inaugural-flight-to-bengaluru/" target="_blank" rel="noopener">SWISS begins five-weekly Zurich–Bengaluru flights</a>
+                  </div>
+<div class="ago">5 days ago · <a href="local.html">Local and Travel</a></div>                </div>
+                <div class="item">
+                  <cite>Tom’s Guide:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.tomsguide.com/wellness/smartwatches/dont-wait-until-black-friday-garmins-rugged-smartwatch-with-a-flashlight-is-usd100-off-right-now" target="_blank" rel="noopener">Garmin Instinct 3 AMOLED is listed at $349 on Amazon</a>
+                  </div>
+<div class="ago">4 days ago · <a href="local.html">Local and Travel</a></div>                </div>
+                <div class="item">
+                  <cite>Wolters World:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=ZdnOKPavK8Y" target="_blank" rel="noopener">Italian Calcio - What to Know Before You Go to an Italian Football Match</a>
+                  </div>
+<div class="ago">5 days ago · <a href="local.html">Local and Travel</a></div>                </div>
+                <div class="item">
+                  <cite>KQED Food:</cite><br>
+                  <div class="ii">
+                    <a class="nfdl ourh" href="https://www.youtube.com/watch?v=N6OeaTtjILo" target="_blank" rel="noopener">Impression of Lanzhou, Hurrica, Rosamunde Sausage Grill | Check, Please! Bay Area</a>
+                  </div>
+<div class="ago">4 days ago · <a href="local.html">Local and Travel</a></div>                </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="abotcols"></div>
+
+  <!-- Bottom 2-Column Section Previews with Links to Full Tabs -->
+  <div class="ed">
+    <div id="botcol1">
+      <h2><a href="science.html">Cosmos and Life &rarr;</a></h2>
+      <div class="clus">
+            <div class="item" id="item-2254c23f5d">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/" target="_blank" rel="noopener">NASA Science</a>:</cite>
+      </td>
+      <td>
+<span>3 days ago</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/" target="_blank" rel="noopener"><img class="ill" src="media/2254c23f5d.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/" target="_blank" rel="noopener">NASA asks industry about possible commercial Hubble servicing</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">NASA issued a Request for Information on Oct. 29 to learn whether commercial providers could boost Hubble’s orbit, service or upgrade the telescope, or safely dispose of it at mission end. NASA says Hubble may re-enter in 2033–2034 and that any servicing mission would need to take place by 2032; responses to the request are due Nov. 30. This is an exploration of industry capabilities, not a selected contractor or approved mission, while the agency develops a future flagship telescope.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It adds a measured mission-planning angle to your astronomy interests: a possible life extension is being scoped against orbital decay and a 2032 deadline.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-8be0b0d024">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.jpl.nasa.gov/news/nasas-voyager-1-conserves-power-resolves-brief-communications-pause/" target="_blank" rel="noopener">NASA Jet Propulsion Laboratory</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.jpl.nasa.gov/news/nasas-voyager-1-conserves-power-resolves-brief-communications-pause/" target="_blank" rel="noopener" class="ill-icon-wrap" title="jpl.nasa.gov"><img src="https://www.google.com/s2/favicons?domain=jpl.nasa.gov&amp;sz=128" alt="jpl.nasa.gov" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.jpl.nasa.gov/news/nasas-voyager-1-conserves-power-resolves-brief-communications-pause/" target="_blank" rel="noopener">Voyager 1 saves power after a 48-hour communications pause</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">NASA’s Voyager team completed the “Big Bang” power-saving swap in early September, replacing three devices with lower-power alternatives so the probe can keep its remaining science instruments operating longer. The spacecraft then went silent during two scheduled Deep Space Network contacts on Oct. 18 and 19, while about 16 billion miles (24 billion kilometers) from Earth; its signal returned on Oct. 20. Engineers say one thruster group went offline and backups activated automatically, but the cause of the communications interruption is still under investigation.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your space exploration interest gets a concrete example of how mission teams extend a spacecraft’s science life under power constraints.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-b54fe7debe">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://news.stonybrook.edu/university/stony-brook-paleontologist-dinosaur-discovery-reveals-a-specialized-fruit-eater/" target="_blank" rel="noopener">Stony Brook University</a>:</cite>
+      </td>
+      <td>
+<span>5 days ago</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://news.stonybrook.edu/university/stony-brook-paleontologist-dinosaur-discovery-reveals-a-specialized-fruit-eater/" target="_blank" rel="noopener" class="ill-icon-wrap" title="news.stonybrook.edu"><img src="https://www.google.com/s2/favicons?domain=news.stonybrook.edu&amp;sz=128" alt="news.stonybrook.edu" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://news.stonybrook.edu/university/stony-brook-paleontologist-dinosaur-discovery-reveals-a-specialized-fruit-eater/" target="_blank" rel="noopener">A Cretaceous dinosaur’s skull points to fruit eating</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Stony Brook University researchers describe Infernogallus jamesi, a small oviraptorosaur whose skull and chewing-muscle arrangement resemble those of modern fruit-eating parrots. CT-based reconstruction suggests a back-and-forth bite suited to processing soft fruit and stone fruits; the researchers interpret this as specialized fruit eating. The nearly complete skull and partial skeleton come from the Hell Creek Formation. The dietary conclusion is inferred from anatomy, and the authors say the find raises a further question about whether such dinosaurs helped disperse seeds.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It connects dinosaur evolution with changing plant life and the anatomy behind an inferred diet.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-08978516d8">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://news.cornell.edu/stories/2026/10/unifying-mechanism-cancer-driving-mutations" target="_blank" rel="noopener">Cornell Chronicle</a>:</cite>
+      </td>
+      <td>
+<span>5 days ago</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://news.cornell.edu/stories/2026/10/unifying-mechanism-cancer-driving-mutations" target="_blank" rel="noopener"><img class="ill" src="media/08978516d8.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://news.cornell.edu/stories/2026/10/unifying-mechanism-cancer-driving-mutations" target="_blank" rel="noopener">A DNA-folding mechanism may connect a family of cancer mutations</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">A Weill Cornell Medicine study reports that loss of BAF-complex function opens DNA loops at thousands of sites, increasing binding by the gene regulator CTCF. The team says this shared change helps explain how mutations in the BAF complex, found in about 20% of human cancers, can alter gene activity across different tumor types. In cell and animal models, deleting CTCF reversed the effect; patient data also supported its role. The proposed targets remain research directions, not established treatments.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your biology interests include how genome structure and regulation shape cellular behavior.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-b61ed3776f">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=LiAAayT_v84" target="_blank" rel="noopener">SciShow</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>8m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=LiAAayT_v84" target="_blank" rel="noopener"><img class="ill" src="media/b61ed3776f.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.youtube.com/watch?v=LiAAayT_v84" target="_blank" rel="noopener">Two Different Things Are Killing Sharks</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">SciShow compares declining great-white sightings in South Africa with unexplained shark deaths in North American waters. It outlines possible pressures in South Africa, including orca predation, fishing and beach deterrence, while describing brain inflammation in North American cases as unresolved. The useful takeaway is that similar population declines can have different local causes, and the evidence is not settled.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It brings a current biology question into your science watch list and shows where researchers still lack a causal answer.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-94893ee6f6">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=dfA_VA20A2Y" target="_blank" rel="noopener">SciShow</a>:</cite>
+      </td>
+      <td>
+<span>6 days ago</span> · <span>15m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=dfA_VA20A2Y" target="_blank" rel="noopener"><img class="ill" src="media/94893ee6f6.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.youtube.com/watch?v=dfA_VA20A2Y" target="_blank" rel="noopener">How To Hold Something That&#39;s 10,000,000 Degrees</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Hank Green’s SciShow survey explains how scientists contain materials that can react with their container, are extremely small, or are too energetic to touch. Examples include storing alkali metals under mineral oil or argon, passivating fluorine containers, and trapping ions with fields. It connects these techniques to uses such as quantum computing and power generation, showing how practical containment enables experiments.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This accessible physics explainer ties experimental constraints to measurable evidence, echoing the measurement angle in your cosmology reading.
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <h2 style="padding-top:1em;"><a href="world.html">World and India &rarr;</a></h2>
+      <div class="clus">
+            <div class="item" id="item-3a7510444b">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.dfae.admin.ch/en/newnsb/tTt86k6kzUJW" target="_blank" rel="noopener">Swiss Federal Department of Foreign Affairs</a>:</cite>
+      </td>
+      <td>
+<span>2 days ago</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.dfae.admin.ch/en/newnsb/tTt86k6kzUJW" target="_blank" rel="noopener" class="ill-icon-wrap" title="dfae.admin.ch"><img src="https://www.google.com/s2/favicons?domain=dfae.admin.ch&amp;sz=128" alt="dfae.admin.ch" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.dfae.admin.ch/en/newnsb/tTt86k6kzUJW" target="_blank" rel="noopener">Switzerland reopens its diplomatic office in Pyongyang</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Swiss foreign minister Ignazio Cassis concluded a visit to both Koreas on 31 October, officially reopening Switzerland’s diplomatic office in Pyongyang and meeting North Korean foreign minister Choe Son Hui and party official Jo Yong Won. The office has been operating since 19 October under the Swiss embassy in Beijing. Switzerland says the renewed presence is intended to restore direct political dialogue and monitor regional developments; the countries have had diplomatic relations since 1974, while regular consultations stopped after 2019.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> A rare diplomatic reopening adds a fresh development to your geopolitics coverage of East Asia.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-fd5dee3014">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-bharat-renewable-energy-summit-expo-2026-on-2nd-november/" target="_blank" rel="noopener">Prime Minister’s Office, Government of India</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-bharat-renewable-energy-summit-expo-2026-on-2nd-november/" target="_blank" rel="noopener"><img class="ill" src="media/fd5dee3014.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-bharat-renewable-energy-summit-expo-2026-on-2nd-november/" target="_blank" rel="noopener">Bharat Renewable Energy Summit opens in New Delhi</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The four-day Bharat Renewable Energy Summit &amp; Expo runs 2–5 November at Bharat Mandapam in New Delhi; the Prime Minister’s Office said Narendra Modi would inaugurate it at about 4:30 p.m. on 2 November. The programme runs alongside the International Solar Alliance Assembly and an international green-hydrogen conference. The Expo is set to feature more than 400 exhibitors, and Andhra Pradesh is among 13 states and union territories scheduled to showcase renewable-energy potential and investment opportunities.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> The event includes an Andhra Pradesh showcase and connects to your interest in regional infrastructure policy.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-e48beb709a">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=2Ts3d6kgwGM" target="_blank" rel="noopener">DW News</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>16m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=2Ts3d6kgwGM" target="_blank" rel="noopener"><img class="ill" src="media/e48beb709a.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.youtube.com/watch?v=2Ts3d6kgwGM" target="_blank" rel="noopener">Ukraine&#39;s air-alert app hit by false attack warnings | DW News</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">DW documents false warnings of a chemical attack, radiation hazards and street fighting that appeared in Ukraine’s air-alert app. Authorities said the messages were false. The report separates the false alerts from an actual physical attack and shows the confusion that can follow when a trusted public-warning channel is misused. It is a current case study in wartime information infrastructure.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It connects the Ukraine story to your interest in geopolitical risks and how information systems affect civilians during conflict.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-b9eb517bd3">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=jLF5jaXX0uc" target="_blank" rel="noopener">WION</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=jLF5jaXX0uc" target="_blank" rel="noopener"><img class="ill" src="media/b9eb517bd3.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.youtube.com/watch?v=jLF5jaXX0uc" target="_blank" rel="noopener">Scam Centres Expand Into Madagascar After Crackdown in Cambodia | GRAVITAS</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The WION report says raids on a scam centre in Antananarivo exposed links to operators previously active in Cambodia, after crackdowns in Southeast Asia. It describes claims that African nationals were recruited through commercial job postings, had passports taken, and were forced to scam; the video says at least 20 people were arrested during the raid. The segment shows how such networks can shift location, while the trafficking details remain allegations in the report.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It adds a current cross-border security story to your interest in world affairs.
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <h2 style="padding-top:1em;"><a href="sports.html">Sports &rarr;</a></h2>
+      <div class="clus">
+            <div class="item" id="item-2681502ae9">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.rolexparismasters.com/en/news/article/edition-2026-main-draw-complete-draw-matchups-opponents" target="_blank" rel="noopener">Rolex Paris Masters</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.rolexparismasters.com/en/news/article/edition-2026-main-draw-complete-draw-matchups-opponents" target="_blank" rel="noopener"><img class="ill" src="media/2681502ae9.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.rolexparismasters.com/en/news/article/edition-2026-main-draw-complete-draw-matchups-opponents" target="_blank" rel="noopener">Paris qualifying completes the men’s singles draw</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Sunday’s qualifying round filled the final seven spots in the men’s singles draw. Among the matchups now set: Casper Ruud against Juan Manuel Cerundolo and 11th seed Taylor Fritz against Benjamin Bonzi; Lorenzo Sonego beat Adolfo Daniel Vallejo and then drew Mattia Bellucci for round one. The tournament’s [full draw](https://www.rolexparismasters.com/en/draws) and [official day-by-day schedule](https://www.rolexparismasters.com/en/news/article/2026-edition-complete-schedule-qualifying-main-draw-singles-doubles-wheelchair-tennis) are available; main-draw play began Monday, 2 November.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> The completed draw and schedule make this week’s Paris Masters matchups easier to follow.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-88a65fe052">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html" target="_blank" rel="noopener">Tennis Majors</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html" target="_blank" rel="noopener"><img class="ill" src="media/88a65fe052.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html" target="_blank" rel="noopener">Ignacio Buse becomes the first Peruvian to win at the Paris Masters</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Ignacio Buse beat Zizou Bergs 6–2, 6–4 on Monday to become the first Peruvian to win a match at the Paris Masters. Tennis Majors reports that Buse converted four of 10 break points, while Bergs made 29 unforced errors. The result sets Buse against fourth seed Daniil Medvedev in round two. See the tournament’s [official draw](https://www.rolexparismasters.com/en/draws) and [day-by-day schedule](https://www.rolexparismasters.com/en/news/article/2026-edition-complete-schedule-qualifying-main-draw-singles-doubles-wheelchair-tennis) for the next matches.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> A notable new result from the Paris Masters, alongside the tournament’s current draw and schedule.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-5085dff0a6">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.fia.com/news/f1-antonelli-crowned-f1s-youngest-world-champion-verstappen-wins-mexico-city" target="_blank" rel="noopener">Fédération Internationale de l’Automobile (FIA)</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.fia.com/news/f1-antonelli-crowned-f1s-youngest-world-champion-verstappen-wins-mexico-city" target="_blank" rel="noopener"><img class="ill" src="media/5085dff0a6.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.fia.com/news/f1-antonelli-crowned-f1s-youngest-world-champion-verstappen-wins-mexico-city" target="_blank" rel="noopener">Verstappen wins in Mexico as Antonelli clinches the F1 title</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Max Verstappen won the 71-lap Mexico City Grand Prix, holding off Lewis Hamilton, while Kimi Antonelli finished third and secured the 2026 Drivers’ Championship. The FIA says the 20-year-old Mercedes driver is the youngest world champion in Formula 1 history. It marks Antonelli’s maiden title, while Verstappen’s victory was his sixth at the Autódromo Hermanos Rodríguez. The result resolves the championship permutations that had led into the weekend.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> A major new result for the Formula 1 season and the Verstappen storyline you follow.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-88a3ee1b9c">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.liverpoolfc.com/news/match-report-liverpool-arsenal-premier-league-november-2026" target="_blank" rel="noopener">Liverpool FC</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.liverpoolfc.com/news/match-report-liverpool-arsenal-premier-league-november-2026" target="_blank" rel="noopener"><img class="ill" src="media/88a3ee1b9c.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.liverpoolfc.com/news/match-report-liverpool-arsenal-premier-league-november-2026" target="_blank" rel="noopener">Arsenal leave Anfield with a 1–0 Premier League win</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Arsenal beat Liverpool 1–0 at Anfield in the Premier League on Sunday, 1 November. Liverpool’s match report says Kai Havertz scored the only goal with a close-range finish in the 16th minute. Liverpool handed Trey Nyoni his full league debut and made seven changes after the midweek cup win, while the score gives Arsenal all three points from a tightly watched league fixture.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> A fresh headline from the in-season football schedule in the sports section.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-109bb8dfed">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://goodminton.fi/en/articles/doubles-first-three-shots" target="_blank" rel="noopener">Goodminton Academy</a>:</cite>
+      </td>
+      <td>
+<span>Aug 17</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://goodminton.fi/en/articles/doubles-first-three-shots" target="_blank" rel="noopener" class="ill-icon-wrap" title="goodminton.fi"><img src="https://www.google.com/s2/favicons?domain=goodminton.fi&amp;sz=128" alt="goodminton.fi" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://goodminton.fi/en/articles/doubles-first-three-shots" target="_blank" rel="noopener">Train the first three shots as one badminton doubles sequence</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Goodminton frames serve, return and third shot as a connected exchange: a straight low serve limits the receiver’s time and angles, the returner chooses based on contact and balance, and both partners prepare for the reply that could quickly change the rally. Its practice progression begins with a cooperative serve-and-return pattern, then removes the coach’s call and opens more replies. The article treats the “traffic-light” decision model as the academy’s coaching framework, not as a measured performance result.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> A specific doubles decision drill for your badminton practice, distinct from the recent rotation and footwork guides.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-7e2b3d3ffb">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://thegodofsports.com/blogs/news/victor-thruster-ryuga-metallic-badminton-racket-review" target="_blank" rel="noopener">God of Sports</a>:</cite>
+      </td>
+      <td>
+<span>Oct 16</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://thegodofsports.com/blogs/news/victor-thruster-ryuga-metallic-badminton-racket-review" target="_blank" rel="noopener"><img class="ill" src="media/7e2b3d3ffb.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://thegodofsports.com/blogs/news/victor-thruster-ryuga-metallic-badminton-racket-review" target="_blank" rel="noopener">A recent review maps the Ryuga Metallic’s power-versus-speed trade-off</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">This October review describes Victor’s Thruster Ryuga Metallic as a 2023 frame update with a head-heavy, stiff profile, Metallic Carbon Fiber and a 6.8 mm PYROFIL shaft. The reviewer scores its smash 93 and defence 70, calling out forceful rear-court hits but slower reactions in flat exchanges and at the net. Those ratings are the retailer’s own scale, and the page identifies the retailer as an authorised stockist, so treat the comparison as commercial product commentary rather than independent testing.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> A current gear review with a clear doubles-relevant trade-off between rear-court power and quick defence.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-38b815906e">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=tIiRK7hKScU" target="_blank" rel="noopener">FORMULA 1</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>8m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=tIiRK7hKScU" target="_blank" rel="noopener"><img class="ill" src="media/38b815906e.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.youtube.com/watch?v=tIiRK7hKScU" target="_blank" rel="noopener">Race Highlights | 2026 Mexico City Grand Prix</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The official Formula 1 upload condenses the Mexico City Grand Prix into a 7:58 race-highlights package. The F1 video page lists separate qualifying and practice recaps alongside it, so this selection focuses on race-day action rather than the full weekend. It is a compact way to revisit the key on-track sequences from the Nov. 1 event.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your Formula 1 interest makes this a quick race catch-up.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-45efd222aa">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=DfOFBAiT2XU" target="_blank" rel="noopener">BWF TV</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>8m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=DfOFBAiT2XU" target="_blank" rel="noopener"><img class="ill" src="media/45efd222aa.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.youtube.com/watch?v=DfOFBAiT2XU" target="_blank" rel="noopener">Jonatan Christie vs Lakshya Sen | Maintained pressure and focus</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">BWF TV’s official recap covers the HYLO Open final between Jonatan Christie and Lakshya Sen; the title frames the match around “Maintained pressure and focus.” That gives a concise look at an Indian player’s final, complementing the recent badminton coverage with a different match and round. The YouTube listing labels this as the tournament final.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This adds a fresh BWF watch involving the Indian player you follow.
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div id="botcol2">
+      <h2><a href="nutrition.html">Keto Kitchen &rarr;</a></h2>
+      <div id="tkzwuvgyr">
+        <h3>Daily Protocol: 20.0g Net Carbs</h3>
+        <p style="font-size:0.92em;margin-bottom:0.6em;">3 recipes prepared today. Verified macro targets met.</p>
+        <a href="nutrition.html"><strong>Open Keto Kitchen Tab for Full Menu &rarr;</strong></a>
+      </div>
+
+      <h2 style="padding-top:1em;"><a href="deepdive.html">Deep Dive: Dark Energy: Signal, Model, or Discovery? &rarr;</a></h2>
+      <div style="font-size:0.95em;color:#444;line-height:1.45em;margin-bottom:0.8em;">
+        DESI’s evolving results show why better data can sharpen—and complicate—the case for cosmic change.
+      </div>
+      <p><a href="deepdive.html"><strong>Read the full deep dive analysis &rarr;</strong></a></p>
+
+      <h2 style="padding-top:1em;"><a href="culture.html">Movies and Music &rarr;</a></h2>
+      <div class="clus">
+            <div class="item" id="item-3c767a5b42">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://timesofindia.indiatimes.com/entertainment/telugu/movies/news/sankarabharanam-to-return-to-theatres-in-november-k-viswanaths-1980-musical-classic-gets-4k-restoration/articleshow/135349146.cms" target="_blank" rel="noopener">The Times of India</a>:</cite>
+      </td>
+      <td>
+<span>3 days ago</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://timesofindia.indiatimes.com/entertainment/telugu/movies/news/sankarabharanam-to-return-to-theatres-in-november-k-viswanaths-1980-musical-classic-gets-4k-restoration/articleshow/135349146.cms" target="_blank" rel="noopener"><img class="ill" src="media/3c767a5b42.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://timesofindia.indiatimes.com/entertainment/telugu/movies/news/sankarabharanam-to-return-to-theatres-in-november-k-viswanaths-1980-musical-classic-gets-4k-restoration/articleshow/135349146.cms" target="_blank" rel="noopener">‘Sankarabharanam’ returns to cinemas with a 4K restoration</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">K. Viswanath’s 1980 Telugu musical classic is set for a November theatrical return in a digitally upgraded presentation. The report does not give a specific re-release day, so it is a watchlist note rather than a date to plan around. The revival will make a landmark title available in cinemas again; check local listings for confirmed showtimes as they appear.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For Telugu cinema history and release tracking, this is a rare chance to catch a restored classic on a big screen.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-9c587b5147">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.thehansindia.com/cinema/mythri-movie-makers-mitti-and-moon-films-join-hands-for-mynaa-1137990" target="_blank" rel="noopener">The Hans India</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.thehansindia.com/cinema/mythri-movie-makers-mitti-and-moon-films-join-hands-for-mynaa-1137990" target="_blank" rel="noopener"><img class="ill" src="media/9c587b5147.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.thehansindia.com/cinema/mythri-movie-makers-mitti-and-moon-films-join-hands-for-mynaa-1137990" target="_blank" rel="noopener">Mythri Movie Makers and Mitti and Moon launch ‘Mynaa’</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The new Telugu romantic entertainer was launched with a pooja in Hyderabad, and the makers also revealed its first-look poster. Mythri Movie Makers is producing with Sai Rajesh’s Mitti and Moon Films; Chanti Babu directs, with Mani Sharma composing. The report says regular filming is due to begin shortly, but gives no theatrical or streaming date yet.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For Telugu film and soundtrack announcements, the launch adds a new Mythri-backed title to the slate.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-cc1e1ddc89">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.cinemaexpress.com/telugu/news/2026/Nov/02/ah-trailer-unveiled-rahul-vijay-calls-it-a-dark-crime-thriller" target="_blank" rel="noopener">Cinema Express</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.cinemaexpress.com/telugu/news/2026/Nov/02/ah-trailer-unveiled-rahul-vijay-calls-it-a-dark-crime-thriller" target="_blank" rel="noopener"><img class="ill" src="media/cc1e1ddc89.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.cinemaexpress.com/telugu/news/2026/Nov/02/ah-trailer-unveiled-rahul-vijay-calls-it-a-dark-crime-thriller" target="_blank" rel="noopener">‘AH’ will open in theatres on November 12</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The newly unveiled trailer confirms Rahul Vijay and Archana Iyer’s Telugu film AH for a November 12 theatrical release. The announcement describes a crime-thriller setup but does not identify an OTT service or confirm a US date. The trailer arrived on November 2, giving the release campaign a fresh preview ahead of opening day.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For Telugu thriller releases, the date is now tied to a current trailer announcement.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-de568966ec">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://telugu.tfpc.in/2026/10/12/vijay-antonys-nanna-kutti-set-for-a-diwali-release-on-november-6/" target="_blank" rel="noopener">Telugu Film Producers Council</a>:</cite>
+      </td>
+      <td>
+<span>Oct 12</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://telugu.tfpc.in/2026/10/12/vijay-antonys-nanna-kutti-set-for-a-diwali-release-on-november-6/" target="_blank" rel="noopener" class="ill-icon-wrap" title="telugu.tfpc.in"><img src="https://www.google.com/s2/favicons?domain=telugu.tfpc.in&amp;sz=128" alt="telugu.tfpc.in" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://telugu.tfpc.in/2026/10/12/vijay-antonys-nanna-kutti-set-for-a-diwali-release-on-november-6/" target="_blank" rel="noopener">‘Nanna Kutti’ is scheduled for a Diwali-week theatrical release</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Vijay Antony’s Nanna Kutti is scheduled to reach cinemas on November 6 for Diwali. The announcement sets a date but does not name a streaming platform or a separate US opening. Confirm local listings for language versions and showtimes before planning around it.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For Telugu release-calendar tracking, this gives a dated theatrical arrival for the week.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-e331e6c9bc">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.netflix.com/tudum/articles/new-on-netflix?lv=true" target="_blank" rel="noopener">Netflix Tudum</a>:</cite>
+      </td>
+      <td>
+<span>2 days ago</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.netflix.com/tudum/articles/new-on-netflix?lv=true" target="_blank" rel="noopener"><img class="ill" src="media/e331e6c9bc.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.netflix.com/tudum/articles/new-on-netflix?lv=true" target="_blank" rel="noopener">Netflix schedules ‘Murder in Galicia’ for November 13</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Netflix’s November schedule separates two Galicia titles: documentary Unprotected: Murder in Galicia on November 6 and the series Murder in Galicia on November 13. This item tracks the latter; the monthly slate confirms its platform and date and distinguishes it from the documentary companion.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For your crime-series watchlist, this is a dated Spanish-language procedural-style arrival on Netflix.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-fd51014413">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026" target="_blank" rel="noopener">About Amazon / Prime Video</a>:</cite>
+      </td>
+      <td>
+<span>3 days ago</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026" target="_blank" rel="noopener"><img class="ill" src="media/fd51014413.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026" target="_blank" rel="noopener">Prime Video sets Muhammad Ali series ‘The Greatest’ for November 4</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Prime Video’s U.S. November slate schedules The Greatest for November 4 and describes it as the first authorized scripted series about Muhammad Ali’s life. The official listing places it among the month’s new Prime Originals. This is a confirmed streaming-series date rather than a review, so the source establishes availability and format but makes no claim about the finished show’s quality.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For the series-and-film titles you follow, this adds a confirmed Prime Video date for a biographical drama.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-542b3dd4aa">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=0pow_UtMhcM" target="_blank" rel="noopener">T-Series Telugu</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=0pow_UtMhcM" target="_blank" rel="noopener"><img class="ill" src="media/542b3dd4aa.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.youtube.com/watch?v=0pow_UtMhcM" target="_blank" rel="noopener">O Mysaa Re Lyrical Video - Mysaa | Rashmika | Rawindra Pulle | Jakes Bejoy| UnFormula Films</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">T-Series Telugu’s 4:57 lyrical video is a full-song presentation for Mysaa, with Rashmika, Rawindra Pulle and Jakes Bejoy named in its title. Uploaded Nov. 2, it brings a current soundtrack video from an official label channel into the watch list. The source listing gives the song and film identities but no wider release update, so this item stays focused on the video itself.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> A new Telugu lyrical-video upload matches your Tollywood and music interests.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-c083fda9b6">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=vFBMumCsSkc" target="_blank" rel="noopener">Aditya Music</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=vFBMumCsSkc" target="_blank" rel="noopener"><img class="ill" src="media/c083fda9b6.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.youtube.com/watch?v=vFBMumCsSkc" target="_blank" rel="noopener">Koodukuntunnadi Song | Raju Weds Rambai | Akhil Uddemari, Tejaswi Rao | Suresh Bobbili</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Aditya Music posted this 3:41 Telugu song video on Nov. 2. The title ties it to Raju Weds Rambai and credits Akhil Uddemari, Tejaswi Rao and Suresh Bobbili; it is a song-focused upload, not a new film announcement. It adds a distinct film track to the official-label watch list alongside the other recent lyrical-video posts.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It keeps the Telugu film-song queue current with a new label upload.
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <h2 style="padding-top:1em;"><a href="library.html">Read and Listen &rarr;</a></h2>
+      <div class="clus">
+            <div class="item" id="item-b18fd62b67">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/" target="_blank" rel="noopener">Quanta Magazine</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>18m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/" target="_blank" rel="noopener"><img class="ill" src="media/b18fd62b67.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/" target="_blank" rel="noopener">Is There Anything Left in the Dream of Cold Fusion?</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">George Musser separates the discredited 1989 claim of room-temperature power from the research that continued around unusual atomic systems. The essay follows muon-catalyzed fusion and other exotic atoms whose compressed orbits let physicists probe nuclear structure and quantum electrodynamics under extreme fields. It does not present cold fusion as an energy source: the article’s introduction says this work will not solve the energy crisis. Its argument is that a failed energy claim and adjacent, testable physics should not be treated as the same scientific question.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> A case study in separating an overclaimed result from adjacent testable science, matching your interest in evidence and measurement.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-18255162d6">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.equator.org/articles/arundhati-roy-artificial-intelligence" target="_blank" rel="noopener">EQUATOR</a>:</cite>
+      </td>
+      <td>
+<span>Oct 15</span> · <span>22m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.equator.org/articles/arundhati-roy-artificial-intelligence" target="_blank" rel="noopener"><img class="ill" src="media/18255162d6.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.equator.org/articles/arundhati-roy-artificial-intelligence" target="_blank" rel="noopener">Apocalypse Now and Then</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Arundhati Roy’s essay treats AI as an extension of capitalist power rather than a neutral tool, connecting today’s automation claims to industrial and political history. It questions who controls these systems, whose work they displace, and how language and human judgment are affected. This is a literary and political argument, not a benchmark or technical study; readers get a forceful counterpoint to engineering accounts of AI’s benefits and limits.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It adds a political perspective to your sustained interest in AI systems and how they shape work and society.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-9350ae34d9">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://latent.space/p/arca/" target="_blank" rel="noopener">Latent Space</a>:</cite>
+      </td>
+      <td>
+<span>2 days ago</span> · <span>26m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://latent.space/p/arca/" target="_blank" rel="noopener"><img class="ill" src="media/9350ae34d9.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://latent.space/p/arca/" target="_blank" rel="noopener">Agents Prompt People: Using Agents for Long-Horizon Financial Work</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Arca head of AI Aman Singh describes how agents support long-horizon wealth-management workflows while human advisors retain final decisions. The episode explains why Arca built its own harness, tracks task memory across days, selects models using internal benchmarks, and uses advisor feedback plus agent traces to suggest harness changes. It also describes deterministic safety limits: agents analyze and propose, while people handle trades and other money movement. This is one company’s implementation account, not comparative evidence about outcome quality.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It shows a production-agent pattern combining long-horizon memory, harness routing, trace review, and human controls.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-bd77ad0254">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://link.springer.com/book/10.1007/978-3-032-26749-8" target="_blank" rel="noopener">Springer Nature</a>:</cite>
+      </td>
+      <td>
+<span>Sep 11</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://link.springer.com/book/10.1007/978-3-032-26749-8" target="_blank" rel="noopener" class="ill-icon-wrap" title="link.springer.com"><img src="https://www.google.com/s2/favicons?domain=link.springer.com&amp;sz=128" alt="link.springer.com" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://link.springer.com/book/10.1007/978-3-032-26749-8" target="_blank" rel="noopener">Reliable Evaluations for LLMs and AI Agents</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Alexei Robsky, Liliya Lavitas and Yueqing Wang’s 2026 Springer Cham book lays out an evaluation framework for LLMs and agents, from dataset design through automated infrastructure. The publisher highlights custom eval sets, statistical rigor, human and LLM-as-a-judge ratings, and an evaluation flywheel; its contents include a 41-page chapter on evaluating AI agents. The eBook appeared September 11 and the softcover September 13, 2026, so the publisher lists two release dates by format.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It is a recent guide to agent evaluation, judge ratings, metrics, and evaluation infrastructure.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-9899830da3">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.penguinrandomhouse.com/books/826774/lost-in-space-by-neil-degrasse-tyson-and-lindsey-nyx-walker/" target="_blank" rel="noopener">Penguin Random House</a>:</cite>
+      </td>
+      <td>
+<span>Sep 15</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.penguinrandomhouse.com/books/826774/lost-in-space-by-neil-degrasse-tyson-and-lindsey-nyx-walker/" target="_blank" rel="noopener"><img class="ill" src="media/9899830da3.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.penguinrandomhouse.com/books/826774/lost-in-space-by-neil-degrasse-tyson-and-lindsey-nyx-walker/" target="_blank" rel="noopener">Lost in Space</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Neil deGrasse Tyson and Lindsey Nyx Walker’s Lost in Space was published by National Geographic on September 15, 2026. The publisher describes it as a broad guide to the cosmos, organized around 5,000 facts and more than 300 charts, maps and photographs, from Earth outward. The StarTalk-linked collaboration is designed for browsing as much as linear reading, so it works as a visual reference for astronomy topics rather than a single-argument book.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your astronomy interest makes this a visual, reference-style companion to the week’s space and cosmology coverage.
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <h2 style="padding-top:1em;"><a href="local.html">Local and Travel &rarr;</a></h2>
+      <div class="clus">
+            <div class="item" id="item-ac8c6dbc75">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://sanjosespotlight.com/the-biz-beat-popular-san-jose-mexican-bakery-opens-4th-location/" target="_blank" rel="noopener">San José Spotlight</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://sanjosespotlight.com/the-biz-beat-popular-san-jose-mexican-bakery-opens-4th-location/" target="_blank" rel="noopener"><img class="ill" src="media/ac8c6dbc75.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://sanjosespotlight.com/the-biz-beat-popular-san-jose-mexican-bakery-opens-4th-location/" target="_blank" rel="noopener">Panapolis opens its fourth San Jose bakery on Snell Avenue</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">San José Spotlight reports that Panapolis Bakery No. 4 opened on October 11 at 5469 Snell Ave. in San Jose. The story says customers cleared the display cases within 90 minutes and lists all locations as open daily from 4 a.m. to 9 p.m. This is an already-open local food stop, not a dated event for this week.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For the South Bay outings list, this adds a new local bakery with its San Jose address and hours in the source.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-acc289daaf">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://newsroom.lufthansagroup.com/en/swiss-celebrates-inaugural-flight-to-bengaluru/" target="_blank" rel="noopener">Lufthansa Group Newsroom</a>:</cite>
+      </td>
+      <td>
+<span>5 days ago</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://newsroom.lufthansagroup.com/en/swiss-celebrates-inaugural-flight-to-bengaluru/" target="_blank" rel="noopener"><img class="ill" src="media/acc289daaf.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://newsroom.lufthansagroup.com/en/swiss-celebrates-inaugural-flight-to-bengaluru/" target="_blank" rel="noopener">SWISS begins five-weekly Zurich–Bengaluru flights</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">SWISS launched nonstop Zurich–Bengaluru service on October 27, with five flights per week, according to Lufthansa Group’s inaugural-flight notice. Zurich offers onward connections across Europe and North America through the group network. For an SFO-to-India itinerary, this adds a new southern-India route via Zurich; the announcement does not provide fare comparisons or guarantee a particular connection time.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For Europe and India route planning, the new flight adds a Zurich connection to Bengaluru and onward destinations.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-7f718b75f2">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.tomsguide.com/wellness/smartwatches/dont-wait-until-black-friday-garmins-rugged-smartwatch-with-a-flashlight-is-usd100-off-right-now" target="_blank" rel="noopener">Tom’s Guide</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.tomsguide.com/wellness/smartwatches/dont-wait-until-black-friday-garmins-rugged-smartwatch-with-a-flashlight-is-usd100-off-right-now" target="_blank" rel="noopener"><img class="ill" src="media/7f718b75f2.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.tomsguide.com/wellness/smartwatches/dont-wait-until-black-friday-garmins-rugged-smartwatch-with-a-flashlight-is-usd100-off-right-now" target="_blank" rel="noopener">Garmin Instinct 3 AMOLED is listed at $349 on Amazon</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Tom’s Guide reported the Garmin Instinct 3 AMOLED at $349 on Amazon, $100 below its listed $449 price, in an October 29 deal article. The page notes that $299 was the model’s lowest sale price, so this is discounted but not its all-time low. The article does not state an end date; confirm the live price before purchase.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For Garmin deal tracking, the article gives a current reference price and the lower historical sale point.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-8612df1555">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=ZdnOKPavK8Y" target="_blank" rel="noopener">Wolters World</a>:</cite>
+      </td>
+      <td>
+<span>5 days ago</span> · <span>13m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=ZdnOKPavK8Y" target="_blank" rel="noopener"><img class="ill" src="media/8612df1555.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.youtube.com/watch?v=ZdnOKPavK8Y" target="_blank" rel="noopener">Italian Calcio - What to Know Before You Go to an Italian Football Match</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Wolters World’s recent guide covers what to know before attending an Italian football match, with Italy named in the official title and channel page. It treats calcio as a travel activity and offers a practical cultural angle for an Italy itinerary, rather than a football-result recap. The Oct. 28 upload keeps it within the current video window.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It adds an Italy-specific activity idea to your European travel planning.
+    </div>
+  </div>
+</div>
+
+            <div class="item" id="item-066e872f6c">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=N6OeaTtjILo" target="_blank" rel="noopener">KQED Food</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>27m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=N6OeaTtjILo" target="_blank" rel="noopener"><img class="ill" src="media/066e872f6c.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L1"><a class="ourh" href="https://www.youtube.com/watch?v=N6OeaTtjILo" target="_blank" rel="noopener">Impression of Lanzhou, Hurrica, Rosamunde Sausage Grill | Check, Please! Bay Area</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">KQED’s Check, Please! Bay Area episode visits Impression of Lanzhou in Berkeley, Hurrica in Redwood City and Rosamunde Sausage Grill in San Francisco. The episode page dates it Oct. 30 and gives a runtime of about 27 minutes and describes handmade noodles, Hurrica’s nautical setting and the Mission District sausage shop. The Redwood City stop is the closest to the South Bay, making this broad Bay Area food tour the most local pick here.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> It offers a fresh Bay Area restaurant snapshot, with Hurrica in Redwood City closest to the South Bay.
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== DEDICATED TAB VIEWS ==================== -->
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <details>
+      <summary>Editorial & Pipeline Notes (31)</summary>
+      <ul>
+<li>4 candidate items were dropped before publication (dead links, stale or already-covered stories).</li><li>followups.updates: could not fetch &#39;Aadarsha Kutumbam Box Office Collection &#39; to verify it</li><li>finance.us: only 4 items kept (target 7)</li><li>finance.us: could not fetch &#39;Longer-term Treasury yields fall to two-&#39; to verify it</li><li>finance.week: could not fetch &#39;US October CPI release — November 10 at &#39; to verify it</li><li>finance.watch: only 0 items kept (target 3)</li><li>nutrition.science: could not fetch &#39;Small fish-rich keto intervention links &#39; to verify it</li><li>nutrition.watch: only 0 items kept (target 3)</li><li>industry.products: only 3 items kept (target 6)</li><li>industry.models: could not fetch &#39;GPT-6 Rosalind Research targets approved&#39; to verify it</li><li>industry.models: could not fetch &#39;Agent Arena ranks Claude Opus 5.5 first &#39; to verify it</li><li>industry.watch: only 1 items kept (target 3)</li><li>science.space: only 4 items kept (target 7)</li><li>science.life: only 4 items kept (target 7)</li><li>science.life: could not fetch &#39;A Cretaceous dinosaur’s skull points to &#39; to verify it</li><li>world.world: only 3 items kept (target 6)</li><li>world.world: could not fetch &#39;Colombian military-base attack exposes p&#39; to verify it</li><li>world.world: could not fetch &#39;Switzerland reopens its diplomatic offic&#39; to verify it</li><li>world.india: only 3 items kept (target 6)</li><li>culture.indian: only 3 items kept (target 8)</li><li>culture.music: only 2 items kept (target 8)</li><li>culture.concerts: only 0 items kept (target 5)</li><li>local.southbay: only 1 items kept (target 4)</li><li>local.trips: only 1 items kept (target 3)</li><li>local.deals: only 1 items kept (target 3)</li><li>Reviewer (REVISE): sampled 66 items; 24 removed, 2 corrected.</li><li>Recipe correction applied before rendering: ground goat is now cooked to 160°F (71°C) internal temperature.</li><li>Only one follow-up survived source verification and review; the re-entry update is retained, and the other candidates were removed as unverified.</li><li>Editorial theme, top picks and section intros were refreshed after review removals; all top picks now reference retained items.</li><li>Finance and nutrition watch sections remain empty after the one permitted widening retry because repeated YouTube watch-page requests returned HTTP 429; industry watch retains one verified item.</li><li>Culture, local and travel listings remain thin after the one permitted widening retry where event dates/venues, current fares or prices, or distinct recent releases could not be verified.</li>      </ul>
+    </details>
+    <details>
+      <summary>All Sources & Citations (92)</summary>
+      <ol>
+        <li><a href="https://www.wral.com/weather/swift-reentry-nov-2026/" target="_blank" rel="noopener">Swift re-entry forecasts move to 3–5 November</a> &mdash; <cite>WRAL</cite></li>
+        <li><a href="https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026" target="_blank" rel="noopener">Maruti Suzuki records its highest-ever monthly sales in October</a> &mdash; <cite>Maruti Suzuki</cite></li>
+        <li><a href="https://investor.apple.com/investor-relations/event-details/2026/FY-26-Fourth-Quarter-Results/default.aspx" target="_blank" rel="noopener">Apple FY26 fourth-quarter results call — November 2 at 2 p.m. PT</a> &mdash; <cite>Apple Investor Relations</cite></li>
+        <li><a href="https://www.eia.gov/petroleum/supply/weekly/schedule.php" target="_blank" rel="noopener">EIA Weekly Petroleum Status Report — November 4 at 10:30 a.m. ET</a> &mdash; <cite>U.S. Energy Information Administration</cite></li>
+        <li><a href="https://www.bls.gov/schedule/2026/11_sched_list.htm" target="_blank" rel="noopener">US October CPI release — November 10 at 8:30 a.m. ET</a> &mdash; <cite>U.S. Bureau of Labor Statistics</cite></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42887446/" target="_blank" rel="noopener">KETO-MINOX finds no extra redox benefit from an energy-restricted ketogenic diet</a> &mdash; <cite>Clinical Nutrition via PubMed</cite></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42868613/" target="_blank" rel="noopener">A four-week trial reports fitness gains alongside worse sleep scores in ketogenic-diet groups</a> &mdash; <cite>Applied Physiology, Nutrition, and Metabolism via PubMed</cite></li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13673408/" target="_blank" rel="noopener">Small fish-rich keto intervention links higher TMAO with several simultaneous diet changes</a> &mdash; <cite>Endocrinology, Diabetes &amp; Metabolism via PubMed Central</cite></li>
+        <li><a href="https://github.com/github/copilot-cli/releases" target="_blank" rel="noopener">GitHub Copilot CLI 1.0.106-2 smooths MCP and session handling</a> &mdash; <cite>GitHub</cite></li>
+        <li><a href="https://developer.android.com/blog/posts/build-it-your-way-a-next-era-of-android-development" target="_blank" rel="noopener">Android Studio Rabbit 2 opens to 40-plus coding agents</a> &mdash; <cite>Android Developers</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot/" target="_blank" rel="noopener">GitHub Copilot can create and save images in chat</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://www.mediaoffice.abudhabi/en/crown-prince-news/khaled-bin-mohamed-bin-zayed-meets-sam-altman-and-witnesses-signing-of-agreements-with-openai/" target="_blank" rel="noopener">Abu Dhabi announces four OpenAI agreements, including a live government pilot</a> &mdash; <cite>Abu Dhabi Media Office</cite></li>
+        <li><a href="https://www.relexsolutions.com/news/relex-advances-agentic-ai-platform-to-orchestrate-the-value-chain/" target="_blank" rel="noopener">RELEX expands its agentic platform across retail operations</a> &mdash; <cite>RELEX Solutions</cite></li>
+        <li><a href="https://www.businessinsider.com/home-depot-chief-open-ai-agents-muse-instinct-2026-10" target="_blank" rel="noopener">Home Depot wants shopping agents to identify themselves</a> &mdash; <cite>Business Insider</cite></li>
+        <li><a href="https://www.virtana.com/press-release/virtana-launches-agentic-observability-enterprise-management-ushering-in-a-new-era-of-collaborative-ai-agents-for-autonomous-it/" target="_blank" rel="noopener">Virtana proposes MCP and A2A coordination for IT incidents</a> &mdash; <cite>Virtana</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/" target="_blank" rel="noopener">Copilot will retire three models on November 16</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" rel="noopener">GPT-6 Rosalind Research targets approved life-sciences workflows</a> &mdash; <cite>OpenAI Help Center</cite></li>
+        <li><a href="https://canary.arena.ai/leaderboard/agent" target="_blank" rel="noopener">Agent Arena ranks Claude Opus 5.5 first in its October 28 agent-session snapshot</a> &mdash; <cite>Agent Arena</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app/" target="_blank" rel="noopener">Copilot app adds a local workflow for code-scanning alerts</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.19" target="_blank" rel="noopener">LangGraph 1.2.19 fixes streaming and paused-tool reporting</a> &mdash; <cite>LangGraph / GitHub</cite></li>
+        <li><a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0" target="_blank" rel="noopener">MCP server release updates certificate dependencies</a> &mdash; <cite>Model Context Protocol / GitHub</cite></li>
+        <li><a href="https://github.com/vllm-project/vllm/releases" target="_blank" rel="noopener">vLLM v0.33.0 adds model support and drops CUDA 12.9 artifacts</a> &mdash; <cite>vLLM / GitHub</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.30181" target="_blank" rel="noopener">Deep Search in Real-World Web Environments</a> &mdash; <cite>arXiv / Hugging Face Daily Papers</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.30949" target="_blank" rel="noopener">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a> &mdash; <cite>arXiv / Hugging Face Daily Papers</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.41738" target="_blank" rel="noopener">Search When Needed, Proceed When Reliable: Metacognitive Reliability Supervision for Efficient Agentic Search</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.39790" target="_blank" rel="noopener">Long-Term Agent Memory through Complementary Curation and Consolidation</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.40758" target="_blank" rel="noopener">More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.41149" target="_blank" rel="noopener">Counterfactual Pairwise Augmentation Improves Small Pointwise LLM Judges</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener">When Agents Fail: Model or Harness--Who&#39;s to Blame?</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.25568" target="_blank" rel="noopener">Design and Cross-Domain Evaluation of an Agent Execution Harness</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.21412" target="_blank" rel="noopener">JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.26770" target="_blank" rel="noopener">HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.18868" target="_blank" rel="noopener">Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener">VeriCUA: Verification as Agentic Exploration for Computer-Using Agents</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.28679" target="_blank" rel="noopener">VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.30491" target="_blank" rel="noopener">What the Trace Shows and What the Label Says: Auditing Behavioral Detectors in Agent Evaluation</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=iwnrFggbpQ0" target="_blank" rel="noopener">Why The Universe Doesn’t Add Up (And How We’re Going To Try To Figure It Out)</a> &mdash; <cite>NASA Goddard</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=eYViePMalJE" target="_blank" rel="noopener">The Universe Has Been Expanding Since the Big Bang. Just Not How We Thought.</a> &mdash; <cite>PBS Space Time</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=H93WFv0w_G0" target="_blank" rel="noopener">Extended Dark Energy analysis using DESI DR2 BAO measurements</a> &mdash; <cite>Dark Energy Spectroscopic Instrument</cite></li>
+        <li><a href="https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/" target="_blank" rel="noopener">NASA asks industry about possible commercial Hubble servicing</a> &mdash; <cite>NASA Science</cite></li>
+        <li><a href="https://www.jpl.nasa.gov/news/nasas-voyager-1-conserves-power-resolves-brief-communications-pause/" target="_blank" rel="noopener">Voyager 1 saves power after a 48-hour communications pause</a> &mdash; <cite>NASA Jet Propulsion Laboratory</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.31200" target="_blank" rel="noopener">Eight newly studied triple-star systems are nearly coplanar</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.36446" target="_blank" rel="noopener">Giant impacts may help rocky planets retain primordial atmospheres</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://news.stonybrook.edu/university/stony-brook-paleontologist-dinosaur-discovery-reveals-a-specialized-fruit-eater/" target="_blank" rel="noopener">A Cretaceous dinosaur’s skull points to fruit eating</a> &mdash; <cite>Stony Brook University</cite></li>
+        <li><a href="https://news.cornell.edu/stories/2026/10/unifying-mechanism-cancer-driving-mutations" target="_blank" rel="noopener">A DNA-folding mechanism may connect a family of cancer mutations</a> &mdash; <cite>Cornell Chronicle</cite></li>
+        <li><a href="https://www.naturalresources.wales/about-us/news-and-blogs/news/patience-pays-off-for-rare-species-in-pembrokeshire/?lang=en" target="_blank" rel="noopener">Rare oil beetle larvae found again at Wales’s only known site</a> &mdash; <cite>Natural Resources Wales</cite></li>
+        <li><a href="https://news.mit.edu/2026/capturing-complete-process-of-embryonic-development-1028" target="_blank" rel="noopener">A cell-lineage map follows mouse embryos across development</a> &mdash; <cite>MIT News</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=LiAAayT_v84" target="_blank" rel="noopener">Two Different Things Are Killing Sharks</a> &mdash; <cite>SciShow</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=dfA_VA20A2Y" target="_blank" rel="noopener">How To Hold Something That&#39;s 10,000,000 Degrees</a> &mdash; <cite>SciShow</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=F3DH6dYSyOI" target="_blank" rel="noopener">What Star Trek got right about science (and what it got wrong) | Part 2</a> &mdash; <cite>The Royal Institution</cite></li>
+        <li><a href="https://www.dfae.admin.ch/en/newnsb/tTt86k6kzUJW" target="_blank" rel="noopener">Switzerland reopens its diplomatic office in Pyongyang</a> &mdash; <cite>Swiss Federal Department of Foreign Affairs</cite></li>
+        <li><a href="https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-bharat-renewable-energy-summit-expo-2026-on-2nd-november/" target="_blank" rel="noopener">Bharat Renewable Energy Summit opens in New Delhi</a> &mdash; <cite>Prime Minister’s Office, Government of India</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=2Ts3d6kgwGM" target="_blank" rel="noopener">Ukraine&#39;s air-alert app hit by false attack warnings | DW News</a> &mdash; <cite>DW News</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=jLF5jaXX0uc" target="_blank" rel="noopener">Scam Centres Expand Into Madagascar After Crackdown in Cambodia | GRAVITAS</a> &mdash; <cite>WION</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=odu797q0d3c" target="_blank" rel="noopener">Why is the UK Prime Minister saying he&#39;s open to a slavery apology? | BBC News</a> &mdash; <cite>BBC News</cite></li>
+        <li><a href="https://www.rolexparismasters.com/en/news/article/edition-2026-main-draw-complete-draw-matchups-opponents" target="_blank" rel="noopener">Paris qualifying completes the men’s singles draw</a> &mdash; <cite>Rolex Paris Masters</cite></li>
+        <li><a href="https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html" target="_blank" rel="noopener">Ignacio Buse becomes the first Peruvian to win at the Paris Masters</a> &mdash; <cite>Tennis Majors</cite></li>
+        <li><a href="https://www.tennis.com/tournaments/merida-open-akron/matches/c-liu-vs-t-prozorova-2026-11-02" target="_blank" rel="noopener">Claire Liu opens the Hong Kong Open with a straight-sets win</a> &mdash; <cite>Tennis.com</cite></li>
+        <li><a href="https://www.fia.com/news/f1-antonelli-crowned-f1s-youngest-world-champion-verstappen-wins-mexico-city" target="_blank" rel="noopener">Verstappen wins in Mexico as Antonelli clinches the F1 title</a> &mdash; <cite>Fédération Internationale de l’Automobile (FIA)</cite></li>
+        <li><a href="https://www.liverpoolfc.com/news/match-report-liverpool-arsenal-premier-league-november-2026" target="_blank" rel="noopener">Arsenal leave Anfield with a 1–0 Premier League win</a> &mdash; <cite>Liverpool FC</cite></li>
+        <li><a href="https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-athletic-club-real-sociedad-11" target="_blank" rel="noopener">Athletic Club edge Real Sociedad 2–1 in the Basque derby</a> &mdash; <cite>LALIGA</cite></li>
+        <li><a href="https://goodminton.fi/en/articles/doubles-first-three-shots" target="_blank" rel="noopener">Train the first three shots as one badminton doubles sequence</a> &mdash; <cite>Goodminton Academy</cite></li>
+        <li><a href="https://thegodofsports.com/blogs/news/victor-thruster-ryuga-metallic-badminton-racket-review" target="_blank" rel="noopener">A recent review maps the Ryuga Metallic’s power-versus-speed trade-off</a> &mdash; <cite>God of Sports</cite></li>
+        <li><a href="https://www.racket-world.de/VICTOR-Auraspeed-HS-Plus-Review" target="_blank" rel="noopener">VICTOR Auraspeed HS Plus review – 9/10 control and 8/10 power</a> &mdash; <cite>Racket World</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=tIiRK7hKScU" target="_blank" rel="noopener">Race Highlights | 2026 Mexico City Grand Prix</a> &mdash; <cite>FORMULA 1</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=DfOFBAiT2XU" target="_blank" rel="noopener">Jonatan Christie vs Lakshya Sen | Maintained pressure and focus</a> &mdash; <cite>BWF TV</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=1PfJqdMfVDs" target="_blank" rel="noopener">Line Højmark Kjærsfeldt vs Pusarla V. Sindhu | High-tempo women&#39;s singles final</a> &mdash; <cite>BWF TV</cite></li>
+        <li><a href="https://timesofindia.indiatimes.com/entertainment/telugu/movies/news/sankarabharanam-to-return-to-theatres-in-november-k-viswanaths-1980-musical-classic-gets-4k-restoration/articleshow/135349146.cms" target="_blank" rel="noopener">‘Sankarabharanam’ returns to cinemas with a 4K restoration</a> &mdash; <cite>The Times of India</cite></li>
+        <li><a href="https://www.thehansindia.com/cinema/mythri-movie-makers-mitti-and-moon-films-join-hands-for-mynaa-1137990" target="_blank" rel="noopener">Mythri Movie Makers and Mitti and Moon launch ‘Mynaa’</a> &mdash; <cite>The Hans India</cite></li>
+        <li><a href="https://www.thehansindia.com/cinema/nagababu-unveils-title-poster-of-mailu-rayi-1137271" target="_blank" rel="noopener">Nagababu unveils the title poster for ‘Mailu Rayi’</a> &mdash; <cite>The Hans India</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/news/2026/Nov/02/ah-trailer-unveiled-rahul-vijay-calls-it-a-dark-crime-thriller" target="_blank" rel="noopener">‘AH’ will open in theatres on November 12</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://telugu.tfpc.in/2026/10/12/vijay-antonys-nanna-kutti-set-for-a-diwali-release-on-november-6/" target="_blank" rel="noopener">‘Nanna Kutti’ is scheduled for a Diwali-week theatrical release</a> &mdash; <cite>Telugu Film Producers Council</cite></li>
+        <li><a href="https://telugu.tfpc.in/2026/10/27/chandrayaan-rocket-revealed-film-to-be-released-on-november-13/" target="_blank" rel="noopener">‘Chandrayaan’ moves to a November 13 theatrical date</a> &mdash; <cite>Telugu Film Producers Council</cite></li>
+        <li><a href="https://www.thehansindia.com/cinema/tollywood/dark-choclate-trailer-launched-1135846" target="_blank" rel="noopener">‘Dark Chocolate’ sets a November 13 cinema release</a> &mdash; <cite>The Hans India</cite></li>
+        <li><a href="https://www.netflix.com/tudum/articles/new-on-netflix?lv=true" target="_blank" rel="noopener">Netflix schedules ‘Murder in Galicia’ for November 13</a> &mdash; <cite>Netflix Tudum</cite></li>
+        <li><a href="https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026" target="_blank" rel="noopener">Prime Video sets Muhammad Ali series ‘The Greatest’ for November 4</a> &mdash; <cite>About Amazon / Prime Video</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=0pow_UtMhcM" target="_blank" rel="noopener">O Mysaa Re Lyrical Video - Mysaa | Rashmika | Rawindra Pulle | Jakes Bejoy| UnFormula Films</a> &mdash; <cite>T-Series Telugu</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=vFBMumCsSkc" target="_blank" rel="noopener">Koodukuntunnadi Song | Raju Weds Rambai | Akhil Uddemari, Tejaswi Rao | Suresh Bobbili</a> &mdash; <cite>Aditya Music</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=2hLErDE7jps" target="_blank" rel="noopener">Edho Edho Lyrical Video | The Sesso Telugu Movie | Yesh Raj, Moupiya Gauswami | Telugu Love Songs</a> &mdash; <cite>Mango Music</cite></li>
+        <li><a href="https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/" target="_blank" rel="noopener">Is There Anything Left in the Dream of Cold Fusion?</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://www.equator.org/articles/arundhati-roy-artificial-intelligence" target="_blank" rel="noopener">Apocalypse Now and Then</a> &mdash; <cite>EQUATOR</cite></li>
+        <li><a href="https://aeon.co/essays/why-real-intelligence-is-something-more-than-optimisation" target="_blank" rel="noopener">Reason is more than a tool</a> &mdash; <cite>Aeon</cite></li>
+        <li><a href="https://latent.space/p/arca/" target="_blank" rel="noopener">Agents Prompt People: Using Agents for Long-Horizon Financial Work</a> &mdash; <cite>Latent Space</cite></li>
+        <li><a href="https://link.springer.com/book/10.1007/978-3-032-26749-8" target="_blank" rel="noopener">Reliable Evaluations for LLMs and AI Agents</a> &mdash; <cite>Springer Nature</cite></li>
+        <li><a href="https://www.penguinrandomhouse.com/books/826774/lost-in-space-by-neil-degrasse-tyson-and-lindsey-nyx-walker/" target="_blank" rel="noopener">Lost in Space</a> &mdash; <cite>Penguin Random House</cite></li>
+        <li><a href="https://www.penguinrandomhouse.com/books/828104/multiplicity-by-telmo-pievani/" target="_blank" rel="noopener">Multiplicity</a> &mdash; <cite>Penguin Random House</cite></li>
+        <li><a href="https://sanjosespotlight.com/the-biz-beat-popular-san-jose-mexican-bakery-opens-4th-location/" target="_blank" rel="noopener">Panapolis opens its fourth San Jose bakery on Snell Avenue</a> &mdash; <cite>San José Spotlight</cite></li>
+        <li><a href="https://newsroom.lufthansagroup.com/en/swiss-celebrates-inaugural-flight-to-bengaluru/" target="_blank" rel="noopener">SWISS begins five-weekly Zurich–Bengaluru flights</a> &mdash; <cite>Lufthansa Group Newsroom</cite></li>
+        <li><a href="https://www.tomsguide.com/wellness/smartwatches/dont-wait-until-black-friday-garmins-rugged-smartwatch-with-a-flashlight-is-usd100-off-right-now" target="_blank" rel="noopener">Garmin Instinct 3 AMOLED is listed at $349 on Amazon</a> &mdash; <cite>Tom’s Guide</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=ZdnOKPavK8Y" target="_blank" rel="noopener">Italian Calcio - What to Know Before You Go to an Italian Football Match</a> &mdash; <cite>Wolters World</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=N6OeaTtjILo" target="_blank" rel="noopener">Impression of Lanzhou, Hurrica, Rosamunde Sausage Grill | Check, Please! Bay Area</a> &mdash; <cite>KQED Food</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=tjtpF4JiDL0" target="_blank" rel="noopener">How to Beat Jet Lag (Without Looking Like a Fool)</a> &mdash; <cite>Wolters World</cite></li>
+      </ol>
+    </details>
+    <p>Want a topic added, dropped or weighted differently? Tell your agent in any session or add a line to the local feedback file; the next morning's run applies it.</p>
+    <p>Compiled on 2026-11-02 10:20 PST by research intelligence agents from verified sources. Private and calibrated to your context.</p>
+  </div>
+</div>
+<script>
+// Techmeme-inspired dynamic functionality for The Morning Brief
+(function() {
+  // Quick jump & date features
+  window.addEventListener('DOMContentLoaded', function() {
+    var searchForm = document.getElementById('briefSearchForm');
+    if (searchForm) {
+      searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var q = (document.getElementById('briefSearchInput') || {}).value;
+        if (q) {
+          window.find ? window.find(q) : alert('Searching for: ' + q);
+        }
+      });
+    }
+  });
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1478 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Morning Brief - Agent Papers Radar - Monday, November 2, 2026</title>
+<meta name="description" content="Agent papers ask where failures sit—in the model or the harness—and vLLM ships a fresh release. NASA is considering Hubble servicing, Maruti reports October sales, and Prime Video’s November slate brings new viewing dates.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="alternate" type="application/atom+xml" title="The Morning Brief" href="https://rajasekharmekala.github.io/daily-brief/feed.xml">
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.35;
+  font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  font-size: 15.5px;
+  margin: 0 auto;
+  max-width: 90em;
+  min-width: 61em;
+  padding: 0 1.6em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links (Techmeme iconic link styling) */
+a {
+  text-decoration: none;
+  color: #002848;
+}
+a:visited {
+  color: #902050;
+}
+a:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+/* Headings & Techmeme Typography */
+h1, h2, h3, h4, h5 {
+  font-family: Optima, "Century Gothic", -apple-system, sans-serif;
+  color: #445555;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.45em;
+  padding: 0.75em 0 0.5em;
+}
+h3 {
+  font-size: 1.25em;
+  padding: 0.65em 0 0.35em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
+}
+
+cite {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.96em;
+  color: #686860;
+}
+cite a, cite a:visited {
+  color: #686860;
+}
+cite a:hover {
+  color: #002848;
+}
+
+.drhed {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  color: #408840;
+  font-weight: bold;
+  margin-right: 0.3em;
+  font-size: 0.94em;
+}
+
+.bls {
+  margin-left: -0.1em;
+}
+.bls a {
+  white-space: nowrap;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  font-size: 0.94em;
+}
+
+/* Pre-navbar / Header Topline */
+.pagecont {
+  margin-bottom: 3.5em;
+}
+.prenavbar {
+  margin-bottom: 0.4em;
+}
+.topline {
+  border-bottom: 1px solid #cccccc;
+  margin-top: 0.35em;
+  line-height: 1.7em;
+  font-size: 0.88em;
+  color: #666666;
+  padding-bottom: 0.25em;
+  clear: both;
+}
+.topline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.topline a {
+  color: #666666;
+}
+.topline a:visited {
+  color: #666666;
+}
+.topline a:hover {
+  color: #000000;
+  text-decoration: underline;
+  background: transparent;
+}
+.topllinks {
+  float: left;
+}
+.topllinks a {
+  padding-right: 1.3em;
+}
+.toprlinks {
+  float: right;
+}
+.toprlinks span {
+  padding-left: 0.9em;
+}
+
+/* Logo Tab table */
+.logotab {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 0.6em;
+}
+.logotab td {
+  vertical-align: middle;
+  width: 33.33%;
+}
+td.logobox {
+  padding: 0.6em 0;
+}
+.logo-title {
+  font-family: Optima, "Century Gothic", sans-serif;
+  font-size: 2.7em;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  color: #174a61;
+  display: inline-block;
+  line-height: 1;
+}
+.logo-title:visited {
+  color: #174a61;
+}
+.logo-title:hover {
+  text-decoration: none;
+  background: transparent;
+}
+.logo-sub {
+  font-size: 0.82em;
+  color: #777777;
+  font-weight: normal;
+  display: block;
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+td.datebox {
+  text-align: center;
+  color: #444444;
+  font-size: 0.96em;
+}
+.date-str {
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #222222;
+}
+.weather-str {
+  font-size: 0.9em;
+  color: #666666;
+  margin-top: 3px;
+}
+
+td.searchbox {
+  text-align: right;
+  font-size: 0.92em;
+}
+.sbti {
+  width: 13em;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 6px;
+  font-family: inherit;
+  font-size: 0.96em;
+}
+.sbti-btn {
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 9px;
+  font-size: 0.96em;
+  cursor: pointer;
+  font-family: inherit;
+}
+.sbti-btn:hover {
+  background: #e0e8f0;
+}
+
+/* Navigation Bar (Techmeme Navy Blue) */
+.navbar {
+  background: #174a61;
+  text-transform: uppercase;
+  clear: both;
+  line-height: 1.9em;
+  font-size: 0.88em;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+}
+.navtabs {
+  padding: 0;
+}
+.navtabs a {
+  padding: 0.3em 0.8em;
+  display: inline-block;
+  color: #dddddd;
+  font-weight: bold;
+}
+.navtabs a:visited {
+  color: #dddddd;
+}
+.navtabs a:hover {
+  background: #578aa1;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navtabs span.iamhere a {
+  background: #578aa1;
+  color: #ffffff;
+}
+.navtabs span.iamhere a:visited {
+  color: #ffffff;
+}
+.sisnav {
+  float: right;
+}
+.sisnav a {
+  color: #c0d8e8;
+  font-weight: normal;
+  padding: 0.3em 0.7em;
+}
+.sisnav a:visited {
+  color: #c0d8e8;
+}
+.sisnav a:hover {
+  color: #ffffff;
+  background: #25607b;
+}
+
+/* Sub-nav / Section Jump Bar */
+.subnavbar {
+  background: #f4f6f8;
+  border-bottom: 1px solid #d8e0e6;
+  padding: 0.35em 0.6em;
+  font-size: 0.85em;
+  line-height: 1.7em;
+  margin-bottom: 0.9em;
+}
+.subnavbar a {
+  color: #004860;
+  padding: 0.1em 0.5em;
+  font-weight: 600;
+  display: inline-block;
+}
+.subnavbar a:hover {
+  background: #d8e8f4;
+  text-decoration: none;
+}
+.subnavbar .subnav-label {
+  font-weight: bold;
+  color: #556677;
+  padding-right: 0.4em;
+  text-transform: uppercase;
+  font-size: 0.92em;
+}
+
+/* Executive Synthesis / Theme Banner */
+.exec-theme-box {
+  background: #fdfbe8;
+  border: 1px solid #d8c878;
+  border-left: 5px solid #d4a017;
+  padding: 0.75em 1.1em;
+  margin: 0.8em 0 1.3em;
+  font-size: 0.98em;
+  line-height: 1.5em;
+  color: #2b2b20;
+  border-radius: 2px;
+}
+.exec-theme-box strong {
+  color: #604000;
+  font-size: 1.05em;
+  display: inline;
+}
+
+/* Layout Columns */
+.ed {
+  clear: both;
+}
+.ed:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#topcol1 {
+  float: left;
+  width: 50%;
+  margin-top: 0.5em;
+  padding-right: 1.3%;
+}
+#topcol23 {
+  float: left;
+  width: 48.5%;
+  margin-left: 0.2%;
+}
+#topcol2 {
+  float: left;
+  width: 66%;
+  margin-top: 0.5em;
+}
+#topcol3 {
+  float: right;
+  width: 32%;
+  margin-top: 0.5em;
+  margin-left: 2%;
+  position: relative;
+}
+
+/* Bottom 2-column layout */
+.abotcols {
+  clear: both;
+  width: 100%;
+  border-bottom: 2px solid #e8e8e8;
+  padding-top: 1.2em;
+  margin-bottom: 1.3em;
+}
+#botcol1 {
+  float: left;
+  width: 49%;
+  padding-right: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+#botcol2 {
+  float: right;
+  width: 49%;
+  padding-left: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+
+/* Clusters and Items */
+.clus {
+  padding-bottom: 0.7em;
+}
+.item {
+  padding-top: 0.4em;
+  padding-bottom: 1.35em;
+  clear: both;
+  border-bottom: 1px solid #dddddd;
+}
+.item:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.item.last {
+  border-bottom: none;
+}
+.itc1 {
+  padding-left: 0.4em;
+}
+.itc2 {
+  padding: 0;
+}
+
+/* Shared cluster table / headline row */
+.shrtbl {
+  width: 100%;
+  border-collapse: collapse;
+}
+.shrtbl tr > td:first-child {
+  vertical-align: middle;
+}
+.shrtbl tr > td:first-child + td {
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 0.85em;
+  color: #777777;
+}
+
+.ii {
+  padding-top: 0.35em;
+  line-height: 1.4em;
+  font-size: 1.02em;
+}
+
+/* Image Thumbnails & Fallbacks */
+.ill {
+  float: right;
+  width: 120px;
+  height: 85px;
+  object-fit: cover;
+  padding: 0.1em 0 0.5em 0.8em;
+  border-radius: 3px;
+}
+.ill-icon-wrap {
+  float: right;
+  width: 78px;
+  height: 64px;
+  margin: 0.1em 0 0.5em 0.8em;
+  background: #f3f6f9;
+  border: 1px solid #d8e0e6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+}
+.ill-icon-wrap img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Headline typography scale */
+.ourh {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+}
+.ourh:link {
+  color: #004860;
+}
+.ourh:visited {
+  color: #a04860;
+}
+.ourh:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+.L1 { font-size: 1.18em; font-weight: bold; }
+.L2 { font-size: 1.28em; font-weight: bold; letter-spacing: -0.01em; }
+.L3 { font-size: 1.38em; font-weight: bold; letter-spacing: -0.015em; }
+.L4 { font-size: 1.48em; font-weight: bold; letter-spacing: -0.02em; }
+.L5 { font-size: 1.6em; font-weight: bold; letter-spacing: -0.025em; }
+
+.item-summary {
+  color: #111111;
+  font-size: 0.96em;
+}
+
+.item-why {
+  margin-top: 0.4em;
+  padding: 0.35em 0.6em;
+  background: #f7fafc;
+  border-left: 3px solid #6090a8;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  color: #334455;
+  border-radius: 0 2px 2px 0;
+}
+.item-why strong {
+  color: #174a61;
+  font-size: 0.94em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.3em;
+}
+
+/* Related items under a cluster */
+.relitems {
+  margin-top: 0.45em;
+  margin-bottom: 0.85em;
+  border-left: 2px solid #e0e8ef;
+  padding-left: 0.65em;
+}
+.relitems .item {
+  padding-top: 0.35em;
+  padding-bottom: 0.65em;
+  border-bottom: 1px dotted #e0e0e0;
+}
+.relitems .item:last-child {
+  border-bottom: none;
+}
+.relitems .ourh {
+  font-size: 1.05em;
+}
+
+/* Discussion / Sub-links / Secondary items */
+.dbpt {
+  padding-top: 0.4em;
+  font-size: 0.92em;
+  line-height: 1.42em;
+}
+
+/* Right-hand column: Newest / Chronological River */
+#topcol3 .item {
+  padding: 0.6em 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+#topcol3 .ii {
+  padding-top: 0.25em;
+  font-size: 0.96em;
+}
+#topcol3 a.nfdl {
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #004860;
+  font-size: 0.98em;
+}
+#topcol3 a.nfdl:visited {
+  color: #a04860;
+}
+#topcol3 a.nfdl:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+.ago {
+  color: #777777;
+  font-size: 0.84em;
+  padding-top: 0.35em;
+}
+
+/* Grey sponsor / highlighted background box */
+#tkzwuvgyr {
+  padding: 0.7em 1em 1em;
+  background: #f4f6f8;
+  border: 1px solid #e0e6ec;
+  border-radius: 3px;
+  margin-bottom: 1.3em;
+}
+#tkzwuvgyr h3 {
+  padding-top: 0.2em;
+  color: #223344;
+}
+#tkzwuvgyr .item {
+  border: none;
+  padding-bottom: 0.6em;
+}
+
+/* Pod / Media item box (Techmeme style) */
+.pod-box {
+  margin: 1em 0;
+  padding: 0.85em;
+  background: #f9fcfe;
+  border: 1px solid #d8e0e8;
+  border-radius: 3px;
+}
+.pod-box:first-of-type {
+  margin-top: 0.4em;
+}
+.pod-head {
+  font-size: 0.88em;
+  font-weight: bold;
+  color: #174a61;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+.pod-name {
+  font-weight: bold;
+  color: #004860;
+}
+
+/* Deep Dive longform article styled into Techmeme editorial */
+.deepdive-container {
+  background: #fcfdfe;
+  border: 1px solid #ccd9e2;
+  border-radius: 3px;
+  padding: 1.3em 1.5em;
+  margin: 0.9em 0 1.6em;
+}
+.deepdive-container h2 {
+  font-size: 1.65em;
+  line-height: 1.25;
+  color: #174a61;
+  padding: 0 0 0.35em;
+}
+.deepdive-subtitle {
+  font-size: 1.12em;
+  color: #555555;
+  font-style: italic;
+  margin-bottom: 0.85em;
+}
+.deepdive-keypts {
+  background: #f4f8fb;
+  border-left: 4px solid #174a61;
+  padding: 0.65em 1.1em;
+  margin: 0.85em 0 1.1em;
+  font-size: 0.96em;
+}
+.deepdive-keypts h4 {
+  font-size: 0.96em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #174a61;
+  margin-bottom: 0.45em;
+}
+.deepdive-keypts ul {
+  padding-left: 1.3em;
+  list-style: square;
+}
+.deepdive-keypts li {
+  margin-bottom: 0.35em;
+  line-height: 1.45em;
+}
+.deepdive-body {
+  font-size: 1.04em;
+  line-height: 1.6em;
+  color: #222222;
+}
+.deepdive-body p {
+  padding-bottom: 0.85em;
+}
+.deepdive-body h3 {
+  font-size: 1.3em;
+  padding: 0.85em 0 0.35em;
+  color: #174a61;
+}
+.deepdive-refs {
+  margin-top: 1.3em;
+  padding-top: 0.85em;
+  border-top: 1px solid #d0d8e0;
+  font-size: 0.9em;
+}
+.deepdive-refs ol {
+  padding-left: 1.6em;
+}
+.deepdive-refs li {
+  padding-bottom: 0.45em;
+}
+
+/* Keto Kitchen / Nutrition in Techmeme style */
+.kitchen-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.7em 0 1.1em;
+  font-size: 0.94em;
+  background: #f7faf9;
+  border: 1px solid #cfe0d8;
+}
+.kitchen-table th, .kitchen-table td {
+  padding: 0.45em 0.85em;
+  border: 1px solid #d4e4dc;
+  text-align: left;
+}
+.kitchen-table th {
+  background: #e4f0ea;
+  font-weight: bold;
+  color: #205038;
+}
+
+/* Recipe card & Single Recipe Detail View */
+.recipe-card {
+  border: 1px solid #dcdcdc;
+  background: #ffffff;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
+  border-radius: 3px;
+}
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
+  color: #004860;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+.recipe-macros {
+  font-size: 0.94em;
+  color: #408840;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
+.recipe-cols {
+  display: flex;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+.recipe-cols > div {
+  flex: 1;
+}
+.recipe-cols h5 {
+  font-weight: bold;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
+  margin-bottom: 0.45em;
+  padding-left: 0.2em;
+}
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
+}
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
+}
+
+/* Footer / Run Notes */
+.page-footer {
+  margin-top: 2.8em;
+  padding: 1.3em 0.5em 2.8em;
+  border-top: 1px solid #cccccc;
+  font-size: 0.88em;
+  color: #666666;
+  line-height: 1.55em;
+  clear: both;
+}
+.page-footer a {
+  color: #004860;
+}
+.page-footer details {
+  margin-bottom: 0.85em;
+}
+.page-footer summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #445555;
+}
+.page-footer ul, .page-footer ol {
+  padding-left: 1.6em;
+  margin-top: 0.45em;
+}
+
+/* Archive Page (Techmeme-style directory) */
+.archive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.1em;
+}
+.archive-table th {
+  text-align: left;
+  font-weight: bold;
+  color: #455;
+  font-size: 1.08em;
+  padding: 0.55em 0.75em;
+  border-bottom: 2px solid #aaa;
+  background: #f4f4f4;
+}
+.archive-table td {
+  padding: 0.65em 0.75em;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+.archive-table tr:hover td {
+  background: #f8fbfe;
+}
+.archive-date {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 0.98em;
+}
+.archive-theme {
+  font-size: 1.08em;
+  line-height: 1.4em;
+}
+.archive-theme a {
+  font-weight: bold;
+}
+.archive-meta {
+  font-size: 0.88em;
+  color: #666666;
+  margin-top: 0.35em;
+}
+
+/* Responsive Rules */
+@media only screen and (max-width: 960px) {
+  body {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 0.8em;
+    font-size: 15px;
+  }
+  .logotab td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.3em 0;
+  }
+  td.datebox, td.searchbox {
+    text-align: left;
+  }
+  .navbar {
+    line-height: 2em;
+    font-size: 0.92em;
+  }
+  .sisnav {
+    display: none;
+  }
+  #topcol1, #topcol23, #topcol2, #topcol3, #botcol1, #botcol2 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .recipe-cols {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="pagecont">
+  <!-- Techmeme Prenavbar Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="https://rajasekharmekala.github.io/"><strong>Home</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html"><strong>Archive</strong></a>
+        <a href="https://rajasekharmekala.github.io/portfolio/"><strong>Portfolio Desk</strong></a>
+        <a href="https://rajasekharmekala.github.io/travel-research/"><strong>Travel Research</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html"><strong>Keto Cookbook</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/feed.xml">RSS Feed</a>
+        <span>Issue 12</span>
+      </div>
+      <div class="toprlinks">
+        <span>📍 San Jose: 67° / 46°F, Overcast</span>
+        <span>⏱ ~55 min reading</span>
+        <span>92 items</span>
+      </div>
+    </div>
+
+    <!-- Techmeme Header Logo Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">The Morning Brief</a>
+          <span class="logo-sub">Executive Personal Intelligence Briefing</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Monday, November 2, 2026</div>
+          <div class="weather-str">Sunrise 06:33 · Sunset 17:08 · AQI 48 · Moon: Last quarter, 48% lit</div>
+        </td>
+        <td class="searchbox">
+          <form id="briefSearchForm">
+            <input id="briefSearchInput" class="sbti" type="text" placeholder="Search briefing...">
+            <input class="sbti-btn" type="submit" value="Search">
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Techmeme Iconic Navy Navigation Bar - Dedicated Tabs -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html">Cookbook</a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html">Archives</a>
+      </div>
+      <span class=""><a href="index.html">Home</a></span>
+      <span class=""><a href="followups.html">Developing Stories</a></span>
+      <span class=""><a href="finance.html">Markets and Money</a></span>
+      <span class=""><a href="nutrition.html">Keto Kitchen</a></span>
+      <span class=""><a href="industry.html">Industry Watch</a></span>
+      <span class="iamhere"><a href="papers.html">Agent Papers Radar</a></span>
+      <span class=""><a href="deepdive.html">Deep Dive of the Day</a></span>
+      <span class=""><a href="science.html">Cosmos and Life</a></span>
+      <span class=""><a href="world.html">World and India</a></span>
+      <span class=""><a href="sports.html">Sports</a></span>
+      <span class=""><a href="culture.html">Movies and Music</a></span>
+      <span class=""><a href="library.html">Read and Listen</a></span>
+      <span class=""><a href="local.html">Local and Travel</a></span>
+    </div>
+  </div>
+
+  <!-- Sub-navigation anchor / quick link jumper -->
+  <div class="subnavbar">
+    <span class="subnav-label">Tabs:</span>
+    <a href="index.html" style="">Top Stories</a> |
+    <a href="followups.html" style="">Developing Stories (1m)</a> |     <a href="finance.html" style="">Markets and Money (2m)</a> |     <a href="nutrition.html" style="">Keto Kitchen (6m)</a> |     <a href="industry.html" style="">Industry Watch (6m)</a> |     <a href="papers.html" style="font-weight:bold;color:#a04860;">Agent Papers Radar (6m)</a> |     <a href="deepdive.html" style="">Deep Dive of the Day (12m)</a> |     <a href="science.html" style="">Cosmos and Life (5m)</a> |     <a href="world.html" style="">World and India (2m)</a> |     <a href="sports.html" style="">Sports (4m)</a> |     <a href="culture.html" style="">Movies and Music (4m)</a> |     <a href="library.html" style="">Read and Listen (3m)</a> |     <a href="local.html" style="">Local and Travel (2m)</a>  </div>
+
+  <!-- Executive Synthesis Theme Banner -->
+  <div class="exec-theme-box">
+    <strong>Executive Synthesis:</strong> Agent papers ask where failures sit—in the model or the harness—and vLLM ships a fresh release. NASA is considering Hubble servicing, Maruti reports October sales, and Prime Video’s November slate brings new viewing dates.
+  </div>
+
+  <!-- ==================== HOME TAB VIEW ==================== -->
+  <!-- Generic Dedicated Section Tab -->
+  <h2>Agent Papers Radar</h2>
+<div style="font-size:0.98em;color:#444;line-height:1.45em;padding-bottom:0.6em;"><p>Production-agent papers test web search, harness attribution, verifier creation and judge behavior. The summaries keep benchmark results but remove popularity rankings and upvote counts that the source pages did not show.</p></div>
+  <div class="clus">
+      <h3 style="color:#174a61;border-bottom:1px solid #ccc;padding-bottom:0.2em;margin-top:1.2em;">Trending agent papers</h3>
+        <div class="item" id="item-1dc6e7054c">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.30181" target="_blank" rel="noopener">arXiv / Hugging Face Daily Papers</a>:</cite>
+      </td>
+      <td>
+<span>Oct 19</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.30181" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.30181" target="_blank" rel="noopener">Deep Search in Real-World Web Environments</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">OpenDS-World tests live-web research across 200 tasks with 12 frontier models under one tool protocol. The best-performing model reached 39.0% accuracy, while human evaluation across 1,000 independent attempts reached 21.1%. The authors also report persistent challenges in tool coordination and long-horizon search management. These are benchmark results, not evidence that the task suite captures every useful research task.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> For your long-horizon agent and evaluation interests, this benchmark tests evidence gathering on the live web rather than static retrieval.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-52e7416894">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.30949" target="_blank" rel="noopener">arXiv / Hugging Face Daily Papers</a>:</cite>
+      </td>
+      <td>
+<span>Oct 22</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.30949" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.30949" target="_blank" rel="noopener">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">IQuest-Q1 is an open sparse mixture-of-experts foundation model for agentic coding, with 320B total parameters and 15B activated. The paper describes a three-stage training process and merging experts/checkpoints. The abstract reports coding and general-task capabilities but provides no benchmark scores, so its model size and training recipe do not establish a comparative capability advantage.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your production-agent paper tracking includes agentic CLI systems; this is a widely surfaced model release to compare against harness-level results.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-372344f263">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.41738" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>3 days ago</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.41738" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.41738" target="_blank" rel="noopener">Search When Needed, Proceed When Reliable: Metacognitive Reliability Supervision for Efficient Agentic Search</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">This paper trains agents to estimate whether their current reasoning is reliable enough to answer or whether search is needed, then separately scores whether retrieved evidence improves that reliability. Those signals form a process reward for GRPO rather than relying only on final correctness or a whole-trajectory score. The authors report a better accuracy-efficiency trade-off than strong agentic-search baselines across seven question-answering benchmarks. The abstract gives no effect sizes, and says code and checkpoints will be open-sourced, so independent reproduction remains a useful next check. No popularity signal shown.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This is directly relevant to your agent-evaluation and tool-use interests because it makes the search-versus-stop decision an explicit reliability target.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-4f4bf2b8c8">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.39790" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.39790" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.39790" target="_blank" rel="noopener">Long-Term Agent Memory through Complementary Curation and Consolidation</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The authors combine episodic memories with structured relational memories and add a consolidation mechanism intended to preserve efficiency. On LoCoMo and LongMemEval-S, the hybrid system reports 90.2% and 85.5% accuracy, respectively, and says the memory types are complementary to one another. The abstract compares the result favorably with existing frameworks, but does not identify all costs or benchmark-specific failure modes; the full paper is needed before treating those scores as a general long-term-memory result. No popularity signal shown.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This is closely tied to your long-horizon agent and memory interests; the two benchmark scores offer a concrete starting point for a reproduction comparison.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-5edce62501">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.40758" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.40758" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.40758" target="_blank" rel="noopener">More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">CLR-Bench tests whether self-evolving agents infer hidden rules or merely append each correction as another exception. It contains 20 curriculum chains across 10 domains and compares six self-evolution methods. With a certified model, the best methods improve by at most 5 points over a frozen agent and exclude only 6–12% of unseen members; retaining raw practice history excludes 20%. A fixed lesson about how to interpret the grouping raises results by 14.5–16.5 points. This is a narrow synthetic curriculum, but it exposes a concrete way memory growth can imitate learning. No popularity signal shown.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your agent-memory and harness interests make this a useful test of whether persistent rules generalize or just accumulate exceptions.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-f8f0bbe7e9">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.41149" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>3 days ago</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.41149" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.41149" target="_blank" rel="noopener">Counterfactual Pairwise Augmentation Improves Small Pointwise LLM Judges</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">CPA creates and audits an opposite-label answer for each pointwise judging example, trains on both the original and pairwise views, then deploys the judge pointwise. On Qwen3-8B LoRA adapters for six binary criteria, the authors report a 2.5-point gain in average pointwise macro-F1 over pointwise-only training and better results than model merging on all six criteria at each tested merge weight. It exceeds the paper’s zero-shot Gemini 3.6 Flash judge by 11.8 points. The evidence is from this six-criterion setup; broader evaluator domains remain untested. No popularity signal shown.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your LLM-as-judge and evaluation interests make the training setup useful to watch, especially its test of criterion-level decision boundaries.
+    </div>
+  </div>
+</div>
+
+      <h3 style="color:#174a61;border-bottom:1px solid #ccc;padding-bottom:0.2em;margin-top:1.2em;">Runtime, harness and production engineering</h3>
+        <div class="item" id="item-f028d80ce0">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 23</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener">When Agents Fail: Model or Harness--Who&#39;s to Blame?</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">This study argues that agent performance belongs to a model–harness pairing, then separates valid completion, model–harness fit, cross-model fit, interaction effects, and token load. It evaluates four general-purpose harnesses with four models across six benchmarks; 111 settings produce 52,168 trajectories. The authors find that rankings can change by model and benchmark, and that task score may diverge from whether a run completes in an evaluable form. The study covers selected public systems and benchmarks, so it supports interaction-aware comparisons rather than a universal harness ranking.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This supports your production-agent harness work by separating execution completion from answer correctness and model–runtime fit.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-ba94ee556d">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.25568" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 18</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.25568" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.25568" target="_blank" rel="noopener">Design and Cross-Domain Evaluation of an Agent Execution Harness</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">A planner, scoped workers, and a reviewer share an objective while keeping plan and execution record separate. The authors report 83 of 89 Terminal-Bench 2.1 instances passed (93.26%) and a length-adjusted HealthBench Professional score of 69.63 over 525 tasks. In a 53-task paired HealthBench comparison the aggregate score rose 19.89 points, while the median task changed by −1.46 points and mean inference cost rose from $0.29 to $2.13 per task. The instruction set was refined without official grading feedback, making the reported cross-domain gains an author-run result to verify independently.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your harness and agent-evaluation interests make the cost and task-level spread as important as the headline pass rate.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-f8eae26297">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.21412" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 15</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.21412" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.21412" target="_blank" rel="noopener">JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">JevAgentHarness delegates routine multiple-choice decisions to a smaller decision model but fits a confidence threshold on the agent’s own trajectories, returning uncertain choices to the larger model. In the authors’ benchmark, the strongest isolated decision model solved only 69.5% of agent tasks, and uncalibrated tool-choice delegation reduced success by 19.0 points. Their AgentDecision-4B reached 91.5% on tasks unlike its training data, versus 82.0% for Jev. These are task-set results, not a guarantee of cheaper production inference; the abstract does not quantify end-to-end savings across deployments.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This is relevant to your runtime and cost-control interests because it shows why delegated decisions need trajectory-aware confidence gates.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-c2700c6d1f">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.26770" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 19</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.26770" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.26770" target="_blank" rel="noopener">HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">HarnessPro evolves multiple candidate harnesses and returns cost-focused, balanced, or performance-focused configurations instead of one presumed best setup. It uses LLM-generated tests without ground-truth solutions or official tests, then feeds execution results into the next iteration. Across Terminal-Bench 2, SWE-Bench Pro, and ProgramBench, the heavy GPT-5.5-with-Codex mode reports an average pass-rate gain of 2.0 percentage points and average per-task cost reduction of 26.1% relative to RHO; the paper says the advantage also holds with GLM-5.2 and Claude Code. The self-generated test signal is an important limit to audit.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your prompt-optimization and harness interests make this measured performance–cost trade-off worth tracking; inspect its verifier design before adopting the recipe.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-d0d24b4b76">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.18868" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 13</span> · <span>6m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.18868" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.18868" target="_blank" rel="noopener">Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Tev-Gym supplies long-horizon training environments with verifiable intermediate progress instead of waiting for sparse end rewards: 1,170 environments across seven domains. Its progress-potential reward shaping recipe trains Tev-27B, which the authors say matches GPT-6 Astra and Claude Opus 5 at Pass@5 on Agents’ Last Exam computing and math domains. They also report transfer to Terminal-Bench subsets. The abstract labels these comparisons substantial but does not provide numerical scores, so the magnitude and benchmark details need checking in the paper tables.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your long-horizon agent interests make the intermediate-reward design relevant, particularly for evaluating whether progress signals improve task completion.
+    </div>
+  </div>
+</div>
+
+      <h3 style="color:#174a61;border-bottom:1px solid #ccc;padding-bottom:0.2em;margin-top:1.2em;">Evaluation, observability and safety</h3>
+        <div class="item" id="item-6d793b25cc">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener">VeriCUA: Verification as Agentic Exploration for Computer-Using Agents</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">VeriCUA treats task verification as evidence gathering: after building a rubric, the verifier chooses GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. It aims to work across online and offline settings, platforms, and observation modes, addressing the partial view of screenshot judges and state-inspection scripts. The authors report better agreement with reference labels across settings, largest gains on hard offline cases, and stronger rejection of false completion claims online. The abstract gives no effect sizes and labels the work in progress, so the size and stability of the gain need follow-up.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your trace-evaluation and computer-use interests make this a useful design to compare with screenshot-only or state-only completion checks.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-abcbd9ef58">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.28679" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 19</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.28679" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.28679" target="_blank" rel="noopener">VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">VerifierBench measures whether an agent can write a verifier that accepts every valid solution and rejects invalid ones. It includes 222 tasks from six benchmarks and 4,993 hidden tests, including alternative correct solutions and attacks; a six-check V4V audit screens the source tests and verifiers. Across 19 models, normalized balanced accuracy ranges from 10.6 to 62.1. Generated verifiers reject invalid outputs more reliably than they accept valid ones, often because they reject every tested solution. This makes valid-solution coverage a key audit dimension, though the benchmark’s task mix is still bounded.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> This is relevant to your evaluation and guardrail interests because it treats verifier false rejection as a first-class reliability failure.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-d3dc13f325">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://arxiv.org/abs/2610.30491" target="_blank" rel="noopener">arXiv preprint</a>:</cite>
+      </td>
+      <td>
+<span>Oct 21</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://arxiv.org/abs/2610.30491" target="_blank" rel="noopener" class="ill-icon-wrap" title="arxiv.org"><img src="https://www.google.com/s2/favicons?domain=arxiv.org&amp;sz=128" alt="arxiv.org" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://arxiv.org/abs/2610.30491" target="_blank" rel="noopener">What the Trace Shows and What the Label Says: Auditing Behavioral Detectors in Agent Evaluation</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">This study audits three trace-level detectors in a calculator-use setup with deliberately corrupted outputs, six models, and 30 problems per model. Among 90 human-reviewed traces, automated labels matched all reviewed cases for final correctness, fault impact, and fault relevance, but only 67 of 81 for verification. A silent tool-output override can let a model recover without visibly rechecking, confusing a detector that equates re-verification with recovery. Step and token limits also moved one model from 21/30 to 27/30 correct. The setup offers clear ground truth but is narrow to a calculator task.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Your trace-evaluation interests make its distinction between an automated label and the evidence visible in a trajectory especially useful.
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <details>
+      <summary>Editorial & Pipeline Notes (31)</summary>
+      <ul>
+<li>4 candidate items were dropped before publication (dead links, stale or already-covered stories).</li><li>followups.updates: could not fetch &#39;Aadarsha Kutumbam Box Office Collection &#39; to verify it</li><li>finance.us: only 4 items kept (target 7)</li><li>finance.us: could not fetch &#39;Longer-term Treasury yields fall to two-&#39; to verify it</li><li>finance.week: could not fetch &#39;US October CPI release — November 10 at &#39; to verify it</li><li>finance.watch: only 0 items kept (target 3)</li><li>nutrition.science: could not fetch &#39;Small fish-rich keto intervention links &#39; to verify it</li><li>nutrition.watch: only 0 items kept (target 3)</li><li>industry.products: only 3 items kept (target 6)</li><li>industry.models: could not fetch &#39;GPT-6 Rosalind Research targets approved&#39; to verify it</li><li>industry.models: could not fetch &#39;Agent Arena ranks Claude Opus 5.5 first &#39; to verify it</li><li>industry.watch: only 1 items kept (target 3)</li><li>science.space: only 4 items kept (target 7)</li><li>science.life: only 4 items kept (target 7)</li><li>science.life: could not fetch &#39;A Cretaceous dinosaur’s skull points to &#39; to verify it</li><li>world.world: only 3 items kept (target 6)</li><li>world.world: could not fetch &#39;Colombian military-base attack exposes p&#39; to verify it</li><li>world.world: could not fetch &#39;Switzerland reopens its diplomatic offic&#39; to verify it</li><li>world.india: only 3 items kept (target 6)</li><li>culture.indian: only 3 items kept (target 8)</li><li>culture.music: only 2 items kept (target 8)</li><li>culture.concerts: only 0 items kept (target 5)</li><li>local.southbay: only 1 items kept (target 4)</li><li>local.trips: only 1 items kept (target 3)</li><li>local.deals: only 1 items kept (target 3)</li><li>Reviewer (REVISE): sampled 66 items; 24 removed, 2 corrected.</li><li>Recipe correction applied before rendering: ground goat is now cooked to 160°F (71°C) internal temperature.</li><li>Only one follow-up survived source verification and review; the re-entry update is retained, and the other candidates were removed as unverified.</li><li>Editorial theme, top picks and section intros were refreshed after review removals; all top picks now reference retained items.</li><li>Finance and nutrition watch sections remain empty after the one permitted widening retry because repeated YouTube watch-page requests returned HTTP 429; industry watch retains one verified item.</li><li>Culture, local and travel listings remain thin after the one permitted widening retry where event dates/venues, current fares or prices, or distinct recent releases could not be verified.</li>      </ul>
+    </details>
+    <details>
+      <summary>All Sources & Citations (92)</summary>
+      <ol>
+        <li><a href="https://www.wral.com/weather/swift-reentry-nov-2026/" target="_blank" rel="noopener">Swift re-entry forecasts move to 3–5 November</a> &mdash; <cite>WRAL</cite></li>
+        <li><a href="https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026" target="_blank" rel="noopener">Maruti Suzuki records its highest-ever monthly sales in October</a> &mdash; <cite>Maruti Suzuki</cite></li>
+        <li><a href="https://investor.apple.com/investor-relations/event-details/2026/FY-26-Fourth-Quarter-Results/default.aspx" target="_blank" rel="noopener">Apple FY26 fourth-quarter results call — November 2 at 2 p.m. PT</a> &mdash; <cite>Apple Investor Relations</cite></li>
+        <li><a href="https://www.eia.gov/petroleum/supply/weekly/schedule.php" target="_blank" rel="noopener">EIA Weekly Petroleum Status Report — November 4 at 10:30 a.m. ET</a> &mdash; <cite>U.S. Energy Information Administration</cite></li>
+        <li><a href="https://www.bls.gov/schedule/2026/11_sched_list.htm" target="_blank" rel="noopener">US October CPI release — November 10 at 8:30 a.m. ET</a> &mdash; <cite>U.S. Bureau of Labor Statistics</cite></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42887446/" target="_blank" rel="noopener">KETO-MINOX finds no extra redox benefit from an energy-restricted ketogenic diet</a> &mdash; <cite>Clinical Nutrition via PubMed</cite></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42868613/" target="_blank" rel="noopener">A four-week trial reports fitness gains alongside worse sleep scores in ketogenic-diet groups</a> &mdash; <cite>Applied Physiology, Nutrition, and Metabolism via PubMed</cite></li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13673408/" target="_blank" rel="noopener">Small fish-rich keto intervention links higher TMAO with several simultaneous diet changes</a> &mdash; <cite>Endocrinology, Diabetes &amp; Metabolism via PubMed Central</cite></li>
+        <li><a href="https://github.com/github/copilot-cli/releases" target="_blank" rel="noopener">GitHub Copilot CLI 1.0.106-2 smooths MCP and session handling</a> &mdash; <cite>GitHub</cite></li>
+        <li><a href="https://developer.android.com/blog/posts/build-it-your-way-a-next-era-of-android-development" target="_blank" rel="noopener">Android Studio Rabbit 2 opens to 40-plus coding agents</a> &mdash; <cite>Android Developers</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot/" target="_blank" rel="noopener">GitHub Copilot can create and save images in chat</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://www.mediaoffice.abudhabi/en/crown-prince-news/khaled-bin-mohamed-bin-zayed-meets-sam-altman-and-witnesses-signing-of-agreements-with-openai/" target="_blank" rel="noopener">Abu Dhabi announces four OpenAI agreements, including a live government pilot</a> &mdash; <cite>Abu Dhabi Media Office</cite></li>
+        <li><a href="https://www.relexsolutions.com/news/relex-advances-agentic-ai-platform-to-orchestrate-the-value-chain/" target="_blank" rel="noopener">RELEX expands its agentic platform across retail operations</a> &mdash; <cite>RELEX Solutions</cite></li>
+        <li><a href="https://www.businessinsider.com/home-depot-chief-open-ai-agents-muse-instinct-2026-10" target="_blank" rel="noopener">Home Depot wants shopping agents to identify themselves</a> &mdash; <cite>Business Insider</cite></li>
+        <li><a href="https://www.virtana.com/press-release/virtana-launches-agentic-observability-enterprise-management-ushering-in-a-new-era-of-collaborative-ai-agents-for-autonomous-it/" target="_blank" rel="noopener">Virtana proposes MCP and A2A coordination for IT incidents</a> &mdash; <cite>Virtana</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/" target="_blank" rel="noopener">Copilot will retire three models on November 16</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" rel="noopener">GPT-6 Rosalind Research targets approved life-sciences workflows</a> &mdash; <cite>OpenAI Help Center</cite></li>
+        <li><a href="https://canary.arena.ai/leaderboard/agent" target="_blank" rel="noopener">Agent Arena ranks Claude Opus 5.5 first in its October 28 agent-session snapshot</a> &mdash; <cite>Agent Arena</cite></li>
+        <li><a href="https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app/" target="_blank" rel="noopener">Copilot app adds a local workflow for code-scanning alerts</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.19" target="_blank" rel="noopener">LangGraph 1.2.19 fixes streaming and paused-tool reporting</a> &mdash; <cite>LangGraph / GitHub</cite></li>
+        <li><a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0" target="_blank" rel="noopener">MCP server release updates certificate dependencies</a> &mdash; <cite>Model Context Protocol / GitHub</cite></li>
+        <li><a href="https://github.com/vllm-project/vllm/releases" target="_blank" rel="noopener">vLLM v0.33.0 adds model support and drops CUDA 12.9 artifacts</a> &mdash; <cite>vLLM / GitHub</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.30181" target="_blank" rel="noopener">Deep Search in Real-World Web Environments</a> &mdash; <cite>arXiv / Hugging Face Daily Papers</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.30949" target="_blank" rel="noopener">IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems</a> &mdash; <cite>arXiv / Hugging Face Daily Papers</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.41738" target="_blank" rel="noopener">Search When Needed, Proceed When Reliable: Metacognitive Reliability Supervision for Efficient Agentic Search</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.39790" target="_blank" rel="noopener">Long-Term Agent Memory through Complementary Curation and Consolidation</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.40758" target="_blank" rel="noopener">More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.41149" target="_blank" rel="noopener">Counterfactual Pairwise Augmentation Improves Small Pointwise LLM Judges</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.32483" target="_blank" rel="noopener">When Agents Fail: Model or Harness--Who&#39;s to Blame?</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.25568" target="_blank" rel="noopener">Design and Cross-Domain Evaluation of an Agent Execution Harness</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.21412" target="_blank" rel="noopener">JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.26770" target="_blank" rel="noopener">HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.18868" target="_blank" rel="noopener">Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener">VeriCUA: Verification as Agentic Exploration for Computer-Using Agents</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.28679" target="_blank" rel="noopener">VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.30491" target="_blank" rel="noopener">What the Trace Shows and What the Label Says: Auditing Behavioral Detectors in Agent Evaluation</a> &mdash; <cite>arXiv preprint</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=iwnrFggbpQ0" target="_blank" rel="noopener">Why The Universe Doesn’t Add Up (And How We’re Going To Try To Figure It Out)</a> &mdash; <cite>NASA Goddard</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=eYViePMalJE" target="_blank" rel="noopener">The Universe Has Been Expanding Since the Big Bang. Just Not How We Thought.</a> &mdash; <cite>PBS Space Time</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=H93WFv0w_G0" target="_blank" rel="noopener">Extended Dark Energy analysis using DESI DR2 BAO measurements</a> &mdash; <cite>Dark Energy Spectroscopic Instrument</cite></li>
+        <li><a href="https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/" target="_blank" rel="noopener">NASA asks industry about possible commercial Hubble servicing</a> &mdash; <cite>NASA Science</cite></li>
+        <li><a href="https://www.jpl.nasa.gov/news/nasas-voyager-1-conserves-power-resolves-brief-communications-pause/" target="_blank" rel="noopener">Voyager 1 saves power after a 48-hour communications pause</a> &mdash; <cite>NASA Jet Propulsion Laboratory</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.31200" target="_blank" rel="noopener">Eight newly studied triple-star systems are nearly coplanar</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.36446" target="_blank" rel="noopener">Giant impacts may help rocky planets retain primordial atmospheres</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://news.stonybrook.edu/university/stony-brook-paleontologist-dinosaur-discovery-reveals-a-specialized-fruit-eater/" target="_blank" rel="noopener">A Cretaceous dinosaur’s skull points to fruit eating</a> &mdash; <cite>Stony Brook University</cite></li>
+        <li><a href="https://news.cornell.edu/stories/2026/10/unifying-mechanism-cancer-driving-mutations" target="_blank" rel="noopener">A DNA-folding mechanism may connect a family of cancer mutations</a> &mdash; <cite>Cornell Chronicle</cite></li>
+        <li><a href="https://www.naturalresources.wales/about-us/news-and-blogs/news/patience-pays-off-for-rare-species-in-pembrokeshire/?lang=en" target="_blank" rel="noopener">Rare oil beetle larvae found again at Wales’s only known site</a> &mdash; <cite>Natural Resources Wales</cite></li>
+        <li><a href="https://news.mit.edu/2026/capturing-complete-process-of-embryonic-development-1028" target="_blank" rel="noopener">A cell-lineage map follows mouse embryos across development</a> &mdash; <cite>MIT News</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=LiAAayT_v84" target="_blank" rel="noopener">Two Different Things Are Killing Sharks</a> &mdash; <cite>SciShow</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=dfA_VA20A2Y" target="_blank" rel="noopener">How To Hold Something That&#39;s 10,000,000 Degrees</a> &mdash; <cite>SciShow</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=F3DH6dYSyOI" target="_blank" rel="noopener">What Star Trek got right about science (and what it got wrong) | Part 2</a> &mdash; <cite>The Royal Institution</cite></li>
+        <li><a href="https://www.dfae.admin.ch/en/newnsb/tTt86k6kzUJW" target="_blank" rel="noopener">Switzerland reopens its diplomatic office in Pyongyang</a> &mdash; <cite>Swiss Federal Department of Foreign Affairs</cite></li>
+        <li><a href="https://www.pmindia.gov.in/en/news_updates/pm-to-inaugurate-bharat-renewable-energy-summit-expo-2026-on-2nd-november/" target="_blank" rel="noopener">Bharat Renewable Energy Summit opens in New Delhi</a> &mdash; <cite>Prime Minister’s Office, Government of India</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=2Ts3d6kgwGM" target="_blank" rel="noopener">Ukraine&#39;s air-alert app hit by false attack warnings | DW News</a> &mdash; <cite>DW News</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=jLF5jaXX0uc" target="_blank" rel="noopener">Scam Centres Expand Into Madagascar After Crackdown in Cambodia | GRAVITAS</a> &mdash; <cite>WION</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=odu797q0d3c" target="_blank" rel="noopener">Why is the UK Prime Minister saying he&#39;s open to a slavery apology? | BBC News</a> &mdash; <cite>BBC News</cite></li>
+        <li><a href="https://www.rolexparismasters.com/en/news/article/edition-2026-main-draw-complete-draw-matchups-opponents" target="_blank" rel="noopener">Paris qualifying completes the men’s singles draw</a> &mdash; <cite>Rolex Paris Masters</cite></li>
+        <li><a href="https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html" target="_blank" rel="noopener">Ignacio Buse becomes the first Peruvian to win at the Paris Masters</a> &mdash; <cite>Tennis Majors</cite></li>
+        <li><a href="https://www.tennis.com/tournaments/merida-open-akron/matches/c-liu-vs-t-prozorova-2026-11-02" target="_blank" rel="noopener">Claire Liu opens the Hong Kong Open with a straight-sets win</a> &mdash; <cite>Tennis.com</cite></li>
+        <li><a href="https://www.fia.com/news/f1-antonelli-crowned-f1s-youngest-world-champion-verstappen-wins-mexico-city" target="_blank" rel="noopener">Verstappen wins in Mexico as Antonelli clinches the F1 title</a> &mdash; <cite>Fédération Internationale de l’Automobile (FIA)</cite></li>
+        <li><a href="https://www.liverpoolfc.com/news/match-report-liverpool-arsenal-premier-league-november-2026" target="_blank" rel="noopener">Arsenal leave Anfield with a 1–0 Premier League win</a> &mdash; <cite>Liverpool FC</cite></li>
+        <li><a href="https://www.laliga.com/en-US/match/temporada-2026-2027-laliga-ea-sports-athletic-club-real-sociedad-11" target="_blank" rel="noopener">Athletic Club edge Real Sociedad 2–1 in the Basque derby</a> &mdash; <cite>LALIGA</cite></li>
+        <li><a href="https://goodminton.fi/en/articles/doubles-first-three-shots" target="_blank" rel="noopener">Train the first three shots as one badminton doubles sequence</a> &mdash; <cite>Goodminton Academy</cite></li>
+        <li><a href="https://thegodofsports.com/blogs/news/victor-thruster-ryuga-metallic-badminton-racket-review" target="_blank" rel="noopener">A recent review maps the Ryuga Metallic’s power-versus-speed trade-off</a> &mdash; <cite>God of Sports</cite></li>
+        <li><a href="https://www.racket-world.de/VICTOR-Auraspeed-HS-Plus-Review" target="_blank" rel="noopener">VICTOR Auraspeed HS Plus review – 9/10 control and 8/10 power</a> &mdash; <cite>Racket World</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=tIiRK7hKScU" target="_blank" rel="noopener">Race Highlights | 2026 Mexico City Grand Prix</a> &mdash; <cite>FORMULA 1</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=DfOFBAiT2XU" target="_blank" rel="noopener">Jonatan Christie vs Lakshya Sen | Maintained pressure and focus</a> &mdash; <cite>BWF TV</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=1PfJqdMfVDs" target="_blank" rel="noopener">Line Højmark Kjærsfeldt vs Pusarla V. Sindhu | High-tempo women&#39;s singles final</a> &mdash; <cite>BWF TV</cite></li>
+        <li><a href="https://timesofindia.indiatimes.com/entertainment/telugu/movies/news/sankarabharanam-to-return-to-theatres-in-november-k-viswanaths-1980-musical-classic-gets-4k-restoration/articleshow/135349146.cms" target="_blank" rel="noopener">‘Sankarabharanam’ returns to cinemas with a 4K restoration</a> &mdash; <cite>The Times of India</cite></li>
+        <li><a href="https://www.thehansindia.com/cinema/mythri-movie-makers-mitti-and-moon-films-join-hands-for-mynaa-1137990" target="_blank" rel="noopener">Mythri Movie Makers and Mitti and Moon launch ‘Mynaa’</a> &mdash; <cite>The Hans India</cite></li>
+        <li><a href="https://www.thehansindia.com/cinema/nagababu-unveils-title-poster-of-mailu-rayi-1137271" target="_blank" rel="noopener">Nagababu unveils the title poster for ‘Mailu Rayi’</a> &mdash; <cite>The Hans India</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/news/2026/Nov/02/ah-trailer-unveiled-rahul-vijay-calls-it-a-dark-crime-thriller" target="_blank" rel="noopener">‘AH’ will open in theatres on November 12</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://telugu.tfpc.in/2026/10/12/vijay-antonys-nanna-kutti-set-for-a-diwali-release-on-november-6/" target="_blank" rel="noopener">‘Nanna Kutti’ is scheduled for a Diwali-week theatrical release</a> &mdash; <cite>Telugu Film Producers Council</cite></li>
+        <li><a href="https://telugu.tfpc.in/2026/10/27/chandrayaan-rocket-revealed-film-to-be-released-on-november-13/" target="_blank" rel="noopener">‘Chandrayaan’ moves to a November 13 theatrical date</a> &mdash; <cite>Telugu Film Producers Council</cite></li>
+        <li><a href="https://www.thehansindia.com/cinema/tollywood/dark-choclate-trailer-launched-1135846" target="_blank" rel="noopener">‘Dark Chocolate’ sets a November 13 cinema release</a> &mdash; <cite>The Hans India</cite></li>
+        <li><a href="https://www.netflix.com/tudum/articles/new-on-netflix?lv=true" target="_blank" rel="noopener">Netflix schedules ‘Murder in Galicia’ for November 13</a> &mdash; <cite>Netflix Tudum</cite></li>
+        <li><a href="https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026" target="_blank" rel="noopener">Prime Video sets Muhammad Ali series ‘The Greatest’ for November 4</a> &mdash; <cite>About Amazon / Prime Video</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=0pow_UtMhcM" target="_blank" rel="noopener">O Mysaa Re Lyrical Video - Mysaa | Rashmika | Rawindra Pulle | Jakes Bejoy| UnFormula Films</a> &mdash; <cite>T-Series Telugu</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=vFBMumCsSkc" target="_blank" rel="noopener">Koodukuntunnadi Song | Raju Weds Rambai | Akhil Uddemari, Tejaswi Rao | Suresh Bobbili</a> &mdash; <cite>Aditya Music</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=2hLErDE7jps" target="_blank" rel="noopener">Edho Edho Lyrical Video | The Sesso Telugu Movie | Yesh Raj, Moupiya Gauswami | Telugu Love Songs</a> &mdash; <cite>Mango Music</cite></li>
+        <li><a href="https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/" target="_blank" rel="noopener">Is There Anything Left in the Dream of Cold Fusion?</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://www.equator.org/articles/arundhati-roy-artificial-intelligence" target="_blank" rel="noopener">Apocalypse Now and Then</a> &mdash; <cite>EQUATOR</cite></li>
+        <li><a href="https://aeon.co/essays/why-real-intelligence-is-something-more-than-optimisation" target="_blank" rel="noopener">Reason is more than a tool</a> &mdash; <cite>Aeon</cite></li>
+        <li><a href="https://latent.space/p/arca/" target="_blank" rel="noopener">Agents Prompt People: Using Agents for Long-Horizon Financial Work</a> &mdash; <cite>Latent Space</cite></li>
+        <li><a href="https://link.springer.com/book/10.1007/978-3-032-26749-8" target="_blank" rel="noopener">Reliable Evaluations for LLMs and AI Agents</a> &mdash; <cite>Springer Nature</cite></li>
+        <li><a href="https://www.penguinrandomhouse.com/books/826774/lost-in-space-by-neil-degrasse-tyson-and-lindsey-nyx-walker/" target="_blank" rel="noopener">Lost in Space</a> &mdash; <cite>Penguin Random House</cite></li>
+        <li><a href="https://www.penguinrandomhouse.com/books/828104/multiplicity-by-telmo-pievani/" target="_blank" rel="noopener">Multiplicity</a> &mdash; <cite>Penguin Random House</cite></li>
+        <li><a href="https://sanjosespotlight.com/the-biz-beat-popular-san-jose-mexican-bakery-opens-4th-location/" target="_blank" rel="noopener">Panapolis opens its fourth San Jose bakery on Snell Avenue</a> &mdash; <cite>San José Spotlight</cite></li>
+        <li><a href="https://newsroom.lufthansagroup.com/en/swiss-celebrates-inaugural-flight-to-bengaluru/" target="_blank" rel="noopener">SWISS begins five-weekly Zurich–Bengaluru flights</a> &mdash; <cite>Lufthansa Group Newsroom</cite></li>
+        <li><a href="https://www.tomsguide.com/wellness/smartwatches/dont-wait-until-black-friday-garmins-rugged-smartwatch-with-a-flashlight-is-usd100-off-right-now" target="_blank" rel="noopener">Garmin Instinct 3 AMOLED is listed at $349 on Amazon</a> &mdash; <cite>Tom’s Guide</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=ZdnOKPavK8Y" target="_blank" rel="noopener">Italian Calcio - What to Know Before You Go to an Italian Football Match</a> &mdash; <cite>Wolters World</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=N6OeaTtjILo" target="_blank" rel="noopener">Impression of Lanzhou, Hurrica, Rosamunde Sausage Grill | Check, Please! Bay Area</a> &mdash; <cite>KQED Food</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=tjtpF4JiDL0" target="_blank" rel="noopener">How to Beat Jet Lag (Without Looking Like a Fool)</a> &mdash; <cite>Wolters World</cite></li>
+      </ol>
+    </details>
+    <p>Want a topic added, dropped or weighted differently? Tell your agent in any session or add a line to the local feedback file; the next morning's run applies it.</p>
+    <p>Compiled on 2026-11-02 10:20 PST by research intelligence agents from verified sources. Private and calibrated to your context.</p>
+  </div>
+</div>
+<script>
+// Techmeme-inspired dynamic functionality for The Morning Brief
+(function() {
+  // Quick jump & date features
+  window.addEventListener('DOMContentLoaded', function() {
+    var searchForm = document.getElementById('briefSearchForm');
+    if (searchForm) {
+      searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var q = (document.getElementById('briefSearchInput') || {}).value;
+        if (q) {
+          window.find ? window.find(q) : alert('Searching for: ' + q);
+        }
+      });
+    }
+  });
+})();
+
+</script>
+</body>
+</html>

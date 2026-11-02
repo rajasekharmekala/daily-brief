@@ -1135,5 +1135,112 @@
         "minutes": 3
       }
     ]
+  },
+  {
+    "date": "2026-11-02",
+    "issue_no": 12,
+    "theme": "Agent papers ask where failures sit—in the model or the harness—and vLLM ships a fresh release. NASA is considering Hubble servicing, Maruti reports October sales, and Prime Video’s November slate brings new viewing dates.",
+    "items": 92,
+    "minutes": 55,
+    "generated_at": "2026-11-02 10:20 PST",
+    "top": [
+      {
+        "title": "When Agents Fail: Model or Harness--Who's to Blame?",
+        "source": "arXiv preprint",
+        "url": "https://arxiv.org/abs/2610.32483"
+      },
+      {
+        "title": "vLLM v0.33.0 adds model support and drops CUDA 12.9 artifacts",
+        "source": "vLLM / GitHub",
+        "url": "https://github.com/vllm-project/vllm/releases"
+      },
+      {
+        "title": "NASA asks industry about possible commercial Hubble servicing",
+        "source": "NASA Science",
+        "url": "https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/"
+      },
+      {
+        "title": "Maruti Suzuki records its highest-ever monthly sales in October",
+        "source": "Maruti Suzuki",
+        "url": "https://www.marutisuzuki.com/corporate/media/press-releases/2026/november/maruti-suzuki-sales-in-october-2026"
+      },
+      {
+        "title": "Ignacio Buse becomes the first Peruvian to win at the Paris Masters",
+        "source": "Tennis Majors",
+        "url": "https://www.tennismajors.com/atp/rolex-paris-masters-1000-atp/buse-becomes-the-first-peruvian-to-win-a-match-at-the-paris-masters-865014.html"
+      },
+      {
+        "title": "Prime Video sets Muhammad Ali series ‘The Greatest’ for November 4",
+        "source": "About Amazon / Prime Video",
+        "url": "https://www.aboutamazon.com/news/entertainment/prime-video-november-films-shows-sports-2026"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 2
+      },
+      {
+        "id": "followups",
+        "title": "Developing Stories",
+        "minutes": 1
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 2
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 6
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 6
+      },
+      {
+        "id": "papers",
+        "title": "Agent Papers Radar",
+        "minutes": 6
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 12
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 5
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 2
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 4
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 4
+      },
+      {
+        "id": "library",
+        "title": "Read and Listen",
+        "minutes": 3
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 2
+      }
+    ]
   }
 ]
