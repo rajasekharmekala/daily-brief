@@ -1242,5 +1242,117 @@
         "minutes": 2
       }
     ]
+  },
+  {
+    "date": "2026-11-03",
+    "issue_no": 13,
+    "theme": "Company results, agent safeguards and task-shift evaluations lead today’s edition, alongside consequential election decisions, international conflict and fresh Bay Area civic news.",
+    "items": 136,
+    "minutes": 68,
+    "generated_at": "2026-11-03 13:42 PST",
+    "top": [
+      {
+        "title": "Apple posts $114.5 billion September-quarter revenue",
+        "source": "Apple Newsroom",
+        "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+      },
+      {
+        "title": "Claude Code adds checks before scheduled tasks and outbound tool calls",
+        "source": "Claude Code GitHub Releases",
+        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317"
+      },
+      {
+        "title": "EnvOS audits computer-use agents when task environments change mid-run",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2610.40246"
+      },
+      {
+        "title": "Death toll rises to 31 after Russian strike on a Ukrainian aid site",
+        "source": "Associated Press",
+        "url": "https://apnews.com/article/264da8725dc2bb1f0039a698a59af9fc"
+      },
+      {
+        "title": "Santa Clara County bars federal immigration agents from jail parking areas",
+        "source": "San José Spotlight",
+        "url": "https://sanjosespotlight.com/santa-clara-county-reverses-course-bars-ice-from-jails/"
+      },
+      {
+        "title": "Chiranjeevi and Ram Charan ask India’s home minister to address AI deepfakes",
+        "source": "NDTV",
+        "url": "https://www.ndtv.com/entertainment/chiranjeevi-ram-charan-meet-home-minister-amit-shah-to-address-misuse-of-ai-and-deepfake-12274326?pfrom=movies-trending"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 2
+      },
+      {
+        "id": "followups",
+        "title": "Developing Stories",
+        "minutes": 2
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 6
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 4
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 6
+      },
+      {
+        "id": "papers",
+        "title": "Agent Papers Radar",
+        "minutes": 6
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 15
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 4
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 6
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 3
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 5
+      },
+      {
+        "id": "library",
+        "title": "Read and Listen",
+        "minutes": 3
+      },
+      {
+        "id": "localnews",
+        "title": "Local News",
+        "minutes": 4
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 2
+      }
+    ]
   }
 ]
