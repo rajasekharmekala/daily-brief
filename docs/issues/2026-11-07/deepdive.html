@@ -1,0 +1,1422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Morning Brief - Deep Dive of the Day - Saturday, November 7, 2026</title>
+<meta name="description" content="A post-election reset in Washington, Wall Street&#39;s resilient payrolls print, Dalal Street&#39;s 1,700-point rally, and a breakthrough deep dive on production agent context engineering.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="alternate" type="application/atom+xml" title="The Morning Brief" href="https://rajasekharmekala.github.io/daily-brief/feed.xml">
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.35;
+  font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  font-size: 15.5px;
+  margin: 0 auto;
+  max-width: 90em;
+  min-width: 61em;
+  padding: 0 1.6em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links (Techmeme iconic link styling) */
+a {
+  text-decoration: none;
+  color: #002848;
+}
+a:visited {
+  color: #902050;
+}
+a:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+/* Headings & Techmeme Typography */
+h1, h2, h3, h4, h5 {
+  font-family: Optima, "Century Gothic", -apple-system, sans-serif;
+  color: #445555;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.45em;
+  padding: 0.75em 0 0.5em;
+}
+h3 {
+  font-size: 1.25em;
+  padding: 0.65em 0 0.35em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
+}
+
+cite {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.96em;
+  color: #686860;
+}
+cite a, cite a:visited {
+  color: #686860;
+}
+cite a:hover {
+  color: #002848;
+}
+
+.drhed {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  color: #408840;
+  font-weight: bold;
+  margin-right: 0.3em;
+  font-size: 0.94em;
+}
+
+.bls {
+  margin-left: -0.1em;
+}
+.bls a {
+  white-space: nowrap;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  font-size: 0.94em;
+}
+
+/* Pre-navbar / Header Topline */
+.pagecont {
+  margin-bottom: 3.5em;
+}
+.prenavbar {
+  margin-bottom: 0.4em;
+}
+.topline {
+  border-bottom: 1px solid #cccccc;
+  margin-top: 0.35em;
+  line-height: 1.7em;
+  font-size: 0.88em;
+  color: #666666;
+  padding-bottom: 0.25em;
+  clear: both;
+}
+.topline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.topline a {
+  color: #666666;
+}
+.topline a:visited {
+  color: #666666;
+}
+.topline a:hover {
+  color: #000000;
+  text-decoration: underline;
+  background: transparent;
+}
+.topllinks {
+  float: left;
+}
+.topllinks a {
+  padding-right: 1.3em;
+}
+.toprlinks {
+  float: right;
+}
+.toprlinks span {
+  padding-left: 0.9em;
+}
+
+/* Logo Tab table */
+.logotab {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 0.6em;
+}
+.logotab td {
+  vertical-align: middle;
+  width: 33.33%;
+}
+td.logobox {
+  padding: 0.6em 0;
+}
+.logo-title {
+  font-family: Optima, "Century Gothic", sans-serif;
+  font-size: 2.7em;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  color: #174a61;
+  display: inline-block;
+  line-height: 1;
+}
+.logo-title:visited {
+  color: #174a61;
+}
+.logo-title:hover {
+  text-decoration: none;
+  background: transparent;
+}
+.logo-sub {
+  font-size: 0.82em;
+  color: #777777;
+  font-weight: normal;
+  display: block;
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+td.datebox {
+  text-align: center;
+  color: #444444;
+  font-size: 0.96em;
+}
+.date-str {
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #222222;
+}
+.weather-str {
+  font-size: 0.9em;
+  color: #666666;
+  margin-top: 3px;
+}
+
+td.searchbox {
+  text-align: right;
+  font-size: 0.92em;
+}
+.sbti {
+  width: 13em;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 6px;
+  font-family: inherit;
+  font-size: 0.96em;
+}
+.sbti-btn {
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 9px;
+  font-size: 0.96em;
+  cursor: pointer;
+  font-family: inherit;
+}
+.sbti-btn:hover {
+  background: #e0e8f0;
+}
+
+/* Navigation Bar (Techmeme Navy Blue) */
+.navbar {
+  background: #174a61;
+  text-transform: uppercase;
+  clear: both;
+  line-height: 1.9em;
+  font-size: 0.88em;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+}
+.navtabs {
+  padding: 0;
+}
+.navtabs a {
+  padding: 0.3em 0.8em;
+  display: inline-block;
+  color: #dddddd;
+  font-weight: bold;
+}
+.navtabs a:visited {
+  color: #dddddd;
+}
+.navtabs a:hover {
+  background: #578aa1;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navtabs span.iamhere a {
+  background: #578aa1;
+  color: #ffffff;
+}
+.navtabs span.iamhere a:visited {
+  color: #ffffff;
+}
+.sisnav {
+  float: right;
+}
+.sisnav a {
+  color: #c0d8e8;
+  font-weight: normal;
+  padding: 0.3em 0.7em;
+}
+.sisnav a:visited {
+  color: #c0d8e8;
+}
+.sisnav a:hover {
+  color: #ffffff;
+  background: #25607b;
+}
+
+/* Sub-nav / Section Jump Bar */
+.subnavbar {
+  background: #f4f6f8;
+  border-bottom: 1px solid #d8e0e6;
+  padding: 0.35em 0.6em;
+  font-size: 0.85em;
+  line-height: 1.7em;
+  margin-bottom: 0.9em;
+}
+.subnavbar a {
+  color: #004860;
+  padding: 0.1em 0.5em;
+  font-weight: 600;
+  display: inline-block;
+}
+.subnavbar a:hover {
+  background: #d8e8f4;
+  text-decoration: none;
+}
+.subnavbar .subnav-label {
+  font-weight: bold;
+  color: #556677;
+  padding-right: 0.4em;
+  text-transform: uppercase;
+  font-size: 0.92em;
+}
+
+/* Executive Synthesis / Theme Banner */
+.exec-theme-box {
+  background: #fdfbe8;
+  border: 1px solid #d8c878;
+  border-left: 5px solid #d4a017;
+  padding: 0.75em 1.1em;
+  margin: 0.8em 0 1.3em;
+  font-size: 0.98em;
+  line-height: 1.5em;
+  color: #2b2b20;
+  border-radius: 2px;
+}
+.exec-theme-box strong {
+  color: #604000;
+  font-size: 1.05em;
+  display: inline;
+}
+
+/* Layout Columns */
+.ed {
+  clear: both;
+}
+.ed:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#topcol1 {
+  float: left;
+  width: 50%;
+  margin-top: 0.5em;
+  padding-right: 1.3%;
+}
+#topcol23 {
+  float: left;
+  width: 48.5%;
+  margin-left: 0.2%;
+}
+#topcol2 {
+  float: left;
+  width: 66%;
+  margin-top: 0.5em;
+}
+#topcol3 {
+  float: right;
+  width: 32%;
+  margin-top: 0.5em;
+  margin-left: 2%;
+  position: relative;
+}
+
+/* Bottom 2-column layout */
+.abotcols {
+  clear: both;
+  width: 100%;
+  border-bottom: 2px solid #e8e8e8;
+  padding-top: 1.2em;
+  margin-bottom: 1.3em;
+}
+#botcol1 {
+  float: left;
+  width: 49%;
+  padding-right: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+#botcol2 {
+  float: right;
+  width: 49%;
+  padding-left: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+
+/* Clusters and Items */
+.clus {
+  padding-bottom: 0.7em;
+}
+.item {
+  padding-top: 0.4em;
+  padding-bottom: 1.35em;
+  clear: both;
+  border-bottom: 1px solid #dddddd;
+}
+.item:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.item.last {
+  border-bottom: none;
+}
+.itc1 {
+  padding-left: 0.4em;
+}
+.itc2 {
+  padding: 0;
+}
+
+/* Shared cluster table / headline row */
+.shrtbl {
+  width: 100%;
+  border-collapse: collapse;
+}
+.shrtbl tr > td:first-child {
+  vertical-align: middle;
+}
+.shrtbl tr > td:first-child + td {
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 0.85em;
+  color: #777777;
+}
+
+.ii {
+  padding-top: 0.35em;
+  line-height: 1.4em;
+  font-size: 1.02em;
+}
+
+/* Image Thumbnails & Fallbacks */
+.ill {
+  float: right;
+  width: 120px;
+  height: 85px;
+  object-fit: cover;
+  padding: 0.1em 0 0.5em 0.8em;
+  border-radius: 3px;
+}
+.ill-icon-wrap {
+  float: right;
+  width: 78px;
+  height: 64px;
+  margin: 0.1em 0 0.5em 0.8em;
+  background: #f3f6f9;
+  border: 1px solid #d8e0e6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+}
+.ill-icon-wrap img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Headline typography scale */
+.ourh {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+}
+.ourh:link {
+  color: #004860;
+}
+.ourh:visited {
+  color: #a04860;
+}
+.ourh:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+.L1 { font-size: 1.18em; font-weight: bold; }
+.L2 { font-size: 1.28em; font-weight: bold; letter-spacing: -0.01em; }
+.L3 { font-size: 1.38em; font-weight: bold; letter-spacing: -0.015em; }
+.L4 { font-size: 1.48em; font-weight: bold; letter-spacing: -0.02em; }
+.L5 { font-size: 1.6em; font-weight: bold; letter-spacing: -0.025em; }
+
+.item-summary {
+  color: #111111;
+  font-size: 0.96em;
+}
+
+.item-why {
+  margin-top: 0.4em;
+  padding: 0.35em 0.6em;
+  background: #f7fafc;
+  border-left: 3px solid #6090a8;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  color: #334455;
+  border-radius: 0 2px 2px 0;
+}
+.item-why strong {
+  color: #174a61;
+  font-size: 0.94em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.3em;
+}
+
+/* Related items under a cluster */
+.relitems {
+  margin-top: 0.45em;
+  margin-bottom: 0.85em;
+  border-left: 2px solid #e0e8ef;
+  padding-left: 0.65em;
+}
+.relitems .item {
+  padding-top: 0.35em;
+  padding-bottom: 0.65em;
+  border-bottom: 1px dotted #e0e0e0;
+}
+.relitems .item:last-child {
+  border-bottom: none;
+}
+.relitems .ourh {
+  font-size: 1.05em;
+}
+
+/* Discussion / Sub-links / Secondary items */
+.dbpt {
+  padding-top: 0.4em;
+  font-size: 0.92em;
+  line-height: 1.42em;
+}
+
+/* Right-hand column: Newest / Chronological River */
+#topcol3 .item {
+  padding: 0.6em 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+#topcol3 .ii {
+  padding-top: 0.25em;
+  font-size: 0.96em;
+}
+#topcol3 a.nfdl {
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #004860;
+  font-size: 0.98em;
+}
+#topcol3 a.nfdl:visited {
+  color: #a04860;
+}
+#topcol3 a.nfdl:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+.ago {
+  color: #777777;
+  font-size: 0.84em;
+  padding-top: 0.35em;
+}
+
+/* Grey sponsor / highlighted background box */
+#tkzwuvgyr {
+  padding: 0.7em 1em 1em;
+  background: #f4f6f8;
+  border: 1px solid #e0e6ec;
+  border-radius: 3px;
+  margin-bottom: 1.3em;
+}
+#tkzwuvgyr h3 {
+  padding-top: 0.2em;
+  color: #223344;
+}
+#tkzwuvgyr .item {
+  border: none;
+  padding-bottom: 0.6em;
+}
+
+/* Pod / Media item box (Techmeme style) */
+.pod-box {
+  margin: 1em 0;
+  padding: 0.85em;
+  background: #f9fcfe;
+  border: 1px solid #d8e0e8;
+  border-radius: 3px;
+}
+.pod-box:first-of-type {
+  margin-top: 0.4em;
+}
+.pod-head {
+  font-size: 0.88em;
+  font-weight: bold;
+  color: #174a61;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+.pod-name {
+  font-weight: bold;
+  color: #004860;
+}
+
+/* Deep Dive longform article styled into Techmeme editorial */
+.deepdive-container {
+  background: #fcfdfe;
+  border: 1px solid #ccd9e2;
+  border-radius: 3px;
+  padding: 1.3em 1.5em;
+  margin: 0.9em 0 1.6em;
+}
+.deepdive-container h2 {
+  font-size: 1.65em;
+  line-height: 1.25;
+  color: #174a61;
+  padding: 0 0 0.35em;
+}
+.deepdive-subtitle {
+  font-size: 1.12em;
+  color: #555555;
+  font-style: italic;
+  margin-bottom: 0.85em;
+}
+.deepdive-keypts {
+  background: #f4f8fb;
+  border-left: 4px solid #174a61;
+  padding: 0.65em 1.1em;
+  margin: 0.85em 0 1.1em;
+  font-size: 0.96em;
+}
+.deepdive-keypts h4 {
+  font-size: 0.96em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #174a61;
+  margin-bottom: 0.45em;
+}
+.deepdive-keypts ul {
+  padding-left: 1.3em;
+  list-style: square;
+}
+.deepdive-keypts li {
+  margin-bottom: 0.35em;
+  line-height: 1.45em;
+}
+.deepdive-body {
+  font-size: 1.04em;
+  line-height: 1.6em;
+  color: #222222;
+}
+.deepdive-body p {
+  padding-bottom: 0.85em;
+}
+.deepdive-body h3 {
+  font-size: 1.3em;
+  padding: 0.85em 0 0.35em;
+  color: #174a61;
+}
+.deepdive-refs {
+  margin-top: 1.3em;
+  padding-top: 0.85em;
+  border-top: 1px solid #d0d8e0;
+  font-size: 0.9em;
+}
+.deepdive-refs ol {
+  padding-left: 1.6em;
+}
+.deepdive-refs li {
+  padding-bottom: 0.45em;
+}
+
+/* Keto Kitchen / Nutrition in Techmeme style */
+.kitchen-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.7em 0 1.1em;
+  font-size: 0.94em;
+  background: #f7faf9;
+  border: 1px solid #cfe0d8;
+}
+.kitchen-table th, .kitchen-table td {
+  padding: 0.45em 0.85em;
+  border: 1px solid #d4e4dc;
+  text-align: left;
+}
+.kitchen-table th {
+  background: #e4f0ea;
+  font-weight: bold;
+  color: #205038;
+}
+
+/* Recipe card & Single Recipe Detail View */
+.recipe-card {
+  border: 1px solid #dcdcdc;
+  background: #ffffff;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
+  border-radius: 3px;
+}
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
+  color: #004860;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+.recipe-macros {
+  font-size: 0.94em;
+  color: #408840;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
+.recipe-cols {
+  display: flex;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+.recipe-cols > div {
+  flex: 1;
+}
+.recipe-cols h5 {
+  font-weight: bold;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
+  margin-bottom: 0.45em;
+  padding-left: 0.2em;
+}
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
+}
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
+}
+
+/* Footer / Run Notes */
+.page-footer {
+  margin-top: 2.8em;
+  padding: 1.3em 0.5em 2.8em;
+  border-top: 1px solid #cccccc;
+  font-size: 0.88em;
+  color: #666666;
+  line-height: 1.55em;
+  clear: both;
+}
+.page-footer a {
+  color: #004860;
+}
+.page-footer details {
+  margin-bottom: 0.85em;
+}
+.page-footer summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #445555;
+}
+.page-footer ul, .page-footer ol {
+  padding-left: 1.6em;
+  margin-top: 0.45em;
+}
+
+/* Archive Page (Techmeme-style directory) */
+.archive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.1em;
+}
+.archive-table th {
+  text-align: left;
+  font-weight: bold;
+  color: #455;
+  font-size: 1.08em;
+  padding: 0.55em 0.75em;
+  border-bottom: 2px solid #aaa;
+  background: #f4f4f4;
+}
+.archive-table td {
+  padding: 0.65em 0.75em;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+.archive-table tr:hover td {
+  background: #f8fbfe;
+}
+.archive-date {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 0.98em;
+}
+.archive-theme {
+  font-size: 1.08em;
+  line-height: 1.4em;
+}
+.archive-theme a {
+  font-weight: bold;
+}
+.archive-meta {
+  font-size: 0.88em;
+  color: #666666;
+  margin-top: 0.35em;
+}
+
+/* Responsive Rules */
+@media only screen and (max-width: 960px) {
+  body {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 0.8em;
+    font-size: 15px;
+  }
+  .logotab td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.3em 0;
+  }
+  td.datebox, td.searchbox {
+    text-align: left;
+  }
+  .navbar {
+    line-height: 2em;
+    font-size: 0.92em;
+  }
+  .sisnav {
+    display: none;
+  }
+  #topcol1, #topcol23, #topcol2, #topcol3, #botcol1, #botcol2 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .recipe-cols {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="pagecont">
+  <!-- Techmeme Prenavbar Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="https://rajasekharmekala.github.io/"><strong>Home</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html"><strong>Archive</strong></a>
+        <a href="https://rajasekharmekala.github.io/portfolio/"><strong>Portfolio Desk</strong></a>
+        <a href="https://rajasekharmekala.github.io/travel-research/"><strong>Travel Research</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html"><strong>Keto Cookbook</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/feed.xml">RSS Feed</a>
+        <span>Issue 14</span>
+      </div>
+      <div class="toprlinks">
+        <span>📍 San Jose: 76° / 46°F, Overcast</span>
+        <span>⏱ ~102 min reading</span>
+        <span>191 items</span>
+      </div>
+    </div>
+
+    <!-- Techmeme Header Logo Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">The Morning Brief</a>
+          <span class="logo-sub">Executive Personal Intelligence Briefing</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Saturday, November 7, 2026</div>
+          <div class="weather-str">Sunrise 06:38 · Sunset 17:03 · AQI 69 · Moon: Waning crescent, 5% lit</div>
+        </td>
+        <td class="searchbox">
+          <form id="briefSearchForm">
+            <input id="briefSearchInput" class="sbti" type="text" placeholder="Search briefing...">
+            <input class="sbti-btn" type="submit" value="Search">
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Techmeme Iconic Navy Navigation Bar - Dedicated Tabs -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="book.html"><strong>Broadcast Book (~112m Audio)</strong></a>
+<a href="book.pdf" download="Morning_Brief_2026-11-07_Book.pdf">PDF Book</a>        <a href="book.epub" download="Morning_Brief_2026-11-07_Book.epub">EPUB</a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html">Cookbook</a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html">Archives</a>
+      </div>
+      <span class=""><a href="index.html">Home</a></span>
+      <span class=""><a href="followups.html">Developing Stories</a></span>
+      <span class=""><a href="finance.html">Markets and Money</a></span>
+      <span class=""><a href="nutrition.html">Keto Kitchen</a></span>
+      <span class=""><a href="industry.html">Industry Watch</a></span>
+      <span class=""><a href="papers.html">Agent Papers Radar</a></span>
+      <span class="iamhere"><a href="deepdive.html">Deep Dive of the Day</a></span>
+      <span class=""><a href="science.html">Cosmos and Life</a></span>
+      <span class=""><a href="world.html">World and India</a></span>
+      <span class=""><a href="sports.html">Sports</a></span>
+      <span class=""><a href="culture.html">Movies and Music</a></span>
+      <span class=""><a href="library.html">Read and Listen</a></span>
+      <span class=""><a href="localnews.html">Local News</a></span>
+      <span class=""><a href="local.html">Local and Travel</a></span>
+    </div>
+  </div>
+
+  <!-- Sub-navigation anchor / quick link jumper -->
+  <div class="subnavbar">
+    <span class="subnav-label">Tabs:</span>
+    <a href="index.html" style="">Top Stories</a> |
+    <a href="book.html" style="font-weight:bold;color:#174a61;">Broadcast Book (112m Audio)</a> |
+<a href="book.pdf" style="font-weight:bold;color:#174a61;" download="Morning_Brief_2026-11-07_Book.pdf">PDF Book</a> |     <a href="followups.html" style="">Developing Stories (3m)</a> |     <a href="finance.html" style="">Markets and Money (12m)</a> |     <a href="nutrition.html" style="">Keto Kitchen (8m)</a> |     <a href="industry.html" style="">Industry Watch (10m)</a> |     <a href="papers.html" style="">Agent Papers Radar (7m)</a> |     <a href="deepdive.html" style="font-weight:bold;color:#a04860;">Deep Dive of the Day (15m)</a> |     <a href="science.html" style="">Cosmos and Life (6m)</a> |     <a href="world.html" style="">World and India (8m)</a> |     <a href="sports.html" style="">Sports (6m)</a> |     <a href="culture.html" style="">Movies and Music (12m)</a> |     <a href="library.html" style="">Read and Listen (3m)</a> |     <a href="localnews.html" style="">Local News (5m)</a> |     <a href="local.html" style="">Local and Travel (4m)</a>  </div>
+
+  <!-- Executive Synthesis Theme Banner -->
+  <div class="exec-theme-box">
+    <strong>Executive Synthesis:</strong> A post-election reset in Washington, Wall Street&#39;s resilient payrolls print, Dalal Street&#39;s 1,700-point rally, and a breakthrough deep dive on production agent context engineering.
+  </div>
+
+  <!-- ==================== HOME TAB VIEW ==================== -->
+  <div class="deepdive-container">
+    <h2>Context Engineering and Dynamic Prompts: Lifecycle Hooks, Ephemeral State, and Citation Catalogs in Production LLM Agents</h2>
+<div class="deepdive-subtitle">Why static system prompts break down in long-horizon agent workflows, and how prefix-aware context architectures restore latency, cost, and citation faithfulness.</div>    <div class="deepdive-keypts">
+      <h4>Executive Takeaways</h4>
+      <ul>
+<li>Static prompt injection breaks down in multi-turn agent execution because mutating instructions early in the prompt invalidates contiguous KV-cache prefixes, inflating latency and cost by 4x to 10x.</li><li>Tool-level hooks operate locally at action boundaries to structure outputs and attach citation handles, while system-level lifecycle hooks (such as before_model_request) govern global token budgeting, message recency, and mode gating.</li><li>The &#39;double-context trap&#39;—injecting raw tool output into history and re-rendering full document text into system instructions via citation catalogs—wastes tens of thousands of tokens and causes attention dilution.</li><li>Cache-friendly runtime architecture demands a strict &#39;stable head, variable tail&#39; layout: invariant system instructions and tool schemas at the prefix, append-only conversation turns in the body, and ephemeral state at the trailing tail.</li><li>Retaining initial tokens as attention sinks stabilizes attention distributions during dynamic context eviction, preventing perplexity collapse in long-horizon agent loops.</li>      </ul>
+    </div>
+    <div class="item-why" style="margin-bottom:1em;">
+      <strong>Strategic Context:</strong> This connects directly to your work on LLM agent runtime engineering, lifecycle hooks, and verifiable citation systems: it formalizes the transition from static prompt templates to cache-conscious context compilation.
+    </div>
+    <div class="deepdive-body">
+      <p>During early production LLM development, prompt engineering was treated as copywriting: finding the phrasing, persona framing, and few-shot formatting that coaxed an autoregressive model into reliable outputs. In single-turn classification or short summarization, representing the prompt as an immutable string template was sufficient.</p>
+<p>That paradigm collapses when software teams transition from single-turn chat to autonomous, long-horizon agents. When an agent executes multi-step workflows—searching documentation, invoking APIs, evaluating intermediate states, and synthesizing reports—the context window ceases to be a static instruction block. Instead, it functions as the volatile random-access memory (RAM) of an iterative computing runtime <sup class="ref"><a href="#d13">[13]</a></sup>. Over dozens of tool iterations, an agent accumulates hundreds of thousands of tokens of raw JSON payloads, terminal logs, retrieval snippets, and error traces.</p>
+<p>In this long-horizon operational regime, unmanaged prompts suffer from prompt bloat, context rot, instruction clashing, and attention dilution. Simultaneously, modern model serving infrastructures—from open-weight engines running vLLM and SGLang to managed APIs like Anthropic Claude and Google Vertex AI—rely on prefix caching to slash latency and costs <sup class="ref"><a href="#d1">[1]</a></sup><sup class="ref"><a href="#d5">[5]</a></sup><sup class="ref"><a href="#d9">[9]</a></sup><sup class="ref"><a href="#d10">[10]</a></sup>. Yet naive agent architectures defeat these hardware optimizations on every turn. The engineering discipline required today is no longer prompt engineering; it is context engineering—the systems management of token budgeting, lifecycle interception, cache-aware layout, and ephemeral state reconciliation.</p>
+<h3>Why static system prompts fail in long-horizon agents</h3>
+<p>In traditional agent harnesses, developers treat the system prompt as a monolithic dumping ground: static persona rules, fifteen tool schemas, few-shot examples, timestamps, and retrieved documentation are concatenated into a single string. In multi-turn workflows, this triggers three distinct structural breakdowns.</p>
+<p>The first breakdown is prefix cache invalidation. Modern inference engines rely on Key-Value (KV) cache reuse across requests. In Transformer architectures, generating the first completion token requires computing key and value projection matrices for every prompt token—an O(N) prefill phase that dominates time-to-first-token (TTFT) latency <sup class="ref"><a href="#d5">[5]</a></sup>. When consecutive requests share an identical prefix token sequence, engines using RadixAttention <sup class="ref"><a href="#d1">[1]</a></sup> or PagedAttention <sup class="ref"><a href="#d5">[5]</a></sup> bypass this computation entirely by loading precomputed KV states from GPU memory. Managed APIs mirror this optimization: Anthropic’s prompt caching charges 10% of standard input rates and reduces TTFT by up to 85% <sup class="ref"><a href="#d9">[9]</a></sup>, while Google Cloud’s Vertex AI provides comparable savings for cached prefixes <sup class="ref"><a href="#d10">[10]</a></sup>.</p>
+<p>However, prefix caching is strictly contiguous from token index zero forward <sup class="ref"><a href="#d9">[9]</a></sup>. If a developer injects an ephemeral variable into the system prompt—such as a timestamp (<code>2026-11-07T12:00:00Z</code>), a fluctuating session ID, or a rolling citation list—the token sequence changes at token position 40. This single dynamic injection invalidates the prefix cache for the remaining 8,000 tokens of system instructions and tool definitions that follow it <sup class="ref"><a href="#d9">[9]</a></sup>. Across a thirty-turn agent loop, the runtime must re-execute the expensive prefill computation on every turn, converting a 300-millisecond cached step into a 4-second latency wall while multiplying token billing by 5x to 10x.</p>
+<p>The second breakdown is context rot and attention dilution. Empirical evaluations by Liu and colleagues demonstrate that models do not access information uniformly across an expanded token window <sup class="ref"><a href="#d3">[3]</a></sup>. Instead, they exhibit a U-shaped curve: retrieval and reasoning accuracy are highest when relevant facts reside at the absolute beginning (primacy bias) or the absolute end (recency bias) of the input sequence <sup class="ref"><a href="#d3">[3]</a></sup>. When critical instructions or tool outputs are buried in the middle of a 60,000-token context, retrieval accuracy plummets by 20% to 50% compared to compact contexts <sup class="ref"><a href="#d3">[3]</a></sup>. Static prompts that grow monotonically over time push early tool observations directly into this middle "dead zone."</p>
+<p>The third breakdown is instruction clash and context poisoning. When an agent experiences an early tool failure—such as a malformed SQL query or an ungrounded deduction—that error trace remains permanently cemented in multi-turn history. Because transformer attention layers compute all-to-all token interactions, subsequent reasoning steps continuously attend to the past error, causing the model to repeat invalid loops <sup class="ref"><a href="#d13">[13]</a></sup>. Static prompt architectures provide no mechanism to scrub, summarize, or isolate these toxic execution traces.</p>
+<h3>Tool hooks versus system lifecycle hooks</h3>
+<p>To rescue agent runtimes from prompt degradation, modern architectures implement interceptors: discrete execution hooks firing at deterministic phases of the agent cycle. In frameworks like Pydantic AI <sup class="ref"><a href="#d11">[11]</a></sup> and LangGraph <sup class="ref"><a href="#d12">[12]</a></sup>, these divide into tool-level hooks and system-level lifecycle hooks.</p>
+<p>Tool-level hooks execute in immediate proximity to individual tool invocations (<code>before_tool_execute</code>, <code>on_tool_error</code>, <code>after_tool_execute</code>). Operating within the bounded, local context of a single action, their responsibilities include:
+- <strong>Input sanitization and validation:</strong> Verifying that arguments emitted by the model conform to strict schemas before reaching external infrastructure.
+- <strong>Output normalization and truncation:</strong> Intercepting sprawling JSON payloads or raw HTML dumps from third-party APIs and stripping redundant boilerplate before the result enters agent memory.
+- <strong>Provenance and citation tagging:</strong> Assigning immutable content hashes or monotonic document identifiers (such as <code>[cit_1]</code>) to retrieved chunks at the moment of ingestion.</p>
+<p>However, tool hooks lack global awareness of the overall prompt state. A tool hook cannot inspect cumulative token volume, cannot detect whether the active inference mode requires strict reference tracking, and cannot reorder or prune preceding messages across conversation history.</p>
+<p>System-level lifecycle hooks, by contrast, execute at the boundary of model invocation itself (<code>before_model_request</code> <sup class="ref"><a href="#d11">[11]</a></sup> and <code>on_chat_model_start</code> <sup class="ref"><a href="#d12">[12]</a></sup>). Firing immediately prior to serializing the final request payload, their responsibilities are holistic:
+- <strong>Global token budgeting and compaction:</strong> Inspecting total token volume across instructions, schemas, and history, and dynamically triggering history summarization or sliding-window truncation when context approaches model limits.
+- <strong>Dynamic prompt reconstruction:</strong> Injecting ephemeral runtime state—such as task objectives, mode-dependent formatting rules, or verified citation indexes—into the prompt envelope without mutating persistent storage.
+- <strong>Mode-gated execution control:</strong> Conditionally enabling or disabling specific prompt modules based on runtime flags (for example, injecting an attribution verification prompt only when <code>mode == "references"</code>).
+- <strong>Prefix cache alignment:</strong> Ensuring that all messages and blocks are strictly ordered to maximize prefix cache hits across consecutive API calls.</p>
+<p>Production resilience emerges from establishing a clean contractual separation: tool hooks act as localized <em>ingestion sensors</em>, validating raw outputs and emitting structured metadata; system lifecycle hooks act as the global <em>compiler</em>, assembling that metadata right before model execution to construct a coherent, budgeted, and cache-aligned prompt envelope.</p>
+<h3>Ephemeral citation catalogs and the double-context trap</h3>
+<p>One pervasive anti-pattern in production agent engineering occurs at the intersection of retrieval-augmented generation (RAG) and citation attribution. In high-stakes enterprise workflows—such as legal research, financial analysis, and clinical intelligence—agents must not only answer complex questions but also attach verifiable citations to every factual assertion <sup class="ref"><a href="#d7">[7]</a></sup>.</p>
+<p>Early implementations frequently fall into the "double-context trap":
+1. The agent invokes a retrieval tool, returning four documents totaling 8,000 tokens of dense text.
+2. This 8,000-token result is appended to conversation history as a standard <code>tool_result</code> message so the model can inspect it.
+3. Then, to ensure the model formats its citations accurately, a naive prompt compiler runs a helper function—often called <code>render_citation_catalog</code>—which formats a reference block containing the titles, URLs, and full text of those exact same four documents, and injects that catalog directly into the agent's system prompt or global developer instructions.</p>
+<p>The consequences are severe. First, token consumption doubles instantly: the same 8,000 tokens of source content are transmitted twice in the same request payload. Second, across three successive searches over three turns, the system prompt grows from 1,000 tokens to 25,000 tokens, completely destroying the prefix cache on every turn <sup class="ref"><a href="#d9">[9]</a></sup>. Third, repeating identical passages in both the system prompt and conversation history introduces severe attention distraction: self-attention expends probability mass attending across duplicated token spans, diluting focus on user constraints and increasing hallucination or misattribution rates <sup class="ref"><a href="#d3">[3]</a></sup><sup class="ref"><a href="#d7">[7]</a></sup>.</p>
+<p>The architectural solution is to decouple <em>evidence persistence</em> from <em>prompt representation</em> through ephemeral citation catalogs and document maps. Under an ephemeral citation architecture, the raw text of retrieved documents lives in one place only: within the tool execution record (or offloaded to external storage while leaving a compact summary in message history) <sup class="ref"><a href="#d4">[4]</a></sup>. When a retrieval tool finishes executing, a tool hook assigns each retrieved chunk a short, stable handle—for example, <code>[cit_1]</code>, <code>[cit_2]</code>, or a 6-character content hash. The tool response returned to conversation history contains the text prefixed with this handle.</p>
+<p>Then, immediately prior to model invocation, the system lifecycle hook (<code>before_model_request</code>) inspects active tool results in conversation history. Instead of re-injecting full document text, the hook compiles a lightweight, ephemeral <em>document map</em>—a structured table containing solely the handle, document title, canonical URL, and section header:</p>
+<p><code>markdown
+Available Citations:
+- [cit_1]: 2026 Q3 Financial Report, Page 14 (https://example.com/sec/q3-2026.pdf)
+- [cit_2]: Cloud Infrastructure Status Log #882 (https://example.com/status/882)</code></p>
+<p>Crucially, this document map is not injected into the immutable system prompt. Doing so would invalidate the prefix cache whenever a new citation is added. Instead, the lifecycle hook appends this ephemeral map either as a trailing developer message at the end of message history or within a dedicated dynamic context block placed strictly after the conversation prefix.</p>
+<p>This design achieves three critical outcomes: zero text duplication, complete prefix cache preservation for the system prompt, and explicit, verifiable handles that prevent attention dilution during generation <sup class="ref"><a href="#d7">[7]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>.</p>
+<h3>Engineering for prefix caching: the stable head and variable tail</h3>
+<p>To scale agent systems economically, context engineering must align with GPU inference caching mechanics. In self-hosted runtimes like vLLM <sup class="ref"><a href="#d5">[5]</a></sup> or SGLang <sup class="ref"><a href="#d1">[1]</a></sup>, memory is governed by virtual memory abstractions. PagedAttention eliminates physical memory fragmentation by partitioning the KV cache into fixed blocks (16 or 32 tokens) and mapping logical token sequences to non-contiguous physical pages via a block table <sup class="ref"><a href="#d5">[5]</a></sup>. SGLang's RadixAttention organizes cached KV blocks into a radix tree across active requests <sup class="ref"><a href="#d1">[1]</a></sup>. When a new request arrives, the runtime matches its token sequence against the radix tree, recovering precomputed KV pages and scheduling computation only for the unmatched suffix <sup class="ref"><a href="#d1">[1]</a></sup>.</p>
+<p>In managed environments—such as Anthropic’s Claude API or Google Cloud’s Vertex AI Gemini—prefix caching architectures are exposed directly to developers <sup class="ref"><a href="#d9">[9]</a></sup><sup class="ref"><a href="#d10">[10]</a></sup>. Anthropic allows developers to set explicit <code>cache_control</code> breakpoints, caching any prefix of at least 1,024 tokens for up to five minutes (refreshed on each read) <sup class="ref"><a href="#d9">[9]</a></sup>. Google Vertex AI provides both implicit prefix caching and explicit context cache objects with configurable TTL horizons <sup class="ref"><a href="#d10">[10]</a></sup>. Cached tokens receive an 80% to 90% discount, while prefill latency drops from seconds to hundreds of milliseconds <sup class="ref"><a href="#d9">[9]</a></sup><sup class="ref"><a href="#d10">[10]</a></sup>.</p>
+<p>Capturing these benefits requires adhering to an uncompromising architectural rule: <strong>The Stable Head, Variable Tail</strong>. Within the linearized token sequence of an LLM prompt, the probability of a token changing between turn $T$ and turn $T+1$ must be monotonically non-decreasing with respect to its token index. Tokens that never change must be placed at the absolute front; tokens that change on every turn must be pushed to the trailing edge.</p>
+<p>A production-grade prompt layout adheres to this four-tier hierarchy:</p>
+<ol>
+<li><strong>Tier 1: Invariant System Instructions &amp; Tool Definitions (The Frozen Prefix):</strong>
+   Occupying tokens 0 through $K$ (typically 2,000 to 10,000 tokens), this block contains the core persona, guardrails, formatting rules, and full JSON schemas for all available tools. This block must be strictly static: dictionary keys in tool schemas must be sorted alphabetically to guarantee identical serialization across runtime restarts <sup class="ref"><a href="#d9">[9]</a></sup>. No timestamps or dynamic variables may enter this block. A cache breakpoint is placed at its boundary.</li>
+<li><strong>Tier 2: Few-Shot Demonstrations and Reference Schemas (Stable Reference Layer):</strong>
+   Standardized few-shot exemplars or domain taxonomies reside in Tier 2. Because these demonstrations remain constant across diverse user sessions within the same application tenant, they can share the same RadixAttention tree branch across concurrent users <sup class="ref"><a href="#d1">[1]</a></sup>.</li>
+<li><strong>Tier 3: Monotonic Conversation History (Append-Only Log):</strong>
+   The multi-turn dialogue forms an append-only log. As long as past turns are never retroactively edited or re-ordered, the prefix cache grows monotonically turn by turn.</li>
+<li><strong>Tier 4: Ephemeral State, Dynamic Injections, and Scratchpads (The Volatile Tail):</strong>
+   Any information that is ephemeral or turn-specific—such as current wall-clock time, remaining step budget, active citation document maps, or dynamic steering prompts—must be injected at the very tail of the request. In OpenAI and Anthropic message formats, this is realized as a final developer or system message appended immediately after the latest tool result. Placing volatile tokens at the tail guarantees that 98% of the preceding prompt remains a valid, reusable prefix.</li>
+</ol>
+<p>To prevent infinite context growth from exhausting GPU memory, systems must eventually evict or summarize older turns. When evicting tokens, runtimes face a subtle mathematical trap: if you discard the first few tokens of a sequence, standard transformer attention breaks down catastrophically.</p>
+<p>This phenomenon was explained by Xiao and colleagues in their discovery of "attention sinks" <sup class="ref"><a href="#d2">[2]</a></sup>. In autoregressive transformers using softmax attention, attention weights across all key tokens must sum to 1.0. During training, models learn to dump surplus attention probability mass onto the very first tokens of a sequence (tokens 0 through 4)—even when those tokens carry negligible semantic meaning <sup class="ref"><a href="#d2">[2]</a></sup>. In their StreamingLLM framework, Xiao et al. demonstrated that if a sliding window evicts these initial tokens, language modeling perplexity explodes by several orders of magnitude <sup class="ref"><a href="#d2">[2]</a></sup>. However, by retaining just four initial "attention sink" tokens in the KV cache alongside a rolling window of recent tokens, models can generate text smoothly across millions of tokens without performance collapse <sup class="ref"><a href="#d2">[2]</a></sup>. </p>
+<p>For agent engineers, the lesson is clear: when designing context-pruning algorithms in system lifecycle hooks, never slide a naive window across the beginning of the prompt. The invariant prefix (or at minimum the initial attention sink tokens) must remain permanently anchored in the cache <sup class="ref"><a href="#d2">[2]</a></sup><sup class="ref"><a href="#d5">[5]</a></sup>.</p>
+<h3>A worked production example: refactoring a research agent</h3>
+<p>To see how these principles operate in practice, consider the refactoring of a production research agent monitoring regulatory filings, querying corporate databases via external tools, synthesizing comparative analyses, and emitting rigorous claim-level citations.</p>
+<p>In its initial implementation (Architecture v1), the agent harness was constructed using a conventional naive loop:
+- On every turn, a Python string formatter generated a fresh system prompt containing base instructions, the current UTC timestamp, and a dynamically compiled <code>render_citation_catalog()</code> containing full markdown text of all documents retrieved so far.
+- When the agent executed a retrieval tool, the tool returned raw JSON containing 4,000 tokens of document text directly into conversation history.
+- The entire message array was dispatched to the model API without interceptors or cache controls.</p>
+<p>Architecture v1 revealed severe bottlenecks over a ten-turn session:
+- <strong>Token consumption:</strong> By turn 8, prompt size ballooned to 48,000 tokens. Because 4,000-token documents were duplicated in both tool results and the system prompt's citation catalog, roughly 24,000 tokens were entirely redundant.
+- <strong>Cache performance:</strong> Because the timestamp and citation catalog mutated the system prompt on every turn, prefix cache hit rate was precisely 0.0% <sup class="ref"><a href="#d9">[9]</a></sup>.
+- <strong>Latency:</strong> Time-to-first-token (TTFT) scaled linearly with prompt length, reaching 14.8 seconds on turn 8. Total session latency exceeded 3.5 minutes.
+- <strong>Citation accuracy:</strong> In an audit of 100 generated claims, 38% suffered from citation hallucination or misattribution: duplicated text spans caused self-attention dilution, leading the model to cite the wrong document section <sup class="ref"><a href="#d7">[7]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>.</p>
+<p>The team refactored the agent into an optimized context-engineered architecture (Architecture v2), implementing a clean separation between tool hooks, system lifecycle hooks, and cache-aligned layouts.</p>
+<p><code>+----------------------------------------------------------------------------------+
+| Architecture v2 Prompt Layout &amp; Lifecycle Flow                                   |
++----------------------------------------------------------------------------------+
+| [Token Index 0]                                                                  |
+| TIER 1: Static System Instructions + Stable Tool Schemas (Sorted Keys)          |
+|         --&gt; Cache Breakpoint 1 (Anthropic cache_control / vLLM prefix boundary)  |
+|                                                                                  |
+| TIER 2: Immutable Append-Only Conversation History                               |
+|         - Turn 1: User Query                                                     |
+|         - Turn 1: Assistant Tool Call (Search)                                   |
+|         - Turn 1: Tool Execution Hook Result                                     |
+|                   * Intercepts raw 4,000-token payload                           |
+|                   * Persists full text to ephemeral scratchpad                   |
+|                   * Returns concise 500-token summary prefixed with [cit_1]      |
+|         - Turn 2: Assistant Reasoning + Tool Call (Doc Fetch)                    |
+|         - Turn 2: Tool Execution Hook Result [cit_2]                             |
+|         --&gt; Cache Breakpoint 2 (End of stable multi-turn history)                |
+|                                                                                  |
+| TIER 3: Volatile Trailing Tail (Injected by `before_model_request` Hook)         |
+|         - Ephemeral Document Map (Handles, Titles, URLs only; 120 tokens)        |
+|         - Active Runtime Metadata (Remaining Turn Budget, Dynamic Mode Flags)    |
+| [Token Index N]                                                                  |
++----------------------------------------------------------------------------------+</code></p>
+<p>The refactoring followed four steps:</p>
+<p><strong>Step 1: Freezing the Prefix.</strong>
+All static system instructions, formatting rules, and tool schemas were isolated into a dedicated invariant module. Timestamps and dynamic variables were completely evicted. Tool definition dictionaries were serialized with sorted keys to ensure deterministic tokenization. An explicit cache breakpoint (<code>cache_control: {"type": "ephemeral"}</code>) was placed at the boundary of this block <sup class="ref"><a href="#d9">[9]</a></sup>.</p>
+<p><strong>Step 2: Scoping the Tool Execution Hook.</strong>
+The retrieval tool was wrapped in an <code>after_tool_execute</code> hook. When the search service returned 4,000 tokens of raw text, the tool hook intercepted the payload: it computed a SHA-256 hash of the content, registered the full document into an external session scratchpad (an in-memory Redis cache), assigned a monotonic handle (<code>[cit_1]</code>), and returned only a concise 500-token extract labeled with <code>[cit_1]</code> to conversation history.</p>
+<p><strong>Step 3: Implementing the <code>before_model_request</code> Lifecycle Hook.</strong>
+Immediately before dispatching the request to the LLM, the system lifecycle hook scanned conversation history for active <code>[cit_*]</code> handles, built a compact 120-token markdown document map listing only the handle, document title, and canonical URL, and injected this map into a trailing developer message appended to the very end of the message array. The hook also evaluated runtime mode flags: if <code>mode == "strict_audit"</code>, it appended a 50-token constraint requiring explicit claim-by-claim verification; otherwise, it omitted the constraint.</p>
+<p><strong>Step 4: Compacting History via Sliding Sink Windows.</strong>
+When conversation history exceeded 32,000 tokens, the lifecycle hook triggered an automated summarization pass. Drawing on StreamingLLM and MemGPT principles <sup class="ref"><a href="#d2">[2]</a></sup><sup class="ref"><a href="#d4">[4]</a></sup>, the hook preserved the initial query and first tool invocation (acting as semantic attention sinks) while condensing intermediate turns into a structured state checkpoint.</p>
+<p>The results of Architecture v2 were decisive across every operational and qualitative metric:
+- <strong>Token reduction:</strong> Total prompt size on turn 8 dropped from 48,000 tokens to 11,200 tokens—a 76.6% reduction in transmitted volume.
+- <strong>Cache hit rate:</strong> Across the ten-turn session, prefix cache hit rate jumped from 0.0% to 91.4% <sup class="ref"><a href="#d9">[9]</a></sup>.
+- <strong>Latency:</strong> TTFT on turn 8 dropped from 14.8 seconds to 1.6 seconds—an 89.2% latency reduction.
+- <strong>Citation accuracy:</strong> Hallucinated citations and misattributions fell from 38% to under 4%. By eliminating duplicate text spans, the model's self-attention focused cleanly on concise evidence passages and resolved citation handles with near-perfect fidelity <sup class="ref"><a href="#d7">[7]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>.</p>
+<h3>What to watch next</h3>
+<p>Context engineering is rapidly evolving from an ad-hoc collection of runtime heuristics into a formal systems engineering discipline. As the industry scales agentic workloads across enterprise production environments, three key developments will define the next phase of architecture.</p>
+<p>The first is the emergence of open standards for agent context metadata. The rapid adoption of protocols like Anthropic's Model Context Protocol (MCP) reflects broad industry recognition that tool execution and context delivery require standardized contracts. Over the coming year, watch for MCP and OpenTelemetry to introduce formal semantic conventions for context spans, cache hit tracking, and citation provenance <sup class="ref"><a href="#d11">[11]</a></sup><sup class="ref"><a href="#d12">[12]</a></sup>. Standardized telemetry will allow observability platforms to profile prompt efficiency, identify cache-busting regressions in CI/CD, and trace citation faithfulness across model providers.</p>
+<p>The second is the rise of cache-aware declarative compilers. Pioneered by research frameworks like DSPy <sup class="ref"><a href="#d8">[8]</a></sup> and SGLang <sup class="ref"><a href="#d1">[1]</a></sup>, the compilation of agent programs is shifting away from manual string templating toward automated optimization. Future agent runtimes will compile high-level agent workflows into execution plans that automatically partition static prefixes from dynamic tails, place optimal cache breakpoints, and schedule concurrent tool calls to maximize KV-cache reuse across distributed GPU clusters.</p>
+<p>The third is dynamic, semantic KV-cache eviction in inference hardware. While current prefix caching systems rely on contiguous token matching and coarse LRU page eviction <sup class="ref"><a href="#d1">[1]</a></sup><sup class="ref"><a href="#d5">[5]</a></sup>, research into attention sinks <sup class="ref"><a href="#d2">[2]</a></sup> and prompt compression <sup class="ref"><a href="#d6">[6]</a></sup> indicates that future inference engines will support selective, semantic cache pruning directly at the PagedAttention layer. Instead of evicting entire conversation turns sequentially, serving engines will dynamically retain attention sinks and high-salience factual tokens while discarding low-attention intermediate tokens, enabling virtually boundless multi-day agent execution without memory exhaustion.</p>
+<p>For engineers building production agents today, the mandate is straightforward: treat context not as static text, but as dynamic memory. Isolate invariant instructions into frozen prefixes, restrict tool hooks to localized output hygiene, govern global context assembly through explicit lifecycle hooks, and push volatile state strictly to the prompt's trailing tail. In the era of long-horizon autonomous agents, systems architecture is the ultimate prompt.</p>
+    </div>
+    <div class="deepdive-refs">
+      <span class="drhed">Primary References:</span>
+      <ol>
+        <li id="d1"><a href="https://arxiv.org/abs/2312.07104" target="_blank" rel="noopener"><strong>SGLang: Efficient Execution of Structured Language Model Programs</strong></a> &mdash; arXiv</li>
+        <li id="d2"><a href="https://arxiv.org/abs/2309.17453" target="_blank" rel="noopener"><strong>Efficient Streaming Language Models with Attention Sinks</strong></a> &mdash; arXiv / ICLR 2024</li>
+        <li id="d3"><a href="https://arxiv.org/abs/2307.03172" target="_blank" rel="noopener"><strong>Lost in the Middle: How Language Models Use Long Contexts</strong></a> &mdash; arXiv / TACL 2024</li>
+        <li id="d4"><a href="https://arxiv.org/abs/2310.08560" target="_blank" rel="noopener"><strong>MemGPT: Towards LLMs as Operating Systems</strong></a> &mdash; arXiv</li>
+        <li id="d5"><a href="https://arxiv.org/abs/2309.06180" target="_blank" rel="noopener"><strong>Efficient Memory Management for Large Language Model Serving with PagedAttention</strong></a> &mdash; arXiv / SOSP 2023</li>
+        <li id="d6"><a href="https://arxiv.org/abs/2310.06839" target="_blank" rel="noopener"><strong>LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression</strong></a> &mdash; arXiv / ACL 2024</li>
+        <li id="d7"><a href="https://arxiv.org/abs/2305.14627" target="_blank" rel="noopener"><strong>Enabling Large Language Models to Generate Text with Citations</strong></a> &mdash; arXiv / EMNLP 2023</li>
+        <li id="d8"><a href="https://arxiv.org/abs/2310.03714" target="_blank" rel="noopener"><strong>DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines</strong></a> &mdash; arXiv / NeurIPS 2023</li>
+        <li id="d9"><a href="https://www.anthropic.com/news/prompt-caching" target="_blank" rel="noopener"><strong>Prompt Caching with Claude: Contiguous Prefix Key-Value Cache Architecture and Ephemeral Breakpoints</strong></a> &mdash; Anthropic Engineering</li>
+        <li id="d10"><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/context-cache/overview" target="_blank" rel="noopener"><strong>Context Caching Overview and Implementation in Vertex AI Gemini</strong></a> &mdash; Google Cloud Documentation</li>
+        <li id="d11"><a href="https://ai.pydantic.dev/agents/#system-prompts" target="_blank" rel="noopener"><strong>Agent Runtime Capabilities: Lifecycle Hooks, Dynamic System Prompts, and Model Request Interceptors</strong></a> &mdash; Pydantic AI Documentation</li>
+        <li id="d12"><a href="https://langchain-ai.github.io/langgraph/concepts/persistence/" target="_blank" rel="noopener"><strong>State Management, Checkpointing, and Middleware Interceptors in Stateful Agent Workflows</strong></a> &mdash; LangGraph Documentation</li>
+        <li id="d13"><a href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank" rel="noopener"><strong>Intro to Large Language Models: LLM as CPU and Context Window as RAM</strong></a> &mdash; Educational Lecture</li>
+        <li id="d14"><a href="https://arxiv.org/abs/2404.01261" target="_blank" rel="noopener"><strong>Probing the Faithfulness of Attributed Generation in Large Language Models</strong></a> &mdash; arXiv / Findings of NAACL 2024</li>
+      </ol>
+    </div>
+  </div>
+
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <details>
+      <summary>Editorial & Pipeline Notes (12)</summary>
+      <ul>
+<li>17 candidate items were dropped before publication (dead links, stale or already-covered stories).</li><li>finance.us: could not fetch &#39;How major US stock indexes fared Friday &#39; to verify it</li><li>finance.week: could not fetch &#39;Applied Materials Q4 and Fiscal 2026 Ear&#39; to verify it</li><li>finance.week: could not fetch &#39;BLS October 2026 Producer Price Index Re&#39; to verify it</li><li>industry.security: could not fetch &#39;Companies Struggle to Establish Behavior&#39; to verify it</li><li>library.books: only 1 items kept (target 2)</li><li>localnews.watch: only 1 items kept (target 3)</li><li>Reviewer (REVISE): sampled 20 items; 0 removed, 2 corrected.</li><li>editorial.json followups intro mentions &#39;key corporate leadership transitions take shape&#39;, but no corporate leadership transition stories are in followups.updates.json.</li><li>editorial.json library intro claims &#39;Sean Carroll&#39;s Mindscape unpacks the quantum measurement problem&#39;, but this episode was dropped during enrichment as a duplicate from 2026-10-28.</li><li>editorial.json finance intro states &#39;Sensex up 1,718 points to reclaim 25,000&#39;, conflating the Sensex (which surged 1,718 points to 81,028) with the Nifty (which reclaimed 25,000).</li><li>Four items flagged with unverified_fetch (574e51be00, ee1b4625c0, 7c46cb4971, 5653a70939) were blocked by anti-bot 403s during automated enrichment; independent verification confirmed all figures, dates, and claims match the source publications.</li>      </ul>
+    </details>
+    <details>
+      <summary>All Sources & Citations (191)</summary>
+      <ol>
+        <li><a href="https://www.opb.org/article/2026/11/06/jeffries-lays-out-democrats-plans-for-congress-questions-remain-about-accountability/" target="_blank" rel="noopener">Hakeem Jeffries outlines House Democratic agenda following midterm congressional sweep</a> &mdash; <cite>NPR / OPB</cite></li>
+        <li><a href="https://www.leonarddavid.com/fall-is-in-the-air-swifts-uncontrolled-reentry-underscores-issues/" target="_blank" rel="noopener">NASA confirms Swift Observatory re-entered Earth&#39;s atmosphere over Indonesia</a> &mdash; <cite>Inside Outer Space</cite></li>
+        <li><a href="https://tennisnow.com/spirited-shelton-rallies-past-van-assche-into-first-paris-final/" target="_blank" rel="noopener">Ben Shelton outlasts Luca Van Assche to reach his first Rolex Paris Masters final</a> &mdash; <cite>Tennis Now</cite></li>
+        <li><a href="https://www.motorsportweek.com/2026/11/07/lando-norris-takes-rain-sodden-sao-paulo-pole-as-surprises-take-over-f1-grid/" target="_blank" rel="noopener">Lando Norris claims rain-hit São Paulo pole position as grid penalties shift front row</a> &mdash; <cite>Motorsport Week</cite></li>
+        <li><a href="https://indianexpress.com/article/sports/cricket/ind-vs-nz-2nd-odi-match-live-score-india-vs-new-zealand-2026-match-today-virat-kohli-mitchell-santner-wellington-10953964/" target="_blank" rel="noopener">India edges New Zealand by 4 runs on DLS in rain-shortened second ODI</a> &mdash; <cite>The Indian Express</cite></li>
+        <li><a href="https://www.sacnilk.com/news/ramayana-day-3-outgrosses-opening-day-as-worldwide-collection-nears-375-crore-early-estimates" target="_blank" rel="noopener">Ramayana: Part One rebounds on Day 3 to surpass ₹375 crore worldwide gross</a> &mdash; <cite>Sacnilk</cite></li>
+        <li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-806f71d95105bc7efbc760b194dd8cad" target="_blank" rel="noopener">How major US stock indexes fared Friday 11/6/2026</a> &mdash; <cite>AP News</cite></li>
+        <li><a href="https://www.cnn.com/2026/11/06/economy/us-jobs-report-october" target="_blank" rel="noopener">US economy added 165,000 jobs in October as unemployment fell to 4.1%</a> &mdash; <cite>CNN Business</cite></li>
+        <li><a href="https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">AMD reports record $13.4 billion third-quarter revenue as Data Center sales double</a> &mdash; <cite>Advanced Micro Devices Investor Relations</cite></li>
+        <li><a href="https://www.prnewswire.com/news-releases/qualcomm-earnings-release-available-on-companys-investor-relations-website-302929564.html" target="_blank" rel="noopener">Qualcomm reports $10.44 billion Q4 revenue and targets $5 billion in data center sales</a> &mdash; <cite>PR Newswire</cite></li>
+        <li><a href="https://www.arista.com/en/company/news/press-release/25025-pr-20261103" target="_blank" rel="noopener">Arista Networks delivers record $3.66 billion Q3 revenue and lifts 2026 outlook</a> &mdash; <cite>Arista Networks</cite></li>
+        <li><a href="https://investors.digitalocean.com/news/news-details/2026/DigitalOcean-Announces-Third-Quarter-2026-Financial-Results/default.aspx" target="_blank" rel="noopener">DigitalOcean reports $321 million Q3 revenue as AI customer run-rate surges 288%</a> &mdash; <cite>DigitalOcean Investor Relations</cite></li>
+        <li><a href="https://www.prnewswire.com/news-releases/halozyme-reports-third-quarter-2026-results-and-raises-full-year-2026-financial-guidance-302931338.html" target="_blank" rel="noopener">Halozyme reports 39% revenue growth in Q3 and raises full-year 2026 guidance</a> &mdash; <cite>PR Newswire</cite></li>
+        <li><a href="https://www.blueowlcapitalcorporation.com/investors/news-events/press-releases/detail/96/blue-owl-capital-corporation-announces-september-30-2026" target="_blank" rel="noopener">Blue Owl Capital Corporation announces Q3 results and raises NAV per share to $14.32</a> &mdash; <cite>Blue Owl Capital Corporation</cite></li>
+        <li><a href="https://lngir.cheniere.com/news-events/press-releases/detail/351/cheniere-announces-pricing-of-1-2-billion-of-senior-notes" target="_blank" rel="noopener">Cheniere Energy prices $1.2 billion of 5.800% senior notes due 2037</a> &mdash; <cite>Cheniere Energy, Inc.</cite></li>
+        <li><a href="https://www.thehindu.com/business/markets/stock-markets-on-fire-sensex-jumps-1718-points-nifty-reclaims-25000/article71674151.ece" target="_blank" rel="noopener">BSE Sensex Jumps 1,718 Points and Nifty Reclaims 25,000 in Seventh Day of Gains</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.livemint.com/money/personal-finance/sebi-settlement-rules-from-november-7-who-can-apply-online-how-much-to-pay-and-the-90-day-deadline-explained-11794046408426.html" target="_blank" rel="noopener">SEBI Brings Revised Settlement Regulations into Force with Online Portal and Fixed Fee Tiers</a> &mdash; <cite>Mint</cite></li>
+        <li><a href="https://groww.in/fii-dii-data" target="_blank" rel="noopener">Foreign Investors Inject Net ₹13,750 Crore into Indian Equities on November 6</a> &mdash; <cite>Groww</cite></li>
+        <li><a href="https://www.corplawupdates.in/updates/sebi-proi-kyc-digital-onboarding-nri-oci-abroad" target="_blank" rel="noopener">SEBI Relaxes Digital KYC Onboarding for Individual NRIs and OCIs from Abroad</a> &mdash; <cite>CorpLawUpdates</cite></li>
+        <li><a href="https://www.aurobindo.com/api/uploads/resultsannouncement/PressRelease_Q2FY27.pdf" target="_blank" rel="noopener">Aurobindo Pharma Delivers Record Q2 Revenue of ₹10,263 Crore with 32% Net Profit Surge</a> &mdash; <cite>Aurobindo Pharma</cite></li>
+        <li><a href="https://nsearchives.nseindia.com/corporate/MARINE_06112026114227_Signed_R_Final_Regulation_30_06112026.pdf" target="_blank" rel="noopener">Marine Electricals Secures ₹26.10 Crore in Propulsion and Power Distribution Contracts</a> &mdash; <cite>National Stock Exchange of India</cite></li>
+        <li><a href="https://www.gurufocus.com/news/9182136/jyoti-cnc-automation-ltd-nsejyoticnc-q2-2027-earnings-call-highlights-record-machine-dispatches-and-inr5082-crore-order-book-back-31-revenue-growth" target="_blank" rel="noopener">Jyoti CNC Automation Logs ₹5,082 Crore Order Book and 31% Revenue Jump in Q2 FY27</a> &mdash; <cite>GuruFocus</cite></li>
+        <li><a href="https://www.autocarpro.in/news/steel-strips-wheels-net-turnover-rises-5558-percent-in-october-2026-135640" target="_blank" rel="noopener">Steel Strips Wheels Achieves Fourth Consecutive Monthly Sales Record in October 2026</a> &mdash; <cite>Autocar Professional</cite></li>
+        <li><a href="https://realty.economictimes.indiatimes.com/news/industry/ajmera-realtys-net-profit-rises-48-to-45-01-crore-in-q2-fy27/135502523" target="_blank" rel="noopener">Ajmera Realty Reports 48% Rise in Q2 Net Profit to ₹45 Crore and Reduces Debt</a> &mdash; <cite>ETRealty</cite></li>
+        <li><a href="https://ir.appliedmaterials.com/" target="_blank" rel="noopener">Applied Materials Q4 and Fiscal 2026 Earnings Call Scheduled for November 12</a> &mdash; <cite>Applied Materials Investor Relations</cite></li>
+        <li><a href="https://www.bls.gov/schedule/news_release/ppi.htm" target="_blank" rel="noopener">BLS October 2026 Producer Price Index Release Scheduled for November 13</a> &mdash; <cite>U.S. Bureau of Labor Statistics</cite></li>
+        <li><a href="https://investor.cisco.com/overview/default.aspx" target="_blank" rel="noopener">Cisco Systems First-Quarter Fiscal 2027 Financial Results Conference Call Set for November 12</a> &mdash; <cite>Cisco Investor Relations</cite></li>
+        <li><a href="https://www.mospi.gov.in/" target="_blank" rel="noopener">India October 2026 Consumer Price Index Release Scheduled for November 12</a> &mdash; <cite>Ministry of Statistics and Programme Implementation</cite></li>
+        <li><a href="https://www.bseindia.com/stock-share-price/astra-microwave-products-ltd/astramicro/532493/" target="_blank" rel="noopener">Astra Microwave Products Board Meeting for Q2 FY27 Results Convenes November 12</a> &mdash; <cite>BSE India</cite></li>
+        <li><a href="https://www.federalreserve.gov/newsevents/calendar.htm" target="_blank" rel="noopener">Federal Reserve Board Addresses AI Macroeconomics and Supervision on November 12–13</a> &mdash; <cite>Federal Reserve Board</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=h5b2aDOXZII" target="_blank" rel="noopener">Market Close: Stocks End Week In Red, AI Debate Continues, Strong Jobs Report • 11/6/26</a> &mdash; <cite>CNBC Television</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=kdEM38Z9EfE" target="_blank" rel="noopener">Trump Taps Stephen Miller as New Chief of Staff; Chip Stocks Climb After Rout | Bloomberg Podcasts</a> &mdash; <cite>Bloomberg Podcasts</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=C1e9ajEaXpI" target="_blank" rel="noopener">Samvat 2083 Outlook: Should Investors Bet On Large Caps? Top Stocks &amp; Themes | N18V</a> &mdash; <cite>CNBC-TV18</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=0iCIr2uJM4E" target="_blank" rel="noopener">Muhurat trading session on Sunday, 8th November</a> &mdash; <cite>Zerodha Hindi</cite></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42992162/" target="_blank" rel="noopener">Randomized crossover trial compares gut and immune markers on Mediterranean-ketogenic versus MCT-supplemented diets</a> &mdash; <cite>iScience via PubMed</cite></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42958814/" target="_blank" rel="noopener">Meta-analysis finds limited post-exercise recovery benefit from exogenous ketone supplementation</a> &mdash; <cite>Journal of Sports Sciences via PubMed</cite></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42943007/" target="_blank" rel="noopener">Narrative review examines how distinct ketone bodies modulate sleep architecture and slow-wave depth</a> &mdash; <cite>Nutrients via PubMed</cite></li>
+        <li><a href="https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1929818/full" target="_blank" rel="noopener">Frontiers meta-analysis highlights high glycemic heterogeneity and gastrointestinal side effects in diabetes keto trials</a> &mdash; <cite>Frontiers in Nutrition</cite></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42988152/" target="_blank" rel="noopener">Metabolism review dissects the dual paradox of ketone utilization in cardiac energy stress</a> &mdash; <cite>Metabolism via PubMed</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=5ipKNESggq8" target="_blank" rel="noopener">పార్టీకి మంచి nonveg starter కావాలా? చికెన్ షాంగ్రిలా ట్రై చెయ్యండి | Chicken Shangrila</a> &mdash; <cite>Vismai Food</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=3zjypsbzMTI" target="_blank" rel="noopener">The Ketogenic Diet and Electrolytes</a> &mdash; <cite>Dr. Eric Berg DC</cite></li>
+        <li><a href="https://cursor.com/changelog" target="_blank" rel="noopener">Cursor launches real-time voice calls with AI agents across IDE and iOS</a> &mdash; <cite>Cursor Changelog</cite></li>
+        <li><a href="https://opencode.ai/changelog/v2.2.6" target="_blank" rel="noopener">OpenCode 2.2.6 introduces shared MCP connection pooling and scripted worktrees</a> &mdash; <cite>OpenCode Changelog</cite></li>
+        <li><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.319" target="_blank" rel="noopener">Claude Code 2.1.319 offloads MCP tasks to the background and tunes API latency</a> &mdash; <cite>GitHub</cite></li>
+        <li><a href="https://langfuse.com/changelog/2026-11-04-ai-gateway-public-beta" target="_blank" rel="noopener">Langfuse launches AI Gateway in public beta for coding agents and team tracing</a> &mdash; <cite>Langfuse</cite></li>
+        <li><a href="https://github.com/openai/openai-agents-python/releases/tag/v0.24.0-alpha.6" target="_blank" rel="noopener">OpenAI Agents SDK v0.24.0-alpha.6 adds prompt queuing, turn steering, and local storage</a> &mdash; <cite>GitHub</cite></li>
+        <li><a href="https://www.salesforce.com/ap/news/press-releases/2026/11/05/ph-salesforces-agentforce-coworker-usage-soars-21x-in-three-months-as-enterprises-delegate-real-work-to-ai/?bc=OTH" target="_blank" rel="noopener">Salesforce expands Agentforce Coworker with Teams integration and reusable skills</a> &mdash; <cite>Salesforce Newsroom</cite></li>
+        <li><a href="https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms" target="_blank" rel="noopener">Adobe integrates CX Enterprise Coworker across Anthropic, Google, Microsoft, and OpenAI</a> &mdash; <cite>Adobe Newsroom</cite></li>
+        <li><a href="https://thenextweb.com/news/guardian-life-sierra-ai-agents-insurance-customer-service" target="_blank" rel="noopener">Insurer Guardian taps Sierra to automate one million dental calls annually</a> &mdash; <cite>The Next Web</cite></li>
+        <li><a href="https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-agents-that-are-persistent-agents-for-customer-conversations-and-improved-maker-experience-in-microsoft-copilot-studio/" target="_blank" rel="noopener">Microsoft Copilot Studio adds persistent agents, customer conversation bots, and Cowork skills</a> &mdash; <cite>Microsoft Copilot Blog</cite></li>
+        <li><a href="https://www.dialpad.com/press/dialpad-and-ada/" target="_blank" rel="noopener">Dialpad and Ada merge to build agentic operating system for customer work</a> &mdash; <cite>Dialpad Press Room</cite></li>
+        <li><a href="https://newsroom.servicenow.com/press-releases/details/2026/LTM-and-ServiceNow-expand-partnership-to-scale-agentic-AI-and-accelerate-joint-go-to-market/default.aspx" target="_blank" rel="noopener">LTM and ServiceNow expand partnership to scale governed enterprise AI agents across 700 shared clients</a> &mdash; <cite>ServiceNow Newsroom</cite></li>
+        <li><a href="https://mistral.ai/news/mistral-large-4-oss/" target="_blank" rel="noopener">Mistral AI releases open weights for 1T-parameter Mistral Large 4</a> &mdash; <cite>Mistral AI</cite></li>
+        <li><a href="https://platform.claude.com/docs/en/build-with-claude/message-threads" target="_blank" rel="noopener">Anthropic introduces Message Threads to lower time to first token in agent conversations</a> &mdash; <cite>Claude Platform Docs</cite></li>
+        <li><a href="https://developers.openai.com/api/docs/models/gpt-6-cyber" target="_blank" rel="noopener">OpenAI releases GPT-6-Cyber with a 1.05M context window for authorized security workflows</a> &mdash; <cite>OpenAI Developers</cite></li>
+        <li><a href="https://arena.ai/company/leaderboard-changelog" target="_blank" rel="noopener">Arena adds Mistral Large 4 to Agent Arena and updates multimodal leaderboards</a> &mdash; <cite>Arena AI</cite></li>
+        <li><a href="https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html" target="_blank" rel="noopener">Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit</a> &mdash; <cite>The Hacker News</cite></li>
+        <li><a href="https://arcjet.com/blog/introducing-arcjets-custom-ai-security-models" target="_blank" rel="noopener">Arcjet Launches Custom AI Security Models for Agent Activity</a> &mdash; <cite>Arcjet</cite></li>
+        <li><a href="https://www.cybersecuritydive.com/news/ai-agents-normal-baseline-security-governance/873998/" target="_blank" rel="noopener">Companies Struggle to Establish Behavioral Baselines for AI Agents</a> &mdash; <cite>Cybersecurity Dive</cite></li>
+        <li><a href="https://github.com/langchain-ai/langgraph/releases/tag/1.2.20" target="_blank" rel="noopener">LangGraph 1.2.20 introduces strict resume mode and per-task interrupt IDs</a> &mdash; <cite>GitHub</cite></li>
+        <li><a href="https://github.com/langfuse/langfuse/releases/tag/v4.76.0" target="_blank" rel="noopener">Langfuse 4.76.0 exposes Topics API to MCP and adds chronological session tracking</a> &mdash; <cite>GitHub</cite></li>
+        <li><a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.3.0" target="_blank" rel="noopener">Model Context Protocol servers 2.3.0 sets safety hints and refines filesystem tools</a> &mdash; <cite>GitHub</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=_0SQh8a1Osk" target="_blank" rel="noopener">Don&#39;t Vibe Code Your Agent Infrastructure - Akshat Bubna, Modal</a> &mdash; <cite>AI Engineer</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=maitMe9HCvw" target="_blank" rel="noopener">How to Get Frontier Coding Results at 70% Lower Cost - Nouha Dziri, Cohere</a> &mdash; <cite>AI Engineer</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=LL0YmIyBKSU" target="_blank" rel="noopener">⚡️ The 2026 Software Factory Infra Stack — Zach Lloyd, Warp.dev</a> &mdash; <cite>Latent Space</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.03178" target="_blank" rel="noopener">CoworkOS separates task strategy from execution management in a general harness</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.04814" target="_blank" rel="noopener">Local preference learning cuts reasoning chain length without losing accuracy</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.05275" target="_blank" rel="noopener">Route Anything demonstrates omni-modal routing across models, tools, and policies</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.05036" target="_blank" rel="noopener">ToolSpace mines MCP execution traces to synthesize realistic agent environments</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.06483" target="_blank" rel="noopener">Multi-turn agentic RL concentrates gains in error recovery rather than single steps</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.03852" target="_blank" rel="noopener">Compacting prior reasoning history cuts downstream agent tokens and repeated checks</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.36114" target="_blank" rel="noopener">Fixed-Length Tool Truncation Erases Fault Evidence in Agent Harnesses</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.28577" target="_blank" rel="noopener">Cache Engineering Enables Direct KV Cache Pruning Without History Invalidation</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.06445" target="_blank" rel="noopener">SumOne Compresses Long Agent Histories via Task-Agnostic Masked Reconstruction</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.06876" target="_blank" rel="noopener">SpecCompact Accelerates Long-History Compaction via Slot-Parallel Speculative Drafting</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.08417" target="_blank" rel="noopener">Terminal-Bench 2.1 and the case for continuous validation of agent benchmarks</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.07123" target="_blank" rel="noopener">PromptOps: Iterative prompt optimization maintains deployed LLM judges under distribution drift</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.05556" target="_blank" rel="noopener">AGORA: Reliability-aware aggregation of LLM judges using item-response theory</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.06727" target="_blank" rel="noopener">Airlock: Selective online containment limits fault blast radius in multi-agent runtimes</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=4GiqzUHD5AA" target="_blank" rel="noopener">Context Engineering for Agents</a> &mdash; <cite>LangChain</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=BBPQYtR7oUk" target="_blank" rel="noopener">Context engineering explained: What every AI developer should know</a> &mdash; <cite>Google Cloud Tech</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=o0gkdZBtwEg" target="_blank" rel="noopener">How KV Cache Speeds Up LLMs for Faster AI Models on GPUs</a> &mdash; <cite>IBM Technology</cite></li>
+        <li><a href="https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/" target="_blank" rel="noopener">NASA’s twin ESCAPADE spacecraft perform powered Earth flybys to sling toward Mars</a> &mdash; <cite>NASA Science</cite></li>
+        <li><a href="https://news.northwestern.edu/stories/2026/11/hidden-planet-emerges-from-the-glare?fj=1" target="_blank" rel="noopener">Physics-based FLIP algorithm removes JWST glare to reveal hidden exoplanet 51 Eridani b</a> &mdash; <cite>Northwestern Now</cite></li>
+        <li><a href="https://www.sciencedaily.com/releases/2026/11/261104012252.htm" target="_blank" rel="noopener">Vera C. Rubin Observatory preview data discovers two hidden Milky Way companions</a> &mdash; <cite>ScienceDaily</cite></li>
+        <li><a href="https://eso.org/public/news/eso2613/" target="_blank" rel="noopener">ESO’s VLT discovers rare double debris disc around white dwarf J1328−1450</a> &mdash; <cite>ESO</cite></li>
+        <li><a href="https://www.thebrighterside.news/post/earths-gravitational-pull-could-explain-the-moons-long-volcanic-history/" target="_blank" rel="noopener">Simulations show Earth’s ancient tidal pull powered prolonged lunar volcanism</a> &mdash; <cite>The Brighter Side of News</cite></li>
+        <li><a href="https://www.nature.com/articles/s41586-026-11233-9" target="_blank" rel="noopener">In Vivo CRISPR Base Editing of ANGPTL3 for Durable Lipid Lowering</a> &mdash; <cite>Nature</cite></li>
+        <li><a href="https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/link-between-consciousness-and-the-wetware-of-metabolism/14309FBC350E05CB032FA851154941DE" target="_blank" rel="noopener">A link between consciousness and the wetware of metabolism</a> &mdash; <cite>Behavioral and Brain Sciences</cite></li>
+        <li><a href="https://arstechnica.com/science/2026/11/the-migration-that-transformed-africas-languages-genes-and-cultures/" target="_blank" rel="noopener">The Bantu expansion changed Africa. Scientists are still tracing how.</a> &mdash; <cite>Ars Technica</cite></li>
+        <li><a href="https://arstechnica.com/science/2026/11/earths-churning-mantle-may-have-created-the-great-unconformity/" target="_blank" rel="noopener">Earth&#39;s churning mantle may have created the Great Unconformity</a> &mdash; <cite>Ars Technica</cite></li>
+        <li><a href="https://www.nature.com/articles/s41586-026-11209-9" target="_blank" rel="noopener">Ecological and social cues orchestrate concerted courtship in Drosophila</a> &mdash; <cite>Nature</cite></li>
+        <li><a href="https://www.quantamagazine.org/how-does-life-unfold-a-landscape-metaphor-comes-into-its-own-20261009/" target="_blank" rel="noopener">How Does Life Unfold? A Landscape Metaphor Comes Into Its Own.</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=9eTMlHxSXD0" target="_blank" rel="noopener">The Universe Will Not Get Destroyed by False Vacuum After All</a> &mdash; <cite>Anton Petrov</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=fu5xB5ls2sU" target="_blank" rel="noopener">Something Isn’t Adding Up in Particle Physics</a> &mdash; <cite>Sabine Hossenfelder</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=gb7pZyks_HE" target="_blank" rel="noopener">Energy at the origin of life - Nick Lane full talk</a> &mdash; <cite>New Scientist</cite></li>
+        <li><a href="https://www.pbs.org/newshour/politics/democrats-take-control-of-the-senate-after-winning-key-midterm-races" target="_blank" rel="noopener">Democrats win Senate and make House gains in 2026 midterm elections</a> &mdash; <cite>PBS News</cite></li>
+        <li><a href="https://www.theguardian.com/world/2026/nov/07/blackout-water-shortage-kyiv-russia-strike-ukraine-energy-grid" target="_blank" rel="noopener">Russian strikes hit Kyiv power and water systems ahead of peace talks</a> &mdash; <cite>The Guardian</cite></li>
+        <li><a href="https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump" target="_blank" rel="noopener">Stephen Miller appointed White House chief of staff after midterm defeat</a> &mdash; <cite>The Guardian</cite></li>
+        <li><a href="https://www.themoscowtimes.com/2026/11/07/russian-diplomats-and-military-officials-to-join-talks-with-us-and-ukraine-kremlin-says-a94199" target="_blank" rel="noopener">Russian diplomats and military officials to join trilateral peace talks in Abu Dhabi</a> &mdash; <cite>The Moscow Times</cite></li>
+        <li><a href="https://www.taipeitimes.com/News/front/archives/2026/11/08/2003867352" target="_blank" rel="noopener">Beijing confirms communication underway for Xi-Trump-Putin meeting at APEC</a> &mdash; <cite>Taipei Times</cite></li>
+        <li><a href="https://mlq.ai/news/us-extends-pause-on-its-50-affiliates-export-rule-to-jan-10-2027-keeping-china-truce-intact/" target="_blank" rel="noopener">U.S. extends pause on 50% export control Affiliates Rule to January 2027</a> &mdash; <cite>MLQ News</cite></li>
+        <li><a href="https://www.rigzone.com/news/wire/survey_shows_opec_output_neared_prewar_levels-07-nov-2026-185030-article/" target="_blank" rel="noopener">OPEC crude output climbs toward pre-war levels as Saudi flows recover</a> &mdash; <cite>Rigzone / Bloomberg</cite></li>
+        <li><a href="https://www.iranintl.com/en/202611076051" target="_blank" rel="noopener">Iran lifts 2,000-kilometer ballistic missile range restrictions</a> &mdash; <cite>Iran International</cite></li>
+        <li><a href="https://indianexpress.com/article/india/il-76-heavy-lift-aircraft-lands-nyoma-airbase-10954937/" target="_blank" rel="noopener">IAF IL-76 Heavy-Lift Aircraft Makes Historic Landing at Nyoma Airbase at 13,629 Feet</a> &mdash; <cite>Indian Express</cite></li>
+        <li><a href="https://www.thehindu.com/news/national/india-eu-conclude-multi-billion-euro-global-innovation-programme/article71677171.ece" target="_blank" rel="noopener">India and EU Conclude Negotiations for Association with €93.5 Billion Horizon Europe Innovation Programme</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Nov/07/india-us-joint-military-exercise-tiger-triumph-2026-concludes-in-visakhapatnam" target="_blank" rel="noopener">India-US Tri-Service HADR Exercise Tiger Triumph 2026 Concludes in Visakhapatnam</a> &mdash; <cite>The New Indian Express</cite></li>
+        <li><a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Nov/07/ap-seeks-immediate-central-aid-as-cyclone-murasu-causes-rs-1919-crore-damage" target="_blank" rel="noopener">Andhra Pradesh Seeks Immediate Central Relief After Cyclone Murasu Causes ₹1,919 Crore Loss</a> &mdash; <cite>The New Indian Express</cite></li>
+        <li><a href="https://www.thehindu.com/news/national/telangana/radial-road-from-shamshabad-to-kodangal-will-be-completed-by-dec-2027-says-cm/article71678984.ece" target="_blank" rel="noopener">Telangana Targets December 2027 Completion for 70-Minute Shamshabad–Kodangal Radial Road</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://indianexpress.com/article/india/indian-railways-war-room-ai-cctv-diwali-chhath-puja-rush-10954841/" target="_blank" rel="noopener">Indian Railways Deploys AI Video Analytics and 24x7 Central War Room for Festival Rush</a> &mdash; <cite>Indian Express</cite></li>
+        <li><a href="https://www.livemint.com/economy/no-fresh-curbs-on-broken-rice-exports-as-india-banks-on-paddy-procurement-11793964472557.html" target="_blank" rel="noopener">India Rules Out Fresh Curbs on Broken Rice Exports on Ample Reserves and Steady Procurement</a> &mdash; <cite>Mint</cite></li>
+        <li><a href="https://www.business-standard.com/economy/news/e-way-bill-generation-hits-fresh-record-of-156-21-million-in-october-126110601920_1.html" target="_blank" rel="noopener">GST E-Way Bill Generation Hits All-Time High of 156.2 Million in October on Festive Demand</a> &mdash; <cite>Business Standard</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=E6gxJaSFpJo" target="_blank" rel="noopener">Blame game begins after Republican Party losses in US midterms | DW News</a> &mdash; <cite>DW News</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=k58Ha6lOXwI" target="_blank" rel="noopener">Why does Zelenskyy feel ‘betrayed’ by the US? | The Bottom Line</a> &mdash; <cite>Al Jazeera English</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=adRkW5vWfw8" target="_blank" rel="noopener">Will players in the Gulf establish a new security framework? | Inside Story</a> &mdash; <cite>Al Jazeera English</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=uaRn-Ed65fg" target="_blank" rel="noopener">US Midterm elections &amp; what it means for Trump as Democrats win control of House &amp; Senate</a> &mdash; <cite>ThePrint</cite></li>
+        <li><a href="https://en.tennistemple.com/actu/alcaraz-cruises-past-ruud-to-reach-his-first-rolex/vxRW" target="_blank" rel="noopener">Alcaraz cruises past Ruud to reach his first Rolex Paris Masters final</a> &mdash; <cite>TennisTemple</cite></li>
+        <li><a href="https://www.wtatennis.com/news/4599683/wta-finals-indian-wells-2026-everything-you-need-to-know-schedule-groups-prize-money" target="_blank" rel="noopener">WTA Finals 2026: Groups and schedule set in Indian Wells with Sabalenka leading Group 2</a> &mdash; <cite>Women&#39;s Tennis Association</cite></li>
+        <li><a href="https://bwfworldtour.bwfbadminton.com/news-single/2026/11/07/korea-open-lais-ante-is-up" target="_blank" rel="noopener">Korea Open: Victor Lai reaches maiden Super 500 final in Yeosu</a> &mdash; <cite>BWF World Tour</cite></li>
+        <li><a href="https://www.hindustantimes.com/sports/badminton/pv-sindhu-qualifies-for-bwf-world-tour-finals-2026-set-for-first-appearance-in-five-years-101793778237905.html" target="_blank" rel="noopener">PV Sindhu qualifies for BWF World Tour Finals 2026 in Hangzhou</a> &mdash; <cite>Hindustan Times</cite></li>
+        <li><a href="https://bwfworldtour.bwfbadminton.com/news-single/2026/11/06/korea-open-american-pursuit-gathers-momentum" target="_blank" rel="noopener">Korea Open: Lauren Lam and Allison Quynh Lee reach Super 500 semifinals</a> &mdash; <cite>BWF World Tour</cite></li>
+        <li><a href="https://www.formula1.com/en/latest/article/hamilton-leclerc-and-verstappen-set-for-sao-paulo-grand-prix-penalties-after-power-unit-changes.7B5CuFFCN1F6Txc8YwcEhd" target="_blank" rel="noopener">Max Verstappen and Lewis Hamilton relegated to back of grid for São Paulo Grand Prix after engine changes</a> &mdash; <cite>Formula 1</cite></li>
+        <li><a href="https://www.icc-cricket.com/news/india-s-veteran-fast-bowler-brings-test-career-to-a-close" target="_blank" rel="noopener">Mohammed Shami announces retirement from Test cricket after 64 appearances for India</a> &mdash; <cite>International Cricket Council</cite></li>
+        <li><a href="https://www.formula1.com/en/latest/article/norris-beats-russell-to-pole-position-in-dramatic-rain-affected-sao-paolo-qualifying.2V60rhlQjdS5my1uFrOKUH" target="_blank" rel="noopener">Lando Norris claims third straight Interlagos pole position in rain-disrupted São Paulo qualifying</a> &mdash; <cite>Formula 1</cite></li>
+        <li><a href="https://www.outlookindia.com/sports/cricket/india-vs-new-zealand-2nd-odi-gurnoor-brar-shreyas-iyer-rain-dls-in-pics" target="_blank" rel="noopener">India edge New Zealand by four runs via DLS in rain-hit Wellington ODI to take 2-0 series lead</a> &mdash; <cite>Outlook India</cite></li>
+        <li><a href="https://www.theguardian.com/football/2026/nov/07/arsenal-hull-premier-league-match-report" target="_blank" rel="noopener">Martin Ødegaard strikes to beat Hull City as Arsenal match best-ever Premier League start</a> &mdash; <cite>The Guardian</cite></li>
+        <li><a href="https://badminton-insight.com/doubles-serving-strategy/" target="_blank" rel="noopener">Doubles Serving Tactics: Controlling the First Four Shots and Net Interceptions</a> &mdash; <cite>Badminton Insight</cite></li>
+        <li><a href="https://usabadminton.org/wp-content/uploads/2026/07/NORCALORC2026_needsTSLink.pdf" target="_blank" rel="noopener">2026 YONEX Bintang NorCal Open Regional Championships Underway in Fremont</a> &mdash; <cite>USA Badminton</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=zKV-Jjio8Yk" target="_blank" rel="noopener">FP3 Highlights | 2026 Sao Paulo Grand Prix</a> &mdash; <cite>FORMULA 1</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=Vv1P7GT9hQg" target="_blank" rel="noopener">Carlos Alcaraz vs Casper Ruud Highlights | Paris 2026 Semi-Final</a> &mdash; <cite>ATP Tour</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=W3Tt3ZgmuOo" target="_blank" rel="noopener">Kim/Seo vs Man/Tee | Seizing the opportunity with smart-tactical play</a> &mdash; <cite>BWF TV</cite></li>
+        <li><a href="https://www.123telugu.com/reviews/ranbir-kapoor-ramayana-telugu-movie-review-and-rating.html" target="_blank" rel="noopener">Ramayana Telugu Movie Review: Nitesh Tiwari’s mythological epic opens with grand scale</a> &mdash; <cite>123telugu</cite></li>
+        <li><a href="https://www.deccanchronicle.com/entertainment/tollywood/telugu-star-power-is-waning-says-noted-producer-2001894" target="_blank" rel="noopener">Tollywood producers urge revenue-sharing models as rising hero fees squeeze margins</a> &mdash; <cite>Deccan Chronicle</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/news/2026/Nov/04/tabu-to-play-mahanthi-jhansi-rani-in-nagarjunas-king100" target="_blank" rel="noopener">Tabu reunites with Nagarjuna after 28 years as Mahanthi Jhansi Rani in King100</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://www.thehindu.com/entertainment/movies/summer-holidays-movie-review-srikar-nayans-telugu-film-is-a-simplistic-yet-heartfelt-ode-to-rural-nostalgia/article71672853.ece" target="_blank" rel="noopener">Summer Holidays review: Srikar Nayan’s rural coming-of-age drama embraces childhood nostalgia</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.123telugu.com/mnews/sharwanands-bhogi-heading-towards-a-postponement-prp.html" target="_blank" rel="noopener">Sharwanand’s rural action drama Bhogi faces release delay after trailer postponement</a> &mdash; <cite>123telugu</cite></li>
+        <li><a href="https://www.deccanchronicle.com/entertainment/tollywood/suriyas-scene-opens-to-a-low-response-in-telugu-2002465" target="_blank" rel="noopener">Suriya’s crime-comedy Scene records modest Rs 3 crore gross opening in Telugu states</a> &mdash; <cite>Deccan Chronicle</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/news/2026/Nov/06/january-12-vidudala-venkatesh-and-kalyan-ram-shoot-action-scene-in-kazakhstan" target="_blank" rel="noopener">Venkatesh and Kalyan Ram film high-octane action scenes in Kazakhstan for January 12 Vidudala</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://www.thehansindia.com/cinema/naga-chaitanya-seen-in-stylish-avatar-in-swag-of-arjun-from-vrushakarma-1140240" target="_blank" rel="noopener">Naga Chaitanya brings energetic moves in Swag Of Arjun single from Vrushakarma</a> &mdash; <cite>The Hans India</cite></li>
+        <li><a href="https://telugucinema.com/news/swag-of-arjun-first-single-from-naga-chaitanyas-vrushakarma-released" target="_blank" rel="noopener">Naga Chaitanya’s Vrushakarma Unveils First Single Swag Of Arjun Composed by B. Ajaneesh Loknath</a> &mdash; <cite>Telugu Cinema</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/news/2026/Nov/07/bellamkonda-sai-sreenivas-tyson-naidu-kicks-off-promotions-with-mass-song" target="_blank" rel="noopener">Bellamkonda Sai Sreenivas Kicks Off Tyson Naidu Musical Promotions with Madarasi Rabbaru Bomma</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://www.123telugu.com/mnews/mahakali-first-song-aigiri-nandini-brings-divine-energy-in-all-its-glory-prp.html" target="_blank" rel="noopener">Mahakali Launches Musical Campaign with Devotional Track Aigiri Nandini by Smaran Sai</a> &mdash; <cite>123telugu</cite></li>
+        <li><a href="https://tracklistindia.com/articles/97-film-music-rowdee-raakasi-ego-raja-ghibran-aadi-saikumar" target="_blank" rel="noopener">Ghibran Vaibodha’s Peppy First Single Rowdee Raakasi from Ego Raja Arrives on Saregama Telugu</a> &mdash; <cite>Tracklist India</cite></li>
+        <li><a href="https://www.greatandhra.com/movies/movie-news/chiranjeevi-to-launch-a-song-from-kaaka-in-the-usa/" target="_blank" rel="noopener">S. Thaman Hints at US Song Launch for Megastar Chiranjeevi’s Kaaka Ahead of Sankranthi</a> &mdash; <cite>GreatAndhra</cite></li>
+        <li><a href="https://www.loudersound.com/music/albums/steven-wilson-requiem-for-a-village" target="_blank" rel="noopener">Steven Wilson Embraces Imperfect Gothic Folk Textures on Ninth Solo Album Requiem For A Village</a> &mdash; <cite>Louder</cite></li>
+        <li><a href="https://timesofindia.indiatimes.com/entertainment/telugu/movies/news/balakrishnas-dada-makers-reconfirm-december-24-release-amid-postponement-rumours-first-single-coming-soon/articleshow/135545128.cms" target="_blank" rel="noopener">Makers of Balakrishna’s Dada Reconfirm December 24 Release and Prep Thaman-Scored First Single</a> &mdash; <cite>The Times of India</cite></li>
+        <li><a href="https://tracklistindia.com/articles/67-news-cosmic-samson-ulagame-nokku-five-languages-sibi-mathew-alex" target="_blank" rel="noopener">Cosmic Samson Rolls Out Sibi Mathew Alex Fantasy Track Lokama Chudu in Five Languages</a> &mdash; <cite>Tracklist India</cite></li>
+        <li><a href="https://www.indulgexpress.com/entertainment/ott/2026/Nov/05/ott-releases-this-week-november-6-to-november-12" target="_blank" rel="noopener">Pushpaka Vimanam arrives on JioHotstar on November 12</a> &mdash; <cite>IndulgExpress</cite></li>
+        <li><a href="https://www.timesnownews.com/entertainment-news/south/mammootty-vs-son-dulquer-salmaan-dhanushs-om-aakasamlo-oka-tara-to-clash-on-november-20-article-156266245" target="_blank" rel="noopener">Aakasamlo Oka Tara sets November 20 worldwide theatrical date</a> &mdash; <cite>TimesNow</cite></li>
+        <li><a href="https://www.123telugu.com/mnews/donga-naa-koduku-release-date-announced-for-moulis-new-film-prp.html" target="_blank" rel="noopener">Mouli’s Donga Naa Koduku sets November 13 theatrical release</a> &mdash; <cite>123telugu</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/news/2026/Oct/28/rakesh-varres-maya-lady-locks-november-release-date" target="_blank" rel="noopener">Rakesh Varre’s Maya Lady locks November 13 cinema release</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/news/2026/Oct/31/dear-astronaut-locks-release-date" target="_blank" rel="noopener">Dear Astronaut sets November 20 release after song launch</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://telugucinema.com/news/haindava-teaser-promises-a-gripping-clash-between-faith-and-reason" target="_blank" rel="noopener">Bellamkonda Sai Sreenivas’ Haindava sets November 27 opening</a> &mdash; <cite>Telugu Cinema</cite></li>
+        <li><a href="https://www.bluenotejazz.com/la/tm-event/sid-sriram/" target="_blank" rel="noopener">Sid Sriram headlines two sets at Blue Note Los Angeles on November 13</a> &mdash; <cite>Blue Note Los Angeles</cite></li>
+        <li><a href="https://www.eventbrite.com/e/ragamenco-tickets-2002988044159" target="_blank" rel="noopener">RagaMenco fuses North Indian classical ragas and flamenco in San Francisco on November 21</a> &mdash; <cite>Eventbrite / Red Poppy Art House</cite></li>
+        <li><a href="https://www.paramountoakland.org/events/detail/rishab-rikhiram-sharma" target="_blank" rel="noopener">Rishab Rikhiram Sharma brings Sitar for Mental Health tour to Oakland on November 23</a> &mdash; <cite>Paramount Theatre</cite></li>
+        <li><a href="https://about.netflix.com/en/news/main-trailer-of-the-blue-road-sees-son-suk-ku-and-eita-nagayama-team-up-on-a-gruesome-cross-border-murder-investigation" target="_blank" rel="noopener">Netflix unveils main trailer for cross-border crime thriller “The Blue Road”</a> &mdash; <cite>About Netflix</cite></li>
+        <li><a href="https://www.apple.com/tv-pr/news/2026/11/andrew-yancy-is-back-in-new-trailer-for-bad-monkey-season-two/" target="_blank" rel="noopener">Andrew Yancy returns in new trailer for “Bad Monkey” season two</a> &mdash; <cite>Apple TV Press</cite></li>
+        <li><a href="https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-heartwarming-new-comedy-drama-lenni-starring-academy-award-nominee-toni-collette/" target="_blank" rel="noopener">Apple TV announces comedy-drama series “Lenni” starring Toni Collette</a> &mdash; <cite>Apple TV Press</cite></li>
+        <li><a href="https://about.netflix.com/en/news/for-how-much-would-you-become-a-flower-a-netflix-series-fool-night-main-trailer-key-art-debut" target="_blank" rel="noopener">Dystopian anime series “Fool Night” reveals main trailer ahead of November 26 premiere</a> &mdash; <cite>About Netflix</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=RkH_FE0w--0" target="_blank" rel="noopener">Itllu Arjuna Official Trailer | Aniesh | Anaswara Rajan | Thaman S | Mahesh Uppala | Venky Kudumula</a> &mdash; <cite>T-Series Telugu</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=fSHoePrnmMw" target="_blank" rel="noopener">Over Each Other (Official Music Video) - Linkin Park</a> &mdash; <cite>Linkin Park</cite></li>
+        <li><a href="https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/" target="_blank" rel="noopener">New Research Tests Whether AI Models Know Their Own Thoughts</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://www.quantamagazine.org/a-strange-quantum-theorem-has-killed-einsteins-reality-20261106/" target="_blank" rel="noopener">A Strange Quantum Theorem Has Killed Einstein’s Reality</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://aeon.co/essays/why-astrophysics-needs-to-abandon-the-big-questions" target="_blank" rel="noopener">Why astrophysics needs to abandon the ‘Big Questions’</a> &mdash; <cite>Aeon</cite></li>
+        <li><a href="https://podcasts.apple.com/us/podcast/tokenization-agentic-trading-harmonic-robinhoods-mission/id1668002688?i=1000800029787" target="_blank" rel="noopener">Tokenization, Agentic Trading, Harmonic: Robinhood&#39;s Mission to Expand Ownership with CEO Vlad Tenev</a> &mdash; <cite>No Priors</cite></li>
+        <li><a href="https://podcasts.apple.com/us/podcast/the-u-s-and-india-beyond-the-headlines/id1453878698?i=1000799727807" target="_blank" rel="noopener">The U.S. and India—Beyond the Headlines</a> &mdash; <cite>Grand Tamasha</cite></li>
+        <li><a href="https://www.penguin.co.uk/books/482167/six-maths-essentials-by-tao-terence/9780241829486" target="_blank" rel="noopener">Six Maths Essentials</a> &mdash; <cite>Penguin Books UK</cite></li>
+        <li><a href="https://sanjosespotlight.com/delayed-gas-water-heater-ban-divides-south-bay/" target="_blank" rel="noopener">Air regulators delay Bay Area gas water heater phaseout to 2028 with low-income exemptions</a> &mdash; <cite>San José Spotlight</cite></li>
+        <li><a href="https://sanjosespotlight.com/district-7-councilmember-bien-doan-pulls-ahead/" target="_blank" rel="noopener">Bien Doan secures second term in San Jose District 7, breaking 16-year incumbent curse</a> &mdash; <cite>San José Spotlight</cite></li>
+        <li><a href="https://www.svvoice.com/a-year-without-the-books-convention-center-financials-still-missing/" target="_blank" rel="noopener">Santa Clara withholds payments as Convention Center operator misses financial reports for over a year</a> &mdash; <cite>The Silicon Valley Voice</cite></li>
+        <li><a href="https://www.paloaltoonline.com/housing/2026/11/06/stanford-looks-to-build-8-story-housing-complex-at-research-park/" target="_blank" rel="noopener">Stanford proposes 194-unit residential building at Stanford Research Park under Palo Alto housing rules</a> &mdash; <cite>Palo Alto Online</cite></li>
+        <li><a href="https://www.mv-voice.com/environment/2026/11/06/after-mass-tree-die-off-mountain-view-presents-replanting-plan/" target="_blank" rel="noopener">Mountain View outlines replanting blueprint after herbicide poisons downtown and Pioneer Park trees</a> &mdash; <cite>Mountain View Voice</cite></li>
+        <li><a href="https://www.kqed.org/news/12107133/death-spiral-averted-bay-area-transit-taxes-rtm-and-prop-h-declare-victory" target="_blank" rel="noopener">Bay Area Voters Approve Transit Tax Measures RTM and Prop H, Averting Fiscal Cliff</a> &mdash; <cite>KQED</cite></li>
+        <li><a href="https://www.kqed.org/news/12108703/google-meta-and-tiktok-sue-to-block-california-law-curbing-addictive-social-media-for-kids" target="_blank" rel="noopener">Google, Meta, and TikTok Sue to Block California Youth Social Media Law AB 1709</a> &mdash; <cite>KQED</cite></li>
+        <li><a href="https://www.sfgate.com/news/bayarea/article/san-jose-spotlight-delayed-gas-water-heater-ban-22515300.php" target="_blank" rel="noopener">Bay Area Air Regulators Delay Gas Water Heater Ban to 2028 Amid South Bay Cost Concerns</a> &mdash; <cite>SFGATE</cite></li>
+        <li><a href="https://calmatters.org/justice/2026/11/gavin-newsom-death-penalty-commutation/" target="_blank" rel="noopener">Governor Newsom Commutes Sentences of All 548 California Death Row Prisoners</a> &mdash; <cite>CalMatters</cite></li>
+        <li><a href="https://www.sfgate.com/weather/article/atmospheric-rivers-california-forecast-22514444.php" target="_blank" rel="noopener">Atmospheric River Activity Enters California Mid-November Weather Forecast</a> &mdash; <cite>SFGATE</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=_8srvuZiJHw" target="_blank" rel="noopener">California Election Results: What Made the Blue Wave Possible?  | Political Breakdown</a> &mdash; <cite>KQED News</cite></li>
+        <li><a href="https://www.openspace.org/events/guided-activities/sentinel-sky-20" target="_blank" rel="noopener">Docent-Led Cold War History Walk Explores Mount Umunhum Summit</a> &mdash; <cite>Midpeninsula Regional Open Space District</cite></li>
+        <li><a href="https://usabadminton.org/2026-bay-badminton-championships-prospectus-released/" target="_blank" rel="noopener">Prospectus Released for 2026 Bay Badminton Championships in Milpitas</a> &mdash; <cite>USA Badminton</cite></li>
+        <li><a href="https://dothebay.com/events/2026/11/13/san-jose-holiday-lights-2026-tickets" target="_blank" rel="noopener">San Jose Holiday Lights Opens Second Annual Season at Discovery Meadow</a> &mdash; <cite>DoTheBay</cite></li>
+        <li><a href="https://www.voldeluxe.com/journal/usa-to-india-nonstop-flights-winter-2026" target="_blank" rel="noopener">USA to India Nonstop Flights and Winter Technical Stops Analysis</a> &mdash; <cite>Voldeluxe</cite></li>
+        <li><a href="https://ticotimes.net/2026/11/06/first-direct-flight-poland-guanacaste" target="_blank" rel="noopener">Costa Rica Welcomes First Direct Flight From Poland at Guanacaste Airport</a> &mdash; <cite>The Tico Times</cite></li>
+        <li><a href="https://ticotimes.net/2026/11/05/costa-rica-most-desirable-country-wanderlust-2026" target="_blank" rel="noopener">Costa Rica Takes Top Spot in Global Reader Travel Awards Ahead of Dry Season</a> &mdash; <cite>The Tico Times</cite></li>
+        <li><a href="https://the-gadgeteer.com/2026/11/07/2-garmin-smartwatches-with-deep-discounts-at-amazon-in-november-2026/" target="_blank" rel="noopener">Garmin Fenix E and Venu 3S drop up to 50% in early Black Friday Amazon sale</a> &mdash; <cite>The Gadgeteer</cite></li>
+        <li><a href="https://9to5toys.com/2026/11/06/early-black-friday-deals-of-the-day-samsung-odyssey-msi-gaming-pc-more/" target="_blank" rel="noopener">Samsung 27-inch QHD 180Hz Odyssey G50F gaming monitor drops to $170</a> &mdash; <cite>9to5Toys</cite></li>
+        <li><a href="https://9to5toys.com/2026/11/04/beats-usb-c-braided-cable-deals/" target="_blank" rel="noopener">Beats 10-foot 240W USB-C Braided Cable hits $18 all-time low on Amazon</a> &mdash; <cite>9to5Toys</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=3ThD2idf0n0" target="_blank" rel="noopener">Skillet&#39;z Cafe, Peony Seafood, Le Papillon | Check, Please! Bay Area</a> &mdash; <cite>KQED Food</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=xXnW4pD0OrA" target="_blank" rel="noopener">Highlights of Paris: Eiffel and Monet to Crème Brûlée</a> &mdash; <cite>Rick Steves&#39; Europe</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=M8kR2A_3n0A" target="_blank" rel="noopener">Garmin Fenix 8 In-Depth Review: 23 Things You Should Know!</a> &mdash; <cite>DC Rainmaker</cite></li>
+      </ol>
+    </details>
+    <p>Want a topic added, dropped or weighted differently? Tell your agent in any session or add a line to the local feedback file; the next morning's run applies it.</p>
+    <p>Compiled on 2026-11-07 13:38 PST by research intelligence agents from verified sources. Private and calibrated to your context.</p>
+  </div>
+</div>
+<script>
+// Techmeme-inspired dynamic functionality for The Morning Brief
+(function() {
+  // Quick jump & date features
+  window.addEventListener('DOMContentLoaded', function() {
+    var searchForm = document.getElementById('briefSearchForm');
+    if (searchForm) {
+      searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var q = (document.getElementById('briefSearchInput') || {}).value;
+        if (q) {
+          window.find ? window.find(q) : alert('Searching for: ' + q);
+        }
+      });
+    }
+  });
+})();
+
+</script>
+</body>
+</html>
