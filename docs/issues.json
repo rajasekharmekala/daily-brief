@@ -1249,7 +1249,16 @@
     "theme": "Company results, agent safeguards and task-shift evaluations lead today’s edition, alongside consequential election decisions, international conflict and fresh Bay Area civic news.",
     "items": 136,
     "minutes": 68,
-    "generated_at": "2026-11-03 13:42 PST",
+    "generated_at": "2026-11-07 12:55 PST",
+    "book": {
+      "has_book": true,
+      "book_words": 15925,
+      "book_minutes": 103,
+      "book_desks": 9,
+      "book_stories": 46,
+      "has_pdf": true,
+      "has_epub": true
+    },
     "top": [
       {
         "title": "Apple posts $114.5 billion September-quarter revenue",
