@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-10",
+  "issue_no": 17,
+  "theme": "With the 10-year Treasury yield anchored at 4.88% and Wall Street consolidating inside a technical Correction, the market is enforcing a ruthless filter across equities, AI engineering, and public infrastructure: narrative hype gets discounted, while cash-generative monopolies, deterministic agent harnesses, and physical power tollbooths capture lasting value.",
+  "items": 38,
+  "minutes": 114,
+  "generated_at": "2026-11-10 14:18 PST",
+  "book": {
+    "has_book": true,
+    "book_words": 17608,
+    "book_minutes": 114,
+    "book_desks": 10,
+    "book_stories": 38,
+    "has_pdf": true,
+    "has_epub": true
+  },
+  "top": [
+    {
+      "title": "Wall Street Consolidates Inside a Correction as the 4.88% Yield Anchor Holds",
+      "source": "US Department of the Treasury, Bloomberg & MarketWatch",
+      "url": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics"
+    },
+    {
+      "title": "Geopolitical Calibrations and High-Altitude Deterrence from Shenzhen to Eastern Ladakh",
+      "source": "Bureau of Industry and Security & The Hindu",
+      "url": "https://www.bis.doc.gov/"
+    },
+    {
+      "title": "Enterprise Software Shifts from Conversational Toys to Deterministic Coworkers",
+      "source": "Salesforce Newsroom, Adobe IR & Mistral AI",
+      "url": "https://www.salesforce.com/news/"
+    },
+    {
+      "title": "Balance-Sheet Gravity and Corporate Debt Squeezes Separate Cash Fortresses from Speculative Spenders",
+      "source": "S&P Global Ratings, Financial Times & SEC Filings",
+      "url": "https://www.spglobal.com/ratings/"
+    }
+  ],
+  "sections": [
+    {
+      "id": "desk-1",
+      "title": "The 4.88% Discount Rate and the Law of Physical Limits: Four Front-Page Signals Shaping the Cycle",
+      "minutes": 11
+    },
+    {
+      "id": "desk-2",
+      "title": "Trading Under a Correction Ceiling: Auditing Our US Portfolio Beta, LEAPS Derivatives, and Stage 2 Shortlist",
+      "minutes": 11
+    },
+    {
+      "id": "desk-3",
+      "title": "Nifty Consolidates at 25,045 in an Uptrend: F&O Positioning, Capital Goods Power, and Our 19 Indian Holdings",
+      "minutes": 11
+    },
+    {
+      "id": "desk-4",
+      "title": "Subpoenaing the Narrative: Three Comforting Market & AI Myths Tested Against Hard Receipts",
+      "minutes": 11
+    },
+    {
+      "id": "desk-5",
+      "title": "From Prompt Tricks to Deterministic Systems: Open Weights, MCP Coworkers, and Fault-Tolerant Agent Runtimes",
+      "minutes": 11
+    },
+    {
+      "id": "desk-6",
+      "title": "The Watt Bottleneck: How Electrical Substations, Interconnection Queues, and Thermal Physics Govern the Future of AI",
+      "minutes": 11
+    },
+    {
+      "id": "desk-7",
+      "title": "Grid Interconnections, Transit Ballots, Customs Courts, and High-Altitude Runways: The Machinery of Policy",
+      "minutes": 11
+    },
+    {
+      "id": "desk-8",
+      "title": "Foundations in Amaravati, River Engineering at Polavaram, Hyderabad GCCs, and the Pacific Bridge",
+      "minutes": 11
+    },
+    {
+      "id": "desk-9",
+      "title": "Seed-Oil-Free Andhra Spice, Steaming Tonkotsu Broths, Diablo Ridges, and Downtown Arena Lights",
+      "minutes": 11
+    },
+    {
+      "id": "desk-10",
+      "title": "Brain-Sensing CAR-T Vectors, Gut Mucus Defense, a 15-Minute Gongura Paneer Plate, and Tollywood's Cinematic Horizon",
+      "minutes": 11
+    }
+  ]
+}
