@@ -1484,5 +1484,96 @@
         "minutes": 4
       }
     ]
+  },
+  {
+    "date": "2026-11-09",
+    "issue_no": 16,
+    "theme": "After last week's midterm shock and a 4.86% yield jolt, Monday's +2.35% Wall Street snap-back and Dalal Street's 25,045 defense prove one rule across markets, AI runtimes, and power grids: leverage and hype get repriced first, while physical bottlenecks, cash-generating tollbooths, and disciplined harnesses capture the cycle.",
+    "items": 38,
+    "minutes": 105,
+    "generated_at": "2026-11-09 20:53 PST",
+    "book": {
+      "has_book": true,
+      "book_words": 16295,
+      "book_minutes": 105,
+      "book_desks": 10,
+      "book_stories": 38,
+      "has_pdf": true,
+      "has_epub": true
+    },
+    "top": [
+      {
+        "title": "The Midterm and Jobs Whiplash Meets Monday's +2.35% Snap-Back Inside a Technical Correction",
+        "source": "Yahoo Finance, PBS News & US Treasury",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+      },
+      {
+        "title": "The Semiconductor Truce and Energy Chokepoints: Commerce's 50% Rule Pause Meets Kyiv Grid Strikes",
+        "source": "MLQ News, The Guardian & The Moscow Times",
+        "url": "https://mlq.ai/news/us-extends-pause-on-its-50-affiliates-export-rule-to-jan-10-2027-keeping-china-truce-intact/"
+      },
+      {
+        "title": "Enterprise AI Crosses From Chatbots to Deterministic Coworkers Across Salesforce, Adobe, and Mistral",
+        "source": "Salesforce Newsroom, Adobe Newsroom & Mistral AI",
+        "url": "https://www.salesforce.com/ap/news/press-releases/2026/11/05/ph-salesforces-agentforce-coworker-usage-soars-21x-in-three-months-as-enterprises-delegate-real-work-to-ai/?bc=OTH"
+      },
+      {
+        "title": "Record Corporate Bond Issuance and Balance-Sheet Gravity Separate Cash Fortresses From Debt Builders",
+        "source": "Bloomberg, Fidelity & Yahoo Finance",
+        "url": "https://www.bloomberg.com/graphics/2026-ai-bubble-financial-markets/"
+      }
+    ],
+    "sections": [
+      {
+        "id": "desk-1",
+        "title": "The Price of Money and the Weight of Physics: Four Front-Page Signals That Define the Week",
+        "minutes": 10
+      },
+      {
+        "id": "desk-2",
+        "title": "A 2.35% Relief Rally Inside a Correction Regime: Auditing Our US Holdings, LEAPS Book, and Stage 2 Shortlist",
+        "minutes": 10
+      },
+      {
+        "id": "desk-3",
+        "title": "Nifty Defends 25,045 in a Narrow-Breadth Uptrend: FII Flows, NSE Derivatives, and Our 19 Indian Holdings",
+        "minutes": 10
+      },
+      {
+        "id": "desk-4",
+        "title": "Subpoenaing the Consensus: Three Comforting Market & AI Narratives Tested Against Primary Filings",
+        "minutes": 10
+      },
+      {
+        "id": "desk-5",
+        "title": "The Harness Is the Product: How the Software Around the Model Won 2026",
+        "minutes": 10
+      },
+      {
+        "id": "desk-6",
+        "title": "The Watt Bottleneck: How Electricity Became the Real Limit on Artificial Intelligence",
+        "minutes": 10
+      },
+      {
+        "id": "desk-7",
+        "title": "Grid Pipes, Transit Tills, Trade Courts, and High-Altitude Runways: The Quiet Machinery of Governance",
+        "minutes": 10
+      },
+      {
+        "id": "desk-8",
+        "title": "Concrete in Amaravati, Pipelines in Hyderabad, and the Bridge Across the Pacific",
+        "minutes": 10
+      },
+      {
+        "id": "desk-9",
+        "title": "Ghee-Roasted Andhra Spice, Tonkotsu Broths, Redwood Cathedrals, and Downtown San Jose Nights",
+        "minutes": 10
+      },
+      {
+        "id": "desk-10",
+        "title": "Brain-Sensing Immune Cells, a 15-Minute Keto Andhra Plate, and a Tollywood November",
+        "minutes": 10
+      }
+    ]
   }
 ]
