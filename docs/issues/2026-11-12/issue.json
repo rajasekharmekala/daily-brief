@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-12",
+  "issue_no": 18,
+  "theme": "A sudden leadership transition atop Nvidia tests Wall Street's $500 billion AI financing architecture just as 5% Treasury yields and a 6.09% Indian inflation print reward hard cash flows, sovereign industrial backlogs, and resilient physical infrastructure—from undersea fiber cables to coastal power corridors.",
+  "items": 36,
+  "minutes": 105,
+  "generated_at": "2026-11-12 19:26 PST",
+  "book": {
+    "has_book": true,
+    "book_words": 16345,
+    "book_minutes": 105,
+    "book_desks": 10,
+    "book_stories": 36,
+    "has_pdf": true,
+    "has_epub": true
+  },
+  "top": [
+    {
+      "title": "Jensen Huang Exits Nvidia as Wall Street Tests a $500 Billion AI Financing Web",
+      "source": "NVIDIA Newsroom / CNBC / PBS NewsHour",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+    },
+    {
+      "title": "Five-Percent Treasury Yields, Sticky Inflation, and a High-Beta Correction Test",
+      "source": "U.S. Bureau of Labor Statistics / Federal Reserve / CNBC",
+      "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+    },
+    {
+      "title": "Behind-the-Meter Fuel Cells and Liquid Cooling Defy the Grid Bottleneck",
+      "source": "NTT DATA / Bloom Energy IR / Vertiv IR",
+      "url": "https://www.nttdata.com/en-us/news/2026/ntt-data-announces-agreement-with-bloom-energy"
+    },
+    {
+      "title": "Agentic Inference Clouds and Open Ethernet Fabrics Capture the Silicon Rotation",
+      "source": "Oracle IR / DigitalOcean IR / Arista Networks IR",
+      "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx"
+    },
+    {
+      "title": "Foundry Wafers and High-Bandwidth Memory Defend Their Monopolies",
+      "source": "TSMC Press Center / SK hynix Newsroom",
+      "url": "https://pr.tsmc.com/english/news/3349"
+    },
+    {
+      "title": "Oversold Biopharma Royalties, Options Tax Harvesting, and Shortlist Patience",
+      "source": "AvePoint Newsroom / Halozyme IR / BigGo Finance",
+      "url": "https://www.avepoint.com/news/avepoint-announces-third-quarter-2026-financial-results-261105"
+    }
+  ],
+  "sections": [
+    {
+      "id": "desk-1",
+      "title": "Leadership Shock at Nvidia and Today's Global Wire",
+      "minutes": 10
+    },
+    {
+      "id": "desk-2",
+      "title": "Five-Percent Yields on Wall Street and Cash-Flow Winners Inside a Correction",
+      "minutes": 10
+    },
+    {
+      "id": "desk-3",
+      "title": "Dalal Street's Inflation Test, Defense Radars, and Sovereign Compute",
+      "minutes": 10
+    },
+    {
+      "id": "desk-4",
+      "title": "Primary Filings on the Witness Stand: Private Credit, Chip Reshoring, and Ketone Claims",
+      "minutes": 10
+    },
+    {
+      "id": "desk-5",
+      "title": "Cyber-Capable Frontier Models, Non-Blocking Agent Harnesses, and Benchmark Debt",
+      "minutes": 10
+    },
+    {
+      "id": "desk-6",
+      "title": "Glass Threads on the Abyssal Plain: Inside the Global Subsea Cable Chokepoint",
+      "minutes": 10
+    },
+    {
+      "id": "desk-7",
+      "title": "A Divided Capitol, Clemency in Sacramento, COP31 in Antalya, and Shadow Tankers",
+      "minutes": 10
+    },
+    {
+      "id": "desk-8",
+      "title": "Algorithmic Rail Rooms, Grain Buffers, Andhra Clean-Tech, and Winter Air Detours",
+      "minutes": 10
+    },
+    {
+      "id": "desk-9",
+      "title": "Bay Area Weekend Concierge: Coastal Cal-Indian Tables, Ridge Trails, and Classical Strings",
+      "minutes": 10
+    },
+    {
+      "id": "desk-10",
+      "title": "Twin White-Dwarf Rings, Nellore Prawn Roast, Championship Courts, and Friday Screens",
+      "minutes": 10
+    }
+  ]
+}
