@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-15",
+  "issue_no": 20,
+  "theme": "From Nvidia's historic founder exit and 5.1% Treasury yields to High-NA EUV optics, agent sandboxes, and an Andhra investment surge, today's edition separates durable infrastructure from leveraged hype.",
+  "items": 37,
+  "minutes": 97,
+  "generated_at": "2026-11-15 18:19 PST",
+  "book": {
+    "has_book": true,
+    "book_words": 14959,
+    "book_minutes": 97,
+    "book_desks": 10,
+    "book_stories": 37,
+    "has_pdf": true,
+    "has_epub": true
+  },
+  "top": [
+    {
+      "title": "Jensen Huang Steps Down After Thirty-Three Years, and Nvidia Faces Its First Post-Founder Test",
+      "source": "AppleInsider",
+      "url": "https://appleinsider.com/articles/26/11/12/nvidia-ceo-jensen-huang-resigns-in-disgrace"
+    },
+    {
+      "title": "US Ten-Year Treasury Yield Tops Five Percent as Value Sectors Lead a Split Week",
+      "source": "The Motley Fool / Yahoo Finance",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/13/stock-market-midday-nov-13-nasdaq-plunges-as-nvidia-turmoil-deepens-and-treasury-yields-hit-5/"
+    },
+    {
+      "title": "Nebius Group Sinks Thirteen Percent After Data Center Delays and a Forty-Five-Billion-Dollar Capex Plan",
+      "source": "24/7 Wall St. / ShiftDelete.Net",
+      "url": "https://247wallst.com/investing/2026/11/13/nebius-sinks-13-as-baird-and-bofa-slash-price-targets-over-data-center-delays-coreweave-tumbles-11-nvidia-falls-4/"
+    },
+    {
+      "title": "Qualcomm Completes Four-Billion-Dollar Senior Notes Offering While Testing Support",
+      "source": "The Globe and Mail / MSN",
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/QCOM/pressreleases/8840938/qualcomm-completes-4-billion-senior-notes-offering/"
+    },
+    {
+      "title": "Texas Instruments Issues Two Billion Dollars in Notes and Adds Agentic AI to CCStudio",
+      "source": "24/7 Wall St. / The Globe and Mail / Ad-Hoc-News",
+      "url": "https://247wallst.com/investing/2026/11/15/texas-instruments-is-up-more-than-60-this-year-and-1000-from-a-decade-ago-is-now-worth-more-than-5000/"
+    },
+    {
+      "title": "Cheniere Energy Prices Twelve-Year Notes at Five-Point-Eight Percent Ahead of a Dividend Hike",
+      "source": "Pulse 2.0 / Yahoo Finance",
+      "url": "https://pulse2.com/cheniere-energy-prices-1-2-billion-senior-notes-offering-at-5-8-interest-rate-due-in-2037/"
+    }
+  ],
+  "sections": [
+    {
+      "id": "desk-1",
+      "title": "Nvidia After Jensen Huang, and the Morning Wire",
+      "minutes": 10
+    },
+    {
+      "id": "desk-2",
+      "title": "Wall Street at Five Percent: Nebius, Debt Markets, and Portfolio Action",
+      "minutes": 10
+    },
+    {
+      "id": "desk-3",
+      "title": "Dalal Street's Inflation Test: Defense, Chemicals, and IT Execution",
+      "minutes": 10
+    },
+    {
+      "id": "desk-4",
+      "title": "Hype vs. Reality: Neocloud Debt, Hyperscaler Cash Burn, and Promoter Myths",
+      "minutes": 10
+    },
+    {
+      "id": "desk-5",
+      "title": "AI & Agent Engineering: Split Stacks, Local Sandboxes, and Security Audits",
+      "minutes": 10
+    },
+    {
+      "id": "desk-6",
+      "title": "The 0.55 NA Gamble: High-NA EUV Lithography and the Physics of Eight Nanometers",
+      "minutes": 10
+    },
+    {
+      "id": "desk-7",
+      "title": "World, US & California Policy: Satellites, SMRs, Climate, and City Hall",
+      "minutes": 10
+    },
+    {
+      "id": "desk-8",
+      "title": "India, Regional Infrastructure & Bilateral Corridor",
+      "minutes": 10
+    },
+    {
+      "id": "desk-9",
+      "title": "Ideas, Long-Reads, and Cultural Currents",
+      "minutes": 10
+    },
+    {
+      "id": "desk-10",
+      "title": "The Leonids, Andhra Kodi Vepudu, Weekend Sports, and Tamil Cinema",
+      "minutes": 10
+    }
+  ]
+}
