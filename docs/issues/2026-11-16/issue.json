@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-16",
+  "issue_no": 21,
+  "theme": "As five-percent bond yields collide with a sharp Monday tech selloff and a high-stakes Manila-to-Shenzhen diplomacy sprint, today's edition separates real physical bottlenecks from circular capital.",
+  "items": 35,
+  "minutes": 107,
+  "generated_at": "2026-11-16 16:00 PST",
+  "book": {
+    "has_book": true,
+    "book_words": 16558,
+    "book_minutes": 107,
+    "book_desks": 10,
+    "book_stories": 35,
+    "has_pdf": true,
+    "has_epub": true
+  },
+  "top": [
+    {
+      "title": "Wall Street Slides as Five-Percent Yields Collide With Nvidia's Post-Huang Earnings and Export Test",
+      "source": "Associated Press / Morningstar / Nvidia Newsroom / SEC Form 8-K",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+    },
+    {
+      "title": "Volatility Surges as Portfolio Lockstep and Long-Dated Options Face a Five-Percent Yield Test",
+      "source": "Associated Press / Morningstar / Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/16/stock-market-today-nov-16-tech-selloff-deepens-as-ai-leadership-crisis-rattles-nasdaq/"
+    },
+    {
+      "title": "TSMC Locks In 1.88 Gigawatts of Arizona Power and Seven-Year Packaging Capacity as Shares Enter Buy Zone",
+      "source": "GuruFocus / Seeking Alpha",
+      "url": "https://www.gurufocus.com/news/9202311/tsmc-secures-188gw-power-deal-with-arizona-utility-boosting-tsm-tsm-expansion-plans"
+    },
+    {
+      "title": "Vertiv Hikes Its Dividend Sixty Percent and Targets Eighty-Kilowatt Racks While Testing Key Support",
+      "source": "SEC Form 8-K / Futurum Group",
+      "url": "https://www.quantisnow.com/insight/vertiv-holdings-llc-filed-sec-form-8-k-regulation-fd-disclosure-6789276"
+    },
+    {
+      "title": "Alphabet Commits Ten Billion Dollars to Anthropic's IPO and Locks In Three Billion in Arizona Power Bonds",
+      "source": "Dataconomy / The Motley Fool / Quartz",
+      "url": "https://qz.com/alphabet-prepaid-energy-bonds-3-billion-111626"
+    },
+    {
+      "title": "Microsoft Tests Its Fifty-Day Line After Blaming Global Outage on a Latent July Gateway Defect",
+      "source": "Microsoft Tech Community / TipRanks",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoft-365/microsoft-365-outage-updates/4573007"
+    }
+  ],
+  "sections": [
+    {
+      "id": "desk-1",
+      "title": "Wall Street's Yield Shock, Nvidia's Earnings Test, and the Morning Wire",
+      "minutes": 11
+    },
+    {
+      "id": "desk-2",
+      "title": "Wall Street, US Derivatives, and AI Infrastructure Builders",
+      "minutes": 11
+    },
+    {
+      "id": "desk-3",
+      "title": "Dalal Street, NSE F&O, and India Corporate Filings",
+      "minutes": 11
+    },
+    {
+      "id": "desk-4",
+      "title": "Hype vs. Reality: Treasury Sales, Circular IPOs, and Quick-Commerce Losses",
+      "minutes": 11
+    },
+    {
+      "id": "desk-5",
+      "title": "AI and Agent Engineering: Visual Reasoning, Firecracker Runtimes, and Harness Security",
+      "minutes": 11
+    },
+    {
+      "id": "desk-6",
+      "title": "The Solid-State Battery Paradox: Dendrite Fracture Mechanics and the Stack-Pressure Race",
+      "minutes": 11
+    },
+    {
+      "id": "desk-7",
+      "title": "US-China Summitry, Coal Orders, California Insurance, and South Bay Infrastructure",
+      "minutes": 11
+    },
+    {
+      "id": "desk-8",
+      "title": "India Courts, Andhra's Space City, and the Ten-Nation Pax Silica Pact",
+      "minutes": 11
+    },
+    {
+      "id": "desk-9",
+      "title": "Ideas, Long-Reads, and Cultural Currents: Cosmos, Telephones, and Kelley Park",
+      "minutes": 11
+    },
+    {
+      "id": "desk-10",
+      "title": "Life Sciences, Andhra Gutti Vankaya Kura, Sports, Cinema, and Sign-Off",
+      "minutes": 11
+    }
+  ]
+}
