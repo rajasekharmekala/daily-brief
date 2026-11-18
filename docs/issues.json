@@ -2078,7 +2078,15 @@
     "items": 204,
     "minutes": 123,
     "generated_at": "2026-11-17 17:08 PST",
-    "book": null,
+    "book": {
+      "has_book": true,
+      "book_words": 16204,
+      "book_minutes": 105,
+      "book_desks": 10,
+      "book_stories": 36,
+      "has_pdf": true,
+      "has_epub": true
+    },
     "top": [
       {
         "title": "NVIDIA Q3 FY27 Revenue Jumps 103% to $115.8B and Guides $130B Q4 Without China Data Center",
