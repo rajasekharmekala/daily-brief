@@ -1,0 +1,1873 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Morning Brief - Markets and Money - Tuesday, November 17, 2026</title>
+<meta name="description" content="Nvidia posts a $115.8B quarter into a four-day US equity slide while GPT-6.2, Microsoft MAI, and FrontierHarness reshape agent engineering.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="alternate" type="application/atom+xml" title="The Morning Brief" href="https://rajasekharmekala.github.io/daily-brief/feed.xml">
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.35;
+  font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  font-size: 15.5px;
+  margin: 0 auto;
+  max-width: 90em;
+  min-width: 61em;
+  padding: 0 1.6em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links (Techmeme iconic link styling) */
+a {
+  text-decoration: none;
+  color: #002848;
+}
+a:visited {
+  color: #902050;
+}
+a:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+/* Headings & Techmeme Typography */
+h1, h2, h3, h4, h5 {
+  font-family: Optima, "Century Gothic", -apple-system, sans-serif;
+  color: #445555;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.45em;
+  padding: 0.75em 0 0.5em;
+}
+h3 {
+  font-size: 1.25em;
+  padding: 0.65em 0 0.35em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
+}
+
+cite {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.96em;
+  color: #686860;
+}
+cite a, cite a:visited {
+  color: #686860;
+}
+cite a:hover {
+  color: #002848;
+}
+
+.drhed {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  color: #408840;
+  font-weight: bold;
+  margin-right: 0.3em;
+  font-size: 0.94em;
+}
+
+.bls {
+  margin-left: -0.1em;
+}
+.bls a {
+  white-space: nowrap;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  font-size: 0.94em;
+}
+
+/* Pre-navbar / Header Topline */
+.pagecont {
+  margin-bottom: 3.5em;
+}
+.prenavbar {
+  margin-bottom: 0.4em;
+}
+.topline {
+  border-bottom: 1px solid #cccccc;
+  margin-top: 0.35em;
+  line-height: 1.7em;
+  font-size: 0.88em;
+  color: #666666;
+  padding-bottom: 0.25em;
+  clear: both;
+}
+.topline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.topline a {
+  color: #666666;
+}
+.topline a:visited {
+  color: #666666;
+}
+.topline a:hover {
+  color: #000000;
+  text-decoration: underline;
+  background: transparent;
+}
+.topllinks {
+  float: left;
+}
+.topllinks a {
+  padding-right: 1.3em;
+}
+.toprlinks {
+  float: right;
+}
+.toprlinks span {
+  padding-left: 0.9em;
+}
+
+/* Logo Tab table */
+.logotab {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 0.6em;
+}
+.logotab td {
+  vertical-align: middle;
+  width: 33.33%;
+}
+td.logobox {
+  padding: 0.6em 0;
+}
+.logo-title {
+  font-family: Optima, "Century Gothic", sans-serif;
+  font-size: 2.7em;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  color: #174a61;
+  display: inline-block;
+  line-height: 1;
+}
+.logo-title:visited {
+  color: #174a61;
+}
+.logo-title:hover {
+  text-decoration: none;
+  background: transparent;
+}
+.logo-sub {
+  font-size: 0.82em;
+  color: #777777;
+  font-weight: normal;
+  display: block;
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+td.datebox {
+  text-align: center;
+  color: #444444;
+  font-size: 0.96em;
+}
+.date-str {
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #222222;
+}
+.weather-str {
+  font-size: 0.9em;
+  color: #666666;
+  margin-top: 3px;
+}
+
+td.searchbox {
+  text-align: right;
+  font-size: 0.92em;
+}
+.sbti {
+  width: 13em;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 6px;
+  font-family: inherit;
+  font-size: 0.96em;
+}
+.sbti-btn {
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 9px;
+  font-size: 0.96em;
+  cursor: pointer;
+  font-family: inherit;
+}
+.sbti-btn:hover {
+  background: #e0e8f0;
+}
+
+/* Navigation Bar (Techmeme Navy Blue) */
+.navbar {
+  background: #174a61;
+  text-transform: uppercase;
+  clear: both;
+  line-height: 1.9em;
+  font-size: 0.88em;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+}
+.navtabs {
+  padding: 0;
+}
+.navtabs a {
+  padding: 0.3em 0.8em;
+  display: inline-block;
+  color: #dddddd;
+  font-weight: bold;
+}
+.navtabs a:visited {
+  color: #dddddd;
+}
+.navtabs a:hover {
+  background: #578aa1;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navtabs span.iamhere a {
+  background: #578aa1;
+  color: #ffffff;
+}
+.navtabs span.iamhere a:visited {
+  color: #ffffff;
+}
+.sisnav {
+  float: right;
+}
+.sisnav a {
+  color: #c0d8e8;
+  font-weight: normal;
+  padding: 0.3em 0.7em;
+}
+.sisnav a:visited {
+  color: #c0d8e8;
+}
+.sisnav a:hover {
+  color: #ffffff;
+  background: #25607b;
+}
+
+/* Sub-nav / Section Jump Bar */
+.subnavbar {
+  background: #f4f6f8;
+  border-bottom: 1px solid #d8e0e6;
+  padding: 0.35em 0.6em;
+  font-size: 0.85em;
+  line-height: 1.7em;
+  margin-bottom: 0.9em;
+}
+.subnavbar a {
+  color: #004860;
+  padding: 0.1em 0.5em;
+  font-weight: 600;
+  display: inline-block;
+}
+.subnavbar a:hover {
+  background: #d8e8f4;
+  text-decoration: none;
+}
+.subnavbar .subnav-label {
+  font-weight: bold;
+  color: #556677;
+  padding-right: 0.4em;
+  text-transform: uppercase;
+  font-size: 0.92em;
+}
+
+/* Executive Synthesis / Theme Banner */
+.exec-theme-box {
+  background: #fdfbe8;
+  border: 1px solid #d8c878;
+  border-left: 5px solid #d4a017;
+  padding: 0.75em 1.1em;
+  margin: 0.8em 0 1.3em;
+  font-size: 0.98em;
+  line-height: 1.5em;
+  color: #2b2b20;
+  border-radius: 2px;
+}
+.exec-theme-box strong {
+  color: #604000;
+  font-size: 1.05em;
+  display: inline;
+}
+
+/* Layout Columns */
+.ed {
+  clear: both;
+}
+.ed:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#topcol1 {
+  float: left;
+  width: 50%;
+  margin-top: 0.5em;
+  padding-right: 1.3%;
+}
+#topcol23 {
+  float: left;
+  width: 48.5%;
+  margin-left: 0.2%;
+}
+#topcol2 {
+  float: left;
+  width: 66%;
+  margin-top: 0.5em;
+}
+#topcol3 {
+  float: right;
+  width: 32%;
+  margin-top: 0.5em;
+  margin-left: 2%;
+  position: relative;
+}
+
+/* Bottom 2-column layout */
+.abotcols {
+  clear: both;
+  width: 100%;
+  border-bottom: 2px solid #e8e8e8;
+  padding-top: 1.2em;
+  margin-bottom: 1.3em;
+}
+#botcol1 {
+  float: left;
+  width: 49%;
+  padding-right: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+#botcol2 {
+  float: right;
+  width: 49%;
+  padding-left: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+
+/* Clusters and Items */
+.clus {
+  padding-bottom: 0.7em;
+}
+.item {
+  padding-top: 0.4em;
+  padding-bottom: 1.35em;
+  clear: both;
+  border-bottom: 1px solid #dddddd;
+}
+.item:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.item.last {
+  border-bottom: none;
+}
+.itc1 {
+  padding-left: 0.4em;
+}
+.itc2 {
+  padding: 0;
+}
+
+/* Shared cluster table / headline row */
+.shrtbl {
+  width: 100%;
+  border-collapse: collapse;
+}
+.shrtbl tr > td:first-child {
+  vertical-align: middle;
+}
+.shrtbl tr > td:first-child + td {
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 0.85em;
+  color: #777777;
+}
+
+.ii {
+  padding-top: 0.35em;
+  line-height: 1.4em;
+  font-size: 1.02em;
+}
+
+/* Image Thumbnails & Fallbacks */
+.ill {
+  float: right;
+  width: 120px;
+  height: 85px;
+  object-fit: cover;
+  padding: 0.1em 0 0.5em 0.8em;
+  border-radius: 3px;
+}
+.ill-icon-wrap {
+  float: right;
+  width: 78px;
+  height: 64px;
+  margin: 0.1em 0 0.5em 0.8em;
+  background: #f3f6f9;
+  border: 1px solid #d8e0e6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+}
+.ill-icon-wrap img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Headline typography scale */
+.ourh {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+}
+.ourh:link {
+  color: #004860;
+}
+.ourh:visited {
+  color: #a04860;
+}
+.ourh:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+.L1 { font-size: 1.18em; font-weight: bold; }
+.L2 { font-size: 1.28em; font-weight: bold; letter-spacing: -0.01em; }
+.L3 { font-size: 1.38em; font-weight: bold; letter-spacing: -0.015em; }
+.L4 { font-size: 1.48em; font-weight: bold; letter-spacing: -0.02em; }
+.L5 { font-size: 1.6em; font-weight: bold; letter-spacing: -0.025em; }
+
+.item-summary {
+  color: #111111;
+  font-size: 0.96em;
+}
+
+.item-why {
+  margin-top: 0.4em;
+  padding: 0.35em 0.6em;
+  background: #f7fafc;
+  border-left: 3px solid #6090a8;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  color: #334455;
+  border-radius: 0 2px 2px 0;
+}
+.item-why strong {
+  color: #174a61;
+  font-size: 0.94em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.3em;
+}
+
+/* Related items under a cluster */
+.relitems {
+  margin-top: 0.45em;
+  margin-bottom: 0.85em;
+  border-left: 2px solid #e0e8ef;
+  padding-left: 0.65em;
+}
+.relitems .item {
+  padding-top: 0.35em;
+  padding-bottom: 0.65em;
+  border-bottom: 1px dotted #e0e0e0;
+}
+.relitems .item:last-child {
+  border-bottom: none;
+}
+.relitems .ourh {
+  font-size: 1.05em;
+}
+
+/* Discussion / Sub-links / Secondary items */
+.dbpt {
+  padding-top: 0.4em;
+  font-size: 0.92em;
+  line-height: 1.42em;
+}
+
+/* Right-hand column: Newest / Chronological River */
+#topcol3 .item {
+  padding: 0.6em 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+#topcol3 .ii {
+  padding-top: 0.25em;
+  font-size: 0.96em;
+}
+#topcol3 a.nfdl {
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #004860;
+  font-size: 0.98em;
+}
+#topcol3 a.nfdl:visited {
+  color: #a04860;
+}
+#topcol3 a.nfdl:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+.ago {
+  color: #777777;
+  font-size: 0.84em;
+  padding-top: 0.35em;
+}
+
+/* Grey sponsor / highlighted background box */
+#tkzwuvgyr {
+  padding: 0.7em 1em 1em;
+  background: #f4f6f8;
+  border: 1px solid #e0e6ec;
+  border-radius: 3px;
+  margin-bottom: 1.3em;
+}
+#tkzwuvgyr h3 {
+  padding-top: 0.2em;
+  color: #223344;
+}
+#tkzwuvgyr .item {
+  border: none;
+  padding-bottom: 0.6em;
+}
+
+/* Pod / Media item box (Techmeme style) */
+.pod-box {
+  margin: 1em 0;
+  padding: 0.85em;
+  background: #f9fcfe;
+  border: 1px solid #d8e0e8;
+  border-radius: 3px;
+}
+.pod-box:first-of-type {
+  margin-top: 0.4em;
+}
+.pod-head {
+  font-size: 0.88em;
+  font-weight: bold;
+  color: #174a61;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+.pod-name {
+  font-weight: bold;
+  color: #004860;
+}
+
+/* Deep Dive longform article styled into Techmeme editorial */
+.deepdive-container {
+  background: #fcfdfe;
+  border: 1px solid #ccd9e2;
+  border-radius: 3px;
+  padding: 1.3em 1.5em;
+  margin: 0.9em 0 1.6em;
+}
+.deepdive-container h2 {
+  font-size: 1.65em;
+  line-height: 1.25;
+  color: #174a61;
+  padding: 0 0 0.35em;
+}
+.deepdive-subtitle {
+  font-size: 1.12em;
+  color: #555555;
+  font-style: italic;
+  margin-bottom: 0.85em;
+}
+.deepdive-keypts {
+  background: #f4f8fb;
+  border-left: 4px solid #174a61;
+  padding: 0.65em 1.1em;
+  margin: 0.85em 0 1.1em;
+  font-size: 0.96em;
+}
+.deepdive-keypts h4 {
+  font-size: 0.96em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #174a61;
+  margin-bottom: 0.45em;
+}
+.deepdive-keypts ul {
+  padding-left: 1.3em;
+  list-style: square;
+}
+.deepdive-keypts li {
+  margin-bottom: 0.35em;
+  line-height: 1.45em;
+}
+.deepdive-body {
+  font-size: 1.04em;
+  line-height: 1.6em;
+  color: #222222;
+}
+.deepdive-body p {
+  padding-bottom: 0.85em;
+}
+.deepdive-body h3 {
+  font-size: 1.3em;
+  padding: 0.85em 0 0.35em;
+  color: #174a61;
+}
+.deepdive-refs {
+  margin-top: 1.3em;
+  padding-top: 0.85em;
+  border-top: 1px solid #d0d8e0;
+  font-size: 0.9em;
+}
+.deepdive-refs ol {
+  padding-left: 1.6em;
+}
+.deepdive-refs li {
+  padding-bottom: 0.45em;
+}
+
+/* Keto Kitchen / Nutrition in Techmeme style */
+.kitchen-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.7em 0 1.1em;
+  font-size: 0.94em;
+  background: #f7faf9;
+  border: 1px solid #cfe0d8;
+}
+.kitchen-table th, .kitchen-table td {
+  padding: 0.45em 0.85em;
+  border: 1px solid #d4e4dc;
+  text-align: left;
+}
+.kitchen-table th {
+  background: #e4f0ea;
+  font-weight: bold;
+  color: #205038;
+}
+
+/* Recipe card & Single Recipe Detail View */
+.recipe-card {
+  border: 1px solid #dcdcdc;
+  background: #ffffff;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
+  border-radius: 3px;
+}
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
+  color: #004860;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+.recipe-macros {
+  font-size: 0.94em;
+  color: #408840;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
+.recipe-cols {
+  display: flex;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+.recipe-cols > div {
+  flex: 1;
+}
+.recipe-cols h5 {
+  font-weight: bold;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
+  margin-bottom: 0.45em;
+  padding-left: 0.2em;
+}
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
+}
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
+}
+
+/* Footer / Run Notes */
+.page-footer {
+  margin-top: 2.8em;
+  padding: 1.3em 0.5em 2.8em;
+  border-top: 1px solid #cccccc;
+  font-size: 0.88em;
+  color: #666666;
+  line-height: 1.55em;
+  clear: both;
+}
+.page-footer a {
+  color: #004860;
+}
+.page-footer details {
+  margin-bottom: 0.85em;
+}
+.page-footer summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #445555;
+}
+.page-footer ul, .page-footer ol {
+  padding-left: 1.6em;
+  margin-top: 0.45em;
+}
+
+/* Archive Page (Techmeme-style directory) */
+.archive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.1em;
+}
+.archive-table th {
+  text-align: left;
+  font-weight: bold;
+  color: #455;
+  font-size: 1.08em;
+  padding: 0.55em 0.75em;
+  border-bottom: 2px solid #aaa;
+  background: #f4f4f4;
+}
+.archive-table td {
+  padding: 0.65em 0.75em;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+.archive-table tr:hover td {
+  background: #f8fbfe;
+}
+.archive-date {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 0.98em;
+}
+.archive-theme {
+  font-size: 1.08em;
+  line-height: 1.4em;
+}
+.archive-theme a {
+  font-weight: bold;
+}
+.archive-meta {
+  font-size: 0.88em;
+  color: #666666;
+  margin-top: 0.35em;
+}
+
+/* Responsive Rules */
+@media only screen and (max-width: 960px) {
+  body {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 0.8em;
+    font-size: 15px;
+  }
+  .logotab td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.3em 0;
+  }
+  td.datebox, td.searchbox {
+    text-align: left;
+  }
+  .navbar {
+    line-height: 2em;
+    font-size: 0.92em;
+  }
+  .sisnav {
+    display: none;
+  }
+  #topcol1, #topcol23, #topcol2, #topcol3, #botcol1, #botcol2 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .recipe-cols {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="pagecont">
+  <!-- Techmeme Prenavbar Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="https://rajasekharmekala.github.io/"><strong>Home</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html"><strong>Archive</strong></a>
+        <a href="https://rajasekharmekala.github.io/portfolio/"><strong>Portfolio Desk</strong></a>
+        <a href="https://rajasekharmekala.github.io/travel-research/"><strong>Travel Research</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html"><strong>Keto Cookbook</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/feed.xml">RSS Feed</a>
+        <span>Issue 22</span>
+      </div>
+      <div class="toprlinks">
+        <span>📍 San Jose: 60° / 41°F, Overcast</span>
+        <span>⏱ ~123 min reading</span>
+        <span>204 items</span>
+      </div>
+    </div>
+
+    <!-- Techmeme Header Logo Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">The Morning Brief</a>
+          <span class="logo-sub">Executive Personal Intelligence Briefing</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Tuesday, November 17, 2026</div>
+          <div class="weather-str">Sunrise 06:49 · Sunset 16:55 · AQI 35 · Moon: First quarter, 58% lit</div>
+        </td>
+        <td class="searchbox">
+          <form id="briefSearchForm">
+            <input id="briefSearchInput" class="sbti" type="text" placeholder="Search briefing...">
+            <input class="sbti-btn" type="submit" value="Search">
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Techmeme Iconic Navy Navigation Bar - Dedicated Tabs -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="book.html"><strong>Companion Book (~90m)</strong></a>
+        <a href="book.epub" download="Morning_Brief_2026-11-17_Book.epub">EPUB</a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html">Cookbook</a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html">Archives</a>
+      </div>
+      <span class=""><a href="index.html">Home</a></span>
+      <span class=""><a href="followups.html">Developing Stories</a></span>
+      <span class="iamhere"><a href="finance.html">Markets and Money</a></span>
+      <span class=""><a href="nutrition.html">Keto Kitchen</a></span>
+      <span class=""><a href="industry.html">Industry Watch</a></span>
+      <span class=""><a href="papers.html">Agent Papers Radar</a></span>
+      <span class=""><a href="deepdive.html">Deep Dive of the Day</a></span>
+      <span class=""><a href="science.html">Cosmos and Life</a></span>
+      <span class=""><a href="world.html">World and India</a></span>
+      <span class=""><a href="sports.html">Sports</a></span>
+      <span class=""><a href="culture.html">Movies and Music</a></span>
+      <span class=""><a href="library.html">Read and Listen</a></span>
+      <span class=""><a href="localnews.html">Local News</a></span>
+      <span class=""><a href="local.html">Local and Travel</a></span>
+    </div>
+  </div>
+
+  <!-- Sub-navigation anchor / quick link jumper -->
+  <div class="subnavbar">
+    <span class="subnav-label">Tabs:</span>
+    <a href="index.html" style="">Top Stories</a> |
+    <a href="book.html" style="font-weight:bold;color:#174a61;">Companion Book (~90m)</a> |
+    <a href="followups.html" style="">Developing Stories (3m)</a> |     <a href="finance.html" style="font-weight:bold;color:#a04860;">Markets and Money (14m)</a> |     <a href="nutrition.html" style="">Keto Kitchen (9m)</a> |     <a href="industry.html" style="">Industry Watch (13m)</a> |     <a href="papers.html" style="">Agent Papers Radar (8m)</a> |     <a href="deepdive.html" style="">Deep Dive of the Day (15m)</a> |     <a href="science.html" style="">Cosmos and Life (5m)</a> |     <a href="world.html" style="">World and India (13m)</a> |     <a href="sports.html" style="">Sports (8m)</a> |     <a href="culture.html" style="">Movies and Music (14m)</a> |     <a href="library.html" style="">Read and Listen (4m)</a> |     <a href="localnews.html" style="">Local News (6m)</a> |     <a href="local.html" style="">Local and Travel (8m)</a>  </div>
+
+  <!-- Executive Synthesis Theme Banner -->
+  <div class="exec-theme-box">
+    <strong>Executive Synthesis:</strong> Nvidia posts a $115.8B quarter into a four-day US equity slide while GPT-6.2, Microsoft MAI, and FrontierHarness reshape agent engineering.
+  </div>
+
+  <!-- ==================== HOME TAB VIEW ==================== -->
+  <!-- Generic Dedicated Section Tab -->
+  <h2>Markets and Money</h2>
+<div style="font-size:0.98em;color:#444;line-height:1.45em;padding-bottom:0.6em;"><p>US equities slid for a fourth straight session as the 10-year yield hit 5.139% and VIX climbed to 22.91 ahead of Nvidia's $115.8B Q3 print, while Indian markets rose 427 points on ₹4,195 crore in FII buying and a 1.43 Nifty PCR.</p></div>  <div style="font-size:0.94em;padding-bottom:0.6em;">
+    <span class="drhed">Terminals & Resources:</span>
+    <a href="https://rajasekharmekala.github.io/portfolio/reports/US_Market_Intelligence.html" target="_blank" rel="noopener"><strong>Your US Market Intelligence report</strong></a> | 
+    <a href="https://rajasekharmekala.github.io/portfolio/reports/IN_Market_Intelligence.html" target="_blank" rel="noopener"><strong>Your India Market Intelligence report</strong></a>
+  </div>
+
+  <div class="clus">
+      <h3 style="color:#174a61;border-bottom:1px solid #ccc;padding-bottom:0.2em;margin-top:1.2em;">US markets</h3>
+        <div class="item" id="item-8410d4118b">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.fool.com/coverage/stock-market-today/2026/11/17/stock-market-today-nov-17-stocks-slide-on-ai-chip-and-tech-pressures-salesforce-plummets-9/" target="_blank" rel="noopener">The Motley Fool</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.fool.com/coverage/stock-market-today/2026/11/17/stock-market-today-nov-17-stocks-slide-on-ai-chip-and-tech-pressures-salesforce-plummets-9/" target="_blank" rel="noopener"><img class="ill" src="media/8410d4118b.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.fool.com/coverage/stock-market-today/2026/11/17/stock-market-today-nov-17-stocks-slide-on-ai-chip-and-tech-pressures-salesforce-plummets-9/" target="_blank" rel="noopener">US Equities Slide for Fourth Straight Session as Dow Sheds 849 Points Ahead of Nvidia Print</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">The S&amp;P 500 fell 1.03% (-76.06 points) to 7,340.53 on Tuesday, November 17, 2026, marking four consecutive sessions of losses, while the Nasdaq Composite declined 0.74% (-181.37) to 24,328.38 and the Dow Jones Industrial Average dropped 1.64% (-848.75) to 50,759.42. Energy was the sole sector advancing as financials, healthcare (UNH -5.42%), and software (CRM -9.45% on AI-replacement and security jitters) led broad selling, alongside crypto-linked names like COIN (-4.02%) and HOOD (-3.98%). The 10-year Treasury yield eased 3 basis points to 5.11% and gold slipped 0.18% to $3,849.20, while MSFT (-2.3% to $506.24), GOOG (-1.3% to $277.60), and NVDA (-0.44% to $155.46) fell ahead of Nvidia&#39;s post-close earnings beat.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Sets Tuesday&#39;s exact index closes, defensive rotation, and regular-session levels for your MSFT, GOOG, and NVDA watchlist/holdings.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-936f7ed8b5">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.home.saxo/en-gb/content/articles/options/volatility-jumps-at-the-front-before-nvidia---options-brief---17-november-2026-17112026" target="_blank" rel="noopener">Saxo</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.home.saxo/en-gb/content/articles/options/volatility-jumps-at-the-front-before-nvidia---options-brief---17-november-2026-17112026" target="_blank" rel="noopener"><img class="ill" src="media/936f7ed8b5.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.home.saxo/en-gb/content/articles/options/volatility-jumps-at-the-front-before-nvidia---options-brief---17-november-2026-17112026" target="_blank" rel="noopener">Front-End Volatility Inverts Above VIX at 22.91 with Elevated Skew Before Nvidia</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Options pricing tightened sharply at the short end ahead of Nvidia&#39;s November 17 report after new U.S. AI chip curbs pushed the S&amp;P 500 through its weekly expected range. The nine-day volatility gauge jumped 29.91% to 23.15, rising above the spot VIX at 22.91 while front-month VIX futures held at 22.12 in flat contango. SKEW stood elevated at 146.33 (down 0.55%), signaling demand for wider-range protection rather than tail-crash hedges. Friday S&amp;P 500 expiries priced a 1.98% move, Nvidia&#39;s report-day implied move held near 7.7%, and median single-stock IV rank climbed to 36.2 from 29.3 with 451 of 520 tracked names higher.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Pinpoints VIX, front-end vol inversion, SKEW, and single-stock IV rank driving your US equities and LEAPS call book.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-4faa980a30">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027" target="_blank" rel="noopener">NVIDIA Newsroom</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027" target="_blank" rel="noopener"><img class="ill" src="media/4faa980a30.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027" target="_blank" rel="noopener">NVIDIA Q3 FY27 Revenue Jumps 103% to $115.8B and Guides $130B Q4 Without China Data Center</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Reporting under interim CEO and CFO Colette Kress on November 17, 2026, NVIDIA posted Q3 FY27 (ended October 25) revenue of $115.8 billion, up 20% sequentially and 103% year over year, with Data Center sales reaching $107.6 billion (+110% YoY). Non-GAAP gross margin was 74.9% and non-GAAP diluted EPS reached $2.68 ($2.70 GAAP), while Q3 buybacks and dividends totaled $28.1 billion. Management guided Q4 FY27 revenue—including an extra week—to $130.0 billion (+/-3%) while assuming zero China Data Center compute revenue, alongside gross margins easing to 71.0%–72.0%. Vera Rubin NVL72 racks are now shipping to CoreWeave, Google Cloud, Microsoft Azure, and Oracle.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Tests the Stage 4 correction thesis on shortlist name NVDA ($155.46 close vs $148-$156 support) and validates demand across CRWV, GOOG, and MSFT.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-2a6b9ef789">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://247wallst.com/cards/xpost-01m7mx0v2jxb1p1p5pdaqx3fm3" target="_blank" rel="noopener">24/7 Wall St.</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://247wallst.com/cards/xpost-01m7mx0v2jxb1p1p5pdaqx3fm3" target="_blank" rel="noopener"><img class="ill" src="media/2a6b9ef789.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://247wallst.com/cards/xpost-01m7mx0v2jxb1p1p5pdaqx3fm3" target="_blank" rel="noopener">10-Year Treasury Yield Pushes to 5.139% and 2-Year Hits 4.851% After US Economic Data</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Following Tuesday morning&#39;s U.S. economic data on November 17, 2026, the benchmark 10-year Treasury yield climbed 1.82 basis points to 5.139% before easing back to 5.11% by the equity close, while the policy-sensitive 2-year yield rose faster by 2.39 basis points to 4.851%. That front-end repricing signals traders expect short-term policy rates to stay elevated longer rather than easing soon. Holding above the 5.1% threshold establishes a steep risk-free hurdle rate that tightens borrowing costs and continues compressing valuation multiples on long-duration growth equities, REITs, and capital-intensive tech names.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Tracks the &gt;5.1% risk-free yield hurdle driving multiple compression across your high-multiple tech and infrastructure holdings.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-d533256d3e">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.tradingview.com/news/gurufocus:3ac55a47d094b:0-unitedhealth-stocks-fall-4-62-as-cms-proposes-wider-medicare-advantage-audits/" target="_blank" rel="noopener">TradingView / GuruFocus</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.tradingview.com/news/gurufocus:3ac55a47d094b:0-unitedhealth-stocks-fall-4-62-as-cms-proposes-wider-medicare-advantage-audits/" target="_blank" rel="noopener"><img class="ill" src="media/d533256d3e.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.tradingview.com/news/gurufocus:3ac55a47d094b:0-unitedhealth-stocks-fall-4-62-as-cms-proposes-wider-medicare-advantage-audits/" target="_blank" rel="noopener">UnitedHealth (UNH) Drops ~5% as CMS Proposes Retroactive Medicare Advantage Audits Back to 2018</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">UnitedHealth Group (UNH) slid 4.62% intraday to $392.96 on November 17 (closing down 5.42% from its $412.02 prior close), dragging managed-care peers Humana and CVS Health lower after federal officials proposed the CRUSH anti-fraud rule. The proposal would codify Risk Adjustment Data Validation (RADV) audits without a fee-for-service adjuster and extrapolate sample coding errors across entire contracts starting with payment year 2018. CMS estimates average recoveries of $9 billion annually, targeting nearly $90 billion in federal savings from 2027 to 2036, with public comments due January 19, 2027. Uncertainty over unreserved 2018–2024 clawback liability clouds near-term valuation support despite a $429.73 GF Value.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Explains the regulatory clawback overhang hitting must-cover ticker UNH and broad Health Care sentiment around shortlist ETF XLV.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-7f8a88c9d5">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.tradingview.com/news/gurufocus:651c349da094b:0-alphabet-stocks-decline-3-1-as-10-billion-anthropic-buy-lifts-stake-before-ipo/" target="_blank" rel="noopener">TradingView / GuruFocus</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.tradingview.com/news/gurufocus:651c349da094b:0-alphabet-stocks-decline-3-1-as-10-billion-anthropic-buy-lifts-stake-before-ipo/" target="_blank" rel="noopener"><img class="ill" src="media/7f8a88c9d5.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.tradingview.com/news/gurufocus:651c349da094b:0-alphabet-stocks-decline-3-1-as-10-billion-anthropic-buy-lifts-stake-before-ipo/" target="_blank" rel="noopener">Alphabet (GOOG) Declines as $10B Anthropic Private Placement Lifts Stake to ~$132.4B Before IPO</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Alphabet shares slid 3.1% on November 16 and another 1.3% on November 17 to $277.60 ahead of Anthropic&#39;s expected November 19 Nasdaq debut. Anthropic&#39;s amended registration filing shows Google LLC purchasing 135,135,135 Class N shares in a $26 billion concurrent private placement—roughly $10 billion at the $74 midpoint of the $70–$78 IPO range—lifting Google&#39;s holding to ~1.790 billion shares worth ~$132.4 billion, or 3.7% of Alphabet&#39;s $3.59 trillion market cap. While Anthropic posted $17 billion in September-quarter revenue (+1,127% YoY), GuruFocus flags Alphabet&#39;s ~0.6% free cash flow yield as heavy data-center CapEx continues absorbing operating cash.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Updates your Schwab GOOG holding, where heavy CapEx and weak FCF keep the shortlist status at Stage 4 REJECTED for new capital.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-02fbc8b06b">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://247wallst.com/investing/etf/2026/11/17/tsmc-is-sliding-before-nvidia-reports-your-chip-etf-is-taking-the-hit/" target="_blank" rel="noopener">24/7 Wall St.</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://247wallst.com/investing/etf/2026/11/17/tsmc-is-sliding-before-nvidia-reports-your-chip-etf-is-taking-the-hit/" target="_blank" rel="noopener"><img class="ill" src="media/02fbc8b06b.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://247wallst.com/investing/etf/2026/11/17/tsmc-is-sliding-before-nvidia-reports-your-chip-etf-is-taking-the-hit/" target="_blank" rel="noopener">TSMC (TSM) Slides ~4% Ahead of Nvidia Results, Dragging Semiconductor ETFs Lower</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Taiwan Semiconductor Manufacturing (TSM) ADRs fell 3.68% intraday to $359.69 on Tuesday, November 17, extending a 7.44% weekly and 12.83% monthly pullback ahead of Nvidia&#39;s post-close earnings and amid broader chip-sector caution. Because high-performance computing generated 68% of TSMC&#39;s Q3 revenue and Nvidia plus TSMC represent roughly 27% of the VanEck Semiconductor ETF (SMH), pre-print de-risking pushed SMH down 1.62% and SOXX down 1.3% intraday. With TSM already in Stage 4 below its $369.38–$380.64 shortlist entry zone and approaching its $348.00 stop-loss, post-Nvidia demand commentary and new U.S. foundry export screening rules are key near-term catalysts.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Tracks your TSM holding as it breaks below the $369-$381 shortlist support zone toward its $348 stop-loss level.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-53a17139d5">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.kucoin.com/news/flash/msci-removes-strategy-from-major-indices-could-trigger-1-6b-in-share-sales" target="_blank" rel="noopener">KuCoin News</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.kucoin.com/news/flash/msci-removes-strategy-from-major-indices-could-trigger-1-6b-in-share-sales" target="_blank" rel="noopener"><img class="ill" src="media/53a17139d5.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.kucoin.com/news/flash/msci-removes-strategy-from-major-indices-could-trigger-1-6b-in-share-sales" target="_blank" rel="noopener">Strategy (MSTR) Faces $1.6B–$2.8B Passive Selling from November 30 MSCI Index Removal</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">MSCI confirmed it will remove Strategy Inc. (MSTR) from both the MSCI USA Index and MSCI World Index after the close on November 30, 2026, reclassifying the Bitcoin treasury firm as a &#34;non-operating&#34; issuer under updated criteria. Siebert estimates the exclusion will force passive funds to sell roughly 13 million shares—about 3.1% of basic shares outstanding, or $1.6 billion at recent prices—while JPMorgan projects $2.8 billion in outflows and up to $8.8 billion if rival index providers adopt similar rules. Chairman Michael Saylor called the exclusion immaterial to Strategy&#39;s 850,000+ BTC treasury, though index-driven supply and equity-issuance friction pose acute liquidity risks.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Flags the November 30 forced-selling event directly impacting your Schwab MSTR position and leveraged Robinhood MSTX exposure.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-1aab3b2393">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.trefis.com/stock/anet/articles/624988/management-raised-the-bar-for-arista-networks-stock-does-the-chart-agree/2026-11-13" target="_blank" rel="noopener">Trefis</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.trefis.com/stock/anet/articles/624988/management-raised-the-bar-for-arista-networks-stock-does-the-chart-agree/2026-11-13" target="_blank" rel="noopener"><img class="ill" src="media/1aab3b2393.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.trefis.com/stock/anet/articles/624988/management-raised-the-bar-for-arista-networks-stock-does-the-chart-agree/2026-11-13" target="_blank" rel="noopener">Arista Networks (ANET) Holds Stage 2 Averages at 54.9x Earnings Following Q3 Guidance Hike</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Following its fourth 2026 guidance raise on November 3—lifting full-year revenue expectations to $13.3 billion (+48% YoY) after Q3 sales jumped 58.5% YoY to $3.66 billion—Arista Networks (ANET) traded 7.2% above its 50-day moving average ($192.81) and well above its 200-day average ($167.10) at $206.63 as of November 12. Management guided Q4 revenue to $3.9 billion–$4.0 billion, noted over 100 Etherlink AI-switching customers, and projected 38%–40% 2027 growth toward ~$18.5 billion with AI networking doubling to ~$7 billion. However, at 54.9x trailing earnings versus 21.9x for the S&amp;P 500, execution risk remains elevated during broad tech drawdowns.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Benchmarks Stage 2 trend support ($192.81 50-DMA) versus rich 54.9x valuation for your ANET holdings across Robinhood and Schwab.
+    </div>
+  </div>
+</div>
+
+      <h3 style="color:#174a61;border-bottom:1px solid #ccc;padding-bottom:0.2em;margin-top:1.2em;">India markets</h3>
+        <div class="item" id="item-2cb213d1a6">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.indiatoday.in/business/market/story/dalal-street-extends-winning-streak-sensex-up-427-points-nifty-above-25350-3040722-2026-11-17" target="_blank" rel="noopener">India Today</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.indiatoday.in/business/market/story/dalal-street-extends-winning-streak-sensex-up-427-points-nifty-above-25350-3040722-2026-11-17" target="_blank" rel="noopener"><img class="ill" src="media/2cb213d1a6.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.indiatoday.in/business/market/story/dalal-street-extends-winning-streak-sensex-up-427-points-nifty-above-25350-3040722-2026-11-17" target="_blank" rel="noopener">Sensex rises 427 points to 82,532 and Nifty 50 ends at 25,387 as PSU banks and realty lead</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Indian equities extended their winning streak for a second session on Tuesday, November 17, 2026, though breadth diverged across market caps. The BSE Sensex gained 427.40 points (+0.52%) to close at 82,532.19, while the NSE Nifty 50 added 96.30 points (+0.38%) to finish at 25,387.40 after touching an intraday high of 25,501.35. Nifty Midcap 100 rose 0.25%, whereas Nifty Smallcap 100 slipped 0.22% and India VIX eased 1.10% to 15.51. Sector rotation favoured financials and property—Nifty PSU Bank (+1.95%), Nifty Realty (+1.94%), and Nifty Bank (+1.13%)—while Nifty IT (-0.90%) lagged on profit booking.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Tracks large-cap leadership versus small-cap lag and falling India VIX across your Indian equities portfolio and Stage 2 momentum screen.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-92feadb9d0">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.financialexpress.com/market/fiis-buy-rs-4195-crore-diis-join-in-3-factors-supporting-market-sentiment-4387035/" target="_blank" rel="noopener">The Financial Express</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.financialexpress.com/market/fiis-buy-rs-4195-crore-diis-join-in-3-factors-supporting-market-sentiment-4387035/" target="_blank" rel="noopener"><img class="ill" src="media/92feadb9d0.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.financialexpress.com/market/fiis-buy-rs-4195-crore-diis-join-in-3-factors-supporting-market-sentiment-4387035/" target="_blank" rel="noopener">FIIs buy ₹4,195 crore and DIIs add ₹197 crore as softer crude buoys large-caps</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Foreign institutional investors (FIIs) remained aggressive net buyers on November 17, 2026, deploying ₹4,195.38 crore across NSE, BSE, and MSEI on ₹19,930.98 crore of gross purchases against ₹15,735.60 crore of sales, including ₹4,094.63 crore net on the NSE alone. Domestic institutional investors (DIIs) added a modest ₹196.93 crore net (₹14,903.80 crore bought vs ₹14,706.87 crore sold). Analysts credited easing crude oil prices and selective FII preference for large-cap banks for lifting sentiment despite weak global cues, though inflation holding above the RBI&#39;s tolerance band keeps December rate-hike risk alive.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Explains the institutional flow tailwind driving your Indian large-cap and financial watchlist while flagging RBI rate-hike valuation risk.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-1103d8a558">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.5paisa.com/blog/nifty-weekly-expiry-17-november-2026-25400-resistance-25300-support" target="_blank" rel="noopener">5paisa</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.5paisa.com/blog/nifty-weekly-expiry-17-november-2026-25400-resistance-25300-support" target="_blank" rel="noopener" class="ill-icon-wrap" title="5paisa.com"><img src="https://www.google.com/s2/favicons?domain=5paisa.com&amp;sz=128" alt="5paisa.com" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.5paisa.com/blog/nifty-weekly-expiry-17-november-2026-25400-resistance-25300-support" target="_blank" rel="noopener">Nifty weekly expiry options show 1.43 PCR with 25,500 call wall capping upside</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Derivatives positioning during Tuesday&#39;s November 17 weekly expiry session showed put writers firmly defending downside levels while call writers capped a breakout above 25,500. Total Nifty Put open interest stood at 3,704.77 lakh against 2,584.70 lakh Call contracts, lifting the Put-Call Ratio (PCR) from 0.95 intraday to 1.4275. Maximum pain anchored at 25,350, just below the 25,387.40 close. The heaviest Call concentration sat at the 25,500 strike (~260 lakh contracts) with fresh additions at 25,400, while Put writers built a 430-lakh-contract floor at 25,300, framing a tight 25,300–25,500 near-term band.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Maps exact NSE options PCR, max-pain, and strike OI walls relevant to your active Indian index and F&amp;O positioning.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-b3176772ec">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://indianexpress.com/article/business/rbi-reiterates-demand-listing-tata-sons-nbfc-noel-tata-n-chandrasekaran-upper-layer-norms-group-rift-10965810/" target="_blank" rel="noopener">The Indian Express</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://indianexpress.com/article/business/rbi-reiterates-demand-listing-tata-sons-nbfc-noel-tata-n-chandrasekaran-upper-layer-norms-group-rift-10965810/" target="_blank" rel="noopener"><img class="ill" src="media/b3176772ec.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://indianexpress.com/article/business/rbi-reiterates-demand-listing-tata-sons-nbfc-noel-tata-n-chandrasekaran-upper-layer-norms-group-rift-10965810/" target="_blank" rel="noopener">RBI explicitly reiterates mandatory listing rule for Tata Sons under NBFC-UL norms</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">In a November 16 letter to Tata Sons&#39; CFO, the Reserve Bank of India explicitly cited the mandatory stock-market listing requirement for Upper Layer Non-Banking Financial Companies (NBFC-UL), removing earlier ambiguity ahead of the group&#39;s board deliberations. Classified as an Upper Layer Core Investment Company since 2022 with approximately ₹2.01 lakh crore in assets as of March 31, 2026, Tata Sons had its voluntary deregistration request rejected by the RBI in September 2026. The directive intensifies governance and ownership stakes between 66% owner Tata Trusts and 18% holder Shapoorji Pallonji Group, carrying major IPO pipeline implications.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Tracks a pivotal RBI regulatory ruling that shapes Indian holding-company valuations and potential mega-IPO supply in your India markets coverage.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-9ff4c0e127">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://economictimes.indiatimes.com/markets/stocks/news/laurus-labs-shares-rally-over-5-as-promoters-rule-out-further-stake-sale/articleshow/135920319.cms" target="_blank" rel="noopener">The Economic Times</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://economictimes.indiatimes.com/markets/stocks/news/laurus-labs-shares-rally-over-5-as-promoters-rule-out-further-stake-sale/articleshow/135920319.cms" target="_blank" rel="noopener"><img class="ill" src="media/9ff4c0e127.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://economictimes.indiatimes.com/markets/stocks/news/laurus-labs-shares-rally-over-5-as-promoters-rule-out-further-stake-sale/articleshow/135920319.cms" target="_blank" rel="noopener">Laurus Labs rallies over 5% as promoters rule out further stake sales after Monday drop</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Laurus Labs shares rebounded as much as 5.17% to an intraday high of ₹2,334.90 on Tuesday, November 17, recovering part of Monday&#39;s 9% sell-off triggered by nearly 20 lakh promoter-group shares sold on November 11. Promoter Dr. Satyanarayana Chava stated no further stake sales are planned, explaining the sale covered personal debt settlement and charity rather than business weakness. Backing the CDMO growth thesis in your Zerodha holding, Chava noted ₹2,000 crore of FY27 and over ₹3,000 crore of FY28 capex will be funded internally without diluting return ratios, following Q2 FY27 PAT surging 126% YoY to ₹441 crore at a 34.5% EBITDA margin.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Directly addresses insider-selling overhang and internal-accrual capex execution risks for your LAURUSLABS holding in the CDMO pharma theme.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-88f1306cb2">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.businesstoday.in/markets/stocks/story/defence-stock-astra-microwave-shares-rise-2-jefferies-sees-21-upside-heres-why-567563-2026-11-16" target="_blank" rel="noopener">Business Today</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.businesstoday.in/markets/stocks/story/defence-stock-astra-microwave-shares-rise-2-jefferies-sees-21-upside-heres-why-567563-2026-11-16" target="_blank" rel="noopener"><img class="ill" src="media/88f1306cb2.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.businesstoday.in/markets/stocks/story/defence-stock-astra-microwave-shares-rise-2-jefferies-sees-21-upside-heres-why-567563-2026-11-16" target="_blank" rel="noopener">Astra Microwave gains 2% as Jefferies keeps ₹2,055 target on 33.4% Q2 margin beat</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Astra Microwave Products rose 2% to ₹1,736.75 on November 16 after Jefferies maintained a Buy rating and ₹2,055 target—about 21% upside from ₹1,702.70—following a 59% Q2 FY27 EBITDA beat. Defence generated 82% of H1 FY27 sales, with Q2 EBITDA margin hitting 33.4% (1,168 bps above estimates) and the defence order book expanding 2.4x YoY to ₹3,200 crore on a ₹1,900 crore HAL Uttam radar order. For your ASTRAMICRO holding, the opportunity lies in a ₹700–₹800 crore QRSAM and ₹3,000 crore Su-30 upgrade pipeline, balanced against H2 execution risk given only 6% H1 revenue growth versus 15% full-year guidance.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Evaluates margin sustainability, order-book visibility, and H2 delivery risk for your ASTRAMICRO defence-electronics holding.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-de78dc2fb5">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.livemint.com/market/stock-market-news/td-power-systems-share-price-soars-over-9-dividend-declared-q2-profit-more-than-doubles-should-you-buy-11794548122280.html" target="_blank" rel="noopener">Mint</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>4m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.livemint.com/market/stock-market-news/td-power-systems-share-price-soars-over-9-dividend-declared-q2-profit-more-than-doubles-should-you-buy-11794548122280.html" target="_blank" rel="noopener" class="ill-icon-wrap" title="livemint.com"><img src="https://www.google.com/s2/favicons?domain=livemint.com&amp;sz=128" alt="livemint.com" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.livemint.com/market/stock-market-news/td-power-systems-share-price-soars-over-9-dividend-declared-q2-profit-more-than-doubles-should-you-buy-11794548122280.html" target="_blank" rel="noopener">TD Power Systems jumps over 9% on doubled Q2 PAT, ₹0.65 dividend with Nov 18 record date</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">TD Power Systems jumped 9.4% to ₹685 on November 13 after Q2 FY27 consolidated PAT surged 105.58% YoY to ₹123.74 crore and revenue jumped 85.94% to ₹841.31 crore, with EBITDA margins rising to 20.63%. Management lifted FY27 revenue guidance to ₹2,900–₹3,000 crore on quarterly order inflows above ₹750–₹800 crore and AI data-centre power demand, while declaring a ₹0.65 interim dividend with a November 18 record date. For your TDPOWERSYS holding (Stage 4 digestion in your shortlist, ~20% below its ₹856 high), Anand Rathi flags overbought hourly RSI and advises waiting for a pullback toward ₹640 support or a breakout above ₹685.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Connects Q2 earnings momentum and tomorrow&#39;s dividend record date to technical support and Stage 4 caution for your TDPOWERSYS holding.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-4c4ed616f9">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://kalkinemedia.com/in/news/announcements/manorama-industries-nsemanorama-q2-h1-fy27-earnings-call-highlights-and-leadership-changes" target="_blank" rel="noopener">Kalkine Media</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://kalkinemedia.com/in/news/announcements/manorama-industries-nsemanorama-q2-h1-fy27-earnings-call-highlights-and-leadership-changes" target="_blank" rel="noopener"><img class="ill" src="media/4c4ed616f9.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://kalkinemedia.com/in/news/announcements/manorama-industries-nsemanorama-q2-h1-fy27-earnings-call-highlights-and-leadership-changes" target="_blank" rel="noopener">Manorama Industries Q2 transcript highlights 41.9% revenue growth and ₹252 crore cash outflow</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Manorama Industries filed its Q2 FY27 earnings call transcript on November 17, detailing 41.9% YoY revenue growth to ₹459 crore and 51.8% PAT growth to ₹81 crore (17.6% margin; 25.8% EBITDA margin). Balance-sheet leverage dropped to 0.04x net debt-to-equity with ₹498 crore in cash, alongside leadership shifts appointing Deep Saraf as MD and Mudit Kumar Singh as Chairman. However, H1 FY27 operating cash flow turned negative at ₹252 crore as early shea and sal seed procurement pushed inventory to ₹1,000 crore—the key working-capital watchpoint for your Stage 2 MANORAMA holding (near its ₹1,870–₹1,960 support zone).</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Monitors seasonal inventory cash-flow risk and leadership transition for your Stage 2 MANORAMA portfolio holding.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-0bb71d5a38">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.business-standard.com/markets/news/nifty-realty-index-surges-14-in-november-dlf-hits-52-week-high-126111700239_1.html" target="_blank" rel="noopener">Business Standard</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.business-standard.com/markets/news/nifty-realty-index-surges-14-in-november-dlf-hits-52-week-high-126111700239_1.html" target="_blank" rel="noopener"><img class="ill" src="media/0bb71d5a38.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.business-standard.com/markets/news/nifty-realty-index-surges-14-in-november-dlf-hits-52-week-high-126111700239_1.html" target="_blank" rel="noopener">Nifty Realty rallies 14% in November as shortlist name DLF hits 52-week high of ₹773.65</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Realty shares outperformed on Tuesday, November 17, with the Nifty Realty index climbing 2.5% intraday to 931.20—extending its November surge to 14% versus 10% for the Nifty 50—backed by 92% YoY Q2 FY27 pre-sales growth to roughly ₹19,523 crore across Axis Securities&#39; coverage universe. Active shortlist candidate DLF gained 2.5% to hit a fresh 52-week high of ₹773.65, up 12% this month. While luxury residential demand and balance-sheet discipline support the Stage 2 uptrend, DLF remains extended above your ₹686.21–₹723.41 shortlist support band, making pullback patience critical over chasing.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Tracks Stage 2 sector momentum and extension risk above your buy zone for active Indian shortlist candidate DLF.
+    </div>
+  </div>
+</div>
+
+      <h3 style="color:#174a61;border-bottom:1px solid #ccc;padding-bottom:0.2em;margin-top:1.2em;">The week ahead</h3>
+        <div class="item" id="item-01c9a3294f">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.bea.gov/news/schedule" target="_blank" rel="noopener">U.S. Bureau of Economic Analysis (BEA)</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.bea.gov/news/schedule" target="_blank" rel="noopener" class="ill-icon-wrap" title="bea.gov"><img src="https://www.google.com/s2/favicons?domain=bea.gov&amp;sz=128" alt="bea.gov" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.bea.gov/news/schedule" target="_blank" rel="noopener">US Q3 2026 GDP (Second Estimate) and October PCE Inflation</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Ahead of the Thanksgiving holiday closure on Thursday, November 26, the U.S. Bureau of Economic Analysis will release two major macroeconomic reports simultaneously on Wednesday, November 25, 2026, at 8:30 a.m. EST. The Personal Income and Outlays release for October 2026 carries the headline and core Personal Consumption Expenditures (PCE) price indexes, the Federal Reserve&#39;s preferred inflation gauge. Alongside it, BEA publishes the second estimate of third-quarter 2026 Gross Domestic Product (GDP) and corporate profits. With no November FOMC rate meeting, this pre-holiday macro doubleheader is the marquee US data catalyst before December&#39;s Fed policy decision.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> October PCE inflation and Q3 GDP revisions set Treasury yield direction and rate expectations for your US equity and tech holdings.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-044fd9ae72">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://corporate.walmart.com/news/2026/11/Walmart-To-Host-Q3-Earnings-Call-Nov-19-2026" target="_blank" rel="noopener">Walmart Corporate</a>:</cite>
+      </td>
+      <td>
+<span>Sep 1</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://corporate.walmart.com/news/2026/11/Walmart-To-Host-Q3-Earnings-Call-Nov-19-2026" target="_blank" rel="noopener"><img class="ill" src="media/044fd9ae72.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://corporate.walmart.com/news/2026/11/Walmart-To-Host-Q3-Earnings-Call-Nov-19-2026" target="_blank" rel="noopener">Walmart (WMT) Q3 Earnings Release and Conference Call</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Walmart Inc. (NASDAQ: WMT) will report third-quarter earnings on Thursday, November 19, 2026, releasing financial results at 6:00 a.m. CST (7:00 a.m. EST) before US markets open. President and CEO John Furner and CFO John David Rainey will host a live investment-community conference call at 7:00 a.m. CST (8:00 a.m. EST). Operating more than 10,900 stores and eCommerce sites across 19 countries after generating $713 billion in fiscal 2026 revenue, Walmart&#39;s comparable sales, inventory mix, and holiday guidance serve as a critical bellwether for US consumer resilience and inflation pass-through.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Walmart&#39;s consumer spending read-through and holiday margin commentary shape broader US market regime and retail sector rotation.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-a9f827f4db">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.livemint.com/market/ipo/coal-indias-mahanadi-coalfields-ipo-price-band-set-at-rs-129-rs-136-per-share-check-gmp-issue-details-key-dates-11794795588725.html" target="_blank" rel="noopener">Mint</a>:</cite>
+      </td>
+      <td>
+<span>yesterday</span> · <span>3m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.livemint.com/market/ipo/coal-indias-mahanadi-coalfields-ipo-price-band-set-at-rs-129-rs-136-per-share-check-gmp-issue-details-key-dates-11794795588725.html" target="_blank" rel="noopener" class="ill-icon-wrap" title="livemint.com"><img src="https://www.google.com/s2/favicons?domain=livemint.com&amp;sz=128" alt="livemint.com" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.livemint.com/market/ipo/coal-indias-mahanadi-coalfields-ipo-price-band-set-at-rs-129-rs-136-per-share-check-gmp-issue-details-key-dates-11794795588725.html" target="_blank" rel="noopener">Mahanadi Coalfields IPO Opens Nov 19 (Coal India 10% Stake OFS)</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Coal India subsidiary Mahanadi Coalfields Ltd opens its mainboard IPO for public subscription from Thursday, November 19, through Monday, November 23, 2026 (IST), with anchor investor allocation scheduled on Wednesday, November 18, 2026 (IST). Priced at ₹129 to ₹136 per ₹2 face-value share in lots of 110 shares, the issue is a pure offer for sale of 66.18 crore shares representing a 10% Coal India stake; proceeds go entirely to Coal India. Allotment is tentatively slated for November 25, with BSE and NSE listing expected Friday, November 27, 2026 (IST). Mahanadi Coalfields supplied 21% of India&#39;s domestic coal output in FY26, posting ₹10,678 crore net profit on ₹30,550 crore revenue.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> A major PSU divestment testing Indian primary-market liquidity and institutional appetite for your India equity and macro tracking.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-ac93f23e22">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://investors.intuit.com/news-events/press-releases/detail/1330/intuit-to-announce-first-quarter-fiscal-year-2027-results-on-nov-19" target="_blank" rel="noopener">Intuit Investor Relations</a>:</cite>
+      </td>
+      <td>
+<span>Oct 29</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://investors.intuit.com/news-events/press-releases/detail/1330/intuit-to-announce-first-quarter-fiscal-year-2027-results-on-nov-19" target="_blank" rel="noopener"><img class="ill" src="media/ac93f23e22.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://investors.intuit.com/news-events/press-releases/detail/1330/intuit-to-announce-first-quarter-fiscal-year-2027-results-on-nov-19" target="_blank" rel="noopener">Intuit (INTU) Q1 FY27 Financial Results and Conference Call</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Intuit Inc. (Nasdaq: INTU) will release financial results for its fiscal first quarter 2027, covering the period ended October 31, on Thursday, November 19, 2026, following US market close. Executives will host a live earnings conference call at 1:30 p.m. PST (4:30 p.m. EST) via the company&#39;s investor relations calendar. As the parent of TurboTax, Credit Karma, QuickBooks, Mailchimp, and Intuit Enterprise Suite, Intuit&#39;s results provide a read-through on small-business software spending, consumer credit demand, and enterprise AI monetization across US mid-market and financial workflows.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Intuit&#39;s enterprise SaaS and AI-assistant adoption trends inform software valuation sentiment relevant to your US tech holdings.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-a15088cefa">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.opec.org/pr-detail/620-1-november-2026.html" target="_blank" rel="noopener">OPEC</a>:</cite>
+      </td>
+      <td>
+<span>Nov 1</span> · <span>2m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.opec.org/pr-detail/620-1-november-2026.html" target="_blank" rel="noopener"><img class="ill" src="media/a15088cefa.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.opec.org/pr-detail/620-1-november-2026.html" target="_blank" rel="noopener">OPEC+ Voluntary-Cut Producers Monthly Market Review Meeting</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Seven OPEC+ participating countries—Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, and Oman—are scheduled to hold their next monthly market-review meeting on Sunday, November 29, 2026 (CET / Vienna Secretariat time). At their November 1, 2026 virtual review, the seven voluntary-adjustment producers agreed to maintain September 2026 required production levels for December 2026 and reiterated their commitment to full conformity with the Declaration of Cooperation. Any shift in December or 2027 supply posture from the November 29 session directly affects crude oil pricing, inflation expectations, and India&#39;s energy import bill.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> OPEC+ output decisions affect crude prices, global inflation expectations, and India&#39;s macro current-account backdrop for your portfolio tracking.
+    </div>
+  </div>
+</div>
+
+      <h3 style="color:#174a61;border-bottom:1px solid #ccc;padding-bottom:0.2em;margin-top:1.2em;">Watch</h3>
+        <div class="item" id="item-56d3e4ab08">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=rx19JJ_9QJI" target="_blank" rel="noopener">Reuters</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>10m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=rx19JJ_9QJI" target="_blank" rel="noopener"><img class="ill" src="media/56d3e4ab08.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.youtube.com/watch?v=rx19JJ_9QJI" target="_blank" rel="noopener">Can Nvidia thrive after Jensen Huang’s exit and China chip curbs? | Reuters World News</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Reuters examines Nvidia&#39;s stronger-than-expected Q4 revenue forecast and what it signals for semiconductor investors following recent leadership turmoil and Jensen Huang&#39;s exit. The segment also details fresh US restrictions tightening Beijing&#39;s access to AI chips ahead of President Donald Trump&#39;s planned meeting with Chinese President Xi Jinping, placing Nvidia&#39;s near-term demand guidance alongside ongoing export-control risks.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Tracks the AI semiconductor bellwether and US-China export-control catalysts central to your US tech market watch.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-c8d87907e7">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=b_pCsP-au0k" target="_blank" rel="noopener">CNBC Television</a>:</cite>
+      </td>
+      <td>
+<span>today</span> · <span>5m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=b_pCsP-au0k" target="_blank" rel="noopener"><img class="ill" src="media/c8d87907e7.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.youtube.com/watch?v=b_pCsP-au0k" target="_blank" rel="noopener">Market Close: Ugly Stock Selloff, Nvidia Posts Strong Results, More Outages • 11/17/26</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Jessica Ettinger anchors CNBC&#39;s November 17 market-close wrap covering the broad Tuesday equity selloff alongside Nvidia&#39;s post-bell earnings release. The five-minute briefing summarizes the session&#39;s headline movers, Nvidia&#39;s strong quarterly results, and ongoing tech outage developments driving late-day market sentiment across US stocks.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Provides a concise five-minute US equity session wrap on Tuesday&#39;s selloff and Nvidia earnings reaction.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-b58022ae00">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=qYNywkIFXuo" target="_blank" rel="noopener">CNBC-TV18</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>26m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=qYNywkIFXuo" target="_blank" rel="noopener"><img class="ill" src="media/b58022ae00.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.youtube.com/watch?v=qYNywkIFXuo" target="_blank" rel="noopener">LIVE: Editors Discuss The Week Gone By &amp; Road Ahead For The Markets | Editors&#39; Roundtable | Nifty</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">CNBC-TV18&#39;s Editors&#39; Roundtable reviews the prior week&#39;s action across Nifty 50 and Sensex and outlines key domestic and global triggers shaping the week ahead for Indian equities. In a 26-minute discussion, the editorial desk breaks down major market moves, sector trends, and index outlook without stock-tipping hype.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Covers your Indian equities and Nifty/Sensex macro tracking with editorial context on weekly sector trends.
+    </div>
+  </div>
+</div>
+
+        <div class="item" id="item-0340ca9df9">
+  <table class="shrtbl">
+    <tr>
+      <td>
+        <cite><a href="https://www.youtube.com/watch?v=gw9lwW_DHY8" target="_blank" rel="noopener">Bloomberg Television</a>:</cite>
+      </td>
+      <td>
+<span>4 days ago</span> · <span>11m</span>      </td>
+    </tr>
+  </table>
+  <div class="ii">
+    <a href="https://www.youtube.com/watch?v=gw9lwW_DHY8" target="_blank" rel="noopener"><img class="ill" src="media/0340ca9df9.jpg" alt="" onerror="this.remove()"></a>
+    <strong class="L2"><a class="ourh" href="https://www.youtube.com/watch?v=gw9lwW_DHY8" target="_blank" rel="noopener">Stocks End Week Higher Amid Tech Turmoil | Closing Bell</a></strong>
+    &nbsp;&mdash;&nbsp;
+    <span class="item-summary">Bloomberg Television hosts Vonnie Quinn, Bailey Lipschultz, Carol Massar, and Tim Stenovec wrap up Friday&#39;s US market close after a volatile week marked by tech-sector turbulence. The 11-minute Closing Bell segment reviews how major US indexes finished the week higher despite pressure on mega-cap technology names and sets up key catalysts for the following trading week.</span>
+    <div class="item-why">
+      <strong>Takeaway:</strong> Adds broader US index and tech-turmoil context to pair with this week&#39;s follow-on market moves.
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <details>
+      <summary>Editorial & Pipeline Notes (13)</summary>
+      <ul>
+<li>13 candidate items were dropped before publication (dead links, stale or already-covered stories).</li><li>1 further lower-priority candidates were held back to keep the issue near its 130-minute reading target.</li><li>finance.us: summary of &#39;US Equities Slide for Fourth Straight Se&#39; is 136 words</li><li>industry.models: summary of &#39;OpenAI GPT-6.2 Astra and Sol launch with&#39; is 128 words</li><li>industry.models: summary of &#39;Microsoft AI launches seven MAI models a&#39; is 125 words</li><li>industry.models: summary of &#39;Hugging Face integrates OpenRouter as op&#39; is 122 words</li><li>papers.evals: summary of &#39;GEPA-Curator filters noisy agent failure&#39; is 122 words</li><li>world.india: summary of &#39;India posts record $89.99 billion in Oct&#39; is 123 words</li><li>world.india: summary of &#39;NPCI sets small-town UPI merchant incent&#39; is 123 words</li><li>world.ap_tg: could not fetch &#39;Waaree Energies plans Rs 150 billion gre&#39; to verify it</li><li>world.ap_tg: could not fetch &#39;HCA Global Services pre-leases 644,000 s&#39; to verify it</li><li>world.corridor: summary of &#39;USCIS H-1B extension deference comment w&#39; is 121 words</li><li>world.corridor: summary of &#39;Indian rupee gains 43 paise to close at &#39; is 123 words</li>      </ul>
+    </details>
+    <details>
+      <summary>All Sources & Citations (204)</summary>
+      <ol>
+        <li><a href="https://cryptobriefing.com/nvidia-earnings-q3-fiscal-2027-2026-11/" target="_blank" rel="noopener">Nvidia Beats Q3 FY27 Estimates, Forms National Security Committee After Huang Exit</a> &mdash; <cite>CryptoBriefing</cite></li>
+        <li><a href="https://www.indiatoday.in/india/story/cyclone-akvan-andhra-odisha-coast-landfall-november-20-imd-orange-alert-3040322-2026-11-16" target="_blank" rel="noopener">Cyclone Akvan Forms in Bay of Bengal Under IMD Orange Alert for Andhra Pradesh</a> &mdash; <cite>India Today</cite></li>
+        <li><a href="https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/" target="_blank" rel="noopener">Microsoft Flags Phishing Campaign Exploiting November 12 Exchange Online Outage</a> &mdash; <cite>Microsoft Security Blog</cite></li>
+        <li><a href="https://www.thehindu.com/news/national/world-needs-peace-stability-predictability-modi-in-manila/article71712862.ece" target="_blank" rel="noopener">Quad Leaders Meet in Manila, Announce 2027 Mumbai Forum and Maritime Patrols</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.tbsnews.net/economy/cop31-draft-calls-fossil-fuel-phaseout-least-120bn-adaptation-finance-1604866" target="_blank" rel="noopener">COP31 First Draft Cover Text Proposes Fossil Fuel Phaseout and $120B Adaptation Goal</a> &mdash; <cite>The Business Standard</cite></li>
+        <li><a href="https://www.kotakneo.com/news/stocks/urban-company-qip-attracts-15300-crore-bids-for-2500-crore-issue/" target="_blank" rel="noopener">Urban Company ₹2,500 Crore QIP Draws Reported ₹15,300 Crore in Institutional Bids</a> &mdash; <cite>Kotak Neo</cite></li>
+        <li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/17/stock-market-today-nov-17-stocks-slide-on-ai-chip-and-tech-pressures-salesforce-plummets-9/" target="_blank" rel="noopener">US Equities Slide for Fourth Straight Session as Dow Sheds 849 Points Ahead of Nvidia Print</a> &mdash; <cite>The Motley Fool</cite></li>
+        <li><a href="https://www.home.saxo/en-gb/content/articles/options/volatility-jumps-at-the-front-before-nvidia---options-brief---17-november-2026-17112026" target="_blank" rel="noopener">Front-End Volatility Inverts Above VIX at 22.91 with Elevated Skew Before Nvidia</a> &mdash; <cite>Saxo</cite></li>
+        <li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027" target="_blank" rel="noopener">NVIDIA Q3 FY27 Revenue Jumps 103% to $115.8B and Guides $130B Q4 Without China Data Center</a> &mdash; <cite>NVIDIA Newsroom</cite></li>
+        <li><a href="https://247wallst.com/cards/xpost-01m7mx0v2jxb1p1p5pdaqx3fm3" target="_blank" rel="noopener">10-Year Treasury Yield Pushes to 5.139% and 2-Year Hits 4.851% After US Economic Data</a> &mdash; <cite>24/7 Wall St.</cite></li>
+        <li><a href="https://www.tradingview.com/news/gurufocus:3ac55a47d094b:0-unitedhealth-stocks-fall-4-62-as-cms-proposes-wider-medicare-advantage-audits/" target="_blank" rel="noopener">UnitedHealth (UNH) Drops ~5% as CMS Proposes Retroactive Medicare Advantage Audits Back to 2018</a> &mdash; <cite>TradingView / GuruFocus</cite></li>
+        <li><a href="https://www.tradingview.com/news/gurufocus:651c349da094b:0-alphabet-stocks-decline-3-1-as-10-billion-anthropic-buy-lifts-stake-before-ipo/" target="_blank" rel="noopener">Alphabet (GOOG) Declines as $10B Anthropic Private Placement Lifts Stake to ~$132.4B Before IPO</a> &mdash; <cite>TradingView / GuruFocus</cite></li>
+        <li><a href="https://247wallst.com/investing/etf/2026/11/17/tsmc-is-sliding-before-nvidia-reports-your-chip-etf-is-taking-the-hit/" target="_blank" rel="noopener">TSMC (TSM) Slides ~4% Ahead of Nvidia Results, Dragging Semiconductor ETFs Lower</a> &mdash; <cite>24/7 Wall St.</cite></li>
+        <li><a href="https://www.kucoin.com/news/flash/msci-removes-strategy-from-major-indices-could-trigger-1-6b-in-share-sales" target="_blank" rel="noopener">Strategy (MSTR) Faces $1.6B–$2.8B Passive Selling from November 30 MSCI Index Removal</a> &mdash; <cite>KuCoin News</cite></li>
+        <li><a href="https://www.trefis.com/stock/anet/articles/624988/management-raised-the-bar-for-arista-networks-stock-does-the-chart-agree/2026-11-13" target="_blank" rel="noopener">Arista Networks (ANET) Holds Stage 2 Averages at 54.9x Earnings Following Q3 Guidance Hike</a> &mdash; <cite>Trefis</cite></li>
+        <li><a href="https://www.indiatoday.in/business/market/story/dalal-street-extends-winning-streak-sensex-up-427-points-nifty-above-25350-3040722-2026-11-17" target="_blank" rel="noopener">Sensex rises 427 points to 82,532 and Nifty 50 ends at 25,387 as PSU banks and realty lead</a> &mdash; <cite>India Today</cite></li>
+        <li><a href="https://www.financialexpress.com/market/fiis-buy-rs-4195-crore-diis-join-in-3-factors-supporting-market-sentiment-4387035/" target="_blank" rel="noopener">FIIs buy ₹4,195 crore and DIIs add ₹197 crore as softer crude buoys large-caps</a> &mdash; <cite>The Financial Express</cite></li>
+        <li><a href="https://www.5paisa.com/blog/nifty-weekly-expiry-17-november-2026-25400-resistance-25300-support" target="_blank" rel="noopener">Nifty weekly expiry options show 1.43 PCR with 25,500 call wall capping upside</a> &mdash; <cite>5paisa</cite></li>
+        <li><a href="https://indianexpress.com/article/business/rbi-reiterates-demand-listing-tata-sons-nbfc-noel-tata-n-chandrasekaran-upper-layer-norms-group-rift-10965810/" target="_blank" rel="noopener">RBI explicitly reiterates mandatory listing rule for Tata Sons under NBFC-UL norms</a> &mdash; <cite>The Indian Express</cite></li>
+        <li><a href="https://economictimes.indiatimes.com/markets/stocks/news/laurus-labs-shares-rally-over-5-as-promoters-rule-out-further-stake-sale/articleshow/135920319.cms" target="_blank" rel="noopener">Laurus Labs rallies over 5% as promoters rule out further stake sales after Monday drop</a> &mdash; <cite>The Economic Times</cite></li>
+        <li><a href="https://www.businesstoday.in/markets/stocks/story/defence-stock-astra-microwave-shares-rise-2-jefferies-sees-21-upside-heres-why-567563-2026-11-16" target="_blank" rel="noopener">Astra Microwave gains 2% as Jefferies keeps ₹2,055 target on 33.4% Q2 margin beat</a> &mdash; <cite>Business Today</cite></li>
+        <li><a href="https://www.livemint.com/market/stock-market-news/td-power-systems-share-price-soars-over-9-dividend-declared-q2-profit-more-than-doubles-should-you-buy-11794548122280.html" target="_blank" rel="noopener">TD Power Systems jumps over 9% on doubled Q2 PAT, ₹0.65 dividend with Nov 18 record date</a> &mdash; <cite>Mint</cite></li>
+        <li><a href="https://kalkinemedia.com/in/news/announcements/manorama-industries-nsemanorama-q2-h1-fy27-earnings-call-highlights-and-leadership-changes" target="_blank" rel="noopener">Manorama Industries Q2 transcript highlights 41.9% revenue growth and ₹252 crore cash outflow</a> &mdash; <cite>Kalkine Media</cite></li>
+        <li><a href="https://www.business-standard.com/markets/news/nifty-realty-index-surges-14-in-november-dlf-hits-52-week-high-126111700239_1.html" target="_blank" rel="noopener">Nifty Realty rallies 14% in November as shortlist name DLF hits 52-week high of ₹773.65</a> &mdash; <cite>Business Standard</cite></li>
+        <li><a href="https://www.bea.gov/news/schedule" target="_blank" rel="noopener">US Q3 2026 GDP (Second Estimate) and October PCE Inflation</a> &mdash; <cite>U.S. Bureau of Economic Analysis (BEA)</cite></li>
+        <li><a href="https://corporate.walmart.com/news/2026/11/Walmart-To-Host-Q3-Earnings-Call-Nov-19-2026" target="_blank" rel="noopener">Walmart (WMT) Q3 Earnings Release and Conference Call</a> &mdash; <cite>Walmart Corporate</cite></li>
+        <li><a href="https://www.livemint.com/market/ipo/coal-indias-mahanadi-coalfields-ipo-price-band-set-at-rs-129-rs-136-per-share-check-gmp-issue-details-key-dates-11794795588725.html" target="_blank" rel="noopener">Mahanadi Coalfields IPO Opens Nov 19 (Coal India 10% Stake OFS)</a> &mdash; <cite>Mint</cite></li>
+        <li><a href="https://investors.intuit.com/news-events/press-releases/detail/1330/intuit-to-announce-first-quarter-fiscal-year-2027-results-on-nov-19" target="_blank" rel="noopener">Intuit (INTU) Q1 FY27 Financial Results and Conference Call</a> &mdash; <cite>Intuit Investor Relations</cite></li>
+        <li><a href="https://www.opec.org/pr-detail/620-1-november-2026.html" target="_blank" rel="noopener">OPEC+ Voluntary-Cut Producers Monthly Market Review Meeting</a> &mdash; <cite>OPEC</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=rx19JJ_9QJI" target="_blank" rel="noopener">Can Nvidia thrive after Jensen Huang’s exit and China chip curbs? | Reuters World News</a> &mdash; <cite>Reuters</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=b_pCsP-au0k" target="_blank" rel="noopener">Market Close: Ugly Stock Selloff, Nvidia Posts Strong Results, More Outages • 11/17/26</a> &mdash; <cite>CNBC Television</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=qYNywkIFXuo" target="_blank" rel="noopener">LIVE: Editors Discuss The Week Gone By &amp; Road Ahead For The Markets | Editors&#39; Roundtable | Nifty</a> &mdash; <cite>CNBC-TV18</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=gw9lwW_DHY8" target="_blank" rel="noopener">Stocks End Week Higher Amid Tech Turmoil | Closing Bell</a> &mdash; <cite>Bloomberg Television</cite></li>
+        <li><a href="https://www.sciencealert.com/some-ketogenic-diets-may-increase-inflammation-and-mitochondrial-stress" target="_blank" rel="noopener">Ketogenic fat sources alter mitochondrial stress and inflammation in mice</a> &mdash; <cite>ScienceAlert</cite></li>
+        <li><a href="https://link.springer.com/article/10.1038/s44321-026-00552-z" target="_blank" rel="noopener">Ketogenic diet protects diabetic mouse kidneys while raising calcium and lipid deposits</a> &mdash; <cite>EMBO Molecular Medicine</cite></li>
+        <li><a href="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1968751/full" target="_blank" rel="noopener">Inulin-enriched Mediterranean keto preserves gut diversity and butyrate better than classical keto</a> &mdash; <cite>Frontiers in Microbiology</cite></li>
+        <li><a href="https://health.clevelandclinic.org/keto-flu" target="_blank" rel="noopener">Registered dietitian guide to replacing electrolytes and hydration during keto adaptation</a> &mdash; <cite>Cleveland Clinic</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=2y3Vx1-wYHM" target="_blank" rel="noopener">Gongura Egg Curry | గుమగుమలాడే గోంగూర గుడ్డు కూర | Andhra Style Egg Gravy</a> &mdash; <cite>Malavika Chef</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=rW7R9_6GBiI" target="_blank" rel="noopener">వేళ్లు జుర్రుకునేంత రుచిగాఉండే వంకాయటమాటో పచ్చి పులుసు😋 Vankaya Pachi Pulusu In Telugu👌 Pachi Pulusu</a> &mdash; <cite>Amma Chethi Vanta</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=huUB-6pXyEo" target="_blank" rel="noopener">The Effect of Suppressing Ketosis on GKI &amp; Liver Biomarkers in Healthy Females | Dr Isabella Cooper</a> &mdash; <cite>Preventive Health Collaboration</cite></li>
+        <li><a href="https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview/" target="_blank" rel="noopener">GitHub Copilot Evals enters public preview for skills, custom agents, and MCP tools</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://www.langchain.com/blog/we-rebuilt-langsmith-around-the-agent" target="_blank" rel="noopener">LangSmith reorganizes around a persistent agent record across build, eval, and governance</a> &mdash; <cite>LangChain Blog</cite></li>
+        <li><a href="https://opencode.ai/changelog" target="_blank" rel="noopener">OpenCode v2.3.1 shifts timed-out shell commands and compaction to the background</a> &mdash; <cite>OpenCode Changelog</cite></li>
+        <li><a href="https://openchamber.dev/changelog/" target="_blank" rel="noopener">OpenChamber v2.7.2 adds teammate share pages, agent timers, and browser voice dictation</a> &mdash; <cite>OpenChamber Changelog</cite></li>
+        <li><a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">Claude Code 2.1.327 adds stdin MCP JSON input and /status configuration diagnostics</a> &mdash; <cite>Claude Code Docs</cite></li>
+        <li><a href="https://github.com/openai/codex/releases/tag/rust-v0.169.0" target="_blank" rel="noopener">OpenAI Codex CLI v0.169.0 brings multi-tab side chats and terminal provider setup</a> &mdash; <cite>GitHub Releases (openai/codex)</cite></li>
+        <li><a href="https://techcommunity.microsoft.com/blog/agent-365-blog/whats-new-in-microsoft-agent-365-ignite-2026/4571753" target="_blank" rel="noopener">Microsoft Expands Agent 365 into an Enterprise AI Observability Platform at Ignite 2026</a> &mdash; <cite>Microsoft Community Hub</cite></li>
+        <li><a href="https://sierra.ai/blog/releasing-poppy" target="_blank" rel="noopener">Sierra Releases Personal Agent Protocol 1.0 (Poppy) with Shopify and 100+ Design Partners</a> &mdash; <cite>Sierra</cite></li>
+        <li><a href="https://news.adobe.com/news/2026/11/adobe-agentic-ai-content-supply-chain" target="_blank" rel="noopener">Adobe Brings CX Enterprise Coworker and Brand Intelligence Updates to GenStudio</a> &mdash; <cite>Adobe Newsroom</cite></li>
+        <li><a href="https://decagon.ai/blog/missions" target="_blank" rel="noopener">Decagon Launches Missions for Multi-Week Autonomous Customer Workflows</a> &mdash; <cite>Decagon</cite></li>
+        <li><a href="https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Autonomous-CRM-Engine-enables-fast-CRM-deployments-that-free-enterprises-from-legacy-platforms/default.aspx" target="_blank" rel="noopener">ServiceNow Launches Autonomous CRM Engine to Accelerate Legacy CRM Migrations</a> &mdash; <cite>ServiceNow Newsroom</cite></li>
+        <li><a href="https://artificialanalysis.ai/articles/openai-has-the-2-model-in-the-intelligence-index-with-the-release-of-gpt-6-2-astra-and-gpt-6-2-sol" target="_blank" rel="noopener">OpenAI GPT-6.2 Astra and Sol launch with 20% Astra price cut, rank #2 on Artificial Analysis</a> &mdash; <cite>Artificial Analysis</cite></li>
+        <li><a href="https://microsoft.ai/news/microsoft-ignite-2026/" target="_blank" rel="noopener">Microsoft AI launches seven MAI models across coding, realtime voice, routing, and security</a> &mdash; <cite>Microsoft AI</cite></li>
+        <li><a href="https://github.blog/changelog/2026-11-17-github-copilot-fusion-updates-more-availability-benchmarks-and-models/" target="_blank" rel="noopener">Copilot Fusion Max hits 71.2% on Terminal-Bench 4.1, adds Sonnet 5.5 and MAI-Code-2</a> &mdash; <cite>GitHub Changelog</cite></li>
+        <li><a href="https://www.alibabacloud.com/help/en/model-studio/qwen4-max" target="_blank" rel="noopener">Alibaba ships Qwen4-Max API with 1M context and OpenAI/Anthropic protocol support</a> &mdash; <cite>Alibaba Cloud</cite></li>
+        <li><a href="https://huggingface.co/blog/openrouter" target="_blank" rel="noopener">Hugging Face integrates OpenRouter as open-weight models hit 71.7% token share</a> &mdash; <cite>Hugging Face</cite></li>
+        <li><a href="https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold" target="_blank" rel="noopener">Google GTIG documents offensive agent harnesses and coding-agent config tampering</a> &mdash; <cite>Google Cloud Blog</cite></li>
+        <li><a href="https://cursor.com/blog/security-incident-update" target="_blank" rel="noopener">Cursor traces extension cache compromise to leaked Fireworks AI key and unredacted agent logs</a> &mdash; <cite>Cursor Blog</cite></li>
+        <li><a href="https://www.infoq.com/news/2026/11/uber-secure-ai-framework/" target="_blank" rel="noopener">Uber&#39;s Secure AI Framework adds behavioral authorization and runtime hooks for agents</a> &mdash; <cite>InfoQ</cite></li>
+        <li><a href="https://github.com/stanfordnlp/dspy/releases/tag/3.5.0" target="_blank" rel="noopener">DSPy 3.5.0 graduates GEPA, RLM and Flex and swaps in the lightweight lm15 engine</a> &mdash; <cite>GitHub (stanfordnlp/dspy)</cite></li>
+        <li><a href="https://github.com/vllm-project/vllm/releases/tag/v0.34.0" target="_blank" rel="noopener">vLLM v0.34.0 removes Model Runner V1 and turns on extensible KV cache by default</a> &mdash; <cite>GitHub (vllm-project/vllm)</cite></li>
+        <li><a href="https://www.lmsys.org/blog/2026-11-17-sglang-summit-recap" target="_blank" rel="noopener">Nine founding members launch the SGLang Consortium as maintainers preview SGLang v1.0</a> &mdash; <cite>LMSYS Org</cite></li>
+        <li><a href="https://pydantic.dev/articles/azure-durable-task-pydantic-ai" target="_blank" rel="noopener">Pydantic AI Harness adds AzureDurableTaskDurability for crash-resilient agent loops</a> &mdash; <cite>Pydantic</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=e_m99aR7_3Q" target="_blank" rel="noopener">Optimizing AI Agents: Prompts vs. Weights (GEPA, GRPO) | Stanford CS329Z Lecture 9 with Michael Ryan</a> &mdash; <cite>Stanford Online</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=c_ZNVL0aCNQ" target="_blank" rel="noopener">Phoenix MCP: Debug AI Agents 17x Cheaper with SQL + Code Mode</a> &mdash; <cite>Arize AI</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=RvJ6UpR2oj8" target="_blank" rel="noopener">Why your AI agent keeps forgetting (and getting slower)</a> &mdash; <cite>Google Cloud Tech</cite></li>
+        <li><a href="https://runta.com/blog/introducing-frontierharness-eval-v1-1/" target="_blank" rel="noopener">FrontierHarness Eval v1.1: Best Agent Harness Depends on the Model</a> &mdash; <cite>Runta</cite></li>
+        <li><a href="https://arxiv.org/html/2611.14320v1" target="_blank" rel="noopener">WikiTrace: Evidence-Linked Memory Cuts Memory-Induced Agent Regressions</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/html/2611.04277v1" target="_blank" rel="noopener">Harness-S: Rescuing Base-Harness Failures with Sibling Harnesses in RL</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.07222" target="_blank" rel="noopener">SPILLWAY: Deterministic Target Admission to Stop Prompt Injection in Tool Calls</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.11995" target="_blank" rel="noopener">Infrathon: Evaluating Agents on 24-Hour AI Infrastructure Optimization</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/html/2610.37651v1" target="_blank" rel="noopener">GEPA-Curator: Filtering Noisy Tasks in Reflective Prompt Optimization</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.12122" target="_blank" rel="noopener">System Optimizations for Cost-Efficient Agent Harnesses</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.19237" target="_blank" rel="noopener">Auditable Authorization for LLM Agents: Empirical Evidence Across Model, Harness, and Workflow Layers</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.13176" target="_blank" rel="noopener">SHADOWPREFILL: Keeping Your Next Model Warm for Per-Step Model Routing in Agentic LLM Serving</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.37651" target="_blank" rel="noopener">GEPA-Curator filters noisy agent failures and retrieves winning trajectories to boost prompt optimization</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.00491" target="_blank" rel="noopener">VoirDire calibrates multi-judge LLM panels using counterfactual nuisance rewrites</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.25852" target="_blank" rel="noopener">MASIF tracks implicit mid-trajectory failures for multi-agent process observability</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2610.20667" target="_blank" rel="noopener">Pairwise judging over saturated benchmark transcripts still predicts held-out agent capability</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=9QebvrrY3KY" target="_blank" rel="noopener">Claude for Long-Horizon Tasks — Lance Martin, Anthropic</a> &mdash; <cite>AI Engineer</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=vtugjs2chdA" target="_blank" rel="noopener">Context Engineering Our Way to Long-Horizon Agents: LangChain’s Harrison Chase</a> &mdash; <cite>Sequoia Capital</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=0X1ZU4UkH3w" target="_blank" rel="noopener">Harness Engineering or How to Keep Agents on Track - Iury Souza | next app devCon 2026</a> &mdash; <cite>nextapp devCon</cite></li>
+        <li><a href="https://www.timeanddate.com/astronomy/meteor-shower/leonids.html" target="_blank" rel="noopener">Leonid Meteor Shower Peaks Tonight Over San Jose Under Dark Pre-Dawn Skies</a> &mdash; <cite>timeanddate.com</cite></li>
+        <li><a href="https://earthsky.org/astronomy-essentials/mercury-before-sunrise-greatest-elongation-west/" target="_blank" rel="noopener">Mercury Reaches Greatest Western Elongation Alongside Venus Before Dawn (Nov. 20-21)</a> &mdash; <cite>EarthSky</cite></li>
+        <li><a href="https://www.quantamagazine.org/what-is-the-metabolism-first-theory-for-the-origin-of-life-20261111/" target="_blank" rel="noopener">How a Metabolic Spark Could Have Jump-Started Life</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://www.stjude.org/media-resources/news-releases/2026-medicine-science-news/alzheimers-disease-protein-atlas-reveals-hidden-cell-type-biology.html" target="_blank" rel="noopener">Alzheimer&#39;s Disease Protein Atlas Uncovers Hidden Cell-Type Biology</a> &mdash; <cite>St. Jude Children&#39;s Research Hospital</cite></li>
+        <li><a href="https://www.sciencealert.com/a-gene-inherited-from-neanderthals-is-still-shaping-human-brains-and-may-affect-schizophrenia-risk" target="_blank" rel="noopener">Neanderthal Gene Variant Still Shapes Modern Occipital Lobes and Schizophrenia Odds</a> &mdash; <cite>ScienceAlert</cite></li>
+        <li><a href="https://www.uclahealth.org/news/release/ucla-researchers-discover-new-approach-treating-autism-and" target="_blank" rel="noopener">Enhancer-Targeted CRISPR Boosts Healthy Gene Copies in Autism Brain Models</a> &mdash; <cite>UCLA Health</cite></li>
+        <li><a href="https://www.nature.com/articles/s44513-026-00008-2" target="_blank" rel="noopener">Reassessing the Taung Child and Southern Africa&#39;s Early Hominin Diversity</a> &mdash; <cite>npj Palaeoecosystems</cite></li>
+        <li><a href="https://www.nature.com/articles/s43587-026-01234-8" target="_blank" rel="noopener">Transcriptomic Reprogramming Screen Identifies SRSF1 as an Aging Regulator</a> &mdash; <cite>Nature Aging</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=wCRzZ0ccP_0" target="_blank" rel="noopener">AI Is Breaking Math. Will It Solve Physics Next?</a> &mdash; <cite>PBS Space Time</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=fEjvSbI_PT4" target="_blank" rel="noopener">Dying Is Complicated</a> &mdash; <cite>Kurzgesagt – In a Nutshell</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=72nUP-tkm7s" target="_blank" rel="noopener">Zoom into Euclid’s 500 gigapixel mosaic of the Universe</a> &mdash; <cite>European Space Agency, ESA</cite></li>
+        <li><a href="https://www.al-monitor.com/originals/2026/11/us-iran-exchange-fire-despite-talks-mediators" target="_blank" rel="noopener">US and Iran exchange strikes around Strait of Hormuz amid Oman and Qatar talks</a> &mdash; <cite>Al-Monitor</cite></li>
+        <li><a href="https://www.theguardian.com/business/2026/nov/13/global-oil-supply-returns-to-surplus-for-first-time-since-start-of-iran-war-says-iea" target="_blank" rel="noopener">IEA says global oil supply swung back to surplus in October as Gulf exports recovered</a> &mdash; <cite>The Guardian</cite></li>
+        <li><a href="https://www.asiamediacentre.org.nz/trump-in-manila-asean-scam-pact-quad-minerals-deals" target="_blank" rel="noopener">Quad leaders pledge critical minerals security as US signs Thailand trade deal in Manila</a> &mdash; <cite>Asia Media Centre</cite></li>
+        <li><a href="https://www.aljazeera.com/economy/2026/11/17/china-canada-expand-tariff-relief-after-carney-xi-meeting" target="_blank" rel="noopener">China and Canada expand bilateral tariff relief at Shenzhen APEC sidelines</a> &mdash; <cite>Al Jazeera</cite></li>
+        <li><a href="https://gcaptain.com/eu-targets-shadow-fleet-shipowners-managers-and-insurers-in-new-russia-sanctions/" target="_blank" rel="noopener">EU sanctions Russian shadow-fleet managers, insurers, and third-country oil traders</a> &mdash; <cite>gCaptain</cite></li>
+        <li><a href="https://united24media.com/world/russias-energy-strikes-risk-triggering-a-nuclear-accident-in-ukraine-24422" target="_blank" rel="noopener">Regulators from 38 nations warn Russian grid strikes risk nuclear accident in Ukraine</a> &mdash; <cite>UNITED24 Media</cite></li>
+        <li><a href="https://ecfr.eu/article/rearming-without-china-time-to-secure-europes-military-supply-chains/" target="_blank" rel="noopener">ECFR analysis: Beijing&#39;s dual-use export bans expose Europe&#39;s military mineral dependence</a> &mdash; <cite>European Council on Foreign Relations</cite></li>
+        <li><a href="https://www.thehindu.com/business/Economy/wholesale-price-inflation-october-government-data/article71707046.ece" target="_blank" rel="noopener">Wholesale inflation climbs to 12.3% in October, intensifying RBI rate pressure</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://timesofindia.indiatimes.com/business/india-business/indias-exports-jump-29-9-to-89-99-billion-in-october-overall-trade-deficit-narrows/articleshow/135797333.cms" target="_blank" rel="noopener">India posts record $89.99 billion in October exports as overall trade gap narrows</a> &mdash; <cite>The Times of India</cite></li>
+        <li><a href="https://www.business-standard.com/markets/news/sebi-sets-up-expert-panel-to-review-ipo-fpo-and-capital-raising-norms-126111601512_1.html" target="_blank" rel="noopener">SEBI forms Ashish Chauhan-led panel to simplify IPO, FPO and QIP rules</a> &mdash; <cite>Business Standard</cite></li>
+        <li><a href="https://indianstartupnews.com/news/mdr-on-upi-is-still-on-hold-but-npci-has-already-decided-how-part-of-it-will-be-spent-12806682" target="_blank" rel="noopener">NPCI sets small-town UPI merchant incentives funded by future MDR</a> &mdash; <cite>Indian Startup News</cite></li>
+        <li><a href="https://psuwatch.com/newsupdates/over-3-lakh-claims-for-unclaimed-funds-of-deceased-persons-in-banks-processed-centre-to-sc" target="_blank" rel="noopener">Supreme Court reserves verdict on unclaimed financial assets database as ₹6,453 crore returned</a> &mdash; <cite>PSU Watch</cite></li>
+        <li><a href="https://www.thenewsminute.com/karnataka/bengaluru-tech-summit-2026-to-open-on-nov-17-with-a-focus-on-ai-deeptech-and-robotics" target="_blank" rel="noopener">Bengaluru Tech Summit 2026 opens with AI, deeptech, and robotics showcase</a> &mdash; <cite>The News Minute</cite></li>
+        <li><a href="https://thefederal.com/category/states/south/andhra-pradesh/amaravati-lessons-why-andhra-pradesh-wants-an-investment-protection-act-263226" target="_blank" rel="noopener">Andhra Pradesh plans Investment Protection Act to shield projects across government transitions</a> &mdash; <cite>The Federal</cite></li>
+        <li><a href="https://timesofindia.indiatimes.com/city/hyderabad/telangana-ap-among-top-states-in-cash-transfer-spending-as-share-of-revenue/articleshow/135938560.cms" target="_blank" rel="noopener">Telangana and Andhra Pradesh rank among top Indian states in cash-transfer share of 2026-27 budgets</a> &mdash; <cite>The Times of India</cite></li>
+        <li><a href="https://economictimes.indiatimes.com/news/new-updates/telangana-prepares-rs-18000-crore-bharat-future-city-plan-based-on-work-live-learn-and-play-concept-heres-whats-in-store/articleshow/135921650.cms" target="_blank" rel="noopener">Telangana prepares Rs 18,000-crore Bharat Future City master plan across 30,000 acres</a> &mdash; <cite>The Economic Times</cite></li>
+        <li><a href="https://www.business-standard.com/industry/news/water-shortage-won-t-hinder-visakhapatnam-data-centre-growth-naidu-126111301579_1.html" target="_blank" rel="noopener">Polavaram slated for March 2027 to backstop Visakhapatnam&#39;s 6 GW data-centre pipeline</a> &mdash; <cite>Business Standard</cite></li>
+        <li><a href="https://www.constructionworld.in/energy-infrastructure/power-and-renewable-energy/waaree-energies-plans-rs.-150-bn-green-ammonia-plant-in-andhra/100346" target="_blank" rel="noopener">Waaree Energies plans Rs 150 billion green ammonia plant at Kakinada SEZ near Gateway Port</a> &mdash; <cite>Construction World</cite></li>
+        <li><a href="https://www.constructionworld.in/policy-updates-and-economic-news/hca-global-services-pre-leases-644000-sq-ft-at-mindspace/100456" target="_blank" rel="noopener">HCA Global Services pre-leases 644,000 sq ft in Hyderabad as GCC office leasing climbs 70%</a> &mdash; <cite>Construction World</cite></li>
+        <li><a href="https://www.uschamber.com/immigration/comment-on-nprm-removing-deference-to-prior-uscis-determinations-of-eligibility" target="_blank" rel="noopener">USCIS H-1B extension deference comment window closes with U.S. Chamber warning of RFE surge</a> &mdash; <cite>U.S. Chamber of Commerce</cite></li>
+        <li><a href="https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity/" target="_blank" rel="noopener">US, India, and eight partners sign San Francisco Declaration on AI supply-chain security</a> &mdash; <cite>U.S. Department of State</cite></li>
+        <li><a href="https://www.sebi.gov.in/legal/circulars/nov-2026/reporting-requirement-under-foreign-account-tax-compliance-act-fatca-and-common-reporting-standard-crs-revised-through-income-tax-act-2025-read-with-income-tax-rules-2026_105705.html" target="_blank" rel="noopener">SEBI updates FATCA and CRS KYC reporting norms under Income-Tax Rules, 2026</a> &mdash; <cite>Securities and Exchange Board of India (SEBI)</cite></li>
+        <li><a href="https://www.thehindu.com/business/Industry/rupee-rises-43-paise-to-close-at-9351-provisional-against-us-dollar/article71711483.ece" target="_blank" rel="noopener">Indian rupee gains 43 paise to close at 93.51 per US dollar on FII inflows</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=_4aXTGiiCp0" target="_blank" rel="noopener">Jensen Huang resigns as Nvidia CEO: what it means for the “AI bubble” | The Economist</a> &mdash; <cite>The Economist</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=kgTJsjZV8-A" target="_blank" rel="noopener">Western allies boost Ukraine&#39;s defenses but clash over deep strikes | DW News</a> &mdash; <cite>DW News</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=TK5-S7Lg7HI" target="_blank" rel="noopener">Quad Clout Grows: What&#39;s in it For India Amid Trump&#39;s New China Moves | Spotlight</a> &mdash; <cite>Firstpost</cite></li>
+        <li><a href="https://www.tribuneindia.com/news/sports/hong-kong-open-satwik-chirag-fight-back-from-four-match-points-to-end-first-round-jinx/" target="_blank" rel="noopener">Satwik-Chirag save four match points to snap first-round slump at Hong Kong Open</a> &mdash; <cite>The Tribune</cite></li>
+        <li><a href="https://www.theguardian.com/sport/live/2026/nov/17/alexander-zverev-v-ben-shelton-atp-finals-tennis-group-stage-live" target="_blank" rel="noopener">Zverev defeats Shelton in straight sets to reach ATP Finals semifinals in Turin</a> &mdash; <cite>The Guardian</cite></li>
+        <li><a href="https://www.livemint.com/sports/news/new-high-in-indian-badminton-lakshya-sens-japan-masters-triumph-captures-indias-best-ever-bwf-world-tour-season-11794739941524.html" target="_blank" rel="noopener">Lakshya Sen wins Kumamoto Masters to cap India&#39;s record nine-title BWF season</a> &mdash; <cite>Mint</cite></li>
+        <li><a href="https://tennisuptodate.com/atp/atp-finals-2026-results-standings-draw-entry-list-schedule-prize-money-history-and-format" target="_blank" rel="noopener">ATP Finals 2026 draw, standings and schedule: Alcaraz leads Lendl Group; Sinner and Djokovic absent</a> &mdash; <cite>TennisUpToDate</cite></li>
+        <li><a href="https://tennisuptodate.com/wta/wta-finals-2026-results-schedule-draw-field-prize-money-history-and-format" target="_blank" rel="noopener">WTA Finals 2026 recap and draw: Andreeva wins Indian Wells title as Sabalenka exits in groups</a> &mdash; <cite>TennisUpToDate</cite></li>
+        <li><a href="https://www.tribuneindia.com/news/sports/lakshya-sen-eyes-bwf-world-tour-finals-berth-at-hong-kong-open-2026/" target="_blank" rel="noopener">Hong Kong Open draw and Race to Finals: Lakshya Sen needs semifinal run to lock Hangzhou spot</a> &mdash; <cite>The Tribune</cite></li>
+        <li><a href="https://www.thehindu.com/sport/cricket/ipl-2027-retention-live-updates-team-wise-full-list-of-retained-released-players-mi-csk-rcb-kkr-dc-pbks-srh-rr-gt-lsg/article71711351.ece" target="_blank" rel="noopener">MS Dhoni retires from IPL playing duty as franchises lock in 2027 retentions</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.formula1.com/en/latest/article/its-race-week-5-storylines-were-excited-about-ahead-of-the-2026-las-vegas-grand-prix.3fjavheTbHD8fjZI0i7BWd" target="_blank" rel="noopener">Verstappen chases P2 record as Formula 1 heads into Las Vegas triple-header</a> &mdash; <cite>Formula 1</cite></li>
+        <li><a href="https://www.icc-cricket.com/news/bowlers-guide-india-to-odi-series-win-over-new-zealand" target="_blank" rel="noopener">India defend 209 to beat New Zealand by 22 runs and seal 3-1 ODI series win</a> &mdash; <cite>ICC</cite></li>
+        <li><a href="https://www.theguardian.com/football/2026/nov/15/spain-england-nations-league-match-report" target="_blank" rel="noopener">Ten-man England stun Spain 3-2 in Madrid to top Nations League group</a> &mdash; <cite>The Guardian</cite></li>
+        <li><a href="https://racingnews365.com/adrian-newey-makes-important-claim-about-aston-martin-and-disappointed-honda" target="_blank" rel="noopener">Newey says &#39;disappointed&#39; Honda and Aston Martin remain focused on F1 turnaround</a> &mdash; <cite>RacingNews365</cite></li>
+        <li><a href="https://www.joinshuttlelab.com/learn/scared-at-the-net-badminton-doubles" target="_blank" rel="noopener">Stop Flinching at the Net in Doubles by Fixing Court Depth and Racket Height</a> &mdash; <cite>Shuttle Lab</cite></li>
+        <li><a href="https://www.joinshuttlelab.com/learn/badminton-doubles-receiving-stance" target="_blank" rel="noopener">Where to Stand and Load Weight When Receiving Serve in Doubles</a> &mdash; <cite>Shuttle Lab</cite></li>
+        <li><a href="https://www.racket-world.de/Yonex-Subaxia-GT-Wide-Review" target="_blank" rel="noopener">Yonex Subaxia GT Wide In-Store Fit and Cushioning Review</a> &mdash; <cite>Racket World</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=bz8w_excTJk" target="_blank" rel="noopener">Fils-Jodar Battle, Zverev Takes on Shelton ⚔️ | Nitto ATP Finals Highlights Day 3</a> &mdash; <cite>Tennis TV</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=z_VIRtgNALs" target="_blank" rel="noopener">Akane Yamaguchi vs Wang Zhi Yi | Blockbuster final with moments of magic</a> &mdash; <cite>BWF TV</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=0MhcEdcMFfE" target="_blank" rel="noopener">Unheard Radio: Exclusive Radio From Lewis Hamilton&#39;s First Win For Ferrari</a> &mdash; <cite>FORMULA 1</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/news/2026/Nov/14/anil-ravipudi-to-direct-jr-ntr-in-his-next-film" target="_blank" rel="noopener">Jr NTR and director Anil Ravipudi announce their next Telugu film under NTR Arts</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://www.deccanchronicle.com/tabloid/hyderabad-chronicle/dulquers-popularity-soars-in-andhra-2004909" target="_blank" rel="noopener">Allu Arjun unveils Aakasamlo Oka Tara trailer with Dulquer Salmaan ahead of November 20 release</a> &mdash; <cite>Deccan Chronicle</cite></li>
+        <li><a href="https://www.filmibeat.com/telugu/news/2026/ranabaali-ott-release-date-platform-when-where-to-watch-vijay-deverakonda-rashmika-mandanna-film-537809.html" target="_blank" rel="noopener">Vijay Deverakonda and Rashmika Mandanna&#39;s Ranabaali arrives on Netflix in five languages</a> &mdash; <cite>Filmibeat</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/review/2026/Nov/13/itlu-arjuna-movie-review-a-refreshing-love-story-with-an-interesting-thriller-angle" target="_blank" rel="noopener">Itlu Arjuna review: Cinema Express gives debutant Aniesh&#39;s action-romance 3 out of 5</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://www.123telugu.com/mnews/dnk-collects-rs-10-15-crore-in-3-days-makers-say-film-enters-profit-zone-hk.html" target="_blank" rel="noopener">DNK grosses Rs 10.15 crore in three days despite mixed reviews; Netflix holds OTT rights</a> &mdash; <cite>123Telugu</cite></li>
+        <li><a href="https://telanganatoday.com/veteran-telugu-actor-giri-babu-passes-away-in-hyderabad" target="_blank" rel="noopener">Veteran Telugu actor, producer and director Giri Babu dies at 80 in Hyderabad</a> &mdash; <cite>Telangana Today</cite></li>
+        <li><a href="https://www.123telugu.com/mnews/6-promises-22-months-of-wait-thaman-finally-drops-the-mother-of-all-osts-hk.html" target="_blank" rel="noopener">Thaman S releases 29-track &#39;Daaku Maharaaj&#39; original background score</a> &mdash; <cite>123Telugu</cite></li>
+        <li><a href="https://music.apple.com/us/song/dada-dhamaka-from-dada/6834357911" target="_blank" rel="noopener">S.S. Thaman drops &#39;Dada Dhamaka&#39; single from Balakrishna&#39;s &#39;Dada&#39;</a> &mdash; <cite>Apple Music</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=9PQcwR-gaEA" target="_blank" rel="noopener">&#39;Itllu Arjuna&#39; 7-track audio jukebox pairs Thaman S with Anirudh on &#39;Hai Re&#39;</a> &mdash; <cite>T-Series Telugu</cite></li>
+        <li><a href="https://gulfnews.com/entertainment/south-indian/anirudh-ravichander-completes-15-years-in-music-says-best-is-yet-to-come-1.500749028" target="_blank" rel="noopener">Anirudh Ravichander celebrates 15 years in music across Tamil, Telugu, and Hindi</a> &mdash; <cite>Gulf News</cite></li>
+        <li><a href="https://superdeluxeedition.com/reviews/review-steven-wilsons-requiem-for-a-village/" target="_blank" rel="noopener">Steven Wilson&#39;s &#39;Requiem For A Village&#39; reviewed, plus Porcupine Tree songwriting update</a> &mdash; <cite>SuperDeluxeEdition</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=Xc-osx3ruw4" target="_blank" rel="noopener">Sahithi Chaganti sings folk-flavored single &#39;Mandamarri&#39; on Aditya Music</a> &mdash; <cite>Aditya Music</cite></li>
+        <li><a href="https://telanganatoday.com/tharun-bhasckers-ene-repeat-set-for-worldwide-theatrical-release-on-november-19" target="_blank" rel="noopener">ENE Repeat opens worldwide in theatres on November 19</a> &mdash; <cite>Telangana Today</cite></li>
+        <li><a href="https://www.123telugu.com/mnews/dulquer-salmaan-to-visit-the-usa-for-aakasamlo-oka-tara-promotions-hk.html" target="_blank" rel="noopener">Aakasamlo Oka Tara releases November 20 after Dulquer Salmaan&#39;s Nov 19 San Francisco visit</a> &mdash; <cite>123Telugu</cite></li>
+        <li><a href="https://www.123telugu.com/mnews/anupama-parameswarans-crazy-kalyanam-gets-ott-release-date-hk.html" target="_blank" rel="noopener">Crazy Kalyanam premieres on Aha in Telugu and Tamil on November 20</a> &mdash; <cite>123Telugu</cite></li>
+        <li><a href="https://www.telugutimes.net/en/cinemas/cinema-news/sithara-entertainments-brings-dhanush-mammoottys-much-anticipated-om-chapter-1-to-telugu-audiences-on-november-20-365012.html" target="_blank" rel="noopener">OM: Chapter 1 hits Telugu theatres on November 20 via Sithara Entertainments</a> &mdash; <cite>Telugu Times</cite></li>
+        <li><a href="https://www.cinemaexpress.com/telugu/news/2026/Nov/17/second-single-yenati-varamo-nuvvu-from-rashmika-mandannas-mysaa-out" target="_blank" rel="noopener">Rashmika Mandanna&#39;s Mysaa sets November 27 pan-India release across five languages</a> &mdash; <cite>Cinema Express</cite></li>
+        <li><a href="https://www.cinejosh.com/news/1/131367/vrushakarma-second-single-on-this-date.html" target="_blank" rel="noopener">Vrushakarma drops &#39;Chalo Padave&#39; on November 19 ahead of December 4 release</a> &mdash; <cite>Cinejosh</cite></li>
+        <li><a href="https://www.eventbrite.com/e/one-night-in-hyderabad-tollywood-telangana-bollywood-party-dj-prashant-tickets-2003605404701" target="_blank" rel="noopener">ONE NIGHT IN HYDERABAD! Tollywood, Telangana &amp; Bollywood Party (Bellevue, Nov 20)</a> &mdash; <cite>Eventbrite / Bollywood Dreams Entertainment</cite></li>
+        <li><a href="https://events.sulekha.com/sameera-bharadwaj-live-karthik-malyala-dallas_event-in_mckinney-tx_402699" target="_blank" rel="noopener">Sameera Bharadwaj Live with Karthik Malyala (McKinney, TX, Nov 21)</a> &mdash; <cite>Sulekha Events</cite></li>
+        <li><a href="https://events.sulekha.com/meet-greet-with-dulquer-salmaan-in-dallas_event-in_irving-tx_402860" target="_blank" rel="noopener">Meet &amp; Greet with Dulquer Salmaan for Aakasamlo Oka Tara (Irving, TX, Nov 21)</a> &mdash; <cite>Sulekha Events</cite></li>
+        <li><a href="https://www.eventbrite.com/e/bolly-tolly-vegas-tickets-2004752105514" target="_blank" rel="noopener">Bolly Tolly Vegas Masquerade Night (Las Vegas, NV, Dec 11)</a> &mdash; <cite>Eventbrite / Inni Entertainments</cite></li>
+        <li><a href="https://us.trip.com/events/san-francisco-usa--sid-sriram-2027-concert-20261106/" target="_blank" rel="noopener">Sid Sriram 2027 Concert at Miner Auditorium (San Francisco, Apr 8, 2027)</a> &mdash; <cite>Trip.com Events (SFJAZZ Center)</cite></li>
+        <li><a href="https://www.koreatimes.co.kr/entertainment/shows-dramas/20261117/korean-japanese-stars-team-up-for-cross-border-manhunt-in-netflixs-the-blue-road" target="_blank" rel="noopener">Korean-Japanese crime thriller The Blue Road premieres Friday on Netflix</a> &mdash; <cite>The Korea Times</cite></li>
+        <li><a href="https://www.tomsguide.com/entertainment/apple-tv/12-12-12-review-a-gimmicky-apple-tv-heist-thriller-with-jamie-dornan-and-anthony-mackie-that-mostly-succeeds" target="_blank" rel="noopener">Apple TV heist series 12 12 12 splits a Zurich bank job across three timelines</a> &mdash; <cite>Tom&#39;s Guide</cite></li>
+        <li><a href="https://www.latimes.com/entertainment-arts/awards/story/2026-11-16/glenn-close-ridley-scott-given-honorary-oscars-at-governors-awards" target="_blank" rel="noopener">Governors Awards honor Glenn Close, Ridley Scott, Floyd Norman, and Killer Films</a> &mdash; <cite>Los Angeles Times</cite></li>
+        <li><a href="https://comicbook.com/anime/news/crunchyroll-is-now-streaming-one-of-fall-2026s-big-missing-hits/" target="_blank" rel="noopener">Suikoden: The Anime lands on Crunchyroll with weekly Episode 7 simulcasts starting Nov. 17</a> &mdash; <cite>ComicBook.com</cite></li>
+        <li><a href="https://www.thewrap.com/creative-content/movies/the-hunger-games-sunrise-on-the-reaping-review/" target="_blank" rel="noopener">Reviews praise The Hunger Games: Sunrise on the Reaping ahead of Nov. 20 theatrical release</a> &mdash; <cite>TheWrap</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=N7S2TK7rg7Y" target="_blank" rel="noopener">Narayanamma Video Song | Aadarsha Kutumbam | Venkatesh, Srinidhi, Nivetha, Dimple Hayati | Thaman S</a> &mdash; <cite>Aditya Music</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=hXPXHfgHvzU" target="_blank" rel="noopener">Aakasamlo Oka Tara Trailer | Dulquer Salmaan | Satvika | Shruti Haasan | GV Prakash | Pavan Sadineni</a> &mdash; <cite>Geetha Arts</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=oxd6CbMoK6s" target="_blank" rel="noopener">O.M - Trailer (Telugu) | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar | Sai Abhyankkar</a> &mdash; <cite>Sithara Entertainments</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=oOr2C_3tIYg" target="_blank" rel="noopener">Steven Wilson - Now Departing (The Village Hall Sessions)</a> &mdash; <cite>Steven Wilson</cite></li>
+        <li><a href="https://martinfowler.com/articles/durable-execution-agents.html" target="_blank" rel="noopener">Long-horizon agents and durable execution</a> &mdash; <cite>Martin Fowler</cite></li>
+        <li><a href="https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/" target="_blank" rel="noopener">The Evolving Story of How Chemistry Became Biology</a> &mdash; <cite>Quanta Magazine</cite></li>
+        <li><a href="https://www.noemamag.com/in-praise-of-japans-failure-to-keep-up/" target="_blank" rel="noopener">In Praise of Japan&#39;s Failure to Keep Up</a> &mdash; <cite>Noema Magazine</cite></li>
+        <li><a href="https://latent.space/p/resend/" target="_blank" rel="noopener">Designing for Agents — Zeno Rocha, Resend</a> &mdash; <cite>Latent Space</cite></li>
+        <li><a href="https://www.dwarkesh.com/p/paul-christiano-2" target="_blank" rel="noopener">Paul Christiano on 12-Month Superintelligence Risks and Alignment Limits</a> &mdash; <cite>Dwarkesh Podcast</cite></li>
+        <li><a href="https://lexfridman.com/ukraine-war-preston-stewart-michael-kofman" target="_blank" rel="noopener">Lex Fridman #504: Russia-Ukraine War, Drones, and the Future of Warfare with Preston Stewart &amp; Michael Kofman</a> &mdash; <cite>Lex Fridman Podcast</cite></li>
+        <li><a href="https://newsletter.languagemodels.co/p/our-new-book-on-ai-agents-is-out" target="_blank" rel="noopener">An Illustrated Guide to AI Agents by Maarten Grootendorst and Jay Alammar</a> &mdash; <cite>Language Models &amp; Co.</cite></li>
+        <li><a href="https://www.penguinrandomhouse.com/books/828115/lifes-chemical-secret-by-addy-pross/" target="_blank" rel="noopener">Life&#39;s Chemical Secret: The Origin of Purpose and Mind by Addy Pross</a> &mdash; <cite>Penguin Random House / The MIT Press</cite></li>
+        <li><a href="https://www.sanjoseinside.com/business/mahan-and-4-council-allies-propose-emergency-action-to-halt-new-data-centers-in-san-jose-until-rules-are-in-place/" target="_blank" rel="noopener">San Jose leaders propose temporary pause on data center approvals ahead of Dec. 8 rules</a> &mdash; <cite>San Jose Inside</cite></li>
+        <li><a href="https://sanjosespotlight.com/11b-state-bond-to-boost-affordable-housing-in-silicon-valley/" target="_blank" rel="noopener">$11B California Proposition 1 housing bond set to fund Santa Clara County pipeline</a> &mdash; <cite>San José Spotlight</cite></li>
+        <li><a href="https://sanjosespotlight.com/san-jose-school-district-plans-for-new-campus-despite-high-cost/" target="_blank" rel="noopener">Franklin-McKinley school board votes 3-2 to accept Communications Hill land for $93M campus</a> &mdash; <cite>San José Spotlight</cite></li>
+        <li><a href="https://www.svvoice.com/tourism-group-prepares-to-take-control-of-santa-claras-hotel-surcharge-money/" target="_blank" rel="noopener">Discover Santa Clara prepares to take control of hotel surcharge funds despite audit gaps</a> &mdash; <cite>The Silicon Valley Voice</cite></li>
+        <li><a href="https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack/" target="_blank" rel="noopener">California attorney general sues OpenAI in San Francisco over rogue agent cyber incident</a> &mdash; <cite>CalMatters</cite></li>
+        <li><a href="https://www.kqed.org/news/12109414/survivor-bay-area-bart-gets-a-sales-tax-but-still-forecasts-a-budget-deficit" target="_blank" rel="noopener">BART projects $124 million four-year deficit even after Bay Area voters pass Prop RTM</a> &mdash; <cite>KQED</cite></li>
+        <li><a href="https://sfinquirer.com/2026/11/16/cpuc-proposed-decision-pge-kincade-dixie-ratepayers-ab-1054/" target="_blank" rel="noopener">CPUC judge proposes PG&amp;E customers cover $1.7 billion in Kincade and Dixie fire costs</a> &mdash; <cite>The San Francisco Inquirer</cite></li>
+        <li><a href="https://www.kqed.org/news/12110123/hazard-to-public-safety-california-dmv-restricts-waymo-freeway-operations" target="_blank" rel="noopener">California DMV bars driverless Waymo vehicles from state freeways over construction-zone incidents</a> &mdash; <cite>KQED</cite></li>
+        <li><a href="https://calmatters.org/education/higher-education/2026/11/uc-research/" target="_blank" rel="noopener">U.S. Supreme Court declines appeal, leaving $900 million in University of California research grants intact</a> &mdash; <cite>CalMatters</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=CBmjPXtTsAQ" target="_blank" rel="noopener">CA DMV bans Waymos from operating on state freeways after Bay Area traffic incidents</a> &mdash; <cite>ABC7 News Bay Area</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=r7UtSaEd76I" target="_blank" rel="noopener">Tornado warning, waterspouts and hail sweep Bay Area in rare severe storm</a> &mdash; <cite>NBC Bay Area</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=Z6AEmPx4Qck" target="_blank" rel="noopener">North Bay homeowner races to raise his house before king tides return</a> &mdash; <cite>ABC7 News Bay Area</cite></li>
+        <li><a href="https://sanjosespotlight.com/san-jose-entertainment-venues-revive-stalled-google-neighborhood/" target="_blank" rel="noopener">SPARK Social San Jose draws crowds to Creekside near Diridon Station</a> &mdash; <cite>San José Spotlight</cite></li>
+        <li><a href="https://richmondside.org/2026/11/17/eggys-piggies-bistro-haraz-coffee-fire-rice-osaka-market-open/" target="_blank" rel="noopener">24-hour Indian market Apni Mandi and Osaka Market lead East Bay food openings</a> &mdash; <cite>Richmondside</cite></li>
+        <li><a href="https://www.openspace.org/events/guided-activities/manzanita-morning-hike-0" target="_blank" rel="noopener">Manzanita Morning Hike climbs St. Joseph&#39;s Hill Preserve on Nov. 22</a> &mdash; <cite>Midpeninsula Regional Open Space District</cite></li>
+        <li><a href="https://www.operasj.org/productions/fiddler" target="_blank" rel="noopener">Opera San José stages Fiddler on the Roof at California Theatre</a> &mdash; <cite>Opera San José</cite></li>
+        <li><a href="https://www.broadwayworld.com/san-francisco/regional/The-42nd-Great-Dickens-Christmas-Fair-Victorian-Holiday-Party-4405527" target="_blank" rel="noopener">42nd Great Dickens Christmas Fair opens Nov. 21 at the Cow Palace</a> &mdash; <cite>BroadwayWorld</cite></li>
+        <li><a href="https://www.aviacionline.com/english/commercial-aviation/asia-pacific/air-india-resumes-nonstop-flights-from-delhi-and-mumbai-to-new-york_a6afbb9ecf6db9cc6589e0f87" target="_blank" rel="noopener">Air India Restores New York Nonstops, Leaving SFO Limited to Delhi</a> &mdash; <cite>Aviacionline</cite></li>
+        <li><a href="https://www.immigration.govt.nz/about-us/news-centre/impact-of-microsoft-outage/" target="_blank" rel="noopener">Immigration New Zealand Restores NZeTA Systems and Shifts Upgrades to November 23</a> &mdash; <cite>Immigration New Zealand</cite></li>
+        <li><a href="https://mypassage.ai/blog/venice-access-fee" target="_blank" rel="noopener">Venice Sets 72 Fee Days and Longer Hours for 2027 Day-Tripper Access</a> &mdash; <cite>Passage AI</cite></li>
+        <li><a href="https://qcostarica.com/u-s-ground-stop-disrupted-costa-rica-flights-leaving-15-cancellations/" target="_blank" rel="noopener">U.S. FAA Ground Stop Triggers 17 Flight Cancellations Across Costa Rica</a> &mdash; <cite>Q Costa Rica</cite></li>
+        <li><a href="https://9to5toys.com/2026/11/16/samsung-27-inch-viewfinity-5k-productivity-monitor-hits-new-500-low/" target="_blank" rel="noopener">Samsung 27-inch ViewFinity S8 5K monitor with 90W USB-C hits $500 low</a> &mdash; <cite>9to5Toys</cite></li>
+        <li><a href="https://www.dcrainmaker.com/2026/11/garmin-sales-begin-huge-deals-on-garmin-fenix-edge-forerunner-series-and-more.html" target="_blank" rel="noopener">Garmin holiday sale cuts up to $275 off Fenix 8, Venu 4, and Instinct 3</a> &mdash; <cite>DC Rainmaker</cite></li>
+        <li><a href="https://www.macobserver.com/deals/anker-prime-docking-station-14-in-1-deal-179/" target="_blank" rel="noopener">Anker Prime 14-in-1 160W USB-C docking station drops $90 to $180</a> &mdash; <cite>MacObserver</cite></li>
+        <li><a href="https://www.cnet.com/deals/best-pixel-11-deals/" target="_blank" rel="noopener">Pixel 11 early deals lean on trade-in bonuses and Google Fi rebates</a> &mdash; <cite>CNET</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=MaR4GNjpdjs" target="_blank" rel="noopener">Go Duck Yourself, Bungalow 44, Pupusería Las Cabañas | Check, Please! Bay Area</a> &mdash; <cite>KQED Food</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=Dp5dYvNxUpI" target="_blank" rel="noopener">My Favorite 4K OLEDs of 2026 - Asus XG32UQWMS vs Gigabyte FO32U24G Review</a> &mdash; <cite>Monitors Unboxed</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=_4UFUnVIQD0" target="_blank" rel="noopener">Venice Tourist Scams to Watch Out For</a> &mdash; <cite>Wolters World</cite></li>
+      </ol>
+    </details>
+    <p>Want a topic added, dropped or weighted differently? Tell your agent in any session or add a line to the local feedback file; the next morning's run applies it.</p>
+    <p>Compiled on 2026-11-17 17:06 PST by research intelligence agents from verified sources. Private and calibrated to your context.</p>
+  </div>
+</div>
+<script>
+// Techmeme-inspired dynamic functionality for The Morning Brief
+(function() {
+  // Quick jump & date features
+  window.addEventListener('DOMContentLoaded', function() {
+    var searchForm = document.getElementById('briefSearchForm');
+    if (searchForm) {
+      searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var q = (document.getElementById('briefSearchInput') || {}).value;
+        if (q) {
+          window.find ? window.find(q) : alert('Searching for: ' + q);
+        }
+      });
+    }
+  });
+})();
+
+</script>
+</body>
+</html>

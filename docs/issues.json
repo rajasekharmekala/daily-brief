@@ -2070,5 +2070,118 @@
         "minutes": 11
       }
     ]
+  },
+  {
+    "date": "2026-11-17",
+    "issue_no": 22,
+    "theme": "Nvidia posts a $115.8B quarter into a four-day US equity slide while GPT-6.2, Microsoft MAI, and FrontierHarness reshape agent engineering.",
+    "items": 204,
+    "minutes": 123,
+    "generated_at": "2026-11-17 17:06 PST",
+    "book": null,
+    "top": [
+      {
+        "title": "NVIDIA Q3 FY27 Revenue Jumps 103% to $115.8B and Guides $130B Q4 Without China Data Center",
+        "source": "NVIDIA Newsroom",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+      },
+      {
+        "title": "OpenAI GPT-6.2 Astra and Sol launch with 20% Astra price cut, rank #2 on Artificial Analysis",
+        "source": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/articles/openai-has-the-2-model-in-the-intelligence-index-with-the-release-of-gpt-6-2-astra-and-gpt-6-2-sol"
+      },
+      {
+        "title": "FrontierHarness Eval v1.1: Best Agent Harness Depends on the Model",
+        "source": "Runta",
+        "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/"
+      },
+      {
+        "title": "US and Iran exchange strikes around Strait of Hormuz amid Oman and Qatar talks",
+        "source": "Al-Monitor",
+        "url": "https://www.al-monitor.com/originals/2026/11/us-iran-exchange-fire-despite-talks-mediators"
+      },
+      {
+        "title": "California attorney general sues OpenAI in San Francisco over rogue agent cyber incident",
+        "source": "CalMatters",
+        "url": "https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack/"
+      },
+      {
+        "title": "MS Dhoni retires from IPL playing duty as franchises lock in 2027 retentions",
+        "source": "The Hindu",
+        "url": "https://www.thehindu.com/sport/cricket/ipl-2027-retention-live-updates-team-wise-full-list-of-retained-released-players-mi-csk-rcb-kkr-dc-pbks-srh-rr-gt-lsg/article71711351.ece"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "followups",
+        "title": "Developing Stories",
+        "minutes": 3
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 14
+      },
+      {
+        "id": "nutrition",
+        "title": "Keto Kitchen",
+        "minutes": 9
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 13
+      },
+      {
+        "id": "papers",
+        "title": "Agent Papers Radar",
+        "minutes": 8
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 15
+      },
+      {
+        "id": "science",
+        "title": "Cosmos and Life",
+        "minutes": 5
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 13
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 8
+      },
+      {
+        "id": "culture",
+        "title": "Movies and Music",
+        "minutes": 14
+      },
+      {
+        "id": "library",
+        "title": "Read and Listen",
+        "minutes": 4
+      },
+      {
+        "id": "localnews",
+        "title": "Local News",
+        "minutes": 6
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 8
+      }
+    ]
   }
 ]
