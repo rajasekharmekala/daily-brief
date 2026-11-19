@@ -2191,5 +2191,111 @@
         "minutes": 8
       }
     ]
+  },
+  {
+    "date": "2026-11-18",
+    "issue_no": 23,
+    "theme": "US markets test support under 5.07% yields and 24.5 VIX while India pulls back on profit-taking; Gemini 4 Neon, Codex WebRTC voice, and trajectory-level evals reshape production agents.",
+    "items": 113,
+    "minutes": 68,
+    "generated_at": "2026-11-18 17:56 PST",
+    "book": {
+      "has_book": true,
+      "book_words": 16560,
+      "book_minutes": 107,
+      "book_desks": 10,
+      "book_stories": 39,
+      "has_pdf": true,
+      "has_epub": true
+    },
+    "top": [
+      {
+        "title": "S&P 500 Extends Losing Streak to Five Days as Dow Drops 1.11% and Tech Diverges",
+        "source": "24/7 Wall St.",
+        "url": "https://247wallst.com/cards/index-level-calm-hid-a-1-4-point-gap-between-the-dow-down-m-gspc-market-bell-01m7r7j2mmcaxksfnvzjsdd34p"
+      },
+      {
+        "title": "Nvidia Board Closes Door on Jensen Huang Return After Q3 Earnings Beat",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/11/17/nvidia-chair-harvey-jones-jensen-huang-comeback-earnings-call-analysts-china-singapore/"
+      },
+      {
+        "title": "Google DeepMind launches Gemini 4 Neon with 1M context at $3/$15 per million tokens",
+        "source": "Google Blog",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+      },
+      {
+        "title": "Context Has a Price: Adding and Removing Context for LLM Coding Agents under Prefix Caching",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22238"
+      },
+      {
+        "title": "Andhra Pradesh unveils Semiconductor Policy 4.0 with up to 80% capital support and 5,000-acre Tirupati park",
+        "source": "ANI News",
+        "url": "https://www.aninews.in/news/business/andhra-pradesh-unveils-semiconductor-policy-with-up-to-80-capital-support-plans-5000-acre-chip-park-in-tirupati20261118162250/"
+      },
+      {
+        "title": "U.S. Labor Department proposes sweeping PERM green-card recruitment overhaul and Schedule A repeal",
+        "source": "Legal 500",
+        "url": "https://www.legal500.com/intelligence/united-states/immigration/proposed-perm-overhaul-what-employers-need-to-know-and-why-your-comments-matter"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "followups",
+        "title": "Developing Stories",
+        "minutes": 3
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 10
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 5
+      },
+      {
+        "id": "papers",
+        "title": "Agent Papers Radar",
+        "minutes": 8
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 14
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 10
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 4
+      },
+      {
+        "id": "library",
+        "title": "Read and Listen",
+        "minutes": 3
+      },
+      {
+        "id": "localnews",
+        "title": "Local News",
+        "minutes": 5
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 3
+      }
+    ]
   }
 ]
