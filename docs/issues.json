@@ -2305,7 +2305,15 @@
     "items": 110,
     "minutes": 63,
     "generated_at": "2026-11-19 14:17 PST",
-    "book": null,
+    "book": {
+      "has_book": true,
+      "book_words": 15676,
+      "book_minutes": 101,
+      "book_desks": 10,
+      "book_stories": 36,
+      "has_pdf": true,
+      "has_epub": true
+    },
     "top": [
       {
         "title": "Anthropic Completes Largest IPO in History, Closing Up 17% Amid Tech Selloff",
