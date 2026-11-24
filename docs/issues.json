@@ -2411,7 +2411,15 @@
     "items": 121,
     "minutes": 72,
     "generated_at": "2026-11-23 17:10 PST",
-    "book": null,
+    "book": {
+      "has_book": true,
+      "book_words": 16964,
+      "book_minutes": 109,
+      "book_desks": 10,
+      "book_stories": 35,
+      "has_pdf": true,
+      "has_epub": true
+    },
     "top": [
       {
         "title": "Nvidia reinstates Jensen Huang as CEO, adding roughly $1 trillion in a 31% surge",
