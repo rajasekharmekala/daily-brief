@@ -2403,5 +2403,98 @@
         "minutes": 2
       }
     ]
+  },
+  {
+    "date": "2026-11-23",
+    "issue_no": 25,
+    "theme": "Jensen Huang's shock return as Nvidia CEO sparks a historic Wall Street relief rally inside a technical downtrend, while memory bottlenecks, agent harnesses, Hormuz mines, and Amaravati's blueprint test conviction.",
+    "items": 121,
+    "minutes": 72,
+    "generated_at": "2026-11-23 17:10 PST",
+    "book": null,
+    "top": [
+      {
+        "title": "Nvidia reinstates Jensen Huang as CEO, adding roughly $1 trillion in a 31% surge",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/11/23/wall-street-1-trillion-jensen-huang-nvidia-stock-market-cap/"
+      },
+      {
+        "title": "Nifty drops 1.75% to 25,349.65 and Sensex slides 1,484 pts on Monday's preponed NSE expiry",
+        "source": "TradingView / IANS",
+        "url": "https://www.tradingview.com/news/moodys:63a880414cc71:0-banks-sell-off-ends-four-week-rally-nifty-slumps-1-75-rupee-weakens/"
+      },
+      {
+        "title": "Anthropic launches Claude Ship beta to review, fix, and approve GitHub PRs",
+        "source": "Anthropic",
+        "url": "https://claude.com/resources/articles/introducing-claude-ship"
+      },
+      {
+        "title": "Benchmarks' Last Exam: Auditing Prompt, Environment, and Grader Alignment",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2611.27622"
+      },
+      {
+        "title": "Three tankers hit naval mines in Strait of Hormuz as Iran rejects U.S. blockade",
+        "source": "CBS News",
+        "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/"
+      },
+      {
+        "title": "Andhra Pradesh unveils Amaravati Economic Region masterplan with ₹4.65 lakh crore pipeline",
+        "source": "The Hindu",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/govt-promoting-amaravati-economic-region-as-andhra-pradeshs-major-growth-engine/article71731285.ece"
+      },
+      {
+        "title": "Max Verstappen wins 35-lead-change Las Vegas Grand Prix ahead of McLaren pair",
+        "source": "Al Jazeera",
+        "url": "https://www.aljazeera.com/sports/2026/11/22/max-verstappen-las-vegas-grand-prix-f1-norris-piastri-russell-antonelli"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 3
+      },
+      {
+        "id": "followups",
+        "title": "Developing Stories",
+        "minutes": 3
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 14
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 10
+      },
+      {
+        "id": "papers",
+        "title": "Agent Papers Radar",
+        "minutes": 9
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 14
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 9
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 4
+      },
+      {
+        "id": "localnews",
+        "title": "Local News",
+        "minutes": 6
+      }
+    ]
   }
 ]

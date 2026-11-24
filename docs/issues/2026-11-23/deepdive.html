@@ -1,0 +1,1291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Morning Brief - Deep Dive of the Day - Monday, November 23, 2026</title>
+<meta name="description" content="Jensen Huang&#39;s shock return as Nvidia CEO sparks a historic Wall Street relief rally inside a technical downtrend, while memory bottlenecks, agent harnesses, Hormuz mines, and Amaravati&#39;s blueprint test conviction.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="alternate" type="application/atom+xml" title="The Morning Brief" href="https://rajasekharmekala.github.io/daily-brief/feed.xml">
+<style>
+/* Techmeme-inspired stylesheet for The Morning Brief */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.35;
+  font-family: Optima, "Century Gothic", "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  font-size: 15.5px;
+  margin: 0 auto;
+  max-width: 90em;
+  min-width: 61em;
+  padding: 0 1.6em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links (Techmeme iconic link styling) */
+a {
+  text-decoration: none;
+  color: #002848;
+}
+a:visited {
+  color: #902050;
+}
+a:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+/* Headings & Techmeme Typography */
+h1, h2, h3, h4, h5 {
+  font-family: Optima, "Century Gothic", -apple-system, sans-serif;
+  color: #445555;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.45em;
+  padding: 0.75em 0 0.5em;
+}
+h3 {
+  font-size: 1.25em;
+  padding: 0.65em 0 0.35em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 0.95em;
+}
+
+cite {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.96em;
+  color: #686860;
+}
+cite a, cite a:visited {
+  color: #686860;
+}
+cite a:hover {
+  color: #002848;
+}
+
+.drhed {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+  color: #408840;
+  font-weight: bold;
+  margin-right: 0.3em;
+  font-size: 0.94em;
+}
+
+.bls {
+  margin-left: -0.1em;
+}
+.bls a {
+  white-space: nowrap;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  font-size: 0.94em;
+}
+
+/* Pre-navbar / Header Topline */
+.pagecont {
+  margin-bottom: 3.5em;
+}
+.prenavbar {
+  margin-bottom: 0.4em;
+}
+.topline {
+  border-bottom: 1px solid #cccccc;
+  margin-top: 0.35em;
+  line-height: 1.7em;
+  font-size: 0.88em;
+  color: #666666;
+  padding-bottom: 0.25em;
+  clear: both;
+}
+.topline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.topline a {
+  color: #666666;
+}
+.topline a:visited {
+  color: #666666;
+}
+.topline a:hover {
+  color: #000000;
+  text-decoration: underline;
+  background: transparent;
+}
+.topllinks {
+  float: left;
+}
+.topllinks a {
+  padding-right: 1.3em;
+}
+.toprlinks {
+  float: right;
+}
+.toprlinks span {
+  padding-left: 0.9em;
+}
+
+/* Logo Tab table */
+.logotab {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 0.6em;
+}
+.logotab td {
+  vertical-align: middle;
+  width: 33.33%;
+}
+td.logobox {
+  padding: 0.6em 0;
+}
+.logo-title {
+  font-family: Optima, "Century Gothic", sans-serif;
+  font-size: 2.7em;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  color: #174a61;
+  display: inline-block;
+  line-height: 1;
+}
+.logo-title:visited {
+  color: #174a61;
+}
+.logo-title:hover {
+  text-decoration: none;
+  background: transparent;
+}
+.logo-sub {
+  font-size: 0.82em;
+  color: #777777;
+  font-weight: normal;
+  display: block;
+  margin-top: 3px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+td.datebox {
+  text-align: center;
+  color: #444444;
+  font-size: 0.96em;
+}
+.date-str {
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #222222;
+}
+.weather-str {
+  font-size: 0.9em;
+  color: #666666;
+  margin-top: 3px;
+}
+
+td.searchbox {
+  text-align: right;
+  font-size: 0.92em;
+}
+.sbti {
+  width: 13em;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 6px;
+  font-family: inherit;
+  font-size: 0.96em;
+}
+.sbti-btn {
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 3px 9px;
+  font-size: 0.96em;
+  cursor: pointer;
+  font-family: inherit;
+}
+.sbti-btn:hover {
+  background: #e0e8f0;
+}
+
+/* Navigation Bar (Techmeme Navy Blue) */
+.navbar {
+  background: #174a61;
+  text-transform: uppercase;
+  clear: both;
+  line-height: 1.9em;
+  font-size: 0.88em;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+}
+.navtabs {
+  padding: 0;
+}
+.navtabs a {
+  padding: 0.3em 0.8em;
+  display: inline-block;
+  color: #dddddd;
+  font-weight: bold;
+}
+.navtabs a:visited {
+  color: #dddddd;
+}
+.navtabs a:hover {
+  background: #578aa1;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navtabs span.iamhere a {
+  background: #578aa1;
+  color: #ffffff;
+}
+.navtabs span.iamhere a:visited {
+  color: #ffffff;
+}
+.sisnav {
+  float: right;
+}
+.sisnav a {
+  color: #c0d8e8;
+  font-weight: normal;
+  padding: 0.3em 0.7em;
+}
+.sisnav a:visited {
+  color: #c0d8e8;
+}
+.sisnav a:hover {
+  color: #ffffff;
+  background: #25607b;
+}
+
+/* Sub-nav / Section Jump Bar */
+.subnavbar {
+  background: #f4f6f8;
+  border-bottom: 1px solid #d8e0e6;
+  padding: 0.35em 0.6em;
+  font-size: 0.85em;
+  line-height: 1.7em;
+  margin-bottom: 0.9em;
+}
+.subnavbar a {
+  color: #004860;
+  padding: 0.1em 0.5em;
+  font-weight: 600;
+  display: inline-block;
+}
+.subnavbar a:hover {
+  background: #d8e8f4;
+  text-decoration: none;
+}
+.subnavbar .subnav-label {
+  font-weight: bold;
+  color: #556677;
+  padding-right: 0.4em;
+  text-transform: uppercase;
+  font-size: 0.92em;
+}
+
+/* Executive Synthesis / Theme Banner */
+.exec-theme-box {
+  background: #fdfbe8;
+  border: 1px solid #d8c878;
+  border-left: 5px solid #d4a017;
+  padding: 0.75em 1.1em;
+  margin: 0.8em 0 1.3em;
+  font-size: 0.98em;
+  line-height: 1.5em;
+  color: #2b2b20;
+  border-radius: 2px;
+}
+.exec-theme-box strong {
+  color: #604000;
+  font-size: 1.05em;
+  display: inline;
+}
+
+/* Layout Columns */
+.ed {
+  clear: both;
+}
+.ed:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#topcol1 {
+  float: left;
+  width: 50%;
+  margin-top: 0.5em;
+  padding-right: 1.3%;
+}
+#topcol23 {
+  float: left;
+  width: 48.5%;
+  margin-left: 0.2%;
+}
+#topcol2 {
+  float: left;
+  width: 66%;
+  margin-top: 0.5em;
+}
+#topcol3 {
+  float: right;
+  width: 32%;
+  margin-top: 0.5em;
+  margin-left: 2%;
+  position: relative;
+}
+
+/* Bottom 2-column layout */
+.abotcols {
+  clear: both;
+  width: 100%;
+  border-bottom: 2px solid #e8e8e8;
+  padding-top: 1.2em;
+  margin-bottom: 1.3em;
+}
+#botcol1 {
+  float: left;
+  width: 49%;
+  padding-right: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+#botcol2 {
+  float: right;
+  width: 49%;
+  padding-left: 1%;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+
+/* Clusters and Items */
+.clus {
+  padding-bottom: 0.7em;
+}
+.item {
+  padding-top: 0.4em;
+  padding-bottom: 1.35em;
+  clear: both;
+  border-bottom: 1px solid #dddddd;
+}
+.item:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.item.last {
+  border-bottom: none;
+}
+.itc1 {
+  padding-left: 0.4em;
+}
+.itc2 {
+  padding: 0;
+}
+
+/* Shared cluster table / headline row */
+.shrtbl {
+  width: 100%;
+  border-collapse: collapse;
+}
+.shrtbl tr > td:first-child {
+  vertical-align: middle;
+}
+.shrtbl tr > td:first-child + td {
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 0.85em;
+  color: #777777;
+}
+
+.ii {
+  padding-top: 0.35em;
+  line-height: 1.4em;
+  font-size: 1.02em;
+}
+
+/* Image Thumbnails & Fallbacks */
+.ill {
+  float: right;
+  width: 120px;
+  height: 85px;
+  object-fit: cover;
+  padding: 0.1em 0 0.5em 0.8em;
+  border-radius: 3px;
+}
+.ill-icon-wrap {
+  float: right;
+  width: 78px;
+  height: 64px;
+  margin: 0.1em 0 0.5em 0.8em;
+  background: #f3f6f9;
+  border: 1px solid #d8e0e6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+}
+.ill-icon-wrap img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Headline typography scale */
+.ourh {
+  font-family: Optima, "Trebuchet MS", sans-serif;
+}
+.ourh:link {
+  color: #004860;
+}
+.ourh:visited {
+  color: #a04860;
+}
+.ourh:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+
+.L1 { font-size: 1.18em; font-weight: bold; }
+.L2 { font-size: 1.28em; font-weight: bold; letter-spacing: -0.01em; }
+.L3 { font-size: 1.38em; font-weight: bold; letter-spacing: -0.015em; }
+.L4 { font-size: 1.48em; font-weight: bold; letter-spacing: -0.02em; }
+.L5 { font-size: 1.6em; font-weight: bold; letter-spacing: -0.025em; }
+
+.item-summary {
+  color: #111111;
+  font-size: 0.96em;
+}
+
+.item-why {
+  margin-top: 0.4em;
+  padding: 0.35em 0.6em;
+  background: #f7fafc;
+  border-left: 3px solid #6090a8;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  color: #334455;
+  border-radius: 0 2px 2px 0;
+}
+.item-why strong {
+  color: #174a61;
+  font-size: 0.94em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.3em;
+}
+
+/* Related items under a cluster */
+.relitems {
+  margin-top: 0.45em;
+  margin-bottom: 0.85em;
+  border-left: 2px solid #e0e8ef;
+  padding-left: 0.65em;
+}
+.relitems .item {
+  padding-top: 0.35em;
+  padding-bottom: 0.65em;
+  border-bottom: 1px dotted #e0e0e0;
+}
+.relitems .item:last-child {
+  border-bottom: none;
+}
+.relitems .ourh {
+  font-size: 1.05em;
+}
+
+/* Discussion / Sub-links / Secondary items */
+.dbpt {
+  padding-top: 0.4em;
+  font-size: 0.92em;
+  line-height: 1.42em;
+}
+
+/* Right-hand column: Newest / Chronological River */
+#topcol3 .item {
+  padding: 0.6em 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+#topcol3 .ii {
+  padding-top: 0.25em;
+  font-size: 0.96em;
+}
+#topcol3 a.nfdl {
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #004860;
+  font-size: 0.98em;
+}
+#topcol3 a.nfdl:visited {
+  color: #a04860;
+}
+#topcol3 a.nfdl:hover {
+  text-decoration: underline;
+  background: #d0e8f4;
+}
+.ago {
+  color: #777777;
+  font-size: 0.84em;
+  padding-top: 0.35em;
+}
+
+/* Grey sponsor / highlighted background box */
+#tkzwuvgyr {
+  padding: 0.7em 1em 1em;
+  background: #f4f6f8;
+  border: 1px solid #e0e6ec;
+  border-radius: 3px;
+  margin-bottom: 1.3em;
+}
+#tkzwuvgyr h3 {
+  padding-top: 0.2em;
+  color: #223344;
+}
+#tkzwuvgyr .item {
+  border: none;
+  padding-bottom: 0.6em;
+}
+
+/* Pod / Media item box (Techmeme style) */
+.pod-box {
+  margin: 1em 0;
+  padding: 0.85em;
+  background: #f9fcfe;
+  border: 1px solid #d8e0e8;
+  border-radius: 3px;
+}
+.pod-box:first-of-type {
+  margin-top: 0.4em;
+}
+.pod-head {
+  font-size: 0.88em;
+  font-weight: bold;
+  color: #174a61;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+.pod-name {
+  font-weight: bold;
+  color: #004860;
+}
+
+/* Deep Dive longform article styled into Techmeme editorial */
+.deepdive-container {
+  background: #fcfdfe;
+  border: 1px solid #ccd9e2;
+  border-radius: 3px;
+  padding: 1.3em 1.5em;
+  margin: 0.9em 0 1.6em;
+}
+.deepdive-container h2 {
+  font-size: 1.65em;
+  line-height: 1.25;
+  color: #174a61;
+  padding: 0 0 0.35em;
+}
+.deepdive-subtitle {
+  font-size: 1.12em;
+  color: #555555;
+  font-style: italic;
+  margin-bottom: 0.85em;
+}
+.deepdive-keypts {
+  background: #f4f8fb;
+  border-left: 4px solid #174a61;
+  padding: 0.65em 1.1em;
+  margin: 0.85em 0 1.1em;
+  font-size: 0.96em;
+}
+.deepdive-keypts h4 {
+  font-size: 0.96em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #174a61;
+  margin-bottom: 0.45em;
+}
+.deepdive-keypts ul {
+  padding-left: 1.3em;
+  list-style: square;
+}
+.deepdive-keypts li {
+  margin-bottom: 0.35em;
+  line-height: 1.45em;
+}
+.deepdive-body {
+  font-size: 1.04em;
+  line-height: 1.6em;
+  color: #222222;
+}
+.deepdive-body p {
+  padding-bottom: 0.85em;
+}
+.deepdive-body h3 {
+  font-size: 1.3em;
+  padding: 0.85em 0 0.35em;
+  color: #174a61;
+}
+.deepdive-refs {
+  margin-top: 1.3em;
+  padding-top: 0.85em;
+  border-top: 1px solid #d0d8e0;
+  font-size: 0.9em;
+}
+.deepdive-refs ol {
+  padding-left: 1.6em;
+}
+.deepdive-refs li {
+  padding-bottom: 0.45em;
+}
+
+/* Keto Kitchen / Nutrition in Techmeme style */
+.kitchen-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.7em 0 1.1em;
+  font-size: 0.94em;
+  background: #f7faf9;
+  border: 1px solid #cfe0d8;
+}
+.kitchen-table th, .kitchen-table td {
+  padding: 0.45em 0.85em;
+  border: 1px solid #d4e4dc;
+  text-align: left;
+}
+.kitchen-table th {
+  background: #e4f0ea;
+  font-weight: bold;
+  color: #205038;
+}
+
+/* Recipe card & Single Recipe Detail View */
+.recipe-card {
+  border: 1px solid #dcdcdc;
+  background: #ffffff;
+  padding: 1.1em 1.3em;
+  margin-bottom: 1.4em;
+  border-radius: 3px;
+}
+.recipe-card h3, .recipe-card h4 {
+  font-size: 1.35em;
+  color: #004860;
+  margin-bottom: 0.25em;
+}
+.recipe-card small {
+  font-size: 0.85em;
+  color: #666666;
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+.recipe-macros {
+  font-size: 0.94em;
+  color: #408840;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+.macrobar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e2e8f0;
+  margin: 0.4em 0 0.6em;
+}
+.macrobar span {
+  display: block;
+  height: 100%;
+}
+.mlegend {
+  font-size: 0.82em;
+  color: #666666;
+  margin-bottom: 0.8em;
+}
+.mlegend span {
+  margin-right: 1.2em;
+}
+
+.recipe-cols {
+  display: flex;
+  gap: 1.8em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+.recipe-cols > div {
+  flex: 1;
+}
+.recipe-cols h5 {
+  font-weight: bold;
+  color: #445555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+.recipe-cols ul.ing {
+  list-style: none;
+  padding-left: 0;
+}
+.recipe-cols ul.ing li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 1px dotted #eeeeee;
+}
+.recipe-cols ul.ing li span {
+  color: #222222;
+}
+.recipe-cols ul.ing li em {
+  color: #666666;
+  font-style: normal;
+  font-weight: 600;
+}
+.recipe-cols ol.steps {
+  padding-left: 1.4em;
+}
+.recipe-cols ol.steps li {
+  margin-bottom: 0.45em;
+  padding-left: 0.2em;
+}
+
+.rtips {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  background: #fbfbf4;
+  border: 1px solid #ebebd0;
+  border-left: 4px solid #c8a830;
+  font-size: 0.92em;
+  line-height: 1.45em;
+  border-radius: 2px;
+}
+.rtips.alt {
+  background: #f4f8fa;
+  border-color: #d0e0eb;
+  border-left-color: #3880a8;
+}
+.rtips h5 {
+  font-size: 0.96em;
+  color: #445555;
+  margin-bottom: 0.3em;
+}
+.rtips ul {
+  padding-left: 1.2em;
+}
+.rtips li {
+  margin-bottom: 0.25em;
+}
+.rfoot {
+  margin-top: 1em;
+  padding-top: 0.6em;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.85em;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cookbook Filter Bar */
+.cookbook-controls {
+  background: #f4f6f8;
+  border: 1px solid #d8e0e6;
+  border-radius: 3px;
+  padding: 0.8em 1em;
+  margin: 1em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  align-items: center;
+}
+.cookbook-controls input[type="search"] {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  min-width: 260px;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ccd5dc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334455;
+}
+.filter-btn:hover {
+  background: #e8f0f6;
+  border-color: #90a8b8;
+}
+.filter-btn.active {
+  background: #174a61;
+  border-color: #174a61;
+  color: #ffffff;
+}
+
+/* Footer / Run Notes */
+.page-footer {
+  margin-top: 2.8em;
+  padding: 1.3em 0.5em 2.8em;
+  border-top: 1px solid #cccccc;
+  font-size: 0.88em;
+  color: #666666;
+  line-height: 1.55em;
+  clear: both;
+}
+.page-footer a {
+  color: #004860;
+}
+.page-footer details {
+  margin-bottom: 0.85em;
+}
+.page-footer summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #445555;
+}
+.page-footer ul, .page-footer ol {
+  padding-left: 1.6em;
+  margin-top: 0.45em;
+}
+
+/* Archive Page (Techmeme-style directory) */
+.archive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.1em;
+}
+.archive-table th {
+  text-align: left;
+  font-weight: bold;
+  color: #455;
+  font-size: 1.08em;
+  padding: 0.55em 0.75em;
+  border-bottom: 2px solid #aaa;
+  background: #f4f4f4;
+}
+.archive-table td {
+  padding: 0.65em 0.75em;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+.archive-table tr:hover td {
+  background: #f8fbfe;
+}
+.archive-date {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 0.98em;
+}
+.archive-theme {
+  font-size: 1.08em;
+  line-height: 1.4em;
+}
+.archive-theme a {
+  font-weight: bold;
+}
+.archive-meta {
+  font-size: 0.88em;
+  color: #666666;
+  margin-top: 0.35em;
+}
+
+/* Responsive Rules */
+@media only screen and (max-width: 960px) {
+  body {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 0.8em;
+    font-size: 15px;
+  }
+  .logotab td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.3em 0;
+  }
+  td.datebox, td.searchbox {
+    text-align: left;
+  }
+  .navbar {
+    line-height: 2em;
+    font-size: 0.92em;
+  }
+  .sisnav {
+    display: none;
+  }
+  #topcol1, #topcol23, #topcol2, #topcol3, #botcol1, #botcol2 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .recipe-cols {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="pagecont">
+  <!-- Techmeme Prenavbar Topline -->
+  <div class="prenavbar">
+    <div class="topline">
+      <div class="topllinks">
+        <a href="https://rajasekharmekala.github.io/"><strong>Home</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html"><strong>Archive</strong></a>
+        <a href="https://rajasekharmekala.github.io/portfolio/"><strong>Portfolio Desk</strong></a>
+        <a href="https://rajasekharmekala.github.io/travel-research/"><strong>Travel Research</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html"><strong>Keto Cookbook</strong></a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/feed.xml">RSS Feed</a>
+        <span>Issue 25</span>
+      </div>
+      <div class="toprlinks">
+        <span>⏱ ~72 min reading</span>
+        <span>121 items</span>
+      </div>
+    </div>
+
+    <!-- Techmeme Header Logo Table -->
+    <table class="logotab">
+      <tr>
+        <td class="logobox">
+          <a class="logo-title" href="index.html">The Morning Brief</a>
+          <span class="logo-sub">Executive Personal Intelligence Briefing</span>
+        </td>
+        <td class="datebox">
+          <div class="date-str">Monday, November 23, 2026</div>
+        </td>
+        <td class="searchbox">
+          <form id="briefSearchForm">
+            <input id="briefSearchInput" class="sbti" type="text" placeholder="Search briefing...">
+            <input class="sbti-btn" type="submit" value="Search">
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Techmeme Iconic Navy Navigation Bar - Dedicated Tabs -->
+  <div class="navbar">
+    <div class="navtabs">
+      <div class="sisnav">
+        <a href="book.html"><strong>Companion Book (~90m)</strong></a>
+        <a href="book.epub" download="Morning_Brief_2026-11-23_Book.epub">EPUB</a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/cookbook/index.html">Cookbook</a>
+        <a href="https://rajasekharmekala.github.io/daily-brief/index.html">Archives</a>
+      </div>
+      <span class=""><a href="index.html">Home</a></span>
+      <span class=""><a href="followups.html">Developing Stories</a></span>
+      <span class=""><a href="finance.html">Markets and Money</a></span>
+      <span class=""><a href="industry.html">Industry Watch</a></span>
+      <span class=""><a href="papers.html">Agent Papers Radar</a></span>
+      <span class="iamhere"><a href="deepdive.html">Deep Dive of the Day</a></span>
+      <span class=""><a href="world.html">World and India</a></span>
+      <span class=""><a href="sports.html">Sports</a></span>
+      <span class=""><a href="localnews.html">Local News</a></span>
+    </div>
+  </div>
+
+  <!-- Sub-navigation anchor / quick link jumper -->
+  <div class="subnavbar">
+    <span class="subnav-label">Tabs:</span>
+    <a href="index.html" style="">Top Stories</a> |
+    <a href="book.html" style="font-weight:bold;color:#174a61;">Companion Book (~90m)</a> |
+    <a href="followups.html" style="">Developing Stories (3m)</a> |     <a href="finance.html" style="">Markets and Money (14m)</a> |     <a href="industry.html" style="">Industry Watch (10m)</a> |     <a href="papers.html" style="">Agent Papers Radar (9m)</a> |     <a href="deepdive.html" style="font-weight:bold;color:#a04860;">Deep Dive of the Day (14m)</a> |     <a href="world.html" style="">World and India (9m)</a> |     <a href="sports.html" style="">Sports (4m)</a> |     <a href="localnews.html" style="">Local News (6m)</a>  </div>
+
+  <!-- Executive Synthesis Theme Banner -->
+  <div class="exec-theme-box">
+    <strong>Executive Synthesis:</strong> Jensen Huang&#39;s shock return as Nvidia CEO sparks a historic Wall Street relief rally inside a technical downtrend, while memory bottlenecks, agent harnesses, Hormuz mines, and Amaravati&#39;s blueprint test conviction.
+  </div>
+
+  <!-- ==================== HOME TAB VIEW ==================== -->
+  <div class="deepdive-container">
+    <h2>The Memory Wall and 3D Packaging: How HBM, Through-Silicon Vias, and Hybrid Bonding Govern AI Compute</h2>
+<div class="deepdive-subtitle">Why memory bandwidth, silicon bridges, and thermal stacking—not raw transistor FLOPS—now set the speed and economics of agentic AI.</div>    <div class="deepdive-keypts">
+      <h4>Executive Takeaways</h4>
+      <ul>
+<li>Peak server FLOPS have scaled at 3.0x every two years versus 1.6x for DRAM bandwidth, leaving autoregressive LLM decode severely memory-bandwidth bound even on Blackwell Ultra (8 TB/s) and Rubin (22 TB/s).</li><li>JEDEC HBM4 (JESD270-4) doubles the memory bus to 2,048 bits across 32 channels (2.0+ TB/s per stack) and shifts the bottom base die onto advanced logic foundry nodes like TSMC&#39;s, enabling custom near-memory integration.</li><li>To push past CoWoS-S&#39;s 3.3x-reticle silicon-interposer limit, TSMC&#39;s CoWoS-L embeds local silicon bridges inside an organic RDL interposer—already in 5.5x-reticle volume production with &gt;98-99% reported yields and a roadmap to 14x reticle.</li><li>JEDEC&#39;s decision to raise maximum HBM4 stack height from 720µm to 775µm gave microbump methods (SK hynix&#39;s Advanced MR-MUF and Samsung&#39;s Advanced TC-NCF) enough headroom to postpone bump-less Cu-Cu hybrid bonding until HBM5/20-Hi.</li><li>With CoWoS still facing an estimated ~20% supply-demand gap in 2026 despite scaling toward 130,000-140,000 wafers/month, TSMC is expanding front-end CoW outsourcing to OSATs while flagging HBM and ABF substrates as the next bottlenecks.</li>      </ul>
+    </div>
+    <div class="item-why" style="margin-bottom:1em;">
+      <strong>Strategic Context:</strong> Connects your focus on production LLM agent serving, long-context decode latency, and AI systems engineering directly to the 3D-packaging physics governing modern accelerators.
+    </div>
+    <div class="deepdive-body">
+      <p>Today, as next-generation AI accelerators transition from HBM3E to HBM4 and memory makers sample 12-layer HBM4E stacks at 16 Gbps per pin <sup class="ref"><a href="#d10">[10]</a></sup>, the binding constraint on artificial intelligence has quietly inverted. For half a century, compute progress meant shrinking transistors on a flat piece of silicon. In late 2026, with multi-step agentic workloads running sustained reasoning loops across massive context windows, raw arithmetic throughput is no longer what limits speed or cost. The governor of AI compute is now the physics of moving bits across millimeters of copper and silicon, and pulling hundreds of watts of heat out of vertically stacked memory dies <sup class="ref"><a href="#d1">[1]</a></sup><sup class="ref"><a href="#d4">[4]</a></sup><sup class="ref"><a href="#d6">[6]</a></sup>.</p>
+<h3>Why AI Compute Hit the Memory Wall</h3>
+<p>Over the past twenty years, peak server hardware floating-point operations per second (FLOPS) have scaled at roughly 3.0x every two years, while DRAM bandwidth and inter-chip interconnect bandwidth have grown at only 1.6x and 1.4x every two years, respectively <sup class="ref"><a href="#d1">[1]</a></sup>. That compounding divergence revived the classic "memory wall" in a far harsher form. Modern AI accelerators can execute trillions of multiply-accumulate operations per second, yet they spend a growing share of inference time stalled, waiting for weights and intermediate activations to arrive from off-chip memory <sup class="ref"><a href="#d1">[1]</a></sup><sup class="ref"><a href="#d2">[2]</a></sup>.</p>
+<p>The roofline model makes this bottleneck precise <sup class="ref"><a href="#d2">[2]</a></sup>. Every accelerator has a peak compute ceiling (<code>P_max</code>, in FLOP/s) and a peak memory bandwidth (<code>B_max</code>, in bytes/s). Their ratio defines the hardware's <strong>ridge point</strong>, measured in arithmetic intensity (FLOPs performed per byte fetched from memory):</p>
+<p><code>Ridge Point = P_max / B_max</code></p>
+<p>Any kernel whose arithmetic intensity falls below the ridge point is memory-bandwidth bound; adding faster Tensor Cores yields zero speedup <sup class="ref"><a href="#d2">[2]</a></sup>. In transformer inference, the two execution phases sit on opposite sides of this cliff. During <strong>prefill</strong>, an entire prompt of <code>N</code> tokens is processed in parallel via dense matrix-matrix multiplications (GEMMs). Each model weight fetched from HBM is reused across all <code>N</code> tokens, pushing arithmetic intensity into the hundreds or thousands of FLOPs per byte—firmly compute-bound <sup class="ref"><a href="#d2">[2]</a></sup>. During <strong>decode</strong>, however, the model generates one token at a time autoregressively. Matrix-matrix multiplications collapse into matrix-vector multiplications (GEMVs), where the entire set of active weights must be streamed out of HBM just to produce a single token <sup class="ref"><a href="#d2">[2]</a></sup>.</p>
+<p>Consider a concrete worked example using two flagship accelerators. NVIDIA's Blackwell Ultra GPU delivers 15 petaFLOPS of dense NVFP4 compute paired with 8 TB/s of HBM3E bandwidth across 288 GB of memory <sup class="ref"><a href="#d3">[3]</a></sup>. Its NVFP4 ridge point is:</p>
+<p><code>(15 × 10^15 FLOP/s) / (8 × 10^12 bytes/s) = 1,875 FLOPs/byte</code></p>
+<p>NVIDIA's Rubin GPU pushes dense NVFP4 inference performance up to 50 petaFLOPS and nearly triples memory bandwidth to 22 TB/s via HBM4 <sup class="ref"><a href="#d4">[4]</a></sup>. Yet its NVFP4 ridge point rises even higher, to roughly 2,273 FLOPs/byte. Now suppose you serve a 200-billion-parameter dense model in 4-bit precision (0.5 bytes per parameter, or ~100 GB of weights) at batch size 1. Generating one token requires roughly 2 × 200B = 400 GFLOPs of matrix arithmetic while reading ~100 GB of weights—an arithmetic intensity of just 4 FLOPs/byte. On Blackwell Ultra, streaming 100 GB at 8 TB/s takes at least 12.5 milliseconds per token (a theoretical ceiling of 80 tokens/second), leaving over 99% of the Tensor Cores idle. Even on Rubin at 22 TB/s, the weight-streaming floor is 4.5 milliseconds per token (~220 tokens/second) before accounting for memory controller inefficiency.</p>
+<p>In production agentic workflows—where models reason, call tools, verify outputs, and maintain long context windows—the <strong>KV cache</strong> (the stored key and value tensors of every prior token) compounds the wall <sup class="ref"><a href="#d2">[2]</a></sup><sup class="ref"><a href="#d4">[4]</a></sup>. Batching multiple user requests amortizes weight reads across the batch, raising arithmetic intensity, but every request carries its own KV cache that grows linearly with context length and must be read on every decode step <sup class="ref"><a href="#d2">[2]</a></sup>. That is why hardware architects have pivoted from chasing raw FLOPS to widening the physical pipes between logic and memory.</p>
+<h3>Vertical Highways: HBM Stacks, Through-Silicon Vias, and the HBM4 Base Die</h3>
+<p>Conventional planar memory standards such as DDR and LPDDR scale bandwidth primarily by pushing per-pin signaling frequencies higher across long circuit-board traces <sup class="ref"><a href="#d6">[6]</a></sup>. That strategy hits two physical walls: printed-circuit-board routing limits the number of parallel channels that can escape a processor package, and driving high-frequency signals across centimeters of copper consumes disproportionate capacitive energy <sup class="ref"><a href="#d6">[6]</a></sup>.</p>
+<p>High Bandwidth Memory (HBM) breaks out of the 2D plane by turning memory into a vertical skyscraper. Multiple thinned DRAM dies—shaved down to roughly 30 to 50 micrometers thick, less than the width of a human hair—are stacked atop a logic <strong>base die</strong> and linked vertically by thousands of <strong>Through-Silicon Vias (TSVs)</strong>, microscopic copper pillars etched directly through the silicon wafers <sup class="ref"><a href="#d8">[8]</a></sup><sup class="ref"><a href="#d13">[13]</a></sup>. Because each signal travels micrometers vertically and millimeters laterally across an interposer rather than centimeters across a motherboard, HBM runs at lower per-pin clock speeds while delivering vastly wider parallel buses and superior energy efficiency per bit <sup class="ref"><a href="#d6">[6]</a></sup>.</p>
+<p>The sixth-generation standard, <strong>JEDEC JESD270-4 (HBM4)</strong>, finalized in April 2025, represents the largest architectural overhaul since HBM's debut <sup class="ref"><a href="#d5">[5]</a></sup><sup class="ref"><a href="#d6">[6]</a></sup>. Where HBM3 and HBM3E relied on a 1,024-bit interface divided into 16 independent channels (delivering ~1.18 to 1.2 TB/s per stack at 9.2+ Gbps per pin) <sup class="ref"><a href="#d6">[6]</a></sup><sup class="ref"><a href="#d11">[11]</a></sup>, HBM4 doubles the external interface width to <strong>2,048 bits</strong> and doubles the channel count to <strong>32 independent channels</strong> (64 pseudo-channels) <sup class="ref"><a href="#d5">[5]</a></sup><sup class="ref"><a href="#d6">[6]</a></sup>. At the JEDEC baseline of 8 Gbps per pin, a single HBM4 cube delivers 2.0 TB/s; advanced commercial implementations push past 11.7 to 13+ Gbps per pin to exceed 3.0 TB/s per stack, while SK hynix's 12-layer HBM4E samples already target 16 Gbps per pin <sup class="ref"><a href="#d5">[5]</a></sup><sup class="ref"><a href="#d6">[6]</a></sup><sup class="ref"><a href="#d10">[10]</a></sup>. JESD270-4 also supports 4-high, 8-high, 12-high, and 16-high stacks using 24 Gb or 32 Gb DRAM dies—reaching up to 64 GB per cube—alongside separated command and data buses, flexible 0.7V–0.9V I/O voltages, and Directed Refresh Management (DRFM) to curb row-hammer faults <sup class="ref"><a href="#d5">[5]</a></sup>.</p>
+<p>Equally consequential is what happens at the bottom of the stack. Through HBM3E, memory vendors fabricated the base die on their own legacy DRAM-class processes <sup class="ref"><a href="#d8">[8]</a></sup>. Routing a 2,048-bit interface while maintaining signal integrity, power delivery, and low latency under strict footprint limits broke that model. For HBM4, SK hynix partnered directly with TSMC in a trilateral design-foundry-memory alliance to manufacture the HBM4 base die on TSMC's advanced logic foundry processes <sup class="ref"><a href="#d8">[8]</a></sup><sup class="ref"><a href="#d9">[9]</a></sup>. Moving the base die onto a logic node does more than shrink I/O transceivers: it turns the bottom of the memory stack into programmable silicon capable of hosting customer-specific controllers, telemetry, and eventually near-memory compute logic <sup class="ref"><a href="#d8">[8]</a></sup><sup class="ref"><a href="#d9">[9]</a></sup>. At TSMC's 2026 Technology Symposium, SK hynix's Chief Development Officer framed this as a shift from standardized commodity HBM toward custom HBM co-designed with accelerator architects from day one <sup class="ref"><a href="#d9">[9]</a></sup>.</p>
+<h3>Breaking the Reticle: From CoWoS-S to CoWoS-L and Silicon Bridges</h3>
+<p>Widening an HBM stack to 2,048 pins solves only half the plumbing problem. Those thousands of hair-thin wires still have to cross from six, eight, or twelve HBM cubes into the GPU compute dies. A standard organic package substrate cannot pattern traces fine enough to fan out 2,048 signals per stack without ballooning layer counts and ruining signal integrity <sup class="ref"><a href="#d7">[7]</a></sup>.</p>
+<p>At the same time, frontier AI processors have collided with the <strong>reticle limit</strong>—the maximum exposure field (~858 mm²) of an extreme-ultraviolet (EUV) lithography scanner. Both NVIDIA's Blackwell Ultra (208 billion transistors) and Rubin (336 billion transistors) bypass the single-die ceiling by stitching two reticle-limited compute dies together via a 10 TB/s chip-to-chip interconnect (NV-HBI), presenting them to CUDA software as one coherent GPU <sup class="ref"><a href="#d3">[3]</a></sup><sup class="ref"><a href="#d4">[4]</a></sup>.</p>
+<p>TSMC's <strong>Chip-on-Wafer-on-Substrate (CoWoS)</strong> 2.5D packaging family is the physical stage that holds these compute dies and HBM stacks together <sup class="ref"><a href="#d7">[7]</a></sup>. Its original workhorse, <strong>CoWoS-S</strong>, places the logic dies and HBM cubes side-by-side on a monolithic silicon interposer etched with sub-micron copper wiring, TSVs, and embedded deep trench capacitors (eDTC) for power-delivery stability <sup class="ref"><a href="#d7">[7]</a></sup>. Since entering production in 2012, CoWoS-S scaled up to <strong>3.3x reticle size</strong> (~2,700 mm²) <sup class="ref"><a href="#d7">[7]</a></sup>. Beyond 3.3x, however, a giant passive slab of silicon becomes a mechanical and economic liability: it wastes expensive 300mm wafer area on empty routing space, suffers severe warpage from coefficient of thermal expansion (CTE) mismatch against the organic substrate beneath it, and exposes the entire package to yield-killing random defects <sup class="ref"><a href="#d7">[7]</a></sup>.</p>
+<p>TSMC's answer—now the dominant platform for frontier AI accelerators—is <strong>CoWoS-L</strong> <sup class="ref"><a href="#d7">[7]</a></sup>. Instead of building the entire interposer out of silicon, CoWoS-L embeds small, high-density <strong>Local Silicon Interconnect (LSI)</strong> bridges inside a molding-based organic redistribution layer (RDL) interposer <sup class="ref"><a href="#d7">[7]</a></sup>. The tiny silicon bridges sit strictly underneath the high-bandwidth seams—between dual GPU dies and between each GPU die and its adjacent HBM stacks—providing the same sub-micron copper line densities as CoWoS-S <sup class="ref"><a href="#d7">[7]</a></sup>. Everywhere else, wide-pitch front-side and back-side RDL layers carry power and lower-density signals with lower high-frequency loss and better mechanical compliance <sup class="ref"><a href="#d7">[7]</a></sup>.</p>
+<p>CoWoS-L entered volume production at 3.5x reticle size in 2024 and reached <strong>5.5x reticle size</strong> in volume production by 2026 <sup class="ref"><a href="#d7">[7]</a></sup><sup class="ref"><a href="#d16">[16]</a></sup>. At the 2026 OCP APAC Summit, TSMC's advanced packaging leadership reported that 5.5x-reticle CoWoS-L yields had surpassed 98% across multiple AI customers and topped 99% on mature runs, while laying out a roadmap to a <strong>14x-reticle</strong> CoWoS package capable of integrating roughly 10 large compute dies and 20 HBM stacks by 2028–2029 <sup class="ref"><a href="#d16">[16]</a></sup>. Intel is pursuing a competing bridge architecture, EMIB-T, targeting 6x to 8x reticle areas in 2026 and over 12x by 2028 <sup class="ref"><a href="#d16">[16]</a></sup>. The established physics is clear: localized silicon bridges beat monolithic interposers past 3.3x reticle; what remains open is how far organic RDL and package substrates can stretch mechanically before warpage forces glass cores or panel-level formats.</p>
+<h3>The Thermal and Stacking Battleground: MR-MUF, TC-NCF, and the 775µm Detour</h3>
+<p>Piling 12 or 16 active DRAM dies on top of a logic base die—and parking that tower millimeters from a kilowatt-class dual-reticle GPU—creates a brutal thermal geometry. Heat generated in the lower DRAM layers must travel vertically through a dozen alternating layers of silicon, solder microbumps, and polymeric underfill before reaching the cold plate on top. Because DRAM cell leakage increases exponentially with temperature, hotspots force faster refresh cycles, which steal available memory bandwidth and degrade reliability.</p>
+<p>Two competing stacking processes dominate HBM3E and HBM4 manufacturing, and their technical trade-offs explain much of the industry's competitive split <sup class="ref"><a href="#d10">[10]</a></sup><sup class="ref"><a href="#d11">[11]</a></sup><sup class="ref"><a href="#d13">[13]</a></sup>:</p>
+<ul>
+<li><strong>Advanced MR-MUF (Mass Reflow Molded Underfill)</strong>, championed by SK hynix, aligns all DRAM dies with solder microbumps, melts and bonds the entire stack simultaneously in a mass-reflow oven, and then injects a liquid epoxy molding compound (EMC) loaded with thermally conductive fillers to encapsulate the gaps <sup class="ref"><a href="#d10">[10]</a></sup><sup class="ref"><a href="#d13">[13]</a></sup>. Because the liquid EMC flows uniformly without applying heavy layer-by-layer mechanical compression, it minimizes voids and creates a continuous thermal path. In June 2026, SK hynix reported that its Advanced MR-MUF enabled a 12-layer, 48 GB HBM4E stack with 17% lower thermal resistance than its preceding HBM4 <sup class="ref"><a href="#d10">[10]</a></sup>.</li>
+<li><strong>Advanced TC-NCF (Thermal Compression with Non-Conductive Film)</strong>, used by Samsung, sandwiches a pre-cut solid adhesive film between each DRAM die and applies heat and pressure layer by layer <sup class="ref"><a href="#d11">[11]</a></sup><sup class="ref"><a href="#d13">[13]</a></sup>. Dry film offers tight vertical thickness control as die-to-die gaps shrink, though historically it trailed liquid EMC in bulk thermal conductivity. Samsung countered by thinning the film, suppressing micro-voids, and engineering dual-sized microbumps—smaller bumps for dense signal I/O and larger dedicated bumps to conduct heat—claiming an 11% thermal-resistance improvement and ~12% power-efficiency gain on its 12-layer HBM3E <sup class="ref"><a href="#d11">[11]</a></sup>.</li>
+</ul>
+<p>Both camps faced a looming cliff with HBM4. Under prior JEDEC rules, maximum HBM stack height was capped at <strong>720 micrometers</strong> so the memory cube would sit flush beneath a shared heat spreader alongside the logic die <sup class="ref"><a href="#d13">[13]</a></sup>. Squeezing 16 DRAM layers plus a base die—along with 16 intervening layers of solder microbumps—into 720µm appeared physically impossible, leading most analysts to assume that HBM4 16-Hi would force an immediate transition to bump-less copper-to-copper hybrid bonding <sup class="ref"><a href="#d13">[13]</a></sup>.</p>
+<p>Instead, JEDEC revised the HBM4 package height ceiling from <strong>720µm to 775µm</strong>, matching standard logic wafer thickness <sup class="ref"><a href="#d13">[13]</a></sup>. That extra 55 micrometers proved decisive. Combined with die thinning down to 30–50µm and tighter TSV and microbump pitches approaching 10µm, the 775µm allowance gave Advanced MR-MUF and Advanced TC-NCF enough vertical headroom to handle 12-Hi and even 16-Hi HBM4 stacks without absorbing the cost and yield risks of hybrid bonding <sup class="ref"><a href="#d13">[13]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>. Here, it is important to separate established fact from vendor claims: the 775µm JEDEC revision and the resulting postponement of hybrid bonding for initial HBM4 volume production are well-established across SK hynix, Samsung, Micron, and packaging toolmakers <sup class="ref"><a href="#d13">[13]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>, whereas relative thermal-resistance and yield advantages between MR-MUF and TC-NCF remain vendor-reported figures that depend heavily on specific customer thermal envelopes.</p>
+<h3>Hybrid Copper-to-Copper Bonding: Physics, Yield, and the HBM5 Cliff</h3>
+<p>Postponing hybrid bonding is not cancelling it <sup class="ref"><a href="#d13">[13]</a></sup>. As HBM pushes past 16 layers toward 20-high stacks—and as interconnect pitches shrink below 10 micrometers—solder microbumps hit hard physical walls. Solder balls bridge electrically if packed too closely, form brittle intermetallic compounds under thermal cycling, add parasitic capacitance and resistance, and eat up precious vertical microns <sup class="ref"><a href="#d12">[12]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>.</p>
+<p><strong>Hybrid bonding</strong> eliminates solder entirely <sup class="ref"><a href="#d12">[12]</a></sup>. Each wafer surface consists of tiny recessed copper pads embedded inside a flat dielectric insulator (typically silicon dioxide or silicon carbonitride, SiCN) <sup class="ref"><a href="#d12">[12]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>. After plasma activation, the two ultra-clean dielectric surfaces bond spontaneously at room temperature via van der Waals and covalent forces, hermetically sealing the interface. A subsequent thermal anneal causes the copper pads to expand slightly faster than the surrounding dielectric, fusing directly <strong>copper-to-copper (Cu-Cu)</strong> into a continuous metallic interconnect that behaves electrically almost as if it were fabricated on a single monolithic chip <sup class="ref"><a href="#d12">[12]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>.</p>
+<p>The dimensional leap is dramatic. Conventional C4 solder bumps sit at ~100µm pitch, and HBM microbumps occupy the ~10–20µm regime <sup class="ref"><a href="#d12">[12]</a></sup><sup class="ref"><a href="#d13">[13]</a></sup>. TSMC's logic-on-logic <strong>SoIC</strong> hybrid bonding reached 6µm pitch in 2025, targets 4.5µm by 2029, and delivers more than 50x higher interconnect density and 5x greater energy efficiency than microbump stacking <sup class="ref"><a href="#d16">[16]</a></sup>; research demonstrations push Cu-Cu pitch below 1µm <sup class="ref"><a href="#d12">[12]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>. Hybrid bonding is already proven in high-volume production across Sony CMOS image sensors (since 2010), 3D NAND flash (YMTC, Kioxia, and SK hynix's upcoming 400+ layer NAND), and AMD's 3D V-Cache processors <sup class="ref"><a href="#d12">[12]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>.</p>
+<p>Why, then, did DRAM makers hesitate to deploy it on HBM4? Four manufacturing physics hurdles stand in the way <sup class="ref"><a href="#d13">[13]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>:</p>
+<ol>
+<li><strong>Particle sensitivity and planarity:</strong> A single sub-micron dust particle trapped between two flat dielectric surfaces creates a millimeter-scale void that kills hundreds of adjacent I/Os. Chemical-mechanical planarization (CMP) must control copper recess ("dishing") to nanometer tolerances across a 300mm wafer <sup class="ref"><a href="#d14">[14]</a></sup>.</li>
+<li><strong>Overlay and warpage:</strong> Achieving sub-10µm pitch requires roughly 50nm wafer-to-wafer or die-to-wafer alignment precision <sup class="ref"><a href="#d14">[14]</a></sup>. Any cumulative bow from upstream wafer thinning, film stress, or CTE mismatch shifts pads out of registration and causes open circuits.</li>
+<li><strong>Throughput and die-to-wafer cost:</strong> Unlike image sensors or NAND—which can bond whole wafers to whole wafers—HBM requires <strong>die-to-wafer</strong> bonding so only known-good DRAM dies are stacked onto the base wafer. High-precision pick-and-place bonders are far slower than mass reflow, and long queue times between plasma activation and bonding risk moisture contamination at the interface <sup class="ref"><a href="#d14">[14]</a></sup>.</li>
+<li><strong>Anneal thermal budget:</strong> Conventional Cu-Cu diffusion bonding requires 300°C to 400°C anneals, which can degrade sensitive DRAM transistor retention and worsen stack warpage. Equipment and materials suppliers are actively developing <strong>nanotwinned copper</strong> (with &lt;111&gt; grain orientation) and low-temperature SiCN deposition to push anneal temperatures down toward ~200°C <sup class="ref"><a href="#d14">[14]</a></sup>.</li>
+</ol>
+<p>Until die-to-wafer throughput rises and low-temperature annealing matures, microbumps retain an overwhelming cost-per-bit advantage for 12-Hi HBM4—leaving hybrid bonding poised for the HBM5 and 20-Hi transition <sup class="ref"><a href="#d13">[13]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>.</p>
+<h3>Manufacturing Economics and What to Watch Next</h3>
+<p>Advanced packaging was once a low-margin back-end afterthought outsourced to assembly houses. Today, it is as capital-intensive—and as strategically scarce—as leading-edge 2nm lithography. TSMC has nearly doubled CoWoS capacity each year for three consecutive years, operating 10 advanced packaging facilities and scaling monthly output from roughly 70,000 wafers in 2025 toward 130,000–140,000 wafers by the end of 2026 <sup class="ref"><a href="#d15">[15]</a></sup><sup class="ref"><a href="#d16">[16]</a></sup>. Even at that pace, industry estimates place the 2026 CoWoS supply-demand gap near 20%, with NVIDIA alone reportedly reserving 800,000 to 850,000 wafers—over half of TSMC's annual CoWoS allocation—while hyperscaler custom ASICs compete for the remainder <sup class="ref"><a href="#d15">[15]</a></sup>.</p>
+<p>The economic stakes of yield are asymmetric. In a 5.5x-reticle CoWoS-L package containing two leading-edge logic dies and eight to twelve HBM stacks, the interposer and assembly represent a fraction of total bill of materials, yet a single packaging defect scraps thousands of dollars of already-fabricated silicon and memory. That explains why TSMC's reported &gt;98–99% CoWoS-L yields are existential for AI hardware margins <sup class="ref"><a href="#d16">[16]</a></sup>—and why TSMC historically kept the delicate front-end <strong>Chip-on-Wafer (CoW)</strong> die-attachment step in-house while licensing only the back-end <strong>Wafer-on-Substrate (WoS)</strong> step to Outsourced Semiconductor Assembly and Test (OSAT) partners such as ASE, SPIL, and Amkor <sup class="ref"><a href="#d15">[15]</a></sup>.</p>
+<p>In mid-2026, persistent capacity tightness began cracking that boundary. Reports indicate TSMC is expanding CoW outsourcing to OSATs including ASE, while major chipmakers are simultaneously backing ASE and SPIL to build end-to-end CoW lines capable of accepting finished foundry wafers directly <sup class="ref"><a href="#d15">[15]</a></sup>. Yet relieving CoWoS alone does not end the supply chain crunch: TSMC's packaging leadership explicitly flagged <strong>HBM memory</strong> and <strong>Ajinomoto Build-up Film (ABF) substrates</strong> as the next multi-year bottlenecks, noting that multi-sourcing materials from different suppliers introduces mechanical and thermal variance that complicates 3D process control <sup class="ref"><a href="#d16">[16]</a></sup>.</p>
+<p>Four concrete milestones will determine how quickly AI compute breaks through the memory wall over the next 24 months:</p>
+<ul>
+<li><strong>HBM4 and HBM4E mass-production ramps:</strong> Watch whether SK hynix, Samsung, and Micron hit volume yields on 12-Hi and 16-Hi HBM4/HBM4E stacks under the 775µm limit without thermal throttling in 2027 rack-scale deployments <sup class="ref"><a href="#d10">[10]</a></sup><sup class="ref"><a href="#d13">[13]</a></sup>.</li>
+<li><strong>The hybrid-bonding crossover point:</strong> Track whether nanotwinned copper and sub-250°C anneal processes mature fast enough to bring die-to-wafer Cu-Cu bonding into 16-Hi HBM4E or if the industry holds the line with microbumps until HBM5 <sup class="ref"><a href="#d13">[13]</a></sup><sup class="ref"><a href="#d14">[14]</a></sup>.</li>
+<li><strong>Custom logic base dies:</strong> Monitor how aggressively hyperscalers and GPU designers exploit foundry-made HBM4 base dies to offload KV-cache management, decompression, or lightweight attention primitives directly onto the memory stack <sup class="ref"><a href="#d8">[8]</a></sup><sup class="ref"><a href="#d9">[9]</a></sup>.</li>
+<li><strong>Substrate and reticle scaling:</strong> Watch whether TSMC's 14x-reticle CoWoS-L roadmap, Intel's EMIB-T, and OSAT-built CoW lines can expand capacity without hitting an ABF substrate or package-warpage ceiling <sup class="ref"><a href="#d15">[15]</a></sup><sup class="ref"><a href="#d16">[16]</a></sup>.</li>
+</ul>
+<p>The era when AI performance could be read off a transistor-count spec sheet is over. For the rest of this decade, the speed of intelligence will be set by how tightly engineers can pack silicon in three dimensions, how cheaply they can keep it cool, and how many thousands of parallel copper lanes they can squeeze into a millimeter of edge.</p>
+    </div>
+    <div class="deepdive-refs">
+      <span class="drhed">Primary References:</span>
+      <ol>
+        <li id="d1"><a href="https://arxiv.org/abs/2403.14123" target="_blank" rel="noopener"><strong>AI and Memory Wall</strong></a> &mdash; arXiv / IEEE Micro (Gholami et al.)</li>
+        <li id="d2"><a href="https://arxiv.org/abs/2402.16363" target="_blank" rel="noopener"><strong>LLM Inference Unveiled: Survey and Roofline Model Insights</strong></a> &mdash; arXiv (Yuan et al.)</li>
+        <li id="d3"><a href="https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/" target="_blank" rel="noopener"><strong>Inside NVIDIA Blackwell Ultra: The Chip Powering the AI Factory Era</strong></a> &mdash; NVIDIA Technical Blog</li>
+        <li id="d4"><a href="https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/" target="_blank" rel="noopener"><strong>Inside NVIDIA Rubin GPU Architecture: Powering the Era of Agentic AI</strong></a> &mdash; NVIDIA Technical Blog</li>
+        <li id="d5"><a href="https://www.allaboutcircuits.com/news/jedec-officially-releases-hbm4-memory-standard/" target="_blank" rel="noopener"><strong>JEDEC Officially Releases HBM4 Memory Standard</strong></a> &mdash; All About Circuits</li>
+        <li id="d6"><a href="https://blogs.sw.siemens.com/semiconductor-packaging/2026/04/24/hbm3e-hbm4-ic-design-guide/" target="_blank" rel="noopener"><strong>HBM3e and HBM4: IC design guide for next-generation high bandwidth memory</strong></a> &mdash; Siemens Digital Industries Software</li>
+        <li id="d7"><a href="https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm" target="_blank" rel="noopener"><strong>CoWoS (Chip-on-Wafer-on-Substrate) Technology Overview</strong></a> &mdash; TSMC 3DFabric</li>
+        <li id="d8"><a href="https://news.skhynix.com/en/sk-hynix-partners-with-tsmc-to-strengthen-hbm-technological-leadership/" target="_blank" rel="noopener"><strong>SK hynix Partners with TSMC to Strengthen HBM Technological Leadership</strong></a> &mdash; SK hynix Newsroom</li>
+        <li id="d9"><a href="https://news.skhynix.com/en/tsmc-technology-symposium-2026/" target="_blank" rel="noopener"><strong>Overcoming Technological Limits Requires the Integration of Memory and Logic: SK hynix Presents Vision at TSMC Symposium</strong></a> &mdash; SK hynix Newsroom</li>
+        <li id="d10"><a href="https://news.skhynix.com/en/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-2/" target="_blank" rel="noopener"><strong>SK hynix Ships Samples of 12-Layer Next-Gen &#39;HBM4E&#39;</strong></a> &mdash; SK hynix Newsroom</li>
+        <li id="d11"><a href="https://semiconductor.samsung.com/dram/hbm/hbm3e/" target="_blank" rel="noopener"><strong>HBM3E: Superior Performance with 12-Layer Stack and Advanced TC-NCF</strong></a> &mdash; Samsung Semiconductor Global</li>
+        <li id="d12"><a href="https://news.skhynix.com/en/tech-note-series-ep2/" target="_blank" rel="noopener"><strong>[Tech Note] Hybrid Bonding: Evolving into a Foundational Technology for Improving Semiconductor Performance</strong></a> &mdash; SK hynix Newsroom</li>
+        <li id="d13"><a href="https://semiengineering.com/hbm4-sticks-with-microbumps-postponing-hybrid-bonding/" target="_blank" rel="noopener"><strong>HBM4 Sticks With Microbumps, Postponing Hybrid Bonding</strong></a> &mdash; Semiconductor Engineering</li>
+        <li id="d14"><a href="https://semiengineering.com/making-hybrid-bonding-better/" target="_blank" rel="noopener"><strong>Making Hybrid Bonding Better</strong></a> &mdash; Semiconductor Engineering</li>
+        <li id="d15"><a href="https://www.trendforce.com/news/2026/08/05/news-tsmc-reportedly-expands-outsourcing-of-key-cowos-front-end-step-to-osats-amid-rising-nvidia-asic-demand/" target="_blank" rel="noopener"><strong>TSMC Reportedly Expands Outsourcing of Key CoWoS Front-End Step to OSATs Amid Rising NVIDIA, ASIC Demand</strong></a> &mdash; TrendForce</li>
+        <li id="d16"><a href="https://www.trendforce.com/news/2026/08/11/news-tsmcs-5-5-reticle-cowos-reportedly-tops-99-yield-flags-memory-abf-as-ai-bottlenecks/" target="_blank" rel="noopener"><strong>TSMC&#39;s 5.5-Reticle CoWoS Reportedly Tops 99% Yield; Flags Memory, ABF as AI Bottlenecks</strong></a> &mdash; TrendForce</li>
+      </ol>
+    </div>
+  </div>
+
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <details>
+      <summary>Editorial & Pipeline Notes (7)</summary>
+      <ul>
+<li>3 candidate items were dropped before publication (dead links, stale or already-covered stories).</li><li>5 further lower-priority candidates were held back to keep the issue near its 130-minute reading target.</li><li>world.world: could not fetch &#39;COP31 climate talks collapse in Antalya &#39; to verify it</li><li>world.world: could not fetch &#39;White House threatens penalties on U.S. &#39; to verify it</li><li>Reviewer (REVISE): sampled 49 items; 0 removed, 8 corrected.</li><li>MathArena (71c8eab77e) static HTML confirms the Nov 21 addition of GPT-6.2 Astra, GPT-6.2 Sol, and Gemini 4 Carbon to LeanLean October, but leaderboard scores and cost figures render via client-side JavaScript and could not be verified from static HTML.</li><li>Several Markets and Money why_for_you lines use mildly advisory phrasing (e.g., &#34;argue against chasing&#34; in 36fd0c1c4a and 830e0aabc3; &#34;favoring disciplined position sizing&#34; in ddab88ef2a; &#34;warrants discipline around support&#34; in a783a7b1bd); these reflect portfolio-posture risk notes rather than buy/sell recommendations.</li>      </ul>
+    </details>
+    <details>
+      <summary>All Sources & Citations (121)</summary>
+      <ol>
+        <li><a href="https://www.cbsnews.com/news/un-cop31-climate-conference-ends-no-agreement-fossil-fuel-debate-standstill/" target="_blank" rel="noopener">COP31 Climate Summit in Antalya Collapses Without Overarching Fossil-Fuel Pact</a> &mdash; <cite>CBS News</cite></li>
+        <li><a href="https://247wallst.com/investing/2026/11/23/anthropic-fizzles-while-the-market-sizzles-is-ant-stock-headed-for-75-or-even-50/" target="_blank" rel="noopener">Anthropic Shares Slip 4% on Nov 23, Lagging AI Compute Rally</a> &mdash; <cite>24/7 Wall St.</cite></li>
+        <li><a href="https://www.aa.com.tr/en/europe/germanys-merz-says-europe-ready-to-negotiate-with-russia/4135032" target="_blank" rel="noopener">Germany&#39;s Merz Signals Four-Way Ukraine Adviser Talks After Shenzhen Summit</a> &mdash; <cite>Anadolu Agency</cite></li>
+        <li><a href="https://www.newindianexpress.com/states/odisha/2026/Nov/21/akvan-triggers-heavy-showers-after-landfall-berhampur-battles-floods" target="_blank" rel="noopener">Cyclone Akvan Spares Casualties After Landfall Near Gopalpur, Floods Berhampur and Crops</a> &mdash; <cite>The New Indian Express</cite></li>
+        <li><a href="https://www.aljazeera.com/sports/2026/11/23/carlos-alcaraz-atp-finals-2026-title-alexander-zverev-tennis" target="_blank" rel="noopener">Carlos Alcaraz Beats Alexander Zverev to Win Maiden Nitto ATP Finals Title</a> &mdash; <cite>Al Jazeera</cite></li>
+        <li><a href="https://gcaptain.com/fake-iran-tanker-highlights-uncertainty-around-hormuz-traffic/" target="_blank" rel="noopener">Phantom Iranian Tanker Signal Highlights Strait of Hormuz Tracking Uncertainty</a> &mdash; <cite>gCaptain</cite></li>
+        <li><a href="https://www.livemint.com/sports/cricket-news/four-draws-in-a-month-ind-vs-nz-wellington-stalemate-sees-november-2026-equal-a-rare-test-cricket-feat-11795409565461.html" target="_blank" rel="noopener">Mitchell and Phillips Bat Out Day 5 as New Zealand Hold India to Wellington Draw</a> &mdash; <cite>Mint</cite></li>
+        <li><a href="https://fortune.com/2026/11/23/wall-street-1-trillion-jensen-huang-nvidia-stock-market-cap/" target="_blank" rel="noopener">Nvidia reinstates Jensen Huang as CEO, adding roughly $1 trillion in a 31% surge</a> &mdash; <cite>Fortune</cite></li>
+        <li><a href="https://www.cbsnews.com/news/us-stock-futures-rebound-tech-rout/" target="_blank" rel="noopener">Wall Street posts historic Nov 23 relief rally inside a fragile Downtrend</a> &mdash; <cite>CBS News</cite></li>
+        <li><a href="https://www.morningstar.com/news/marketwatch/2026112362/unitedhealth-humana-and-cvs-stocks-slide-as-us-targets-medicare-advantage-ratings" target="_blank" rel="noopener">UnitedHealth extends weekly slide to 18.4% as CMS targets Medicare Advantage Star Ratings</a> &mdash; <cite>Morningstar / MarketWatch</cite></li>
+        <li><a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=281919" target="_blank" rel="noopener">SK Hynix (+20%), TSM (+14.1%), ASX (+21.4%), and KORU (+28.8%) roar back on SoftBank HBM report</a> &mdash; <cite>Businesskorea</cite></li>
+        <li><a href="https://www.trefis.com/stock/spx/articles/627547/the-vix-says-panic-the-feds-stress-gauge-says-normal/2026-11-23" target="_blank" rel="noopener">VIX crashes 25.8% to 26.62 after hitting 35.9 panic peak while Fed stress gauge stays calm</a> &mdash; <cite>Trefis</cite></li>
+        <li><a href="https://247wallst.com/investing/2026/11/23/bloom-energy-soars-21-as-jensen-huangs-return-to-nvidia-revives-ai-power-trade-fuelcell-energy-surges-20-plug-power-jumps-8/" target="_blank" rel="noopener">Bloom Energy (+18.1%) leads AI power and infra rebound alongside Vertiv, DigitalOcean, and Arista</a> &mdash; <cite>24/7 Wall St.</cite></li>
+        <li><a href="https://www.tradingview.com/news/gurufocus:c94aac45d094b:0-alphabet-stocks-jump-6-97-as-ai-rebound-spotlights-google-cloud-s-103-growth/" target="_blank" rel="noopener">Alphabet (+5.9%) outpaces Microsoft (+1.7%) as Google Cloud&#39;s 103% growth and TPU shift draw bids</a> &mdash; <cite>TradingView / GuruFocus</cite></li>
+        <li><a href="https://www.fool.com/investing/2026/11/22/uber-trades-16-times-forward-earnings-and-30-discount-all-time-high-stock-price-here-why-robotaxis-make-that-a-mistake/" target="_blank" rel="noopener">Uber hovers near $63–$65.50 support as 16.4x valuation clashes with robotaxi fears</a> &mdash; <cite>The Motley Fool</cite></li>
+        <li><a href="https://www.fool.com/investing/2026/11/23/adobe-s-next-report-is-dec-9-here-s-how-the-stock-reacted-to-each-of-the-last-10/" target="_blank" rel="noopener">Adobe approaches Dec 9 Q4 earnings at ~9x non-GAAP earnings after 37% YTD slide</a> &mdash; <cite>The Motley Fool</cite></li>
+        <li><a href="https://www.tradingview.com/news/moodys:63a880414cc71:0-banks-sell-off-ends-four-week-rally-nifty-slumps-1-75-rupee-weakens/" target="_blank" rel="noopener">Nifty drops 1.75% to 25,349.65 and Sensex slides 1,484 pts on Monday&#39;s preponed NSE expiry</a> &mdash; <cite>TradingView / IANS</cite></li>
+        <li><a href="https://www.financialexpress.com/market/fii-buying-continues-even-as-sensex-logs-worst-single-day-loss-in-5-months-3-big-triggers-4392103/" target="_blank" rel="noopener">FIIs net buy ₹5,673 crore Monday after Friday&#39;s ₹10,308 crore haul while DIIs sell</a> &mdash; <cite>Financial Express</cite></li>
+        <li><a href="https://www.angelone.in/news/stocks/larsen-toubro-share-price-in-focus-after-securing-nvidia-b300-gpu-deployment-order" target="_blank" rel="noopener">Larsen &amp; Toubro lands ₹2,500–₹5,000 crore Nvidia B300 GPU deployment order ahead of Nov 26 expiry</a> &mdash; <cite>Angel One</cite></li>
+        <li><a href="https://www.indiatoday.in/business/market/story/sensex-falls-nearly-1000-points-why-stock-market-reversal-ai-nvidia-anthropic-selloff-3044873-2026-11-23" target="_blank" rel="noopener">India VIX jumps over 4% to 18.03 Monday after Friday&#39;s surge past 17 as metals and banks tumble</a> &mdash; <cite>India Today</cite></li>
+        <li><a href="https://www.kotakneo.com/news/sectors/indian-it-stocks-gain-despite-global-ai-selloff-as-nasdaq-records-worst-weekly-fall-since-2020/" target="_blank" rel="noopener">Nifty IT rallies nearly 3% Monday to buck broader slide as Coforge extends Friday&#39;s breakout</a> &mdash; <cite>Kotak Securities</cite></li>
+        <li><a href="https://www.marketsmojo.com/news/stocks-in-action/ajmera-realty-infra-india-ltd-shows-renewed-momentum-amid-mixed-technical-signals-4271434" target="_blank" rel="noopener">Ajmera Realty builds on Friday&#39;s 11.84% surge with bullish weekly momentum</a> &mdash; <cite>MarketsMojo</cite></li>
+        <li><a href="https://www.sahi.com/news/marine-electricals-signals-growth-optimism-supported-by-strong-data-centre-and-defence-orders" target="_blank" rel="noopener">Marine Electricals cites ₹3,514 crore data-center and naval order book after Friday&#39;s 4.8% pullback</a> &mdash; <cite>Sahi</cite></li>
+        <li><a href="https://upstox.com/news/market-news/commodities/gold-snaps-5-day-losing-streak-mcx-gold-rises-2-5-to-1-24-lakh-silver-jumps-key-factors-explained/article-203850/" target="_blank" rel="noopener">MCX gold rebounds 2.5% to ₹1.24 lakh/10g and silver jumps ahead of BlackRock meet</a> &mdash; <cite>Upstox</cite></li>
+        <li><a href="https://scanx.trade/stock-market-news/companies/titan-company-host-analyst-investor-meet-nov-18/55762478" target="_blank" rel="noopener">Titan adds Nov 23 institutional investor meeting while trading inside shortlist entry zone</a> &mdash; <cite>ScanX</cite></li>
+        <li><a href="https://www.newsquawk.com/headlines/newsquawk-weekly-economic-calendar---23rd-27th-november-2026" target="_blank" rel="noopener">Thanksgiving-compressed US macro drop: Oct PCE, Q3 GDP, Jobless Claims, and Fed Beige Book (Wed Nov 25, EST)</a> &mdash; <cite>Newsquawk</cite></li>
+        <li><a href="https://jorgai.com/blog/treasury-auction-schedule-november-23-25-2026" target="_blank" rel="noopener">US Treasury $70B 5-Year &amp; $44B 7-Year Note Auctions as 10Y yield tests 4.92% (Tue–Wed Nov 24–25, EST)</a> &mdash; <cite>Jorgai</cite></li>
+        <li><a href="https://www.businesstoday.in/markets/stocks/story/stock-market-holiday-on-november-24-are-nse-bse-closed-for-guru-nanak-jayanti-569145-2026-11-23" target="_blank" rel="noopener">NSE and BSE closed Tuesday, Nov 24 (IST) for Guru Nanak Jayanti; MCX resumes evening session</a> &mdash; <cite>Business Today</cite></li>
+        <li><a href="https://dhan.co/blog/news/upcoming-fno-expiry-nov-2026/" target="_blank" rel="noopener">BSE monthly F&amp;O expiry on Thursday, Nov 26 (3:30 PM IST) following Monday&#39;s shifted NSE expiry</a> &mdash; <cite>Dhan</cite></li>
+        <li><a href="https://www.newsquawk.com/headlines/newsquawk-weekly-us-earnings-estimates-23rd-27th-november-2026-earnings-continue-in-holiday-shortened-week-as-highlights-include-adi-dell-hpe" target="_blank" rel="noopener">Holiday-shortened US earnings slate: Analog Devices, Medtronic, Best Buy, Dell &amp; Deere (Tue–Wed Nov 24–25, EST)</a> &mdash; <cite>Newsquawk</cite></li>
+        <li><a href="https://scanx.trade/stock-market-news/companies/mcx-schedules-one-one-meeting-blackrock-nov-25/56543745" target="_blank" rel="noopener">MCX hosts one-on-one institutional meeting with BlackRock in Mumbai (Wed Nov 25, IST)</a> &mdash; <cite>ScanX</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=Wc2krdjZBBw" target="_blank" rel="noopener">Market Close: Stocks Rally as Jensen Huang Returns as Nvidia CEO • 11/23/26</a> &mdash; <cite>CNBC Television</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=8EDTdwzMpIw" target="_blank" rel="noopener">Jensen Huang Returns to Nvidia, Reigniting the AI Trade | Bloomberg Tech</a> &mdash; <cite>Bloomberg Podcasts</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=9AiRCrzjhO0" target="_blank" rel="noopener">Bloomberg Surveillance TV: November 23rd, 2026 | Bloomberg Surveillance</a> &mdash; <cite>Bloomberg Podcasts</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=IsPMTMvjL-Y" target="_blank" rel="noopener">Weekly Tidbits: 21st Nov | Anthropic IPO, AI Chips, SEBI &amp; Urban Company</a> &mdash; <cite>Markets by Zerodha</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=YFrJrPEtIro" target="_blank" rel="noopener">NIFTY Crosses 25,800! | Sensex Gains 898 Points | Market Outlook for Monday | 20 Nov 2026</a> &mdash; <cite>Goodwill Wealth Management Pvt Ltd</cite></li>
+        <li><a href="https://claude.com/resources/articles/introducing-claude-ship" target="_blank" rel="noopener">Anthropic launches Claude Ship beta to review, fix, and approve GitHub PRs</a> &mdash; <cite>Anthropic</cite></li>
+        <li><a href="https://www.langchain.com/blog/langsmith-tool-gateway" target="_blank" rel="noopener">LangSmith Tool Gateway enters Public Beta for governed agent tool calls and auth</a> &mdash; <cite>LangChain</cite></li>
+        <li><a href="https://github.com/openai/codex/releases/tag/rust-v0.172.0" target="_blank" rel="noopener">OpenAI Codex CLI v0.172.0 adds lazy stdio MCP startup, thread links, and Bedrock setup</a> &mdash; <cite>GitHub</cite></li>
+        <li><a href="https://community.openai.com/t/gpt-live-1-1-has-arrived-in-the-api/1418537" target="_blank" rel="noopener">OpenAI brings GPT-Live-1.1 and $0.02/min WebRTC Standby mode to the API</a> &mdash; <cite>OpenAI Developer Community</cite></li>
+        <li><a href="https://github.com/pipecat-ai/pipecat/releases/tag/v1.17.0" target="_blank" rel="noopener">Pipecat v1.17.0 ships native baresip SIP transport and AWS Transcribe auto-language ID</a> &mdash; <cite>GitHub</cite></li>
+        <li><a href="https://gradium.ai/blog/gradium-mcp-beta" target="_blank" rel="noopener">Gradium launches beta MCP server for text-to-speech directly inside coding agents</a> &mdash; <cite>Gradium</cite></li>
+        <li><a href="https://newsroom.workday.com/2026-11-23-Workday-Completes-Acquisition-of-C1-ai" target="_blank" rel="noopener">Workday completes C1.ai acquisition to govern identity for human workers and AI agents</a> &mdash; <cite>Workday Newsroom</cite></li>
+        <li><a href="https://cryptobriefing.com/anthropic-enterprise-frontier-safeguards-public-beta/" target="_blank" rel="noopener">Anthropic opens Enterprise Frontier Safeguards public beta with zero data retention</a> &mdash; <cite>Crypto Briefing</cite></li>
+        <li><a href="https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/" target="_blank" rel="noopener">Sierra closes $1.75B Series F at $30B valuation as CX agents hit $400M ARR</a> &mdash; <cite>TechCrunch</cite></li>
+        <li><a href="https://venturebeat.com/orchestration/giving-its-ai-more-to-read-made-t-mobiles-answers-worse" target="_blank" rel="noopener">T-Mobile CIO on why dumping support docs into large contexts worsened AI answers</a> &mdash; <cite>VentureBeat</cite></li>
+        <li><a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026" target="_blank" rel="noopener">Databricks makes external MCP tools in Genie Agents generally available</a> &mdash; <cite>Databricks Documentation</cite></li>
+        <li><a href="https://www.crn.com/news/ai/2026/openai-s-aws-oracle-and-google-cloud-marketplace-strategy-to-drive-scale-and-global-ai-growth" target="_blank" rel="noopener">OpenAI leans on AWS, Oracle, and Google Cloud Marketplaces to burn down enterprise budgets</a> &mdash; <cite>CRN</cite></li>
+        <li><a href="https://thenextweb.com/news/zai-glm-5-4-loop-transformer-coding-model" target="_blank" rel="noopener">Z.ai launches GLM-5.4, a 750B Loop Transformer targeting Generalized Coding</a> &mdash; <cite>The Next Web</cite></li>
+        <li><a href="https://artificialanalysis.ai/articles/inkling-2-mini" target="_blank" rel="noopener">Thinking Machines Lab ships Inkling 2 Mini open-weight looped MoE for local laptops</a> &mdash; <cite>Artificial Analysis</cite></li>
+        <li><a href="https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/" target="_blank" rel="noopener">Anthropic mathematician and Claude claim Lean-compiled Riemann hypothesis proof alongside human draft</a> &mdash; <cite>TechCrunch</cite></li>
+        <li><a href="https://matharena.ai/?comp=leanlean--oct26" target="_blank" rel="noopener">MathArena adds GPT-6.2 Astra, Sol, and Gemini 4 Carbon to LeanLean October formalization benchmark</a> &mdash; <cite>MathArena</cite></li>
+        <li><a href="https://explainx.ai/blog/gpt-6-2-astra-sol-aa-personalitybench-transparency-uncertainty-november-2026" target="_blank" rel="noopener">AA-PersonalityBench shows GPT-6.2 cuts verbosity ~34-40% and hedges far less than Claude</a> &mdash; <cite>explainx.ai</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=DCcPlV2iHzw" target="_blank" rel="noopener">Inkling 2 Mini on a 36GB Mac: Bionic vs Pi vs OpenCode</a> &mdash; <cite>JeredBlu</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=CmGJGn3WHvI" target="_blank" rel="noopener">The Operator View Nov 2026 - MCP Security: Testing the Servers Behind AI Agents</a> &mdash; <cite>Armada Advanced Security</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=6BjOTxYDp4Y" target="_blank" rel="noopener">Does Gemini 4 Neon Really Beat Claude and GPT-6.2? I Tested It</a> &mdash; <cite>Mervin Praison</cite></li>
+        <li><a href="https://www.youtube.com/watch?v=FORdPIWOH5k" target="_blank" rel="noopener">Gemini and the path to AGI with Koray Kavukcuoglu</a> &mdash; <cite>Google DeepMind</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.24636" target="_blank" rel="noopener">Clover-35B-A3B-Preview: Recurrent-Memory Diffusion MoE for Coding Agents</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.21885" target="_blank" rel="noopener">Language Models Can Rewrite Their Own Weights Without Gradients</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.27973" target="_blank" rel="noopener">MemOnce: Scalable Memory States for Long-Horizon LLM Interactions</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.25773" target="_blank" rel="noopener">Duopra: Bringing Task Execution Agency to Full-Duplex Voice Models</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.21152" target="_blank" rel="noopener">RepoFactory: Scaling Long-Horizon Coding Environments from Real Repos</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.24651" target="_blank" rel="noopener">Piccolo: Co-Evolving Decision Models and Data via Recursive Self-Improvement</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.26980" target="_blank" rel="noopener">Contexture: Runtime Context Eviction for High-Throughput Agent Serving</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.26480" target="_blank" rel="noopener">Held While Waiting: What LLM Agent Sessions Reserve on Serverless Runtimes</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.27095" target="_blank" rel="noopener">Epistemic Guard: Out-of-Process MCP Receipt Proxying and Provenance Memory</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.27090" target="_blank" rel="noopener">Exercised, Rarely Recovered: Auditing Recovery Across 50 Agent Runtimes</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.23847" target="_blank" rel="noopener">Great Listeners, Poor Decision-Makers: Action Gating for Voice Agents</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://modal.com/blog/sandbox-bursting" target="_blank" rel="noopener">Sandbox Resourcing: Burst, Don&#39;t Reserve, for Coding Agents</a> &mdash; <cite>Modal Blog</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.27622" target="_blank" rel="noopener">Benchmarks&#39; Last Exam: Auditing Prompt, Environment, and Grader Alignment</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.27860" target="_blank" rel="noopener">Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.22605" target="_blank" rel="noopener">Simplicity Goes Far: Auditing Prompt Optimizers Against Demonstration Search</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.26073" target="_blank" rel="noopener">AltRA-Test: Validating LLM Judges When Human Annotators Don&#39;t Overlap</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://arxiv.org/abs/2611.26881" target="_blank" rel="noopener">Your Judge Inherits Your Prompt: Directional Label Bias in LLM-as-Judge</a> &mdash; <cite>arXiv</cite></li>
+        <li><a href="https://www.theguardian.com/environment/2026/nov/22/finance-fossil-fuels-overshoot-six-key-takeaways-cop31" target="_blank" rel="noopener">COP31 climate talks collapse in Antalya without final deal over fossil fuels and finance</a> &mdash; <cite>The Guardian</cite></li>
+        <li><a href="https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/" target="_blank" rel="noopener">Three tankers hit naval mines in Strait of Hormuz as Iran rejects U.S. blockade</a> &mdash; <cite>CBS News</cite></li>
+        <li><a href="https://www.pravda.com.ua/eng/news/2026/11/23/8064177/" target="_blank" rel="noopener">Zelenskyy says Kyiv is ready for four-party peace talks with U.S., Europe, and Russia</a> &mdash; <cite>Ukrainska Pravda</cite></li>
+        <li><a href="https://natlawreview.com/article/government-challenges-broad-ieepa-tariff-refunds-what-importers-need-know" target="_blank" rel="noopener">Federal Circuit appeal tests scope of IEEPA tariff refunds after Supreme Court ruling</a> &mdash; <cite>National Law Review</cite></li>
+        <li><a href="https://africa.businessinsider.com/local/markets/us-iran-war-delivers-dollar216-billion-windfall-to-nine-african-fossil-fuel-exporters/zjg8cgx" target="_blank" rel="noopener">U.S.–Iran conflict delivers $21.6 billion windfall to nine African fossil-fuel exporters</a> &mdash; <cite>Business Insider Africa</cite></li>
+        <li><a href="https://www.theguardian.com/us-news/2026/nov/20/trump-datacenters-white-house" target="_blank" rel="noopener">White House threatens penalties on U.S. tech companies building data centers abroad</a> &mdash; <cite>The Guardian</cite></li>
+        <li><a href="https://www.aljazeera.com/news/2026/11/22/rsf-drones-kill-four-in-khartoum" target="_blank" rel="noopener">Drone strikes near Khartoum kill four and damage UN building as Sudan war escalates</a> &mdash; <cite>Al Jazeera</cite></li>
+        <li><a href="https://www.freepressjournal.in/business/rbi-proposes-stop-switch-to-block-digital-banking-debits-instantly-strengthen-protection-against-fraud" target="_blank" rel="noopener">RBI proposes instant &#39;Stop Switch&#39; and Trusted Person check to curb digital banking fraud</a> &mdash; <cite>The Free Press Journal</cite></li>
+        <li><a href="https://english.gujaratsamachar.com/news/business/listing-gain-tracker-goes-dark-sebi-bans-publication-and-circulation-of-ipo-grey-market-premiums-42955286353" target="_blank" rel="noopener">SEBI bars market participants from publishing or circulating IPO grey market premiums</a> &mdash; <cite>Gujarat Samachar English</cite></li>
+        <li><a href="https://www.tribuneindia.com/news/business/sebi-proposes-12-year-tenure-cap-for-heads-of-stock-exchanges-and-other-market-institutions/" target="_blank" rel="noopener">SEBI proposes 12-year cumulative tenure cap for stock exchange and MII chiefs</a> &mdash; <cite>The Tribune</cite></li>
+        <li><a href="https://newsonair.gov.in/rbi-issues-final-amendments-to-securitisation-directions-to-improve-efficiency-liquidity-and-transparency/" target="_blank" rel="noopener">RBI finalizes securitisation amendment directions effective April 2027</a> &mdash; <cite>Akashvani News</cite></li>
+        <li><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2339544&amp;reg=22&amp;lang=1" target="_blank" rel="noopener">Surat–Bilimora 50 km Bullet Train stretch energised at 2x25 kV ahead of trials</a> &mdash; <cite>Press Information Bureau</cite></li>
+        <li><a href="https://www.thehindu.com/business/markets/sebi-proposals-will-open-window-to-foreign-funds-with-opaque-offshore-ownership-structures-says-congress/article71730702.ece" target="_blank" rel="noopener">SEBI proposes scrapping additional FPI disclosures after ₹5.61 lakh crore equity outflows</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://taxguru.in/rbi/rbi-faqs-fema-export-import-regulations-2026-clarify-edf-filing-reporting.html" target="_blank" rel="noopener">RBI FAQs clarify ₹10 lakh threshold for Export Declaration Forms under 2026 FEMA rules</a> &mdash; <cite>TaxGuru</cite></li>
+        <li><a href="https://www.thehindu.com/news/national/andhra-pradesh/govt-promoting-amaravati-economic-region-as-andhra-pradeshs-major-growth-engine/article71731285.ece" target="_blank" rel="noopener">Andhra Pradesh unveils Amaravati Economic Region masterplan with ₹4.65 lakh crore pipeline</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.thehindu.com/news/national/telangana/telangana-govt-seeks-12-month-gap-in-crop-loan-repayment-for-farmers-in-drought-hit-mandals/article71734148.ece" target="_blank" rel="noopener">Telangana requests 12-month crop-loan moratorium across 365 drought-affected mandals</a> &mdash; <cite>The Hindu</cite></li>
+        <li><a href="https://www.newindianexpress.com/states/odisha/2026/Nov/20/cyclone-akvan-weakens-into-depression-over-odisha-after-landfall" target="_blank" rel="noopener">Cyclone Akvan weakens after Gopalpur landfall; 4.40 lakh evacuated and Srikakulam lashed</a> &mdash; <cite>The New Indian Express</cite></li>
+        <li><a href="https://kalkinemedia.com/in/news/announcements/natco-pharmas-kothur-facility-receives-seven-observations-following-us-fda-inspection" target="_blank" rel="noopener">Natco Pharma&#39;s Kothur plant in Hyderabad receives seven U.S. FDA Form-483 observations</a> &mdash; <cite>Kalkine Media</cite></li>
+        <li><a href="https://www.digitalhealthnews.com/telangana-explores-global-partnerships-to-advance-ai-healthcare-pharmaceutical-innovation" target="_blank" rel="noopener">Telangana signs UN Geneva MoU with 1M1B Foundation for AI, healthcare, and pharma ties</a> &mdash; <cite>Digital Health News</cite></li>
+        <li><a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Nov/23/ap-govt-plans-to-bring-private-ayush-hospitals-under-ntr-vaidya-seva" target="_blank" rel="noopener">Andhra Pradesh plans cashless AYUSH care across 238 packages under NTR Vaidya Seva</a> &mdash; <cite>The New Indian Express</cite></li>
+        <li><a href="https://hdfcsky.com/news/rupee-snaps-5-day-rally-tumbles-30-paise-to-settle-at-92-92-against-us-dollar-november-23-2026" target="_blank" rel="noopener">Indian rupee snaps five-day rally, slips 30 paise to settle at 92.92 per US dollar</a> &mdash; <cite>HDFC Sky</cite></li>
+        <li><a href="https://www.business-standard.com/immigration/h-1b-visa-workers-children-could-get-green-card-pathway-under-this-us-bill-126112000268_1.html" target="_blank" rel="noopener">US House leader pledges push on Green Card bill for H-1B and L-1 children aging out at 21</a> &mdash; <cite>Business Standard</cite></li>
+        <li><a href="https://openthemagazine.com/india/india-us-defence-ties-from-f-35-fighter-jets-to-quad-patrols-how-military-cooperation-is-growing" target="_blank" rel="noopener">US–India defence ties expand as USNS Wally Schirra docks at Kattupalli after F-35 drills</a> &mdash; <cite>Open The Magazine</cite></li>
+        <li><a href="https://economictimes.indiatimes.com/nri/work/in-a-regime-of-rule-change-h-1b-visa-workers-abandon-us-dream/articleshow/136038214.cms" target="_blank" rel="noopener">Frequent H-1B rule shifts prompt some Bay Area and U.S. tech workers to weigh exits</a> &mdash; <cite>The Economic Times</cite></li>
+        <li><a href="https://www.chugh.com/news/sebi-allows-nris-and-oci-cardholders-to-complete-investment-kyc-online-from-abroad-starting-december-3-2026" target="_blank" rel="noopener">SEBI remote digital KYC rule for NRIs and OCIs in FATF nations takes effect December 3</a> &mdash; <cite>Chugh, LLP</cite></li>
+        <li><a href="https://english.news.cn/20261122/6e375d2322744d0d91f886190fef84c2/c.html" target="_blank" rel="noopener">Wang Zhiyi retains Hong Kong Open crown as Anders Antonsen wins men&#39;s title by walkover</a> &mdash; <cite>Xinhua</cite></li>
+        <li><a href="https://www.indiasportshub.com/articles/lakshya-sen-and-pv-sindhu-qualify-for-bwf-world-tour-finals-2026-india-set-for-two-pronged-challenge-in-hangzhou" target="_blank" rel="noopener">Lakshya Sen and PV Sindhu qualify for 2026 BWF World Tour Finals in Hangzhou</a> &mdash; <cite>India Sports Hub</cite></li>
+        <li><a href="https://www.lta.org.uk/fan-zone/davis-cup/news/which-teams-are-playing-in-the-davis-cup-finals-2026" target="_blank" rel="noopener">Davis Cup Final 8 opens Tuesday in Bologna with Italy chasing fourth straight title</a> &mdash; <cite>Lawn Tennis Association</cite></li>
+        <li><a href="https://tennisnow.com/gauff-townsend-clinch-usa-sweep-over-hungary-at-bjk-cup/" target="_blank" rel="noopener">Coco Gauff and Taylor Townsend seal USA sweep over Hungary in Billie Jean King Cup Play-offs</a> &mdash; <cite>Tennis Now</cite></li>
+        <li><a href="https://www.aljazeera.com/sports/2026/11/22/max-verstappen-las-vegas-grand-prix-f1-norris-piastri-russell-antonelli" target="_blank" rel="noopener">Max Verstappen wins 35-lead-change Las Vegas Grand Prix ahead of McLaren pair</a> &mdash; <cite>Al Jazeera</cite></li>
+        <li><a href="https://www.newindianexpress.com/sport/cricket/2026/Nov/23/daryl-mitchell-glenn-phillips-defy-india-as-new-zealand-earn-draw-in-opening-test" target="_blank" rel="noopener">Mitchell and Phillips deny India in Wellington as 1st Test ends in draw, dented WTC odds</a> &mdash; <cite>The New Indian Express</cite></li>
+        <li><a href="https://www.planetf1.com/news/f1-championship-standings-2026-las-vegas-grand-prix" target="_blank" rel="noopener">F1 standings after Las Vegas: Verstappen strengthens P2 cushion as three battle for third</a> &mdash; <cite>PlanetF1</cite></li>
+        <li><a href="https://www.dtnext.in/news/sports/ms-dhoni-will-be-missed-behind-stumps-but-his-mentorship-will-help-csk-noor-ahmad" target="_blank" rel="noopener">Noor Ahmad says CSK will miss Dhoni&#39;s glovework but gain from his IPL 2027 mentor role</a> &mdash; <cite>DT Next</cite></li>
+        <li><a href="https://www.aljazeera.com/sports/2026/11/22/liverpool-thrash-10-man-man-united-in-nightmare-start-for-pochettino" target="_blank" rel="noopener">Liverpool thrash 10-man Manchester United 4-0 in Pochettino&#39;s nightmare debut</a> &mdash; <cite>Al Jazeera</cite></li>
+        <li><a href="https://www.motorsportweek.com/2026/11/21/alonso-safety-concern-f1-las-vegas/" target="_blank" rel="noopener">Alonso flags safety concern over Aston Martin-Honda straight-line speed deficit in Vegas</a> &mdash; <cite>Motorsport Week</cite></li>
+        <li><a href="https://sanjosespotlight.com/san-jose-planning-commission-recommends-data-center-standards/" target="_blank" rel="noopener">San Jose Planning Commission Recommends Strict Data Center Standards and Permit Oversight Shift</a> &mdash; <cite>San José Spotlight</cite></li>
+        <li><a href="https://www.valleywater.org/alert/Thanksgivingstorms1120" target="_blank" rel="noopener">Valley Water and Palo Alto Close Baylands Preserve Ahead of Santa Clara County Coastal Flood Warning</a> &mdash; <cite>Valley Water</cite></li>
+        <li><a href="https://sanjosespotlight.com/santa-clara-pruneridge-golf-course-project-faces-tough-lie/" target="_blank" rel="noopener">Santa Clara Planning Commission Votes 5-1 Against Rezoning for Pruneridge Golf Course Apartments</a> &mdash; <cite>San José Spotlight</cite></li>
+        <li><a href="https://www.mv-voice.com/technology/2026/11/20/nasa-ames-moffett-field-data-center/" target="_blank" rel="noopener">NASA Evaluates Leasing Moffett Field Land Near Mountain View for Hyperscale Data Center</a> &mdash; <cite>Mountain View Voice</cite></li>
+        <li><a href="https://www.sfgate.com/news/bayarea/article/san-jose-spotlight-south-county-completes-major-22542930.php" target="_blank" rel="noopener">South County Completes $395 Million Upper Llagas Creek Flood Protection Project</a> &mdash; <cite>SFGATE / San José Spotlight</cite></li>
+        <li><a href="https://www.sfgate.com/news/bayarea/article/san-jose-spotlight-santa-clara-county-groups-22545372.php" target="_blank" rel="noopener">Santa Clara County Nonprofits Expand Food Aid as 31% of Local Residents Face Food Insecurity</a> &mdash; <cite>SFGATE / San José Spotlight</cite></li>
+        <li><a href="https://www.kqed.org/news/12110854/another-storm-is-hitting-the-bay-area-heres-how-it-could-affect-thanksgiving-travel" target="_blank" rel="noopener">Thanksgiving Travel Faces Coastal Flood Warning and El Niño King Tides Across Bay Area</a> &mdash; <cite>KQED</cite></li>
+        <li><a href="https://calmatters.org/education/higher-education/2026/11/california-colleges-ai/" target="_blank" rel="noopener">California Colleges Weigh Building In-House AI Data Centers and Chatbots to Cut Vendor Reliance</a> &mdash; <cite>CalMatters</cite></li>
+        <li><a href="https://www.sfgate.com/bayarea/article/posey-tube-closure-22542478.php" target="_blank" rel="noopener">Caltrans Shuts Outbound Posey Tube Between Alameda and Oakland for Thanksgiving Week</a> &mdash; <cite>SFGATE</cite></li>
+        <li><a href="https://www.latimes.com/entertainment-arts/business/story/2026-11-20/fcc-says-att-can-discontinue-copper-phone-landlines" target="_blank" rel="noopener">FCC Preempts California Carrier Rules, Clearing AT&amp;T to Phase Out Copper Landlines</a> &mdash; <cite>Los Angeles Times</cite></li>
+        <li><a href="https://www.securities.io/california-regulators-approve-456-million-interim-pg-and-e-rate-increase/" target="_blank" rel="noopener">CPUC Unanimously Approves $456 Million Interim PG&amp;E Rate Increase for 2027</a> &mdash; <cite>Securities.io</cite></li>
+        <li><a href="https://calmatters.org/housing/2026/11/hud-mixed-status-lawsuit/" target="_blank" rel="noopener">California and 21 States Sue to Block Federal Rule Ending Mixed-Status HUD Housing Aid</a> &mdash; <cite>CalMatters</cite></li>
+      </ol>
+    </details>
+    <p>Want a topic added, dropped or weighted differently? Tell your agent in any session or add a line to the local feedback file; the next morning's run applies it.</p>
+    <p>Compiled on 2026-11-23 17:10 PST by research intelligence agents from verified sources. Private and calibrated to your context.</p>
+  </div>
+</div>
+<script>
+// Techmeme-inspired dynamic functionality for The Morning Brief
+(function() {
+  // Quick jump & date features
+  window.addEventListener('DOMContentLoaded', function() {
+    var searchForm = document.getElementById('briefSearchForm');
+    if (searchForm) {
+      searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var q = (document.getElementById('briefSearchInput') || {}).value;
+        if (q) {
+          window.find ? window.find(q) : alert('Searching for: ' + q);
+        }
+      });
+    }
+  });
+})();
+
+</script>
+</body>
+</html>
