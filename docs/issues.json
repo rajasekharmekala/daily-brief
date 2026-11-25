@@ -2512,7 +2512,15 @@
     "items": 93,
     "minutes": 58,
     "generated_at": "2026-11-24 15:56 PST",
-    "book": null,
+    "book": {
+      "has_book": true,
+      "book_words": 15749,
+      "book_minutes": 102,
+      "book_desks": 10,
+      "book_stories": 45,
+      "has_pdf": true,
+      "has_epub": true
+    },
     "top": [
       {
         "title": "Tech and chip stocks pull back while Dow and defensive sectors rotate higher",
