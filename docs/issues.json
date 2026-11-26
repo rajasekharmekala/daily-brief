@@ -2613,7 +2613,15 @@
     "items": 111,
     "minutes": 71,
     "generated_at": "2026-11-25 16:58 PST",
-    "book": null,
+    "book": {
+      "has_book": true,
+      "book_words": 15209,
+      "book_minutes": 98,
+      "book_desks": 10,
+      "book_stories": 45,
+      "has_pdf": true,
+      "has_epub": true
+    },
     "top": [
       {
         "title": "Wall Street erases 1,100-point Dow slump as 14-nation tariff plan rattles tech ahead of Thanksgiving",
