@@ -2605,5 +2605,108 @@
         "minutes": 6
       }
     ]
+  },
+  {
+    "date": "2026-11-25",
+    "issue_no": 27,
+    "theme": "A 14-nation U.S. Section 301 tariff proposal sends VIX past 28 even as Wall Street erases a 1,100-point Dow drop and Dalal Street surges 1,502 points, while MIT verifies a compressed Lean 4 proof of the Riemann Hypothesis, Google ships GA Workspace MCP servers, and king tides collapse part of Pacifica Pier.",
+    "items": 111,
+    "minutes": 71,
+    "generated_at": "2026-11-25 16:58 PST",
+    "book": null,
+    "top": [
+      {
+        "title": "Wall Street erases 1,100-point Dow slump as 14-nation tariff plan rattles tech ahead of Thanksgiving",
+        "source": "Fox Business",
+        "url": "https://www.foxbusiness.com/markets/stocks-11-25-2026"
+      },
+      {
+        "title": "Sensex jumps 1,502 points to 83,938 and Nifty surges 1.85% to 25,819 on post-holiday reopening",
+        "source": "Financial Express",
+        "url": "https://www.financialexpress.com/market/7-factors-driving-d-street-rally-sensex-nifty-close-with-2-gains-rupee-at-8-mth-high-4393574/"
+      },
+      {
+        "title": "Compressed 76,000-line Lean 4 Riemann Hypothesis proof passes MIT verification checks",
+        "source": "MIT Mathematics (Andrew Sutherland)",
+        "url": "https://math.mit.edu/~drew/shortgrh/"
+      },
+      {
+        "title": "Google Workspace MCP servers and Workspace CLI reach general availability",
+        "source": "Google Workspace Updates",
+        "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html"
+      },
+      {
+        "title": "U.S. proposes new Section 301 tariffs on China, the EU, and 12 other trading partners",
+        "source": "CBS News",
+        "url": "https://www.cbsnews.com/news/trump-administration-tariffs-14-trading-partners/"
+      },
+      {
+        "title": "Part of Pacifica Municipal Pier Collapses as Record King Tides and 30-Foot Waves Hit Bay Area",
+        "source": "KQED",
+        "url": "https://www.kqed.org/news/12111639/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area"
+      },
+      {
+        "title": "BCCI releases 1,220-player register for IPL 2027 auction with 66 slots open",
+        "source": "IPL Official",
+        "url": "https://www.iplt20.com/news/article/1-220-players-feature-on-auction-register-for-tata-ipl-2027-player-auction"
+      }
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "title": "Don't Miss",
+        "minutes": 4
+      },
+      {
+        "id": "followups",
+        "title": "Developing Stories",
+        "minutes": 3
+      },
+      {
+        "id": "finance",
+        "title": "Markets and Money",
+        "minutes": 11
+      },
+      {
+        "id": "industry",
+        "title": "Industry Watch",
+        "minutes": 8
+      },
+      {
+        "id": "papers",
+        "title": "Agent Papers Radar",
+        "minutes": 7
+      },
+      {
+        "id": "deepdive",
+        "title": "Deep Dive of the Day",
+        "minutes": 14
+      },
+      {
+        "id": "world",
+        "title": "World and India",
+        "minutes": 10
+      },
+      {
+        "id": "sports",
+        "title": "Sports",
+        "minutes": 5
+      },
+      {
+        "id": "library",
+        "title": "Read and Listen",
+        "minutes": 3
+      },
+      {
+        "id": "localnews",
+        "title": "Local News",
+        "minutes": 4
+      },
+      {
+        "id": "local",
+        "title": "Local and Travel",
+        "minutes": 2
+      }
+    ]
   }
 ]
